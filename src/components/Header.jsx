@@ -26,10 +26,10 @@ export default function Header() {
                     Accessibility
                 </NavLink>
                 <NavLink
-                    to="/blog"
+                    to="/about"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
-                    Blog
+                    About
                 </NavLink>
             </nav>
         </header>
