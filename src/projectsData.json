@@ -1,0 +1,28 @@
+
+[
+    {
+      "title": "Project 1",
+      "description": "Description for Project 1",
+      "hrefSite": "https://",
+      "hrefGitHub": "https://",
+      "imageSrc": "",
+      "imageAlt": ""
+    },
+    {
+      "title": "Project 2",
+      "description": "Description for Project 2",
+      "hrefSite": "https://",
+      "hrefGitHub": "https://",
+      "imageSrc": "",
+      "imageAlt": ""
+    },
+    {
+      "title": "Project 3",
+      "description": "Description for Project 3",
+      "hrefSite": "https://",
+      "hrefGitHub": "https://",
+      "imageSrc": "",
+      "imageAlt": ""
+    }
+  ]
+  

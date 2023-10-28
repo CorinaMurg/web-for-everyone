@@ -1,5 +1,4 @@
-
-import { Link } from "react-router-dom"
+import { Project } from "../components"
 
 export default function Projects() {
     return (
@@ -9,10 +8,9 @@ export default function Projects() {
                 <p> . ..</p>
                 <p>...</p>
             </div>
-            <div className="project1">
-                <h2>Project Title<br /> .....</h2>
-                <Link className="link-button" to="/...">Project 1</Link>
-            </div>
+            <Project></Project>
+            <Project></Project>
+            <Project></Project>
         </div>
     );
 }
