@@ -1,5 +1,5 @@
 
-[
+export const projectsData = [
     {
         "title": "Lava Leap",
         "description": [
@@ -11,8 +11,8 @@
           ],
         "hrefSite": "https://lava-leap.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
-        "imageSrc": "./src/assets/lava-leap.jpg",
-        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, several wall structures in white."
+        "imageSrc": "./src/assets/lavaLeap.jpg",
+        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white."
     },
     {
       "title": "Neat Notes",
@@ -25,7 +25,7 @@
         ],
       "hrefSite": "https://neatnotes.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/neat-notes",
-      "imageSrc": "./src/assets/neatNotes.jpg",
+      "imageSrc": "./src/assets/neatNotesDark.jpg",
       "imageAlt": "Screenshot of NeatNotes app in dark mode"
     },
     {
@@ -53,8 +53,8 @@
         ],
       "hrefSite": "https://corina-space-tourism.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
-      "imageSrc": "./src/assets/spaceTourism.jpg",
+      "imageSrc": "./src/assets/spaceTourismHome.jpg",
       "imageAlt": ""
     }
-  ]
+];
   

@@ -2,7 +2,7 @@ import "./Project.css"
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 
-export default function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
+export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
     return (
         <section className="project">
             <h2 className="project--title">{title}</h2>
