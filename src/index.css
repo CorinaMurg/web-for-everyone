@@ -92,7 +92,6 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    width: 50%;
     margin-inline: auto;
 }
 
