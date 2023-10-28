@@ -9,8 +9,8 @@ export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, im
             {description.map((line, index) => (
                 <p key={index} className="project--description-line">{line}</p>
             ))}   
-            <Link className="project--site-link" href={hrefSite}>Live site</Link>
-            <Link className="project--github-link" href={hrefGitHub}>GitHub</Link>
+            <a className="project--site-link" href={hrefSite} target="_blank" rel="noopener noreferrer">Live site</a>
+            <a className="project--github-link" href={hrefGitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
             <img className="project--image" src={imageSrc} alt={imageAlt} />
         </section>
     )

@@ -12,7 +12,8 @@ export const projectsData = [
         "hrefSite": "https://lava-leap.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
         "imageSrc": "./src/assets/lavaLeap.jpg",
-        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white."
+        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "techStack": "JavaScript  •  ES6 Classes and Constructors"
     },
     {
       "title": "Neat Notes",
@@ -26,7 +27,8 @@ export const projectsData = [
       "hrefSite": "https://neatnotes.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/neat-notes",
       "imageSrc": "./src/assets/neatNotesDark.jpg",
-      "imageAlt": "Screenshot of NeatNotes app in dark mode"
+      "imageAlt": "Screenshot of NeatNotes app in dark mode",
+      "techStack": "REACT •  REACTmde  •  SPLIT.JS   •  BEM"
     },
     {
       "title": "Twain and Company Bookstore",
@@ -40,7 +42,8 @@ export const projectsData = [
       "hrefSite": "https://twain-and-company.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
       "imageSrc": "./src/assets/twainCompany.jpg",
-      "imageAlt": "Inside a bookstore. Photo taken from the outside of the store, in the evening."
+      "imageAlt": "Inside a bookstore. Photo taken from the outside of the store, in the evening.",
+      "techStack": "React  •  CSS GRID  •  BEM  •  A11y"
     },
     {
       "title": "Space Tourism Agency",
@@ -54,7 +57,8 @@ export const projectsData = [
       "hrefSite": "https://corina-space-tourism.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
       "imageSrc": "./src/assets/spaceTourismHome.jpg",
-      "imageAlt": ""
+      "imageAlt": "",
+      "techStack": "JavaSCRIPT  •  CSS GRID + FLEXBOX  •  BEM  •  A11y"
     }
 ];
   
