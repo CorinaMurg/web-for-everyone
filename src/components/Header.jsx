@@ -31,6 +31,13 @@ export default function Header() {
                 >
                     About
                 </NavLink>
+                <a 
+                    href="https://corinamurg.dev/blog" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    Blog
+                </a>
             </nav>
         </header>
     )
