@@ -1,12 +1,32 @@
 
 [
     {
-      "title": "Project 1",
-      "description": "Description for Project 1",
-      "hrefSite": "https://",
-      "hrefGitHub": "https://",
-      "imageSrc": "",
-      "imageAlt": ""
+        "title": "Lava Leap",
+        "description": [
+          "Desktop note-taking app built with React",
+          "Utilizes state, effects, and props to manage interactivity and data flow",
+          "Integrates the React-Mde and Showdown packages for editing and conversion into HTML",
+          "Interacts with Local Storage using JavaScript's Web Storage API, saving and retrieving notes as needed",
+          "Features a toggleable dark mode, enhancing accessibility and user preference"
+          ],
+        "hrefSite": "https://lava-leap.netlify.app/",
+        "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
+        "imageSrc": "./src/assets/lava-leap.jpg",
+        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, several wall structures in white."
+    },
+    {
+      "title": "Neat Notes",
+      "description": [
+        "Desktop note-taking app built with React",
+        "Utilizes state, effects, and props to manage interactivity and data flow",
+        "Integrates the React-Mde and Showdown packages for editing and conversion into HTML",
+        "Interacts with Local Storage using JavaScript's Web Storage API, saving and retrieving notes as needed",
+        "Features a toggleable dark mode, enhancing accessibility and user preference"
+        ],
+      "hrefSite": "https://neatnotes.netlify.app/",
+      "hrefGitHub": "https://github.com/CorinaMurg/neat-notes",
+      "imageSrc": "./src/assets/neatNotes.jpg",
+      "imageAlt": "Screenshot of NeatNotes app in dark mode"
     },
     {
       "title": "Twain and Company Bookstore",
@@ -17,17 +37,23 @@
         "Accessibility-first approach with skip-to-content button, color contrast, button focus, focus outline, modal access via keyboard, and",
         "aria-live triggered by cart updates"
         ],
-      "hrefSite": "https://",
-      "hrefGitHub": "https://",
-      "imageSrc": "",
-      "imageAlt": ""
+      "hrefSite": "https://twain-and-company.netlify.app/",
+      "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
+      "imageSrc": "./src/assets/twainCompany.jpg",
+      "imageAlt": "Inside a bookstore. Photo taken from the outside of the store, in the evening."
     },
     {
-      "title": "Project 3",
-      "description": "Description for Project 3",
-      "hrefSite": "https://",
-      "hrefGitHub": "https://",
-      "imageSrc": "",
+      "title": "Space Tourism Agency",
+      "description": [
+        "Leverages semantic HTML5 tags, ARIA roles and properties for enhanced accessibility",
+        "Incorporates a 'Skip to content' link",
+        "Employs CSS Grid + Flexbox for responsive layout",
+        "Deploys <picture> elements to provide webp images with png fallbacks for better performance",
+        "Integrates deferred JavaScript for enriched interactivity."
+        ],
+      "hrefSite": "https://corina-space-tourism.netlify.app/",
+      "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
+      "imageSrc": "./src/assets/spaceTourism.jpg",
       "imageAlt": ""
     }
   ]
