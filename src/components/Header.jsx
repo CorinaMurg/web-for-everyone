@@ -4,7 +4,8 @@ import "./Header.css"
 
 export default function Header() {
     const activeStyles = {
-        fontWeight: "bold",
+        fontSize: "1rem",
+        fontWeight: "600",
         color: "var(--text-dark-color)"
     }
 
@@ -33,7 +34,7 @@ export default function Header() {
                 >
                     About
                 </NavLink>
-                <a 
+                <a  className="blog-link"
                     href="https://corinamurg.dev/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"

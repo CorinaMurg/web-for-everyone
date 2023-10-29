@@ -2,20 +2,26 @@
 header {
     position: fixed;
     background-color: var(--lightGray-color);
-    color: var(--primary-text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--text-dark-color);
     padding: 1rem;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header .site-name {
-    color: black;
+.site-name {
+    color: inherit;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.site-name:hover {
+    color: var(--blue-color);
+    font-weight: 700;
 }
 
 header span {
@@ -26,14 +32,14 @@ header span {
 
 header a {
     text-decoration: none;
-    color: #4d4d4d;
-    font-weight: 600;
-    padding: 5px 20px;
+    color: inherit;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
 }
 
 header a:hover {
-    color: #161616;
-    text-decoration: underline;
+    font-weight: 600;
+    
 }
 
 

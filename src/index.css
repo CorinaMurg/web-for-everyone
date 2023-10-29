@@ -102,7 +102,7 @@ button:focus-visible {
     --text-dark-color: #1a1a1a;
     --blue-color: #1a73e8;
     --yellow-color: #fbbc04;
-    --pink-color: f38ba3;
+    --pink-color: #f38ba3;
     --green-color: #0ba95b;
     --purple-color: #7b5ea7;
     --lightGray-color: #f6f6f6;
@@ -116,7 +116,7 @@ button:focus-visible {
 
 body {
     background-color: var(--primary-bg-light-color);
-    color: var(--primary-text-dark-color);
+    color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
     line-height: 1.5rem;
     -ms-overflow-style: none;
@@ -131,11 +131,5 @@ body::-webkit-scrollbar {
 
 main {
     padding-top: 5rem;
-}
-
-
-a {
-    text-decoration: none;
-    color: var(--primary-text-dark-color);
 }
 
