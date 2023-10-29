@@ -2,7 +2,7 @@
 export const introCorina = {
     description: [
         {
-            text: "A self-taught developer focused on creating accessible web products.",
+            text: "Self-taught developer focused on creating accessible web products.",
             icon: "faUniversalAccess",
             color: "var(--blue-color)" 
         },

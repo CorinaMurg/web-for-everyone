@@ -32,6 +32,8 @@ export default function Home() {
                     />
                 ))}
 
+                <Link className="home--sample-projects--link" to="/projects">My Projects</Link>
+
             </div>
 
         </div>

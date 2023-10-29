@@ -11,8 +11,8 @@
 }
 
 .home--intro h1 {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 700;
     letter-spacing: 1.8px;
     
 }
@@ -37,7 +37,7 @@
 .home--intro p {
     font-size: 2rem;
     font-weight: 500;
-    margin-block: 1.5rem;
+    margin-block: 1rem;
 }
 
 
@@ -48,4 +48,22 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
+}
+
+/* LINK TO PROJECTS PAGE */
+.home--sample-projects--link {
+    text-decoration: none;
+    color: var(--text-light-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    background-color: var(--text-dark-color);
+    height: 3rem;
+    cursor: pointer;
+}
+
+.home--sample-projects--link:hover {
+    background-color: var(--yellow-color);
+    color: var(--text-dark-color);
 }

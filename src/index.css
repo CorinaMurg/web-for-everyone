@@ -87,7 +87,7 @@ button:focus-visible {
 
 :root {
     
-    --primary-text-light-color: #fff;
+    --text-light-color: #fff;
     --primary-bg-light-color: #fff;
     --primary-bg-dark-color: #1a1a1a;
     --secondary-text-color: #e60067;
@@ -99,6 +99,7 @@ button:focus-visible {
 
     --main-margin: 2rem;
 
+    --text-light-color: #fff;
     --text-dark-color: #1a1a1a;
     --blue-color: #1a73e8;
     --yellow-color: #fbbc04;
