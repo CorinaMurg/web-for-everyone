@@ -28,6 +28,7 @@ export default function Home() {
                         title={project.title}
                         sampleImageAlt={project.sampleImageAlt}
                         sampleImageSrc={project.sampleImageSrc}
+                        sampleProjectDescription={project.sampleProjectDescription}
                     />
                 ))}
 

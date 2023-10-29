@@ -19,7 +19,7 @@ export const projectsData = [
         "sampleProjectDescription": "2D Platform Game built with JavaScript"
     },
     {
-        "title": "Twain and Company Bookstore",
+        "title": "Twain & Company",
         "description": [
             "Integrates ReactDOM.createPortal to implement a shopping cart modal",
             "Employs useContext and useReducer for cart management, and useRef for focus control",
@@ -33,7 +33,7 @@ export const projectsData = [
         "techStack": "React  •  CSS GRID  •  BEM  •  A11y",
         "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "sampleProjectDescription": "",
+        "sampleProjectDescription": "Bookstore website built with React",
     },
     {
         "title": "Space Tourism Agency",
@@ -51,7 +51,7 @@ export const projectsData = [
         "techStack": "JavaSCRIPT  •  CSS GRID + FLEXBOX  •  BEM  •  A11y",
         "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "sampleProjectDescription": "",
+        "sampleProjectDescription": "Multi-page website built with JavaScript",
     },
     {
         "title": "Neat Notes",
