@@ -37,6 +37,7 @@
     font-size: 2rem;
     font-weight: 500;
     margin-block: 1rem;
+    line-height: inherit;
 }
 
 /* SAMPLE PROJECTS */
@@ -48,7 +49,8 @@
 }
 
 /* LINK TO PROJECTS PAGE */
-.home--sample-projects--link {
+.blog-link,
+.projects-link {
     text-decoration: none;
     color: var(--text-light-color);
     font-weight: 400;
@@ -57,9 +59,11 @@
     text-align: center;
     background-color: var(--text-dark-color);
     cursor: pointer;
+    
 }
 
-.home--sample-projects--link:hover {
+.blog-link:hover,
+.projects-link:hover {
     background-color: var(--yellow-color);
     color: var(--text-dark-color);
 }
@@ -88,16 +92,20 @@ h3 {
     line-height: 2.5rem;
 }
 
+.recent-posts--description {
+    width: 70%;
+    line-height: 2rem;
+}
+
 .recent-posts p {
     font-size: 1.2rem;
 
 }
-.recent-posts a {
-    text-decoration: none;
-    color: var(--text-dark-color);
-}
 
-.recent-posts a:hover {
-    text-decoration: none;
-    color: var(--blue-color);
+
+.recent-posts-links {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }

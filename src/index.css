@@ -134,6 +134,11 @@ main {
     padding-top: 5rem;
 }
 
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 
 .visually-hidden {
     position: absolute;

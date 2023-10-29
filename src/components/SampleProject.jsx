@@ -5,7 +5,7 @@ export function SampleProject({ title, sampleProjectDescription, sampleImageAlt,
     return (
         <div className="sample-project">
             <div className="sample-project--image-container">
-                <img className="sample-project--image" src={sampleImageSrc} alt={sampleImageAlt || ""} />
+                <img className="sample-project--image" src={sampleImageSrc} alt={sampleImageAlt} />
             </div>
             <h3 className="sample-project--title">{title}</h3>
             <p className="sample-project--description">{sampleProjectDescription}</p>

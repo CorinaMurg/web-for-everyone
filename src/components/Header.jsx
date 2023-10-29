@@ -34,7 +34,7 @@ export default function Header() {
                 >
                     About
                 </NavLink>
-                <a  className="blog-link"
+                <a  className="blog-nav-link"
                     href="https://corinamurg.dev/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"

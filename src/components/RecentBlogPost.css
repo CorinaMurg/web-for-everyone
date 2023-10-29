@@ -3,3 +3,13 @@
     display: flex;
     gap: 3rem;
 }
+
+.recent-blog-post--left a {
+    text-decoration: none;
+    color: var(--text-dark-color);
+}
+
+.recent-blog-post--left a:hover {
+    text-decoration: none;
+    color: var(--blue-color);
+}

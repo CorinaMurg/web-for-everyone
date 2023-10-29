@@ -36,21 +36,24 @@ export default function Home() {
                     />
                 ))}
 
-                <Link className="home--sample-projects--link" to="/projects">My Projects</Link>
+                <Link className="projects-link" to="/projects">My Projects</Link>
             </div>
 
             <div className="recent-posts">
                 <div>
                     <h2 className="recent-posts--title">Explore my blog, join my coding journey</h2>
-                    <p className="recent-posts--description">I&rsquo;m always diving into new topics on my blog. 
+                    <p className="recent-posts--description">
+                        I&rsquo;m always diving into new topics on my blog. 
                         It&rsquo;s where I break things down and make them easier to understand. 
+                    </p>
+                    <p>
                         If JavaScript or accessibility is your passion, 
                             <a href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">
-                                please check out my blog
+                                 <span> </span>please check out my blog
                             </a>
                         .
                     </p>
-                    <p>Recent Posts</p>
+                    
                 </div>
                 
                 {recentBlogPostsData.slice(0, 3).map((post) => (    
@@ -64,6 +67,9 @@ export default function Home() {
                         anchorAltText={post.anchorAltText}
                     />
                 ))}
+                <div className="recent-posts-links">
+                    <a className="blog-link" href="https://www.corinamurg.dev/blog">My Blog</a>
+                </div>
             </div>
 
         </div>
