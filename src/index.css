@@ -86,7 +86,7 @@ button:focus-visible {
 } */
 
 :root {
-    --primary-text-dark-color: #333;
+    --primary-text-dark-color: #1a1a1a;
     --primary-text-light-color: #fff;
     --primary-bg-light-color: #fff;
     --primary-bg-dark-color: #1a1a1a;
@@ -108,7 +108,8 @@ button:focus-visible {
 body {
     background-color: var(--primary-bg-light-color);
     color: var(--primary-text-dark-color);
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5rem;
     -ms-overflow-style: none;
     scrollbar-width: none;
     min-height: 100vh;

@@ -1,17 +1,31 @@
-
+import { introCorina } from "../data/introCorinaHomePage.js"
+import { projectsData } from "../data/projectsData.js"
+import { SampleProject } from "../components/SampleProject.jsx"
 import { Link } from "react-router-dom"
 import "./Home.css"
 
 export default function Home() {
     return (
-        <div className="home-container">
-            <h1>Hello, I'm Corina!</h1>
-            
-            <p>A former high school math teacher, now a self-taught developer focused on creating accessible web products.</p>
-            <p>I thrive on collaboration and appreciate direct and honest feedback.</p>
-            <p>Always curious + learning.</p>
+        <div className="home">
+            <div className="home--intro">
+                <h1>HELLO, I&rsquo;m CORINA!</h1>
+                {introCorina.description.map((line, index) => (
+                    <p key={index} className="home--intro-Corina-line">{line}</p>
+                ))}  
+            </div>
+            <div className="home--sample-projects">
+                {projectsData.slice(0, 3).map((project) => (
+                    <SampleProject
+                        key={project.title}
+                        title={project.title}
+                        sampleImageAlt={project.sampleImageAlt}
+                        sampleImageSrc={project.sampleImageSrc}
+                    />
+                ))}
 
-            <Link to="blog">Checkout my blog posts</Link>
+            </div>
+
         </div>
     )
-};
+}
+

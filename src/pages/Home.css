@@ -1,0 +1,31 @@
+
+.home {
+    display: flex;
+    flex-direction: column;
+    margin-inline: var(--main-margin);
+}
+
+.home--intro {
+    width: 60%;
+    line-height: 2.7rem;
+}
+
+.home--intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    
+}
+
+.home--intro p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-block: 1.5rem;
+}
+
+.home--sample-projects {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}

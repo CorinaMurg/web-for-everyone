@@ -11,8 +11,8 @@ export default function Header() {
     return (
         <header>
             <div>
-                <Link className="site-logo" to="/">Corina Murg</Link>
-                <p>Software Engineer. Accessibility Advocate</p>
+                <Link className="site-name" to="/">@ Corina Murg </Link>
+                <span>Software Engineer. Accessibility Advocate</span>
             </div>
             <nav>
                 <NavLink
