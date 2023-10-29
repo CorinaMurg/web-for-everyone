@@ -86,7 +86,7 @@ button:focus-visible {
 } */
 
 :root {
-    --primary-text-dark-color: #1a1a1a;
+    
     --primary-text-light-color: #fff;
     --primary-bg-light-color: #fff;
     --primary-bg-dark-color: #1a1a1a;
@@ -96,7 +96,16 @@ button:focus-visible {
     --a-link-color: #0077cc;
     --nav-link-color: #4d4d4d;
     --link-color: #646cff;
-    --main-margin: 8rem;
+
+    --main-margin: 2rem;
+
+    --text-dark-color: #1a1a1a;
+    --blue-color: #1a73e8;
+    --yellow-color: #fbbc04;
+    --pink-color: f38ba3;
+    --green-color: #0ba95b;
+    --purple-color: #7b5ea7;
+    --lightGray-color: #f6f6f6;
 
 }
 
@@ -113,6 +122,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     min-height: 100vh;
+    position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -120,7 +130,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    margin-bottom: 84px;
+    padding-top: 5rem;
 }
 
 

@@ -1,11 +1,14 @@
 
 header {
-    background-color: var(--secondary-bg-color);
+    position: fixed;
+    background-color: var(--lightGray-color);
     color: var(--primary-text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .site-name {

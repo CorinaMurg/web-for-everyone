@@ -5,7 +5,7 @@ import "./Header.css"
 export default function Header() {
     const activeStyles = {
         fontWeight: "bold",
-        color: "var(--nav-link-color)"
+        color: "var(--text-dark-color)"
     }
 
     return (
