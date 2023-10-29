@@ -14,12 +14,13 @@ export default function Home() {
                 {introCorina.description.map((item, index) => (
                     <div className="home--intro-Corina-line" key={index}>
                         <div className='home--intro--fontawe-container'>
-                            <FontAwesomeIcon icon={iconMapping[item.icon]} />
+                            <FontAwesomeIcon icon={iconMapping[item.icon]} color={item.color} />
                         </div>
                         <p>{item.text}</p>
                     </div>
-                ))}  
+                ))}
             </div>
+
             <div className="home--sample-projects">
                 {projectsData.slice(0, 3).map((project) => (
                     <SampleProject
