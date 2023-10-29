@@ -1,6 +1,6 @@
 footer {
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
+    background-color: var(--lightGray-color);
+    color: var(--text-dark-color);
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -8,4 +8,6 @@ footer {
     margin-top: auto;
     padding: 2rem var(--main-margin);
     font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+

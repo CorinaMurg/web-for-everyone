@@ -2,32 +2,43 @@ import "./RecentBlogPost.css"
 
 import PropTypes from "prop-types"
 
-export function RecentPost ( {title, blogPostDescription, hrefToBlogPost, blogPostImageAlt, blogPostImageSrc } ) {
+export function RecentBlogPost ( {
+    title, 
+    blogPostDescription, 
+    hrefToBlogPost, 
+    blogPostImageAlt, 
+    blogPostImageSrc,
+    anchorAltText,
+    } ) {
     return (
         <section className="recent-blog-post">
             <div className="recent-blog-post--left">
-                <h3 className="-recent-blog-post--left--title">{title}</h2>
-                {description.map((line, index) => (
+                <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer">
+                    <h3 className="recent-blog-post--left--title">{title}</h3>
+                </a>
+                {blogPostDescription.map((line, index) => (
                     <p key={index}>{line}</p>
-                ))}  
-                <div>
-                    <a className="project--left--links--site" href={hrefSite} target="_blank" rel="noopener noreferrer">Live site</a>
-                </div> 
+                ))}
             </div>
             <div className="recent-blog-post--right">
-                <img className="project--right--image" src={imageSrc} alt={imageAlt} />
+                <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" alt={anchorAltText}>
+                    <img
+                        className="project--right--image"
+                        src={blogPostImageSrc}
+                        alt={blogPostImageAlt}
+                        title="Image for recent blog post"
+                    />
+                </a>
             </div>
-            
         </section>
-    )
+    );
 }
-
 
 RecentBlogPost.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.arrayOf(PropTypes.string).isRequired,
-    hrefSite: PropTypes.string.isRequired,
-    hrefGitHub: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string.isRequired,
-    imageAlt: PropTypes.string.isRequired,
+    blogPostDescription: PropTypes.arrayOf(PropTypes.string).isRequired,
+    hrefToBlogPost: PropTypes.string.isRequired,
+    blogPostImageSrc: PropTypes.string.isRequired,
+    blogPostImageAlt: PropTypes.string.isRequired,
+    anchorAltText: PropTypes.string.isRequired,
 };

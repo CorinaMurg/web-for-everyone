@@ -97,7 +97,7 @@ button:focus-visible {
     --nav-link-color: #4d4d4d;
     --link-color: #646cff;
 
-    --main-margin: 2rem;
+    --main-margin: 4rem;
 
     --text-light-color: #fff;
     --text-dark-color: #1a1a1a;
@@ -134,3 +134,14 @@ main {
     padding-top: 5rem;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
