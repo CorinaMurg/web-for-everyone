@@ -1,5 +1,6 @@
 import { Project } from "../components/Project"
 import { projectsData } from "../data/projectsData"
+import "./Projects.css"
 
 export default function Projects() {
     return (

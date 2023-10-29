@@ -5,13 +5,15 @@ import "./Header.css"
 export default function Header() {
     const activeStyles = {
         fontWeight: "bold",
-        textDecoration: "underline",
-        color: "#161616"
+        color: "var(--nav-link-color)"
     }
 
     return (
         <header>
-            <Link className="site-logo" to="/">Corina Murg</Link>
+            <div>
+                <Link className="site-logo" to="/">Corina Murg</Link>
+                <p>Software Engineer. Accessibility Advocate</p>
+            </div>
             <nav>
                 <NavLink
                     to="/projects"

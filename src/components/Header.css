@@ -1,17 +1,18 @@
 
 header {
-    height: 110px;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-block: 10px;
+    padding: 4rem var(--main-margin);
 }
 
 header .site-logo {
     color: black;
-    margin-right: auto;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
 }
 
 header a {

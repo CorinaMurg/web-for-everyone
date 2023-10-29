@@ -36,8 +36,7 @@ export const projectsData = [
         "Integrates ReactDOM.createPortal to implement a shopping cart modal",
         "Employs useContext and useReducer for cart management, and useRef for focus control",
         "Firebase backend implementation",
-        "Accessibility-first approach with skip-to-content button, color contrast, button focus, focus outline, modal access via keyboard, and",
-        "aria-live triggered by cart updates"
+        "Accessibility-first approach with skip-to-content button, color contrast, button focus, focus outline, modal access via keyboard, and aria-live triggered by cart updates"
         ],
       "hrefSite": "https://twain-and-company.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
@@ -56,7 +55,7 @@ export const projectsData = [
         ],
       "hrefSite": "https://corina-space-tourism.netlify.app/",
       "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
-      "imageSrc": "./src/assets/spaceTourismHome.jpg",
+      "imageSrc": "./src/assets/spaceTourismMars.png",
       "imageAlt": "",
       "techStack": "JavaSCRIPT  •  CSS GRID + FLEXBOX  •  BEM  •  A11y"
     }

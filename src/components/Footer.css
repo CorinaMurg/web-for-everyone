@@ -1,11 +1,11 @@
 footer {
-    background-color: #161616;
-    color: #aaaaaa;
-    height: 74px;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
     margin-top: auto;
+    padding: 2rem var(--main-margin);
     font-weight: 500;
 }
