@@ -1,5 +1,4 @@
 import "./Project.css"
-import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 
 export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
