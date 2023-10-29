@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { iconMapping } from '../utils/iconMapping.js';
 import { introCorina } from "../data/introCorinaHomePage.js"
 import { projectsData } from "../data/projectsData.js"
 import { SampleProject } from "../components/SampleProject.jsx"
@@ -9,8 +11,13 @@ export default function Home() {
         <div className="home">
             <div className="home--intro">
                 <h1>HELLO, I&rsquo;m CORINA!</h1>
-                {introCorina.description.map((line, index) => (
-                    <p key={index} className="home--intro-Corina-line">{line}</p>
+                {introCorina.description.map((item, index) => (
+                    <div className="home--intro-Corina-line" key={index}>
+                        <div className='home--intro--fontawe-container'>
+                            <FontAwesomeIcon icon={iconMapping[item.icon]} />
+                        </div>
+                        <p>{item.text}</p>
+                    </div>
                 ))}  
             </div>
             <div className="home--sample-projects">
@@ -28,4 +35,5 @@ export default function Home() {
         </div>
     )
 }
+
 
