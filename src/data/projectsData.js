@@ -13,9 +13,11 @@ export const projectsData = [
         "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
         "imageSrc": "./src/assets/lavaLeap.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "imageCredit": "",
         "techStack": "JavaScript  •  ES6 Classes and Constructors",
         "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "sampleImageCredit": "",
         "sampleProjectDescription": "2D Platform Game built with JavaScript"
     },
     {
@@ -30,9 +32,11 @@ export const projectsData = [
         "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
         "imageSrc": "./src/assets/twainCompany.jpg",
         "imageAlt": "Inside a bookstore. Photo taken from the outside of the store, in the evening.",
+        "imageCredit": "",
         "techStack": "React  •  CSS GRID  •  BEM  •  A11y",
-        "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
+        "sampleImageSrc": "./src/assets/lettersFromEarth.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "sampleImageCredit": "",
         "sampleProjectDescription": "Bookstore website built with React",
     },
     {
@@ -47,10 +51,12 @@ export const projectsData = [
         "hrefSite": "https://corina-space-tourism.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
         "imageSrc": "./src/assets/spaceTourismMars.png",
+        "imageCredit": "",
         "imageAlt": "",
         "techStack": "JavaSCRIPT  •  CSS GRID + FLEXBOX  •  BEM  •  A11y",
-        "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
+        "sampleImageSrc": "./src/assets/spaceTourismEuropa.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "sampleImageCredit": "",
         "sampleProjectDescription": "Multi-page website built with JavaScript",
     },
     {
@@ -66,9 +72,11 @@ export const projectsData = [
         "hrefGitHub": "https://github.com/CorinaMurg/neat-notes",
         "imageSrc": "./src/assets/neatNotesDark.jpg",
         "imageAlt": "Screenshot of NeatNotes app in dark mode",
+        "imageCredit": "",
         "techStack": "REACT •  REACTmde  •  SPLIT.JS   •  BEM",
         "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "sampleImageCredit": "",
         "sampleProjectDescription": ""
     },
 ];

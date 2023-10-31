@@ -11,6 +11,10 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.site-name-container {
+    display: flex;
+    flex-direction: column;
+}
 .site-name {
     color: inherit;
     margin: 0;
@@ -24,10 +28,9 @@ header {
     font-weight: 700;
 }
 
-header span {
+.site-name-container span {
     font-size: 1rem;
     font-weight: 500;
-    margin-left: 0.5rem;
 }
 
 /* all nav links */

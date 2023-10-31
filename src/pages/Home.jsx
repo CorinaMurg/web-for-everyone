@@ -64,6 +64,9 @@ export default function Home() {
                         hrefToBlogPost={post.hrefToBlogPost}
                         blogPostImageAlt={post.blogPostImageAlt}
                         blogPostImageSrc={post.blogPostImageSrc}
+                        blogPostImagePhotographer={post.blogPostImagePhotographer}
+                        blogPostImagePhotographerSrc={post.blogPostImagePhotographerSrc}
+                        unsplashSrc={post.unsplashSrc}
                         anchorAltText={post.anchorAltText}
                     />
                 ))}

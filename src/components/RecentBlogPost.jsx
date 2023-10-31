@@ -8,6 +8,9 @@ export function RecentBlogPost ( {
     hrefToBlogPost, 
     blogPostImageAlt, 
     blogPostImageSrc,
+    blogPostImagePhotographer,
+    blogPostImagePhotographerSrc,
+    unsplashSrc,
     anchorAltText,
     } ) {
     return (
@@ -29,6 +32,19 @@ export function RecentBlogPost ( {
                         title="Image for recent blog post"
                     />
                 </a>
+                {blogPostImagePhotographer && 
+                    <div className="photo-credit">
+                        <a href={blogPostImagePhotographerSrc} target="_blank" rel="noopener noreferrer">
+                            {blogPostImagePhotographer}
+                        </a>
+                        {' '}on{' '}
+                        <a href={unsplashSrc} target="_blank" rel="noopener noreferrer">
+                            Unsplash
+                        </a>
+                    </div>
+                }
+               
+                
             </div>
         </section>
     );
@@ -40,5 +56,9 @@ RecentBlogPost.propTypes = {
     hrefToBlogPost: PropTypes.string.isRequired,
     blogPostImageSrc: PropTypes.string.isRequired,
     blogPostImageAlt: PropTypes.string.isRequired,
+    blogPostImageCredit: PropTypes.string.isRequired,
+    blogPostImagePhotographer: PropTypes.string.isRequired,
+    blogPostImagePhotographerSrc: PropTypes.string.isRequired,
+    unsplashSrc: PropTypes.string.isRequired,
     anchorAltText: PropTypes.string.isRequired,
 };

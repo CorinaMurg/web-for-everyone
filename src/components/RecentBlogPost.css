@@ -1,9 +1,16 @@
 
 .recent-blog-post {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
 }
 
+.recent-blog-post--left {
+    width: 50%;
+}
+
+.recent-blog-post--right {
+    width: 50%;
+}
 .recent-blog-post--left a {
     text-decoration: none;
     color: var(--text-dark-color);
