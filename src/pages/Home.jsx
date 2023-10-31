@@ -30,6 +30,7 @@ export default function Home() {
                     <SampleProject
                         key={project.title}
                         title={project.title}
+                        hrefSite={project.hrefSite}
                         sampleImageAlt={project.sampleImageAlt}
                         sampleImageSrc={project.sampleImageSrc}
                         sampleProjectDescription={project.sampleProjectDescription}
@@ -42,18 +43,17 @@ export default function Home() {
             <div className="recent-posts">
                 <div>
                     <h2 className="recent-posts--title">Explore my blog, join my coding journey</h2>
-                    <p className="recent-posts--description">
-                        I&rsquo;m always diving into new topics on my blog. 
-                        It&rsquo;s where I break things down and make them easier to understand. 
-                    </p>
-                    <p>
-                        If JavaScript or accessibility is your passion, 
-                            <a href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">
-                                 <span> </span>please check out my blog
-                            </a>
-                        .
-                    </p>
-                    
+                    <div className="recent-posts--description">
+                        <p>I&rsquo;m always diving into new topics on my blog.</p>
+                        <p>It&rsquo;s where I break things down and make them easier to understand.</p> 
+                        <p>
+                            If JavaScript or accessibility is your passion, 
+                                <a href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">
+                                    <span> </span>please check out my blog
+                                </a>
+                            .
+                        </p>
+                    </div>
                 </div>
                 
                 {recentBlogPostsData.slice(0, 3).map((post) => (    
@@ -62,12 +62,15 @@ export default function Home() {
                         title={post.title}
                         blogPostDescription={post.blogPostDescription}
                         hrefToBlogPost={post.hrefToBlogPost}
+                        hrefToBlogPostTitle={post.hrefToBlogPostTitle}
                         blogPostImageAlt={post.blogPostImageAlt}
                         blogPostImageSrc={post.blogPostImageSrc}
                         blogPostImagePhotographer={post.blogPostImagePhotographer}
                         blogPostImagePhotographerSrc={post.blogPostImagePhotographerSrc}
+                        blogPostImagePhotographerTitle={post.blogPostImagePhotographerTitle}
                         unsplashSrc={post.unsplashSrc}
-                        anchorAltText={post.anchorAltText}
+                        unsplashSrcTitle={post.unsplashSrcTitle}
+                        
                     />
                 ))}
                 <div className="recent-posts-links">

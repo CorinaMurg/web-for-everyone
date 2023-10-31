@@ -84,10 +84,10 @@ h3 {
     margin-block: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
 }
 
-.recent-posts h3 {
+.recent-posts--title {
     width: 70%;
     line-height: 2.5rem;
 }
@@ -97,8 +97,8 @@ h3 {
     line-height: 2rem;
 }
 
-.recent-posts p {
-    font-size: 1.2rem;
+.recent-posts--description p {
+    margin-block: 0;
 
 }
 

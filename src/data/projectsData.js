@@ -57,7 +57,7 @@ export const projectsData = [
         "sampleImageSrc": "./src/assets/spaceTourismEuropa.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "sampleImageCredit": "",
-        "sampleProjectDescription": "Multi-page website built with JavaScript",
+        "sampleProjectDescription": "Multipage website built with JavaScript",
     },
     {
         "title": "Neat Notes",

@@ -24,6 +24,11 @@
     margin-top: 2rem;
 }
 
+.sample-project a {
+    text-decoration: none;
+    color: var(--text-dark-color);
+
+}
 .sample-project--description {
     font-size: 1.2rem;
     font-weight: 400;
