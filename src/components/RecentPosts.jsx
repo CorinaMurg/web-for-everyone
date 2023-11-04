@@ -2,7 +2,7 @@ import { recentBlogPostsData } from "../data/recentBlogPostsData";
 import { RecentPost } from "./RecentPost";
 import "./RecentPosts.css";
 
-export function RecentPosts (){
+export default function RecentPosts (){
     return (
         <div className="recent-posts">
             <div className="recent-posts--intro">

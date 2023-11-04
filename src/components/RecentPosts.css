@@ -1,6 +1,7 @@
 
 .recent-posts {
-    margin-block: 96px;
+    margin-bottom: 96px;
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -37,4 +38,5 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-inline: var(--main-margin);
+    margin-top: 48px;
 }
