@@ -7,9 +7,11 @@ export function SampleProject({ title, hrefSite, sampleProjectDescription, sampl
             <div className="sample-project--image-container">
                 <img className="sample-project--image" src={sampleImageSrc} alt={sampleImageAlt} />
             </div>
-            <h3 className="sample-project--title">
-                <a href={hrefSite}>{title}</a>
-            </h3>
+            
+            <a className="sample-project--title--link" href={hrefSite} target="_blank" rel="noopener noreferrer">
+                <h3 className="sample-project--title">{title}</h3>
+            </a>
+            
             <p className="sample-project--description">{sampleProjectDescription}</p>
         </article>
     );
@@ -19,7 +21,7 @@ SampleProject.propTypes = {
     title: PropTypes.string,
     hrefSite: PropTypes.string,
     sampleProjectDescription: PropTypes.string,
-    sampleImageAlt: PropTypes.string,
+    sampleImageAlt: PropTypes.string.isRequired,
     sampleImageSrc: PropTypes.string.isRequired,
 };
 

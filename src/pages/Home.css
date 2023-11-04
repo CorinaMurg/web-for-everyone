@@ -2,7 +2,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 64px;
     margin-inline: var(--main-margin);
 }
 
@@ -19,7 +19,7 @@
 
 .home--intro>div {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     align-items: center;
 }
 
@@ -36,7 +36,7 @@
 .home--intro p {
     font-size: 2rem;
     font-weight: 500;
-    margin-block: 1rem;
+    margin-block: 16px;
     line-height: inherit;
 }
 
@@ -45,8 +45,21 @@
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 40px;
+    animation: moveUpOnLoad 1s ease-out;
 }
+
+@keyframes moveUpOnLoad {
+    from {
+        transform: translateY(50px);  
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);  
+        opacity: 1;
+    }
+}
+
 
 /* LINK TO PROJECTS PAGE */
 .blog-link,
@@ -55,7 +68,7 @@
     color: var(--text-light-color);
     font-weight: 400;
     font-size: 1.5rem;
-    padding: 0.7rem 1.5rem;
+    padding: 12px 24px;
     text-align: center;
     background-color: var(--text-dark-color);
     cursor: pointer;
@@ -74,39 +87,4 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: 2rem;
-    font-weight: 600;
-}
 
-
-.recent-posts {
-    margin-block: 6rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-}
-
-.recent-posts--title {
-    width: 70%;
-    line-height: 2.5rem;
-}
-
-.recent-posts--description {
-    width: 70%;
-    line-height: 2rem;
-}
-
-.recent-posts--description p {
-    margin-block: 0;
-
-}
-
-
-.recent-posts-links {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    margin-top: -4rem;
-}

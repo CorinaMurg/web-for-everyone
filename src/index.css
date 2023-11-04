@@ -86,28 +86,15 @@ button:focus-visible {
 } */
 
 :root {
-    
     --text-light-color: #fff;
-    --primary-bg-light-color: #fff;
-    --primary-bg-dark-color: #1a1a1a;
-    --secondary-text-color: #e60067;
-    --secondary-bg-color: #bfdef2;
-    --project-bg-color: #fff;
-    --a-link-color: #0077cc;
-    --nav-link-color: #4d4d4d;
-    --link-color: #646cff;
-
-    --main-margin: 6rem;
-
-    --text-light-color: #fff;
-    --text-dark-color: #1a1a1a;
+    --text-dark-color: #000;
     --blue-color: #1a73e8;
     --yellow-color: #fbbc04;
     --pink-color: #f38ba3;
     --green-color: #0ba95b;
     --purple-color: #7b5ea7;
     --lightGray-color: #f6f6f6;
-
+    --main-margin: 6rem;
 }
 
 * {
@@ -135,8 +122,9 @@ main {
 }
 
 p {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 400;
 }
 
 

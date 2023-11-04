@@ -2,7 +2,20 @@
 .sample-project {
     display: flex;
     flex-direction: column;
+    animation: moveUpOnLoad 1s ease-out;
 }
+
+@keyframes moveUpOnLoad {
+    from {
+        transform: translateY(50px);  
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);  
+        opacity: 1;
+    }
+}
+
 
 .sample-project--image-container {
     aspect-ratio: 1 / 1;
@@ -21,14 +34,32 @@
 .sample-project--title {
     font-size: 2rem;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 32px;
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 10px;
 }
 
-.sample-project a {
+.sample-project--title--link {
     text-decoration: none;
     color: var(--text-dark-color);
-
 }
+
+.sample-project--title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--text-dark-color);
+    transition: width 0.8s;
+}
+
+.sample-project--title--link:hover .sample-project--title::before {
+    width: 100%;
+}
+
 .sample-project--description {
     font-size: 1.2rem;
     font-weight: 400;
