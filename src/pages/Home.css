@@ -2,21 +2,27 @@
 .home {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    margin-inline: var(--main-margin);
+    gap: 40px;
+    
 }
 
 .home--intro {
     width: 55%;
     line-height: 2.7rem;
+    margin-inline: var(--main-margin);
+    margin-top: 16px;
 }
 
 .home--intro h1 {
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 1.8px;
+    font-family: "Playpen Sans", sans-serif;
 }
 
+.home--intro--lines {
+    width: 90%;
+}
 .home--intro>div {
     display: flex;
     gap: 16px;
@@ -47,6 +53,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     animation: moveUpOnLoad 1s ease-out;
+    margin-inline: var(--main-margin);
 }
 
 @keyframes moveUpOnLoad {

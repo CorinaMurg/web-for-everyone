@@ -5,7 +5,7 @@ import "./RecentPostsContainer.css";
 export function RecentPostsContainer (){
     return (
         <div className="recent-posts">
-            <div>
+            <div className="recent-posts--intro">
                 <h2 className="recent-posts--title">Explore my blog, join my coding journey</h2>
                 <div className="recent-posts--description">
                     <p>I&rsquo;m always diving into new topics on my blog.</p>

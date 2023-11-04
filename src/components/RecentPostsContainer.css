@@ -6,6 +6,10 @@
     gap: 128px;
 }
 
+.recent-posts--intro {
+    margin-inline: var(--main-margin);
+}
+
 .recent-posts--title {
     width: 70%;
     line-height: 2.5rem;
@@ -26,4 +30,5 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: -96px;
+    margin-inline: var(--main-margin);
 }

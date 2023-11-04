@@ -6,9 +6,10 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--text-dark-color);
-    padding: 1rem;
+    padding: 16px 32px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
 .site-name-container {
@@ -21,10 +22,12 @@ header {
     padding: 0;
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: "Playpen Sans", sans-serif;
+    color: var(--blue-color);
 }
 
 .site-name:hover {
-    color: var(--blue-color);
+    color: var(--text-dark-color);
     font-weight: 700;
 }
 
@@ -38,7 +41,7 @@ header a {
     text-decoration: none;
     color: inherit;
     font-weight: 500;
-    padding: 0.5rem 1.5rem;
+    padding: 8px 0 8px 40px;
 }
 
 header a:hover {

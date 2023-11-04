@@ -22,14 +22,16 @@ export function RecentPost ( {
                 <a className="recent-post--left--title-anchor" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer">
                     <h3>{title}</h3>
                 </a>
-                <div className="recent-post--description">
-                    {blogPostDescription.map((line, index) => (
-                        <p key={index}>{line}</p>
-                    ))}
+                <div>
+                    <div className="recent-post--description">
+                        {blogPostDescription.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
+                    </div>
+                    <a className="recent-post-link" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
+                        Read more
+                    </a>
                 </div>
-                <a className="recent-post-link" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
-                    Read more
-                </a>
             </div>
             <div className="recent-post--right">
                 <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
