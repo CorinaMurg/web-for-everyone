@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { SampleProject } from "./SampleProject.jsx";
 import { projectsData } from "../data/projectsData.js";
-import "./SampleProjectsContainer.css";
+import "./SampleProjects.css";
 
-export function SampleProjectsContainer() {
+export function SampleProjects() {
     return (
         <div className="home--sample-projects">
                 <h2 className="visually-hidden">A sample of my projects</h2>

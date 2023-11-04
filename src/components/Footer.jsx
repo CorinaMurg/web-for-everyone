@@ -6,44 +6,38 @@ export default function Footer() {
         <footer>
             <div className="footer-left">
                 <div className="footer-left--top">
-                    <Link to="/"><span>Corina Murg</span></Link>
+                    <Link to="/"><span className="corina-murg">Corina Murg</span></Link>
                     <span>Thank you for reading!</span>
                 </div>
                 <div className="footer-left--bottom">
-                <span>Build in React by Corina Murg. &#169; 2023 Corina Murg</span>
+                <span>Build with React by Corina Murg. &#169; 2023 Corina Murg</span>
                 </div>
-                
-                
             </div>
             <div className="footer-right">
                 <div className="footer-right--navigation">
-                    <Link to="/">Home</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/accessibility">Accessibility</Link>
-                    <Link to="/about">About</Link>
-                    <a href="https://dev.to/corinamurg" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <span className="footer-heading">Site</span>
+                    <Link to="/"><span className="footer-nav-link">Home</span></Link>
+                    <Link to="/projects"><span className="footer-nav-link">Projects</span></Link>
+                    <Link to="/accessibility"><span className="footer-nav-link">Accessibility</span></Link>
+                    <Link to="/about"><span className="footer-nav-link">About</span></Link>
+                    {/* <a href="https://dev.to/corinamurg" target="_blank" rel="noopener noreferrer">Blog</a> */}
                 </div>
                 <div className="footer-right--social">
+                    <span className="footer-heading">Profiles</span>
                     <a href="https://www.linkedin.com/in/corinamurg/" target="_blank" rel="noopener noreferrer">
-                        LinkedIn
+                        <span className="footer-nav-link">LinkedIn</span>
                     </a>
                     <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
-                        GitHub
+                        <span className="footer-nav-link">GitHub</span>
                     </a>
                     <a href="https://twitter.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
-                        Twitter
+                        <span className="footer-nav-link">Twitter</span>
+                    </a>
+                    <a href="https://dev.to/corinamurg" target="_blank" rel="noopener noreferrer">
+                        <span className="footer-nav-link">Blog</span>
                     </a>
                 </div>
-                
             </div>
-
-
-
-
-
-
         </footer>
     )
 }
-
-// &#169; 2023 Corina Murg

@@ -7,7 +7,12 @@
     padding-block: 48px;
 }
 
-.recent-post h3 {
+.recent-post:not(:last-child) {
+    margin-bottom: 96px;
+}
+
+
+.recent-post h4 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.5rem;
@@ -62,15 +67,30 @@
 
 .photo-credit a {
     text-decoration: none;
+    cursor: pointer;
     color: inherit;
     font-weight: 600;
-    
 }
 
-.photo-credit a:hover {
-    text-decoration: none;
-    font-weight: 700;
+.photo-credit--link {
+    position: relative;
 }
+
+.photo-credit--link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-dark-color);
+    transition: width 0.8s;
+}
+
+.photo-credit--link:hover::before {
+    width: 100%;
+}
+
 
 .recent-post-link {
     position: relative;
@@ -88,7 +108,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; 
+    height: 2.5px; 
     background-color: var(--text-dark-color);
     transition: width 0.5s; 
 }
@@ -96,20 +116,3 @@
 .recent-post-link:hover::before {
     width: 100%; 
 }
-
-/* .recent-post-link {
-    text-decoration: none;
-    color: var(--text-light-color);
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 0.7rem 1.5rem;
-    text-align: center;
-    background-color: var(--text-dark-color);
-    cursor: pointer;
-    width: 50%;
-}
-
-.recent-post-link:hover {
-    background-color: var(--yellow-color);
-    color: var(--text-dark-color);
-} */

@@ -9,7 +9,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .footer-left {
     display: flex;
     flex-direction: column;
@@ -22,15 +21,15 @@ footer {
     gap: 16px;
 }
 
-.footer-left--top a {
-    font-size: 1.2rem;
+.corina-murg {
+    font-size: 1.5rem;
     font-family: "Playpen Sans", sans-serif;
-    color: var(--text-dark-color);
+    color: var(--blue-color);
     font-weight: 600;
 }
 
-.footer-left--top a:hover {
-    color: var(--blue-color);
+.corina-murg:hover {
+    color: var(--text-dark-color);
 }
 
 .footer-right {
@@ -49,6 +48,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-inline: 16px;
 }
 
 footer a {
@@ -56,6 +56,28 @@ footer a {
     color: inherit;
 }
 
-footer a:hover {
-    font-weight: 600;
+.footer-nav-link {
+    position: relative;
 }
+
+.footer-nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-dark-color);
+    transition: width 0.8s;
+}
+
+.footer-nav-link:hover::before {
+    width: 100%;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    color: var(--blue-color);
+    font-weight: 500;
+}
+

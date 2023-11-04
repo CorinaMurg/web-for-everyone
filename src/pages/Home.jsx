@@ -1,8 +1,8 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { iconMapping } from '../utils/iconMapping.js'
 import { introCorina } from "../data/introCorinaData.js"
-import { RecentPostsContainer } from "../components/RecentPostsContainer.jsx"
-import { SampleProjectsContainer } from "../components/SampleProjectsContainer.jsx"
+import { RecentPosts } from "../components/RecentPosts.jsx"
+import { SampleProjects } from "../components/SampleProjects.jsx"
 import "./Home.css"
 
 
@@ -21,8 +21,8 @@ export default function Home() {
                 ))}
             </div>
 
-            <SampleProjectsContainer className="home--sample-projects-container"/>
-            <RecentPostsContainer className="home--recent-posts-container"/>
+            <SampleProjects className="home--sample-projects"/>
+            <RecentPosts className="home--recent-posts"/>
 
         </div>
     )

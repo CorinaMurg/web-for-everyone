@@ -20,26 +20,26 @@ export default function Header() {
                     to="/projects"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
-                    Projects
+                    <span className="nav-link">Projects</span>
                 </NavLink>
                 <NavLink
                     to="/accessibility"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
-                    Accessibility
+                    <span className="nav-link">Accessibility</span>
                 </NavLink>
                 <NavLink
                     to="/about"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
-                    About
+                    <span className="nav-link">About</span>
                 </NavLink>
                 <a  className="blog-nav-link"
                     href="https://corinamurg.dev/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
-                    Blog
+                    <span className="nav-link">Blog</span>
                 </a>
             </nav>
         </header>

@@ -19,9 +19,7 @@ export function RecentPost ( {
     return (
         <article className="recent-post">
             <div className="recent-post--left">
-                <a className="recent-post--left--title-anchor" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer">
-                    <h3>{title}</h3>
-                </a>
+                <h4>{title}</h4>
                 <div>
                     <div className="recent-post--description">
                         {blogPostDescription.map((line, index) => (
@@ -47,11 +45,11 @@ export function RecentPost ( {
                         <>
                             Photo by{' '}
                             <a href={blogPostImagePhotographerSrc} target="_blank" rel="noopener noreferrer" title={blogPostImagePhotographerSrcTitle}>
-                                {blogPostImagePhotographer}
+                                <span className="photo-credit--link">{blogPostImagePhotographer}</span>
                             </a>
                             {' '}on{' '}
                             <a href={unsplashSrc} target="_blank" rel="noopener noreferrer" title={unsplashSrcTitle}>
-                                Unsplash
+                                <span className="photo-credit--link">Unsplash</span>
                             </a>
                         </>
                     )}
