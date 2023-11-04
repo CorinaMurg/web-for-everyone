@@ -1,11 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { iconMapping } from '../utils/iconMapping.js'
 import { introCorina } from "../data/introCorinaData.js"
-import { projectsData } from "../data/projectsData.js"
-import { SampleProject } from "../components/SampleProject.jsx"
 import { RecentPostsContainer } from "../components/RecentPostsContainer.jsx"
-
-import { Link } from "react-router-dom"
+import { SampleProjectsContainer } from "../components/SampleProjectsContainer.jsx"
 import "./Home.css"
 
 
@@ -24,22 +21,7 @@ export default function Home() {
                 ))}
             </div>
 
-            <div className="home--sample-projects">
-                <h2 className="visually-hidden">A sample of my projects</h2>
-                {projectsData.slice(0, 3).map((project) => (
-                    <SampleProject
-                        key={project.title}
-                        title={project.title}
-                        hrefSite={project.hrefSite}
-                        sampleImageAlt={project.sampleImageAlt}
-                        sampleImageSrc={project.sampleImageSrc}
-                        sampleProjectDescription={project.sampleProjectDescription}
-                    />
-                ))}
-
-                <Link className="projects-link" to="/projects">My Projects</Link>
-            </div>
-
+            <SampleProjectsContainer className="home--sample-projects-container"/>
             <RecentPostsContainer className="home--recent-posts-container"/>
 
         </div>

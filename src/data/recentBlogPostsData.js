@@ -3,8 +3,8 @@ export const recentBlogPostsData = [
     {
         "title": "How I Finally Understood ES6 Classes & Constructors",
         "blogPostDescription": [
-          "Hint: it involved The Eloquent JavaScript book and developing a 2D platform game.",
-          "And I don't even play video games!",
+          "Hint: it involved developing Lava Leap, a 2D platform game in JavaScript. And I don't even play video games!",
+          "Read about my experience building the game using the Eloquent JavaScript book as a guide and under the mentorship of a senior game developer. Before, I used to believe that classes and Constructors were some secret tools for backend developers. For this project I had to use “Constructor” SEVEN times!",
           ],
         "hrefToBlogPost": "https://lava-leap.netlify.app/",
         "hrefToBlogPostAltText": "Link to blog post about the Lava Leap game and how I finally understood ES6 Classes and Constructors",
@@ -35,8 +35,8 @@ export const recentBlogPostsData = [
     {
         "title": "Immutability in React",
         "blogPostDescription": [
-          "JavaScript objects are mutable. BUT, React asks that we treat objects in state as immutable. Should we listen?",
-          "This post is a quick dive into the world of React to look at what it means to use immutable objects and how to safely update objects in state",
+          "JavaScript objects are mutable. We can change their content. BUT, React wants us (ok, implores us) that we treat objects that are already in state as read-only, “as if they were immutable.” Should we listen?",
+          "This post is a quick dive into the world of React documentation to look at what it means to use immutable objects and how to safely update objects in state.",
           ],
         "hrefToBlogPost": "https://www.corinamurg.dev/post/immutability-in-react",
         "hrefToBlogPostAltText": "Immutability in React blog post",
