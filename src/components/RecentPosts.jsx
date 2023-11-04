@@ -1,4 +1,4 @@
-import { recentBlogPostsData } from "../data/recentBlogPostsData";
+import { recentPostsData } from "../data/recentPostsData";
 import { RecentPost } from "./RecentPost";
 import "./RecentPosts.css";
 
@@ -16,7 +16,7 @@ export default function RecentPosts (){
             </div>
             <div className="recent-posts--container">
                 <h3 className="recent-posts--heading">RECENT POSTS</h3>
-                {recentBlogPostsData.slice(0, 3).map((post) => (    
+                {recentPostsData.slice(0, 3).map((post) => (    
                     <RecentPost
                         key={post.title}
                         title={post.title}

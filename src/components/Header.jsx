@@ -6,7 +6,7 @@ export default function Header() {
     const activeStyles = {
         fontSize: "1rem",
         fontWeight: "600",
-        color: "var(--text-dark-color)"
+        color: "var(--blue-color)",
     }
 
     return (

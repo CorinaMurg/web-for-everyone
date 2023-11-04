@@ -1,6 +1,6 @@
 
 export const introCorina = {
-    description: [
+    currently: [
         {
             text: "A self-taught developer focused on creating accessible web products.",
             icon: "faUniversalAccess",

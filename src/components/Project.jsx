@@ -6,12 +6,14 @@ export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, im
         <section className="project">
             <div className="project--left">
                 <h2 className="project--left--title">{title}</h2>
-                {description.map((line, index) => (
-                    <p key={index} className="project--left--description-line">{line}</p>
-                ))}  
+                <div>
+                    {description.map((line, index) => (
+                        <p key={index} className="project--left--description-line">{line}</p>
+                    ))}  
+                </div>
                 <div className="project--left--links">
-                    <a className="project--left--links--site" href={hrefSite} target="_blank" rel="noopener noreferrer">Live site</a>
-                    <a className="project--left--links--github" href={hrefGitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a className="project-link" href={hrefSite} target="_blank" rel="noopener noreferrer">Live site</a>
+                    <a className="project-link" href={hrefGitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div> 
             </div>
             <div className="project--right">

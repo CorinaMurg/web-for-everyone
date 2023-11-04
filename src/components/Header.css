@@ -52,6 +52,10 @@ nav a {
     position: relative;
 }
 
+.nav-link:hover {
+    color: var(--blue-color);
+}
+
 .nav-link::before {
     content: "";
     position: absolute;
@@ -59,10 +63,13 @@ nav a {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--text-dark-color);
+    background-color: var(--blue-color);
     transition: width 0.8s;
 }
 
 .nav-link:hover::before {
     width: 100%;
+    color: var(--blue-color);
 }
+
+

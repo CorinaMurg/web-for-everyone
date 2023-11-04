@@ -95,7 +95,7 @@
 .recent-post-link {
     position: relative;
     text-decoration: none;
-    color: var(--text-dark-color);
+    color: var(--blue-color);
     font-weight: 600;
     font-size: 1.1rem;
     cursor: pointer;
@@ -109,7 +109,7 @@
     bottom: 0;
     width: 0;
     height: 2.5px; 
-    background-color: var(--text-dark-color);
+    background-color: var(--blue-color);
     transition: width 0.5s; 
 }
 

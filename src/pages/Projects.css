@@ -2,12 +2,23 @@
 .projects {
     display: flex;
     flex-direction: column;
-    margin-inline: var(--main-margin);
+}
 
+.projects h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    font-family: "Playpen Sans", sans-serif;
 }
 
 .projects--intro {
+    margin-top: 16px;
     margin-bottom: 3rem;
+    margin-inline: var(--main-margin);
+}
+
+.projects--intro a {
+    color: var(--blue-color);
 }
 
 .projects--container {

@@ -3,19 +3,17 @@ export const projectsData = [
     {
         "title": "Lava Leap",
         "description": [
-          "Desktop note-taking app built with React",
-          "Utilizes state, effects, and props to manage interactivity and data flow",
-          "Integrates the React-Mde and Showdown packages for editing and conversion into HTML",
-          "Interacts with Local Storage using JavaScript's Web Storage API, saving and retrieving notes as needed",
-          "Features a toggleable dark mode, enhancing accessibility and user preference"
+          "A 2D platform game implemented using vanilla JavaScript. The game features player movement, enemy patterns, collectible items, and platform obstacles.",
+          "The player progresses through multiple challenging levels. A collision with lava means the level restarts. Should the player run out of lives or successfully complete all levels, the game will come to an end.",
+          "Want an extra challenge or need some help? Adjust your player's number of lives directly in the URL.",
           ],
         "hrefSite": "https://lava-leap.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
-        "imageSrc": "./src/assets/lavaLeap.jpg",
+        "imageSrc": "./src/assets/lavaLeap2.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "imageCredit": "",
         "techStack": "JavaScript  •  ES6 Classes and Constructors",
-        "sampleImageSrc": "./src/assets/lavaLeapSample.jpg",
+        "sampleImageSrc": "./src/assets/lavaLeapSample2.jpg",
         "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "sampleImageCredit": "",
         "sampleProjectDescription": "2D Platform Game built with JavaScript"
@@ -23,10 +21,8 @@ export const projectsData = [
     {
         "title": "Twain & Company",
         "description": [
-            "Integrates ReactDOM.createPortal to implement a shopping cart modal",
-            "Employs useContext and useReducer for cart management, and useRef for focus control",
-            "Firebase backend implementation",
-            "Accessibility-first approach with skip-to-content button, color contrast, button focus, focus outline, modal access via keyboard, and aria-live triggered by cart updates"
+            "Bookstore website built with React. Integrates ReactDOM.createPortal to implement a shopping cart modal. Firebase backend implementation to store book data and orders.",
+            "Accessibility-first approach with skip-to-content button, color contrast, focus outline, modal access via keyboard, and aria-live triggered by cart updates",
             ],
         "hrefSite": "https://twain-and-company.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
@@ -42,11 +38,8 @@ export const projectsData = [
     {
         "title": "Space Tourism Agency",
         "description": [
-            "Leverages semantic HTML5 tags, ARIA roles and properties for enhanced accessibility",
-            "Incorporates a 'Skip to content' link",
-            "Employs CSS Grid + Flexbox for responsive layout",
-            "Deploys <picture> elements to provide webp images with png fallbacks for better performance",
-            "Integrates deferred JavaScript for enriched interactivity."
+            "Multipage website built with JavaScript. Leverages semantic HTML5 tags, ARIA roles and properties for enhanced accessibility. Incorporates a 'Skip to content' link",
+            "Employs CSS Grid + Flexbox for responsive layout. Deploys <picture> elements to provide webp images with png fallbacks for better performance",
             ],
         "hrefSite": "https://corina-space-tourism.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/space-tourism-website",
@@ -62,10 +55,8 @@ export const projectsData = [
     {
         "title": "Neat Notes",
         "description": [
-            "Desktop note-taking app built with React",
-            "Utilizes state, effects, and props to manage interactivity and data flow",
-            "Integrates the React-Mde and Showdown packages for editing and conversion into HTML",
-            "Interacts with Local Storage using JavaScript's Web Storage API, saving and retrieving notes as needed",
+            "Desktop note-taking app built with React. Utilizes state, effects, and props to manage interactivity and data flow",
+            "Integrates the React-Mde and Showdown packages for editing and conversion into HTML. Interacts with Local Storage using JavaScript's Web Storage API, saving and retrieving notes as needed",
             "Features a toggleable dark mode, enhancing accessibility and user preference"
             ],
         "hrefSite": "https://neatnotes.netlify.app/",

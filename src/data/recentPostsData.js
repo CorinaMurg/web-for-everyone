@@ -1,5 +1,5 @@
 
-export const recentBlogPostsData = [
+export const recentPostsData = [
     {
         "title": "How I Finally Understood ES6 Classes & Constructors",
         "blogPostDescription": [
@@ -8,7 +8,7 @@ export const recentBlogPostsData = [
           ],
         "hrefToBlogPost": "https://lava-leap.netlify.app/",
         "hrefToBlogPostAltText": "Link to blog post about the Lava Leap game and how I finally understood ES6 Classes and Constructors",
-        "blogPostImageSrc": "./src/assets/lavaLeap.jpg",
+        "blogPostImageSrc": "./src/assets/lavaLeap2.jpg",
         "blogPostImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "blogPostImagePhotographer": "",
         "blogPostImagePhotographerSrc": "",

@@ -68,8 +68,6 @@ button:focus-visible {
   }
 } */
 
-
-
 :root {
     --text-light-color: #fff;
     --text-dark-color: #000;
@@ -85,7 +83,6 @@ button:focus-visible {
 * {
     box-sizing: border-box;
 }
-
 
 body {
     background-color: var(--primary-bg-light-color);
