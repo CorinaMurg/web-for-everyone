@@ -17,9 +17,9 @@ export function RecentBlogPost ( {
     
     } ) {
     return (
-        <section className="recent-blog-post">
+        <article className="recent-blog-post">
             <div className="recent-blog-post--left">
-                <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer">
+                <a className="recent-blog-post--left--title-anchor" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer">
                     <h3>{title}</h3>
                 </a>
                 <div className="recent-blog-post--description">
@@ -27,13 +27,18 @@ export function RecentBlogPost ( {
                         <p key={index}>{line}</p>
                     ))}
                 </div>
+                <a className="recent-post-link" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
+                    Visit Post
+                </a>
             </div>
             <div className="recent-blog-post--right">
                 <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
-                    <img
-                        src={blogPostImageSrc}
-                        alt={blogPostImageAlt}
-                    />
+                    <div className="recent-blog-post--right--image-div">
+                        <img
+                            src={blogPostImageSrc}
+                            alt={blogPostImageAlt}
+                        />
+                    </div>
                 </a>
                 <div className="photo-credit">
                     {blogPostImagePhotographer && (
@@ -53,7 +58,7 @@ export function RecentBlogPost ( {
                
                 
             </div>
-        </section>
+        </article>
     );
 }
 

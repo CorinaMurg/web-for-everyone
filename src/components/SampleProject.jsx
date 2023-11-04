@@ -3,7 +3,7 @@ import "./SampleProject.css"
 
 export function SampleProject({ title, hrefSite, sampleProjectDescription, sampleImageAlt, sampleImageSrc }) {
     return (
-        <div className="sample-project">
+        <article className="sample-project">
             <div className="sample-project--image-container">
                 <img className="sample-project--image" src={sampleImageSrc} alt={sampleImageAlt} />
             </div>
@@ -11,7 +11,7 @@ export function SampleProject({ title, hrefSite, sampleProjectDescription, sampl
                 <a href={hrefSite}>{title}</a>
             </h3>
             <p className="sample-project--description">{sampleProjectDescription}</p>
-        </div>
+        </article>
     );
 }
 

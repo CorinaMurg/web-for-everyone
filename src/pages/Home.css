@@ -81,10 +81,10 @@ h3 {
 
 
 .recent-posts {
-    margin-block: 2rem;
+    margin-block: 6rem;
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 8rem;
 }
 
 .recent-posts--title {
@@ -108,4 +108,5 @@ h3 {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    margin-top: -4rem;
 }

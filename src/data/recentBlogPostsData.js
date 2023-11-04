@@ -3,8 +3,8 @@ export const recentBlogPostsData = [
     {
         "title": "How I Finally Understood ES6 Classes & Constructors",
         "blogPostDescription": [
-          "Checkout my blog post about a current project and how I finally understood ES6 Classes and Constructors!",
-          "Hint: it did not involve barking dogs. Instead, it involved developing a 2D platform game. And I don't even play video games!",
+          "Hint: it involved The Eloquent JavaScript book and developing a 2D platform game.",
+          "And I don't even play video games!",
           ],
         "hrefToBlogPost": "https://lava-leap.netlify.app/",
         "hrefToBlogPostAltText": "Link to blog post about the Lava Leap game and how I finally understood ES6 Classes and Constructors",
@@ -20,7 +20,7 @@ export const recentBlogPostsData = [
         "title": "Accessibility Resources for Developers",
         "blogPostDescription": [
           "JavaScript objects are mutable. BUT, React asks that we treat objects in state as immutable. Should we listen?",
-          "A quick dive into the world of React to unravel the following mystery: why updating state feels like we're constantly moving into a new home instead of just rearranging our old furniture.",
+          "A quick dive into the world of React to ",
           ],
         "hrefToBlogPost": "",
         "hrefToBlogPostAltText": "Accessibility resources for developers blog post",
@@ -36,7 +36,7 @@ export const recentBlogPostsData = [
         "title": "Immutability in React",
         "blogPostDescription": [
           "JavaScript objects are mutable. BUT, React asks that we treat objects in state as immutable. Should we listen?",
-          "A quick dive into the world of React to unravel the following mystery: why updating state feels like we're constantly moving into a new home instead of just rearranging our old furniture.",
+          "This post is a quick dive into the world of React to look at what it means to use immutable objects and how to safely update objects in state",
           ],
         "hrefToBlogPost": "https://www.corinamurg.dev/post/immutability-in-react",
         "hrefToBlogPostAltText": "Immutability in React blog post",

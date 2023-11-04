@@ -46,14 +46,11 @@ export default function Home() {
                     <div className="recent-posts--description">
                         <p>I&rsquo;m always diving into new topics on my blog.</p>
                         <p>It&rsquo;s where I break things down and make them easier to understand.</p> 
-                        <p>
-                            If JavaScript or accessibility is your passion, 
-                                <a href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">
-                                    <span> </span>please check out my blog
-                                </a>
-                            .
-                        </p>
+                        <p>Interested in JavaScript or accessibility? </p>
                     </div>
+                </div>
+                <div className="recent-posts-links">
+                    <a className="blog-link" href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">Explore My Blog</a>
                 </div>
                 
                 {recentBlogPostsData.slice(0, 3).map((post) => (    
@@ -73,9 +70,7 @@ export default function Home() {
                         
                     />
                 ))}
-                <div className="recent-posts-links">
-                    <a className="blog-link" href="https://www.corinamurg.dev/blog">My Blog</a>
-                </div>
+ 
             </div>
 
         </div>
