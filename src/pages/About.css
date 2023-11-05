@@ -1,5 +1,5 @@
 .about {
-    margin: 50px var(--max-margin);
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -8,6 +8,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-inline: var(--max-margin);
 }
 
 .about--intro--photo-div {
@@ -34,13 +35,32 @@
 }
 
 .about--section {
-    width: 37rem;
+    /* width: 37rem; */
+    padding-inline: calc(var(--max-margin) - 2*var(--navbar-margin)); 
 }
 .about--section h2 {
     color: var(--blue-color);
     font-size: 1.8rem;
     font-weight: 500;
+    margin-top: 0;
 }
 .section-line {
-    margin-block: 32px;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.about--section--currently {
+    border-left: calc(2*var(--navbar-margin)) solid var(--yellow-color);
+}
+
+.about--section--recently-completed {
+    border-left: calc(2*var(--navbar-margin)) solid var(--blue-color);
+}
+
+.about--section--past {
+    border-left: calc(2*var(--navbar-margin)) solid var(--yellow-color);
+}
+
+.about--section--interests {
+    border-left: calc(2*var(--navbar-margin)) solid var(--yellow-color);
 }

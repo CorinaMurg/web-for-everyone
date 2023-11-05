@@ -8,8 +8,16 @@ export const aboutData = {
                 text: "Yuris Coding Club",
                 href: "https://www.yuriscodingclub.com/"
             }, 
-            ", an open-source community focused on accessibility and inclusion in tech."
+            ", an open-source community focused on accessibility and inclusion in tech"
         ],
+        [
+            "Writing about JavaScript and accessibility on ", 
+            {
+                text: "my blog",
+                href: "https://dev.to/corinamurg/"
+            }, 
+        ],
+
         "Enrolled in 'Introduction to Web Accessibility', a W3C course on edX",
         "Developing a meal planner app using the OpenAI API",
         "Learning Playwright",

@@ -79,6 +79,7 @@ button:focus-visible {
     --lightGray-color: #f6f6f6;
     --main-margin: 96px;
     --max-margin: 200px;
+    --navbar-margin: 32px;
 }
 
 * {

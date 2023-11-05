@@ -35,7 +35,7 @@ export default function About() {
     
     const renderAboutSections = () => {
         return Object.entries(aboutData).map(([key, lines]) => (
-            <div key={key} className={`about--section about--section--${key}`}>
+            <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
                 <h2>{key.toUpperCase()}</h2>
                 <div>
                     {renderRegularLines(lines)}
@@ -56,7 +56,7 @@ export default function About() {
                 </div>
                 <div>
                     <h1>Welcome ...</h1>
-                    <p>... to the nutshell version of my web development work!</p>
+                    <p>to the nutshell version of my web development work!</p>
                     <p>If you&rsquo;re interested in a more comprehensive look, please visit my <span> </span>
                         <a href="https://www.linkedin.com/in/corinamurg/">LinkedIn profile</a>
                         .
