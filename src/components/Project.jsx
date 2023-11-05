@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
     return (
-        <section className="project">
+        <article className="project">
             <div className="project--left">
                 <h2 className="project--left--title">{title}</h2>
                 <div>
@@ -18,9 +18,8 @@ export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, im
             </div>
             <div className="project--right">
                 <img className="project--right--image" src={imageSrc} alt={imageAlt} />
-            </div>
-            
-        </section>
+            </div>  
+        </article>
     )
 }
 

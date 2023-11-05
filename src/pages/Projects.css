@@ -13,8 +13,8 @@
 
 .projects--intro {
     margin-top: 16px;
-    margin-bottom: 3rem;
-    margin-inline: var(--main-margin);
+    margin-bottom: 48px;
+    margin: 50px var(--main-margin);
 }
 
 .projects--intro a {

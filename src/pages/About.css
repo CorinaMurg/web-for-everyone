@@ -1,0 +1,46 @@
+.about {
+    margin: 50px var(--max-margin);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about--intro {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about--intro--photo-div {
+    width: 170px;
+}
+
+.about--intro--photo-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about--intro h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    font-family: "Playpen Sans", sans-serif;
+}
+
+.about--sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about--section {
+    width: 37rem;
+}
+.about--section h2 {
+    color: var(--blue-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.section-line {
+    margin-block: 32px;
+}
