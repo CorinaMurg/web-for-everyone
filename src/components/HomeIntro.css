@@ -1,18 +1,21 @@
 .home--intro {
     line-height: 2.7rem;
-    margin-inline: var(--main-margin);
-    margin-top: 16px;
+    margin-top: 48px;
 }
 
 .home--intro--about {
     display: flex;
     flex-direction: column;
+    padding-left: calc(var(--main-margin) - 0.5*var(--navbar-margin));
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }
+
 .home--intro h1 {
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 1.8px;
     font-family: "Playpen Sans", sans-serif;
+    margin-top: 0;
 }
 
 .home--intro--lines {
@@ -32,7 +35,8 @@
 .home--intro p {
     font-size: 2rem;
     font-weight: 500;
-    margin-block: 16px;
+    margin-top: 32px;
+    margin-bottom: 0;
     line-height: inherit;
 }
 

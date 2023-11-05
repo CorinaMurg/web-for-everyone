@@ -10,7 +10,6 @@ export default function RecentPosts (){
                 <div className="recent-posts--description">
                     <p>Interested in JavaScript or accessibility? I&rsquo;m always diving into new topics on my blog.</p>
                     <p>It&rsquo;s where I break things down and make them easier to understand.</p> 
-                    
                 </div>
                 
             </div>

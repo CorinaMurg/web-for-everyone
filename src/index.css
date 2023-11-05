@@ -71,12 +71,16 @@ button:focus-visible {
 :root {
     --text-light-color: #fff;
     --text-dark-color: #000;
+    --blueDark-color: #023047;
+    --blueLighter-color: #219ebc;
     --blue-color: #006699;
-    --yellow-color: #fbbc04;
+    --orange-color: #fb8500;
+    --yellow-color: #ffb703;
     --pink-color: #f38ba3;
     --green-color: #0ba95b;
     --purple-color: #7b5ea7;
     --lightGray-color: #f6f6f6;
+
     --main-margin: 96px;
     --max-margin: 200px;
     --navbar-margin: 32px;

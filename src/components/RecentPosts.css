@@ -8,21 +8,29 @@
 }
 
 .recent-posts--intro {
-    margin-inline: var(--main-margin);
+    padding-left: calc(var(--main-margin) - 0.5*var(--navbar-margin));
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }
 
 .recent-posts--title {
     width: 70%;
     line-height: 2.5rem;
+    margin-top: 0;
 }
 
 .recent-posts--description {
     width: 70%;
     line-height: 2rem;
+    margin-bottom: 0;
 }
 
 .recent-posts--description p {
     margin-block: 0;
+    line-height: 1.1rem;
+}
+
+.recent-posts--description p:not(:last-child) {
+    line-height: 2rem;
 }
 
 .recent-posts--heading {

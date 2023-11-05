@@ -14,7 +14,9 @@
 .projects--intro {
     margin-top: 16px;
     margin-bottom: 48px;
-    margin: 50px var(--main-margin);
+    margin-top: 50px;
+    padding-inline: calc(var(--main-margin) - 0.5*var(--navbar-margin));
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }
 
 .projects--intro a {
