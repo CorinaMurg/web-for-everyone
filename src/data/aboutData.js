@@ -3,7 +3,7 @@ export const aboutData = {
 
     "currently": [
         [
-            "Software Engineer at ", 
+            "Software Engineer & Maintainer at ", 
             {
                 text: "Yuris Coding Club",
                 href: "https://www.yuriscodingclub.com/"
