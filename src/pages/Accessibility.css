@@ -1,0 +1,23 @@
+
+.accessibility {
+    display: flex;
+    flex-direction: column;
+    margin-inline: var(--max-margin);
+}
+
+.accessibility h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    font-family: "Playpen Sans", sans-serif;
+    margin-top: 16px;
+}
+
+.accessibility--image-div {
+    width: 60%;
+    margin-inline: auto;
+}
+
+.accessibility--image-div img {
+    width: 100%;
+}
