@@ -2,9 +2,17 @@ import { a11yIntroData } from "../data/a11yIntroData"
 import { a11yPostsData } from "../data/a11yPostsData"
 import { a11yComponentsData } from "../data/a11yComponentsData"
 import { a11yTipsData } from "../data/a11yTipsData"
+import { A11yTipModal } from "../components/A11yTipModal"
+import { useState } from "react"
 import './Accessibility.css'
 
 export default function Accessibility() {  
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleA11yTipModal = () => {
+		setIsModalOpen(!isModalOpen);
+	};
+
     return (
         <div className="a11y">
             <h1>{a11yIntroData.title}</h1>
@@ -49,13 +57,13 @@ export default function Accessibility() {
                 <h3>A11y Tips</h3>
                 <div className="right--tips">
                     {a11yTipsData.map((tip, index) => (
-                        <a key={index} href={tip.href} aria-label={component.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
-                            <div>
-                                <h4>{component.title.toLowerCase()}</h4>
-                                <p className="right--components--description">{component.description}</p>
-                            </div>
-                        
-                        </a>
+                        <A11yTipModal
+                            isModalOpen={isModalOpen}
+                            closeModal={toggleA11yTipModal}
+                            a11yTip={tip.tip}
+                            key={index}
+                            tipDescription={tip.description}
+                        />
                     ))}
                 </div>
 
