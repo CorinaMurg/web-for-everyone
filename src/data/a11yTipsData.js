@@ -1,15 +1,31 @@
 
 export const a11yTipsData = [
     {
-        "tip": ":focus vs :fcous-visible",
+        "tip": ":focus vs :focus-visible",
         "description": ``,
     },
     {
-        "title": "button vs link",
+        "tip": "button vs link",
         "description": ``,
     },
     {
-        "title": "semantic html",
+        "tip": "title vs heading",
+        "description": ``,
+    },
+    {
+        "tip": "label vs aria-label",
+        "description": ``,
+    },
+    {
+        "tip": "hidden vs aria-hidden",
+        "description": ``,
+    },
+    {
+        "tip": "display:none vs visibility:hidden",
+        "description": ``,
+    },
+    {
+        "tip": "aria-label vs aria-labelledby",
         "description": ``,
     },
 ];

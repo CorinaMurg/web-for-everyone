@@ -21,9 +21,10 @@
     grid-column: 1 / 1; 
     grid-row: 3 / 4; 
     color: var(--blue-color);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-top: 48px;
+    text-transform: uppercase;
 }
 
 .a11y h3 {
@@ -32,10 +33,24 @@
     margin-bottom: 36px;
 }
 
+h3.right--components-heading,
+h3.right--tips-heading {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+
+.right--tips-heading {
+    margin-top: 80px; 
+}
+
+/* accessible components */
 .a11y h4 {
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
 .a11y a {

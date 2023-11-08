@@ -1,6 +1,8 @@
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 
+import PropTypes from 'prop-types';
+
 export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTipDescription}){
     return (
         <ReactModal
@@ -22,6 +24,14 @@ export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTip
                     overflow: 'auto',
                     borderRadius: '10px',
                     padding: '30px',
+                    top: '50%',
+                    left: '50%',
+                    right: 'auto',
+                    bottom: 'auto',
+                    marginRight: '-50%',
+                    transform: 'translate(-50%, -50%)',
+                    border: 'none',
+                    background: 'white',
                 },
             }}
         >
@@ -31,5 +41,11 @@ export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTip
 
         </ReactModal>
     );
-};
+}
 
+A11yTipModal.propTypes = {
+    isModalOpen: PropTypes.bool.isRequired,
+    closeModal: PropTypes.func.isRequired,
+    a11yTip: PropTypes.string.isRequired,
+    a11yTipDescription: PropTypes.string.isRequired,
+};
