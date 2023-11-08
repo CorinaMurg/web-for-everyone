@@ -36,30 +36,32 @@ export default function Accessibility() {
 
             <aside className="right">
                 <h3 className="right--components-heading">Accessible Components</h3>
-                <div className="right--components">
+                <p className="right--components-subheading">Examples of code</p>
+                <ul className="right--components">
                     {a11yComponentsData.map((component, index) => (
-                        <a key={index} href={component.href} aria-label={component.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
-                            <div>
-                                <h4>{component.title.toLowerCase()}</h4>
-                                <p className="right--components--description">{component.description}</p>
-                            </div>
-                        
-                        </a>
+                        <li key={index}>
+                            <a href={component.href} aria-label={component.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
+                                <p className="component-title">
+                                    {component.title.toLowerCase()}
+                                </p>
+                            </a>
+                        </li>
                     ))}
-                </div>
+                </ul>
 
-                <h3 className="right--tips-heading">A11y Tips</h3>
-                <div className="right--tips">
+                <h3 className="right--tips-heading">Accessibility Tips</h3>
+                <p className="right--tips-subheading">Nuances of similar attributes/elements</p>
+                <ul className="right--tips">
                     {a11yTipsData.map((tipData, index) => (
-                        <A11yTipItem
-                            key={index}
-                            tip={tipData.tip}
-                            description={tipData.description}
-                        />
+                        <li key={index}>
+                            <A11yTipItem
+                                tip={tipData.tip}
+                                description={tipData.description}
+                            />
+                        </li>
                     ))}
-                </div>
+                </ul>
             </aside>
-            
         </div>
     )
 }

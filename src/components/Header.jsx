@@ -17,6 +17,12 @@ export default function Header() {
             </div>
             <nav>
                 <NavLink
+                    to="/"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    <span className="nav-link">Home</span>
+                </NavLink>
+                <NavLink
                     to="/projects"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >

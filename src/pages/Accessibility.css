@@ -15,6 +15,7 @@
     font-weight: 700;
     letter-spacing: 1.8px;
     font-family: "Playpen Sans", sans-serif;
+   
 }
 
 .a11y h2 {
@@ -40,17 +41,27 @@ h3.right--tips-heading {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--blue-color);
+    margin-bottom: 0;
 }
 
-.right--tips-heading {
+
+h3.right--tips-heading {
     margin-top: 80px; 
+   
+}
+
+.right--components-subheading,
+.right--tips-subheading {
+    margin-top: 0;
+    margin-bottom: 36px;
 }
 
 /* accessible components */
-.a11y h4 {
+.component-title {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 24px;
+    display: inline-block;
 }
 
 .a11y a {
@@ -58,10 +69,26 @@ h3.right--tips-heading {
     color: var(--text-dark-color);
 }
 
+.right>ul {
+    padding-left: 0;
+}
+
+.a11y li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .intro--text {
     grid-column: 1 / 2; 
     grid-row: 2 / 3; 
-    width: 78%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: calc((-1)*var(--main-margin));
+    padding-left: calc(var(--main-margin) - 0.5*var(--navbar-margin));
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }
 
 .image-div {
@@ -89,7 +116,7 @@ h3.right--tips-heading {
 }
 
 .left--posts--description {
-    width: 80%;
+    width: 90%;
 }
 
 .right {

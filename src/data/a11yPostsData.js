@@ -17,7 +17,14 @@ export const a11yPostsData = [
             lead to a more predictable and user-friendly layout.`,
         "href": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques#after-updating-to-px-units",
         "hrefAriaLabel": "Read about why px units may be superior for margin and padding for better accessibility and user experience."
-    }
+    },
+    {
+        "title": "Recommended Accessibility Courses",
+        "description": ``,
+        "href": "",
+        "hrefAriaLabel": ""
+    },
+    
     
     
 ];
