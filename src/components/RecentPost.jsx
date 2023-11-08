@@ -4,16 +4,16 @@ import PropTypes from "prop-types"
 
 export function RecentPost ( {
     title, 
-    blogPostDescription, 
-    hrefToBlogPost, 
-    hrefToBlogPostTitle,
-    blogPostImageAlt, 
-    blogPostImageSrc,
-    blogPostImagePhotographer,
-    blogPostImagePhotographerSrc,
-    blogPostImagePhotographerSrcTitle,
+    description, 
+    href, 
+    hrefAriaLabel,
+    imageAlt, 
+    imageSrc,
+    photographer,
+    photographerSrc,
+    photographerSrcAriaLabel,
     unsplashSrc,
-    unsplashSrcTitle,
+    unsplashSrcAriaLabel,
     
     } ) {
     return (
@@ -22,33 +22,33 @@ export function RecentPost ( {
                 <h4>{title}</h4>
                 <div>
                     <div className="recent-post--description">
-                        {blogPostDescription.map((line, index) => (
+                        {description.map((line, index) => (
                             <p key={index}>{line}</p>
                         ))}
                     </div>
-                    <a className="recent-post-link" href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
+                    <a className="recent-post-link" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
                         Read more
                     </a>
                 </div>
             </div>
             <div className="recent-post--right">
-                <a href={hrefToBlogPost} target="_blank" rel="noopener noreferrer" title={hrefToBlogPostTitle}>
+                <a href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
                     <div className="recent-post--right--image-div">
                         <img
-                            src={blogPostImageSrc}
-                            alt={blogPostImageAlt}
+                            src={imageSrc}
+                            alt={imageAlt}
                         />
                     </div>
                 </a>
                 <div className="photo-credit">
-                    {blogPostImagePhotographer && (
+                    {photographer && (
                         <>
                             Photo by{' '}
-                            <a href={blogPostImagePhotographerSrc} target="_blank" rel="noopener noreferrer" title={blogPostImagePhotographerSrcTitle}>
-                                <span className="photo-credit--link">{blogPostImagePhotographer}</span>
+                            <a href={photographerSrc} target="_blank" rel="noopener noreferrer" title={photographerSrcAriaLabel} aria-label={photographerSrcAriaLabel}>
+                                <span className="photo-credit--link">{photographer}</span>
                             </a>
                             {' '}on{' '}
-                            <a href={unsplashSrc} target="_blank" rel="noopener noreferrer" title={unsplashSrcTitle}>
+                            <a href={unsplashSrc} target="_blank" rel="noopener noreferrer" title={unsplashSrcAriaLabel}>
                                 <span className="photo-credit--link">Unsplash</span>
                             </a>
                         </>
@@ -64,15 +64,15 @@ export function RecentPost ( {
 
 RecentPost.propTypes = {
     title: PropTypes.string.isRequired,
-    blogPostDescription: PropTypes.arrayOf(PropTypes.string).isRequired,
-    hrefToBlogPost: PropTypes.string.isRequired,
-    hrefToBlogPostTitle: PropTypes.string,
-    blogPostImageSrc: PropTypes.string.isRequired,
-    blogPostImageAlt: PropTypes.string.isRequired,
-    blogPostImageCredit: PropTypes.string,
-    blogPostImagePhotographer: PropTypes.string.isRequired,
-    blogPostImagePhotographerSrc: PropTypes.string,
-    blogPostImagePhotographerSrcTitle: PropTypes.string,
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
+    href: PropTypes.string.isRequired,
+    hrefAriaLabel: PropTypes.string,
+    imageSrc: PropTypes.string.isRequired,
+    imageAlt: PropTypes.string.isRequired,
+    imageCredit: PropTypes.string,
+    photographer: PropTypes.string,
+    photographerSrc: PropTypes.string,
+    photographerSrcAriaLabel: PropTypes.string,
     unsplashSrc: PropTypes.string,
-    unsplashSrcTitle: PropTypes.string,
+    unsplashSrcAriaLabel: PropTypes.string,
 };

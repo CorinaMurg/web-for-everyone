@@ -1,23 +1,108 @@
 
-.accessibility {
-    display: flex;
-    flex-direction: column;
-    margin-inline: var(--max-margin);
+.a11y {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: auto auto auto auto; 
+    gap: 16px; 
+    margin-inline: var(--main-margin);
 }
 
-.accessibility h1 {
-    font-size: 3rem;
+.a11y h1 {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2; 
+    font-size: 3.5rem;
+    line-height: 4rem;
     font-weight: 700;
     letter-spacing: 1.8px;
     font-family: "Playpen Sans", sans-serif;
-    margin-top: 16px;
 }
 
-.accessibility--image-div {
-    width: 60%;
-    margin-inline: auto;
+.a11y h2 {
+    grid-column: 1 / 1; 
+    grid-row: 3 / 4; 
+    color: var(--blue-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 48px;
 }
 
-.accessibility--image-div img {
+.a11y h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.a11y h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.a11y a {
+    text-decoration: none;
+    color: var(--text-dark-color);
+}
+
+.intro--text {
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3; 
+    width: 78%;
+}
+
+.image-div {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    justify-self: center;
+    align-self: center;
     width: 100%;
+}
+
+.image-div img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.left {
+    grid-column: 1 / 2; 
+    grid-row: 4 / 5; 
+}
+
+.left--posts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.left--posts--description {
+    width: 80%;
+}
+
+.right {
+    grid-column: 2 / 3; 
+    grid-row: 4 / 5; 
+}
+
+.read-more {
+    position: relative;
+    text-decoration: none;
+    color: var(--blue-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 6.15rem;
+}
+
+.read-more::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2.5px; 
+    background-color: var(--blue-color);
+    transition: width 0.5s; 
+}
+
+.read-more:hover::before {
+    width: 100%; 
 }

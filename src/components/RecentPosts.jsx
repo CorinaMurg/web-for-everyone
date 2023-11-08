@@ -19,16 +19,16 @@ export default function RecentPosts (){
                     <RecentPost
                         key={post.title}
                         title={post.title}
-                        blogPostDescription={post.blogPostDescription}
-                        hrefToBlogPost={post.hrefToBlogPost}
-                        hrefToBlogPostTitle={post.hrefToBlogPostTitle}
-                        blogPostImageAlt={post.blogPostImageAlt}
-                        blogPostImageSrc={post.blogPostImageSrc}
-                        blogPostImagePhotographer={post.blogPostImagePhotographer}
-                        blogPostImagePhotographerSrc={post.blogPostImagePhotographerSrc}
-                        blogPostImagePhotographerTitle={post.blogPostImagePhotographerTitle}
+                        description={post.description}
+                        href={post.hrefToBlogPost}
+                        hrefAriaLabel={post.hrefAriaLabel}
+                        imageAlt={post.imageAlt}
+                        imageSrc={post.imageSrc}
+                        photographer={post.photographer}
+                        photographerSrc={post.photographerSrc}
+                        photographerAriaLabel={post.photographerAriaLabel}
                         unsplashSrc={post.unsplashSrc}
-                        unsplashSrcTitle={post.unsplashSrcTitle}
+                        unsplashSrcAriaLabel={post.unsplashSrcAriaLabel}
                     />
                 ))}
             </div>

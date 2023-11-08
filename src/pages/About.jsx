@@ -58,7 +58,7 @@ export default function About() {
                     <h1>Welcome ...</h1>
                     <p>to the nutshell version of my web development work!</p>
                     <p>For a more comprehensive view, please visit my <span> </span>
-                        <a href="https://www.linkedin.com/in/corinamurg/">LinkedIn profile</a>
+                        <a href="https://www.linkedin.com/in/corinamurg/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
                         .
                     </p>
                 </div>
