@@ -80,6 +80,7 @@ button:focus-visible {
     --green-color: #0ba95b;
     --purple-color: #7b5ea7;
     --lightGray-color: #f6f6f6;
+    --gray-color:#808080;
 
     --main-margin: 96px;
     --max-margin: 200px;
