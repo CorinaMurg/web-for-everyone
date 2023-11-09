@@ -1,4 +1,4 @@
-import corinaPhoto from "../assets/CorinaMurg.jpg";
+import corinaPhoto from "/assets/CorinaMurg.jpg";
 import "./About.css";
 import { aboutData } from "../data/aboutData";
 

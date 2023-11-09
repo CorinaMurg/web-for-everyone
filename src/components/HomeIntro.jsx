@@ -1,5 +1,5 @@
 import { introCorina } from '../data/introCorinaData.js';
-import sprout from "../assets/Sprout.jpg"
+import sprout from "/assets/Sprout.jpg"
 import './HomeIntro.css';
 
 export default function HomeIntro() {
