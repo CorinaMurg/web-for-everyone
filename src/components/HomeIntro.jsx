@@ -18,12 +18,30 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src={sprout} alt="Pots with dirt and green sprouts."/>
+                <img src={sprout} alt="A group of pots with dirt and green sprouts."/>
                 <div className="home--intro--image--caption">
                     Let&rsquo;s Grow an Accessible World
                 </div>
-                <div className="home--intro--image--credit">
-                    Photo by ... on Unsplash
+
+                <div className="photo-credit">
+                    Photo by {''}
+                    <a href="https://unsplash.com/@rreinhardt" 
+                        aria-label="Rachel Reinhardt's portfolio page on Unsplash"
+                        target="_blank" rel="noopener noreferrer"
+                        title="Rachel Reinhardt's portfolio page on Unsplash"
+                    >
+                        <span className="photo-credit--link">Rachel Reinhardt</span>
+                    </a> 
+                    {' '}on{' '}
+                    <span> </span>
+                    <a href="https://unsplash.com/photos/a-group-of-seedlings-sprouting-from-seed-bags-xWD9BbsgHy4" 
+                        aria-label="Link to Rachel Reinhardt's sprouts photo on Unsplash"
+                        target="_blank" rel="noopener noreferrer"
+                        title="Link to Rachel Reinhardt's sprouts photo on Unsplash"
+                    >
+                        <span className="photo-credit--link">Unsplash</span>
+                    </a>
+                    .
                 </div>
             </div>
                

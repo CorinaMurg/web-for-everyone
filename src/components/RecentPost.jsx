@@ -33,7 +33,7 @@ export function RecentPost ( {
             </div>
             <div className="recent-post--right">
                 <a href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
-                    <div className="recent-post--right--image-div">
+                    <div className="recent-post--image">
                         <img
                             src={imageSrc}
                             alt={imageAlt}
@@ -54,9 +54,6 @@ export function RecentPost ( {
                         </>
                     )}
                 </div>
-
-               
-                
             </div>
         </article>
     );

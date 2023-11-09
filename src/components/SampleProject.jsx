@@ -4,8 +4,8 @@ import "./SampleProject.css"
 export function SampleProject({ title, hrefSite, sampleProjectDescription, sampleImageAlt, sampleImageSrc }) {
     return (
         <article className="sample-project">
-            <div className="sample-project--image-container">
-                <img className="sample-project--image" src={sampleImageSrc} alt={sampleImageAlt} />
+            <div className="sample-project--image">
+                <img src={sampleImageSrc} alt={sampleImageAlt} />
             </div>
             
             <a className="sample-project--title--link" href={hrefSite} target="_blank" rel="noopener noreferrer">

@@ -16,8 +16,7 @@
     }
 }
 
-
-.sample-project--image-container {
+.sample-project--image {
     aspect-ratio: 1 / 1;
     background-color: var(--lightGray-color);
     display: flex;
@@ -26,13 +25,14 @@
     width: 100%;
 }
 
-.sample-project--image-container img {
+.sample-project--image img {
     width: 80%;
-    height: auto;
+    height: 60%;
+    object-fit: cover;
 }
 
 .sample-project--title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 500;
     margin-top: 32px;
     position: relative; 
