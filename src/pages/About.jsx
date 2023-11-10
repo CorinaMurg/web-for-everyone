@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import corinaPhoto from "/assets/CorinaMurg.jpg";
-import "./About.css";
 import { aboutData } from "../data/aboutData";
+import "./About.css";
 
 export default function About() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const renderLineWithLink = (chunks) => {
         return (
             <>
@@ -51,7 +54,8 @@ export default function About() {
                     <img 
                         className="about--intro-corina-photo" 
                         src={corinaPhoto} 
-                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top">
+                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
+                        loading="lazy">
                     </img>
                 </div>
                 <div>

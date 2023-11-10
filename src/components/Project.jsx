@@ -17,7 +17,7 @@ export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, im
                 </div> 
             </div>
             <div className="project--right">
-                <img className="project--right--image" src={imageSrc} alt={imageAlt} />
+                <img className="project--right--image" src={imageSrc} alt={imageAlt} loading='lazy'/>
             </div>  
         </article>
     )

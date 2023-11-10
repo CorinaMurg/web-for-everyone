@@ -5,7 +5,7 @@ export function SampleProject({ title, hrefSite, sampleProjectDescription, sampl
     return (
         <article className="sample-project">
             <div className="sample-project--image">
-                <img src={sampleImageSrc} alt={sampleImageAlt} />
+                <img src={sampleImageSrc} alt={sampleImageAlt} loading='lazy'/>
             </div>
             
             <a className="sample-project--title--link" href={hrefSite} target="_blank" rel="noopener noreferrer">

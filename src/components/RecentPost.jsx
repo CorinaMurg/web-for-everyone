@@ -37,6 +37,7 @@ export function RecentPost ( {
                         <img
                             src={imageSrc}
                             alt={imageAlt}
+                            loading='lazy'
                         />
                     </div>
                 </a>
