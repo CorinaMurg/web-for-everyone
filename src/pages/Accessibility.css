@@ -59,7 +59,7 @@ h3.right--tips-heading {
 .component-title {
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-block: 12px;
     display: inline-block;
 }
 
@@ -70,11 +70,20 @@ h3.right--tips-heading {
 
 .right>ul {
     padding-left: 0;
+    margin-block: 0;
 }
 
 .a11y li {
-    list-style-type: none;
     padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.square {
+    width: 10px;
+    height: 6px;
+    background-color: var(--yellow-color);
 }
 
 .intro--text {
@@ -132,9 +141,8 @@ h3.right--tips-heading {
     text-decoration: none;
     color: var(--blue-color);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
-    width: 6.15rem;
 }
 
 .read-more::before {
@@ -143,7 +151,7 @@ h3.right--tips-heading {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2.5px; 
+    height: 2px; 
     background-color: var(--blue-color);
     transition: width 0.5s; 
 }

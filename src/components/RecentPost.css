@@ -90,27 +90,26 @@
 }
 
 
-.recent-post-link {
+.read-more {
     position: relative;
     text-decoration: none;
     color: var(--blue-color);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
-    width: 6.15rem;
 }
 
-.recent-post-link::before {
+.read-more::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2.5px; 
+    height: 2px; 
     background-color: var(--blue-color);
     transition: width 0.5s; 
 }
 
-.recent-post-link:hover::before {
+.read-more:hover::before {
     width: 100%; 
 }

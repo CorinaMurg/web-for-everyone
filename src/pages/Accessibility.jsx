@@ -27,7 +27,9 @@ export default function Accessibility() {
                             <div>
                                 <h3>{post.title}</h3>
                                 <p className="left--posts--description">{post.description}</p>
-                                <p className="read-more">Read More</p>
+                                <a href={post.href} target="_blank" rel="noopener noreferrer" title={post.hrefAriaLabel} aria-label={post.hrefAriaLabel}>
+                                    <span className="read-more">Read more</span>
+                                </a>
                             </div>
                         </a>
                     ))}
@@ -40,6 +42,7 @@ export default function Accessibility() {
                 <ul className="right--components">
                     {a11yComponentsData.map((component, index) => (
                         <li key={index}>
+                            <div className="square"></div>
                             <a href={component.href} aria-label={component.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
                                 <p className="component-title">
                                     {component.title.toLowerCase()}
@@ -54,6 +57,7 @@ export default function Accessibility() {
                 <ul className="right--tips">
                     {a11yTipsData.map((tipData, index) => (
                         <li key={index}>
+                            
                             <A11yTipItem
                                 tip={tipData.tip}
                                 description={tipData.description}
