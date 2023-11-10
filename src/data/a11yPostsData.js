@@ -24,6 +24,15 @@ export const a11yPostsData = [
         "href": "",
         "hrefAriaLabel": ""
     },
+    {
+        "title": "Can AI help boost accessibility?",
+        "description": `This article published by "UW News" discusses a study by University of Washington 
+        researchers on the accessibility potential of AI tools. The study found mixed results; while AI helped 
+        in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
+        and exhibited ableist biases. `,
+        "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
+        "hrefAriaLabel": "Link to UW News article about the accessibility potential of AI tools like ChatGPT and Midjourney for people with disabilities."
+    },
     
     
     

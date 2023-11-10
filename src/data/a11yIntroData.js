@@ -1,6 +1,6 @@
 
 export const a11yIntroData = {
-    "title": "I believe in a web where everyone has a place.",
+    "title": "I believe in a web where EVERYONE has a place.",
     "description": [
         `This principle drives my work in frontend development. Accessibility is not just a 
         feature - it's a responsibility to ensure every user feels seen and valued.`,
@@ -9,8 +9,8 @@ export const a11yIntroData = {
         determination to create an accessible product; everything else can be learned.`,
         `Explore the links below for more information and tips on making your work more accessible.`
     ],
-    "imageSrc": "./src/assets/brickWallWithAccessibleEntrySign.jpg",
-    "imageAlt": "brick Wall With Accessible Entry Sign",
+    "imageSrc": "/assets/brickWallWithAccessibleEntrySign.jpg",
+    "imageAlt": "Brick wall with accessible entry sign",
     "photographer": "Daniel Ali",
     "photographerSrc": "https://unsplash.com/@untodesign_",
     "photographerAriaLabel": "Link to Daniel Ali's Unsplash profile",

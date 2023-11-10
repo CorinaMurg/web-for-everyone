@@ -3,7 +3,7 @@ export const recentPostsData = [
     {
         "title": "How I Finally Understood ES6 Classes & Constructors",
         "description": [
-          `Hint: it involved building Lava Leap, a 2D platform game. And I don't play video games!
+          `Hint: it involved building Lava Leap, a 2D platform game. And I don't even play video games!
           I used to believe that classes & constructors were secret backend tools. 
           For this game I wrote “Constructor” SEVEN times!`,
           `Read about my experience building the game using the "Eloquent JavaScript" book as a guide and 
