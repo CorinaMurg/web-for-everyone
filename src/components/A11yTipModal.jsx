@@ -1,9 +1,10 @@
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
+import './A11yTipModal.css';
 
 import PropTypes from 'prop-types';
 
-export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTipDescription}){
+export default function A11yTipModal ({isModalOpen, closeModal, tip, leftDescription, rightDescription}){
     return (
         <ReactModal
             className="modal"
@@ -29,16 +30,16 @@ export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTip
                   padding: '30px',
                   border: 'none',
                   background: 'white',
-                  maxWidth: '500px', // Set a max-width if you want to limit its size
-                  maxHeight: '80%',  // Set a max-height if you want to limit its size
-                  overflowY: 'auto', // Add scroll if content is too long
+                  maxWidth: '500px',
+                  maxHeight: '80%',  
+                  overflowY: 'auto', 
                 },
             }}   
         >
-            <h2>{a11yTip}</h2>
-            <p>{a11yTipDescription}</p>
+            <h3>{tip}</h3>
+            <p>{leftDescription}</p>
+            <p>{rightDescription}</p>
             <button type="button" onClick={closeModal}>Close</button>
-
         </ReactModal>
     );
 }
@@ -46,6 +47,7 @@ export default function A11yTipModal ({isModalOpen, closeModal, a11yTip, a11yTip
 A11yTipModal.propTypes = {
     isModalOpen: PropTypes.bool.isRequired,
     closeModal: PropTypes.func.isRequired,
-    a11yTip: PropTypes.string.isRequired,
-    a11yTipDescription: PropTypes.string.isRequired,
+    tip: PropTypes.string.isRequired,
+    leftDescription: PropTypes.string.isRequired,
+    rightDescription: PropTypes.string.isRequired,
 };

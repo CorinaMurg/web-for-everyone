@@ -83,8 +83,13 @@ export default function Accessibility() {
                         <li key={index}>
                             
                             <A11yTipItem
-                                tip={tipData.tip}
-                                description={tipData.description}
+                                tip={
+                                    <>
+                                        {tipData.left} <span className="vs">vs.</span> {tipData.right}
+                                    </>
+                                }
+                                descriptionLeft={tipData.descriptionLeft}
+                                descriptionRight={tipData.descriptionRight}
                             />
                         </li>
                     ))}

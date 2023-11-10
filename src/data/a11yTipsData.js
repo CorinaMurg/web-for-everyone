@@ -1,31 +1,46 @@
 
 export const a11yTipsData = [
     {
-        "tip": ":focus vs :focus-visible",
-        "description": ``,
+    "left": ":focus",
+    "right": ":focus-visible",
+    "leftDescription": ``,
+    "rightDescription": ``,
+    },
+
+    {
+        "left": "button",
+        "right": "link",
+        "leftDescription": "",
+        "rightDescription": ""
     },
     {
-        "tip": "button vs link",
-        "description": ``,
+        "left": "title",
+        "right": "heading",
+        "leftDescription": "",
+        "rightDescription": ""
     },
     {
-        "tip": "title vs heading",
-        "description": ``,
+        "left": "label",
+        "right": "aria-label",
+        "leftDescription": "",
+        "rightDescription": ""
     },
     {
-        "tip": "label vs aria-label",
-        "description": ``,
+        "left": "hidden",
+        "right": "aria-hidden",
+        "leftDescription": "",
+        "rightDescription": ""
     },
     {
-        "tip": "hidden vs aria-hidden",
-        "description": ``,
+        "left": "display:none",
+        "right": "visibility:hidden",
+        "leftDescription": "",
+        "rightDescription": ""
     },
     {
-        "tip": "display:none vs visibility:hidden",
-        "description": ``,
-    },
-    {
-        "tip": "aria-label vs aria-labelledby",
-        "description": ``,
-    },
-];
+        "left": "aria-label",
+        "right": "aria-labelledby",
+        "leftDescription": "",
+        "rightDescription": ""
+    }
+]

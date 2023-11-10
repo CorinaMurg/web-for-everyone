@@ -1,0 +1,12 @@
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 10rem;
+    padding: 4px;
+}

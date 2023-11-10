@@ -196,3 +196,14 @@ h3.right--tips-heading {
 .photo-credit--link:hover::before {
     width: 100%;
 }
+
+.vs {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tip-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
