@@ -22,7 +22,7 @@ export default function Accessibility() {
             </div>
               
             <div className="intro--image">
-                <img alt={a11yIntroData.imageAlt} src={a11yIntroData.imageSrc}/>
+                <img alt="" src={a11yIntroData.imageSrc}/>
                 <div className="photo-credit">
                     Photo by{' '}
                     <a href={a11yIntroData.photographerSrc} 

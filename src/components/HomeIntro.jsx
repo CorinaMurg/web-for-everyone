@@ -18,7 +18,7 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src={sprout} alt="A group of pots with dirt and green sprouts." loading='lazy'/>
+                <img src={sprout} alt="A group of pots with dirt and green sprouts."/>
                 <div className="home--intro--image--caption">
                     Let&rsquo;s Grow an Accessible World
                 </div>
