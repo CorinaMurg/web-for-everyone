@@ -2,7 +2,7 @@
     margin: 10px 0;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .about a {
