@@ -6,8 +6,7 @@ export default function Projects() {
     return (
         <div className="projects">
             <div className="projects--intro">
-                <h1>Welcome!</h1>
-                <p>This is a selection of my favorite projects.</p>
+                <h1>A selection of my favorite projects!</h1>
                 <p>Please visit <span> </span>
                     <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
                         my GitHub page

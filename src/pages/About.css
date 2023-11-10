@@ -1,5 +1,5 @@
 .about {
-    margin: 50px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -13,14 +13,18 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-inline: var(--max-margin);
+    padding-inline: var(--max-margin);
+    position: relative;
 }
 
-.about--intro--photo-div {
-    width: 170px;
+.about--intro--image {
+    width: 150px;
+    position: absolute;
+    left: calc(0.5*var(--navbar-margin));
 }
 
-.about--intro--photo-div img {
+.about--intro--image img {
+    
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -31,6 +35,7 @@
     font-weight: 700;
     letter-spacing: 1.8px;
     font-family: "Playpen Sans", sans-serif;
+    margin-top: 40px;
 }
 
 .about--sections {

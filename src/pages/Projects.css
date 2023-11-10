@@ -9,12 +9,12 @@
     font-weight: 700;
     letter-spacing: 1.8px;
     font-family: "Playpen Sans", sans-serif;
+    margin-top: 40px;
 }
 
 .projects--intro {
-    margin-top: 16px;
     margin-bottom: 48px;
-    margin-top: 50px;
+    margin-top: 10px;
     padding-inline: calc(var(--main-margin) - 0.5*var(--navbar-margin));
     border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }

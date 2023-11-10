@@ -47,7 +47,7 @@ export default function About() {
     return (
         <div className="about">
             <div className="about--intro">
-                <div className="about--intro--photo-div">
+                <div className="about--intro--image">
                     <img 
                         className="about--intro-corina-photo" 
                         src={corinaPhoto} 
@@ -55,8 +55,7 @@ export default function About() {
                     </img>
                 </div>
                 <div>
-                    <h1>Welcome ...</h1>
-                    <p>to the nutshell version of my web development work!</p>
+                    <h1>My work in a nutshell!</h1>
                     <p>For a more comprehensive view, please visit my <span> </span>
                         <a href="https://www.linkedin.com/in/corinamurg/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
                         .
