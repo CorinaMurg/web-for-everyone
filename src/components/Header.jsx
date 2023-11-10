@@ -13,7 +13,7 @@ export default function Header() {
         <header>
             <div className="site-name-container">
                 <Link className="site-name" to="/">Corina Murg </Link>
-                <span>Software Engineer. Accessibility Advocate</span>
+                <span>Software Engineer focused on Accessibility</span>
             </div>
             <nav>
                 <NavLink
