@@ -13,7 +13,7 @@ export const a11yIntroData = {
     "imageAlt": "Brick wall with accessible entry sign",
     "photographer": "Daniel Ali",
     "photographerSrc": "https://unsplash.com/@untodesign_",
-    "photographerAriaLabel": "Link to Daniel Ali's Unsplash profile",
+    "photographerSrcAriaLabel": "Link to Daniel Ali's Unsplash profile",
     "unsplashSrc": "https://unsplash.com/photos/black-and-white-brick-wall-ju1yFZkrxVg",
     "unsplashSrcAriaLabel": "Link to Daniel Ali's brick wall photo on Unsplash",
 };

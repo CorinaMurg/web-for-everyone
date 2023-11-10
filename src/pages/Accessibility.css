@@ -104,15 +104,16 @@ h3.right--tips-heading {
     margin-bottom: 0;
 }
 
-.image-div {
+.intro--image {
     grid-column: 2 / 3; 
     grid-row: 2 / 3; 
     justify-self: center;
     align-self: center;
     width: 100%;
+    position: relative;
 }
 
-.image-div img {
+.intro--image img {
     width: 100%;
     object-fit: cover;
 }
@@ -159,4 +160,39 @@ h3.right--tips-heading {
 
 .read-more:hover::before {
     width: 100%; 
+}
+
+.photo-credit {
+    position: absolute;   
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    width: 100%;
+    bottom: -1rem; 
+}
+
+.photo-credit a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 600;
+}
+
+.photo-credit--link {
+    position: relative;
+}
+
+.photo-credit--link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-dark-color);
+    transition: width 0.8s;
+}
+
+.photo-credit--link:hover::before {
+    width: 100%;
 }

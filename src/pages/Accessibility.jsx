@@ -4,6 +4,7 @@ import { a11yComponentsData } from "../data/a11yComponentsData"
 import { a11yTipsData } from "../data/a11yTipsData"
 import A11yTipItem from "../components/A11yTipItem"
 import './Accessibility.css'
+import '../index.css'
 
 export default function Accessibility() {  
     return (
@@ -14,11 +15,29 @@ export default function Accessibility() {
                     <p key={index}>{line}</p>
                 ))}
             </div>
-            
-            <div className="image-div">
+              
+            <div className="intro--image">
                 <img alt={a11yIntroData.imageAlt} src={a11yIntroData.imageSrc}/>
+                <div className="photo-credit">
+                    Photo by{' '}
+                    <a href={a11yIntroData.photographerSrc} 
+                        target="_blank" rel="noopener noreferrer" 
+                        title={a11yIntroData.photographerSrcAriaLabel} 
+                        aria-label={a11yIntroData.photographerSrcAriaLabel}
+                    >
+                        <span className="photo-credit--link">{a11yIntroData.photographer}</span>
+                    </a>
+                    {' '}on{' '}
+                    <a href={a11yIntroData.unsplashSrc} 
+                        target="_blank" rel="noopener noreferrer" 
+                        title={a11yIntroData.unsplashSrcAriaLabel} 
+                        aria-label={a11yIntroData.unsplashSrcAriaLabel}
+                    >
+                        <span className="photo-credit--link">Unsplash</span>
+                    </a>
+                </div>
             </div>
-
+            
             <h2>Recent Posts + Resources</h2>     
             <div className="left">
                 <div className="left--posts">

@@ -53,8 +53,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* overflow: hidden; */
-    /* margin-bottom: 3rem; */
 }
 
 .home--intro--image img {
@@ -81,6 +79,7 @@
     position: absolute;
     bottom: -1.2rem;    
     font-size: 0.9rem;
+    line-height: 0.9rem;
     text-align: center;
 }
 
