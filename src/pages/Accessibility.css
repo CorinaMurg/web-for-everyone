@@ -141,7 +141,7 @@ h3.right--tips-heading {
     grid-row: 4 / 5; 
 }
 
-.left--posts {
+.left {
     display: flex;
     flex-direction: column;
     gap: 32px;

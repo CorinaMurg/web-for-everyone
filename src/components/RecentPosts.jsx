@@ -20,20 +20,25 @@ export default function RecentPosts (){
                         key={post.title}
                         title={post.title}
                         description={post.description}
-                        href={post.hrefToBlogPost}
+                        href={post.href}
                         hrefAriaLabel={post.hrefAriaLabel}
                         imageAlt={post.imageAlt}
                         imageSrc={post.imageSrc}
                         photographer={post.photographer}
                         photographerSrc={post.photographerSrc}
-                        photographerAriaLabel={post.photographerAriaLabel}
+                        photographerSrcAriaLabel={post.photographerSrcAriaLabel}
                         unsplashSrc={post.unsplashSrc}
                         unsplashSrcAriaLabel={post.unsplashSrcAriaLabel}
                     />
                 ))}
             </div>
             <div className="recent-posts-links">
-                <a className="blog-link" href="https://www.corinamurg.dev/blog" target="_blank" rel="noopener noreferrer">Explore My Blog</a>
+                <a className="blog-link" 
+                    href="https://www.corinamurg.dev/blog" 
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    Explore My Blog
+                </a>
             </div>
         </div>
     )

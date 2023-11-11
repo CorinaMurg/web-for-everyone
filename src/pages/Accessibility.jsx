@@ -45,19 +45,22 @@ export default function Accessibility() {
             
             <h2>Recent Posts + Resources</h2>     
             <div className="left">
-                <div className="left--posts">
-                    {a11yPostsData.map((post, index) => (
-                        <a key={index} href={post.href} aria-label={post.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
-                            <div>
-                                <h3>{post.title}</h3>
-                                <p className="left--posts--description">{post.description}</p>
-                                <a href={post.href} target="_blank" rel="noopener noreferrer" title={post.hrefAriaLabel} aria-label={post.hrefAriaLabel}>
-                                    <span className="read-more">Read more</span>
-                                </a>
-                            </div>
-                        </a>
-                    ))}
-                </div>
+                {a11yPostsData.map((post, index) => (
+                    <a key={index} href={post.href} aria-label={post.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
+                        <article>
+                            <h3>{post.title}</h3>
+                            <p className="left--posts--description">{post.description}</p>
+                            <a href={post.href} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                title={post.hrefAriaLabel} 
+                                aria-label={post.hrefAriaLabel}
+                            >
+                                <span className="read-more">Read more</span>
+                            </a>
+                        </article>
+                    </a>
+                ))}
             </div>
 
             <aside className="right">
