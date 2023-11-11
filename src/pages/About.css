@@ -18,7 +18,8 @@
 }
 
 .about--intro--image {
-    width: 150px;
+    width: 90px;
+    aspect-ratio: 1 / 1;
     position: absolute;
     left: calc(0.5*var(--navbar-margin));
 }
@@ -26,7 +27,7 @@
 .about--intro--image img {
     
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
 }
 

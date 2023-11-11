@@ -11,7 +11,7 @@ export default function Projects() {
     return (
         <div className="projects">
             <div className="projects--intro">
-                <h1>A selection of my favorite projects!</h1>
+                <h1>Latest Projects</h1>
                 <p>Please visit <span> </span>
                     <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
                         my GitHub page

@@ -1,6 +1,6 @@
 
 export const a11yIntroData = {
-    "title": "I believe in a web where EVERYONE has a place.",
+    "title": "A Web for EVERYONE",
     "description": [
         `This principle drives my work in frontend development. Accessibility is not just a 
         feature - it's a responsibility to ensure every user feels seen and valued.`,
