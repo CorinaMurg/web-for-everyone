@@ -5,7 +5,6 @@ import { a11yComponentsData } from "../data/a11yComponentsData"
 import { a11yTipsData } from "../data/a11yTipsData"
 import A11yTipItem from "../components/A11yTipItem"
 import './Accessibility.css'
-import '../index.css'
 
 export default function Accessibility() {  
     useEffect(() => {

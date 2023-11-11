@@ -1,5 +1,4 @@
 import { introCorina } from '../data/introCorinaData.js';
-import sprout from "/assets/Sprout.jpg"
 import './HomeIntro.css';
 
 export default function HomeIntro() {
@@ -18,7 +17,7 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src={sprout} alt="A group of pots with dirt and green sprouts."/>
+                <img src="/assets/Sprout.jpg" alt="A group of pots with dirt and green sprouts."/>
                 <div className="home--intro--image--caption">
                     #Let&rsquo;sGrowAnAccessibleWorld
                 </div>
