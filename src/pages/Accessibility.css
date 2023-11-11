@@ -12,10 +12,11 @@
     grid-row: 1 / 2; 
     font-size: 3.5rem;
     line-height: 4rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1.8px;
-    font-family: "Playpen Sans", sans-serif;
+    /* font-family: "Playpen Sans", sans-serif; */
     margin-block: 35px;
+    margin-bottom: 10px;
 }
 
 .a11y h2 {
