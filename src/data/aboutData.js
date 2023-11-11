@@ -34,8 +34,8 @@ export const aboutData = {
             }, 
             ", a collaborative group project practice for entry-level developers"
         ],
-        "Hacktoberfest 2023 contributor: 6 PRs merged",
-        "Career Essentials in Generative AI Certificate from Microsoft",
+        "Completed the Hacktoberfest 2023 challenge: 4+ PRs merged",
+        "\"Career Essentials in Generative AI\" Certificate from Microsoft",
     ],
 
     "past": [

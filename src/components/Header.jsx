@@ -3,11 +3,6 @@ import { Link, NavLink } from "react-router-dom"
 import "./Header.css"
 
 export default function Header() {
-    const activeStyles = {
-        fontSize: "1rem",
-        fontWeight: "600",
-        color: "var(--blue-color)",
-    }
 
     return (
         <header>
@@ -18,34 +13,34 @@ export default function Header() {
             <nav>
                 <NavLink
                     to="/"
-                    style={({ isActive }) => isActive ? activeStyles : null}
+                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                 >
-                    <span className="nav-link">Home</span>
+                    Home
                 </NavLink>
                 <NavLink
                     to="/projects"
-                    style={({ isActive }) => isActive ? activeStyles : null}
+                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                 >
-                    <span className="nav-link">Projects</span>
+                    Projects
                 </NavLink>
                 <NavLink
                     to="/accessibility"
-                    style={({ isActive }) => isActive ? activeStyles : null}
+                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                 >
-                    <span className="nav-link">Accessibility</span>
+                    Accessibility
                 </NavLink>
                 <NavLink
                     to="/about"
-                    style={({ isActive }) => isActive ? activeStyles : null}
+                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                 >
-                    <span className="nav-link">About</span>
+                    About
                 </NavLink>
-                <a  className="blog-nav-link"
+                <a  className="nav-link"
                     href="https://corinamurg.dev/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
-                    <span className="nav-link">Blog</span>
+                    Blog
                 </a>
             </nav>
         </header>

@@ -19,19 +19,6 @@ export function RecentPost ( {
     return (
         <article className="recent-post">
             <div className="recent-post--left">
-                <h4>{title}</h4>
-                <div>
-                    <div className="recent-post--description">
-                        {description.map((line, index) => (
-                            <p key={index}>{line}</p>
-                        ))}
-                    </div>
-                    <a className="read-more" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
-                        Read more
-                    </a>
-                </div>
-            </div>
-            <div className="recent-post--right">
                 <a href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
                     <div className="recent-post--image">
                         <img
@@ -45,17 +32,41 @@ export function RecentPost ( {
                     {photographer && (
                         <>
                             Photo by{' '}
-                            <a href={photographerSrc} target="_blank" rel="noopener noreferrer" title={photographerSrcAriaLabel} aria-label={photographerSrcAriaLabel}>
+                            <a href={photographerSrc} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                title={photographerSrcAriaLabel} 
+                                aria-label={photographerSrcAriaLabel}
+                            >
                                 <span className="photo-credit--link">{photographer}</span>
                             </a>
                             {' '}on{' '}
-                            <a href={unsplashSrc} target="_blank" rel="noopener noreferrer" title={unsplashSrcAriaLabel}>
+                            <a href={unsplashSrc} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                title={unsplashSrcAriaLabel}
+                                aria-label={unsplashSrcAriaLabel}
+                            >
                                 <span className="photo-credit--link">Unsplash</span>
                             </a>
                         </>
                     )}
                 </div>
             </div>
+            <div className="recent-post--right">
+                <h4>{title}</h4>
+                <div>
+                    <div className="recent-post--description">
+                        {description.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
+                    </div>
+                    <a className="read-more" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
+                        Read more
+                    </a>
+                </div>
+            </div>
+            
         </article>
     );
 }

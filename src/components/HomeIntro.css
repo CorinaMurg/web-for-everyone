@@ -4,7 +4,7 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;;
+    gap: 40px;
     width: 100%;
     padding-inline: calc(var(--main-margin) - 0.5*var(--navbar-margin));
     border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);

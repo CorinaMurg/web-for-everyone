@@ -32,7 +32,7 @@ header {
 }
 
 .site-name-container span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -45,31 +45,27 @@ nav a {
     text-decoration: none;
     color: inherit;
     font-weight: 500;
-    padding: 8px 0 8px 40px;
-}
-
-.nav-link {
-    position: relative;
-}
-
-.nav-link:hover {
-    color: var(--blue-color);
+    font-size: 0.9rem;
+    padding: 8px 0;
+    margin-left: 40px;
+    position: relative; 
 }
 
 .nav-link::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5px;
     width: 0;
     height: 2px;
-    background-color: var(--blue-color);
+    background-color: var(--text-dark-color);
     transition: width 0.8s;
 }
 
 .nav-link:hover::before {
     width: 100%;
-    color: var(--blue-color);
 }
 
-
+.nav-link.active-link::before {
+    width: 100%;
+}
