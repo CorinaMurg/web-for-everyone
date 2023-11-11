@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import corinaPhoto from "/assets/CorinaMurg.jpg";
 import { aboutData } from "../data/aboutData";
 import "./About.css";
 
@@ -53,7 +52,7 @@ export default function About() {
                 <div className="about--intro--image">
                     <img 
                         className="about--intro-corina-photo" 
-                        src={corinaPhoto} 
+                        src="/assets/CorinaMurg.jpg" 
                         alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
                         loading="lazy">
                     </img>
