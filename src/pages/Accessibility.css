@@ -5,6 +5,7 @@
     grid-template-rows: auto auto auto auto auto auto; 
     gap: 16px; 
     margin-inline: var(--main-margin);
+    margin-bottom: 64px;
 }
 
 .a11y h1 {
@@ -26,35 +27,32 @@
     font-size: 1.4rem;
     font-weight: 500;
     margin-top: 48px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 
-.a11y h3 {
-    font-size: 1.6rem;
+.post-title {
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 36px;
+    margin-top: 24px;
+    /* margin-bottom: 16px; */
 }
 
-h3.right--components-heading,
-h3.right--tips-heading {
+.right--components-heading,
+.right--tips-heading {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--blue-color);
+    margin-top: 48px;
     margin-bottom: 0;
-}
-
-
-h3.right--tips-heading {
-    margin-top: 80px; 
-   
 }
 
 .right--components-subheading,
 .right--tips-subheading {
     margin-top: 0;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
 /* accessible components */
@@ -152,6 +150,7 @@ h3.right--tips-heading {
     font-size: 1.4rem;
     font-weight: 500;
     margin-top: 48px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 
@@ -169,7 +168,7 @@ h3.right--tips-heading {
 
 .right {
     grid-column: 2 / 3; 
-    grid-row: 4 / 7; 
+    grid-row: 3 / 7; 
 }
 
 .read-more {

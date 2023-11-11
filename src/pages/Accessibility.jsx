@@ -25,7 +25,8 @@ export default function Accessibility() {
                 <div className="photo-credit">
                     Photo by{' '}
                     <a href={a11yIntroData.photographerSrc} 
-                        target="_blank" rel="noopener noreferrer" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
                         title={a11yIntroData.photographerSrcAriaLabel} 
                         aria-label={a11yIntroData.photographerSrcAriaLabel}
                     >
@@ -33,7 +34,8 @@ export default function Accessibility() {
                     </a>
                     {' '}on{' '}
                     <a href={a11yIntroData.unsplashSrc} 
-                        target="_blank" rel="noopener noreferrer" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
                         title={a11yIntroData.unsplashSrcAriaLabel} 
                         aria-label={a11yIntroData.unsplashSrcAriaLabel}
                     >
@@ -45,18 +47,16 @@ export default function Accessibility() {
             <h2 className="left-corina-heading">My A11y Posts</h2>     
             <div className="left-corina">
                 {a11yPostsData.filter(post => post.label === "corina").map((post, index) => (
-                    <a key={index} href={post.href} aria-label={post.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
+                    <a key={index} 
+                        href={post.href} 
+                        title={post.hrefAriaLabel}
+                        aria-label={post.hrefAriaLabel} 
+                        target="_blank" rel="noopener noreferrer"
+                    >
                         <article>
-                            <h3>{post.title}</h3>
+                            <h3 className='post-title'>{post.title}</h3>
                             <p className="left--posts--description">{post.description}</p>
-                            <a href={post.href} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                title={post.hrefAriaLabel} 
-                                aria-label={post.hrefAriaLabel}
-                            >
-                                <span className="read-more">Read more</span>
-                            </a>
+                            <span className="read-more">Read more</span>
                         </article>
                     </a>
                 ))}
@@ -65,18 +65,16 @@ export default function Accessibility() {
             <h2 className='left-other-heading'>A11y Resources</h2>     
             <div className="left-other">
                 {a11yPostsData.filter(post => post.label === "other").map((post, index) => (
-                    <a key={index} href={post.href} aria-label={post.hrefAriaLabel} target="_blank" rel="noopener noreferrer">
+                    <a key={index} 
+                        href={post.href} 
+                        aria-label={post.hrefAriaLabel} 
+                        title={post.hrefAriaLabel}
+                        target="_blank" rel="noopener noreferrer"
+                    >
                         <article>
                             <h3>{post.title}</h3>
                             <p className="left--posts--description">{post.description}</p>
-                            <a href={post.href} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                title={post.hrefAriaLabel} 
-                                aria-label={post.hrefAriaLabel}
-                            >
-                                <span className="read-more">Read more</span>
-                            </a>
+                            <span className="read-more">Read more</span>
                         </article>
                     </a>
                 ))}
