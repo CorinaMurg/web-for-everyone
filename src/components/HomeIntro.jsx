@@ -20,7 +20,7 @@ export default function HomeIntro() {
             <div className="home--intro--image">
                 <img src={sprout} alt="A group of pots with dirt and green sprouts."/>
                 <div className="home--intro--image--caption">
-                    Let&rsquo;s Grow an Accessible World
+                    #Let&rsquo;sGrowAnAccessibleWorld
                 </div>
 
                 <div className="photo-credit">
