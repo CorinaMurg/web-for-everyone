@@ -5,7 +5,7 @@ import './A11yTipItem.css';
 
 import PropTypes from 'prop-types';
 
-export default function A11yTipItem({ tip, leftDescription, rightDescription }) {
+export default function A11yTipItem({ tip, left, right, descriptionLeft, descriptionRight }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     function toggleModal() {
@@ -20,8 +20,10 @@ export default function A11yTipItem({ tip, leftDescription, rightDescription }) 
                 isModalOpen={isModalOpen}
                 closeModal={toggleModal}
                 tip={tip}
-                leftDescription={leftDescription}
-                rightDescription={rightDescription}
+                left={left}
+                right={right}
+                descriptionLeft={descriptionLeft}
+                descriptionRight={descriptionRight}
             />
         </div>
     );
@@ -29,8 +31,10 @@ export default function A11yTipItem({ tip, leftDescription, rightDescription }) 
 
 A11yTipItem.propTypes = {
     tip: PropTypes.string.isRequired,
-    leftDescription: PropTypes.string.isRequired,
-    rightDescription: PropTypes.string.isRequired,
+    left: PropTypes.string.isRequired,
+    right: PropTypes.string.isRequired,
+    descriptionLeft: PropTypes.arrayOf(PropTypes.string).isRequired,
+    descriptionRight: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 

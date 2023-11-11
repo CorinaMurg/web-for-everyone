@@ -4,7 +4,7 @@ import './A11yTipModal.css';
 
 import PropTypes from 'prop-types';
 
-export default function A11yTipModal ({isModalOpen, closeModal, tip, leftDescription, rightDescription}){
+export default function A11yTipModal ({isModalOpen, closeModal, tip, left, right, descriptionLeft, descriptionRight}) {
     return (
         <ReactModal
             className="modal"
@@ -38,8 +38,19 @@ export default function A11yTipModal ({isModalOpen, closeModal, tip, leftDescrip
             }}   
         >
             <h3>{tip}</h3>
-            <p>{leftDescription}</p>
-            <p>{rightDescription}</p>
+            <h4>{left}</h4>
+            <div>
+                {descriptionLeft.map((line, index) => (
+                    <p key={index}>{line}</p>
+                ))}
+            </div>
+            <h4>{right}</h4>
+            <div>
+                {descriptionRight.map((line, index) => (
+                    <p key={index}>{line}</p>
+                ))}
+            </div>
+
             <button type="button" onClick={closeModal}>Close</button>
         </ReactModal>
     );
@@ -49,6 +60,8 @@ A11yTipModal.propTypes = {
     isModalOpen: PropTypes.bool.isRequired,
     closeModal: PropTypes.func.isRequired,
     tip: PropTypes.string.isRequired,
-    leftDescription: PropTypes.string.isRequired,
-    rightDescription: PropTypes.string.isRequired,
+    left: PropTypes.string.isRequired,
+    right: PropTypes.string.isRequired,
+    descriptionLeft: PropTypes.arrayOf(PropTypes.string).isRequired,
+    descriptionRight: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
