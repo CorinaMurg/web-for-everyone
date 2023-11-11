@@ -61,7 +61,13 @@ export function RecentPost ( {
                             <p key={index}>{line}</p>
                         ))}
                     </div>
-                    <a className="read-more" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
+                    <a className="read-more" 
+                        href={href} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        title={hrefAriaLabel} 
+                        aria-label={hrefAriaLabel}
+                    >
                         Read more
                     </a>
                 </div>
