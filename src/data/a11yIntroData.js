@@ -2,7 +2,7 @@
 export const a11yIntroData = {
     "title": "A Web for EVERYONE",
     "description": [
-        `This principle drives my work in frontend development. Accessibility is not just a 
+        `This idea drives my work in web development. Accessibility is not just a 
         feature - it's a responsibility to ensure every user feels seen and valued.`,
         `Coding for accessibility can be confusing, and it becomes increasingly challenging as an 
         application grows in complexity. However, the most critical aspect is the willingness and 

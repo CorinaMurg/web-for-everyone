@@ -54,7 +54,7 @@ export default function Accessibility() {
                         target="_blank" rel="noopener noreferrer"
                     >
                         <article>
-                            <h3 className='post-title'>{post.title}</h3>
+                            <h3>{post.title}</h3>
                             <p className="left--posts--description">{post.description}</p>
                             <span className="read-more">Read more</span>
                         </article>

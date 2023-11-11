@@ -35,6 +35,18 @@ export const a11yComponentsData = [
         "description": ``,
         "href": "",
         "hrefAriaLabel": ""
+    },
+    {
+        "title": "skip link",
+        "description": ``,
+        "href": "",
+        "hrefAriaLabel": ""
+    },
+    {
+        "title": "visually-hidden element",
+        "description": ``,
+        "href": "",
+        "hrefAriaLabel": ""
     }
     
     
