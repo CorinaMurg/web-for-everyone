@@ -2,11 +2,15 @@ import { Link } from "react-router-dom"
 import "./Footer.css"
 
 export default function Footer() {
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <footer>
             <div className="footer-left">
                 <div className="footer-left--top">
-                    <Link to="/"><span className="corina-murg">Corina Murg</span></Link>
+                    <Link to="/" onClick={handleLinkClick}><span className="corina-murg">Corina Murg</span></Link>
                     <span>Thank you for reading!</span>
                 </div>
                 <div className="footer-left--bottom">
@@ -16,11 +20,10 @@ export default function Footer() {
             <div className="footer-right">
                 <div className="footer-right--navigation">
                     <span className="footer-heading">Site</span>
-                    <Link to="/"><span className="footer-nav-link">Home</span></Link>
-                    <Link to="/projects"><span className="footer-nav-link">Projects</span></Link>
-                    <Link to="/accessibility"><span className="footer-nav-link">Accessibility</span></Link>
-                    <Link to="/about"><span className="footer-nav-link">About</span></Link>
-                    {/* <a href="https://dev.to/corinamurg" target="_blank" rel="noopener noreferrer">Blog</a> */}
+                    <Link to="/" onClick={handleLinkClick}><span className="footer-nav-link">Home</span></Link>
+                    <Link to="/projects" onClick={handleLinkClick}><span className="footer-nav-link">Projects</span></Link>
+                    <Link to="/accessibility" onClick={handleLinkClick}><span className="footer-nav-link">Accessibility</span></Link>
+                    <Link to="/about" onClick={handleLinkClick}><span className="footer-nav-link">About</span></Link>
                 </div>
                 <div className="footer-right--social">
                     <span className="footer-heading">Profiles</span>

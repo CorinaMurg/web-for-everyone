@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+
 import { a11yIntroData } from "../data/a11yIntroData"
 import { a11yPostsData } from "../data/a11yPostsData"
 import { a11yComponentsData } from "../data/a11yComponentsData"
@@ -7,10 +7,6 @@ import A11yTipItem from "../components/A11yTipItem"
 import './Accessibility.css'
 
 export default function Accessibility() {  
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
         <div className="a11y">
             <h1>{a11yIntroData.title}</h1>

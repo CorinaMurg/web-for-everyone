@@ -1,11 +1,8 @@
-import { useEffect } from "react";
+
 import { aboutData } from "../data/aboutData";
 import "./About.css";
 
 export default function About() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     const renderLineWithLink = (chunks) => {
         return (
             <>

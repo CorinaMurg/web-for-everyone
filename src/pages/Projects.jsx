@@ -1,12 +1,9 @@
-import { useEffect } from "react"
+
 import { Project } from "../components/Project"
 import { projectsData } from "../data/projectsData"
 import "./Projects.css"
 
 export default function Projects() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     return (
         <div className="projects">
