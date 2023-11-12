@@ -48,7 +48,7 @@
 }
 
 .about--section {
-    width: 58rem;
+    /* width: 58rem; */
     padding-inline: calc(var(--max-margin) - 0.5*var(--navbar-margin)); 
 }
 .about--section h2 {
@@ -57,9 +57,11 @@
     font-weight: 500;
     margin-top: 16px;
 }
+
 .section-line {
     margin-top: 32px;
     margin-bottom: 0;
+    /* width: 80%; */
 }
 
 .about--section--currently {
@@ -76,4 +78,25 @@
 
 .about--section--interests {
     border-left: calc(0.5*var(--navbar-margin)) solid var(--blueDark-color);
+}
+
+.section-line-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; /* Adjust the column sizes as needed */
+    align-items: center; /* This will vertically center align the arrow with the text */
+    gap: 24px; /* Adjust the gap size as needed */
+}
+
+.main-info {
+    grid-column: 1; /* Assign the text to the first column */
+}
+
+.extra-info {
+    grid-column: 3; /* Assign the extra info to the third column */
+}
+
+.arrow {
+    grid-column: 2; /* Assign the arrow to the middle column */
+    justify-self: center; /* Center the arrow horizontally */
+    align-self: center;
 }

@@ -10,13 +10,13 @@ export const a11yPostsData = [
         "href": "https://dev.to/corinamurg/accessibility-engineer-project-the-head-element-653",
         "hrefAriaLabel": "Corina's blog post about the accessibility engineer project.",
     },
-    {
-        "label": "corina",
-        "title": "Recommended Accessibility Courses",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
-    },
+    // {
+    //     "label": "corina",
+    //     "title": "Recommended Accessibility Courses",
+    //     "description": ``,
+    //     "href": "",
+    //     "hrefAriaLabel": ""
+    // },
     {
         "label": "corina",
         "title": "The Importance of Semantic HTML",
@@ -25,6 +25,15 @@ export const a11yPostsData = [
             plays in accessibility and beyond.`,
         "href": "https://dev.to/corinamurg/use-semantic-html-4b97",
         "hrefAriaLabel": "Corina's blog post about the importance of semantic HTML.",
+    },
+    {
+        "label": "corina",
+        "title": "Buttons or Links? How to Choose",
+        "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
+            meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
+            element given the functionality you aim to implement. Let’s see how to use them!`,
+        "href": "https://dev.to/corinamurg/use-semantic-html-4b97",
+        "hrefAriaLabel": "Corina's blog post about the difference between buttons and links.",
     },
     {
         "label": "corina",
@@ -64,7 +73,13 @@ export const a11yPostsData = [
         "href": "https://web.dev/articles/website-navigation",
         "hrefAriaLabel": "Link to the web.dev article on building the main navigation for a website."
     },
-    
-    
-    
+    {
+        "label": "other",
+        "title": "5 Tips for Making Your GitHub Profile Page Accessible",
+        "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
+            is navigable and understandable by all users, including those with disabilities. You'll find tips '
+            on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,
+        "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
+        "hrefAriaLabel": "Link to the GitHub blog post on making your GitHub profile page accessible."
+    },
 ];
