@@ -66,18 +66,6 @@ export const aboutData = {
 
     "recently completed": [
         {
-            prefix: "Software Engineer at ", 
-            link: "https://the-collab-lab.codes/",
-            linkText: "The Collab Lab",
-            suffix: ", a collaborative group project practice for entry-level developers",
-        },
-        {
-            prefix: "Completed the Hacktoberfest 2023 challenge: 4+ PRs merged",
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
-        {
             prefix: "\"Career Essentials in Generative AI\" Certificate from Microsoft", 
             link: "",
             linkText: "",
@@ -91,7 +79,18 @@ export const aboutData = {
                 },
             ]
         },
-        
+        {
+            prefix: "Completed the Hacktoberfest 2023 challenge: 4+ PRs merged",
+            link: "",
+            linkText: "",
+            suffix: "",
+        },
+        {
+            prefix: "Software Engineer at ", 
+            link: "https://the-collab-lab.codes/",
+            linkText: "The Collab Lab",
+            suffix: ", an apprenticeship program for entry-level developers",
+        },
     ],
 
     "past": [

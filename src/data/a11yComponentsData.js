@@ -2,52 +2,43 @@
 export const a11yComponentsData = [
     {
         "title": "Button",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": "",
+        "href": "https://codepen.io/Cor-Ina/pen/ZEwyyVe",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible button.",
     },
     {
         "title": "Link",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
+        "href": "https://codepen.io/Cor-Ina/pen/LYqLLKJ?editors=1100",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible link.",
     },
     {
         "title": "Accordion",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
+        "href": "https://codepen.io/Cor-Ina/pen/xxMrLGJ",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible accordion.",
     },
     {
         "title": "Navbar",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
+        "href": "https://codepen.io/Cor-Ina/pen/RwvgxyP?editors=1100",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible navbar.",
     },
     {
         "title": "Form",
-        "description": ``,
         "href": "",
         "hrefAriaLabel": ""
     },
     {
         "title": "Dropdown Menu",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
+        "href": "https://codepen.io/Cor-Ina/pen/yLZXoQj",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible dropdown menu.",
     },
     {
         "title": "skip link",
-        "description": ``,
-        "href": "",
-        "hrefAriaLabel": ""
+        "href": "https://codepen.io/Cor-Ina/pen/abXwLde",
+        "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible skip link.",
     },
     {
         "title": "visually-hidden element",
-        "description": ``,
         "href": "",
         "hrefAriaLabel": ""
     }
-    
     
 ];
