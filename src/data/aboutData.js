@@ -50,18 +50,18 @@ export const aboutData = {
                 },
             ]
         },
-        {
-            prefix: "Reading the 'Eloquent JavaScript' book",
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
-        {
-            prefix: "Based in Boston, USA",
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
+        // {
+        //     prefix: "Reading the 'Eloquent JavaScript' book",
+        //     link: "",
+        //     linkText: "",
+        //     suffix: "",
+        // },
+        // {
+        //     prefix: "Based in Boston, USA",
+        //     link: "",
+        //     linkText: "",
+        //     suffix: "",
+        // },
     ],
 
     "recently completed": [
@@ -70,14 +70,6 @@ export const aboutData = {
             link: "https://the-collab-lab.codes/",
             linkText: "The Collab Lab",
             suffix: ", a collaborative group project practice for entry-level developers",
-            // extras: [
-            //     {
-            //         prefix: "", 
-            //         link: "",
-            //         linkText: "",
-            //         suffix: "",
-            //     },
-            // ]
         },
         {
             prefix: "Completed the Hacktoberfest 2023 challenge: 4+ PRs merged",
