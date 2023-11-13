@@ -116,7 +116,6 @@ p {
     font-weight: 500;
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -128,4 +127,57 @@ p {
     border: 0;
 }
 
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.blue-heading {
+    color: var(--blue-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* looks like a button but is a link */
+.site-link {
+    text-decoration: none;
+    color: var(--text-light-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    text-align: center;
+    background-color: var(--text-dark-color);
+    cursor: pointer;
+}
+
+.site-link:hover {
+    background-color: var(--yellow-color);
+    color: var(--text-dark-color);
+}
+
+.read-more {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-dark-color);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.read-more::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px; 
+    background-color: var(--text-dark-color);
+    transition: width 0.5s; 
+}
+
+.read-more:hover::before {
+    width: 100%; 
+}
 

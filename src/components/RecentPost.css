@@ -92,26 +92,10 @@
 }
 
 
-.read-more {
-    position: relative;
-    text-decoration: none;
+.recent-post .read-more {
     color: var(--blue-color);
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
-.read-more::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px; 
+.recent-post .read-more::before {
     background-color: var(--blue-color);
-    transition: width 0.5s; 
-}
-
-.read-more:hover::before {
-    width: 100%; 
 }

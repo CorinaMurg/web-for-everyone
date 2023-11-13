@@ -5,12 +5,9 @@
 }
 
 .projects h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    letter-spacing: 1.8px;
-    /* font-family: "Playpen Sans", sans-serif; */
     margin-top: 40px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .projects--intro {

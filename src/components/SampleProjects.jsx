@@ -18,7 +18,7 @@ export default function SampleProjects() {
                     />
                 ))}
 
-                <Link className="projects-link" to="/projects">My Projects</Link>
+                <Link className="site-link" to="/projects">My Projects</Link>
             </div>
     )
 }

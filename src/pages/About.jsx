@@ -35,7 +35,7 @@ export default function About() {
     const renderAboutSections = () => {
         return Object.entries(aboutData).map(([key, lines]) => (
             <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
-                <h2>{key.toUpperCase()}</h2>
+                <h2 className="blue-heading">{key.toUpperCase()}</h2>
                 <div>
                     {lines.map((line, index) => { 
                         if (typeof line === 'string') {

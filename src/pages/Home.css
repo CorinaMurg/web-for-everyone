@@ -8,28 +8,8 @@
 
 
 /* LINK TO PROJECTS PAGE */
-.blog-link,
-.projects-link {
-    text-decoration: none;
-    color: var(--text-light-color);
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 12px 24px;
-    text-align: center;
-    background-color: var(--text-dark-color);
-    cursor: pointer;
-}
-
-.blog-link:hover,
-.projects-link:hover {
-    background-color: var(--yellow-color);
-    color: var(--text-dark-color);
-}
 
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-}
+
 
 

@@ -40,8 +40,8 @@ export default function Accessibility() {
                 </div>
             </div>
             
-            <h2 className="left-corina-heading">My A11y Posts</h2>     
-            <div className="left-corina">
+            <h2 className="left-my-posts-heading blue-heading">My A11y Posts</h2>     
+            <div className="left-my-posts-div">
                 {a11yPostsData.filter(post => post.label === "corina").map((post, index) => (
                     <a key={index} 
                         href={post.href} 
@@ -59,7 +59,7 @@ export default function Accessibility() {
             </div>
 
             <h2 className='left-other-heading'>A11y Resources</h2>     
-            <div className="left-other">
+            <div className="left-other-div">
                 {a11yPostsData.filter(post => post.label === "other").map((post, index) => (
                     <a key={index} 
                         href={post.href} 
@@ -77,7 +77,7 @@ export default function Accessibility() {
             </div>
 
             <aside className="right">
-                <h3 className="right--components-heading">Accessible Components</h3>
+                <h3 className="right--components-heading blue-heading">Accessible Components</h3>
                 <p className="right--components-subheading">Code examples in Codepen.io</p>
                 <ul className="right--components">
                     {a11yComponentsData.map((component, index) => (
@@ -96,7 +96,7 @@ export default function Accessibility() {
                     ))}
                 </ul>
 
-                <h3 className="right--tips-heading">Accessibility Tips</h3>
+                <h3 className="right--tips-heading blue-heading">Accessibility Tips</h3>
                 <p className="right--tips-subheading">Nuances of similar attributes/elements</p>
                 <ul className="right--tips">
                     {a11yTipsData.map((tipData, index) => (
