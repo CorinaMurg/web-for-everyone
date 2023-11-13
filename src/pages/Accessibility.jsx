@@ -1,9 +1,9 @@
 
-import { a11yIntroData } from "../data/a11yIntroData"
-import { a11yPostsData } from "../data/a11yPostsData"
-import { a11yComponentsData } from "../data/a11yComponentsData"
-import { a11yTipsData } from "../data/a11yTipsData"
-import A11yTipItem from "../components/A11yTipItem"
+import { a11yIntroData } from "../data/a11yData/a11yIntroData"
+import { a11yPostsData } from "../data/a11yData/a11yPostsData"
+import { a11yComponentsData } from "../data/a11yData/a11yComponentsData"
+import { a11yTipsData } from "../data/a11yData/a11yTipsData"
+import A11yTipItem from "../components/A11y/A11yTipItem"
 import './Accessibility.css'
 
 export default function Accessibility() {  

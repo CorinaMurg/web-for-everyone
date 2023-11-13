@@ -1,6 +1,6 @@
 
-import { Project } from "../components/Project"
-import { projectsData } from "../data/projectsData"
+import { Project } from "../components/Projects/Project"
+import { projectsData } from "../data/projectsData/projectsData"
 import "./Projects.css"
 
 export default function Projects() {

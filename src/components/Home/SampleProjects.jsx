@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SampleProject } from "./SampleProject.jsx";
-import { projectsData } from "../data/projectsData.js";
+import { projectsData } from "../../data/projectsData/projectsData.js";
 import "./SampleProjects.css";
 
 export default function SampleProjects() {

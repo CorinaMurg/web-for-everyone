@@ -1,9 +1,9 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { iconMapping } from '../utils/iconMapping.js'
 
-import HomeIntro from "../components/HomeIntro.jsx"
-import RecentPosts from "../components/RecentPosts.jsx"
-import SampleProjects from "../components/SampleProjects.jsx"
+import HomeIntro from "../components/Home/HomeIntro.jsx"
+import RecentPosts from "../components/Home/RecentPosts.jsx"
+import SampleProjects from "../components/Home/SampleProjects.jsx"
 
 import "./Home.css"
 

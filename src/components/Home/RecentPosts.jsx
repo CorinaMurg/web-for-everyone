@@ -1,4 +1,4 @@
-import { recentPostsData } from "../data/recentPostsData";
+import { recentPostsData } from "../../data/homeData/recentPostsData";
 import { RecentPost } from "./RecentPost";
 import "./RecentPosts.css";
 

@@ -1,5 +1,5 @@
 
-import { aboutData } from "../data/aboutData";
+import { aboutData } from "../data/aboutData/aboutData";
 import "./About.css";
 
 export default function About() {

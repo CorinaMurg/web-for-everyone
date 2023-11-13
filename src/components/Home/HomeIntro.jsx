@@ -1,4 +1,4 @@
-import { introCorina } from '../data/introCorinaData.js';
+import { introCorina } from '../../data/homeData/introCorinaData.js';
 import './HomeIntro.css';
 
 export default function HomeIntro() {
