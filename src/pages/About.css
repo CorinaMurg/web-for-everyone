@@ -41,14 +41,12 @@
 }
 
 .about--sections {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
 }
 
 .about--section {
-    /* width: 58rem; */
     padding-inline: calc(var(--max-margin) - 0.5*var(--navbar-margin)); 
 }
 .about--section h2 {
@@ -76,6 +74,7 @@
 
 .about--section--interests {
     border-left: calc(0.5*var(--navbar-margin)) solid var(--blueDark-color);
+    margin-bottom: 30px;
 }
 
 .section-line-container {
@@ -83,6 +82,9 @@
     grid-template-columns: 3.2fr 1fr 3fr; 
     align-items: center; 
     gap: 24px; 
+}
+
+.section-line-container:not(:last-child) {
     margin-bottom: 32px;
 }
 
