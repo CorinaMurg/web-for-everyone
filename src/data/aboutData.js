@@ -6,6 +6,8 @@ export const aboutData = {
             prefix: "Software Engineer & Maintainer at ",
             link: "https://www.yuriscodingclub.com/",
             linkText: "Yuris Coding Club",
+            linkAriaLabel: "Yuris Coding Club website",
+            linkTitle: "Yuris Coding Club website",
             suffix: ", an open-source community focused on accessibility and inclusion in tech",
             extras: [
                 {
@@ -13,6 +15,8 @@ export const aboutData = {
                             learn and test their knowledge of HTML tags. Visit the project's `,
                     link: "https://github.com/YurisCodingClub/html-tag-quiz/",
                     linkText: "GitHub repo",
+                    linkAriaLabel: "GitHub repo for Tagged! The HTML Quiz project Corina is working on at Yuris Coding Club",
+                    linkTitle: "GitHub repo for Tagged! The HTML Quiz project",
                     suffix: ".",
                 },
             ]
@@ -27,6 +31,8 @@ export const aboutData = {
             prefix: "Writing about JavaScript and accessibility on ",
             link: "https://dev.to/corinamurg/",
             linkText: "my blog",
+            linkAriaLabel: "Corina's blog on dev.to",
+            linkTitle: "Corina's blog on dev.to",
             suffix: ".",
         },
         {
@@ -46,6 +52,8 @@ export const aboutData = {
                             Check it out on `, 
                     link: "https://github.com/CorinaMurg/corina-portfolio",
                     linkText: "my GitHub repo",
+                    linkAriaLabel: "GitHub repo for Corina's portfolio website",
+                    linkTitle: "GitHub repo for Corina's portfolio website",
                     suffix: ".",
                 },
             ]
@@ -63,6 +71,8 @@ export const aboutData = {
                     prefix: "See the certificate on ", 
                     link: "https://www.linkedin.com/in/corina-m-91b163164/",
                     linkText: "my LinkedIn profile",
+                    linkAriaLabel: "Corina's LinkedIn profile",
+                    linkTitle: "Corina's LinkedIn profile",
                     suffix: ".",
                 },
             ]
@@ -77,7 +87,9 @@ export const aboutData = {
                     prefix: `Check out `, 
                     link: "https://twitter.com/YuriDevAT/status/1712030283313352928",
                     linkText: "this post on X",
-                    suffix: " with positive reviews about the quality of my work!",
+                    linkAriaLabel: "Yuris Coding Club Twitter post about Corina's participation in Hacktoberfest 2023",
+                    linkTitle: "Yuris Coding Club Twitter post about Corina's participation in Hacktoberfest 2023",
+                    suffix: " about the quality of my work!",
                 },
             ]
         },
@@ -85,7 +97,19 @@ export const aboutData = {
             prefix: "Software Engineer at ", 
             link: "https://the-collab-lab.codes/",
             linkText: "The Collab Lab",
+            linkAriaLabel: "The Collab Lab website",
+            linkTitle: "The Collab Lab website",
             suffix: ", an apprenticeship program for entry-level developers",
+            extras: [
+                {
+                    prefix: `A `, 
+                    link: "https://www.linkedin.com/posts/activity-7112201000915984384-axqT?utm_source=share&utm_medium=member_desktop",
+                    linkText: "LinkedIn post",
+                    linkAriaLabel: "Corina's LinkedIn post about her experience with The Collab Lab program",
+                    linkTitle: "Corina's LinkedIn post about her experience with The Collab Lab program",
+                    suffix: " I wrote about my amazing learning experience with The Collab Lab program.",
+                },
+            ]
         },
     ],
 
@@ -112,6 +136,8 @@ export const aboutData = {
                     prefix: `An article I wrote in French about `, 
                     link: "https://lesmathsenscene.fr/blog/2021/05/31/mathemagie-avec-un-jeu-de-cartes/",
                     linkText: "teaching algebra with playing cards",
+                    linkAriaLabel: "Link to Corina's article in French about teaching algebra with playing cards",
+                    linkTitle: "Link to Corina's article in French about teaching algebra with playing cards",
                     suffix: " to engage students in math class.",
                 },
             ]
@@ -132,6 +158,8 @@ export const aboutData = {
                     prefix: `See this X-post about `, 
                     link: "https://twitter.com/CorinaMurg/status/1397930463134617600",
                     linkText: `my participation with the "Salon Maths" conference`,
+                    linkAriaLabel: "Corina's Twitter post about her participation with the Salon Maths conference",
+                    linkTitle: "Corina's Twitter post about her participation with the Salon Maths conference",
                     suffix: " in France in 2021.",
                 },
             ]

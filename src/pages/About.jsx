@@ -9,7 +9,12 @@ export default function About() {
                 <p className="section-line main-info">
                     {item.prefix && <span>{item.prefix}</span>}
                     {item.link && (
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        <a  href={item.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label={item.linkAriaLabel}
+                            title={item.linkTitle}
+                        >
                             {item.linkText}
                         </a>
                     )}
@@ -20,7 +25,12 @@ export default function About() {
                     <p key={idx} className="section-line extra-info">
                         {extra.prefix && <span>{extra.prefix}</span>}
                         {extra.link && (
-                            <a href={extra.link} target="_blank" rel="noopener noreferrer">
+                            <a  href={extra.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label={extra.linkAriaLabel}
+                                title={extra.linkTitle}
+                            >
                                 {extra.linkText}
                             </a>
                         )}
@@ -64,7 +74,9 @@ export default function About() {
                     <p>For a more comprehensive view, please visit my {' '}
                         <a href="https://www.linkedin.com/in/corinamurg/" 
                             target="_blank" 
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                            aria-label="Corina's LinkedIn profile"
+                        >
                             LinkedIn profile
                         </a>
                         .

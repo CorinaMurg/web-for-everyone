@@ -20,11 +20,11 @@ export const a11yComponentsData = [
         "href": "https://codepen.io/Cor-Ina/pen/RwvgxyP?editors=1100",
         "hrefAriaLabel": "Link to Corina's CodePen for a code with an accessible navbar.",
     },
-    {
-        "title": "Form",
-        "href": "",
-        "hrefAriaLabel": ""
-    },
+    // {
+    //     "title": "Form",
+    //     "href": "",
+    //     "hrefAriaLabel": ""
+    // },
     {
         "title": "Dropdown Menu",
         "href": "https://codepen.io/Cor-Ina/pen/yLZXoQj",

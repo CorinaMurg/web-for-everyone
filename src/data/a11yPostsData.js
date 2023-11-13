@@ -52,7 +52,7 @@ export const a11yPostsData = [
             and spacing. Read Ashlee M Boyer's post on how using px units in these cases can 
             lead to a more predictable and user-friendly layout.`,
         "href": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques#after-updating-to-px-units",
-        "hrefAriaLabel": "Read about why px units may be superior for margin and padding for better accessibility and user experience."
+        "hrefAriaLabel": "Ashlee M Boyer's post on how using px units for margin, padding, and spacing is for better accessibility."
     },
     {
         "label": "other",
@@ -62,7 +62,7 @@ export const a11yPostsData = [
         in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
         and exhibited ableist biases. `,
         "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
-        "hrefAriaLabel": "Link to the UW News article about the accessibility potential of AI tools."
+        "hrefAriaLabel": "The UW News article about the accessibility potential of AI tools."
     },
     {
         "label": "other",
@@ -71,7 +71,7 @@ export const a11yPostsData = [
         covers best practices for designing a navigation system that's user-friendly and accessible. 
         A (very long) must-read!`,
         "href": "https://web.dev/articles/website-navigation",
-        "hrefAriaLabel": "Link to the web.dev article on building the main navigation for a website."
+        "hrefAriaLabel": "The web.dev article on building the main navigation for a website."
     },
     {
         "label": "other",
@@ -80,6 +80,6 @@ export const a11yPostsData = [
             is navigable and understandable by all users, including those with disabilities. You'll find tips '
             on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,
         "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
-        "hrefAriaLabel": "Link to the GitHub blog post on making your GitHub profile page accessible."
+        "hrefAriaLabel": "GitHub blog post on making your GitHub profile page accessible."
     },
 ];
