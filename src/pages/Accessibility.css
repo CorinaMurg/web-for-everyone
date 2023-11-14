@@ -169,37 +169,8 @@
 }
 
 .intro--image .photo-credit {
-    position: absolute;   
-    font-size: 0.9rem;
-    text-align: left;
     width: 100%;
     bottom: -30px; 
-}
-
-.photo-credit a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-    font-weight: 600;
-}
-
-.photo-credit--link {
-    position: relative;
-}
-
-.a11y .photo-credit--link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: var(--text-dark-color);
-    transition: width 0.8s;
-}
-
-.photo-credit--link:hover::before {
-    width: 100%;
 }
 
 .vs {

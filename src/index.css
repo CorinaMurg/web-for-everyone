@@ -186,3 +186,36 @@ h1 {
     width: 100%; 
 }
 
+.photo-credit {
+    position: absolute;
+    font-size: 0.8rem;    
+    text-align: left;
+}
+
+.photo-credit a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 600;
+}
+
+.photo-credit--link {
+    position: relative;
+}
+
+.photo-credit--link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-dark-color);
+    transition: width 0.8s;
+}
+
+.photo-credit--link:hover::before {
+    width: 100%;
+}
+
+
