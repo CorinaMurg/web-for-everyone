@@ -165,8 +165,8 @@ export const aboutData = {
             ]
         },
     ],
-    "interests": [
-        "Nature walks, Poetry, Geometry",
-    ]
+    // "interests": [
+    //     "Nature walks, Poetry, Geometry",
+    // ]
 }
 

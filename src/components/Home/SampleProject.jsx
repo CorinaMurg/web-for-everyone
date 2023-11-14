@@ -3,17 +3,15 @@ import "./SampleProject.css"
 
 export function SampleProject({ title, hrefSite, sampleProjectDescription, sampleImageAlt, sampleImageSrc }) {
     return (
-        <article className="sample-project">
-            <div className="sample-project--image">
-                <img src={sampleImageSrc} alt={sampleImageAlt} loading='lazy'/>
-            </div>
-            
-            <a className="sample-project--title--link" href={hrefSite} target="_blank" rel="noopener noreferrer">
+        <a className="sample-project--link" href={hrefSite} target="_blank" rel="noopener noreferrer">
+            <article className="sample-project">
+                <div className="sample-project--image">
+                    <img src={sampleImageSrc} alt={sampleImageAlt} loading='lazy'/>
+                </div>
                 <h3 className="sample-project--title">{title}</h3>
-            </a>
-            
-            <p className="sample-project--description">{sampleProjectDescription}</p>
-        </article>
+                <p className="sample-project--description">{sampleProjectDescription}</p>
+            </article>
+        </a>
     );
 }
 

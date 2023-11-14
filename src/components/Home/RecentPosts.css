@@ -44,5 +44,4 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-inline: var(--main-margin);
-    margin-top: 48px;
 }

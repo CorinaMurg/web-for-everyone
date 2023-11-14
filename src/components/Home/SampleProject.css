@@ -40,7 +40,7 @@
     padding-bottom: 10px;
 }
 
-.sample-project--title--link {
+.sample-project--link {
     text-decoration: none;
     color: var(--text-dark-color);
 }

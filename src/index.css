@@ -157,6 +157,11 @@ h1 {
     color: var(--text-dark-color);
 }
 
+*:focus-visible {
+    outline: 3px dashed var(--blue-color);
+    outline-offset: 2px;
+}
+
 .read-more {
     position: relative;
     text-decoration: none;

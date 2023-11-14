@@ -58,13 +58,15 @@
 }
 
 .about--section--past {
-    border-left: calc(0.5*var(--navbar-margin)) solid var(--orange-color);
+    /* border-left: calc(0.5*var(--navbar-margin)) solid var(--orange-color); */
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--blueDark-color);
+    margin-bottom: 100px;
 }
 
-.about--section--interests {
+/* .about--section--interests {
     border-left: calc(0.5*var(--navbar-margin)) solid var(--blueDark-color);
     margin-bottom: 30px;
-}
+} */
 
 .section-line-container {
     display: grid;
@@ -92,7 +94,11 @@
     color: var(--yellow-color);
 }
 
-.about--conclusion {
+/* .about--conclusion {
     padding-inline: var(--max-margin);
     margin-bottom: 50px;
-}
+    font-size: 1.4rem;
+    line-height: 2;
+    border-left: calc(0.5*var(--navbar-margin)) solid var(--blueDark-color);
+    margin-block: 80px;
+} */

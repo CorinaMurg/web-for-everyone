@@ -74,7 +74,7 @@ export default function About() {
             <div className="about--sections">
                 {renderAboutSections()}
             </div>
-            <p className="about--conclusion">For a more comprehensive view, please visit my {' '}
+            {/* <p className="about--conclusion">For a more comprehensive view, please visit my {' '}
                 <a href="https://www.linkedin.com/in/corinamurg/" 
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -83,7 +83,7 @@ export default function About() {
                     LinkedIn profile
                 </a>
                 .
-            </p>
+            </p> */}
         </div>
     );
 }

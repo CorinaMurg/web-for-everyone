@@ -19,7 +19,9 @@ footer {
 .footer-left--top {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+    /* to control focus outline width */
+    align-self: start;
 }
 
 .corina-murg {

@@ -19,15 +19,13 @@ export function RecentPost ( {
     return (
         <article className="recent-post">
             <div className="recent-post--left">
-                <a href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
-                    <div className="recent-post--image">
-                        <img
-                            src={imageSrc}
-                            alt={imageAlt}
-                            loading='lazy'
-                        />
-                    </div>
-                </a>
+                <div className="recent-post--image">
+                    <img
+                        src={imageSrc}
+                        alt={imageAlt}
+                        loading='lazy'
+                    />
+                </div>
                 <div className="photo-credit">
                     {photographer && (
                         <>
@@ -53,26 +51,21 @@ export function RecentPost ( {
                     )}
                 </div>
             </div>
-            <div className="recent-post--right">
-                <h4>{title}</h4>
-                <div>
-                    <div className="recent-post--description">
-                        {description.map((line, index) => (
-                            <p key={index}>{line}</p>
-                        ))}
+            <a className="recent-post--link" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
+                <div className="recent-post--right">
+                    <h4>{title}</h4>
+                    <div>
+                        <div className="recent-post--description">
+                            {description.map((line, index) => (
+                                <p key={index}>{line}</p>
+                            ))}
+                        </div>
+                        <span className="read-more">
+                            Read more
+                        </span>
                     </div>
-                    <a className="read-more" 
-                        href={href} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        title={hrefAriaLabel} 
-                        aria-label={hrefAriaLabel}
-                    >
-                        Read more
-                    </a>
                 </div>
-            </div>
-            
+            </a>
         </article>
     );
 }
