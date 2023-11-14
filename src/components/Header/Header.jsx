@@ -6,10 +6,12 @@ export default function Header() {
 
     return (
         <header>
-            <div className="site-name-container">
-                <Link className="site-name" to="/">Corina Murg </Link>
+            <a className="skip-to-content" href="#main">Skip to Content</a>
+            <div className="header-left">
+                <Link className="logo" to="/">Corina Murg </Link>
                 <span>Software Engineer focused on Accessibility</span>
             </div>
+            
             <nav>
                 <NavLink
                     to="/"

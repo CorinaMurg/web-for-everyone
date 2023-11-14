@@ -9,11 +9,11 @@ export default function Projects() {
         <div className="projects">
             <div className="projects--intro">
                 <h1>Latest Projects</h1>
-                <p>Please visit <span> </span>
+                {/* <p>Please visit <span> </span>
                     <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
                         my GitHub page
                     </a> for a complete overview of my work. 
-                </p>
+                </p> */}
             </div>
             <div className="projects--container">
                 {projectsData.map((project) => (

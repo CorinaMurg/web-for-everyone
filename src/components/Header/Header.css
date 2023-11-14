@@ -12,11 +12,13 @@ header {
     z-index: 100;
 }
 
-.site-name-container {
+.header-left {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
-.site-name {
+
+.logo {
     color: inherit;
     margin: 0;
     padding: 0;
@@ -29,13 +31,39 @@ header {
     align-self: flex-start;
 }
 
-.site-name:hover {
+.logo:hover {
     color: var(--text-dark-color);
 }
 
-.site-name-container span {
+.header-left span {
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.skip-to-content {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: 100;
+    background-color: var(--yellow-color);
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-inline: auto;
+    text-decoration: none;
+    transform: translateY(-300%);
+    transition: transform 250ms ease-in;
+}
+  
+.skip-to-content:focus {
+    transform: translateY(0%);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* all nav links */

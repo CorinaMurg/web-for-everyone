@@ -17,9 +17,12 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src="/assets/Sprout.jpg" alt="A group of pots with dirt and green sprouts."/>
+                <img src="/assets/Sprout.jpg" 
+                     alt={`A group of pots with dirt and green sprouts. 
+                     A banner that reads: let's grow an accessible world.`}
+                />
                 <div className="home--intro--image--caption">
-                    #Let&rsquo;sGrowAnAccessibleWorld
+                    Let&rsquo;s Grow An Accessible World
                 </div>
 
                 <div className="photo-credit">

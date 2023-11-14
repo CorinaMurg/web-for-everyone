@@ -69,23 +69,21 @@ export default function About() {
                         alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
                     />
                 </div>
-                <div>
-                    <h1>My Career in a Nutshell</h1>
-                    <p>For a more comprehensive view, please visit my {' '}
-                        <a href="https://www.linkedin.com/in/corinamurg/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            aria-label="Corina's LinkedIn profile"
-                        >
-                            LinkedIn profile
-                        </a>
-                        .
-                    </p>
-                </div>
+                <h1>My Career in a Nutshell</h1>
             </div>
             <div className="about--sections">
                 {renderAboutSections()}
             </div>
+            <p className="about--conclusion">For a more comprehensive view, please visit my {' '}
+                <a href="https://www.linkedin.com/in/corinamurg/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Corina's LinkedIn profile"
+                >
+                    LinkedIn profile
+                </a>
+                .
+            </p>
         </div>
     );
 }
