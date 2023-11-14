@@ -73,9 +73,10 @@
 
 .home--intro--image .photo-credit {
     position: absolute;
-    bottom: -25px;    
+    bottom: -40px;    
     font-size: 0.9rem;
     text-align: left;
+    width: 100%;
 }
 
 .photo-credit a {
