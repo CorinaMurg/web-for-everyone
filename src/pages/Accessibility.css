@@ -101,21 +101,16 @@
     width: 80%;
 }
 
-/* .post-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-top: 24px;
-    /* margin-bottom: 16px; */
-    */
-
 .right--components-heading {
     grid-row: 3 / 4; 
     grid-column: 2 / 3;
+    margin-top: 48px;
+    margin-bottom: 0;
 }
 
-.right--components-heading,
+
 .right--tips-heading {
-    margin-top: 48px;
+    margin-top: 80px;
     margin-bottom: 0;
 }
 
@@ -128,6 +123,7 @@
 .right--components li {
     margin-block: 20px;
 }
+
 /* accessible components */
 .component-title {
     font-size: 1.2rem;

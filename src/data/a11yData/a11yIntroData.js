@@ -7,7 +7,7 @@ export const a11yIntroData = {
         `Coding for accessibility can be confusing, and it becomes increasingly challenging as an 
         application grows in complexity. However, the most critical aspect is the willingness and 
         determination to create an accessible product; everything else can be learned.`,
-        `Explore the links below for more information and tips on making your work more accessible.`
+        `Explore the links below for more information and tips on making your products accessible.`
     ],
     "imageSrc": "/assets/brickWallWithAccessibleEntrySign.jpg",
     "imageAlt": "Brick wall with accessible entry sign",

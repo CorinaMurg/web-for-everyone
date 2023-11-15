@@ -4,6 +4,9 @@ import PropTypes from "prop-types"
 export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
     return (
         <article className="project">
+            <div className="project--right">
+                <img src={imageSrc} alt={imageAlt} loading='lazy'/>
+            </div> 
             <div className="project--left">
                 <h2 className="project--left--title">{title}</h2>
                 <div>
@@ -16,9 +19,7 @@ export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, im
                     <a className="project-link" href={hrefGitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div> 
             </div>
-            <div className="project--right">
-                <img className="project--right--image" src={imageSrc} alt={imageAlt} loading='lazy'/>
-            </div>  
+             
         </article>
     )
 }

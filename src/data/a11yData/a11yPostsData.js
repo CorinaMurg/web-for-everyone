@@ -28,11 +28,11 @@ export const a11yPostsData = [
     },
     {
         "label": "corina",
-        "title": "Buttons or Links? How to Choose",
+        "title": "HTML: Buttons or Links? How to Choose",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
-        "href": "https://dev.to/corinamurg/use-semantic-html-4b97",
+        "href": "https://dev.to/corinamurg/html-buttons-vs-links-5059",
         "hrefAriaLabel": "Corina's blog post about the difference between buttons and links.",
     },
     {

@@ -14,7 +14,7 @@ export default function Footer() {
                     <span>Thank you for reading!</span>
                 </div>
                 <div className="footer-left--bottom">
-                <span>Build with React by Corina Murg. &#169; 2023 Corina Murg</span>
+                <span>Build with React, tested with Playwright 🎭 by Corina Murg. &#169; 2023 Corina Murg</span>
                 </div>
             </div>
             <div className="footer-right">

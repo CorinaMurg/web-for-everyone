@@ -1,25 +1,6 @@
 
 export const recentPostsData = [
     {
-        "title": "How I Finally Understood ES6 Classes & Constructors",
-        "description": [
-          `Hint: it involved building Lava Leap, a 2D platform game. And I don't even play video games!
-          I used to believe that classes & constructors were secret backend tools. 
-          For this game I wrote “Constructor” SEVEN times!`,
-          `Read about my experience building the game using the "Eloquent JavaScript" book as a guide and 
-          under the mentorship of a senior game developer.`,
-          ],
-        "href": "https://lava-leap.netlify.app/",
-        "hrefAriaLabel": "Link to Corina's blog post about the Lava Leap game.",
-        "imageSrc": "/assets/lavaLeap2.jpg",
-        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "photographer": "",
-        "photographerSrc": "",
-        "photographerSrcAriaLabel": "",
-        "unsplashSrc": "",
-        "unsplashSrcAriaLabel": "",
-    },
-    {
         "title": "Semantic HTML: Buttons vs Links",
         "description": [
             `Buttons and links are fundamental elements in web design, each with distinct semantic 
@@ -37,6 +18,25 @@ export const recentPostsData = [
         "photographerSrcAriaLabel": "Link to Aaron Visuals' Unsplash profile",
         "unsplashSrc": "https://unsplash.com/photos/person-holding-black-and-green-compass-pointing-to-west-3jBU9TbKW7o",
         "unsplashSrcAriaLabel": "Link to Aaron Visuals' compass photo on Unsplash",
+    },
+    {
+        "title": "How I Finally Understood ES6 Classes & Constructors",
+        "description": [
+          `Hint: it involved building Lava Leap, a 2D platform game. And I don't even play video games!
+          I used to believe that classes & constructors were secret backend tools. 
+          For this game I wrote “Constructor” SEVEN times!`,
+          `Read about my experience building the game using the "Eloquent JavaScript" book as a guide and 
+          under the mentorship of a senior game developer.`,
+          ],
+        "href": "https://lava-leap.netlify.app/",
+        "hrefAriaLabel": "Link to Corina's blog post about the Lava Leap game.",
+        "imageSrc": "/assets/lavaLeap2.jpg",
+        "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
+        "photographer": "",
+        "photographerSrc": "",
+        "photographerSrcAriaLabel": "",
+        "unsplashSrc": "",
+        "unsplashSrcAriaLabel": "",
     },
     {
         "title": "Immutability in React",

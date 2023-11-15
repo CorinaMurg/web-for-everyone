@@ -3,8 +3,9 @@ export const projectsData = [
     {
         "title": "Lava Leap",
         "description": [
-          "A 2D platform game implemented using vanilla JavaScript. The game features player movement, enemy patterns, collectible items, and platform obstacles.",
-          "The player progresses through multiple challenging levels. A collision with lava means the level restarts. Should the player run out of lives or successfully complete all levels, the game will come to an end.",
+          `A 2D platform game implemented in JavaScript. The player progresses through multiple challenging 
+          levels. A collision with lava means the level restarts. Should the player run out of lives or 
+          successfully complete all levels, the game will come to an end, with the option to restart.`,
           "Want an extra challenge or need some help? Adjust your player's number of lives directly in the URL.",
           ],
         "hrefSite": "https://lava-leap.netlify.app/",
