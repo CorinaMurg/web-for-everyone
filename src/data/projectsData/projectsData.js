@@ -18,7 +18,7 @@ export const projectsData = [
         "sampleImageSrc": "/assets/a11yBlue.jpg",
         "sampleImageAlt": "Hashtag #a11y in white letters on a blue background.",
         "sampleImageCredit": "",
-        "sampleProjectDescription": "Built in React, tested with Playwright"
+        "sampleProjectDescription": "Multipage website built in React, tested with Playwright"
     },
     {
         "title": "Twain & Company",

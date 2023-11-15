@@ -42,8 +42,8 @@ export const aboutData = {
             suffix: "",
             extras: [
                 {
-                    prefix: `I've written my first test in Playwright for this very website! 
-                            Check it out on `, 
+                    prefix: `I've written my first tests in Playwright for this very website! 
+                            Check them out on `, 
                     link: "https://github.com/CorinaMurg/corina-portfolio",
                     linkText: "my GitHub repo",
                     linkAriaLabel: "GitHub repo for Corina's portfolio website",
