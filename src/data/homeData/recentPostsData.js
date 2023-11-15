@@ -24,12 +24,12 @@ export const recentPostsData = [
         "description": [
           `Hint: it involved building Lava Leap, a 2D platform game. And I don't even play video games!
           I used to believe that classes & constructors were secret backend tools. 
-          For this game I wrote “Constructor” SEVEN times!`,
+          For this game I had to use the word “Constructor” SEVEN times!`,
           `Read about my experience building the game using the "Eloquent JavaScript" book as a guide and 
           under the mentorship of a senior game developer.`,
           ],
         "href": "https://lava-leap.netlify.app/",
-        "hrefAriaLabel": "Link to Corina's blog post about the Lava Leap game.",
+        "hrefAriaLabel": "How I finally understood ES6 Classes and Constructors blog post by Corina published on dev.to.",
         "imageSrc": "/assets/lavaLeap2.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "photographer": "",
@@ -45,7 +45,7 @@ export const recentPostsData = [
           "This post is a quick dive into the world of React documentation to look at what it means to use immutable objects and how to safely update objects in state.",
           ],
         "href": "https://www.corinamurg.dev/post/immutability-in-react",
-        "hrefAriaLabel": "Link to Corina's blog post on Immutability in React.",
+        "hrefAriaLabel": "Immutability in React blog post by Corina published on corinamurg.dev.",
         "imageSrc": "/assets/redAndBlueCameleon.jpg",
         "imageAlt": "A red and blue chameleon sitting on a branch.",
         "photographer": "Simon Schwyter",

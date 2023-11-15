@@ -31,18 +31,19 @@
     object-fit: cover;
 }
 
+.sample-project--link {
+    text-decoration: none;
+    color: var(--text-dark-color);
+}
+
 .sample-project--title {
     font-size: 1.7rem;
     font-weight: 500;
     margin-top: 32px;
     position: relative; 
-    display: inline-block; 
+    display: inline;
+    justify-content: start; 
     padding-bottom: 10px;
-}
-
-.sample-project--link {
-    text-decoration: none;
-    color: var(--text-dark-color);
 }
 
 .sample-project--title::before {
@@ -53,10 +54,10 @@
     width: 0;
     height: 3px;
     background-color: var(--text-dark-color);
-    transition: width 0.8s;
+    transition: width 1s;
 }
 
-.sample-project--title--link:hover .sample-project--title::before {
+.sample-project--title:hover::before {
     width: 100%;
 }
 

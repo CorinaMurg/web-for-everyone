@@ -50,6 +50,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: var(--blueBright-color);
+    color: var(--text-light-color);
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: "Popins", sans-serif;
 }
 
 .home--intro--image img {

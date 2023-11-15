@@ -101,7 +101,6 @@ export default function Accessibility() {
                 <ul className="right--tips">
                     {a11yTipsData.map((tipData, index) => (
                         <li key={index}>
-                            
                             <A11yTipItem
                                 tip={
                                     <>

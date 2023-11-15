@@ -17,7 +17,8 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src="/assets/greenForest.jpg" 
+                #A11y
+                {/* <img src="/assets/greenForest.jpg" 
                      alt={`A group of pots with dirt and green sprouts. 
                      A banner that reads: let's grow an accessible world.`}
                 />
@@ -44,7 +45,7 @@ export default function HomeIntro() {
                         <span className="photo-credit--link">Unsplash</span>
                     </a>
                     .
-                </div>
+                </div> */}
             </div>
                
         </div>
