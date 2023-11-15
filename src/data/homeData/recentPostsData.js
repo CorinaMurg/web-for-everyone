@@ -52,7 +52,7 @@ export const recentPostsData = [
         "photographerSrc": "https://unsplash.com/@saimens",
         "photographerSrcAriaLabel": "Simon Schwyter's profile on Unsplash",
         "unsplashSrc": "https://unsplash.com/photos/a-red-and-blue-chamelon-sitting-on-a-branch-Nod8_cz1NDU",
-        "unsplashSrcAriaLabel": "Unspalsh page for Simon Schwyter's cameleon photo",
+        "unsplashSrcAriaLabel": "Unsplash page for Simon Schwyter's cameleon photo",
     },
 ];
   

@@ -82,6 +82,32 @@ test('should not have any automatically detectable WCAG A or AA violations', asy
 //     }
 // });
 
+// test('WCAG 2.5.3: Label in Name', async ({ page }) => {
+//     function normalizeString(str) {
+//         return str.toLowerCase().replace(/[\W_]+/g, " ").trim();
+//     }
+
+//     await page.goto('https://corinamurg.netlify.com/');
+//     const links = await page.$$('[aria-label]');
+
+//     for (const link of links) {
+//         const linkText = await link.$eval('*', (el) => {
+//             const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
+//             return heading ? heading.textContent?.trim() : el.textContent?.trim();
+//         }) ?? "";
+
+//         const ariaLabel = await link.getAttribute('aria-label') ?? "";
+//         const normalizedAriaLabel = normalizeString(ariaLabel);
+//         const normalizedLinkText = normalizeString(linkText);
+//         const condition = normalizedAriaLabel.includes(normalizedLinkText);
+        
+//         if (!condition) {
+//             throw new Error(`The aria-label "${ariaLabel}" should include the text "${linkText}".`);
+//         }
+//         expect(condition).toBeTruthy();
+//     }
+// });
+
 test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     function normalizeString(str) {
         return str.toLowerCase().replace(/[\W_]+/g, " ").trim();
@@ -89,6 +115,7 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
 
     await page.goto('https://corinamurg.netlify.com/');
     const links = await page.$$('[aria-label]');
+    const errors = [];
 
     for (const link of links) {
         const linkText = await link.$eval('*', (el) => {
@@ -99,13 +126,11 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
         const ariaLabel = await link.getAttribute('aria-label') ?? "";
         const normalizedAriaLabel = normalizeString(ariaLabel);
         const normalizedLinkText = normalizeString(linkText);
-        const condition = normalizedAriaLabel.includes(normalizedLinkText);
         
+        const condition = normalizedAriaLabel.includes(normalizedLinkText);  
         if (!condition) {
-            throw new Error(`The aria-label "${ariaLabel}" should include the text "${linkText}".`);
+            errors.push(`The aria-label "${ariaLabel}" should include the visible text "${linkText}"`);
         }
-        expect(condition).toBeTruthy();
     }
+    expect(errors).toEqual([]);
 });
-
-  
