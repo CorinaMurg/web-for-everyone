@@ -17,7 +17,7 @@ export default function HomeIntro() {
                 ))}
             </div>
             <div className="home--intro--image">
-                <img src="/assets/Sprout.jpg" 
+                <img src="/assets/greenForest.jpg" 
                      alt={`A group of pots with dirt and green sprouts. 
                      A banner that reads: let's grow an accessible world.`}
                 />
@@ -27,19 +27,19 @@ export default function HomeIntro() {
 
                 <div className="photo-credit">
                     Photo by {''}
-                    <a href="https://unsplash.com/@rreinhardt" 
-                        aria-label="Rachel Reinhardt's portfolio page on Unsplash"
+                    <a href="https://unsplash.com/@ankitch6"
+                        aria-label="Ankit Choudhary's portfolio page on Unsplash"
                         target="_blank" rel="noopener noreferrer"
-                        title="Rachel Reinhardt's portfolio page on Unsplash"
+                        title="Ankit Choudhary's portfolio page on Unsplash"
                     >
-                        <span className="photo-credit--link">Rachel Reinhardt</span>
+                        <span className="photo-credit--link">Ankit Choudhary</span>
                     </a> 
                     {' '}on{' '}
                     <span> </span>
-                    <a href="https://unsplash.com/photos/a-group-of-seedlings-sprouting-from-seed-bags-xWD9BbsgHy4" 
-                        aria-label="Link to Rachel Reinhardt's sprouts photo on Unsplash"
+                    <a href="https://unsplash.com/photos/green-grass-field-with-trees-SDP7QQjHWNI" 
+                        aria-label="Link to Ankit Choudhary green forest photo on Unsplash"
                         target="_blank" rel="noopener noreferrer"
-                        title="Link to Rachel Reinhardt's sprouts photo on Unsplash"
+                        title="Link to Ankit Choudhary green forest photo on Unsplash"
                     >
                         <span className="photo-credit--link">Unsplash</span>
                     </a>

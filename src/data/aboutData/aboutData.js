@@ -36,13 +36,7 @@ export const aboutData = {
             suffix: ".",
         },
         {
-            prefix: "Developing a meal planner app using the OpenAI API",
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
-        {
-            prefix: "Learning Playwright",
+            prefix: "Learning Playwright 🎭",
             link: "",
             linkText: "",
             suffix: "",

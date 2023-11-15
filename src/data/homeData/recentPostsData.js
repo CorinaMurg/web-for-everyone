@@ -20,13 +20,16 @@ export const recentPostsData = [
         "unsplashSrcAriaLabel": "",
     },
     {
-        "title": "Accessibility Resources for Developers",
+        "title": "Semantic HTML: Buttons vs Links",
         "description": [
-          "JavaScript objects are mutable. BUT, React asks that we treat objects in state as immutable. Should we listen?",
-          "A quick dive into the world of React to ",
+            `Buttons and links are fundamental elements in web design, each with distinct semantic 
+            meanings and accessibility implications. Semantic meaning refers to the message
+            HTML elements convey, particularly users of assistive technologies.`,
+            `Therefore, for accessibility (and beyond!), it's essential to use the appropriate 
+            element given the functionality you aim to implement. Let’s see how to use them!`,
           ],
-        "href": "",
-        "hrefAriaLabel": "Link to Corina's blog post on Accessibility resources for developers",
+        "href": "https://dev.to/corinamurg/html-buttons-vs-links-5059",
+        "hrefAriaLabel": "Corina's blog post on HTML buttons vs links on dev.to.",
         "imageSrc": "/assets/personHoldingCompass.jpg",
         "imageAlt": "hand holding black and green compass pointing to west",
         "photographer": "Aaron Visuals",

@@ -22,13 +22,14 @@ header {
     color: inherit;
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: "Playpen Sans", sans-serif;
     color: var(--blue-color);
     text-decoration: none;
     display: flex;
     align-self: flex-start;
+    text-transform: uppercase;
 }
 
 .logo:hover {

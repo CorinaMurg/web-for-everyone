@@ -60,15 +60,13 @@
 
 .home--intro--image--caption {
     position: absolute;
-    top: 8%;
-    color: white;     
+    bottom: 0;
+    color: white;  
     font-size: 1.3rem;
     font-weight: 600;
-    background-color: #023047;
+    background-color: var(--gray-color);
     width: 100%;
     text-align: center;
-    border-top: 3px solid var(--yellow-color);
-    border-bottom: 3px solid var(--yellow-color);
 }
 
 .home--intro--image .photo-credit {

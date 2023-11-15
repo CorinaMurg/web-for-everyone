@@ -24,17 +24,6 @@ footer {
     align-self: start;
 }
 
-.corina-murg {
-    font-size: 1.5rem;
-    font-family: "Playpen Sans", sans-serif;
-    color: var(--blue-color);
-    font-weight: 600;
-}
-
-.corina-murg:hover {
-    color: var(--text-dark-color);
-}
-
 .footer-right {
     display: flex;
     align-items: left;
@@ -82,5 +71,6 @@ footer a {
     font-size: 1rem;
     color: var(--blue-color);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
