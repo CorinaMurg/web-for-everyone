@@ -51,8 +51,12 @@ export function RecentPost ( {
                     )}
                 </div>
             </div>
-            <a className="recent-post--link" href={href} target="_blank" rel="noopener noreferrer" title={hrefAriaLabel} aria-label={hrefAriaLabel}>
-                <div className="recent-post--right">
+            <a className="recent-post--link recent-post--right" 
+                href={href} target="_blank" 
+                rel="noopener noreferrer" 
+                title={hrefAriaLabel} 
+                aria-label={hrefAriaLabel}
+            >
                     <h4>{title}</h4>
                     <div>
                         <div className="recent-post--description">
@@ -64,7 +68,6 @@ export function RecentPost ( {
                             Read more
                         </span>
                     </div>
-                </div>
             </a>
         </article>
     );
