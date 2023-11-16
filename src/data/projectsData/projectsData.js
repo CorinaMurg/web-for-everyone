@@ -12,11 +12,20 @@ export const projectsData = [
           ],
         "hrefSite": "https://corinamurg.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/corina-portfolio",
-        "imageSrc": "/assets/corinaJson.png",
-        "imageAlt": "Hashtag #a11y in white letters on a blue background.",
+        "imageSrc": "/assets/corinaAboutJson2.png",
+        "imageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData'. It has a property 
+                    called 'currently' which is an array including objects with properties 'prefix', 'link', 
+                    'linkText', 'suffix', and 'extras'. The prefix includes the text 'Learning Playwright, 
+                    and the extras contain a nested object with a statement about Corina's testing
+                    this website with Playwright. It also includes the GitHub link to Corina's portfolio 
+                    and aria-label and title attributes. 
+                    The code is set against a dark editor background with syntax highlighting`,
         "techStack": "React  •  Playwright  •  Accessibility",
-        "sampleImageSrc": "/assets/a11yBlue.jpg",
-        "sampleImageAlt": "Hashtag #a11y in white letters on a blue background.",
+        "sampleImageSrc": "/assets/corinaAboutJsonSample.png",
+        "sampleImageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData'. It has a property 
+                    called 'currently' which is an array including objects with properties 'prefix', 'link', 
+                    'linkText', 'suffix'. All the values form the sentence "writing about JavaScript and
+                    accessibility on my blog on dev.to." The code is set against a dark editor background`,
         "sampleImageCredit": "",
         "sampleProjectDescription": "Multipage website built in React, tested with Playwright"
     },
@@ -60,7 +69,7 @@ export const projectsData = [
             successfully complete all levels, the game will come to an end, with the option to restart.`,
             "Want an extra challenge or need some help? Adjust your player's number of lives directly in the URL.",
             ],
-        "hrefSite": "https://dev.to/corinamurg/lava-leap-a-2d-platform-game-built-with-javascript-5a1g-temp-slug-5684513?preview=5b079149c8396e0d0423d566cf5d44b4e802ce90833d2dd5185ff13bd6d9a03a5adcf05128269743bf288f65f4a3918d9bd53fb601424e4a8c8fa4eb",
+        "hrefSite": "https://lava-leap.netlify.app/",
         "hrefGitHub": "https://github.com/CorinaMurg/lava-leap-game",
         "imageSrc": "/assets/lavaLeapBlog.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",

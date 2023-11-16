@@ -28,9 +28,9 @@ export const recentPostsData = [
           `Read about my experience building the game using the "Eloquent JavaScript" book as a guide and 
           under the mentorship of a senior game developer.`,
           ],
-        "href": "https://lava-leap.netlify.app/",
+        "href": "https://dev.to/corinamurg/lava-leap-a-2d-platform-game-built-with-javascript-5a1g-temp-slug-5684513?preview=5b079149c8396e0d0423d566cf5d44b4e802ce90833d2dd5185ff13bd6d9a03a5adcf05128269743bf288f65f4a3918d9bd53fb601424e4a8c8fa4eb",
         "hrefAriaLabel": "How I finally understood ES6 Classes and Constructors blog post by Corina published on dev.to.",
-        "imageSrc": "/assets/lavaLeap2.jpg",
+        "imageSrc": "/assets/lavaLeap.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "photographer": "",
         "photographerSrc": "",

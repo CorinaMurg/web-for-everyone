@@ -28,11 +28,12 @@ export const aboutData = {
             suffix: "",
         },
         {
-            prefix: "Writing about JavaScript and accessibility on ",
+            prefix: `Writing about JavaScript and 
+                     accessibility on `,
             link: "https://dev.to/corinamurg/",
             linkText: "my blog",
-            linkAriaLabel: "Corina's blog on dev.to",
-            linkTitle: "Corina's blog on dev.to",
+            linkAriaLabel: "my blog on dev.to",
+            linkTitle: "my blog on dev.to",
             suffix: ".",
         },
         {
