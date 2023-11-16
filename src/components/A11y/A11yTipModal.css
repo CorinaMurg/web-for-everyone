@@ -12,8 +12,12 @@
 }
 
 .modal h4 {
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
+
+/* .modal h4:last-child {
+    margin-top: 48px;
+} */
 
 .modal h4, .modal div p {
     align-self: flex-start;
@@ -38,4 +42,20 @@
     background-color: var(--yellow-color);
     color: var(--text-dark-color);
 }
+
+.tip-description-div {
+    padding-left: 16px;
+    border-left: 4px solid var(--yellow-color);
+    margin-bottom: 48px;
+}
+
+.tip-description-div p:first-child{
+    margin-top: 0;
+}
+
+.tip-description-div p:last-child{
+    margin-bottom: 0;
+}
+
+
 

@@ -39,13 +39,13 @@ export default function A11yTipModal ({isModalOpen, closeModal, tip, left, right
         >
             <h3>{tip}</h3>
             <h4>{left}</h4>
-            <div>
+            <div className='tip-description-div'>
                 {descriptionLeft.map((line, index) => (
                     <p key={index}>{line}</p>
                 ))}
             </div>
             <h4>{right}</h4>
-            <div>
+            <div className='tip-description-div'>
                 {descriptionRight.map((line, index) => (
                     <p key={index}>{line}</p>
                 ))}
