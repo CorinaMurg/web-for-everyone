@@ -1,16 +1,15 @@
 
 export const projectsData = [
-
     {
         "title": "My Portfolio Site",
         "description": [
-          `This is a multi-page site built in React with an accessibility-first approach. I combined 
+          `I built this site in React with an accessibility-first approach. I combined 
           Playwright's automated testing tools, including its code generation feature, with custom scripts 
           to validate UI functionality and compliance with accessibility standards.`,
           `I've decoupled content from UI code by relying on JSON files, and therefore created a clean and 
           maintainable codebase`,
           ],
-        "hrefSite": "https://corinamurg.netlify.app/",
+        "hrefSite": "https://corinamurg.netlify.app/projects/",
         "hrefGitHub": "https://github.com/CorinaMurg/corina-portfolio",
         "imageSrc": "/assets/corinaAboutJson2.png",
         "imageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData'. It has a property 
@@ -21,13 +20,6 @@ export const projectsData = [
                     and aria-label and title attributes. 
                     The code is set against a dark editor background with syntax highlighting`,
         "techStack": "React  •  Playwright  •  Accessibility",
-        "sampleImageSrc": "/assets/corinaAboutJsonSample.png",
-        "sampleImageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData'. It has a property 
-                    called 'currently' which is an array including objects with properties 'prefix', 'link', 
-                    'linkText', 'suffix'. All the values form the sentence "writing about JavaScript and
-                    accessibility on my blog on dev.to." The code is set against a dark editor background`,
-        "sampleImageCredit": "",
-        "sampleProjectDescription": "Multipage website built in React, tested with Playwright"
     },
     {
         "title": "Twain & Company",
@@ -40,10 +32,6 @@ export const projectsData = [
         "imageSrc": "/assets/booksOnATable.jpg",
         "imageAlt": "Piles of books on a table.",
         "techStack": "React  •  CSS GRID  •  BEM  •  A11y",
-        "sampleImageSrc": "/assets/lettersFromEarth.jpg",
-        "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "sampleImageCredit": "",
-        "sampleProjectDescription": "Bookstore website built with React",
     },
     {
         "title": "Space Tourism Agency",
@@ -56,10 +44,6 @@ export const projectsData = [
         "imageSrc": "/assets/spaceTourismMars.png",
         "imageAlt": "",
         "techStack": "JavaSCRIPT  •  CSS GRID + FLEXBOX  •  BEM  •  A11y",
-        "sampleImageSrc": "/assets/spaceTourismEuropa.jpg",
-        "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "sampleImageCredit": "",
-        "sampleProjectDescription": "Multipage website built with JavaScript",
     },
     {
         "title": "Lava Leap",
@@ -74,11 +58,9 @@ export const projectsData = [
         "imageSrc": "/assets/lavaLeapBlog.jpg",
         "imageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
         "techStack": "JavaScript  •  ES6 Classes and Constructors",
-        "sampleImageSrc": "/assets/lavaLeapSample2.jpg",
-        "sampleImageAlt": "Grid with blue background. Player is shown as a vertical black rectangle standing on a horizontal wall. Two yellow squares representing coins, two red lava pits, plus several wall structures in white.",
-        "sampleImageCredit": "",
-        "sampleProjectDescription": "2D Platform Game built with JavaScript"
     },
+];
+
     // {
     //     "title": "Neat Notes",
     //     "description": [
@@ -96,5 +78,5 @@ export const projectsData = [
     //     "sampleImageCredit": "",
     //     "sampleProjectDescription": ""
     // },
-];
+
   

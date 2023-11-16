@@ -1,9 +1,13 @@
+
 import "./Project.css"
 import PropTypes from "prop-types"
+import slugify from "../../utils/slugify.js"
 
 export function Project( {title, description, hrefSite, hrefGitHub, imageAlt, imageSrc } ) {
+    const slugifiedTitle = slugify(title);      
+
     return (
-        <article className="project">
+        <article className="project" id={slugifiedTitle}>
             <div className="project--right">
                 <img src={imageSrc} alt={imageAlt} loading='lazy'/>
             </div> 

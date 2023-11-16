@@ -1,9 +1,23 @@
-
-import { Project } from "../components/Projects/Project"
+import { useEffect } from "react"
+import { Project } from "../components/Project/Project"
 import { projectsData } from "../data/projectsData/projectsData"
 import "./Projects.css"
 
 export default function Projects() {
+
+    useEffect(() => {
+        // retrieves the hash fragment from the current URL
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            const element = document.getElementById(hash);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              const offset = 50; 
+              window.scrollBy(0, -offset);
+            }
+        }
+      }, []);
+      
 
     return (
         <div className="projects">
