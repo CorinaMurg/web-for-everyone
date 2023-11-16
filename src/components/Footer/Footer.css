@@ -79,3 +79,14 @@ footer a {
     flex-direction: column;
     font-size: 0.8rem;
 }
+
+.react-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.built-span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

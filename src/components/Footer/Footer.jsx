@@ -15,7 +15,9 @@ export default function Footer() {
                 </div>
                 <div className="footer-left--bottom">
                 <div className="built-copyright">
-                    <span>Build with React</span>
+                    <span className="built-span">Built with React
+                        <img className="react-logo" alt="react logo" src="/assets/react.svg"/>
+                    </span>
                     <span>Tested with Playwright 🎭</span>
                     <div>
                         <span className="blue-span">&#169;</span><span> 2023 Corina Murg</span>
