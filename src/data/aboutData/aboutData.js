@@ -37,19 +37,19 @@ export const aboutData = {
             suffix: ".",
         },
         {
-            prefix: "Learning Playwright 🎭",
-            link: "",
-            linkText: "",
-            suffix: "",
+            prefix: "Testing with 🎭 and documenting the experience on my blog. Check out ",
+            link: "https://dev.to/corinamurg/using-codegen-5ap8-temp-slug-8294807?preview=d2398f679864a5b13ea5ef3cf31451d846281135918e1defd187da9f3c14184f00308dda8d4dcbffd4e84c82cec81700364cdfb104d7e01ea661c445",
+            linkText: "my series of posts about Playwright",
+            suffix: ".",
             extras: [
                 {
                     prefix: `I've written my first tests in Playwright for this very website! 
-                            Check them out on `, 
+                            Visit the site's `, 
                     link: "https://github.com/CorinaMurg/corina-portfolio",
-                    linkText: "my GitHub repo",
+                    linkText: "GitHub repo",
                     linkAriaLabel: "GitHub repo for Corina's portfolio website",
                     linkTitle: "GitHub repo for Corina's portfolio website",
-                    suffix: ".",
+                    suffix: "to see the tests in action.",
                 },
             ]
         },

@@ -32,13 +32,13 @@ export default function Header() {
                     Accessibility
                 </NavLink>
                 <NavLink
-                    to="/about"
+                    // to="/about"
                     className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                 >
                     About
                 </NavLink>
                 <a  className="nav-link"
-                    href="https://corinamurg.dev/blog" 
+                    // href="https://corinamurg.dev/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >

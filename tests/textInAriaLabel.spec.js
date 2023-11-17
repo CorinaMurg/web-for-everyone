@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 // test('WCAG 2.5.3: Label in Name', async ({ page }) => {
 //     await page.goto('https://corinamurg.netlify.com/');
     
-//     const elements = await page.$$('[aria-label]');
+//     const elements = await page.locator('[aria-label]');
 //     for (const elementHandle of elements) {
 //         const visibleText = (await elementHandle.textContent())?.trim() ?? "";
       
@@ -25,7 +25,7 @@ import { test, expect } from '@playwright/test';
 //     await page.goto('https://yourwebsite.com/');
     
 //     // Select all <a> elements with an aria-label attribute
-//     const links = await page.$$('[aria-label]');
+//     const links = await page.locator('[aria-label]');
 
 //     for (const link of links) {
 //         // Check for a heading child, if not found, use the text content of the <a> itself
@@ -50,7 +50,7 @@ import { test, expect } from '@playwright/test';
 //     }
 
 //     await page.goto('https://corinamurg.netlify.com/');
-//     const links = await page.$$('[aria-label]');
+//     const links = await page.locator('[aria-label]');
 
 //     for (const link of links) {
 //         const linkText = await link.$eval('*', (el) => {
@@ -77,14 +77,18 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     }
 
     await page.goto('https://corinamurg.netlify.com/');
-    const links = await page.$$('[aria-label]');
+    const links = page.locator('[aria-label]');
     const errors = [];
+    const linksCount = await links.count();
 
-    for (const link of links) {
-        const linkText = await link.$eval('*', (el) => {
+    for (let i = 0; i < linksCount; i++) {
+        const link = links.nth(i);
+
+        const linkText = await link.evaluate((el) => {
             const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
             return heading ? heading.textContent?.trim() : el.textContent?.trim();
-        }) ?? "";
+        });
+        
 
         const ariaLabel = await link.getAttribute('aria-label') ?? "";
         const normalizedAriaLabel = normalizeString(ariaLabel);
