@@ -1,5 +1,6 @@
 
 import { Link, NavLink } from "react-router-dom"
+import handleLinkClick from "../../utils/handleLinkClick"
 import "./Header.css"
 
 export default function Header() {
@@ -16,29 +17,33 @@ export default function Header() {
                 <NavLink
                     to="/"
                     className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                    onClick={handleLinkClick}
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/projects"
                     className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                    onClick={handleLinkClick}
                 >
                     Projects
                 </NavLink>
                 <NavLink
                     to="/accessibility"
                     className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                    onClick={handleLinkClick}
                 >
                     Accessibility
                 </NavLink>
                 <NavLink
                     to="/about"
                     className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                    onClick={handleLinkClick}
                 >
                     About
                 </NavLink>
                 <a  className="nav-link"
-                    href="https://corinamurg.dev/blog" 
+                    href="https://dev.to/corinamurg" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >

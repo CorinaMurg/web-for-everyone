@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom"
+import handleLinkClick from "../../utils/handleLinkClick"
 import "./Footer.css"
 
 export default function Footer() {
-    const handleLinkClick = () => {
-        window.scrollTo(0, 0);
-    };
-
     return (
         <footer>
             <div className="footer-left">

@@ -88,18 +88,22 @@ h1 {
 /* looks like a button but is a link */
 .site-link {
     text-decoration: none;
-    color: var(--text-light-color);
-    font-weight: 400;
+    /* color: var(--text-light-color); */
+    color: var(--text-dark-color);
+    font-weight: 500;
     font-size: 1.5rem;
     padding: 12px 24px;
     text-align: center;
-    background-color: var(--text-dark-color);
+    /* background-color: var(--text-dark-color); */
+    background-color: var(--yellow-color);
     cursor: pointer;
 }
 
 .site-link:hover {
-    background-color: var(--yellow-color);
-    color: var(--text-dark-color);
+    /* background-color: var(--yellow-color); */
+    background-color: var(--text-dark-color);
+    /* color: var(--text-dark-color); */
+    color: var(--text-light-color);
 }
 
 *:focus-visible {
@@ -163,8 +167,15 @@ h1 {
     width: 100%;
 }
 
-/* .blue-span {
-    color: var(--blue-color);
-    font-weight: 600;
-} */
+
+@keyframes moveUpOnLoad {
+    from {
+        transform: translateY(50px);  
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);  
+        opacity: 1;
+    }
+}
 

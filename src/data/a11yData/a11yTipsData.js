@@ -146,9 +146,7 @@ export const a11yTipsData = [
             the content they contain to browsers or assistive technologies. They are typically used for 
             styling purposes or for layout. `,
             `Examples of non-semantic elements include <div> and <span>. These elements tell nothing about 
-            their contents and are generally used to apply CSS styling or JavaScript behavior. They are 
-            considered non-semantic because they don't provide any information about the nature of the content 
-            they hold. `
+            their contents and are generally used to apply CSS styling or JavaScript behavior.`
         ],
     },
     {
@@ -156,13 +154,12 @@ export const a11yTipsData = [
         "right": "HTML element",
         "descriptionLeft": [`A tag is used to create an HTML element. 
             The tag refers to the opening <tagname> or closing </tagname> syntax used in HTML documents.`,
-            `Tags come in pairs for most elements, with an opening tag marking the beginning of the element 
-            and a closing tag marking the end. However, some tags are self-closing, 
+            `Most tags come in pairs, but some tags are self-closing, 
             such as <img /> or <br />, which do not need a closing tag.`
         ],
         "descriptionRight": [`An HTML element refers to everything from the start tag to the end tag, 
             including the tag itself, its attributes, and the content in between.`,
-            `An element can consist of: `,
+            `An example of an element's structure: `,
             `- the opening tag: <p>`,
             `- the content: Hello, World!`,
             `- the closing tag: </p>`,

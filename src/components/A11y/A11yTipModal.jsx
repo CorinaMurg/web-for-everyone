@@ -4,7 +4,14 @@ import './A11yTipModal.css';
 
 import PropTypes from 'prop-types';
 
-export default function A11yTipModal ({isModalOpen, closeModal, tip, left, right, descriptionLeft, descriptionRight}) {
+export default function A11yTipModal ({
+    isModalOpen, 
+    closeModal, 
+    tip, 
+    left, 
+    right, 
+    descriptionLeft, 
+    descriptionRight}) {
     return (
         <ReactModal
             className="modal"
@@ -12,21 +19,21 @@ export default function A11yTipModal ({isModalOpen, closeModal, tip, left, right
             onRequestClose={closeModal}
             style={{
                 overlay: {
-                  zIndex: 1000,
-                  position: 'fixed',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backgroundColor: 'rgba(189, 189, 189, 0.8)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                zIndex: 1000,
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: 'rgba(189, 189, 189, 0.8)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
                 },
                 content: {
                   position: 'relative',
                   overflow: 'auto',
-                  borderRadius: '10px',
+                  borderRadius: '0',
                   padding: '30px',
                   border: 'none',
                   background: 'white',

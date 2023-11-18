@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { SampleProject } from "./SampleProject.jsx";
 import { sampleProjectsData } from "../../data/sampleProjectsData/sampleProjectsData.js";
+import handleLinkClick from "../../utils/handleLinkClick";
 import "./SampleProjects.css";
 
 export default function SampleProjects() {
@@ -19,7 +20,7 @@ export default function SampleProjects() {
                     />
                 ))}
 
-                <Link className="site-link" to="/projects">My Projects</Link>
+                <Link className="site-link" to="/projects" onClick={handleLinkClick}>My Projects</Link>
             </div>
     )
 }

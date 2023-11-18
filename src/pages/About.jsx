@@ -62,8 +62,8 @@ export default function About() {
     
     return (
         <div className="about">
-            <div className="about--intro">
-                <div className="about--intro--image">
+            <div className="about--hero">
+                <div className="about--hero--image">
                     <img  
                         src="/assets/CorinaMurg.jpg" 
                         alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"

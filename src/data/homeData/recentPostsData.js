@@ -16,8 +16,8 @@ export const recentPostsData = [
         "photographer": "Aaron Visuals",
         "photographerSrc": "https://unsplash.com/@aronvisuals",
         "photographerSrcAriaLabel": "Aaron Visuals' profile on Unsplash",
-        "unsplashSrc": "https://unsplash.com/photos/person-holding-black-and-green-compass-pointing-to-west-3jBU9TbKW7o",
-        "unsplashSrcAriaLabel": "Unsplash page for Aaron Visuals' compass photo",
+        // "unsplashSrc": "https://unsplash.com/photos/person-holding-black-and-green-compass-pointing-to-west-3jBU9TbKW7o",
+        // "unsplashSrcAriaLabel": "Unsplash page for Aaron Visuals' compass photo",
     },
     {
         "title": "How I Finally Understood ES6 Classes & Constructors",
@@ -35,8 +35,26 @@ export const recentPostsData = [
         "photographer": "",
         "photographerSrc": "",
         "photographerSrcAriaLabel": "",
-        "unsplashSrc": "",
-        "unsplashSrcAriaLabel": "",
+        // "unsplashSrc": "",
+        // "unsplashSrcAriaLabel": "",
+    },
+    {
+        "title": "Testing with Playwright",
+        "description": [
+          `I'm a developer focused on web accessibility and I have recently added Playwright to my toolset 
+          for testing web accessibility compliance. It offers straightforward syntax and 
+          excellent automation capabilities. Plus, the best documentation out there!`,
+           
+          `Please check out my blog post about the tests I wrote and how I applied them to this very site!`,
+          ],
+        "href": "https://dev.to/corinamurg/my-first-tests-in-playwright-20lc",
+        "hrefAriaLabel": "Testing with Playwright blog series by Corina published on dev.to.",
+        "imageSrc": "/assets/testingTubes3Colors.jpg",
+        "imageAlt": `The image shows a hand pouring a blue liquid from a glass test tube into a flask with red liquid, 
+                    and another hand pouring a green liquid into the flask. The background is plain white.`,
+        "photographer": "Alex Kondratiev",
+        "photographerSrc": "https://unsplash.com/@alexkondratiev",
+        "photographerSrcAriaLabel": "Alex Kondratiev's profile on Unsplash",
     },
     {
         "title": "Immutability in React",
@@ -44,15 +62,15 @@ export const recentPostsData = [
           "JavaScript objects are mutable. We can change their content. BUT, React wants us (ok, implores us!) that we treat objects that are already in state as read-only. Should we listen?",
           "This post is a quick dive into the world of React documentation to look at what it means to use immutable objects and how to safely update objects in state.",
           ],
-        "href": "https://www.corinamurg.dev/post/immutability-in-react",
+        "href": "https://dev.to/corinamurg/immutability-in-react-1apa",
         "hrefAriaLabel": "Immutability in React blog post by Corina published on corinamurg.dev.",
         "imageSrc": "/assets/redAndBlueCameleon.jpg",
         "imageAlt": "A red and blue chameleon sitting on a branch.",
         "photographer": "Simon Schwyter",
         "photographerSrc": "https://unsplash.com/@saimens",
         "photographerSrcAriaLabel": "Simon Schwyter's profile on Unsplash",
-        "unsplashSrc": "https://unsplash.com/photos/a-red-and-blue-chamelon-sitting-on-a-branch-Nod8_cz1NDU",
-        "unsplashSrcAriaLabel": "Unsplash page for Simon Schwyter's cameleon photo",
+        // "unsplashSrc": "https://unsplash.com/photos/a-red-and-blue-chamelon-sitting-on-a-branch-Nod8_cz1NDU",
+        // "unsplashSrcAriaLabel": "Unsplash page for Simon Schwyter's cameleon photo",
     },
 ];
   

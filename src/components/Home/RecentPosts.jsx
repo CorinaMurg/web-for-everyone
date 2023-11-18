@@ -15,7 +15,7 @@ export default function RecentPosts (){
             </div>
             <div className="recent-posts--container">
                 <h3 className="recent-posts--container--heading blue-heading">RECENT POSTS</h3>
-                {recentPostsData.slice(0, 3).map((post) => (    
+                {recentPostsData.slice(0, 4).map((post) => (    
                     <RecentPost
                         key={post.title}
                         title={post.title}
@@ -34,8 +34,9 @@ export default function RecentPosts (){
             </div>
             <div className="recent-posts--link">
                 <a className="site-link" 
-                    href="https://www.corinamurg.dev/blog" 
-                    target="_blank" rel="noopener noreferrer"
+                    href="https://dev.to/corinamurg" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                 >
                     Explore My Blog
                 </a>

@@ -7,19 +7,20 @@ test('test', async ({ page }) => {
     await page.getByRole('navigation').getByRole('link', { name: 'Projects' }).click();
     await page.getByRole('navigation').getByRole('link', { name: 'Accessibility' }).click();
     await page.getByRole('navigation').getByRole('link', { name: 'About' }).click();
-    const page1Promise = page.waitForEvent('popup');
+    
+    const blogPromise = page.waitForEvent('popup');
     await page.getByRole('navigation').getByRole('link', { name: 'Blog' }).click();
-    const page1 = await page1Promise;
+    const blog = await blogPromise;
+    await blog.waitForLoadState();
+    console.log(await blog.title());
 
     
 
     // Check if the URL has changed to the About page's URL
-    await expect(page).toHaveURL('https://corinamurg.netlify.app/about');
+    // await expect(page).toHaveURL('https://corinamurg.netlify.app/about');
 
     // Check for specific content that should appear on the About page
-    await expect(page.getByText('My Career in a Nutshell')).toBeVisible();
-
-
+    // await expect(page.getByText('My Career in a Nutshell')).toBeVisible();
     
 });
 

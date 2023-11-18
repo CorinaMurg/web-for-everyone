@@ -44,12 +44,12 @@ export const aboutData = {
             extras: [
                 {
                     prefix: `I've written my first tests in Playwright for this very website! 
-                            Visit the site's `, 
+                            Visit my site's `, 
                     link: "https://github.com/CorinaMurg/corina-portfolio",
                     linkText: "GitHub repo",
                     linkAriaLabel: "GitHub repo for Corina's portfolio website",
                     linkTitle: "GitHub repo for Corina's portfolio website",
-                    suffix: "to see the tests in action.",
+                    suffix: " to see the tests in action.",
                 },
             ]
         },
@@ -122,18 +122,18 @@ export const aboutData = {
             suffix: "",
         },
         {
-            prefix: "Writer, Content Creator and Designer for a Math Newsletter",
+            prefix: "Content Creator and Designer for a Math Newsletter",
             link: "",
             linkText: "",
             suffix: "",
             extras: [
                 {
-                    prefix: `An article I wrote in French about `, 
-                    link: "https://lesmathsenscene.fr/blog/2021/05/31/mathemagie-avec-un-jeu-de-cartes/",
-                    linkText: "teaching algebra with playing cards",
-                    linkAriaLabel: "Link to Corina's article in French about teaching algebra with playing cards",
-                    linkTitle: "Link to Corina's article in French about teaching algebra with playing cards",
-                    suffix: " to engage students in math class.",
+                    prefix: `Check out this X post with two issues of the `, 
+                    link: "https://twitter.com/CorinaMurg/status/1399491312462745604",
+                    linkText: "math gazette",
+                    linkAriaLabel: "https://twitter.com/CorinaMurg/status/1399491312462745604",
+                    linkTitle: "Link to Corina's tweet about the math gazette.",
+                    suffix: " I created.",
                 },
             ]
         },

@@ -62,12 +62,18 @@
     object-fit: cover;
 }
 
+.intro--image .photo-credit {
+    width: 100%;
+    bottom: -30px; 
+}
+
 
 .left-my-posts-heading {
     grid-column: 1 / 2; 
     grid-row: 3 / 4; 
     margin-top: 48px;
     margin-bottom: 0;
+    animation: moveUpOnLoad 1s ease-out;
 }
 
 .left-my-posts-div {
@@ -76,6 +82,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    animation: moveUpOnLoad 1s ease-out;
 }
 
 .left-other-heading {
@@ -101,13 +108,31 @@
     width: 80%;
 }
 
+.right {
+    grid-column: 2 / 3; 
+    grid-row: 3 / 7; 
+    animation: moveUpOnLoad 1s ease-out;
+}
+
+.right>ul {
+    padding-left: 0;
+    margin-block: 0;
+    animation: moveUpOnLoad 1s ease-out;
+    
+}
+
+.square {
+    width: 10px;
+    height: 6px;
+    background-color: var(--yellow-color);
+}
+
 .right--components-heading {
     grid-row: 3 / 4; 
     grid-column: 2 / 3;
     margin-top: 48px;
     margin-bottom: 0;
 }
-
 
 .right--tips-heading {
     margin-top: 80px;
@@ -146,27 +171,6 @@
 
 .component-title:hover::before {
     width: 100%; 
-}
-
-.right>ul {
-    padding-left: 0;
-    margin-block: 0;
-}
-
-.square {
-    width: 10px;
-    height: 6px;
-    background-color: var(--yellow-color);
-}
-
-.right {
-    grid-column: 2 / 3; 
-    grid-row: 3 / 7; 
-}
-
-.intro--image .photo-credit {
-    width: 100%;
-    bottom: -30px; 
 }
 
 .vs {

@@ -14,7 +14,7 @@
     color: var(--blue-color);
 }
 
-.about--intro {
+.about--hero {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -22,14 +22,14 @@
     position: relative;
 }
 
-.about--intro--image {
+.about--hero--image {
     width: 90px;
     aspect-ratio: 1 / 1;
     position: absolute;
     left: calc(0.5*var(--navbar-margin));
 }
 
-.about--intro--image img {
+.about--hero--image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -39,10 +39,15 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    animation: moveUpOnLoad 1s ease-out;
 }
 
 .about--section {
     padding-inline: calc(var(--max-margin) - 0.5*var(--navbar-margin)); 
+}
+
+.about--section:first-of-type {
+    margin-top: 30px;
 }
 
 .section-line {

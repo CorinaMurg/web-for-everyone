@@ -18,6 +18,16 @@
     border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
 }
 
+.projects--intro p {
+    margin-block: 0;
+    width: 40rem;
+}   
+
+.projects--intro p:last-of-type {
+    margin-bottom: 16px;
+} 
+
+
 .projects--intro a {
     color: var(--blue-color);
 }
@@ -25,6 +35,7 @@
 .projects--container {
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 
