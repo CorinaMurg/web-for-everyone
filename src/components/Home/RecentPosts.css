@@ -7,24 +7,13 @@
     gap: 32px;
 }
 
-.recent-posts--intro {
-    padding-left: calc(0.5*var(--main-margin));
-    border-left: calc(0.5*var(--main-margin)) solid var(--heading-bg-color);
-    border-right: calc(2.5*var(--main-margin)) solid var(--heading-bg-color);
-    border-top: calc(0.5*var(--main-margin)) solid var(--heading-bg-color);
-    padding-right: 0;
-    padding-top: calc(0.5*var(--main-margin));
-}
-
 .recent-posts--intro--heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
-    line-height: 2.5rem;
     margin-top: 16px;
 }
 
 .recent-posts--intro--description {
-    width: 70%;
     margin-bottom: 0;
 }
 

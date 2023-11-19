@@ -5,8 +5,8 @@ import "./RecentPosts.css";
 export default function RecentPosts (){
     return (
         <div className="recent-posts">
-            <div className="recent-posts--intro">
-                <div>
+            <div className="page-intro recent-posts--intro">
+                <div className="white-bg">
                     <h2 className="recent-posts--intro--heading">Explore my blog, join my coding journey</h2>
                     <div className="recent-posts--intro--description">
                         <p>Interested in JavaScript or accessibility? I&rsquo;m always diving into new topics on my blog.</p>
