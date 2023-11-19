@@ -21,17 +21,21 @@ export default function Projects() {
 
     return (
         <div className="projects">
-            <div className="projects--intro">
-                <h1>Latest Projects</h1>
-                <p>My projects are built with JavaScript or React, and rely on semantic HTML elements.</p>
-                <p>To catch accessibility bugs, I use manual assessments, as well as automated tests done with Playwright and Lighthouse.</p>
-                <br></br>
-                <p>Please visit <span> </span>
-                    <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
-                        my GitHub page
-                    </a> for a complete overview of my work. 
-                </p>
+            <div className="page-intro projects--intro">
+                <div className='white-bg'>
+                    <h1>Latest Projects</h1>
+                    <p className="subheading-p">Built with JavaScript or React, my projects rely on semantic HTML elements.</p>
+                    <br></br>
+                    <p className="subheading-p">To test for accessibility, I use manual assessments, as well as automated tests done with Playwright and Lighthouse.</p>
+                    <br></br>
+                    <p className="subheading-p">Please visit <span> </span>
+                        <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
+                            my GitHub page
+                        </a> for a complete overview of my work. 
+                    </p>
+                </div>   
             </div>
+            
             <div className="projects--container">
                 {projectsData.map((project) => (
                     <Project

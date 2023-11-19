@@ -9,34 +9,14 @@ import './Accessibility.css'
 export default function Accessibility() {  
     return (
         <div className="a11y">
-            <h1>{a11yIntroData.title}</h1>
-            <div className="intro--text">
-                {a11yIntroData.description.map((line, index) => (
-                    <p key={index}>{line}</p>
-                ))}
-            </div>
-              
-            <div className="intro--image">
-                <img alt="" src={a11yIntroData.imageSrc}/>
-                <div className="photo-credit">
-                    Photo by{' '}
-                    <a href={a11yIntroData.photographerSrc} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        title={a11yIntroData.photographerSrcAriaLabel} 
-                        aria-label={a11yIntroData.photographerSrcAriaLabel}
-                    >
-                        <span className="photo-credit--link">{a11yIntroData.photographer}</span>
-                    </a>
-                    {' '}on{' '}
-                    <a href={a11yIntroData.unsplashSrc} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        title={a11yIntroData.unsplashSrcAriaLabel} 
-                        aria-label={a11yIntroData.unsplashSrcAriaLabel}
-                    >
-                        <span className="photo-credit--link">Unsplash</span>
-                    </a>
+            <div className="page-intro a11y--intro">
+                <div className='white-bg'>
+                    <h1>{a11yIntroData.title}</h1>
+                    <div className="intro--text">
+                        {a11yIntroData.description.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
+                    </div>
                 </div>
             </div>
             
@@ -50,9 +30,11 @@ export default function Accessibility() {
                         target="_blank" rel="noopener noreferrer"
                     >
                         <article>
-                            <h3>{post.title}</h3>
-                            <p className="left--posts--description">{post.description}</p>
-                            <span className="read-more">Read more</span>
+                            <div className="left--post--div">
+                                <h3>{post.title}</h3>
+                                <p className="left--posts--description">{post.description}</p>
+                                <span className="read-more">Read more</span>
+                            </div>
                         </article>
                     </a>
                 ))}
@@ -68,9 +50,12 @@ export default function Accessibility() {
                         target="_blank" rel="noopener noreferrer"
                     >
                         <article>
-                            <h3>{post.title}</h3>
-                            <p className="left--posts--description">{post.description}</p>
-                            <span className="read-more">Read more</span>
+                            <div className="left--post--div">
+                                <h3>{post.title}</h3>
+                                <p>{post.description}</p>
+                                <span className="read-more">Read more</span>
+                            </div>
+                            
                         </article>
                     </a>
                 ))}

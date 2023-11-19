@@ -8,7 +8,7 @@ export const introCorina = {
             color: "var(--blue-color)" 
         },
         {
-            text: "I thrive on collaboration, and appreciate direct + honest feedback.",
+            text: "I thrive on collaboration, and welcome direct + honest feedback.",
             icon: "faUserPlus",
             color: "var(--green-color)" 
         },

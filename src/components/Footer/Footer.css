@@ -14,8 +14,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
+.footer-left .logo {
+    align-content: start;
+}
 .footer-left--top {
     display: flex;
     flex-direction: column;

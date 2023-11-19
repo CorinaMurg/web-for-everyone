@@ -75,10 +75,3 @@
     bottom: 20px;
 }
 
-.recent-post .read-more {
-    color: var(--blue-color);
-}
-
-.recent-post .read-more::before {
-    background-color: var(--blue-color);
-}

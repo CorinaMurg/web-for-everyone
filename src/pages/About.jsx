@@ -62,14 +62,18 @@ export default function About() {
     
     return (
         <div className="about">
-            <div className="about--hero">
-                <div className="about--hero--image">
-                    <img  
-                        src="/assets/CorinaMurg.jpg" 
-                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
-                    />
+            <div className="page-intro about--intro">
+                <div className="white-bg">
+                    <h1>My Career in a Nutshell</h1>
+                    <div className="about--intro--image">
+                        <img  
+                            src="/assets/CorinaMurg.jpg" 
+                            alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
+                        />
+                    </div>
+                    
                 </div>
-                <h1>My Career in a Nutshell</h1>
+                
             </div>
             <div className="about--sections">
                 {renderAboutSections()}

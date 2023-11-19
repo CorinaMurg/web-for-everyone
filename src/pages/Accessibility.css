@@ -2,11 +2,9 @@
 .a11y {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto auto auto auto auto auto; 
+    grid-template-rows: auto auto auto auto auto; 
     gap: 16px; 
-    margin-inline: var(--main-margin);
     margin-bottom: 64px;
-    margin-top: 40px;
 }
 
 .a11y a {
@@ -21,96 +19,71 @@
     gap: 8px
 }
 
-.a11y h1 {
+.a11y--intro {
+    grid-row: 1 / 2;
     grid-column: 1 / 3; 
-    grid-row: 1 / 2; 
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
 .intro--text {
-    grid-column: 1 / 2; 
-    grid-row: 2 / 3; 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-inline: calc((-1)*var(--main-margin));
-    padding-left: calc(var(--main-margin) - 0.5*var(--navbar-margin));
-    border-left: calc(0.5*var(--navbar-margin)) solid var(--yellow-color);
+    width: 85%;
 }
 
 .intro--text p {
     margin-bottom: 0;
 }
 
-.intro--image {
-    grid-column: 2 / 3; 
-    grid-row: 2 / 3; 
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 230px;
-    position: relative;
-}
-
-.intro--image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.intro--image .photo-credit {
-    width: 100%;
-    bottom: -30px; 
-}
-
 
 .left-my-posts-heading {
     grid-column: 1 / 2; 
-    grid-row: 3 / 4; 
+    grid-row: 2 / 3; 
     margin-top: 48px;
     margin-bottom: 0;
+    margin-inline: var(--main-margin);
     animation: moveUpOnLoad 1s ease-out;
 }
 
 .left-my-posts-div {
     grid-column: 1 / 2; 
-    grid-row: 4 / 5; 
+    grid-row: 3 / 4; 
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-inline: var(--main-margin);
     animation: moveUpOnLoad 1s ease-out;
 }
 
 .left-other-heading {
     grid-column: 1 / 2; 
-    grid-row: 5 / 6; 
+    grid-row: 4 / 5; 
     color: var(--blue-color);
     font-size: 1.4rem;
     font-weight: 500;
     margin-top: 48px;
     margin-bottom: 0;
     text-transform: uppercase;
+    margin-inline: var(--main-margin);
 }
 
 .left-other-div {
     grid-column: 1 / 2; 
-    grid-row: 6 / 7; 
+    grid-row: 5 / 6; 
     display: flex;
     flex-direction: column;
+    margin-inline: var(--main-margin);
     gap: 32px;
 }
 
-.left--posts--description {
-    width: 80%;
+
+.left--post--div {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--gray-color);
 }
+
 
 .right {
     grid-column: 2 / 3; 
-    grid-row: 3 / 7; 
+    grid-row: 2 / 6; 
     animation: moveUpOnLoad 1s ease-out;
 }
 
