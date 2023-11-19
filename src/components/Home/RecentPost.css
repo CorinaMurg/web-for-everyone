@@ -34,17 +34,19 @@
 }
 
 
-.recent-post--link {
+.recent-post--right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     grid-column: 2 / 4;
 }
 
+
 .recent-post h4 {
     font-size: 1.6rem;
     font-weight: 600;
     margin-block: 0;
+
 }
 
 .recent-post--description {

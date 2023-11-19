@@ -7,7 +7,7 @@ import "./SampleProjects.css";
 export default function SampleProjects() {
     return (
         <div className="home--sample-projects">
-                <h2 className="visually-hidden">A sample of my projects</h2>
+                <h2 className="blue-heading">recent projects</h2>
                 {sampleProjectsData.slice(0, 3).map((project) => (
                     <SampleProject
                         key={project.title}

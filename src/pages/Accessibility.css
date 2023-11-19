@@ -25,8 +25,9 @@
     width: 100%;
 }
 
+
 .intro--text {
-    width: 85%;
+    width: 40rem;
 }
 
 .intro--text p {
@@ -76,8 +77,16 @@
 
 
 .left--post--div {
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--gray-color);
+    padding-bottom: 10px;
+}
+
+.post-description {
+    border-left: 3px solid var(--yellow-color);
+    padding-left: 20px;
+}
+
+.left--post--div p {
+    margin-block: 32px;
 }
 
 
@@ -96,7 +105,7 @@
 
 .square {
     width: 10px;
-    height: 6px;
+    height: 3px;
     background-color: var(--yellow-color);
 }
 

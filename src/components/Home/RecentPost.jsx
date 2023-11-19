@@ -12,9 +12,7 @@ export function RecentPost ( {
     photographer,
     photographerSrc,
     photographerSrcAriaLabel,
-    unsplashSrc,
-    unsplashSrcAriaLabel,
-    
+    readMoreAriaLabel,
     } ) {
     return (
         <article className="recent-post">
@@ -38,37 +36,34 @@ export function RecentPost ( {
                             >
                                 <span className="photo-credit--link">{photographer}</span>
                             </a>
-                            {' '}on{' '}
-                            <a href={unsplashSrc} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                title={unsplashSrcAriaLabel}
-                                aria-label={unsplashSrcAriaLabel}
-                            >
-                                <span className="photo-credit--link">Unsplash</span>
-                            </a>
                         </>
                     )}
                 </div>
             </div>
-            <a className="recent-post--link recent-post--right" 
-                href={href} target="_blank" 
-                rel="noopener noreferrer" 
-                title={hrefAriaLabel} 
-                aria-label={hrefAriaLabel}
-            >
+            <div className="recent-post--right">
+                <a
+                    href={href} target="_blank" 
+                    rel="noopener noreferrer"  
+                    aria-label={hrefAriaLabel}
+                    className="recent-post--link hover-underline"
+                >
                     <h4>{title}</h4>
-                    <div>
-                        <div className="recent-post--description">
-                            {description.map((line, index) => (
-                                <p key={index}>{line}</p>
-                            ))}
-                        </div>
-                        <span className="read-more">
+                </a>
+                <div className="recent-post--description">
+                    {description.map((line, index) => (
+                        <p key={index}>{line}</p>
+                    ))}
+                    <a className="recent-post--link" 
+                        href={href} target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-label={readMoreAriaLabel}
+                    >
+                        <span className="read-more hover-underline">
                             Read more
                         </span>
-                    </div>
-            </a>
+                    </a>
+                </div>
+            </div>
         </article>
     );
 }
@@ -78,12 +73,11 @@ RecentPost.propTypes = {
     description: PropTypes.arrayOf(PropTypes.string).isRequired,
     href: PropTypes.string.isRequired,
     hrefAriaLabel: PropTypes.string,
+    readMoreAriaLabel: PropTypes.string,
     imageSrc: PropTypes.string.isRequired,
     imageAlt: PropTypes.string.isRequired,
     imageCredit: PropTypes.string,
     photographer: PropTypes.string,
     photographerSrc: PropTypes.string,
     photographerSrcAriaLabel: PropTypes.string,
-    unsplashSrc: PropTypes.string,
-    unsplashSrcAriaLabel: PropTypes.string,
 };

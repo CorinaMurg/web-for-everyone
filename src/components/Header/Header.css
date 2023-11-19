@@ -1,7 +1,7 @@
 
 header {
     position: fixed;
-    background-color: var(--lightGray-color);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    color: var(--pinkBright-color);
+    color: var(--blue-color);
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
@@ -28,7 +28,6 @@ header {
     text-decoration: none;
     display: flex;
     align-self: start;
-    text-transform: uppercase;
 }
 
 .logo:hover {

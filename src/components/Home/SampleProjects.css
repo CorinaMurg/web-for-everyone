@@ -2,13 +2,25 @@
 /* SAMPLE PROJECTS */
 .home--sample-projects {
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     animation: moveUpOnLoad 1s ease-out;
     margin-inline: var(--main-margin);
     margin-top: 25px;
 }
+
+.home--sample-projects h2 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+}
+
+.home--sample-projects site-link {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
 
 @keyframes moveUpOnLoad {
     from {

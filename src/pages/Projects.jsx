@@ -12,7 +12,7 @@ export default function Projects() {
             const element = document.getElementById(hash);
             if (element) {
               element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              const offset = 50; 
+              const offset = 80; 
               window.scrollBy(0, -offset);
             }
         }
@@ -23,12 +23,12 @@ export default function Projects() {
         <div className="projects">
             <div className="page-intro projects--intro">
                 <div className='white-bg'>
-                    <h1>Latest Projects</h1>
-                    <p className="subheading-p">Built with JavaScript or React, my projects rely on semantic HTML elements.</p>
+                    <h1>My Latest Projects</h1>
+                    <p>Built with JavaScript or React, my projects rely on semantic HTML elements.</p>
                     <br></br>
-                    <p className="subheading-p">To test for accessibility, I use manual assessments, as well as automated tests done with Playwright and Lighthouse.</p>
+                    <p>To test for accessibility, I use manual assessments, as well as automated tests done with Playwright and Lighthouse.</p>
                     <br></br>
-                    <p className="subheading-p">Please visit <span> </span>
+                    <p>Please visit <span> </span>
                         <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
                             my GitHub page
                         </a> for a complete overview of my work. 

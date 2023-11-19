@@ -23,41 +23,59 @@ export default function Accessibility() {
             <h2 className="left-my-posts-heading blue-heading">My A11y Posts</h2>     
             <div className="left-my-posts-div">
                 {a11yPostsData.filter(post => post.label === "corina").map((post, index) => (
-                    <a key={index} 
-                        href={post.href} 
-                        title={post.hrefAriaLabel}
-                        aria-label={post.hrefAriaLabel} 
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <article>
-                            <div className="left--post--div">
-                                <h3>{post.title}</h3>
-                                <p className="left--posts--description">{post.description}</p>
-                                <span className="read-more">Read more</span>
-                            </div>
-                        </article>
-                    </a>
+                    <article key={index} className="left--post--div">
+                        <h3>
+                            <a  
+                                href={post.href} 
+                                aria-label={post.hrefAriaLabel} 
+                                target="_blank" rel="noopener noreferrer"
+                                className="hover-underline"
+                            >
+                                {post.title}
+                            </a>
+                        </h3>
+                       
+                        <div className="post-description">
+                            <p>{post.description}</p>
+                            <a  
+                                href={post.href} 
+                                aria-label={post.readMoreAriaLabel} 
+                                target="_blank" rel="noopener noreferrer"
+                            >
+                                <span className="read-more hover-underline">Read more</span>
+                            </a>
+                        </div>
+                        
+                    </article>
                 ))}
             </div>
 
-            <h2 className='left-other-heading'>A11y Resources</h2>     
+            <h2 className='left-other-heading'>Articles by A11y Specialists</h2>     
             <div className="left-other-div">
                 {a11yPostsData.filter(post => post.label === "other").map((post, index) => (
-                    <a key={index} 
-                        href={post.href} 
-                        aria-label={post.hrefAriaLabel} 
-                        title={post.hrefAriaLabel}
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <article>
-                            <div className="left--post--div">
-                                <h3>{post.title}</h3>
-                                <p>{post.description}</p>
-                                <span className="read-more">Read more</span>
-                            </div>
-                            
-                        </article>
-                    </a>
+                    <article key={index} className="left--post--div">
+                        <h3>
+                            <a  
+                                href={post.href} 
+                                aria-label={post.hrefAriaLabel} 
+                                target="_blank" rel="noopener noreferrer"
+                                className="hover-underline"
+                            >
+                                {post.title}
+                            </a>
+                        </h3>
+                        <div className="post-description">
+                            <p>{post.description}</p>
+                            <a  
+                                href={post.href} 
+                                aria-label={post.readMoreAriaLabel} 
+                                target="_blank" rel="noopener noreferrer"
+                            >
+                                <span className="read-more hover-underline">Read more</span>
+                            </a>
+                        </div>
+                        
+                    </article>
                 ))}
             </div>
 

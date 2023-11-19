@@ -82,6 +82,7 @@ footer a {
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
+    gap: 5px;
 }
 
 .react-logo {

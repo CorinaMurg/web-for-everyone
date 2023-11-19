@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="footer-left">
                 <div className="footer-left--top">
                     <Link to="/" onClick={handleLinkClick} className="logo">Corina Murg</Link>
-                    <span>Thank you for reading!</span>
+                    <span>A web for everyone!</span>
                 </div>
                 <div className="footer-left--bottom">
                 <div className="built-copyright">
