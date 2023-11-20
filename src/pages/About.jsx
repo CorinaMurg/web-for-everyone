@@ -12,8 +12,7 @@ export default function About() {
                         <a  href={item.link} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            aria-label={item.linkAriaLabel}
-                            title={item.linkTitle}
+                            // aria-label={item.linkAriaLabel}
                         >
                             {item.linkText}
                         </a>
@@ -28,8 +27,7 @@ export default function About() {
                             <a  href={extra.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                aria-label={extra.linkAriaLabel}
-                                title={extra.linkTitle}
+                                // aria-label={extra.linkAriaLabel}
                             >
                                 {extra.linkText}
                             </a>
@@ -78,16 +76,6 @@ export default function About() {
             <div className="about--sections">
                 {renderAboutSections()}
             </div>
-            {/* <p className="about--conclusion">For a more comprehensive view, please visit my {' '}
-                <a href="https://www.linkedin.com/in/corinamurg/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Corina's LinkedIn profile"
-                >
-                    LinkedIn profile
-                </a>
-                .
-            </p> */}
         </div>
     );
 }

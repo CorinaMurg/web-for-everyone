@@ -113,12 +113,12 @@
     grid-row: 3 / 4; 
     grid-column: 2 / 3;
     margin-top: 48px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .right--tips-heading {
     margin-top: 80px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .right--components-subheading,

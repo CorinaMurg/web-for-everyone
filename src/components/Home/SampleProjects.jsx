@@ -14,7 +14,7 @@ export default function SampleProjects() {
                         title={project.title}
                         description={project.description}
                         to={project.to}
-                        toArialabel={project.toAriaLabel}
+                        toAriaLabel={project.toAriaLabel}
                         imageSrc={project.imageSrc}
                         imageAlt={project.imageAlt}
                     />

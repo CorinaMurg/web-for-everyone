@@ -23,6 +23,7 @@ export default function RecentPosts (){
                         description={post.description}
                         href={post.href}
                         hrefAriaLabel={post.hrefAriaLabel}
+                        readMoreAriaLabel={post.readMoreAriaLabel}
                         imageAlt={post.imageAlt}
                         imageSrc={post.imageSrc}
                         photographer={post.photographer}

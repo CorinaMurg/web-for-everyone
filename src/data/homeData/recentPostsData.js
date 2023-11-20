@@ -16,7 +16,7 @@ export const recentPostsData = [
                     and another hand pouring a green liquid into the flask. The background is plain white.`,
         "photographer": "Alex Kondratiev",
         "photographerSrc": "https://unsplash.com/@alexkondratiev",
-        "photographerSrcAriaLabel": "Alex Kondratiev's profile on Unsplash",
+        "photographerSrcAriaLabel": "Alex Kondratiev profile on Unsplash",
         "readMoreAriaLabel": "read more link to Testing with Playwright blog series by Corina.",
     },
     {
@@ -29,12 +29,12 @@ export const recentPostsData = [
             element given the functionality you aim to implement. Let’s see how to use them!`,
           ],
         "href": "https://dev.to/corinamurg/html-buttons-vs-links-5059",
-        "hrefAriaLabel": "Semantic HTML buttons vs links blog post by Corina published on dev.to.",
+        "hrefAriaLabel": "Semantic HTML: buttons versus links blog post by Corina published on dev.to.",
         "imageSrc": "/assets/personHoldingCompass.jpg",
-        "imageAlt": "hand holding black and green compass pointing to west",
+        "imageAlt": "hand holding a black and green compass pointing to west",
         "photographer": "Aaron Visuals",
         "photographerSrc": "https://unsplash.com/@aronvisuals",
-        "photographerSrcAriaLabel": "Aaron Visuals' profile on Unsplash",
+        "photographerSrcAriaLabel": "Aaron Visuals profile on Unsplash",
         "readMoreAriaLabel": "read more link to Semantic HTML buttons vs links blog post by Corina.",
     },
     {
@@ -68,7 +68,7 @@ export const recentPostsData = [
         "imageAlt": "A red and blue chameleon sitting on a branch.",
         "photographer": "Simon Schwyter",
         "photographerSrc": "https://unsplash.com/@saimens",
-        "photographerSrcAriaLabel": "Simon Schwyter's profile on Unsplash",
+        "photographerSrcAriaLabel": "Simon Schwyter profile on Unsplash",
         "readMoreAriaLabel": "read more link to Immutability in React blog post by Corina.",
     },
 ];

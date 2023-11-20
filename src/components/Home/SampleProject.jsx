@@ -7,7 +7,6 @@ export function SampleProject({ title, description, to, toAriaLabel, imageAlt, i
         <Link className="sample-project--link" 
             to={to} 
             aria-label={toAriaLabel}
-            
         >
             <article className="sample-project">
                 <div className="sample-project--image">

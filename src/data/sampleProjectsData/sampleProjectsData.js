@@ -4,7 +4,7 @@ export const sampleProjectsData = [
         "title": "My Portfolio Site",
         "description": "Multipage website built in React, tested with Playwright",
         "to": `/projects/#my-portfolio-site`,
-        "toAriaLabel": "My portfolio site description on Projects page",
+        "toAriaLabel": "",
         "imageSrc": "/assets/corinaAboutJsonSample.png",
         "imageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData' The object holds information
                     about Corina. It has a property called 'currently' which is an array including objects 

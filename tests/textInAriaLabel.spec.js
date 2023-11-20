@@ -1,25 +1,31 @@
 import { test, expect } from '@playwright/test';
 
 // CHECK FOR ENTIRE INNER TEXT IF THE LINK
-// test('WCAG 2.5.3: Label in Name', async ({ page }) => {
-//     await page.goto('https://corinamurg.netlify.com/');
+test('WCAG 2.5.3: Label in Name', async ({ page }) => {
+    await page.goto('http://localhost:5173/');
     
-//     const elements = await page.locator('[aria-label]');
-//     for (const elementHandle of elements) {
-//         const visibleText = (await elementHandle.textContent())?.trim() ?? "";
+    const elements = page.locator('[aria-label]');
+    const elementsCount = await elements.count();
+    const errors = [];
+    for (let i = 0; i < elementsCount; i++) {
+        const element = elements.nth(i);
+        const visibleText = (await element.textContent())?.trim().split(" ").slice(0, 4).join(" ") ?? "";
       
-//         const ariaLabel = await elementHandle.getAttribute('aria-label') ?? "";
+        const ariaLabel = await element.getAttribute('aria-label') ?? "";
       
-//         console.log(`Visible text: "${visibleText}", Aria-label: "${ariaLabel}"`);
+        console.log(`Visible text: "${visibleText}", Aria-label: "${ariaLabel}"`);
       
-//         const condition = ariaLabel.includes(visibleText);
-//         if (!condition) {
-//             console.error(`Mismatch found: The aria-label "${ariaLabel}" should include the visible text "${visibleText}".`);
-//         }
-      
-//         expect(condition).toBeTruthy();
-//     } 
-// });
+        if (ariaLabel) {
+            const condition = ariaLabel.toLowerCase().includes(visibleText.toLowerCase());
+            if (!condition) {
+                errors.push(`The aria-label "${ariaLabel}" should include the visible text "${visibleText}"`);
+            }
+        }
+    }  
+    if (errors.length > 0) {
+        throw new Error(`Label in Name test failed:\n${errors.join("\n")}`);
+    }
+});
 
 // test('WCAG 2.5.3: Label in Name', async ({ page }) => {
 //     await page.goto('https://yourwebsite.com/');
@@ -71,33 +77,65 @@ import { test, expect } from '@playwright/test';
 // });
 
 // SHOW ALL ERRORS
-test('WCAG 2.5.3: Label in Name', async ({ page }) => {
-    function normalizeString(str) {
-        return str.toLowerCase().replace(/[\W_]+/g, " ").trim();
-    }
+// test('WCAG 2.5.3: Label in Name', async ({ page }) => {
+//     function normalizeString(str) {
+//         return str.toLowerCase().replace(/[\W_]+/g, " ").trim();
+//     }
 
-    await page.goto('https://corinamurg.netlify.com/');
-    const links = page.locator('[aria-label]');
-    const errors = [];
-    const linksCount = await links.count();
+//     await page.goto('https://corinamurg.netlify.com/');
+//     const links = page.locator('[aria-label]');
+//     const errors = [];
+//     const linksCount = await links.count();
 
-    for (let i = 0; i < linksCount; i++) {
-        const link = links.nth(i);
+//     for (let i = 0; i < linksCount; i++) {
+//         const link = links.nth(i);
 
-        const linkText = await link.evaluate((el) => {
-            const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
-            return heading ? heading.textContent?.trim() : el.textContent?.trim();
-        });
+//         const linkText = await link.evaluate((el) => {
+//             const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
+//             return heading ? heading.textContent?.trim() : el.textContent?.trim();
+//         });
         
 
-        const ariaLabel = await link.getAttribute('aria-label') ?? "";
-        const normalizedAriaLabel = normalizeString(ariaLabel);
-        const normalizedLinkText = normalizeString(linkText);
+//         const ariaLabel = await link.getAttribute('aria-label') ?? "";
+//         const normalizedAriaLabel = normalizeString(ariaLabel);
+//         const normalizedLinkText = normalizeString(linkText);
         
-        const condition = normalizedAriaLabel.includes(normalizedLinkText);  
-        if (!condition) {
-            errors.push(`The aria-label "${ariaLabel}" should include the visible text "${linkText}"`);
-        }
-    }
-    expect(errors).toEqual([]);
-});
+//         const condition = normalizedAriaLabel.includes(normalizedLinkText);  
+//         if (!condition) {
+//             errors.push(`The aria-label "${ariaLabel}" should include the visible text "${linkText}"`);
+//         }
+//     }
+//     expect(errors).toEqual([]);
+// });
+
+
+// test('WCAG 2.5.3: Label in Name', async ({ page }) => {
+//     function normalizeString(str) {
+//         return str.toLowerCase().replace(/[\W_]+/g, " ").trim();
+//     }
+
+//     await page.goto('https://corinamurg.netlify.com/');
+//     const links = page.locator('[aria-label]');
+//     const errors = [];
+//     const linksCount = await links.count();
+
+//     for (let i = 0; i < linksCount; i++) {
+//         const link = links.nth(i);
+
+//         const linkText = await link.evaluate((el) => {
+//             const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
+//             return heading ? heading.textContent?.trim() : el.textContent?.trim();
+//         });
+        
+
+//         const ariaLabel = await link.getAttribute('aria-label') ?? "";
+//         const normalizedAriaLabel = normalizeString(ariaLabel);
+//         const normalizedLinkText = normalizeString(linkText);
+        
+//         const condition = normalizedAriaLabel.includes(normalizedLinkText);  
+//         if (!condition) {
+//             errors.push(`The aria-label "${ariaLabel}" should include the visible text "${linkText}"`);
+//         }
+//     }
+//     expect(errors).toEqual([]);
+// });
