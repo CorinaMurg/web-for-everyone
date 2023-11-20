@@ -9,11 +9,7 @@
     color: var(--blue-color);
 }
 
-/* .about .page-intro {
-    grid-template-columns: 2.5fr 1fr;
-} */
 .about .white-bg {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
