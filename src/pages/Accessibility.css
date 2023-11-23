@@ -2,14 +2,10 @@
 .a11y {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto auto auto auto auto; 
+    grid-template-rows: repeat(5, auto); 
     gap: 16px; 
     margin-bottom: 64px;
 }
-
-/* .a11y h1 {
-    font-size: 3.3rem;
-} */
 
 .a11y a {
     text-decoration: none;
@@ -37,7 +33,6 @@
 .intro--text p {
     margin-bottom: 0;
 }
-
 
 .left-my-posts-heading {
     grid-column: 1 / 2; 
@@ -79,7 +74,6 @@
     gap: 32px;
 }
 
-
 .left--post--div {
     padding-bottom: 10px;
 }
@@ -93,79 +87,9 @@
     margin-block: 32px;
 }
 
-
 .right {
     grid-column: 2 / 3; 
     grid-row: 2 / 6; 
     animation: moveUpOnLoad 1s ease-out;
 }
 
-.right>ul {
-    padding-left: 0;
-    margin-block: 0;
-    animation: moveUpOnLoad 1s ease-out;
-    
-}
-
-.square {
-    width: 10px;
-    height: 3px;
-    background-color: var(--yellow-color);
-}
-
-.right--components-heading {
-    grid-row: 3 / 4; 
-    grid-column: 2 / 3;
-    margin-top: 48px;
-    margin-bottom: 0 !important;
-}
-
-.right--tips-heading {
-    margin-top: 80px;
-    margin-bottom: 0 !important;
-}
-
-.right--components-subheading,
-.right--tips-subheading {
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.right--components li {
-    margin-block: 20px;
-}
-
-/* accessible components */
-.component-title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-block: 0;
-    display: inline-block;
-    position: relative;
-}
-
-.component-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px; 
-    background-color: var(--text-dark-color);
-    transition: width 0.5s; 
-}
-
-.component-title:hover::before {
-    width: 100%; 
-}
-
-.vs {
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.tip-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
