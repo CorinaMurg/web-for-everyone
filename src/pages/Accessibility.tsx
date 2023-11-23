@@ -3,6 +3,7 @@ import { a11yIntroData } from "../data/a11yData/a11yIntroData"
 import { a11yPostsData } from "../data/a11yData/a11yPostsData"
 import A11yAside from "../components/A11y/A11yAside"
 import './Accessibility.css'
+import React from "react"
 
 export default function Accessibility() {  
     return (

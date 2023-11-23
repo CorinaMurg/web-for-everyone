@@ -1,4 +1,5 @@
 
+import React from "react";
 import { aboutData } from "../data/aboutData/aboutData";
 import "./About.css";
 

@@ -4,6 +4,7 @@ import A11yTipModal from './A11yTipModal';
 import './A11yTipItem.css';
 
 import PropTypes from 'prop-types';
+import React from 'react';
 
 export default function A11yTipItem({ tip, left, right, descriptionLeft, descriptionRight }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,7 +17,9 @@ export default function A11yTipItem({ tip, left, right, descriptionLeft, descrip
         <div className="tip">
             <div className="square"></div>
             <button className="tip-button" onClick={toggleModal}>{tip}</button>
-            <A11yTipModal className="tip-modal"
+            <A11yTipModal
+                className="tip-modal" // Add the className prop here
+                isModalOpen={isModalOpen}
                 isModalOpen={isModalOpen}
                 closeModal={toggleModal}
                 tip={tip}

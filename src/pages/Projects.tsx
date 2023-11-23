@@ -3,6 +3,7 @@ import { projectsIntroData } from "../data/projectsData/projectsIntroData"
 import { projectsData } from "../data/projectsData/projectsData"
 import { Project } from "../components/Projects/Project"
 import "./Projects.css"
+import React from "react"
 
 export default function Projects() {
 

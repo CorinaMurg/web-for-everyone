@@ -1,3 +1,4 @@
+import React from "react";
 import "./RecentPost.css"
 
 import PropTypes from "prop-types"

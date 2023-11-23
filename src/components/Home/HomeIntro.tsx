@@ -1,3 +1,4 @@
+import React from 'react';
 import { introCorina } from '../../data/homeData/homeIntroData.js';
 import './HomeIntro.css';
 

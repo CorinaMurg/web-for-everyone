@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import handleLinkClick from "../../utils/handleLinkClick"
 import "./Footer.css"
+import React from "react"
 
 export default function Footer() {
     return (

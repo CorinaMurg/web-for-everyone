@@ -2,6 +2,7 @@ import { a11yComponentsData } from "../../data/a11yData/a11yComponentsData"
 import { a11yTipsData } from "../../data/a11yData/a11yTipsData"
 import A11yTipItem from "./A11yTipItem"
 import './A11yAside.css'
+import React from "react"
 
 export default function A11yAside() {
     return (
