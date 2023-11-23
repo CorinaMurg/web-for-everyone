@@ -17,15 +17,6 @@ export const sampleProjectsData: SampleProjectProps[] = [
         "imageAlt": `Screenshot of a JavaScript object from the codebase of Corina's portfolio site.`,
     },
     {
-        "title": "Twain & Company",
-        "description": "Bookstore website built with React",
-        "to": `/projects/#twain-&-company`,
-        "toAriaLabel": "Twain & Company project description on Projects page",
-        "imageSrc": "/assets/lettersFromEarth.jpg",
-        "imageAlt": `Front cover of the book "Letters from Earth" by Mark Twain. The title and the author's name
-                    are written in black letters on a burnt orange background.`,
-    },
-    {
         "title": "Lava Leap",
         "description": "2D platform game built with JavaScript",
         "to": `/projects/#lava-leap`,
@@ -35,6 +26,16 @@ export const sampleProjectsData: SampleProjectProps[] = [
                     horizontal wall. Four yellow squares representing coins, one red lava pit, plus several horizontal 
                     wall structures in white.`,
     },
+    {
+        "title": "Twain & Company",
+        "description": "Bookstore website built with React",
+        "to": `/projects/#twain-&-company`,
+        "toAriaLabel": "Twain & Company project description on Projects page",
+        "imageSrc": "/assets/lettersFromEarth.jpg",
+        "imageAlt": `Front cover of the book "Letters from Earth" by Mark Twain. The title and the author's name
+                    are written in black letters on a burnt orange background.`,
+    },
+    
     {
         "title": "Space Tourism Agency",
         "description": "Multipage website built with JavaScript",
