@@ -19,29 +19,30 @@ export default function About() {
                     )}
                     {item.suffix && <span>{item.suffix}</span>}
                 </p>
+            
                 {item.extras && <span className="arrow">→</span>}
-                {item.extras && item.extras.map((extra, idx) => (
-                    <p key={idx} className="section-line extra-info">
-                        {extra.prefix && <span>{extra.prefix}</span>}
-                        {extra.link && (
-                            <a  href={extra.link} 
+                {item.extras && (
+                    <p className="section-line extra-info">
+                        {item.extras.prefix && <span>{item.extras.prefix}</span>}
+                        {item.extras.link && (
+                            <a  href={item.extras.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                // aria-label={extra.linkAriaLabel}
+                                // aria-label={item.extras.linkAriaLabel}
                             >
-                                {extra.linkText}
+                                {item.extras.linkText}
                             </a>
                         )}
-                        {extra.suffix && <span>{extra.suffix}</span>}
+                        {item.extras.suffix && <span>{item.extras.suffix}</span>}
                     </p>
-                ))}
+                )}
             </div>
         );
     };
     
     
     const renderAboutSections = () => {
-        return Object.entries(aboutData).map(([key, lines]) => (
+        return Object.entries(aboutData).slice(1).map(([key, lines]) => (
             <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
                 <h2 className="blue-heading">{key.toUpperCase()}</h2>
                 <div>
@@ -62,14 +63,13 @@ export default function About() {
         <div className="about">
             <div className="page-intro about--intro">
                 <div className="white-bg">
-                    <h1>My Career in a Nutshell</h1>
+                    <h1>{aboutData.intro.heading}</h1>
                     <div className="about--intro--image">
                         <img  
-                            src="/assets/CorinaMurg.jpg" 
-                            alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret and a light gray top"
+                            src={aboutData.intro.image.src} 
+                            alt={aboutData.intro.image.alt}
                         />
                     </div>
-                    
                 </div>
                 
             </div>

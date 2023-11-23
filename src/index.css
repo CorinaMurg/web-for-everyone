@@ -31,8 +31,8 @@
     --lightGray-color: #f6f6f6;
     --gray-color:#808080;
 
-    --heading-bg-color: rgba(26,115,232, 0.4);
-    --heading-blue-color: rgba(33,158,188, 0.6);
+    --heading-bg-color: #1a73e8;
+    /* --heading-blue-color: rgba(33,158,188, 0.6); */
 
     --main-margin: 96px;
     --max-margin: 120px;
@@ -44,7 +44,7 @@
 }
 
 body {
-    background-color: var(--primary-bg-light-color);
+    background-color: var(--text-light-color);
     color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
     line-height: 1.1;
@@ -66,6 +66,10 @@ p {
     font-size: 0.9rem;
     line-height: 1.8;
     font-weight: 500;
+}
+
+a {
+    color: var(--text-dark-color);
 }
 
 .visually-hidden {
@@ -101,9 +105,9 @@ p {
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 1.8px;
+    font-size: 3.6rem;
+    font-weight: 600;
+    /* letter-spacing: -1px; */
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 30px;
@@ -112,7 +116,7 @@ h1 {
 }
 
 .subheading-p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
@@ -121,6 +125,7 @@ h1 {
 
 .blue-heading {
     color: var(--blue-color);
+    background-color: inherit;
     align-self: left;
     display: inline-block;
     font-size: 1.3rem;
@@ -154,7 +159,7 @@ h1 {
 
 .read-more {
     color: var(--text-dark-color);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
 }
 

@@ -38,6 +38,7 @@
 
 .sample-project--title {
     color: inherit;
+    background-color: inherit;
     font-size: 1.7rem;
     font-weight: 500;
     margin-top: 32px;

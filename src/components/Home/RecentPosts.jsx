@@ -7,16 +7,21 @@ export default function RecentPosts (){
         <div className="recent-posts">
             <div className="page-intro recent-posts--intro">
                 <div className="white-bg">
-                    <h2 className="recent-posts--intro--heading">Explore my blog, join my coding journey</h2>
-                    <div className="recent-posts--intro--description">
-                        <p>Interested in JavaScript or accessibility? I&rsquo;m always diving into new topics on my blog.</p>
-                        <p>It&rsquo;s where I break things down and make them easier to understand.</p> 
-                    </div>
+                    <h2 className="recent-posts--intro--heading">
+                        {recentPostsData.intro.heading}
+                    </h2>
+                    {recentPostsData.intro.paragraphs.map((paragraph, index) => (
+                        <div key={index} className="recent-posts--intro--description">
+                            <p className="recent-posts--intro--paragraph">
+                                {paragraph}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className="recent-posts--container">
                 <h3 className="recent-posts--container--heading blue-heading">RECENT POSTS</h3>
-                {recentPostsData.slice(0, 4).map((post) => (    
+                {recentPostsData.posts.slice(0, 4).map((post) => (    
                     <RecentPost
                         key={post.title}
                         title={post.title}

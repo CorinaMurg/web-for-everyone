@@ -23,8 +23,8 @@ header {
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
-    font-weight: 600;
-    font-family: "Playpen Sans", sans-serif;
+    font-weight: 500;
+    /* font-family: "Playpen Sans", sans-serif; */
     text-decoration: none;
     display: flex;
     align-self: start;
@@ -84,7 +84,7 @@ nav a {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom: 0;
     width: 0;
     height: 2px;
     background-color: var(--text-dark-color);

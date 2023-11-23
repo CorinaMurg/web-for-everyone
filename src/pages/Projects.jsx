@@ -1,6 +1,7 @@
 import { useEffect } from "react"
-import { Project } from "../components/Project/Project"
+import { projectsIntroData } from "../data/projectsData/projectsIntroData"
 import { projectsData } from "../data/projectsData/projectsData"
+import { Project } from "../components/Projects/Project"
 import "./Projects.css"
 
 export default function Projects() {
@@ -23,16 +24,27 @@ export default function Projects() {
         <div className="projects">
             <div className="page-intro projects--intro">
                 <div className='white-bg'>
-                    <h1>My Latest Projects</h1>
-                    <p>Built with JavaScript or React, my projects rely on semantic HTML elements.</p>
-                    <br></br>
-                    <p>To test for accessibility, I use manual assessments, as well as automated tests done with Playwright and Lighthouse.</p>
-                    <br></br>
-                    <p>Please visit <span> </span>
-                        <a href="https://github.com/CorinaMurg" target="_blank" rel="noopener noreferrer">
-                            my GitHub page
-                        </a> for a complete overview of my work. 
-                    </p>
+                    <h1>{projectsIntroData.heading}</h1>
+                    {projectsIntroData.description.map((item, index) => (
+                        <div key={index}>
+                            <p>{item}</p>
+                        </div>
+                    ))}
+                    {projectsIntroData.github && (
+                        <div>
+                            <p>
+                                <span>{projectsIntroData.github.prefix}</span>
+                                <a  href={projectsIntroData.github.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label={projectsIntroData.github.linkAriaLabel}
+                                >
+                                    {projectsIntroData.github.linkText}
+                                </a>
+                                <span>{projectsIntroData.github.suffix}</span>
+                            </p>
+                        </div>
+                    )}
                 </div>   
             </div>
             

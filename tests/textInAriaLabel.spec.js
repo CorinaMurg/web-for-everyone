@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
 // CHECK FOR ENTIRE INNER TEXT IF THE LINK
 // test('WCAG 2.5.3: Label in Name', async ({ page }) => {

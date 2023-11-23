@@ -19,8 +19,8 @@ export const projectsData = [
                     'linkText', 'suffix', and 'extras'. The prefix includes the text 'Learning Playwright, 
                     and the extras contain a nested object with a statement about Corina's testing
                     this website with Playwright. It also includes the GitHub link to Corina's portfolio 
-                    and aria-label and title attributes. 
-                    The code is set against a dark editor background with syntax highlighting`,
+                    and aria-label and title attributes. The code is set against a dark editor background with 
+                    syntax highlighting`,
         "techStack": "React  •  Playwright  •  Accessibility",
         
 
