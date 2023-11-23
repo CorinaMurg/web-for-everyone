@@ -21,9 +21,9 @@
     position: relative;
 }
 
-.square {
+.dash {
     width: 10px;
-    height: 6px;
+    height: var(--yellow-border);
     background-color: var(--yellow-color);
 }
 

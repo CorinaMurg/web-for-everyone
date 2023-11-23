@@ -31,6 +31,7 @@
     --main-margin: 96px;
     --max-margin: 120px;
     --navbar-margin: 32px;
+    --yellow-border: 3px;
 }
 
 * {
@@ -94,7 +95,7 @@ a {
     padding-left: calc(0.5*var(--main-margin) - 4px);
     margin-bottom: 0;
     margin-top: 36px;
-    border-left: 4px solid var(--yellow-color);
+    border-left: var(--yellow-border) solid var(--yellow-color);
 }
 
 h1 {
@@ -208,6 +209,7 @@ h1 {
 .photo-credit--link:hover::before {
     width: 100%;
 }
+
 
 
 @keyframes moveUpOnLoad {

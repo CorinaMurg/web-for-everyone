@@ -79,7 +79,7 @@
 }
 
 .post-description {
-    border-left: 3px solid var(--yellow-color);
+    border-left: var(--yellow-border) solid var(--yellow-color);
     padding-left: 20px;
 }
 
@@ -87,6 +87,7 @@
     margin-block: 32px;
 }
 
+/* aside component */
 .right {
     grid-column: 2 / 3; 
     grid-row: 2 / 6; 

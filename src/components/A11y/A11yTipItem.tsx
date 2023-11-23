@@ -27,7 +27,7 @@ export default function A11yTipItem ({
 
     return (
         <div className="tip">
-            <div className="square"></div>
+            <div className="dash"></div>
             <button className="tip-button" onClick={toggleModal}>{tip}</button>
             <A11yTipModal
                 className="tip-modal" 
