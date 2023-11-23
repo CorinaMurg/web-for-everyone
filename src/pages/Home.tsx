@@ -10,9 +10,9 @@ import "./Home.css"
 export default function Home() {
     return (
         <div className="home">
-            <HomeIntro className="home--intro"/>
-            <SampleProjects className="home--sample-projects"/>
-            <RecentPosts className="home--recent-posts"/>
+            <HomeIntro/>
+            <SampleProjects/>
+            <RecentPosts/>
         </div>
     )
 }

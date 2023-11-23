@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
-import { SampleProject } from "./SampleProject.js";
-import { sampleProjectsData } from "../../data/sampleProjectsData/sampleProjectsData.js";
-import handleLinkClick from "../../utils/handleLinkClick.js";
-import "./SampleProjects.css";
 import React from "react";
+import { Link } from "react-router-dom";
+import SampleProject from "./SampleProject";
+import { sampleProjectsData } from "../../data/sampleProjectsData/sampleProjectsData";
+import handleLinkClick from "../../utils/handleLinkClick";
+import "./SampleProjects.css";
+
 
 export default function SampleProjects() {
     return (
@@ -12,16 +13,16 @@ export default function SampleProjects() {
             {sampleProjectsData.slice(0, 3).map((project) => (
                 <SampleProject
                     key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    to={project.to}
-                    toAriaLabel={project.toAriaLabel}
-                    imageSrc={project.imageSrc}
-                    imageAlt={project.imageAlt}
+                    {...project}
                 />
             ))}
 
-            <Link className="site-link" to="/projects" onClick={handleLinkClick}>My Projects</Link>
+            <Link className="site-link" 
+                to="/projects" 
+                onClick={handleLinkClick}
+            >
+                My Projects
+            </Link>
         </div>
     )
 }

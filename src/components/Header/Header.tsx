@@ -1,7 +1,8 @@
-
+import React from "react"
 import { Link, NavLink } from "react-router-dom"
 import handleLinkClick from "../../utils/handleLinkClick"
 import "./Header.css"
+
 
 export default function Header() {
 

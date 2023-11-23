@@ -1,5 +1,10 @@
+export type A11yComponentData = {
+    title: string;
+    href: string;
+    hrefAriaLabel: string;
+};
 
-export const a11yComponentsData = [
+export const a11yComponentsData: A11yComponentData[] = [
     {
         "title": "Button",
         "href": "https://codepen.io/Cor-Ina/pen/ZEwyyVe",

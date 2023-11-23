@@ -1,9 +1,8 @@
 import React from "react";
+import { PostData } from "../../data/homeData/recentPostsData";
 import "./RecentPost.css"
 
-import PropTypes from "prop-types"
-
-export function RecentPost ( {
+export default function RecentPost ( {
     title, 
     description, 
     href, 
@@ -14,7 +13,7 @@ export function RecentPost ( {
     photographerSrc,
     photographerSrcAriaLabel,
     readMoreAriaLabel,
-    } ) {
+    } : PostData) {
     return (
         <article className="recent-post">
             <div className="recent-post--left">
@@ -51,8 +50,8 @@ export function RecentPost ( {
                     <h4>{title}</h4>
                 </a>
                 <div className="recent-post--description">
-                    {description.map((line, index) => (
-                        <p key={index}>{line}</p>
+                    {description.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
                     ))}
                     <a className="recent-post--link" 
                         href={href} target="_blank" 
@@ -69,16 +68,3 @@ export function RecentPost ( {
     );
 }
 
-RecentPost.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.arrayOf(PropTypes.string).isRequired,
-    href: PropTypes.string.isRequired,
-    hrefAriaLabel: PropTypes.string,
-    readMoreAriaLabel: PropTypes.string,
-    imageSrc: PropTypes.string.isRequired,
-    imageAlt: PropTypes.string.isRequired,
-    imageCredit: PropTypes.string,
-    photographer: PropTypes.string,
-    photographerSrc: PropTypes.string,
-    photographerSrcAriaLabel: PropTypes.string,
-};

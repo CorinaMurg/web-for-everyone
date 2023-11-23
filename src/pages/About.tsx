@@ -1,6 +1,6 @@
 
 import React from "react";
-import { aboutData } from "../data/aboutData/aboutData";
+import { aboutData, AboutDataItem } from "../data/aboutData/aboutData";
 import "./About.css";
 
 export default function About() {
@@ -42,23 +42,25 @@ export default function About() {
     };
     
     
-    const renderAboutSections = () => {
-        return Object.entries(aboutData).slice(1).map(([key, lines]) => (
-            <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
-                <h2 className="blue-heading">{key.toUpperCase()}</h2>
-                <div>
-                    {lines.map((line, index) => { 
-                        if (typeof line === 'string') {
-                            return <p key={index} className="section-line">{line}</p>;
-                        } else {
-                            return renderLines(line);
-                        }
-                    })}
+    const renderAboutSections = () => 
+        Object.entries(aboutData).slice(1).map(([key, lines]) => {
+            const sectionLines = lines as AboutDataItem[];
+            return (
+                <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
+                    <h2 className="blue-heading">{key.toUpperCase()}</h2>
+                    <div>
+                        {sectionLines.map((line, index) => { 
+                            if (typeof line === 'string') {
+                                return <p key={index} className="section-line">{line}</p>;
+                            } else {
+                                return renderLines(line);
+                            }
+                        })}
+                    </div>
                 </div>
-            </div>
-        ));
-    };
-    
+            );
+    });
+
     
     return (
         <div className="about">

@@ -1,5 +1,11 @@
+export type A11yTipData = {
+    left: string;
+    right: string;
+    descriptionLeft: string[];
+    descriptionRight: string[];
+};
 
-export const a11yTipsData = [
+export const a11yTipsData: A11yTipData[] = [
     {
     "left": ":focus",
     "right": ":focus-visible",

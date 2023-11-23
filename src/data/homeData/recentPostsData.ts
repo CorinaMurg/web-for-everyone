@@ -1,6 +1,25 @@
+export type PostData = {
+    title: string;
+    description: string[];
+    href: string;
+    hrefAriaLabel: string;
+    imageSrc: string;
+    imageAlt: string;
+    photographer: string;
+    photographerSrc: string;
+    photographerSrcAriaLabel: string;
+    readMoreAriaLabel: string;
+};
 
-export const recentPostsData = {
-    
+export type RecentPostsData = {
+    intro: {
+        heading: string;
+        paragraphs: string[];
+    };
+    posts: PostData[];
+};
+
+export const recentPostsData: RecentPostsData = {
     "intro": 
         {
             "heading": "Explore my blog, join my coding journey",

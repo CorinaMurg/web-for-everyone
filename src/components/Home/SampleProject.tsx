@@ -1,8 +1,16 @@
-import PropTypes from 'prop-types';
+import React from 'react';
+import { SampleProjectProps } from '../../data/sampleProjectsData/sampleProjectsData';
 import { Link } from 'react-router-dom';
 import "./SampleProject.css"
 
-export function SampleProject({ title, description, to, toAriaLabel, imageAlt, imageSrc }) {
+
+export default function SampleProject({ 
+    title, 
+    description, 
+    to, 
+    toAriaLabel, 
+    imageAlt, 
+    imageSrc } : SampleProjectProps) {
     return (
         <Link className="sample-project--link" 
             to={to} 
@@ -19,14 +27,6 @@ export function SampleProject({ title, description, to, toAriaLabel, imageAlt, i
     );
 }
 
-SampleProject.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired,
-    toAriaLabel: PropTypes.string.isRequired,
-    imageAlt: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string.isRequired,
-};
 
 
 

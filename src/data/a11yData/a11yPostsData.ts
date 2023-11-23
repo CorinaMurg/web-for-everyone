@@ -1,5 +1,13 @@
+export type A11yPostData = {
+    label: string;
+    title: string;
+    description: string;
+    href: string;
+    hrefAriaLabel: string;
+    readMoreAriaLabel: string;
+};
 
-export const a11yPostsData = [
+export const a11yPostsData: A11yPostData[] = [
     {
         "label": "corina",
         "title": "My Accessibility Engineer Project",

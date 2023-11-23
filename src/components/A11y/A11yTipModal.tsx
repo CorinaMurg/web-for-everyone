@@ -1,17 +1,29 @@
+import React from 'react';
+import { FC } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './A11yTipModal.css';
 
-import PropTypes from 'prop-types';
+type A11yTipModalProps = {
+    isModalOpen: boolean;
+    closeModal: () => void;
+    tip: React.ReactNode;
+    left: string;
+    right: string;
+    descriptionLeft: string[];
+    descriptionRight: string[];
+    className?: string; 
+}
 
-export default function A11yTipModal ({
+const A11yTipModal: FC<A11yTipModalProps> = ({
     isModalOpen, 
     closeModal, 
     tip, 
     left, 
     right, 
     descriptionLeft, 
-    descriptionRight}) {
+    descriptionRight
+}) => {
     return (
         <ReactModal
             className="modal"
@@ -63,12 +75,4 @@ export default function A11yTipModal ({
     );
 }
 
-A11yTipModal.propTypes = {
-    isModalOpen: PropTypes.bool.isRequired,
-    closeModal: PropTypes.func.isRequired,
-    tip: PropTypes.string.isRequired,
-    left: PropTypes.string.isRequired,
-    right: PropTypes.string.isRequired,
-    descriptionLeft: PropTypes.arrayOf(PropTypes.string).isRequired,
-    descriptionRight: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+export default A11yTipModal;

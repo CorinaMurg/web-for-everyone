@@ -6,6 +6,7 @@ import Projects from "./pages/Projects"
 import Accessibility from './pages/Accessibility';
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
+import React from "react";
 
 export default function App() {
 

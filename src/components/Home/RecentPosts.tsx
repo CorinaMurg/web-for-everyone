@@ -1,6 +1,7 @@
 import React from "react";
 import { recentPostsData } from "../../data/homeData/recentPostsData";
-import { RecentPost } from "./RecentPost";
+import { PostData } from "../../data/homeData/recentPostsData";
+import RecentPost from "./RecentPost";
 import "./RecentPosts.css";
 
 export default function RecentPosts (){
@@ -22,19 +23,10 @@ export default function RecentPosts (){
             </div>
             <div className="recent-posts--container">
                 <h3 className="recent-posts--container--heading blue-heading">RECENT POSTS</h3>
-                {recentPostsData.posts.slice(0, 4).map((post) => (    
+                {recentPostsData.posts.slice(0, 4).map((post: PostData) => (    
                     <RecentPost
                         key={post.title}
-                        title={post.title}
-                        description={post.description}
-                        href={post.href}
-                        hrefAriaLabel={post.hrefAriaLabel}
-                        readMoreAriaLabel={post.readMoreAriaLabel}
-                        imageAlt={post.imageAlt}
-                        imageSrc={post.imageSrc}
-                        photographer={post.photographer}
-                        photographerSrc={post.photographerSrc}
-                        photographerSrcAriaLabel={post.photographerSrcAriaLabel}
+                        {...post}
                     />
                 ))}
             </div>

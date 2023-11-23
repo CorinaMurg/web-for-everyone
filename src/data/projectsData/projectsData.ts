@@ -1,5 +1,16 @@
+export type ProjectData = {
+    title: string;
+    description: string[];
+    hrefSite: string;
+    link1Text: string;
+    hrefGitHub: string;
+    link2Text: string;
+    imageSrc: string;
+    imageAlt: string;
+    techStack: string;
+};
 
-export const projectsData = [
+export const projectsData: ProjectData[] = [
     {
         "title": "My Portfolio Site",
         "description": [
@@ -22,8 +33,6 @@ export const projectsData = [
                     and aria-label and title attributes. The code is set against a dark editor background with 
                     syntax highlighting`,
         "techStack": "React  •  Playwright  •  Accessibility",
-        
-
     },
     {
         "title": "Twain & Company",

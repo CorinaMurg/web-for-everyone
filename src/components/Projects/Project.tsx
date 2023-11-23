@@ -1,9 +1,19 @@
-
+import React from "react";
+import { ProjectData } from "../../data/projectsData/projectsData.js";
 import "./Project.css"
-import PropTypes from "prop-types"
 import slugify from "../../utils/slugify.js"
 
-export function Project( {title, description, hrefSite, link1Text, hrefGitHub, link2Text, imageAlt, imageSrc } ) {
+
+export function Project({
+    title, 
+    description, 
+    hrefSite, 
+    link1Text, 
+    hrefGitHub, 
+    link2Text, 
+    imageAlt, 
+    imageSrc 
+    }: ProjectData ) {
     const slugifiedTitle = slugify(title);      
 
     return (
@@ -28,13 +38,3 @@ export function Project( {title, description, hrefSite, link1Text, hrefGitHub, l
     )
 }
 
-Project.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.arrayOf(PropTypes.string).isRequired,
-    hrefSite: PropTypes.string.isRequired,
-    link1Text: PropTypes.string.isRequired,
-    hrefGitHub: PropTypes.string.isRequired,
-    link2Text: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string.isRequired,
-    imageAlt: PropTypes.string.isRequired,
-};

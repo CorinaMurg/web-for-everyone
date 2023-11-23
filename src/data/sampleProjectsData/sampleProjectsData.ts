@@ -1,5 +1,13 @@
+export type SampleProjectProps = {
+    title: string;
+    description: string;
+    to: string;
+    toAriaLabel: string;
+    imageAlt: string;
+    imageSrc: string;
+};
 
-export const sampleProjectsData = [
+export const sampleProjectsData: SampleProjectProps[] = [
     {
         "title": "My Portfolio Site",
         "description": "Multipage website built in React, tested with Playwright",

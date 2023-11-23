@@ -6,9 +6,7 @@ import "./Projects.css"
 import React from "react"
 
 export default function Projects() {
-
     useEffect(() => {
-        // retrieves the hash fragment from the current URL
         const hash = window.location.hash.replace('#', '');
         if (hash) {
             const element = document.getElementById(hash);
@@ -18,17 +16,16 @@ export default function Projects() {
               window.scrollBy(0, -offset);
             }
         }
-      }, []);
+    }, []);
       
-
     return (
         <div className="projects">
             <div className="page-intro projects--intro">
                 <div className='white-bg'>
                     <h1>{projectsIntroData.heading}</h1>
-                    {projectsIntroData.description.map((item, index) => (
+                    {projectsIntroData.description.map((paragraph, index) => (
                         <div key={index}>
-                            <p>{item}</p>
+                            <p>{paragraph}</p>
                         </div>
                     ))}
                     {projectsIntroData.github && (
@@ -53,14 +50,7 @@ export default function Projects() {
                 {projectsData.map((project) => (
                     <Project
                         key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        hrefSite={project.hrefSite}
-                        link1Text={project.link1Text}
-                        hrefGitHub={project.hrefGitHub}
-                        link2Text={project.link2Text}
-                        imageAlt={project.imageAlt}
-                        imageSrc={project.imageSrc}
+                        {...project}
                     />
                 ))}
             </div>

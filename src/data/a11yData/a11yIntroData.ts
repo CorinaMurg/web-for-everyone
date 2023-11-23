@@ -1,5 +1,10 @@
 
-export const a11yIntroData = {
+type A11yIntroData = {
+    title: string;
+    description: string[];
+};
+
+export const a11yIntroData: A11yIntroData = {
     "title": "The Web is for EVERYONE",
     "description": [
         `This idea drives my work in web development. Accessibility is not just a 

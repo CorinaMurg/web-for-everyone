@@ -1,5 +1,36 @@
+export type AboutDataImage = {
+    src: string;
+    alt: string;
+};
 
-export const aboutData = {
+export type AboutDataExtras = {
+    prefix: string;
+    link: string;
+    linkText: string;
+    linkAriaLabel?: string;
+    suffix: string;
+};
+
+export type AboutDataItem = {
+    prefix: string;
+    link: string;
+    linkText: string;
+    linkAriaLabel?: string;
+    suffix: string;
+    extras?: AboutDataExtras;
+};
+
+export type AboutData = {
+    intro: {
+        heading: string;
+        image: AboutDataImage;
+    };
+    currently: AboutDataItem[];
+    'recently completed': AboutDataItem[];
+    past: AboutDataItem[];
+};
+
+export const aboutData: AboutData = {
     "intro": {
         "heading": "My Career in a Nutshell",
         "image": {
@@ -15,7 +46,6 @@ export const aboutData = {
             link: "https://www.yuriscodingclub.com/",
             linkText: "Yuris Coding Club",
             linkAriaLabel: "Yuris Coding Club website",
-            linkTitle: "Yuris Coding Club website",
             suffix: ", an open-source community focused on accessibility and inclusion in tech",
             extras: 
                 {

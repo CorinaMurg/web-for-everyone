@@ -1,12 +1,24 @@
-
-import { useState } from 'react';
+import React from 'react';
+import { useState, FC } from 'react';
 import A11yTipModal from './A11yTipModal';
+import { A11yTipData } from '../../data/a11yData/a11yTipsData';
 import './A11yTipItem.css';
 
-import PropTypes from 'prop-types';
-import React from 'react';
 
-export default function A11yTipItem({ tip, left, right, descriptionLeft, descriptionRight }) {
+type A11yTipItemProps = A11yTipData & {
+    isModalOpen?: boolean;
+    closeModal?: () => void;
+    tip: React.ReactNode;
+    className?: string;
+};
+
+export default function A11yTipItem ({ 
+    tip, 
+    left, 
+    right, 
+    descriptionLeft, 
+    descriptionRight 
+    } : A11yTipItemProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     function toggleModal() {
@@ -18,8 +30,7 @@ export default function A11yTipItem({ tip, left, right, descriptionLeft, descrip
             <div className="square"></div>
             <button className="tip-button" onClick={toggleModal}>{tip}</button>
             <A11yTipModal
-                className="tip-modal" // Add the className prop here
-                isModalOpen={isModalOpen}
+                className="tip-modal" 
                 isModalOpen={isModalOpen}
                 closeModal={toggleModal}
                 tip={tip}
@@ -32,12 +43,5 @@ export default function A11yTipItem({ tip, left, right, descriptionLeft, descrip
     );
 }
 
-A11yTipItem.propTypes = {
-    tip: PropTypes.string.isRequired,
-    left: PropTypes.string.isRequired,
-    right: PropTypes.string.isRequired,
-    descriptionLeft: PropTypes.arrayOf(PropTypes.string).isRequired,
-    descriptionRight: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
 
 
