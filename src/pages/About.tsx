@@ -46,7 +46,9 @@ export default function About() {
         Object.entries(aboutData).slice(1).map(([key, lines]) => {
             const sectionLines = lines as AboutDataItem[];
             return (
-                <div key={key} className={`about--section about--section--${key.replace(/\s+/g, '-')}`}>
+                <div key={key} 
+                    className={`about--section update-padding about--section--${key.replace(/\s+/g, '-')}`}
+                >
                     <h2 className="blue-heading">{key.toUpperCase()}</h2>
                     <div>
                         {sectionLines.map((line, index) => { 
