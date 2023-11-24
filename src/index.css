@@ -177,14 +177,14 @@ h1 {
     color: var(--text-dark-color);
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 12px 15px;
+    padding: 12px 1px;
     text-align: center;
     background-color: var(--burntYellow-color);
     cursor: pointer;
     width: 20rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .site-link {
         font-size: 1.4rem;
         width: 100%;

@@ -10,7 +10,7 @@ export default function Accessibility() {
         <div className="a11y">
             <div className="a11y--intro">
                 <h1 className="page-heading update-padding">{a11yIntroData.title}</h1>
-                <div className="subheading-div update-padding" >
+                <div className="subheading-div update-margin" >
                     {a11yIntroData.description.map((line, index) => (
                         <p key={index}>{line}</p>
                     ))}

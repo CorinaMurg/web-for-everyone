@@ -6,7 +6,7 @@ export default function HomeIntro() {
         <div className="home-intro">
             <h1 className="page-heading update-padding">Hello, I'm Corina!</h1>
             
-            <div className="subheading-div update-padding">
+            <div className="subheading-div update-margin">
                 <p className='subheading-p'>A former high-school math teacher and self-taught developer focused on creating accessible web products. 
                     Always curious + learning.
                 </p>

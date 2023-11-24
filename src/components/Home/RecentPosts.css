@@ -5,27 +5,24 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
 }
 
 .recent-posts .subheading-div {
-    width: 51rem;
-}
-
-@media screen and (max-width: 1200px) {
-    .recent-posts .subheading-div {
-        width: 45rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .recent-posts .subheading-div {
-        width: 43rem;
-    }
+    width: 40rem;
 }
 
 @media screen and (max-width: 700px) {
     .recent-posts .subheading-div {
-        width: 100%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .recent-posts .site-link {
+        font-size: 1.4rem;
+        width: 88%;
+        margin-inline: auto;
     }
 }
 

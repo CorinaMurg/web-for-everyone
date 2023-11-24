@@ -11,7 +11,7 @@ export default function RecentPosts (){
                 <h2 className="page-heading update-padding">
                     {recentPostsData.intro.heading}
                 </h2>
-                <div className="subheading-div update-padding" >
+                <div className="subheading-div update-margin" >
                     {recentPostsData.intro.paragraphs.map((paragraph, index) => (
                         <p key={index}>
                             {paragraph}
@@ -37,6 +37,7 @@ export default function RecentPosts (){
             >
                 Explore My Blog
             </a>
+            
             
         </div>
     )
