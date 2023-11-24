@@ -17,8 +17,8 @@ export default function Accessibility() {
                  </div> 
             </div>
           
-            <h2 className="left-my-posts-heading blue-heading">My A11y Posts</h2>     
-            <div className="left-my-posts-div">
+            <h2 className="left-my-posts-heading blue-heading update-margin">My A11y Posts</h2>     
+            <div className="left-my-posts-div update-margin">
                 {a11yPostsData.filter(post => post.label === "corina").map((post, index) => (
                     <article key={index} className="left--post--div">
                         <h3>
@@ -47,8 +47,8 @@ export default function Accessibility() {
                 ))}
             </div>
 
-            <h2 className='left-other-heading'>Articles by A11y Specialists</h2>     
-            <div className="left-other-div">
+            <h2 className='left-other-heading update-margin'>Articles by A11y Specialists</h2>     
+            <div className="left-other-div update-margin">
                 {a11yPostsData.filter(post => post.label === "other").map((post, index) => (
                     <article key={index} className="left--post--div">
                         <h3>

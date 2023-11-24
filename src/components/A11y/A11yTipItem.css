@@ -21,6 +21,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+    .tip-button {
+        font-size: 1rem;
+    }
+}
+
 .dash {
     width: 10px;
     height: var(--yellow-border);
