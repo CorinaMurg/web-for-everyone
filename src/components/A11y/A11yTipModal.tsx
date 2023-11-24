@@ -1,5 +1,4 @@
 import React from 'react';
-import { FC } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './A11yTipModal.css';
@@ -15,7 +14,7 @@ type A11yTipModalProps = {
     className?: string; 
 }
 
-const A11yTipModal: FC<A11yTipModalProps> = ({
+export default function A11yTipModal ({
     isModalOpen, 
     closeModal, 
     tip, 
@@ -23,7 +22,7 @@ const A11yTipModal: FC<A11yTipModalProps> = ({
     right, 
     descriptionLeft, 
     descriptionRight
-}) => {
+} : A11yTipModalProps) {
     return (
         <ReactModal
             className="modal"
@@ -75,4 +74,3 @@ const A11yTipModal: FC<A11yTipModalProps> = ({
     );
 }
 
-export default A11yTipModal;

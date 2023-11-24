@@ -65,36 +65,27 @@ nav ul {
     padding: 0;
 }
 
-/* all nav links */
-nav {
-    display: flex;
+.mobile-nav-toggle {
+    display: none;
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
-    font-size: 0.9rem;
-    padding: 8px 0;
-    margin-left: 40px;
-    position: relative; 
-}
-
-.nav-link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--text-dark-color);
-    transition: width 0.8s;
-}
-
-.nav-link:hover::before {
-    width: 100%;
-}
-
-.nav-link.active-link::before {
-    width: 100%;
+@media (max-width: 850px) {
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: var(--navbar-margin);
+        background: transparent;
+        background-image: url(/assets/icon-menu-dark.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+    
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid black;
+        outline-offset: 5px;
+    }
 }

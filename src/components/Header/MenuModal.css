@@ -1,0 +1,25 @@
+
+.modal .close-button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/xmark-solid.svg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 30px 30px;
+    position: absolute;
+    top: 20px;
+    right: var(--navbar-margin);
+}
+
+.modal .primary-navigation {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.2rem;
+    align-items: start;
+}

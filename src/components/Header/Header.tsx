@@ -1,10 +1,17 @@
 import React from "react"
-import { Link, NavLink } from "react-router-dom"
-import handleLinkClick from "../../utils/handleLinkClick"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import Navbar from "./Navbar";
+import MenuModal from "./MenuModal";
 import "./Header.css"
 
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    function toggleModal() {
+        setIsMenuOpen(!isMenuOpen);
+    }
 
     return (
         <header>
@@ -13,44 +20,21 @@ export default function Header() {
                 <Link className="logo" to="/">Corina Murg </Link>
                 <span>Software Engineer focused on Accessibility</span>
             </div>
+
+            <button 
+                className="mobile-nav-toggle" 
+                aria-controls="primary-navigation"
+                aria-expanded={isMenuOpen}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+                <span className="menu-icon sr-only">
+                    Menu
+                </span>
+            </button>
+            <Navbar/>
+            <MenuModal isMenuOpen={isMenuOpen} closeModal={toggleModal} />
+
             
-            <nav>
-                <NavLink
-                    to="/"
-                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                    onClick={handleLinkClick}
-                >
-                    Home
-                </NavLink>
-                <NavLink
-                    to="/projects"
-                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                    onClick={handleLinkClick}
-                >
-                    Projects
-                </NavLink>
-                <NavLink
-                    to="/accessibility"
-                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                    onClick={handleLinkClick}
-                >
-                    Accessibility
-                </NavLink>
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                    onClick={handleLinkClick}
-                >
-                    About
-                </NavLink>
-                <a  className="nav-link"
-                    href="https://dev.to/corinamurg" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    Blog
-                </a>
-            </nav>
         </header>
     )
 }
