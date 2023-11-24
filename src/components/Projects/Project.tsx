@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectData } from "../../data/projectsData/projectsData.js";
 import "./Project.css"
 import slugify from "../../utils/slugify.js"
+import "../../index.css";
 
 
 export function Project({
@@ -18,9 +19,11 @@ export function Project({
     const slugifiedTitle = slugify(title);      
 
     return (
-        <article className="project" id={slugifiedTitle}>
+        <article className="project update-padding" id={slugifiedTitle}>
             <div className="project--left">
-                <img src={imageSrc} alt={imageAlt} loading='lazy'/>
+                <div className="project--left--image">
+                    <img src={imageSrc} alt={imageAlt} loading='lazy'/>
+                </div>
             </div> 
             <div className="project--right">
                 <h2 className="project--right--title">{title}</h2>

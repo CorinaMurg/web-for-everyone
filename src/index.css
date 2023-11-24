@@ -108,25 +108,57 @@ a {
     background-color: var(--heading-bg-color);
     margin-top: -1rem;
     color: var(--text-light-color);
-    padding-inline: var(--main-margin);
     padding-block: 40px;
 }
 
-.subheading-div {
-    padding-inline: calc(var(--main-margin) - 10px);
-    border-left: 10px solid var(--yellow-color);
+.update-padding {
+    padding-inline: var(--main-margin);
+}
+
+.update-margin {
+    margin-inline: var(--main-margin);
+}
+
+@media (max-width: 1200px) {
+    .update-padding {
+        padding-inline: calc(0.5*var(--main-margin));
+    }
+    .update-margin {
+        margin-inline: calc(0.5*var(--main-margin));
+    }
+}
+
+@media (max-width: 1024px) {
+    .update-padding {
+        padding-inline: var(--navbar-margin);
+    }
+    .update-margin {
+        margin-inline: var(--navbar-margin);
+    }
+}
+
+@media (max-width: 450px) {
+    .update-padding {
+        padding-inline: calc(0.5*var(--navbar-margin));
+    }
+    .update-margin {
+        margin-inline: calc(0.5*var(--navbar-margin));
+    }
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     font-weight: 600;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 24px !important;
-    padding-top: calc(0.5*var(--main-margin));
 }
 
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
 .blue-heading {
     color: var(--blue-color);
     background-color: inherit;
@@ -149,6 +181,14 @@ h1 {
     text-align: center;
     background-color: var(--burntYellow-color);
     cursor: pointer;
+    width: 20rem;
+}
+
+@media screen and (max-width: 450px) {
+    .site-link {
+        font-size: 1.4rem;
+        width: 100%;
+    }
 }
 
 .site-link:hover {

@@ -8,21 +8,19 @@ export default function RecentPosts (){
     return (
         <div className="recent-posts">
             <div className="recent-posts--intro">
-            
-                <h2 className="recent-posts--intro--heading">
+                <h2 className="page-heading update-padding">
                     {recentPostsData.intro.heading}
                 </h2>
-                {recentPostsData.intro.paragraphs.map((paragraph, index) => (
-                    <div key={index} className="recent-posts--intro--description">
-                        <p className="recent-posts--intro--paragraph">
+                <div className="subheading-div update-padding" >
+                    {recentPostsData.intro.paragraphs.map((paragraph, index) => (
+                        <p key={index}>
                             {paragraph}
                         </p>
-                    </div>
-                ))}
-                
+                    ))}
+                </div>
             </div>
             <div className="recent-posts--container">
-                <h3 className="recent-posts--container--heading blue-heading">RECENT POSTS</h3>
+                <h3 className="blue-heading update-padding">RECENT POSTS</h3>
                 {recentPostsData.posts.slice(0, 4).map((post: PostData) => (    
                     <RecentPost
                         key={post.title}
@@ -31,7 +29,7 @@ export default function RecentPosts (){
                 ))}
             </div>
             
-            <a className="site-link" 
+            <a className="site-link update-margin" 
                 href="https://dev.to/corinamurg" 
                 aria-label="Explore my blog"
                 target="_blank" 

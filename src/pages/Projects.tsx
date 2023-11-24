@@ -21,8 +21,8 @@ export default function Projects() {
     return (
         <div className="projects">
             <div className="projects--intro">
-                <h1 className='page-heading'>My Latest Projects</h1>
-                <div className="subheading-div">
+                <h1 className="page-heading update-padding">My Latest Projects</h1>
+                <div className="subheading-div update-padding">
                     <p>TECH: JavaScript, React, TypeScript, semantic HTML, CSS</p>
                     <p>TESTING: Playwright, Lighthouse, axe Dev Tools, manual testing</p>
                     <br></br>

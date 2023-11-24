@@ -12,6 +12,11 @@ header {
     z-index: 100;
 }
 
+@media screen and (max-width: 450px) {
+    header {
+        padding: 16px calc(0.5*var(--navbar-margin));
+    }
+}
 .header-left {
     display: flex;
     flex-direction: column;
@@ -37,6 +42,18 @@ header {
 .header-left span {
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+@media (max-width: 450px) {
+    .header-left span {
+        font-size: 0.8rem;
+    }  
+}
+
+@media (max-width: 320px) {
+    .header-left span {
+        display: none;
+    }  
 }
 
 .skip-to-content {
@@ -88,4 +105,11 @@ nav ul {
         outline: 5px solid black;
         outline-offset: 5px;
     }
+}
+
+@media (max-width: 450px) {
+    .mobile-nav-toggle {
+        right: calc(0.5*var(--navbar-margin));
+    }
+
 }

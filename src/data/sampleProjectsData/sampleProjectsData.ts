@@ -19,7 +19,7 @@ export const sampleProjectsData: SampleProjectProps[] = [
     },
     {
         "title": "Lava Leap",
-        "description": "JavaScript",
+        "description": "JavaScript, Playwright",
         "to": `/projects/#lava-leap`,
         "toAriaLabel": "Lava Leap project description on Projects page",
         "imageSrc": "/assets/lavaLeapSample.jpg",

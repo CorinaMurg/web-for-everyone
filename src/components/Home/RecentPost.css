@@ -4,7 +4,6 @@
     flex-direction: row;
     gap: 40px;
     background-color: var(--lightGray-color);
-    padding-inline: var(--main-margin);
     padding-block: 48px;
     margin-bottom: 96px;
     animation: moveUpOnLoad 1s ease-out;

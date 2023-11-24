@@ -15,7 +15,7 @@ export default function RecentPost ( {
     readMoreAriaLabel,
     } : PostData) {
     return (
-        <article className="recent-post">
+        <article className="recent-post update-padding">
             <div className="recent-post--left">
                 <div className="recent-post--image">
                     <img

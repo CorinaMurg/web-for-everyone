@@ -9,8 +9,8 @@ export default function Accessibility() {
     return (
         <div className="a11y">
             <div className="a11y--intro">
-                <h1 className="page-heading">{a11yIntroData.title}</h1>
-                <div className="subheading-div" >
+                <h1 className="page-heading update-padding">{a11yIntroData.title}</h1>
+                <div className="subheading-div update-padding" >
                     {a11yIntroData.description.map((line, index) => (
                         <p key={index}>{line}</p>
                     ))}

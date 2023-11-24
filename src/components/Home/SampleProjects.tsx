@@ -7,7 +7,7 @@ import "./SampleProjects.css";
 
 export default function SampleProjects() {
     return (
-        <div className="sample-projects">
+        <div className="sample-projects update-margin">
             <h2 className="blue-heading">recent projects</h2>
             <div className="sample-projects--div">
                 {sampleProjectsData.map((project) => (

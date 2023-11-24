@@ -29,6 +29,12 @@
     width: 50rem;
 }
 
+@media (max-width: 850px) {
+    .a11y--intro .subheading-div {
+        width: 100%;
+    }
+}
+
 .a11y--intro p {
     margin-block: 16px;
 }

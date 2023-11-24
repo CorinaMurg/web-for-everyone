@@ -24,8 +24,7 @@ export const recentPostsData: RecentPostsData = {
         {
             "heading": "Explore my blog, join my coding journey",
             "paragraphs": [
-                `Interested in JavaScript or accessibility? I’m always diving into new topics on my blog.`,
-                `It’s where I break things down and make them easier to understand.`,
+                `Interested in JavaScript or accessibility? I’m always diving into new topics on my blog. It’s where I break things down and make them easier to understand.`,
             ],
         },
 

@@ -65,8 +65,8 @@ export default function About() {
     return (
         <div className="about">
             <div className="about--intro">
-                <h1 className="page-heading">{aboutData.intro.heading}</h1>
-                <div className="about--intro--image">
+                <h1 className="page-heading update-padding">{aboutData.intro.heading}</h1>
+                <div className="about--intro--image update-margin">
                     <img  
                         src={aboutData.intro.image.src} 
                         alt={aboutData.intro.image.alt}

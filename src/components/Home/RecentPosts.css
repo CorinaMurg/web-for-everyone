@@ -7,63 +7,35 @@
     gap: 32px;
 }
 
-.recent-posts--intro--heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-top: 16px;
-    padding-block: 40px;
-    color: var(--text-light-color);
-    padding-inline: var(--main-margin);
-    width: 100%;
-    background-color: var(--heading-bg-color);
-}
-
-.recent-posts--intro--description {
-    margin-bottom: 0;
-    margin-inline: var(--main-margin);
-}
-
-.recent-posts--intro--description p{
-    font-size: 1.3rem;
-}
-
-.recent-posts--intro--description p:last-of-type {
-    margin-block: 0;
-}
-
-.recent-posts--container--heading {
-    margin-inline: var(--main-margin);
-    margin-block: 96px;
-}
-
-.recent-posts .site-link {
-    margin-inline: var(--main-margin);
-    width: calc((100% - 2*40px - var(--main-margin)) / 3);
+.recent-posts .subheading-div {
+    width: 51rem;
 }
 
 @media screen and (max-width: 1200px) {
-    .recent-posts--container--heading,
-    .recent-posts .site-link {
-        margin-inline: calc(0.5*var(--main-margin));
+    .recent-posts .subheading-div {
+        width: 45rem;
     }
 }
 
-@media screen and (max-width: 850px) {
-    .recent-posts .site-link {
-        width: calc((100% - 40px - 0.5*var(--main-margin)) / 2);
-    } 
+@media screen and (max-width: 800px) {
+    .recent-posts .subheading-div {
+        width: 43rem;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    .recent-posts--container--heading,
-    .recent-posts .site-link {
-        margin-inline: calc(0.2*var(--main-margin));
-    }
-
-    .recent-posts .site-link {
+@media screen and (max-width: 700px) {
+    .recent-posts .subheading-div {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
 
 
 
