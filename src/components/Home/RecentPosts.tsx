@@ -30,16 +30,16 @@ export default function RecentPosts (){
                     />
                 ))}
             </div>
-            <div className="recent-posts--link">
-                <a className="site-link" 
-                    href="https://dev.to/corinamurg" 
-                    aria-label="Explore my blog"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    Explore My Blog
-                </a>
-            </div>
+            
+            <a className="site-link" 
+                href="https://dev.to/corinamurg" 
+                aria-label="Explore my blog"
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                Explore My Blog
+            </a>
+            
         </div>
     )
 }

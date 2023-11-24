@@ -123,6 +123,13 @@ a {
     border-left: var(--yellow-border) solid var(--yellow-color);
 }
 
+@media (max-width: 1200px) {
+    .white-bg  {
+        grid-column: 1 / 4;
+        margin-right: calc(0.5*var(--main-margin));
+    }
+}
+
 h1 {
     font-size: 3.6rem;
     font-weight: 600;
@@ -159,7 +166,7 @@ h1 {
     color: var(--text-dark-color);
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 12px 24px;
+    padding: 12px 15px;
     text-align: center;
     background-color: var(--burntYellow-color);
     cursor: pointer;

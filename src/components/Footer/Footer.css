@@ -10,6 +10,34 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (min-width: 801px) and (max-width: 1200px) {
+    footer {
+        padding: 2rem calc(0.5*var(--main-margin));
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 2rem calc(0.2*var(--main-margin));
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 2rem calc(0.2*var(--main-margin));
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        align-items: left;
+    }
+
+}
+
 .footer-top {
     display: flex;
     justify-content: space-between;

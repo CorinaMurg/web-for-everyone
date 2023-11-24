@@ -5,17 +5,20 @@ import { sampleProjectsData } from "../../data/sampleProjectsData/sampleProjects
 import handleLinkClick from "../../utils/handleLinkClick";
 import "./SampleProjects.css";
 
-
 export default function SampleProjects() {
     return (
-        <div className="home--sample-projects">
+        <div className="sample-projects">
             <h2 className="blue-heading">recent projects</h2>
-            {sampleProjectsData.slice(0, 3).map((project) => (
-                <SampleProject
-                    key={project.title}
-                    {...project}
-                />
-            ))}
+            <div className="sample-projects--div">
+                {sampleProjectsData.map((project) => (
+                    <SampleProject
+                        key={project.title}
+                        {...project}
+                        
+                    />
+                ))}
+            </div>
+            
 
             <Link className="site-link" 
                 to="/projects" 

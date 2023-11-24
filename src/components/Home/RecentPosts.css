@@ -26,10 +26,36 @@
     margin-block: 96px;
 }
 
-.recent-posts--link {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+.recent-posts .site-link {
     margin-inline: var(--main-margin);
+    width: calc((100% - 2*40px - var(--main-margin)) / 3);
 }
+
+@media screen and (max-width: 1200px) {
+    .recent-posts--container--heading,
+    .recent-posts .site-link {
+        margin-inline: calc(0.5*var(--main-margin));
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .recent-posts .site-link {
+        width: calc((100% - 40px - 0.5*var(--main-margin)) / 2);
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .recent-posts--container--heading,
+    .recent-posts .site-link {
+        margin-inline: calc(0.2*var(--main-margin));
+    }
+
+    .recent-posts .site-link {
+        width: 100%;
+    }
+}
+
+
+
+
+

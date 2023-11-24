@@ -14,6 +14,7 @@ export function Project({
     imageAlt, 
     imageSrc 
     }: ProjectData ) {
+        
     const slugifiedTitle = slugify(title);      
 
     return (

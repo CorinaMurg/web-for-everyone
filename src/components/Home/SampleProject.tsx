@@ -10,9 +10,11 @@ export default function SampleProject({
     to, 
     toAriaLabel, 
     imageAlt, 
-    imageSrc } : SampleProjectProps) {
+    imageSrc,
+    className = ""
+ } : SampleProjectProps) {
     return (
-        <Link className="sample-project--link" 
+        <Link className={`sample-project--link ${title.toLowerCase().replace(/\W+/g, '-')}`}
             to={to} 
             aria-label={toAriaLabel}
         >

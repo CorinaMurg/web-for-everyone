@@ -1,26 +1,26 @@
 
-/* SAMPLE PROJECTS */
-.home--sample-projects {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(3, 1fr);
+.sample-projects {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
     animation: moveUpOnLoad 1s ease-out;
     margin-inline: var(--main-margin);
     margin-top: 25px;
 }
 
-.home--sample-projects h2 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+.sample-projects--div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.sample-projects--div > * {
+    flex: 1;
+}
+
+.sample-projects h2 {
     margin-bottom: 0;
 }
-
-.home--sample-projects site-link {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
 
 @keyframes moveUpOnLoad {
     from {
@@ -32,3 +32,47 @@
         opacity: 1;
     }
 }
+
+.sample-projects .site-link {
+    width: calc((100% - 2*40px) / 3);
+}
+
+
+@media (max-width: 1200px) {
+    .sample-projects  {
+        margin-inline: calc(0.5*var(--main-margin));
+    }
+}
+
+@media (max-width: 600px) {
+    .sample-projects  {
+        margin-inline: calc(0.2*var(--main-margin));
+    }
+}
+
+@media (max-width: 850px) {
+    .sample-projects .site-link {
+        width: calc((100% - 40px) / 2);
+    } 
+}
+
+@media (max-width: 600px) {
+    .sample-projects--div {
+        flex-direction: column;
+    }
+
+    .twain-company {
+        display: block;
+    }
+
+    .sample-projects .site-link {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

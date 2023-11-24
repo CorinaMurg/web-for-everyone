@@ -5,6 +5,13 @@
     animation: moveUpOnLoad 1s ease-out;
 }
 
+
+@media (max-width: 850px) {
+    .twain-company  {
+        display: none;
+    }
+}
+
 @keyframes moveUpOnLoad {
     from {
         transform: translateY(50px);  

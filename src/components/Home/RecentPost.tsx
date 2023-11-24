@@ -31,7 +31,6 @@ export default function RecentPost ( {
                             <a href={photographerSrc} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
-                                title={photographerSrcAriaLabel} 
                                 aria-label={photographerSrcAriaLabel}
                             >
                                 <span className="photo-credit--link">{photographer}</span>
@@ -42,7 +41,8 @@ export default function RecentPost ( {
             </div>
             <div className="recent-post--right">
                 <a
-                    href={href} target="_blank" 
+                    href={href} 
+                    target="_blank" 
                     rel="noopener noreferrer"  
                     aria-label={hrefAriaLabel}
                     className="recent-post--link hover-underline"
@@ -54,7 +54,8 @@ export default function RecentPost ( {
                         <p key={index}>{paragraph}</p>
                     ))}
                     <a className="recent-post--link" 
-                        href={href} target="_blank" 
+                        href={href} 
+                        target="_blank" 
                         rel="noopener noreferrer" 
                         aria-label={readMoreAriaLabel}
                     >

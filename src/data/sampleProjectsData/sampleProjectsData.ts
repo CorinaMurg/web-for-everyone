@@ -5,6 +5,7 @@ export type SampleProjectProps = {
     toAriaLabel: string;
     imageAlt: string;
     imageSrc: string;
+    className?: string;
 };
 
 export const sampleProjectsData: SampleProjectProps[] = [
@@ -36,14 +37,14 @@ export const sampleProjectsData: SampleProjectProps[] = [
                     are written in black letters on a burnt orange background.`,
     },
     
-    {
-        "title": "Space Tourism Agency",
-        "description": "Multipage website built with JavaScript",
-        "to": `/projects/#space-tourism-agency`,
-        "toAriaLabel": "Space Tourism Agency project description on Projects page",
-        "imageSrc": "/assets/spaceTourismEuropa.jpg",
-        "imageAlt": `A view of Europa, one of Jupiter's moons, on a dark background. The name Europa
-                    is printed in capital white letters at the bottom of the page.`,
-    },
+    // {
+    //     "title": "Space Tourism Agency",
+    //     "description": "Multipage website built with JavaScript",
+    //     "to": `/projects/#space-tourism-agency`,
+    //     "toAriaLabel": "Space Tourism Agency project description on Projects page",
+    //     "imageSrc": "/assets/spaceTourismEuropa.jpg",
+    //     "imageAlt": `A view of Europa, one of Jupiter's moons, on a dark background. The name Europa
+    //                 is printed in capital white letters at the bottom of the page.`,
+    // },
 ];
   
