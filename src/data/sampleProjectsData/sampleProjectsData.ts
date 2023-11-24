@@ -11,7 +11,7 @@ export type SampleProjectProps = {
 export const sampleProjectsData: SampleProjectProps[] = [
     {
         "title": "My Portfolio Site",
-        "description": "Multipage website built in React, tested with Playwright",
+        "description": "React, Typescript, Playwright",
         "to": `/projects/#my-portfolio-site`,
         "toAriaLabel": "",
         "imageSrc": "/assets/corinaAboutJsonSample.png",
@@ -19,7 +19,7 @@ export const sampleProjectsData: SampleProjectProps[] = [
     },
     {
         "title": "Lava Leap",
-        "description": "2D platform game built with JavaScript",
+        "description": "JavaScript",
         "to": `/projects/#lava-leap`,
         "toAriaLabel": "Lava Leap project description on Projects page",
         "imageSrc": "/assets/lavaLeapSample.jpg",
@@ -29,7 +29,7 @@ export const sampleProjectsData: SampleProjectProps[] = [
     },
     {
         "title": "Twain & Company",
-        "description": "Bookstore website built with React",
+        "description": "React, Firebase, Playwright",
         "to": `/projects/#twain-&-company`,
         "toAriaLabel": "Twain & Company project description on Projects page",
         "imageSrc": "/assets/lettersFromEarth.jpg",

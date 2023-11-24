@@ -5,16 +5,10 @@
     gap: 30px;
 }
 
-
-.about .white-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .about--intro--image {
     width: 90px;
     aspect-ratio: 1 / 1;
+    margin-inline: var(--main-margin);
 }
 
 .about--intro--image img {

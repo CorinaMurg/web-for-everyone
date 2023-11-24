@@ -7,19 +7,19 @@ import "./RecentPosts.css";
 export default function RecentPosts (){
     return (
         <div className="recent-posts">
-            <div className="page-intro recent-posts--intro">
-                <div className="white-bg">
-                    <h2 className="recent-posts--intro--heading">
-                        {recentPostsData.intro.heading}
-                    </h2>
-                    {recentPostsData.intro.paragraphs.map((paragraph, index) => (
-                        <div key={index} className="recent-posts--intro--description">
-                            <p className="recent-posts--intro--paragraph">
-                                {paragraph}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+            <div className="recent-posts--intro">
+            
+                <h2 className="recent-posts--intro--heading">
+                    {recentPostsData.intro.heading}
+                </h2>
+                {recentPostsData.intro.paragraphs.map((paragraph, index) => (
+                    <div key={index} className="recent-posts--intro--description">
+                        <p className="recent-posts--intro--paragraph">
+                            {paragraph}
+                        </p>
+                    </div>
+                ))}
+                
             </div>
             <div className="recent-posts--container">
                 <h3 className="recent-posts--container--heading blue-heading">RECENT POSTS</h3>

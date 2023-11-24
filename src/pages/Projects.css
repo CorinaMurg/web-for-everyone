@@ -5,14 +5,17 @@
     gap: 80px;
 }
 
-.projects--intro p {
+.subheading-div > p{
     margin-block: 0;
-    width: 40rem;
 }   
 
-.projects--intro p:last-of-type {
-    margin-bottom: 0;
-} 
+.projects--intro p {
+    font-size: 1.1rem;
+}
+
+.github-p {
+    margin-top: 32px;
+}
 
 .projects--container {
     display: flex;

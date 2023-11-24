@@ -25,13 +25,12 @@
     width: 100%;
 }
 
-
-.intro--text {
-    width: 40rem;
+.a11y--intro .subheading-div {
+    width: 50rem;
 }
 
-.intro--text p {
-    margin-bottom: 0;
+.a11y--intro p {
+    margin-block: 16px;
 }
 
 .left-my-posts-heading {

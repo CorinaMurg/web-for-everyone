@@ -64,17 +64,14 @@ export default function About() {
     
     return (
         <div className="about">
-            <div className="page-intro about--intro">
-                <div className="white-bg">
-                    <h1>{aboutData.intro.heading}</h1>
-                    <div className="about--intro--image">
-                        <img  
-                            src={aboutData.intro.image.src} 
-                            alt={aboutData.intro.image.alt}
-                        />
-                    </div>
+            <div className="about--intro">
+                <h1 className="page-heading">{aboutData.intro.heading}</h1>
+                <div className="about--intro--image">
+                    <img  
+                        src={aboutData.intro.image.src} 
+                        alt={aboutData.intro.image.alt}
+                    />
                 </div>
-                
             </div>
             <div className="about--sections">
                 {renderAboutSections()}

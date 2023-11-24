@@ -14,11 +14,13 @@ export const projectsData: ProjectData[] = [
     {
         "title": "My Portfolio Site",
         "description": [
-          `I built this site in React with an accessibility-first approach. I combined 
-          Playwright's automated testing tools, including its code generation feature, with custom scripts 
-          to validate UI functionality and compliance with accessibility standards.`,
+          `I built my portfolio site with React and Typescript using an accessibility-first approach. To validate UI 
+          functionality and compliance with accessibility standards, I combined Playwright's automated testing 
+          tools with with custom scripts. I also used Lighthouse and axe Dev Tools to test for performance and
+          accessibility.
+          `,
           `I've decoupled content from UI code by relying on JSON files, and therefore created a clean and 
-          maintainable codebase`,
+          maintainable codebase.`,
           ],
         "hrefSite": "https://dev.to/corinamurg/my-first-tests-in-playwright-20lc/",
         "link1Text": "View Tests",
@@ -32,13 +34,13 @@ export const projectsData: ProjectData[] = [
                     this website with Playwright. It also includes the GitHub link to Corina's portfolio 
                     and aria-label and title attributes. The code is set against a dark editor background with 
                     syntax highlighting`,
-        "techStack": "React  •  Playwright  •  Accessibility",
+        "techStack": "React  •  Playwright  •  Typescript",
     },
     {
         "title": "Twain & Company",
         "description": [
-            "Bookstore website built with React. Integrates ReactDOM.createPortal to implement a shopping cart modal. Firebase backend implementation to store book data and orders.",
-            "Accessibility-first approach with skip-to-content button, color contrast, focus outline, modal access via keyboard, and aria-live triggered by cart updates",
+            "This is a bookstore website built with React and Firebase. It integrates ReactDOM.createPortal to implement a shopping cart modal. The Firebase backend implementation is used to store book data and orders.",
+            "I Accessibility-first approach with skip-to-content button, color contrast, focus outline, modal access via keyboard, and aria-live triggered by cart updates.",
             ],
         "hrefSite": "https://twain-and-company.netlify.app/",
         "link1Text": "View Site",
@@ -46,12 +48,12 @@ export const projectsData: ProjectData[] = [
         "link2Text": "View Code",
         "imageSrc": "/assets/booksOnATable.jpg",
         "imageAlt": "Piles of books on a table.",
-        "techStack": "React  •  CSS GRID  •  BEM  •  A11y",
+        "techStack": "React  •  CSS GRID  •  Playwright  •  Accessibility Guidelines",
     },
     {
         "title": "Space Tourism Agency",
         "description": [
-            "Multipage website built with JavaScript. Leverages semantic HTML5 tags, ARIA roles and properties for enhanced accessibility. Incorporates a 'Skip to content' link",
+            "A multipage website built with JavaScript, HTML and CSS. Leverages semantic HTML5 tags, ARIA roles and properties for enhanced accessibility.",
             "Employs CSS Grid + Flexbox for responsive layout. Deploys <picture> elements to provide webp images with png fallbacks for better performance",
             ],
         "hrefSite": "https://corina-space-tourism.netlify.app/",
@@ -65,7 +67,7 @@ export const projectsData: ProjectData[] = [
     {
         "title": "Lava Leap",
         "description": [
-            `A 2D platform game implemented in JavaScript. The player progresses through multiple challenging 
+            `A 2D platform game implemented in JavaScript. Your player progresses through multiple challenging 
             levels. A collision with lava means the level restarts. Should the player run out of lives or 
             successfully complete all levels, the game will come to an end, with the option to restart.`,
             "Want an extra challenge or need some help? Adjust your player's number of lives directly in the URL.",

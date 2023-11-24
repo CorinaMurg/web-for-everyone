@@ -1,5 +1,4 @@
 import { useEffect } from "react"
-import { projectsIntroData } from "../data/projectsData/projectsIntroData"
 import { projectsData } from "../data/projectsData/projectsData"
 import { Project } from "../components/Projects/Project"
 import "./Projects.css"
@@ -17,34 +16,29 @@ export default function Projects() {
             }
         }
     }, []);
-      
+
+
     return (
         <div className="projects">
-            <div className="page-intro projects--intro">
-                <div className='white-bg'>
-                    <h1>{projectsIntroData.heading}</h1>
-                    {projectsIntroData.description.map((paragraph, index) => (
-                        <div key={index}>
-                            <p>{paragraph}</p>
-                        </div>
-                    ))}
-                    {projectsIntroData.github && (
-                        <div>
-                            <p>
-                                <span>{projectsIntroData.github.prefix}</span>
-                                <a  href={projectsIntroData.github.link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    aria-label={projectsIntroData.github.linkAriaLabel}
-                                >
-                                    {projectsIntroData.github.linkText}
-                                </a>
-                                <span>{projectsIntroData.github.suffix}</span>
-                            </p>
-                        </div>
-                    )}
-                </div>   
-            </div>
+            <div className="projects--intro">
+                <h1 className='page-heading'>My Latest Projects</h1>
+                <div className="subheading-div">
+                    <p>TECH: JavaScript, React, TypeScript, semantic HTML, CSS</p>
+                    <p>TESTING: Playwright, Lighthouse, axe Dev Tools, manual testing</p>
+                    <br></br>
+                    <p className="github-p">
+                        <span>Please visit  </span>
+                        <a  href="https://github.com/CorinaMurg"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            my GitHub page
+                        </a>
+                        <span> for a complete overview of my work.</span>
+                    </p>
+                </div>  
+            </div>       
+          
             
             <div className="projects--container">
                 {projectsData.map((project) => (

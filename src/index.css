@@ -18,8 +18,8 @@
     --blue-color: #1a73c6;
     --dark-blue-color: #1a73e9;
     --orange-color: #fb8500;
-    /* --yellow-color: #ffb703; */
-    --yellow-color: #feb662;
+    --yellow-color: #ffb703;
+    /* --yellow-color: #feb662; */
     --burntYellow-color: #feb662;
     --pink-color: #f38ba3;
     --pinkBright-color: #e60067;
@@ -103,31 +103,18 @@ a {
     border: 0;
 }
 
-.page-intro {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.page-heading {
     width: 100%;
     background-color: var(--heading-bg-color);
     margin-top: -1rem;
+    color: var(--text-light-color);
+    padding-inline: var(--main-margin);
+    padding-block: 40px;
 }
 
-.white-bg {
-    grid-row: 1 / 2;
-    grid-column: 1 / 3; 
-    background-color: white;
-    margin-left: calc(0.5*var(--main-margin));
-    padding-left: calc(0.5*var(--main-margin) - 4px);
-    margin-bottom: 0;
-    margin-top: 36px;
-    border-left: var(--yellow-border) solid var(--yellow-color);
-}
-
-@media (max-width: 1200px) {
-    .white-bg  {
-        grid-column: 1 / 4;
-        margin-right: calc(0.5*var(--main-margin));
-    }
+.subheading-div {
+    padding-inline: calc(var(--main-margin) - 10px);
+    border-left: 10px solid var(--yellow-color);
 }
 
 h1 {
@@ -138,14 +125,6 @@ h1 {
     margin-bottom: 30px;
     padding-top: 24px !important;
     padding-top: calc(0.5*var(--main-margin));
-}
-
-.subheading-p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 20px;
-    line-height: 1.5;
 }
 
 .blue-heading {
@@ -241,8 +220,6 @@ h1 {
 .photo-credit--link:hover::before {
     width: 100%;
 }
-
-
 
 @keyframes moveUpOnLoad {
     from {

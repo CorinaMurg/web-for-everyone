@@ -8,17 +8,15 @@ import './Accessibility.css'
 export default function Accessibility() {  
     return (
         <div className="a11y">
-            <div className="page-intro a11y--intro">
-                <div className='white-bg'>
-                    <h1>{a11yIntroData.title}</h1>
-                    <div className="intro--text">
-                        {a11yIntroData.description.map((line, index) => (
-                            <p key={index}>{line}</p>
-                        ))}
-                    </div>
-                </div>
+            <div className="a11y--intro">
+                <h1 className="page-heading">{a11yIntroData.title}</h1>
+                <div className="subheading-div" >
+                    {a11yIntroData.description.map((line, index) => (
+                        <p key={index}>{line}</p>
+                    ))}
+                 </div> 
             </div>
-            
+          
             <h2 className="left-my-posts-heading blue-heading">My A11y Posts</h2>     
             <div className="left-my-posts-div">
                 {a11yPostsData.filter(post => post.label === "corina").map((post, index) => (
