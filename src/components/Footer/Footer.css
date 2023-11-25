@@ -90,6 +90,10 @@ footer a {
     margin-bottom: 10px;
 }
 
+footer li {
+    margin-bottom: 25px;
+}
+
 .footer-nav-link {
     position: relative;
 }
