@@ -45,10 +45,10 @@ body {
     color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
     line-height: 1.1;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     min-height: 100vh;
+    -ms-overflow-style: none;
     position: relative;
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -160,15 +160,15 @@ h1 {
     }
 }
 .blue-heading {
-    color: var(--blue-color);
-    background-color: inherit;
     align-self: left;
+    background-color: #fff;
+    color: var(--blue-color);
     display: inline-block;
+    line-height: 1.1;
     font-size: 1.3rem;
     font-weight: 500;
-    text-transform: uppercase;
     margin-bottom: 20px;
-    line-height: 1.1;
+    text-transform: uppercase;
 }
 
 /* looks like a button but is a link */
