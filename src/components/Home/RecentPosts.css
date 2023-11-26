@@ -12,14 +12,26 @@
     font-size: 2.5rem;
 }
 
+.recent-posts .subheading-div {
+    width: 62rem;
+}
+
 .recent-posts .subheading-div p {
     font-size: 1.4rem;
-    width: 62rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .recent-posts .subheading-div {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .recent-posts .subheading-div {
-        width: 90%;
+        width: 95%;
+    }
+    .recent-posts .subheading-div p {
+        font-size: 1.2rem;
     }
 }
 
