@@ -40,14 +40,14 @@ export const projectsData: ProjectData[] = [
         "title": "Twain & Company",
         "description": [
             "This is a bookstore website built with React and Firebase. It integrates ReactDOM.createPortal to implement a shopping cart modal. The Firebase backend implementation is used to store book data and orders.",
-            "I Accessibility-first approach with skip-to-content button, color contrast, focus outline, modal access via keyboard, and aria-live triggered by cart updates.",
+            "I used an accessibility-first approach with skip-to-content button, color contrast, focus outline, modal access via keyboard, and aria-live triggered by cart updates.",
             ],
         "hrefSite": "https://twain-and-company.netlify.app/",
         "link1Text": "View Site",
         "hrefGitHub": "https://github.com/CorinaMurg/twain-and-company",
         "link2Text": "View Code",
         "imageSrc": "/assets/booksOnATable.jpg",
-        "imageAlt": "books in rows stack on a table.",
+        "imageAlt": "books in rows lined up on a table.",
         "techStack": "React  •  CSS GRID  •  Playwright  •  Accessibility Guidelines",
     },
     {

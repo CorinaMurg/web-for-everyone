@@ -27,7 +27,7 @@ export function Project({
             </div> 
             <div className="project--right">
                 <h2 className="project--right--title">{title}</h2>
-                <div>
+                <div className="project--right--description">
                     {description.map((line, index) => (
                         <p key={index} className="project--right--description-line">{line}</p>
                     ))}  
@@ -37,7 +37,6 @@ export function Project({
                     <a className="site-link" href={hrefGitHub} target="_blank" rel="noopener noreferrer">{link2Text}</a>
                 </div> 
             </div>
-             
         </article>
     )
 }

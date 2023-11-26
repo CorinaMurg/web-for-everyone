@@ -12,7 +12,6 @@
     .project {
         gap: 24px;
     }
-    
 }
 
 .project--right {
@@ -51,7 +50,6 @@
         padding: 8px 10px;
         font-size: 1rem;
     }
-    
 }
 
 @media screen and (max-width: 900px) {
@@ -114,9 +112,13 @@
         align-items: start;
     }
 
+    .project--right--description-line {
+        width: 95%;
+    }
+
     .project--left {
-        align-items: start;
-        min-width: 100%;
+        align-items: center;
+        width: 100%;
     }
 
     .project--left--image {
@@ -129,12 +131,12 @@
     }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .project--left--image {
-        width: 90%;
+        width: 70%;
         height: auto;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-}
+} */
