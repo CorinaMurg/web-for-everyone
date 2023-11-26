@@ -5,14 +5,17 @@ import Banner from '../Header/Banner';
 
 export default function HomeIntro() {
   
-    const [isBannerOpen, setisBannerOpen] = useState(false);
-
+    const [isBannerOpen, setIsBannerOpen] = useState(false);
+    
     useEffect(() => {
-        setisBannerOpen(true);
+        if (!sessionStorage.getItem('bannerDisplayed')) {
+            setIsBannerOpen(true);
+            sessionStorage.setItem('bannerDisplayed', 'true');
+        }
     }, []);
 
     const handleCloseModal = () => {
-        setisBannerOpen(false);
+        setIsBannerOpen(false);
     };
     return (
         <div className="home-intro">

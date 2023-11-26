@@ -1,10 +1,9 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
 import "./Header.css"
-
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +19,6 @@ export default function Header() {
                 <Link className="logo" to="/">Corina Murg </Link>
                 <span>Software Engineer focused on Accessibility</span>
             </div>
-
             <button 
                 className="mobile-nav-toggle" 
                 aria-controls="primary-navigation"
@@ -33,8 +31,6 @@ export default function Header() {
             </button>
             <Navbar/>
             <MenuModal isMenuOpen={isMenuOpen} closeModal={toggleModal} />
-
-            
         </header>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './Banner.css';
