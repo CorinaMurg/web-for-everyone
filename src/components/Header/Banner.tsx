@@ -32,9 +32,10 @@ export default function Banner ({
             <button 
                 className='modal-close-button' 
                 onClick={closeModal}
+                aria-label="Close message"  
             >
                 <span className='sr-only'>
-                    Close message about site being a work in progress
+                    Close message
                 </span>
             </button>
         </ReactModal>

@@ -16,7 +16,7 @@ export const a11yPostsData: A11yPostData[] = [
             I implemented, their benefits, and their impact on users. Additionally, I share 
             insights into my CSS and JavaScript selections.`,
         "href": "https://dev.to/corinamurg/accessibility-engineer-project-the-head-element-653",
-        "hrefAriaLabel": "My accessibility engineer project blog post published by Corina.",
+        "hrefAriaLabel": "My accessibility engineer project blog post.",
         "readMoreAriaLabel": "read more link to My accessibility engineer project blog post published by Corina.",
     },
     // {
@@ -33,8 +33,8 @@ export const a11yPostsData: A11yPostData[] = [
             likely to be the first and most common piece of advice. My post looks at the role it 
             plays in accessibility and beyond.`,
         "href": "https://dev.to/corinamurg/use-semantic-html-4b97",
-        "hrefAriaLabel": "The importance of semantic HTML blog post published by Corina.",
-        "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post published by Corina.",
+        "hrefAriaLabel": "The importance of semantic HTML blog post.",
+        "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
     },
     {
         "label": "corina",
@@ -43,8 +43,8 @@ export const a11yPostsData: A11yPostData[] = [
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
         "href": "https://dev.to/corinamurg/html-buttons-vs-links-5059",
-        "hrefAriaLabel": "HTML: buttons or links? How to choose blog post published by Corina.",
-        "readMoreAriaLabel": "read more link to HTML: buttons or links? How to choose blog post published by Corina.",
+        "hrefAriaLabel": "HTML: buttons or links? How to choose blog post.",
+        "readMoreAriaLabel": "read more link to HTML: buttons or links? How to choose blog post.",
 
     },
     {
@@ -54,7 +54,7 @@ export const a11yPostsData: A11yPostData[] = [
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
         "href": "https://dev.to/corinamurg/html-tag-vs-element-3dc5",
         "hrefAriaLabel": "HTML tag vs element blog post published by Corina.",
-        "readMoreAriaLabel": "read more link to HTML tag vs element blog post published by Corina.",
+        "readMoreAriaLabel": "read more link to HTML tag vs element blog post.",
     },
 
     {
@@ -66,7 +66,7 @@ export const a11yPostsData: A11yPostData[] = [
             lead to a more predictable and user-friendly layout.`,
         "href": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques#after-updating-to-px-units",
         "hrefAriaLabel": "Is rem Always the Best Choice for Accessibility blog post by Ashlee M Boyer.",
-        "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility blog post by Ashlee M Boyer.",
+        "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility, a blog post by Ashlee M Boyer.",
     },
     {
         "label": "other",
@@ -76,7 +76,7 @@ export const a11yPostsData: A11yPostData[] = [
         in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
         and exhibited ableist biases. `,
         "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
-        "hrefAriaLabel": "Can AI Help Boost Accessibility, u University of Washington News article.",
+        "hrefAriaLabel": "Can AI Help Boost Accessibility, a University of Washington News article.",
         "readMoreAriaLabel": "read more link to Can AI Help Boost Accessibility, University of Washington News article.",
 
     },

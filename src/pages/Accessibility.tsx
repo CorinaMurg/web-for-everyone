@@ -4,7 +4,6 @@ import { a11yPostsData } from "../data/a11yData/a11yPostsData"
 import A11yAside from "../components/A11y/A11yAside"
 import './Accessibility.css'
 
-
 export default function Accessibility() {  
     return (
         <div className="a11y">
