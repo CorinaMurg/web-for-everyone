@@ -67,7 +67,7 @@ export const recentPostsData: RecentPostsData = {
             "readMoreAriaLabel": "read more link to Semantic HTML buttons vs links blog post by Corina.",
         },
         {
-            "title": "How I Finally Understood ES6 Classes & Constructors",
+            "title": "How I Finally Understood ES6 Classes & Constructors!",
             "description": [
                 `Hint: it involved building Lava Leap, a 2D platform game. And I don't even play video games!
                 I used to believe that classes & constructors were secret backend tools. 

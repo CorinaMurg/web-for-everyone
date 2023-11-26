@@ -8,6 +8,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="footer-top">
+                <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
                     <Link to="/" onClick={handleLinkClick} className="logo">Corina Murg</Link>
                     <span>The web is for everyone!</span>
@@ -50,15 +51,15 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                <div>
-                    <span className="blue-span">&#169;</span><span> 2023 Corina Murg</span>
+                <div className="copyright">
+                    <span>&#169;</span><span>Corina Murg 2023</span>
                 </div>
                 
-                <span>|</span>
+                <span className="vertical-bar">|</span>
                 <span className="built-span">Built with React
                     <img className="react-logo" alt="react logo" src="/assets/react.svg"/>
                 </span>
-                <span>|</span>
+                <span className="vertical-bar">|</span>
                 <span>Tested with Playwright 🎭</span>
             </div>
         </footer>

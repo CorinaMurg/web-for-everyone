@@ -58,10 +58,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         Blog
                     </a>
                 </li>
-                
-
-            </ul>
-            
+            </ul> 
         </nav>
     )
 }
