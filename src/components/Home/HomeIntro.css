@@ -23,3 +23,10 @@
     }
 }
 
+@media (max-width: 450px) {
+    .home-intro h1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

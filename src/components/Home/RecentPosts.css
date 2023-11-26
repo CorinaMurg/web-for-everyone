@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 700px) {
     .recent-posts .subheading-div {
-        width: 95%;
+        width: 90%;
     }
     .recent-posts .subheading-div p {
         font-size: 1.2rem;

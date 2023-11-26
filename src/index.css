@@ -168,11 +168,11 @@ h6 {
     line-height: 1.2;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     h1 {
         font-size: 2rem;
     }
-}
+} */
 .blue-heading {
     align-self: left;
     background-color: #fff;
