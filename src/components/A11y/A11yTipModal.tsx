@@ -25,7 +25,7 @@ export default function A11yTipModal ({
 } : A11yTipModalProps) {
     return (
         <ReactModal
-            className="modal"
+            className="tip-modal"
             isOpen={isModalOpen}
             onRequestClose={closeModal}
             style={{

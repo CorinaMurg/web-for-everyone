@@ -1,6 +1,6 @@
 
 import React from "react";
-import { aboutData, AboutDataItem } from "../data/aboutData/aboutData";
+import { aboutData, AboutDataItemTypes } from "../data/aboutData/aboutData";
 import "./About.css";
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
                     {item.suffix && <span>{item.suffix}</span>}
                 </p>
             
-                {item.extras && <span className="arrow">→</span>}
+                {/* {item.extras && <span className="arrow">→</span>} */}
                 {item.extras && (
                     <p className="section-line extra-info">
                         {item.extras.prefix && <span>{item.extras.prefix}</span>}
@@ -44,7 +44,7 @@ export default function About() {
     
     const renderAboutSections = () => 
         Object.entries(aboutData).slice(1).map(([key, lines]) => {
-            const sectionLines = lines as AboutDataItem[];
+            const sectionLines = lines as AboutDataItemTypes[];
             return (
                 <div key={key} 
                     className={`about--section update-padding about--section--${key.replace(/\s+/g, '-')}`}

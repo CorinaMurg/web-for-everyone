@@ -27,6 +27,12 @@
     }
 }
 
+@media screen and (max-width: 310px) {
+    .tip-button {
+        flex-direction: column;
+    }
+}
+
 .dash {
     width: 10px;
     height: var(--yellow-border);

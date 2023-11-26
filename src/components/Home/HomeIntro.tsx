@@ -1,9 +1,22 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './HomeIntro.css';
+import Banner from '../Header/Banner';
 
 export default function HomeIntro() {
+  
+    const [isBannerOpen, setisBannerOpen] = useState(false);
+
+    useEffect(() => {
+        setisBannerOpen(true);
+    }, []);
+
+    const handleCloseModal = () => {
+        setisBannerOpen(false);
+    };
     return (
         <div className="home-intro">
+            <Banner isBannerOpen={isBannerOpen} closeModal={handleCloseModal} />
             <h1 className="page-heading update-padding"><span>Hello, </span><span>I'm Corina!</span></h1>
             
             <div className="subheading-div update-margin">

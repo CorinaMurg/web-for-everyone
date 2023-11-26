@@ -180,7 +180,7 @@ h6 {
     text-transform: uppercase;
 }
 
-/* looks like a button but is a link */
+/* looks like a button but it's a link! */
 .site-link {
     text-decoration: none;
     color: var(--text-dark-color);
@@ -285,4 +285,3 @@ ul {
     list-style-type: none;
     padding-inline-start: 0;
 }
-

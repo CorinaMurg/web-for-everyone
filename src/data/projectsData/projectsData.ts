@@ -26,7 +26,7 @@ export const projectsData: ProjectData[] = [
         "link1Text": "View Tests",
         "hrefGitHub": "https://github.com/CorinaMurg/corina-portfolio",
         "link2Text": "View Code",
-        "imageSrc": "/assets/corinaAboutJson2.png",
+        "imageSrc": "/assets/corinaAboutJson.png",
         "imageAlt": `Screenshot of a JavaScript object code snippet titled 'aboutData'. It has a property 
                     called 'currently' which is an array including objects with properties 'prefix', 'link', 
                     'linkText', 'suffix', and 'extras'. The prefix includes the text 'Learning Playwright, 

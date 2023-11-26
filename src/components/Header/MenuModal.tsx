@@ -16,7 +16,7 @@ export default function MenuModal ({
 } : MenuModalProps) {
     return (
         <ReactModal
-            className="modal"
+            className="menu-modal"
             isOpen={isMenuOpen}
             onRequestClose={closeModal}
             style={{
@@ -45,7 +45,7 @@ export default function MenuModal ({
             }}   
         >
             <Navbar closeModal={closeModal} />
-            <button className='close-button' onClick={closeModal}><span className='sr-only'>Close</span></button>
+            <button className='modal-close-button' onClick={closeModal}><span className='sr-only'>Close</span></button>
         </ReactModal>
     );
 }

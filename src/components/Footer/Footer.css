@@ -147,3 +147,10 @@ footer li {
 
 }
 
+@media (max-width: 330px) {
+    .footer-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+    

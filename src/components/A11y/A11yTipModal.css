@@ -1,26 +1,26 @@
 
-.modal {
+.tip-modal {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.modal h3 {
+.tip-modal h3 {
     font-size: 1.3rem;
     align-self: center;
     text-align: center; 
 }
 
-.modal h4 {
+.tip-modal h4 {
     margin-bottom: 16px;
 }
 
-.modal h4, .modal div p {
+.tip-modal h4, .tip-modal div p {
     align-self: flex-start;
     text-align: left; 
 }
 
-.modal button {
+.tip-modal button {
     align-self: center;
     text-align: center;
     width: 10rem;
@@ -34,7 +34,7 @@
     border: none;
 }
 
-.modal button:hover {
+.tip-modal button:hover {
     background-color: var(--yellow-color);
     color: var(--text-dark-color);
 }

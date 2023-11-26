@@ -11,7 +11,7 @@ export type AboutDataExtras = {
     suffix: string;
 };
 
-export type AboutDataItem = {
+export type AboutDataItemTypes = {
     prefix: string;
     link: string;
     linkText: string;
@@ -20,17 +20,17 @@ export type AboutDataItem = {
     extras?: AboutDataExtras;
 };
 
-export type AboutData = {
+export type AboutDataTypes = {
     intro: {
         heading: string;
         image: AboutDataImage;
     };
-    currently: AboutDataItem[];
-    'recently completed': AboutDataItem[];
-    past: AboutDataItem[];
+    currently: AboutDataItemTypes[];
+    'recently completed': AboutDataItemTypes[];
+    past: AboutDataItemTypes[];
 };
 
-export const aboutData: AboutData = {
+export const aboutData: AboutDataTypes = {
     "intro": {
         "heading": "My Career in a Nutshell",
         "image": {
@@ -57,12 +57,12 @@ export const aboutData: AboutData = {
                 },
             
         },
-        {
-            prefix: `Enrolled in "Introduction to Web Accessibility", a W3C course on edX`,
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
+        // {
+        //     prefix: `Enrolled in "Introduction to Web Accessibility", a W3C course on edX`,
+        //     link: "",
+        //     linkText: "",
+        //     suffix: "",
+        // },
         {
             prefix: `Writing about JavaScript and 
                      accessibility on `,
@@ -73,7 +73,7 @@ export const aboutData: AboutData = {
         },
         {
             prefix: "Testing with 🎭 and documenting the experience on my blog. Check out ",
-            link: "https://dev.to/corinamurg/using-codegen-5ap8-temp-slug-8294807?preview=d2398f679864a5b13ea5ef3cf31451d846281135918e1defd187da9f3c14184f00308dda8d4dcbffd4e84c82cec81700364cdfb104d7e01ea661c445",
+            link: "https://dev.to/corinamurg/series/25417",
             linkText: "my series of posts about Playwright",
             linkAriaLabel: "my series of posts about Playwright on dev.to",
             suffix: ".",
@@ -163,17 +163,17 @@ export const aboutData: AboutData = {
         },
         
         {
-            prefix: "High School Mathematics Teacher",
+            prefix: "High School Mathematics Teacher & Group Leader",
             link: "",
             linkText: "",
             suffix: "",
         },
-        {
-            prefix: "Group Leader",
-            link: "",
-            linkText: "",
-            suffix: "",
-        },
+        // {
+        //     prefix: "Group Leader",
+        //     link: "",
+        //     linkText: "",
+        //     suffix: "",
+        // },
         {
             prefix: "Content Creator and Designer for a Math Newsletter",
             link: "",
@@ -196,4 +196,6 @@ export const aboutData: AboutData = {
     //     "Nature walks, Poetry, Geometry",
     // ]
 }
+
+
 

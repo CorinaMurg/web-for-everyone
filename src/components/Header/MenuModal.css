@@ -1,5 +1,5 @@
 
-.modal .close-button {
+.menu-modal .modal-close-button {
     background-color: transparent;
     padding: 0;
     border: none;
@@ -16,11 +16,11 @@
 }
 
 @media screen and (max-width: 450px) {
-    .modal .close-button {
+    .menu-modal .close-button {
         right: calc(0.5*var(--navbar-margin));
     }
 }
-.modal .primary-navigation {
+.menu-modal .primary-navigation {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
