@@ -19,8 +19,8 @@ export const projectsData: ProjectData[] = [
           tools with my own custom scripts. I also used Lighthouse and axe Dev Tools to test for performance and
           accessibility.
           `,
-          `I created a clean and maintainable codebase by decouplying content from UI code. Most of the content
-          is stored in JSON files and then sorted and mapped within a given component.`,
+        //   `I created a clean and maintainable codebase by decouplying content from UI code. Most of the content
+        //   is stored in JSON files and then sorted and mapped within a given component.`,
           ],
         "hrefSite": "https://dev.to/corinamurg/my-first-tests-in-playwright-20lc/",
         "link1Text": "View Tests",

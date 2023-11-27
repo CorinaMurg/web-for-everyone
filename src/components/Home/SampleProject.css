@@ -44,8 +44,8 @@
 
 .sample-project--title {
     align-self: start;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--text-light-color);
+    color: var(--text-dark-color);
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 500;
