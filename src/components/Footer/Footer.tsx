@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link to="/" onClick={handleLinkClick} className="logo">Corina Murg</Link>
-                    <span>The web is for everyone!</span>
+                    <Link to="/" onClick={handleLinkClick} className="logo">Web for Everyone</Link>
+                    
                 </div>
                 <div className="footer-right">
                     <div className="footer-right--navigation">

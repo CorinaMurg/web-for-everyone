@@ -27,7 +27,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        Projects
+                        Resources
                     </NavLink>
                 </li>
                 
@@ -37,7 +37,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        Accessibility
+                        About
                     </NavLink>
                 </li>
                 <li>
@@ -46,7 +46,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        About
+                        Contact
                     </NavLink>
                 </li>
                 <li>

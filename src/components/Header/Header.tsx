@@ -1,5 +1,5 @@
 import React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
@@ -16,8 +16,7 @@ export default function Header() {
         <header>
             <a className="skip-to-content" href="#main">Skip to Content</a>
             <div className="header-left">
-                <Link className="logo" to="/">Corina Murg </Link>
-                <span>Software Engineer focused on Accessibility</span>
+                <Link className="logo" to="/">WE <span className="logo-vertical"> | </span> Web for Everyone</Link>
             </div>
             <button 
                 className="mobile-nav-toggle" 
