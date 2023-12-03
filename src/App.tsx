@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
-import Projects from "./pages/Projects"
+import YourUsers from "./pages/YourUsers"
 import Accessibility from './pages/Accessibility';
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="your-users" element={<YourUsers />} />
           <Route path="accessibility" element={<Accessibility />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />

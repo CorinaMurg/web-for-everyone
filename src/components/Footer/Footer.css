@@ -3,11 +3,13 @@ footer {
     color: var(--text-dark-color);
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    padding: 2rem var(--main-margin);
-    font-weight: 500;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 80px;
+    padding: 48px var(--main-margin);
+    
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    
 }
 
 .footer-top {

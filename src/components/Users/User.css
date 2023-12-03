@@ -1,5 +1,5 @@
 
-.project {
+.user {
     display: flex;
     background-color: var(--lightGray-color);
     gap: 48px; 
@@ -9,43 +9,43 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .project {
+    .user {
         gap: 24px;
     }
 }
 
-.project--right {
+.user--right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
 }
 
-.project--right--title {
+.user--right--title {
     font-size: 2rem;
     margin-top: 0;
     color: var(--secondary-text-color);
 }
 
-.project--right--description-line {
+.user--right--description-line {
     margin-top: 16px;
 }
 
-.project--right--links {
+.user--right--links {
     display: flex;
     gap: 36px;
 }
 
-.project--right--links .site-link {
+.user--right--links .site-link {
     width: 16rem;
     font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1100px) {
-    .project--right--links {
+    .user--right--links {
         gap: 24px;
     }
-    .project--right--links .site-link {
+    .user--right--links .site-link {
         width: 14rem;
         padding: 8px 10px;
         font-size: 1rem;
@@ -53,27 +53,27 @@
 }
 
 @media screen and (max-width: 900px) {
-    .project--right--links {
+    .user--right--links {
         gap: 24px;
     }
-    .project--right--links .site-link {
+    .user--right--links .site-link {
         width: 11rem;
         padding: 8px 10px;
         font-size: 1rem;
     }
 }
 
-.project--left {
+.user--left {
     width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.project--left--image {
+.user--left--image {
     width: 100%;
     height: 290px;
 }
-.project--left img {
+.user--left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -81,52 +81,52 @@
 
 
 @media (max-width: 1250px) {
-    .project--left {
+    .user--left {
         min-width: 353px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .project--left--image {
+    .user--left--image {
         width: 353;
         height: 270px;
     }
 }
 
 @media (max-width: 1000px) {
-    .project--left {
+    .user--left {
         min-width: 312px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .project--left--image {
+    .user--left--image {
         width: 312px;
         height: 240px;
     }
 }
 
 @media (max-width: 760px) {
-    .project {
+    .user {
         flex-direction: column;
         align-items: start;
     }
 
-    .project--right--description-line {
+    .user--right--description-line {
         width: 95%;
     }
 
-    .project--left {
+    .user--left {
         align-items: center;
         width: 100%;
     }
 
-    .project--left--image {
+    .user--left--image {
         width: 100%;
         height: auto;
     }
 
-    .project--right {
+    .user--right {
         width: 100%;
     }
 }

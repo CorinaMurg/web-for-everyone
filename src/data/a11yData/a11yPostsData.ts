@@ -1,6 +1,7 @@
 export type A11yPostData = {
     label: string;
     title: string;
+    author?: string;
     description: string;
     href: string;
     hrefAriaLabel: string;
@@ -8,17 +9,17 @@ export type A11yPostData = {
 };
 
 export const a11yPostsData: A11yPostData[] = [
-    {
-        "label": "corina",
-        "title": "My Accessibility Engineer Project",
-        "description": `I have recently completed a project created with HTML, CSS, and JavaScript 
-            and focused on web accessibility. In a series of posts I discuss the accessibility features 
-            I implemented, their benefits, and their impact on users. Additionally, I share 
-            insights into my CSS and JavaScript selections.`,
-        "href": "https://dev.to/corinamurg/accessibility-engineer-project-the-head-element-653",
-        "hrefAriaLabel": "My accessibility engineer project blog post.",
-        "readMoreAriaLabel": "read more link to My accessibility engineer project blog post published by Corina.",
-    },
+    // {
+    //     "label": "corina",
+    //     "title": "My Accessibility Engineer Project",
+    //     "description": `I have recently completed a project created with HTML, CSS, and JavaScript 
+    //         and focused on web accessibility. In a series of posts I discuss the accessibility features 
+    //         I implemented, their benefits, and their impact on users. Additionally, I share 
+    //         insights into my CSS and JavaScript selections.`,
+    //     "href": "https://dev.to/corinamurg/accessibility-engineer-project-the-head-element-653",
+    //     "hrefAriaLabel": "My accessibility engineer project blog post.",
+    //     "readMoreAriaLabel": "read more link to My accessibility engineer project blog post published by Corina.",
+    // },
     // {
     //     "label": "corina",
     //     "title": "Recommended Accessibility Courses",
@@ -27,8 +28,9 @@ export const a11yPostsData: A11yPostData[] = [
     //     "hrefAriaLabel": ""
     // },
     {
-        "label": "corina",
+        "label": "html",
         "title": "The Importance of Semantic HTML",
+        "author": "By Corina Murg",
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. My post looks at the role it 
             plays in accessibility and beyond.`,
@@ -37,8 +39,9 @@ export const a11yPostsData: A11yPostData[] = [
         "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
     },
     {
-        "label": "corina",
+        "label": "html",
         "title": "HTML: Buttons or Links? How to Choose",
+        "author": "By Corina Murg",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
@@ -48,8 +51,9 @@ export const a11yPostsData: A11yPostData[] = [
 
     },
     {
-        "label": "corina",
+        "label": "html",
         "title": "HTML: Tag vs. Element",
+        "author": "By Corina Murg",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
         "href": "https://dev.to/corinamurg/html-tag-vs-element-3dc5",
@@ -58,8 +62,9 @@ export const a11yPostsData: A11yPostData[] = [
     },
 
     {
-        "label": "other",
+        "label": "css",
         "title": "Is \"rem\" Always the Best Choice for Accessibility?",
+        "author": "By Ashlee M Boyer on ashleemboyer.com",
         "description": `While rem units are often championed for their scalability, particularly for 
             text to aid with zoom and accessibility, they may not be the best choice for margins, padding, 
             and spacing. Read Ashlee M Boyer's post on how using px units in these cases can 
@@ -71,6 +76,7 @@ export const a11yPostsData: A11yPostData[] = [
     {
         "label": "other",
         "title": "Can AI Help Boost Accessibility?",
+        "author": "By UW News on washington.edu",
         "description": `This article published by "UW News" discusses a study by University of Washington 
         researchers on the accessibility potential of AI tools. The study found mixed results; while AI helped 
         in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
@@ -81,8 +87,9 @@ export const a11yPostsData: A11yPostData[] = [
 
     },
     {
-        "label": "other",
+        "label": "components",
         "title": "Building the Main Navigation for a Website",
+        "author": "By Google on web.dev",
         "description": `This is an article published on Google's web.dev site. It's a thorough guide that 
         covers best practices for designing a navigation system that's user-friendly and accessible. 
         A (very long) must-read!`,

@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link to="/" onClick={handleLinkClick} className="logo">Web for Everyone</Link>
+                    <Link to="/" onClick={handleLinkClick} className="logo">WE <span className="logo-vertical">|</span>Web for Everyone</Link>
                     
                 </div>
                 <div className="footer-right">

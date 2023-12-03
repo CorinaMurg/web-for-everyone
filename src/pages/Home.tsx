@@ -23,25 +23,41 @@ export default function Home() {
             </article>
 
             <aside className="aside">
-                <h2 className="neutral-dark-grayish-blue">Accessibility News</h2>
+                <h2 className="neutral-dark-grayish-blue">Accessibility Insights</h2>
                 <article>
-                    <h3>Lack of accessibility === Discrimination</h3>
-                    <p>...</p>
+                    <a href="https://www.duckworth.senate.gov/imo/media/doc/22.09.27%20SxS%20-%20Websites%20and%20Software%20Applications%20Accessibility%20Act%20FINAL.pdf"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Proposed Accessibility Legislation a 3-page summary of the Websites and Software Applications Accessibility Act"
+                    >
+                        <h3>Proposed Accessibility Legislation </h3>
+                    </a>
+                    <p>The "Websites and Software Applications Accessibility Act" was 
+                        recently Introduced in US Congress. It makes clear that websites and software
+                        must be accessible to people with disabilities. In other words, lack of accessibility 
+                        is discrimination!
+                    </p>
                 </article>
                 <article>
-                    <h3>The Downsides of ...</h3>
-                    <p>What are the possible adverse effects ...</p>
-                </article>
-                <article>
-                    <h3>Is ... important?</h3>
-                    <p>Private ...</p>
+                    <a href="https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="5 Tips for Making Your GitHub Profile Page Accessible blog post on the GitHub blog"
+                    >
+                        <h3>5 Tips for Making Your GitHub Profile Page Accessible</h3>
+                    </a>
+                    <p>This GitHub blog post provides practical advice on how to ensure your GitHub profile is 
+                        accessible to all. You'll find tips on link context, image alt text, heading structure, plain language, 
+                        and use of emojis. Enjoy!
+                    </p>
+                    <span className="read-more">Read more</span>
+                    
                 </article>
             </aside>
 
             <section className="mini-articles">
                 <article className="mini-article mini-article-1">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
                         <span>01</span>
@@ -52,8 +68,7 @@ export default function Home() {
                     
                 </article>
                 <article className="mini-article mini-article-2">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
                         <span>02</span>
@@ -63,45 +78,43 @@ export default function Home() {
                 </article>
 
                 <article className="mini-article mini-article-3">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
                         <span>03</span>
                         <h3>How can WE help</h3>
-                        <p>Reach out if you would like feedback on a project. Use your LinkedIn account to </p>
+                        <p>Reach out if you would like feedback on a project. 
+                           Read about the two easy steps to receive a free accessibility review of your site.</p>
                     </div>
                 </article>
 
                 <article className="mini-article mini-article-4">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
-                        <span>01</span>
+                        <span>04</span>
                         <h3>Do you know your HTML?</h3>
-                        <p>Semantic HTML is the foundation of an accessible website. Plus, it has SEO advantages, and it makes your 
+                        <p>Semantic HTML is the foundation of an accessible website. 
+                            Plus, it has SEO advantages, and it makes your 
                             code more readable and maintainable. </p>
                     </div>
                     
                 </article>
                 <article className="mini-article mini-article-5">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
-                        <span>02</span>
+                        <span>05</span>
                         <h3>Getting started with a11y</h3>
                         <p>Our best .</p>
                     </div>
                 </article>
 
                 <article className="mini-article mini-article-6">
-                    <div className="mini-image">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""/>
+                    <div className="mini-top-border">
                     </div>
                     <div className="mini-body">
-                        <span>03</span>
+                        <span>06</span>
                         <h3>The Growth of Gaming</h3>
                         <p>How the pandemic has sparked fresh opportunities.</p>
                     </div>

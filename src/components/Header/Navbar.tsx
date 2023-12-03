@@ -23,11 +23,11 @@ export default function Navbar({ closeModal }: NavbarProps) {
                 </li>
                 <li>
                     <NavLink
-                        to="/projects"
+                        to="/your-users"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        Resources
+                        Your Users
                     </NavLink>
                 </li>
                 
@@ -37,7 +37,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        About
+                        Resources
                     </NavLink>
                 </li>
                 <li>
@@ -46,17 +46,8 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >
-                        Contact
+                        About
                     </NavLink>
-                </li>
-                <li>
-                    <a  className="nav-link"
-                        href="https://dev.to/corinamurg" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                    >
-                        Blog
-                    </a>
                 </li>
             </ul> 
         </nav>

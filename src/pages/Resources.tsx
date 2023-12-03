@@ -2,18 +2,23 @@ import React from "react"
 import { a11yIntroData } from "../data/a11yData/a11yIntroData"
 import { a11yPostsData } from "../data/a11yData/a11yPostsData"
 import A11yAside from "../components/A11y/A11yAside"
-import './Accessibility.css'
+import './Resources.css'
 
 export default function Accessibility() {  
     return (
         <div className="a11y">
             <div className="a11y--intro">
-                <h1 className="page-heading update-padding">{a11yIntroData.title}</h1>
-                <div className="subheading-div update-margin" >
+                
+                <div className="a11y--intro--description" >
+                    <h1>Accessibility is a Responsability.</h1>
                     {a11yIntroData.description.map((line, index) => (
                         <p key={index}>{line}</p>
                     ))}
-                 </div> 
+                </div> 
+                <div className="a11y--intro--image">
+                    <img src="/assets/brickWallWithAccessibleEntrySign.jpg" alt="brick wall with accessible entry sign"/>
+                </div>
+
             </div>
           
             <h2 className="left-my-posts-heading blue-heading update-margin">My A11y Posts</h2>     

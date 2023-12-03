@@ -7,12 +7,10 @@ type A11yIntroData = {
 export const a11yIntroData: A11yIntroData = {
     "title": "The Web is for EVERYONE",
     "description": [
-        `This idea drives my work in web development. Accessibility is not just a 
-        feature - it's a responsibility to ensure every user feels seen and valued.`,
-        `Coding for accessibility can be confusing, and it becomes increasingly challenging as an 
-        application grows in complexity. However, the most critical aspect is the willingness and 
+        `A responsibility to ensure every user feels seen and valued.`,
+        `Coding for accessibility can be challenging. The most critical aspect is though the willingness and 
         determination to create an accessible product; everything else can be learned.`,
-        `Explore the resources below for information and tips on how to make your products accessible.`
+        // `Explore the resources below for information and tips on how to make your products accessible.`
     ],
 };
 

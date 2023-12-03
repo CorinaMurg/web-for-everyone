@@ -1,83 +1,53 @@
 
 import React from "react";
-import { aboutData, AboutDataItemTypes } from "../data/aboutData/aboutData";
 import "./About.css";
 
 export default function About() {
-    const renderLines = (item) => {
-        return (
-            <div className="section-line-container">
-                <p className="section-line main-info">
-                    {item.prefix && <span>{item.prefix}</span>}
-                    {item.link && (
-                        <a  href={item.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            // aria-label={item.linkAriaLabel}
-                        >
-                            {item.linkText}
-                        </a>
-                    )}
-                    {item.suffix && <span>{item.suffix}</span>}
-                </p>
-            
-                {/* {item.extras && <span className="arrow">→</span>} */}
-                {item.extras && (
-                    <p className="section-line extra-info">
-                        {item.extras.prefix && <span>{item.extras.prefix}</span>}
-                        {item.extras.link && (
-                            <a  href={item.extras.link} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                // aria-label={item.extras.linkAriaLabel}
-                            >
-                                {item.extras.linkText}
-                            </a>
-                        )}
-                        {item.extras.suffix && <span>{item.extras.suffix}</span>}
-                    </p>
-                )}
-            </div>
-        );
-    };
-    
-    
-    const renderAboutSections = () => 
-        Object.entries(aboutData).slice(1).map(([key, lines]) => {
-            const sectionLines = lines as AboutDataItemTypes[];
-            return (
-                <div key={key} 
-                    className={`about--section update-padding about--section--${key.replace(/\s+/g, '-')}`}
-                >
-                    <h2 className="blue-heading">{key.toUpperCase()}</h2>
-                    <div>
-                        {sectionLines.map((line, index) => { 
-                            if (typeof line === 'string') {
-                                return <p key={index} className="section-line">{line}</p>;
-                            } else {
-                                return renderLines(line);
-                            }
-                        })}
-                    </div>
-                </div>
-            );
-    });
-
-    
     return (
         <div className="about">
             <div className="about--intro">
-                <h1 className="page-heading update-padding">{aboutData.intro.heading}</h1>
-                <div className="about--intro--image update-margin">
-                    <img  
-                        src={aboutData.intro.image.src} 
-                        alt={aboutData.intro.image.alt}
-                    />
+                <div className="rectangle-1">
+                &lt;img alt = "a rectangle" src="/assets/rectangle.svg" /&gt;
+                </div>
+                <div className="rectangle-2">
+                &lt;a href= /&gt;
+                </div>
+                <div className="rectangle-3">
+
+                </div>
+                <div className="rectangle-4">
+
+                </div>
+                <div className="rectangle-5">
+
+                </div>
+                <div className="rectangle-6">
+
                 </div>
             </div>
-            <div className="about--sections">
-                {renderAboutSections()}
-            </div>
+            <section>
+                <div className="about--image">
+                    <img  
+                        src="/assets/CorinaMurg.jpg"
+                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret 
+                        and a light gray top"
+                    />
+                </div>
+                <div className="about--content">
+                    <h1>I'm Corina, and I would love to help you build an accessible site.</h1>
+                    
+                    <div>
+                        <p>I am a self-taught software engineer with a background in math teaching.</p>
+
+                        <p>As a teacher my focus was on creating learning experiences that were inclusive and accessible. 
+                            For that reason, the frontend's concern with accessible web products deeply resonates with me.</p>
+
+                        <p>I am excited to collaborate on projects with developers from all over the world, 
+                            and engage in conversations about our responsibility to ensure that every user feels seen 
+                            and valued. I believe in a web where everyone has a place!</p>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

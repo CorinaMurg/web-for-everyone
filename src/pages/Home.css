@@ -6,6 +6,7 @@
     grid-gap: 32px;
     margin-inline: var(--main-margin);
     margin-top: 20px;
+    color: var(--text-dark-color);
 }
 
 .home h1 {
@@ -20,13 +21,6 @@
     grid-template-rows: auto auto;
     gap: 32px;
 }
-
-/* .main-content {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-top: 16px;
-} */
 
 .main-image {
     width: 100%;
@@ -59,6 +53,7 @@
 
 .main-body p {
     font-size: 0.9rem;
+    font-weight: 500;
     line-height: 1.3;
 }
 
@@ -86,7 +81,7 @@
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     overflow: hidden;
 }
 
@@ -102,15 +97,20 @@
 
 .aside h2 {
     color: var(--yellow-color);
+    font-weight: 500;
 }
 
 .aside h3 {
     color: var(--yellow-color);
     font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .aside p {
     color: var(--text-light-color);
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 
@@ -122,24 +122,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 50px auto;
     grid-gap: 32px;
-    
     margin-top: 70px;
 }
 
-.mini-article h3 {
-    font-size: 1rem;
-}
-
-.mini-body span {
-    align-self: top;
-    font-size: 1rem;
-}
-
-.mini-body p {
-    align-self:self-end;
-    font-size: 0.9rem;
-}
 .mini-article {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -176,7 +163,7 @@
 }
 
 
-.mini-image {
+/* .mini-image {
     width: 100%;
     height: 100px;
 }
@@ -185,13 +172,33 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
+.mini-top-border {
+    width: 100%;
+    height: 10px;
+    background-color: var(--yellow-color);
+}
 .mini-body { 
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.mini-article h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.mini-body span {
+    align-self: top;
+    font-size: 1.3rem;
+}
+
+.mini-body p {
+    align-self:self-end;
+    font-size: 0.9rem;
 }
 
 
