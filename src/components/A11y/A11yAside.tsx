@@ -1,6 +1,6 @@
 import React from "react"
-import { a11yComponentsData } from "../../data/a11yData/a11yComponentsData"
-import { a11yTipsData } from "../../data/a11yData/a11yTipsData"
+import { resourcesComponentsData } from "../../data/resourcesData/resourcesComponentsData"
+import { resourcesTipsData } from "../../data/resourcesData/resourcesTipsData"
 import A11yTipItem from "./A11yTipItem"
 import './A11yAside.css'
 
@@ -10,7 +10,7 @@ export default function A11yAside() {
                 <h3 className="right--components-heading blue-heading">Accessible Components</h3>
                 <p className="right--components-subheading">Code examples in Codepen.io</p>
                 <ul className="right--components">
-                    {a11yComponentsData.map((component, index) => (
+                    {resourcesComponentsData.map((component, index) => (
                         <li key={index}>
                             <div className="square"></div>
                             <a href={component.href} 
@@ -29,7 +29,7 @@ export default function A11yAside() {
                 <h3 className="right--tips-heading blue-heading">Accessibility Tips</h3>
                 <p className="right--tips-subheading">Nuances of similar attributes/elements</p>
                 <ul className="right--tips">
-                    {a11yTipsData.map((tip, index) => (
+                    {resourcesTipsData.map((tip, index) => (
                         <li key={index}>
                             <A11yTipItem
                                tip={

@@ -1,10 +1,10 @@
-export type A11yComponentData = {
+export type ResourcesComponentDataTypes = {
     title: string;
     href: string;
     hrefAriaLabel: string;
 };
 
-export const a11yComponentsData: A11yComponentData[] = [
+export const resourcesComponentsData: ResourcesComponentDataTypes[] = [
     {
         "title": "Button",
         "href": "https://codepen.io/Cor-Ina/pen/ZEwyyVe",

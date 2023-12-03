@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, FC } from 'react';
 import A11yTipModal from './A11yTipModal';
-import { A11yTipData } from '../../data/a11yData/a11yTipsData';
+import { A11yTipData } from '../../data/resourcesData/resourcesTipsData';
 import './A11yTipItem.css';
 
 

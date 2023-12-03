@@ -1,4 +1,4 @@
-export type A11yPostData = {
+export type ResourcesPostDataTypes = {
     label: string;
     title: string;
     author?: string;
@@ -8,7 +8,7 @@ export type A11yPostData = {
     readMoreAriaLabel: string;
 };
 
-export const a11yPostsData: A11yPostData[] = [
+export const resourcesPostsData: ResourcesPostDataTypes[] = [
     // {
     //     "label": "corina",
     //     "title": "My Accessibility Engineer Project",
@@ -74,7 +74,7 @@ export const a11yPostsData: A11yPostData[] = [
         "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility, a blog post by Ashlee M Boyer.",
     },
     {
-        "label": "other",
+        "label": "ai",
         "title": "Can AI Help Boost Accessibility?",
         "author": "By UW News on washington.edu",
         "description": `This article published by "UW News" discusses a study by University of Washington 
@@ -89,7 +89,7 @@ export const a11yPostsData: A11yPostData[] = [
     {
         "label": "components",
         "title": "Building the Main Navigation for a Website",
-        "author": "By Google on web.dev",
+        "author": "By Manuel Matuzović on web.dev",
         "description": `This is an article published on Google's web.dev site. It's a thorough guide that 
         covers best practices for designing a navigation system that's user-friendly and accessible. 
         A (very long) must-read!`,
@@ -98,8 +98,9 @@ export const a11yPostsData: A11yPostData[] = [
         "readMoreAriaLabel": "read more link to The web.dev article on building the main navigation for a website.",
     },
     {
-        "label": "other",
+        "label": "profile",
         "title": "5 Tips for Making Your GitHub Profile Page Accessible",
+        "author": "By Annie Streater on github.blog",
         "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
             is navigable and understandable by all users, including those with disabilities. You'll find tips '
             on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,

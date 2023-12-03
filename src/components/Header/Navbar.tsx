@@ -33,7 +33,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                 
                 <li>
                     <NavLink
-                        to="/accessibility"
+                        to="/resources"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { handleLinkClick(); if (closeModal) {closeModal();}}}
                     >

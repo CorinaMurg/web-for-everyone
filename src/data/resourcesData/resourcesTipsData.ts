@@ -1,11 +1,11 @@
-export type A11yTipData = {
+export type ResourcesTipDataTypes = {
     left: string;
     right: string;
     descriptionLeft: string[];
     descriptionRight: string[];
 };
 
-export const a11yTipsData: A11yTipData[] = [
+export const resourcesTipsData: ResourcesTipDataTypes[] = [
     {
     "left": ":focus",
     "right": ":focus-visible",
