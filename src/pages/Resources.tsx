@@ -1,7 +1,8 @@
 import React from "react"
 import { resourcesIntroData } from "../data/resourcesData/resourcesIntroData"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
-import A11yAside from "../components/A11y/A11yAside"
+import ResourcesAside from "../components/Resources/ResourcesAside"
+import { Link } from "react-router-dom"
 import './Resources.css'
 
 export default function Accessibility() {  
@@ -14,20 +15,18 @@ export default function Accessibility() {
     };
 
     return (
-        <div className="a11y">
-            <div className="a11y--intro">
-                
-                <div className="a11y--intro--description" >
+        <div className="resources">
+            <div className="resources--intro">
+                <div className="resources--intro--description" >
                     <h1>Accessibility is a Responsability.</h1>
                     {resourcesIntroData.description.map((line, index) => (
                         <p key={index}>{line}</p>
                     ))}
                 </div> 
-                <div className="a11y--intro--image">
+                <div className="resources--intro--image">
                     <img src="/assets/brickWallWithAccessibleEntrySign.jpg" 
                          alt="brick wall with accessible entry sign"/>
                 </div>
-
             </div>
           
             {Object.entries(sectionTitles).map(([label, heading], index) => (
@@ -39,25 +38,35 @@ export default function Accessibility() {
                         {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
                             <article key={index} className="post">
                                 <h3>
-                                    <a  
-                                        href={post.href} 
-                                        aria-label={post.hrefAriaLabel} 
-                                        target="_blank" rel="noopener noreferrer"
-                                        className="hover-underline"
-                                    >
-                                        {post.title}
-                                    </a>
+                                    {post.href ? (
+                                        <a  
+                                            href={post.href} 
+                                            aria-label={post.ariaLabel} 
+                                            target="_blank" rel="noopener noreferrer"
+                                            className="hover-underline"
+                                        >
+                                            {post.title}
+                                        </a>
+                                    ) : post.to ? (
+                                        <Link 
+                                            to={post.to} 
+                                            className="hover-underline"
+                                        >
+                                            {post.title}
+                                        </Link>
+                                    ) : null}
                                 </h3>
-                                <p className="post--author">{post.author}</p>
+                                
                                 <div className="post--description">
                                     <p>{post.description}</p>
-                                    <a  
+                                    {/* <a  
                                         href={post.href} 
                                         aria-label={post.readMoreAriaLabel} 
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <span className="read-more hover-underline">Read more</span>
-                                    </a>
+                                    </a> */}
+                                    <p className="post--author">{post.author}</p>
                                 </div>
                                 
                             </article>
@@ -65,71 +74,8 @@ export default function Accessibility() {
                     </section>
                 </div>
             ))}
-            <A11yAside/>
+            <ResourcesAside/>
         </div>
     )
 }
     
-
-            {/* <h2 className="blue-heading update-margin">Understand Your HTML</h2>     
-            <div className="update-margin">
-                {resourcesPostsData.filter(post => post.label === "html").map((post, index) => (
-                    <article key={index} className="left--post--div">
-                        <h3>
-                            <a  
-                                href={post.href} 
-                                aria-label={post.hrefAriaLabel} 
-                                target="_blank" rel="noopener noreferrer"
-                                className="hover-underline"
-                            >
-                                {post.title}
-                            </a>
-                        </h3>
-                       
-                        <div className="post-description">
-                            <p>{post.description}</p>
-                            <a  
-                                href={post.href} 
-                                aria-label={post.readMoreAriaLabel} 
-                                target="_blank" rel="noopener noreferrer"
-                            >
-                                <span className="read-more hover-underline">Read more</span>
-                            </a>
-                        </div>
-                        
-                    </article>
-                ))}
-            </div>
-
-            <h2 className='update-margin'>CSS for Accessibility</h2>     
-            <div className="update-margin">
-                {resourcesPostsData.filter(post => post.label === "css").map((post, index) => (
-                    <article key={index} className="left--post--div">
-                        <h3>
-                            <a  
-                                href={post.href} 
-                                aria-label={post.hrefAriaLabel} 
-                                target="_blank" rel="noopener noreferrer"
-                                className="hover-underline"
-                            >
-                                {post.title}
-                            </a>
-                        </h3>
-                        <div className="post-description">
-                            <p>{post.description}</p>
-                            <a  
-                                href={post.href} 
-                                aria-label={post.readMoreAriaLabel} 
-                                target="_blank" rel="noopener noreferrer"
-                            >
-                                <span className="read-more hover-underline">Read more</span>
-                            </a>
-                        </div>
-                        
-                    </article>
-                ))}
-            </div>
-
-            <A11yAside/>
-        </div> */}
-

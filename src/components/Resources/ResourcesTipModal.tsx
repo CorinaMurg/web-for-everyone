@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
-import './A11yTipModal.css';
+import './ResourcesTipModal.css';
 
-type A11yTipModalProps = {
+type ResourcesTipModalTypes = {
     isModalOpen: boolean;
     closeModal: () => void;
     tip: React.ReactNode;
@@ -22,7 +22,7 @@ export default function A11yTipModal ({
     right, 
     descriptionLeft, 
     descriptionRight
-} : A11yTipModalProps) {
+} : ResourcesTipModalTypes) {
     return (
         <ReactModal
             className="tip-modal"

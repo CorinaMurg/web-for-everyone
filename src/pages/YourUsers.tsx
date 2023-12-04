@@ -22,7 +22,7 @@ export default function YourUsers() {
         <div className="users">
             <div className="users--intro"> 
                 <div className="users--intro--description" >
-                    <h1>Accessibility is a Responsability.</h1>
+                    <h1>Your Users Navigate Websites in Various Ways</h1>
                     
                 </div> 
                 <div className="users--intro--image">

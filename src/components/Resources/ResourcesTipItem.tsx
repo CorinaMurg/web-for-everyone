@@ -1,24 +1,24 @@
 import React from 'react';
-import { useState, FC } from 'react';
-import A11yTipModal from './A11yTipModal';
-import { A11yTipData } from '../../data/resourcesData/resourcesTipsData';
-import './A11yTipItem.css';
+import { useState } from 'react';
+import ResourcesTipModal from './ResourcesTipModal';
+import { ResourcesTipDataTypes } from '../../data/resourcesData/resourcesTipsData';
+import './ResourcesTipItem.css';
 
 
-type A11yTipItemProps = A11yTipData & {
+type ResourcesTipItemTypes = ResourcesTipDataTypes & {
     isModalOpen?: boolean;
     closeModal?: () => void;
     tip: React.ReactNode;
     className?: string;
 };
 
-export default function A11yTipItem ({ 
+export default function ResourcesTipItem ({ 
     tip, 
     left, 
     right, 
     descriptionLeft, 
     descriptionRight 
-    } : A11yTipItemProps) {
+    } : ResourcesTipItemTypes) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     function toggleModal() {
@@ -29,7 +29,7 @@ export default function A11yTipItem ({
         <div className="tip">
             <div className="dash"></div>
             <button className="tip-button" onClick={toggleModal}>{tip}</button>
-            <A11yTipModal
+            <ResourcesTipModal
                 className="tip-modal" 
                 isModalOpen={isModalOpen}
                 closeModal={toggleModal}

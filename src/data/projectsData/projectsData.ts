@@ -1,4 +1,4 @@
-export type ProjectData = {
+export type ProjectDataTypes = {
     title: string;
     description: string[];
     hrefSite: string;
@@ -10,7 +10,7 @@ export type ProjectData = {
     techStack: string;
 };
 
-export const projectsData: ProjectData[] = [
+export const projectsData: ProjectDataTypes[] = [
     {
         "title": "My Portfolio Site",
         "description": [

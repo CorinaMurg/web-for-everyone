@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./Home.css"
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
                         <p>Let's explore how to make it accessible to everyone.</p>
                     </div>
                     
-                    <a href="#" className="main-link">Read more</a>
+                    <Link to="/resources/make-it-accessible" className="main-link">Read more</Link>
                 </div>
             </article>
 

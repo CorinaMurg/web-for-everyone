@@ -31,7 +31,7 @@
     --lightGray-color: #f6f6f6;
     --gray-color:#808080;
     --heading-bg-color: #1a73e8;
-    --main-margin: clamp(10px, 3vw, 100px);
+    --main-margin: clamp(50px, 7vw, 100px);
     --max-margin: 120px;
     --navbar-margin: 32px;
     --yellow-border: 3px;

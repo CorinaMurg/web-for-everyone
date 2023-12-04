@@ -1,8 +1,8 @@
 import React from "react"
 import { resourcesComponentsData } from "../../data/resourcesData/resourcesComponentsData"
 import { resourcesTipsData } from "../../data/resourcesData/resourcesTipsData"
-import A11yTipItem from "./A11yTipItem"
-import './A11yAside.css'
+import ResourcesTipItem from "./ResourcesTipItem"
+import './ResourcesAside.css'
 
 export default function A11yAside() {
     return (
@@ -31,7 +31,7 @@ export default function A11yAside() {
                 <ul className="right--tips">
                     {resourcesTipsData.map((tip, index) => (
                         <li key={index}>
-                            <A11yTipItem
+                            <ResourcesTipItem
                                tip={
                                 <>
                                     {tip.left} <span className="vs">vs</span> {tip.right}
