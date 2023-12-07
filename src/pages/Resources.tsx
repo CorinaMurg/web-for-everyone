@@ -1,4 +1,5 @@
 import React from "react"
+import { useDocTitle } from "../hooks/useDocTitle"
 import { resourcesIntroData } from "../data/resourcesData/resourcesIntroData"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import ResourcesAside from "../components/Resources/ResourcesAside"
@@ -6,6 +7,8 @@ import { Link } from "react-router-dom"
 import './Resources.css'
 
 export default function Accessibility() {  
+    useDocTitle("Resources | Web for Everyone");
+
     const sectionTitles = {
         "html": "Understand Your HTML",
         "css": "CSS for Accessibility",

@@ -1,8 +1,11 @@
 
 import React from "react";
+import { useDocTitle } from "../hooks/useDocTitle";
 import "./About.css";
 
 export default function About() {
+    useDocTitle("About | Web for Everyone");
+
     return (
         <div className="about">
             <div className="about--intro">

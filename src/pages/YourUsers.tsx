@@ -1,10 +1,13 @@
 import { useEffect } from "react"
+import { useDocTitle } from "../hooks/useDocTitle"
 import { projectsData } from "../data/projectsData/projectsData"
 import { User } from "../components/Users/User"
 import "./YourUsers.css"
 import React from "react"
 
 export default function YourUsers() {
+    useDocTitle("Your Users | Web for Everyone");
+
     useEffect(() => {
         const hash = window.location.hash.replace('#', '');
         if (hash) {

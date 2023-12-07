@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import YourUsers from "./pages/YourUsers"
-import Resources from './pages/Resources';
+import Resources from './pages/Resources'
 import ResourcesLayout from "./components/ResourcesLayout"
 import MakeItAccessible from "./pages/Posts/MakeItAccessible"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
-import React from "react";
+import React from "react"
 
 export default function App() {
 

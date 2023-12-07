@@ -60,11 +60,14 @@ body {
     background-color: var(--text-light-color);
     color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
-    line-height: 1.1;
     min-height: 100vh;
     -ms-overflow-style: none;
     position: relative;
     scrollbar-width: none;
+}
+
+body p {
+    line-height: 2;
 }
 
 @media screen and (min-width: 1440px) {

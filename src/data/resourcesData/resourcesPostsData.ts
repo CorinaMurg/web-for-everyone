@@ -53,6 +53,18 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html",
+        "title": "How to Design Great Alt Text: An Introduction",
+        "author": "By Caitlin Geier on deque.com/blog",
+        "description": `This article from Deque on writing effective alt text emphasizes its importance in web 
+            accessibility. Alt text is essential users relying on screen readers or slow internet connections. 
+            Learn to distinguish between decorative and informative images, 
+            and how the context of an image determines the need for alt text, which is also a ranking factor for SEO.`,
+        "href": `https://www.deque.com/blog/great-alt-text-introduction/`,
+        "ariaLabel": "How to Design Great Alt Text: An Introduction by Caitlin Geier on deque.com/blog.",
+        "readMoreAriaLabel": "read more link to How to Design Great Alt Text blog post.",
+    },
+    {
+        "label": "html",
         "title": "HTML: Tag vs. Element",
         "author": "By Corina Murg",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
@@ -61,7 +73,6 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "HTML tag vs element blog post published by Corina.",
         "readMoreAriaLabel": "read more link to HTML tag vs element blog post.",
     },
-
     {
         "label": "css",
         "title": "Is \"rem\" Always the Best Choice for Accessibility?",

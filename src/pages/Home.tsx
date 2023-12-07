@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { miniArticleData } from "../data/homeData/miniArticleData"
 import "./Home.css"
 
 export default function Home() {
+    
     return (
         <div className="home">
             <article className="main-article">
@@ -19,7 +21,9 @@ export default function Home() {
                         <p>Let's explore how to make it accessible to everyone.</p>
                     </div>
                     
-                    <Link to="/resources/make-it-accessible" className="main-link">Read more</Link>
+                    <Link to="/resources/make-it-accessible" className="main-link">
+                        Read more →  
+                    </Link>
                 </div>
             </article>
 
@@ -51,75 +55,19 @@ export default function Home() {
                         accessible to all. You'll find tips on link context, image alt text, heading structure, plain language, 
                         and use of emojis. Enjoy!
                     </p>
-                    <span className="read-more">Read more</span>
+                    <span className="read-more">Read more </span>
                     
                 </article>
             </aside>
 
             <section className="mini-articles">
-                <article className="mini-article mini-article-1">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>01</span>
-                        <h3>Build with accessibility in mind</h3>
-                        <p>Just starting to learn about web development? 
-                            These are the things you should know about accessibility.</p>
-                    </div>
-                    
-                </article>
-                <article className="mini-article mini-article-2">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>02</span>
-                        <h3>Getting started with a11y</h3>
-                        <p>A list of resources and courses to help you create a site that everyone can access.</p>
-                    </div>
-                </article>
-
-                <article className="mini-article mini-article-3">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>03</span>
-                        <h3>How can WE help</h3>
-                        <p>Reach out if you would like feedback on a project. 
-                           Read about the two easy steps to receive a free accessibility review of your site.</p>
-                    </div>
-                </article>
-
-                <article className="mini-article mini-article-4">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>04</span>
-                        <h3>Do you know your HTML?</h3>
-                        <p>Semantic HTML is the foundation of an accessible website. 
-                            Plus, it has SEO advantages, and it makes your 
-                            code more readable and maintainable. </p>
-                    </div>
-                    
-                </article>
-                <article className="mini-article mini-article-5">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>05</span>
-                        <h3>Getting started with a11y</h3>
-                        <p>Our best .</p>
-                    </div>
-                </article>
-
-                <article className="mini-article mini-article-6">
-                    <div className="mini-top-border">
-                    </div>
-                    <div className="mini-body">
-                        <span>06</span>
-                        <h3>The Growth of Gaming</h3>
-                        <p>How the pandemic has sparked fresh opportunities.</p>
-                    </div>
-                </article>
+                {miniArticleData.map((article, index) => (
+                    <article key={index} className={`mini-article mini-article-${index+1}`}>
+                        <span>{`0${index+1}`}</span>
+                        <h3>{article.title}</h3>
+                        <p>{article.description}</p>
+                    </article>
+                ))}
             </section>
         </div>
     )
