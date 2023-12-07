@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 
 // CHECK FOR ENTIRE INNER TEXT IF THE LINK
 test('WCAG 2.5.3: Label in Name', async ({ page }) => {
-    await page.goto('https://corinamurg.netlify.app/');
+    await page.goto('https://web-for-everyone.netlify.app/');
     
     const elements = page.locator('[aria-label]');
     const elementsCount = await elements.count();
@@ -28,7 +28,7 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
 });
 
 // test('WCAG 2.5.3: Label in Name', async ({ page }) => {
-//     await page.goto('https://corinamurg.netlify.app/');
+//     await page.goto('https://web-for-everyone.netlify.app/');
     
 //     const elements = page.locator('a[aria-label] h1, a[aria-label] h2, a[aria-label] h3, a[aria-label] h4, a[aria-label] h5, a[aria-label] h6');
 //     const elementsCount = await elements.count();
