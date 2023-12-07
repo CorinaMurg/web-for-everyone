@@ -55,7 +55,6 @@ export default function Home() {
                         accessible to all. You'll find tips on link context, image alt text, heading structure, plain language, 
                         and use of emojis. Enjoy!
                     </p>
-                    <span className="read-more">Read more </span>
                     
                 </article>
             </aside>
