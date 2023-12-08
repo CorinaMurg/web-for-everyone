@@ -60,11 +60,13 @@ export default function Home() {
             </aside>
 
             <section className="mini-articles">
-                {miniArticleData.map((article, index) => (
+                {miniArticleData.slice(0, 3).map((article, index) => (
                     <article key={index} className={`mini-article mini-article-${index+1}`}>
-                        <span>{`0${index+1}`}</span>
-                        <h3>{article.title}</h3>
-                        <p>{article.description}</p>
+                        <Link to="/resources" className="mini-article-link">
+                            <span aria-hidden="true">{`0${index+1}`}</span>
+                            <h3>{article.title}</h3>
+                            <p>{article.description}</p>
+                        </Link>
                     </article>
                 ))}
             </section>

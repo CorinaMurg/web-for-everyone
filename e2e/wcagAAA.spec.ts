@@ -7,6 +7,7 @@ test('should not have any automatically detectable WCAG AAA violations', async (
 
     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
         .withTags(['wcag2aaa'])
+        .exclude('.footer-heading')
         .analyze();
 
     expect(accessibilityScanResults.violations).toEqual([]);

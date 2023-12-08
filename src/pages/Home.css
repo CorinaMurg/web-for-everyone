@@ -139,6 +139,11 @@
     gap: 16px;
 }
 
+.mini-article a {
+    text-decoration: none;
+    margin-top: 20px;
+}
+
 .mini-article-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -190,10 +195,13 @@
 .mini-article h3 {
     font-size: 1.3rem;
     font-weight: 500;
+    margin-block: 20px;
 }
 
 .mini-article span {
+    /* color: var(--gray-color); */
     font-size: 1.3rem;
+    font-weight: 600;
     margin-top: 20px;
 }
 
