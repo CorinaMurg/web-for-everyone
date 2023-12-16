@@ -1,0 +1,13 @@
+
+/* .logo-we {
+    background-color: var(--logo-bg-color);
+    padding: 2px;
+} */
+
+.logo-w {
+    color: var(--logo-w-color)
+}
+
+.logo-e {
+    color: var(--logo-e-color)
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
+import WELogo from "../components/WELogo/WELogo"
 import "./Home.css"
 
 export default function Home() {
@@ -12,22 +13,20 @@ export default function Home() {
                     <img src="/assets/images/image-web-3-desktop.jpg" alt=""/>
                 </div>
                 
-                <h1 className="hero-heading">Let's Make It Accessible!</h1>
-                <div className="hero-body">
-                    <div>
-                        <p className="neutral-dark-grayish-blue">
-                            You're adding the finishing touches to your portfolio site.
-                            But will it be ready to welcome all users? Let's explore how to make it accessible to everyone.</p>
-                    </div>
-                    
-                    <Link to="/resources/make-it-accessible" className="hero-link">
-                        Read more →  
-                    </Link>
-                </div>
+                <Link to="/resources/make-it-accessible" className="hero-link">
+                    <h1 className="hero-heading">Let's Make It Accessible!</h1>
+                    <p className="hero-body">
+                        You're adding the finishing touches to your portfolio site.
+                        But will it be ready to welcome all users? 
+                        Let's explore how to make it accessible to everyone. → 
+                    </p>
+                </Link>
             </article>
 
             <aside className="aside">
-                <h2 className="neutral-dark-grayish-blue">Accessibility Insights</h2>
+                <h2>
+                    How can <WELogo size="1.5rem"/> help
+                </h2>
                 <article>
                     <a href="https://www.duckworth.senate.gov/imo/media/doc/22.09.27%20SxS%20-%20Websites%20and%20Software%20Applications%20Accessibility%20Act%20FINAL.pdf"
                         target="_blank"
