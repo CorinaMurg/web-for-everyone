@@ -18,43 +18,38 @@ export default function Home() {
                     <p className="hero-body">
                         You're adding the finishing touches to your portfolio site.
                         But will it be ready to welcome all users? 
-                        Let's explore how to make it accessible to everyone. → 
+                        Let's explore how to make it accessible to everyone. &gt;
                     </p>
                 </Link>
             </article>
 
             <aside className="aside">
                 <h2>
-                    How can <WELogo size="1.5rem"/> help
+                    How can&nbsp; <WELogo size="2rem"/> &nbsp;help
                 </h2>
                 <article>
-                    <a href="https://www.duckworth.senate.gov/imo/media/doc/22.09.27%20SxS%20-%20Websites%20and%20Software%20Applications%20Accessibility%20Act%20FINAL.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Proposed Accessibility Legislation a 3-page summary of the Websites and Software Applications Accessibility Act"
-                    >
-                        <h3>Proposed Accessibility Legislation </h3>
-                    </a>
-                    <p>The "Websites and Software Applications Accessibility Act" was 
-                        recently Introduced in US Congress. It makes clear that websites and software
-                        must be accessible to people with disabilities. In other words, lack of accessibility 
-                        is discrimination!
-                    </p>
-                </article>
-                <article>
-                    <a href="https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="5 Tips for Making Your GitHub Profile Page Accessible blog post on the GitHub blog"
-                    >
-                        <h3>5 Tips for Making Your GitHub Profile Page Accessible</h3>
-                    </a>
-                    <p>This GitHub blog post provides practical advice on how to ensure your GitHub profile is 
-                        accessible to all. You'll find tips on link context, image alt text, heading structure, plain language, 
-                        and use of emojis. Enjoy!
+                    <h3>1.  List common bugs</h3>
+                    <p>Most common accessibility bugs are easy to fix. You just need to know what to look for.
+                        The article on the left 
+                        &nbsp;
+                            <Link to="/resources/make-it-accessible" className="link-regular">
+                                Let's Make It Accessible
+                            </Link>
+                        &nbsp;
+                        will get you started.
                     </p>
                     
+                    <h3>2. Audit your site</h3>
+                    <p>Reach out for a free audit of your site. You'll receive a report
+                        with a list of bugs and guidance on how to address them.
+                    </p>
+                    <h3>3. Personalized Assistance</h3>
+                    <p>Need more help? Schedule a free Zoom call to receive answers to your specific questions.
+                    </p>
                 </article>
+                <Link to="/resources" className="aside-link">
+                    Learn more
+                </Link>
             </aside>
 
             <section className="mini-articles">

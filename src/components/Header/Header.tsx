@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
 import "./Header.css"
+import WELogo from "../WELogo/WELogo";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,11 @@ export default function Header() {
         <header>
             <a className="skip-to-content" href="#main">Skip to Content</a>
             <div className="header-left">
-                <Link className="logo" to="/">WE <span className="logo-vertical"> | </span> Web for Everyone</Link>
+                <Link className="logo" to="/">
+                    <WELogo size="1.7rem"/>
+                    <span className="logo-vertical"> | </span> 
+                    Web for Everyone
+                </Link>
             </div>
             <button 
                 className="mobile-nav-toggle" 

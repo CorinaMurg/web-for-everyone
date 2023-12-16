@@ -44,8 +44,12 @@
     --very-dark-blue: hsl(240, 100%, 5%);
 
     --logo-bg-color: #1a73e8;
-    --logo-w-color: #e60067;
-    --logo-e-color: #1a73e8;
+    --logo-w-color: #e60067; 
+    --logo-w-color: #fb8500;
+    --logo-w-color: #1a73e8;
+    /* --logo-e-color: #1a73e8;
+    --logo-e-color: #e60067;  */
+    --logo-e-color: #ae2012; 
 }
 
 @font-face {
