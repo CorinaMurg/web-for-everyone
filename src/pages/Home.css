@@ -10,10 +10,10 @@
 }
 
 .home h1 {
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
-.main-article {
+.hero-article {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     display: grid;
@@ -22,46 +22,46 @@
     gap: 32px;
 }
 
-.main-image {
+.hero-image {
     width: 100%;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
-.main-image img {
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.main-heading {
+.hero-heading {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    align-self: center;
+    align-self: self-start;
 }
 
-.main-body {
+.hero-body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
-    align-self: self-end;
+    /* align-self: self-end; */
     gap: 32px;
 }
 
-.main-body p {
+.hero-body p {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.main-body p:last-of-type {
+.hero-body p:last-of-type {
     margin-top: 10px;
 }
 
-.main-link {
+.hero-link {
     font-size: 1.1rem;
     font-weight: 500;
     background-color: pink;

@@ -7,21 +7,20 @@ export default function Home() {
     
     return (
         <div className="home">
-            <article className="main-article">
-                <div className="main-image">
+            <article className="hero-article">
+                <div className="hero-image">
                     <img src="/assets/images/image-web-3-desktop.jpg" alt=""/>
                 </div>
                 
-                <h1 className="main-heading">Let's Make It Accessible!</h1>
-                <div className="main-body">
+                <h1 className="hero-heading">Let's Make It Accessible!</h1>
+                <div className="hero-body">
                     <div>
                         <p className="neutral-dark-grayish-blue">
                             You're adding the finishing touches to your portfolio site.
-                            But will it be ready to welcome all visitors?</p>
-                        <p>Let's explore how to make it accessible to everyone.</p>
+                            But will it be ready to welcome all users? Let's explore how to make it accessible to everyone.</p>
                     </div>
                     
-                    <Link to="/resources/make-it-accessible" className="main-link">
+                    <Link to="/resources/make-it-accessible" className="hero-link">
                         Read more →  
                     </Link>
                 </div>
