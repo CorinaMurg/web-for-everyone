@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-// CHECK FOR ENTIRE INNER TEXT IF THE LINK
+// CHECK FOR ENTIRE INNER TEXT
 test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     await page.goto('https://web-for-everyone.netlify.app/');
     
@@ -9,7 +9,8 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     const errors: string[] = [];
     for (let i = 0; i < elementsCount; i++) {
         const element = elements.nth(i);
-        const visibleText = (await element.textContent())?.trim().split(" ").slice(0, 3).join(" ") ?? "";
+        // const visibleText = (await element.textContent())?.trim().split(" ").slice(0, 3).join(" ") ?? "";
+        const visibleText = (await element.textContent())?.trim() ?? "";
       
         const ariaLabel = await element.getAttribute('aria-label') ?? "";
       
