@@ -1,0 +1,37 @@
+
+.aside {
+    background-color: var(--lightGray-color);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.aside article:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.aside h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.aside h3 {
+    color: var(--logo-e-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.aside p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.aside a {
+    text-decoration: none;
+}
