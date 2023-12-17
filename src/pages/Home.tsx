@@ -28,22 +28,21 @@ export default function Home() {
                     How can&nbsp; <WELogo size="2rem"/> &nbsp;help
                 </h2>
                 <article>
-                    <h3>1.  List common bugs</h3>
+                    <h3>List common bugs</h3>
                     <p>Most common accessibility bugs are easy to fix. You just need to know what to look for.
-                        The article on the left 
-                        &nbsp;
+                        Start with &nbsp;
                             <Link to="/resources/make-it-accessible" className="link-regular">
-                                Let's Make It Accessible
+                                Let's Make It Accessible!
                             </Link>
                         &nbsp;
-                        will get you started.
+                        {/* will get you started. */}
                     </p>
                     
-                    <h3>2. Audit your site</h3>
+                    <h3>Audit your site</h3>
                     <p>Reach out for a free audit of your site. You'll receive a report
                         with a list of bugs and guidance on how to address them.
                     </p>
-                    <h3>3. Personalized Assistance</h3>
+                    <h3>Schedule a call</h3>
                     <p>Need more help? Schedule a free Zoom call to receive answers to your specific questions.
                     </p>
                 </article>
@@ -52,18 +51,29 @@ export default function Home() {
                 </Link>
             </aside>
 
+            
             <section className="mini-articles">
-                {miniArticleData.slice(0, 3).map((article, index) => (
-                    <article key={index} className={`mini-article mini-article-${index+1}`}>
-                        <Link to="/resources" className="mini-article-link">
-                            <span aria-hidden="true">{`0${index+1}`}</span>
-                            <h3>{article.title}</h3>
-                            <p>{article.description}</p>
-                        </Link>
-                    </article>
-                ))}
+                <h2>Understanding Accessibility</h2>
+                <ul>
+                    {miniArticleData.map((article, index) => (
+                        <li key={index}> 
+                            <article className={`mini-article mini-article-${index+1}`}> 
+                                <div className="mini-article-image">
+                                    <img src={article.image} alt='' />
+                                </div>
+                                <Link to="/resources" className="mini-article-link">
+                                    <span aria-hidden="true">{`0${index+1}`}</span>
+                                    <h3>{article.title}</h3>
+                                    <p>{article.description}</p>
+                                </Link>
+                            </article>
+                        </li>
+                    ))}
+                </ul>
             </section>
         </div>
     )
 }
+
+
 

@@ -4,26 +4,40 @@ type MiniArticleDataTypes = {
     description: string;
     link: string;
     ariaLabel?: string;
+    image?: string;
+    imageAlt?: string;
 };
 
 export const miniArticleData: MiniArticleDataTypes[] = [
     {
+        title: "What is Accessibility?",
+        description: `And why does it matter?`,
+        link: "/resources",
+        ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    {
         title: "How Does Accessibility Work?",
-        description: `Just starting to learn about web development? 
-                        Here are four concepts to help you understand what happens behind the scenes: 
+        description: `To understand what happens behind the scenes, 
+                        let's explore these four concepts : 
                         accessibility tree, assitive technologies, accessibility APIs, and 
                         accessible name.`,
         link: "/resources",
         ariaLabel: "Build with accessibility in mind blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
     },
     {
         title: "Accessibility Guidelines",
         description: `The guidelines themselves are for the brave of heart 
-                    (unless you were a lawyer in a past life, and you enjoy reading legal documents).
+                    (unless you were a lawyer in a past life).
                     This article is introducing you to the various acronyms and
                     how to navigate the guidelines.`,
         link: "/resources",
         ariaLabel: "Getting started with accessibilityy blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
     },
     {
         title: "Does inaccessible === ilegal?",
@@ -33,20 +47,18 @@ export const miniArticleData: MiniArticleDataTypes[] = [
                 is discrimination!`,
         link: "/resources",
         ariaLabel: "How can WE Web for Everyone help blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
     },
     
-    {
-        title: "What is Accessibility? Why does it matter?",
-        description: `Semantic HTML is the foundation of an accessible website. 
-                    Plus, it has SEO advantages, and it makes your code more readable and maintainable.`,
-        link: "/resources",
-        ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
-    },
+    
     {
         title: "Getting started with a11y",
         description: "Our best .",
         link: "/resources",
         ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
     },
     // {
     //     title: "The Growth of Gaming",
