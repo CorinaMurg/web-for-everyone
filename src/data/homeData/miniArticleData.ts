@@ -14,7 +14,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         description: `And why does it matter?`,
         link: "/resources",
         ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
-        image: "assets/images/image-web-3-mobile.jpg",
+        image: "assets/images/missionA11y.jpg",
         imageAlt: "",
     },
     {
