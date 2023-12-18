@@ -36,7 +36,7 @@
 
 .hero-link {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     text-decoration: none;
@@ -48,7 +48,10 @@
 
 .hero-body {
     width: 50%;
-    align-self: center;
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 } 
 
 
@@ -58,10 +61,57 @@
     line-height: 1.5;
 }
 
-.hero-body p:last-of-type {
-    margin-top: 10px;
+.home .read-more {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
 }
 
+.arrow {
+    border: solid var(--text-dark-color);
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 4px;
+    transition: transform 0.5s ease; 
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.additional {
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    margin-left: 4px;
+    transition-delay: 0s; 
+}
+
+.hero-link:hover .arrow {
+    border-color: var(--pinkBright-color); 
+    transform: translateX(5px) rotate(-45deg); 
+}
+
+.hero-link:hover .additional:nth-child(2) {
+    opacity: 0.8;
+    transition-delay: 0.1s; 
+}
+
+.hero-link:hover .additional:nth-child(3) {
+    opacity: 0.6;
+    transition-delay: 0.2s; 
+}
+
+.hero-link:hover .additional:nth-child(4) {
+    opacity: 0.4;
+    transition-delay: 0.3s; 
+}
+
+.hero-link:hover .additional:nth-child(5) {
+    opacity: 0.2;
+    transition-delay: 0.4s; 
+}
 
 /* /////////////////////////////////////////////////// */
 .aside {
@@ -104,19 +154,50 @@
 }
 
 .mini-article-link {
-    border-top: 3px solid var(--very-dark-blue);
+    /* border-top: 3px solid var(--darkBlue-color); */
     text-decoration: none;
     padding-top: 20px;
-    padding-inline: 10px;
+    padding-inline: 20px;
     width: 100%;
     height: 20rem;
     background-color: transparent;
     transition: 0.3s;
+    position: relative;
 }
 
-.mini-article-link:hover {
-    background-color: var(--very-dark-blue);
+.mini-article-link::before {
+    content: "";
+    height: 4px;
+    background: var(--darkBlue-color);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s; 
+    -ms-transition: height 1s; 
+    -o-transition: height 1s;
+    transition: height 1s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.mini-article-link:hover::before {
+    height: 100%;
+}
+
+.mini-article-link:hover h3 {
     color: var(--text-light-color);
+}
+
+.mini-article-link:hover p {
+    color: var(--grayishBlue-color);
+    font-weight: 300;
+}
+
+.mini-article-link:hover span {
+    color: var(--grayishBlue-color);
+    /* font-weight: 300; */
 }
 
 .mini-article-1 {

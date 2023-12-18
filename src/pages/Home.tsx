@@ -16,11 +16,23 @@ export default function Home() {
                 
                 <Link to="/resources/make-it-accessible" className="hero-link">
                     <h1 className="hero-heading">Let's Make It Accessible!</h1>
-                    <p className="hero-body">
-                        You're adding the finishing touches to your portfolio site.
-                        But will it be ready to welcome all users? 
-                        Let's explore how to make it accessible to everyone. &gt;
-                    </p>
+                    <div className="hero-body">
+                        <p>
+                            You're adding the finishing touches to your portfolio site.
+                            But will it be ready to welcome all users? 
+                            Let's explore how to make it accessible to everyone.
+                        </p>
+                        <p className="read-more">
+                            Read more
+                            <i className="arrow right"></i>
+                            <i className="arrow right additional"></i>
+                            <i className="arrow right additional"></i>
+                            <i className="arrow right additional"></i>
+                            <i className="arrow right additional"></i>
+                        </p>
+
+                    </div>
+                    
                 </Link>
             </article>
 

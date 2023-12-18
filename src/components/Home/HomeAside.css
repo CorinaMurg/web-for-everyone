@@ -1,10 +1,25 @@
 
 .aside {
     background-color: var(--lightGray-color);
+    background-color: var(--darkBlue-color);
+    color: var(--text-light-color);
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.aside ul li {
+    padding-bottom: 30px;
+    border-bottom: 0.3px solid var(--grayishBlue-color);
+}
+
+.aside-link:focus-visible {
+    outline: 3px dashed red !important;
+}
+
+.aside ul li:last-of-type {
+    border-bottom: none;
 }
 
 .aside article:last-child {
@@ -13,25 +28,32 @@
 }
 
 .aside h2 {
-    font-size: 2rem;
+    color: var(--yellow-color);
+    font-size: 1.5rem;
     font-weight: 500;
     display: flex;
 }
 
 .aside h3 {
-    color: var(--logo-e-color);
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-top: 20px;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
 .aside p {
-    font-size: 0.9rem;
-    font-weight: 500;
+    color: var(--grayishBlue-color);
+    font-size: 0.8rem;
+    font-weight: 300;
     line-height: 1.5;
 }
 
 .aside a {
+    color: inherit;
     text-decoration: none;
+}
+
+.aside .article-link {
+    text-decoration: underline;
 }

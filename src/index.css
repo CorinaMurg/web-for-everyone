@@ -39,17 +39,13 @@
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
     --off-white: hsl(36, 100%, 99%);
-    --grayish-blue: hsl(233, 8%, 79%);
+    --grayishBlue-color: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
-    --very-dark-blue: hsl(240, 100%, 5%);
+    --darkBlue-color: hsl(240, 100%, 5%);
 
     --logo-bg-color: #1a73e8;
     --logo-w-color: #e60067; 
-    --logo-w-color: #fb8500;
-    --logo-w-color: #1a73e8;
-    /* --logo-e-color: #1a73e8;
-    --logo-e-color: #e60067;  */
-    --logo-e-color: #ae2012; 
+    --logo-e-color: #1a73e8;
 }
 
 @font-face {
@@ -113,7 +109,7 @@ a {
     color: var(--text-dark-color);
 }
 
-@media (prefers-reduced-motion: reduce) {  
+/* @media (prefers-reduced-motion: reduce) {  
     *,
     *::before,
     *::after {
@@ -122,7 +118,7 @@ a {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -169,14 +165,6 @@ h6 {
     color: var(--text-light-color);
     padding-block: 40px;
 }
-
-/* .update-padding {
-    padding-inline: var(--main-margin);
-}
-
-.update-margin {
-    margin-inline: var(--main-margin);
-} */
 
 @media (max-width: 1200px) {
     .update-padding {
