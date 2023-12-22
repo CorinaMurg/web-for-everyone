@@ -20,7 +20,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     {
         title: "How Does Accessibility Work?",
         description: `To understand what happens behind the scenes, 
-                        let's explore these four concepts : 
+                        let's explore these four concepts: 
                         accessibility tree, assitive technologies, accessibility APIs, and 
                         accessible name.`,
         link: "/resources",
@@ -40,6 +40,14 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
+        title: "Most common accessibility bugs",
+        description: "Our best .",
+        link: "/resources/most-common-bugs",
+        ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    {
         title: "Does inaccessible === ilegal?",
         description: `The "Websites and Software Applications Accessibility Act" was 
                 recently Introduced in US Congress. It makes clear that websites and software
@@ -50,8 +58,6 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
-    
-    
     {
         title: "Getting started with a11y",
         description: "Our best .",
@@ -60,8 +66,4 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
-    // {
-    //     title: "The Growth of Gaming",
-    //     description: "How the pandemic has sparked fresh opportunities."
-    // }
 ];

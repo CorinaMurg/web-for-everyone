@@ -11,7 +11,9 @@ export default function Home() {
         <div className="home">
             <article className="hero-article">
                 <div className="hero-image">
-                    <img src="/assets/images/image-web-3-desktop.jpg" alt=""/>
+                    <img src="/assets/images/image-web-3-desktop.jpg" 
+                        alt="" 
+                    />
                 </div>
                 
                 <Link to="/resources/make-it-accessible" className="hero-link">
@@ -45,9 +47,9 @@ export default function Home() {
                         <li key={index}> 
                             <article className={`mini-article mini-article-${index+1}`}> 
                                 <div className="mini-article-image">
-                                    <img src={article.image} alt='' />
+                                    <img src={article.image} alt='' loading="lazy"/>
                                 </div>
-                                <Link to="/resources" className="mini-article-link">
+                                <Link to={article.link} className="mini-article-link">
                                     <span aria-hidden="true">{`0${index+1}`}</span>
                                     <h3>{article.title}</h3>
                                     <p>{article.description}</p>

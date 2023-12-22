@@ -6,6 +6,7 @@ import YourUsers from "./pages/YourUsers"
 import Resources from './pages/Resources'
 import ResourcesLayout from "./components/ResourcesLayout"
 import MakeItAccessible from "./pages/Posts/MakeItAccessible"
+import MostCommonBugs from "./pages/Posts/IntroToA11y/MostCommonBugs"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 import React from "react"
@@ -21,6 +22,7 @@ export default function App() {
                         <Route path="resources" element={<ResourcesLayout />}>
                                 <Route index={true} element={<Resources />} />
                                 <Route path="make-it-accessible" element={<MakeItAccessible />} />
+                                <Route path="most-common-bugs" element={<MostCommonBugs />} />
                         </Route>
                         <Route path="about" element={<About />} />
                         <Route path="*" element={<NotFound />} />

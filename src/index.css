@@ -70,10 +70,6 @@ body {
     scrollbar-width: none;
 }
 
-body p {
-    line-height: 2;
-}
-
 @media screen and (min-width: 1440px) {
     body {
       max-width: 1440px;
@@ -100,9 +96,10 @@ main {
 }
 
 p {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    font-weight: 500;
+    /* font-size: 0.9rem; */
+    line-height: 2;
+    letter-spacing: 0.5px;
+    /* font-weight: 500; */
 }
 
 a {
