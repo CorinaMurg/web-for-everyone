@@ -18,7 +18,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
-        title: "How Does Accessibility Work?",
+        title: "How Does A11y Work?",
         description: `To understand what happens behind the scenes, 
                         let's explore these four concepts: 
                         accessibility tree, assitive technologies, accessibility APIs, and 
@@ -29,7 +29,15 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
-        title: "Accessibility Guidelines",
+        title: "Most Common Bugs",
+        description: "Our best .",
+        link: "/resources/most-common-bugs",
+        ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    {
+        title: "A11y Guidelines",
         description: `The guidelines themselves are for the brave of heart 
                     (unless you were a lawyer in a past life).
                     This article is introducing you to the various acronyms and
@@ -39,14 +47,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
-    {
-        title: "Most common accessibility bugs",
-        description: "Our best .",
-        link: "/resources/most-common-bugs",
-        ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
-        image: "assets/images/image-web-3-mobile.jpg",
-        imageAlt: "",
-    },
+    
     {
         title: "Does inaccessible === ilegal?",
         description: `The "Websites and Software Applications Accessibility Act" was 

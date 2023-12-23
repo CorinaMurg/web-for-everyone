@@ -16,6 +16,7 @@ export default function MostCommonBugs() {
     return (
         <article className="commonbugs">
             <h1>Most Common A11y Bugs</h1>
+            <p className="subtitle">Findings from the 2023 WebAIM Million Project</p>
             <section className="intro">
                 
                 {/* <p className="highlight">
@@ -43,8 +44,16 @@ export default function MostCommonBugs() {
                         <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                             The WebAIM Million
                         </a>
-                    report, but in the meantime let's go over the list of most common bugs.
+                    report, but in the meantime let's go over the list of the most common bugs.
                 </p>
+
+                <div>
+                    <p>We will look at six types of bugs.</p>
+                    <p>Good: they are some of the easiest bugs to fix.</p>
+                    <p>Bad: Together, they accounted for 96.1% of all bugs found.</p>
+                    <p>Ugly: These most common errors have been the same for the last 5 years.</p>
+                </div>
+                
 
             </section>
             <section className="bug">
@@ -81,11 +90,10 @@ export default function MostCommonBugs() {
                         as an empty <code>alt</code>!
                     </p>
                     <p>
-                        <span className="pink-bg">Missing <code>alt</code>:</span> screen readers announce the image as "blank".
-                        Sometimes they read the name of the file as a description for the image.
+                        <span className="pink-text">Missing <code>alt</code>:</span> screen readers announce the image as "blank".
                     </p>
                     <p>
-                        <span className="pink-bg">Empty <code>alt</code>:</span> screen readers ignore the image.
+                        <span className="pink-text">Empty <code>alt</code>:</span> screen readers ignore the image.
                     </p>
                 
                 </div>
@@ -94,7 +102,7 @@ export default function MostCommonBugs() {
             <section className="bug missing-linkText">
                 <h2>3. Empty Links</h2>
                 <p>
-                    Half of the home pages tested had links without proper text descriptions.
+                    <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
                     This is a problem because screen reader users rely on link text to understand the context 
                     and the destination of a link.
                 </p>
@@ -119,29 +127,47 @@ export default function MostCommonBugs() {
             <section className="bug missing-buttonText">
                 <h2>4. Empty Buttons</h2>
                 <p>
-                    More than a quarter of the home pages tested had buttons without proper text descriptions.
+                    <span className="stats">More than a quarter</span> of the home pages tested had buttons without proper 
+                    text descriptions.
                     This issue is very similar to empty links: users can struggle to understand the purpose of a 
                     button if its text is vague or missing.
                 </p>
                 <div className="highlight">
                     <h3>An example with an empty button</h3>
-                    <p><code>&lt;button onClick = " ... "&gt;</code></p>
-                    <p><code>&lt;img src = " ... "/&gt;</code></p>
+                    <p><code>&lt;button onClick = "closeModal"&gt;</code></p>
+                    <p><code>&lt;img src = "x-marg.svg"/&gt;</code></p>
                     <p><code>&lt;/button&gt;</code></p>
-                    <h4 className="pink-text">Note</h4>
-                    <p>A screen reader cannot announce this button properly because it does not have an
-                        accessible name. 
+                    <p>A screen reader will announce this button as ... button. Users will not know what to do with it.</p>
+                    <h4 className="pink-text">How to fix it</h4>
+
+                    <p>
+                        <span className="pink-num" aria-hidden="true">1. </span> 
+                        Replace the image with text (e.g., Close modal)
                     </p>
-                    <p><span className="exclamation" aria-hidden="true">!</span> no aria-label or aria-labeledby attribute</p>
-                    <p><span className="exclamation" aria-hidden="true">!</span> no visible text</p>
-                    <p><span className="exclamation" aria-hidden="true">!</span> no alt text for image</p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">2. </span> 
+                        Use both text and image, but add a <code>visually-hidden</code> class to the text. Screen readers 
+                        will announce the text, while sighted users will rely on the image to figure out the 
+                        purpose of the button.
+                    </p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">3. </span> 
+                        Add <code>aria-label</code> to the button (e.g., <code>aria-label="Close modal"</code>) 
+                        and an empty <code>alt</code> to the image.
+                    </p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">4. </span> 
+                        Keep just the image, but include its description within the <code>alt</code> attribute (e.g., 
+                        <code> alt = "Close modal</code>). This version will be more verbose, so less than ideal.
+                        It will be announced as "close modal graphic button."
+                    </p>
                 </div>
             </section>
 
             <section className="bug missing-inputLabels">
                 <h2>5. Missing Input Labels</h2>
                 <p>
-                    More than a third of form inputs were not properly labeled.
+                    <span className="stats">More than a third</span> of form inputs were not properly labeled.
                     Without labels, users of assistive technologies struggle to understand the purpose of 
                     form inputs.
                 </p>
@@ -160,15 +186,19 @@ export default function MostCommonBugs() {
                     When the language of a document isn't specified, it can affect how screen readers pronounce content, 
                     leading to confusion.
                 </p>
+                <div className="highlight">
+                    <h3>Note: the <code>lang</code> attribute is added tot the <code>html</code> tag<span className="exclamation">!</span></h3>
+                    <p><code>&lt;html <code className="pink-text">lang</code>="en"&gt;</code></p>
+                </div>
             </section>
 
             <section className="bug">
                 <h2>7. Misused Headings</h2>
                 <p>
-                    One fifth of all home pages had more than one <code>&lt;h1&gt;</code>.
+                    <span className="stats">One fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
                     Skipped heading levels (e.g., jumping from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code>) 
-                    were present on more than 40% all pages.
-                    About 8% of pages had no headings present at all.
+                    were found on more than <span className="stats">40%</span> of all pages.
+                    About <span className="stats">8%</span> of pages had no headings at all.
                 </p>
                 <div className="highlight">
                     <h3>Why headings are important</h3>
@@ -193,7 +223,5 @@ export default function MostCommonBugs() {
         </article>
     )
 }
-
-
 
 

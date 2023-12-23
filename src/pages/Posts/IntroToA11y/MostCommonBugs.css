@@ -10,8 +10,15 @@
 
 .commonbugs h1 {
     font-size: 3.3rem;
-    margin-block: 50px;
+    margin-top: 50px;
     margin-inline: auto;
+}
+
+.subtitle {
+    color: var(--pinkBright-color);
+    font-size: 1.3rem;
+    margin-inline: auto;
+    margin-bottom: 50px;
 }
 
 .commonbugs h2, h3 {
@@ -54,7 +61,7 @@
 
 .exclamation {
     color: var(--pinkBright-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -107,6 +114,9 @@
 }
 
 /* MISSING ALT TEXT */
+.stats {
+    font-weight: 600;
+}
 code,
 .stats {
     padding: 2px 3px;
@@ -156,6 +166,7 @@ code,
 
 .pink-text {
     color: var(--pinkBright-color);
+    font-size: 1rem;
     margin-top: 40px;
 }
 
@@ -165,4 +176,10 @@ code,
     color: var(--text-light-color);
     padding: 1px 3px;
     border-radius: 2px;
+}
+
+.pink-num {
+    color: var(--pinkBright-color);
+    font-size: 0.9rem;
+    font-weight: 600;
 }
