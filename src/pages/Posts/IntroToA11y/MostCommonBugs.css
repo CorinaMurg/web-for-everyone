@@ -21,16 +21,12 @@
     margin-bottom: 50px;
 }
 
-.commonbugs h2, h3 {
+.commonbugs * {
     align-self: self-start;
 }
 
 .commonbugs a {
     margin-inline: 5px;
-}
-
-.commonbugs em {
-    font-weight: 600;
 }
 
 .intro,
@@ -66,15 +62,17 @@
 }
 
 /* INTRO */
-.numbers {
+.numbers,
+.adjectives {
     display: flex;
     gap: 10px;
     align-items: center;
     width: 100%;
 }
 
-.numbers span {
-    font-size: 1.3rem;
+.numbers span,
+.adjectives span {
+    font-size: 1.1rem;
     color: var(--pinkBright-color);
     width: 5rem;
     text-align: right;
@@ -114,6 +112,9 @@
 }
 
 /* MISSING ALT TEXT */
+.bold {
+    font-weight: 600;
+}
 .stats {
     font-weight: 600;
 }
@@ -168,6 +169,31 @@ code,
     color: var(--pinkBright-color);
     font-size: 1rem;
     margin-top: 40px;
+}
+
+/* MISSING INPUT LABELS */
+.missing-inputLabels .highlight .code-bg>p:nth-of-type(1) {
+    padding-left: 20px;
+}
+
+.missing-inputLabels .highlight .code-bg>p:nth-of-type(2) {
+    padding-left: 40px;
+}
+
+.missing-inputLabels .highlight .code-bg>p:nth-of-type(3) {
+    padding-left: 20px;
+}
+
+.code-bg {
+    background-color: #adb5bd;
+    width: 60%;
+    padding-block: 10px;
+}
+/* MISSING LANG */
+.missing-lang p:last-of-type {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 30px;
 }
 
 /* HEADINGS */

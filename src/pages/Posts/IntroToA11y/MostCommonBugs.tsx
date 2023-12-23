@@ -40,18 +40,19 @@ export default function MostCommonBugs() {
                 </div>
                         
                 <p>
-                    I recommend checking out the full 
+                    I recommend reading the full 
                         <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                             The WebAIM Million
                         </a>
                     report, but in the meantime let's go over the list of the most common bugs.
                 </p>
 
-                <div>
-                    <p>We will look at six types of bugs.</p>
-                    <p>Good: they are some of the easiest bugs to fix.</p>
-                    <p>Bad: Together, they accounted for 96.1% of all bugs found.</p>
-                    <p>Ugly: These most common errors have been the same for the last 5 years.</p>
+                
+                <p>We will look at <span className="stats">six types of bugs</span>. Best adjectives to describe them?</p>
+                <div className="highlight">
+                    <p className="adjectives"><span>good</span> (they are some of the easiest bugs to fix)</p>
+                    <p className="adjectives"><span>bad</span> (together, they accounted for 96.1% of all bugs found)</p>
+                    <p className="adjectives"><span>ugly</span> (they've been the most common bugs for the last 5 years!)</p>
                 </div>
                 
 
@@ -134,10 +135,10 @@ export default function MostCommonBugs() {
                 </p>
                 <div className="highlight">
                     <h3>An example with an empty button</h3>
-                    <p><code>&lt;button onClick = "closeModal"&gt;</code></p>
-                    <p><code>&lt;img src = "x-marg.svg"/&gt;</code></p>
+                    <p><code>&lt;button id="closeModal"&gt;</code></p>
+                    <p><code>&lt;img src="x-marg.svg"/&gt;</code></p>
                     <p><code>&lt;/button&gt;</code></p>
-                    <p>A screen reader will announce this button as ... button. Users will not know what to do with it.</p>
+                    <p>A screen reader will announce this button as ... button, and users will not know what to do with it.</p>
                     <h4 className="pink-text">How to fix it</h4>
 
                     <p>
@@ -158,7 +159,7 @@ export default function MostCommonBugs() {
                     <p>
                         <span className="pink-num" aria-hidden="true">4. </span> 
                         Keep just the image, but include its description within the <code>alt</code> attribute (e.g., 
-                        <code> alt = "Close modal</code>). This version will be more verbose, so less than ideal.
+                        <code> alt="Close modal</code>). This version will be more verbose, so less than ideal.
                         It will be announced as "close modal graphic button."
                     </p>
                 </div>
@@ -172,14 +173,20 @@ export default function MostCommonBugs() {
                     form inputs.
                 </p>
                 <div className="highlight">
+                    <h3>An example with an empty button</h3>
+                    <div className="code-bg">
+                        <p><code>&lt;label&gt;</code> Name</p>
+                        <p><code>&lt;input type="name" required&gt;</code></p>
+                        <p><code>&lt;/label&gt;</code></p>
+                    </div>
+                    
                     <h3>Good news<span className="exclamation">!</span></h3>
                     <p>The "a third of form inputs" is an improvement. In 2019, the ratio was 59%.</p>
                 </div>
             </section>
 
             
-            
-            <section className="bug">
+            <section className="bug missing-lang">
                 <h2>6. Missing Document Language</h2>
                 <p>
                     This issue was found on <span className="stats">18.6%</span> of the home pages audited.
@@ -190,6 +197,7 @@ export default function MostCommonBugs() {
                     <h3>Note: the <code>lang</code> attribute is added tot the <code>html</code> tag<span className="exclamation">!</span></h3>
                     <p><code>&lt;html <code className="pink-text">lang</code>="en"&gt;</code></p>
                 </div>
+                <p>These were the top 6 most common bugs. Let's look at one more category: headings.</p>
             </section>
 
             <section className="bug">
