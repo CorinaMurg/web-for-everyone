@@ -27,11 +27,11 @@ export default function Home() {
                         </p>
                         <p className="read-more">
                             Read more
-                            <i className="read-more-arrow"></i>
-                            <i className="read-more-arrow additional-arrow"></i>
-                            <i className="read-more-arrow additional-arrow"></i>
-                            <i className="read-more-arrow additional-arrow"></i>
-                            <i className="read-more-arrow additional-arrow"></i>
+                            <i className="link-arrow"></i>
+                            <i className="link-arrow additional-arrow"></i>
+                            <i className="link-arrow additional-arrow"></i>
+                            <i className="link-arrow additional-arrow"></i>
+                            <i className="link-arrow additional-arrow"></i>
                         </p>
 
                     </div>

@@ -69,19 +69,15 @@
     line-height: 1;
 }
 
-.read-more-arrow {
+.link-arrow {
     border: solid var(--text-dark-color);
     border-width: 0 1.5px 1.5px 0;
     display: inline-block;
     padding: 3px;
-    margin-left: 4px;
+    margin-left: 8px;
     transform: rotate(-45deg);
     transition: transform 0.5s ease; 
 }
-
-/* .right {
-    transform: rotate(-45deg);
-} */
 
 .additional-arrow {
     opacity: 0;
@@ -90,7 +86,7 @@
     transition-delay: 0s; 
 }
 
-.hero-link:hover .read-more-arrow {
+.hero-link:hover .link-arrow {
     border-color: var(--pinkBright-color); 
     transform: translateX(5px) rotate(-45deg); 
 }
