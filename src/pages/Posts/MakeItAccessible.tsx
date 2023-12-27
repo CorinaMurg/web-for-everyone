@@ -23,7 +23,7 @@ export default function MakeItAccessible() {
     return (
         <div className="makeit">
             <h1>Let's Make It Accessible!</h1>
-            
+            <p>Check your portfolio site for the most common a11y bugs</p>
             {accessibleStepsData.map((step, index) =>
                 <article key={index} className="step">
                     <div className="step--heading">
@@ -33,7 +33,8 @@ export default function MakeItAccessible() {
 
                     <div className={`step--code ${step.title.toLowerCase().replace(/\W+/g, '-')}`}
                     
-                        style={{ backgroundColor: `#${stepColors[index.toString()]}` }}
+                        // style={{ backgroundColor: `#${stepColors[index.toString()]}` }}
+                        style={{ backgroundColor: `hsla(274, 100%, 81%, 0.4)` }}
                     >
                         <code className="line1">{step.codeElement?.line1}</code>
                         <code className="line2">{step.codeElement?.line2}</code>

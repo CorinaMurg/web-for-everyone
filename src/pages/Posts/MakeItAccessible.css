@@ -5,6 +5,8 @@
     flex-direction: column;
     margin-inline: var(--main-margin);
     gap: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .makeit h1 {

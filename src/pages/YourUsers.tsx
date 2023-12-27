@@ -8,19 +8,6 @@ import React from "react"
 export default function YourUsers() {
     useDocTitle("Your Users | Web for Everyone");
 
-    useEffect(() => {
-        const hash = window.location.hash.replace('#', '');
-        if (hash) {
-            const element = document.getElementById(hash);
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              const offset = 80; 
-              window.scrollBy(0, -offset);
-            }
-        }
-    }, []);
-
-
     return (
         <div className="users">
             <div className="users--intro"> 

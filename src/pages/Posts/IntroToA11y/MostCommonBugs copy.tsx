@@ -30,7 +30,6 @@ export default function MostCommonBugs() {
                             Web Accessibility in Mind
                         </a>         
                     - analyzes the top 1,000,000 home pages to check for accessibility errors. 
-
                     The results have always been pretty grim, and 2023 is no exception:
                 </p>
                 
@@ -39,14 +38,7 @@ export default function MostCommonBugs() {
                     <p className="numbers"><span>50</span> the average bugs per page</p> 
                     <p className="numbers"><span>106,245</span> the highest number of bugs found on a single home page</p>        
                 </div>
-                
-                <p>
-                    WebAIM audits these pages using the WAVE accessibility engine, 
-                    an automated tool. Automated tools are not perfect and fail to detect all  
-                    accessibility barriers and guidelines violations.
-                    As a result, the actual number of bugs is likely to be higher.
-                </p>
-
+                        
                 <p>
                     I recommend reading the full 
                         <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
@@ -59,13 +51,12 @@ export default function MostCommonBugs() {
                 <p>We will look at the top <span className="stats">six types of bugs</span>.</p>
                 <div className="highlight">
                     <p className="adjectives"><span>the good</span> they are some of the easiest bugs to fix</p>
-                    <p className="adjectives"><span>the bad</span> together, they accounted for over 95% of all bugs found</p>
+                    <p className="adjectives"><span>the bad</span> together, they accounted for 96.1% of all bugs found</p>
                     <p className="adjectives"><span>the sad</span> they've been the most common bugs for the last 5 years!</p>
                 </div>
                 
 
             </section>
-
             <section className="bug low-contrast" id="low-contrast">
                 <h2>1. Low Contrast Text</h2>
                 <p className="white-bg">
@@ -84,16 +75,16 @@ export default function MostCommonBugs() {
                         Change color
                     </button>
                 </div>
-            </section>
 
-            <section className="bug alt-text">
+            </section>
+            <section className="bug">
                 <h2>2. Missing Alternative Text for Images</h2>
                 <p className="white-bg">
                     <span className="stats">More than half</span> of the home pages audited had this bug! 
                     When images lack the <code>alt</code> attribute, 
                     screen reader users do not know what the purpose of the image is. 
                 </p>
-                <div className="highlight">
+                <div className="highlight alt-text">
                     <h3>An important distinction to make:</h3>
                     <p className="gray-bg">
                         A missing <code>alt</code> attribute is NOT the same 
@@ -109,7 +100,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
-            <section className="bug empty-links">
+            <section className="bug missing-linkText">
                 <h2>3. Empty Links</h2>
                 <p>
                     <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
@@ -118,11 +109,20 @@ export default function MostCommonBugs() {
                 </p>
                 <div className="highlight">
                     <h3>Good to remember<span className="exclamation">!</span></h3>
-                    <p>Vague link text like "click here" or "continue" is not very helpful either.</p>
-                    <p>Instead of reading through an entire page, some screen reader users prefer to
-                        navigate through the various links provided on the page.</p>
-                    <p>As a result, the links are announced separately from their surrounding text and
+                    <p>Vague link text like "click here" or "continue" is not very helpful either. 
+                        Instead of reading through the entire page, some screen reader users prefer to
+                        navigate through the various links provided on the page. As a result,
+                        the links are announced separately from their surrounding text and
                         users can struggle to understand their purpose if their text is vague.
+                    </p>
+                    <h3>Solution 💡</h3>
+                    <p >
+                        Need a vague link text due to visual design constraints?
+                    </p>
+                    <p className="gray-bg">
+                        The <code>aria-label</code> can provide a 
+                        more descriptive alternative. If you use it, screen readers will 
+                        typically read out the aria-label instead of the visible text.
                     </p>
                 </div>
             </section>
@@ -138,20 +138,32 @@ export default function MostCommonBugs() {
                 <div className="highlight">
                     <h3>An example with an empty button</h3>
                     <p><code>&lt;<span className="pink-text">button</span> id="closeModal"&gt;</code></p>
-                    <p><code>&lt;<span className="pink-text">img</span> src="x-mark.svg"/&gt;</code></p>
+                    <p><code>&lt;<span className="pink-text">img</span> src="x-marg.svg"/&gt;</code></p>
                     <p><code>&lt;/<span className="pink-text">button</span>&gt;</code></p>
-                    <h3>Issue <span aria-hidden="true"> 🛠️</span></h3>
-                    <p className="gray-bg">Text is replaced by an image with no <code>alt</code> text. Within the accessibility tree, this button 
-                        object does not have an accessible name.
+                    <p>A screen reader will announce this button as ... button, and users will not know what to do with it.</p>
+                    <h4 className="pink-text">Ways to fix it</h4>
+
+                    <p>
+                        <span className="pink-num" aria-hidden="true">1. </span> 
+                        Replace the image with text (e.g., Close modal)
                     </p>
-                    <h3>Remember<span className="exclamation">!</span></h3>
-                    <p>Assitive tech recongnizes an accessible object by its accessible name.</p>
-                    <h3>Consequences</h3>
-                    <p><span className="pink-num">1. </span>A screen reader will announce this button as ... button, 
-                        and no other information attached. Users will not know what its function is.
+                    <p>
+                        <span className="pink-num" aria-hidden="true">2. </span> 
+                        Use both text and image, but add a <code>visually-hidden</code> class to the text. Screen readers 
+                        will announce the text, while sighted users will rely on the image to figure out the 
+                        purpose of the button.
                     </p>
-                    <p><span className="pink-num">2. </span>Users relying on voice activation will not be able to 
-                        trigger the action on the button.</p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">3. </span> 
+                        Add <code>aria-label</code> to the button (e.g., <code>aria-label="Close modal"</code>) 
+                        and an empty <code>alt</code> to the image.
+                    </p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">4. </span> 
+                        Keep just the image, but include its description within the <code>alt</code> attribute (e.g., 
+                        <code> alt="Close modal</code>). This version will be more verbose, so less than ideal.
+                        It will be announced as "close modal graphic button."
+                    </p>
                 </div>
             </section>
 

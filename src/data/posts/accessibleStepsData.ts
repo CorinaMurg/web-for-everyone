@@ -20,18 +20,28 @@ export const accessibleStepsData: AccessibleStepsDataTypes[] = [
     {
         "title": "Language Attribute",
         "description": [
-            `Use a valid language tag in the "lang" attribute`,
+            `Use a valid language in the "lang" attribute`,
             `(Notice that it is part of the html tag, not the head tag!)`,
+            `It enables screen readers to correctly identify the language of 
+            the webpage content.`,
+            `When setting up a screen reader, users choose a default language. If a webpage doesn't have
+            a "lang" attribute, the screen reader defaults to the user's chosen language. This can be problematic for 
+            multilingual users accessing content in various languages.`,
+            
+
             `Is it common that a project would lack this attribute? Not at all! That's because when 
             we initiate a new code base we are likely to use editors that generate an HTML file
             pre-configured with all the essential elements, including the lang attribute. The only sites
-            I came across that lacked the lang attribute were portfolio sites that had started as templates 
+            I came across that lacked the lang attribute were bbc.com (checked on December 27, 2023) and 
+            portfolio sites that had started as templates 
             and were not updated to include it. Rememeber to check
             in case you are using a template!`,
-            `It's important for screen readers. It enables them to correctly identify and announce the language of 
-            the webpage content.`,
-            `Without this attribute, a screen reader might default to the operating system's language, and it could 
-            lead to incorrect pronunciations.`,
+            `Did you know?`,
+            `You can specify the language of a certain word or section of the page:`,
+            `<p>Hello in English <span lang="fr">Bonjour</span> in French.</p>`,
+            `You can choose a the specific dialect:`,
+            `<html lang="en-US">`,
+
             
         ],
         "codeElement": 
@@ -43,7 +53,7 @@ export const accessibleStepsData: AccessibleStepsDataTypes[] = [
     {
         "title": "Title Element",
         "description": [
-            `Inform users what page they are on`,
+            `Let users know what page they are on`,
             `The content of the <title> element gets displayed in the browser's title bar or tab. It's important because:`,
             `1️⃣ It helps sighted users identify a certain page when they have multiple tabs open.`,
             `2️⃣ It also plays a crucial role for screen reader users. As they navigate from page to page, the title 

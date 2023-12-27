@@ -21,8 +21,9 @@ export default function Home() {
                     <div className="hero-body">
                         <p>
                             You're adding the finishing touches to your portfolio site.
-                            But will it be ready to welcome all users? 
-                            Let's explore how to make it accessible to everyone.
+                            But will it be ready to welcome all users? Let's explore how you can check for the most common accessibility bugs.
+                            {/* Let's explore how to make it accessible to everyone. */}
+                             
                         </p>
                         <p className="read-more">
                             Read more
