@@ -1,8 +1,6 @@
 import React from "react"
 import { useDocTitle } from "../hooks/useDocTitle"
-import { resourcesIntroData } from "../data/resourcesData/resourcesIntroData"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
-import ResourcesAside from "../components/Resources/ResourcesAside"
 import { Link } from "react-router-dom"
 import './Resources.css'
 
@@ -19,22 +17,11 @@ export default function Accessibility() {
 
     return (
         <div className="resources">
-            <div className="resources--intro">
-                <div className="resources--intro--description" >
-                    <h1>Accessibility is a Responsability.</h1>
-                    {resourcesIntroData.description.map((line, index) => (
-                        <p key={index}>{line}</p>
-                    ))}
-                </div> 
-                <div className="resources--intro--image">
-                    <img src="/assets/brickWallWithAccessibleEntrySign.jpg" 
-                         alt="brick wall with accessible entry sign"/>
-                </div>
-            </div>
-          
+
+            <h1>Resources to expand your accessibility skills</h1>
             {Object.entries(sectionTitles).map(([label, heading], index) => (
-                <div key={index} className="section-container" >
-                    <h2 className={`blue-heading update-margin heading heading--${index}`}>
+                <div key={index} className={`section-container section-container--${index + 1}`} >
+                    <h2 className={`blue-heading update-margin heading heading--${index}`} id={`heading--${index}`}>
                         {heading}
                     </h2>     
                     <section className={`update-margin section section--${index}`}>
@@ -62,13 +49,7 @@ export default function Accessibility() {
                                 
                                 <div className="post--description">
                                     <p>{post.description}</p>
-                                    {/* <a  
-                                        href={post.href} 
-                                        aria-label={post.readMoreAriaLabel} 
-                                        target="_blank" rel="noopener noreferrer"
-                                    >
-                                        <span className="read-more hover-underline">Read more</span>
-                                    </a> */}
+                                    
                                     <p className="post--author">{post.author}</p>
                                 </div>
                                 
@@ -77,7 +58,46 @@ export default function Accessibility() {
                     </section>
                 </div>
             ))}
-            <ResourcesAside/>
+            <aside className="aside-resources">
+                <h3>Resources List</h3>
+                {Object.entries(sectionTitles).map(([label, heading], index) => (
+                    <ul key={index} className="resources-list">
+                        <li className="resources-list--item">
+                        <a href={`#heading--${index}`} onClick={(e) => {
+                            e.preventDefault();
+                            const section = document.getElementById(`heading--${index}`);
+                            section?.scrollIntoView({ behavior: 'smooth' });
+                        }}>
+                            {heading}
+                        </a>
+
+                            {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
+                                <ul key={index} className="resources-list--item--sublist">
+                                    <li>
+                                        {post.href ? (
+                                            <a  
+                                                href={post.href} 
+                                                aria-label={post.ariaLabel} 
+                                                target="_blank" rel="noopener noreferrer"
+                                                className="hover-underline"
+                                            >
+                                                {post.title}
+                                            </a>
+                                        ) : post.to ? (
+                                            <Link 
+                                                to={post.to} 
+                                                className="hover-underline"
+                                            >
+                                                {post.title}
+                                            </Link>
+                                        ) : null}
+                                    </li>
+                                </ul>
+                            ))}
+                        </li>
+                    </ul>
+                ))}
+            </aside>
         </div>
     )
 }
