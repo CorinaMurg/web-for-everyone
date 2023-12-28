@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import "./MostCommonBugs.css"
@@ -36,8 +37,8 @@ export default function MostCommonBugs() {
                 
                 <p>
                     WebAIM audits these pages using the WAVE accessibility engine, 
-                    an automated tool. Automated tools are not perfect and fail to detect every single  
-                    accessibility barrier and guidelines violation.
+                    an automated tool. Automated tools are not perfect and fail to detect all  
+                    accessibility barriers and guidelines violations.
                     As a result, the actual number of bugs is likely to be higher.
                 </p>
 
@@ -120,8 +121,12 @@ export default function MostCommonBugs() {
 
                 <div className="highlight bad-news">
                     <p className="fake-heading-p">The sad news?</p>
-                    <p>The top 6 types of bugs accounted for over 96% of all bugs found.  😔</p>
-                    <p>They've been the "most common bugs" for the last 5 years.  😢</p>
+                    <p>The top 6 types of bugs accounted for over 96% of all bugs found.  
+                        <span aria-hidden="true"> 😔</span>
+                    </p>
+                    <p>Worse: they've been the "most common bugs" for the last 5 years.  
+                        <span aria-hidden="true"> 😢</span>
+                    </p>
                 </div>
             </section>
 
@@ -291,6 +296,26 @@ export default function MostCommonBugs() {
                         .
                     </p>
                 </div>
+            </section>
+            <section className="bug conclusion">
+                <h2>Conclusion</h2>
+                <p>
+                    We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
+                    
+                    Fortunately, these are also the easiest to fix!
+                </p>
+                <p>
+                    Our next article will go over the solutions to these bugs.
+                    
+                </p>
+                
+                <div className="next-article">
+                    <span className="fake-heading-p">Read next:</span>
+                    <Link to="/resources/make-it-accessible" className="fake-heading-p pink-text">
+                        Let's Make It Accessible!
+                    </Link>
+                </div>
+                
             </section>
         </article>
     )

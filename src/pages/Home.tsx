@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import HomeAside from "../components/Home/HomeAside"
-import WELogo from "../components/WELogo/WELogo"
+import handleLinkClick from "../utils/handleLinkClick"
 import "./Home.css"
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
                     />
                 </div>
                 
-                <Link to="/resources/make-it-accessible" className="hero-link">
+                <Link to="/resources/make-it-accessible" className="hero-link" onClick={() => { handleLinkClick() }}>
                     <h1 className="hero-heading">Let's Make It Accessible!</h1>
                     <div className="hero-body">
                         <p>
@@ -50,7 +50,7 @@ export default function Home() {
                                 <div className="mini-article-image">
                                     <img src={article.image} alt='' loading="lazy"/>
                                 </div>
-                                <Link to={article.link} className="mini-article-link">
+                                <Link to={article.link} className="mini-article-link" onClick={() => { handleLinkClick() }}>
                                     <span aria-hidden="true">{`0${index+1}`}</span>
                                     <h3>{article.title}</h3>
                                     <p>{article.description}</p>
