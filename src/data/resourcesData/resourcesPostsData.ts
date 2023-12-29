@@ -1,6 +1,7 @@
 export type ResourcesPostDataTypes = {
     label: string;
     title: string;
+    shortTitle: string;
     author?: string;
     description: string;
     to?: string;
@@ -10,27 +11,10 @@ export type ResourcesPostDataTypes = {
 };
 
 export const resourcesPostsData: ResourcesPostDataTypes[] = [
-    // {
-    //     "label": "corina",
-    //     "title": "My Accessibility Engineer Project",
-    //     "description": `I have recently completed a project created with HTML, CSS, and JavaScript 
-    //         and focused on web accessibility. In a series of posts I discuss the accessibility features 
-    //         I implemented, their benefits, and their impact on users. Additionally, I share 
-    //         insights into my CSS and JavaScript selections.`,
-    //     "href": "https://dev.to/corinamurg/accessibility-engineer-project-the-head-element-653",
-    //     "hrefAriaLabel": "My accessibility engineer project blog post.",
-    //     "readMoreAriaLabel": "read more link to My accessibility engineer project blog post published by Corina.",
-    // },
-    // {
-    //     "label": "corina",
-    //     "title": "Recommended Accessibility Courses",
-    //     "description": ``,
-    //     "href": "",
-    //     "hrefAriaLabel": ""
-    // },
     {
         "label": "html",
         "title": "The Importance of Semantic HTML",
+        "shortTitle": "The Importance of Semantic HTML",
         "author": "By Corina Murg",
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. My post looks at the role it 
@@ -42,6 +26,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html",
         "title": "HTML: Buttons or Links? How to Choose",
+        "shortTitle": "Buttons or Links? How to Choose",
         "author": "By Corina Murg",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
@@ -54,6 +39,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html",
         "title": "How to Design Great Alt Text: An Introduction",
+        "shortTitle": "How to Design Great Alt Text",
         "author": "By Caitlin Geier on deque.com/blog",
         "description": `This article from Deque on writing effective alt text emphasizes its importance in web 
             accessibility. Alt text is essential users relying on screen readers or slow internet connections. 
@@ -66,6 +52,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html",
         "title": "HTML: Tag vs. Element",
+        "shortTitle": "HTML: Tag vs. Element",
         "author": "By Corina Murg",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
@@ -76,6 +63,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "css",
         "title": "Is \"rem\" Always the Best Choice for Accessibility?",
+        "shortTitle": "Is \"rem\" Always the Best Choice for Accessibility?",
         "author": "By Ashlee M Boyer on ashleemboyer.com",
         "description": `While rem units are often championed for their scalability, particularly for 
             text to aid with zoom and accessibility, they may not be the best choice for margins, padding, 
@@ -85,22 +73,24 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "Is rem Always the Best Choice for Accessibility blog post by Ashlee M Boyer.",
         "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility, a blog post by Ashlee M Boyer.",
     },
-    {
-        "label": "ai",
-        "title": "Can AI Help Boost Accessibility?",
-        "author": "By UW News on washington.edu",
-        "description": `This article published by "UW News" discusses a study by University of Washington 
-        researchers on the accessibility potential of AI tools. The study found mixed results; while AI helped 
-        in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
-        and exhibited ableist biases. `,
-        "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
-        "ariaLabel": "Can AI Help Boost Accessibility, a University of Washington News article.",
-        "readMoreAriaLabel": "read more link to Can AI Help Boost Accessibility, University of Washington News article.",
+    // {
+    //     "label": "ai",
+    //     "title": "Can AI Help Boost Accessibility?",
+    //     "shortTitle": "Can AI Help Boost Accessibility?",
+    //     "author": "By UW News on washington.edu",
+    //     "description": `This article published by "UW News" discusses a study by University of Washington 
+    //     researchers on the accessibility potential of AI tools. The study found mixed results; while AI helped 
+    //     in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
+    //     and exhibited ableist biases. `,
+    //     "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
+    //     "ariaLabel": "Can AI Help Boost Accessibility, a University of Washington News article.",
+    //     "readMoreAriaLabel": "read more link to Can AI Help Boost Accessibility, University of Washington News article.",
 
-    },
+    // },
     {
         "label": "components",
         "title": "Building the Main Navigation for a Website",
+        "shortTitle": "Building the Main Navigation for a Website",
         "author": "By Manuel Matuzović on web.dev",
         "description": `This is an article published on Google's web.dev site. It's a thorough guide that 
         covers best practices for designing a navigation system that's user-friendly and accessible. 
@@ -112,6 +102,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "profile",
         "title": "5 Tips for Making Your GitHub Profile Page Accessible",
+        "shortTitle": "Your GitHub Profile",
         "author": "By Annie Streater on github.blog",
         "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
             is navigable and understandable by all users, including those with disabilities. You'll find tips '
@@ -123,6 +114,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "profile",
         "title": "Let's Make It Accessible",
+        "shortTitle": "Let's Make It Accessible",
         "author": "Corina Murg",
         "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
                 to welcome all visitors? Let's explore how to make it accessible to everyone.`,

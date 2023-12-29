@@ -30,7 +30,9 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "Most Common Bugs",
-        description: "Our best .",
+        description: `Did you know there are 6 types of bugs that are responsible for the majority of 
+            accessibility issues? For five years in a row! The good news is that they are quite easy to 
+            avoid or fix!`,
         link: "/resources/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/image-web-3-mobile.jpg",
