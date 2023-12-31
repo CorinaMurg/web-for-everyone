@@ -21,9 +21,9 @@
     margin-bottom: 50px;
 }
 
-.commonbugs * {
+/* .commonbugs * {
     align-self: self-start;
-}
+} */
 
 .commonbugs a {
     margin-inline: 5px;
@@ -33,6 +33,7 @@
 .bug {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
     margin-bottom: 0;
     width: calc(50% + 60px);
@@ -251,7 +252,7 @@ code,
 
 
 /* HEADINGS */
-.h-key {
+.pink-bg-white-text {
     background-color: var(--pinkBright-color);
     color: var(--text-light-color);
     padding: 1px 3px;

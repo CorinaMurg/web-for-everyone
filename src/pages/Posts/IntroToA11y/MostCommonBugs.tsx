@@ -18,6 +18,8 @@ export default function MostCommonBugs() {
         <article className="commonbugs">
             <h1>Most Common A11y Bugs</h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
+
+             {/* 0. INTRO */}
             <section className="intro">
                 <p>
                     Here's one cool thing that happens every year: the organization WebAIM -
@@ -130,6 +132,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
+            {/* 1. LOW CONTRAST */}
             <section className="bug low-contrast scroll-target" id="low-contrast">
                 <h2>1. Low Contrast Text</h2>
                 <p className="white-bg">
@@ -150,6 +153,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
+            {/* 2. ALT TEXT */}
             <section className="bug alt-text scroll-target" id="alt-text">
                 <h2>2. Missing Alternative Text for Images</h2>
                 <p className="white-bg">
@@ -164,7 +168,7 @@ export default function MostCommonBugs() {
                         as an empty <code>alt</code>!
                     </p>
                     <p>
-                        <span className="pink-text">Missing <code>alt</code>:</span> screen readers announce the image as "blank".
+                        <span className="pink-text">Missing <code>alt</code>:</span> screen readers might read the source file name.
                     </p>
                     <p>
                         <span className="pink-text">Empty <code>alt</code>:</span> screen readers ignore the image.
@@ -173,6 +177,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
+              {/* 3. LINKS */}
             <section className="bug empty-links scroll-target" id="empty-links">
                 <h2>3. Empty Links</h2>
                 <p>
@@ -191,6 +196,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
+            {/* 4. BUTTONS */}
             <section className="bug empty-buttons scroll-target" id="empty-buttons">
                 <h2>4. Empty Buttons</h2>
                 <p>
@@ -209,7 +215,7 @@ export default function MostCommonBugs() {
                         object does not have an accessible name.
                     </p>
                     <p className="fake-heading-p">Remember<span className="exclamation">!</span></p>
-                    <p>Assitive technologies recognnize an accessible object by its accessible name.</p>
+                    <p>Assitive technologies recognize an accessible object by its accessible name.</p>
                     <p className="fake-heading-p">Consequences</p>
                     <p><span className="pink-num">1. </span>A screen reader will announce this button as ... button, 
                         and no other information attached. Users will not know what its function is.
@@ -219,6 +225,7 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
+            {/* 5. INPUT LABELS */}
             <section className="bug missing-inputLabels scroll-target" id="missing-inputLabels">
                 <h2>5. Missing Input Labels</h2>
                 <p>
@@ -240,8 +247,9 @@ export default function MostCommonBugs() {
                         <p><code>&lt;/<span className="pink-text">label</span>&gt;</code></p>
                     </div> 
                     <p className="fake-heading-p">Issue <span aria-hidden="true"> 🛠️</span></p>
-                    <p>The input is wrapped in label tags without a text. Attributes like "aria-label" or "aria-labelledby"
-                        that are taken into account when creating the accessible name are also not present.</p>
+                    <p>The input is wrapped in label tags without a text. Attributes like "aria-label" or 
+                        "aria-labelledby" that can be used to provide an accessible name are not present.
+                    </p>
                     <p className="fake-heading-p">Consequences</p>
                     <p><span className="pink-num">1. </span>Screen reader users will not understand the purpose of the input. </p>
                     <p><span className="pink-num">2. </span>Voice activation users have
@@ -254,21 +262,25 @@ export default function MostCommonBugs() {
                 </div>
             </section>
 
-            
+             {/* 6. LANG */}
             <section className="bug missing-lang scroll-target" id="missing-lang">
                 <h2>6. Missing Document Language</h2>
                 <p>
                     This issue was found on <span className="stats">18.6%</span> of the home pages audited.
-                    When the language of a web page is not specified, it can affect how screen readers pronounce content, 
-                    leading to confusion.
+                </p>
+                <p>When setting up their screen reader, users choose a default language. 
+                    If a webpage doesn't have a "lang" attribute, the screen reader defaults to the user's 
+                    chosen language. This can be problematic for multilingual users accessing content in 
+                    various languages.
                 </p>
                 <div className="highlight">
-                    <p className="fake-heading-p">Note: the <code>lang</code> attribute is added tot the <code>html</code> tag<span className="exclamation">!</span></p>
+                    <p className="fake-heading-p">Note: the <code>lang</code> attribute is added to the <code>html</code> tag<span className="exclamation">!</span></p>
                     <p><code>&lt;html <code className="pink-text">lang</code>="en"&gt;</code></p>
                 </div>
                 
             </section>
 
+            {/* 7. HEADINGS */}
             <section className="bug misused-headings scroll-target" id="misused-headings">
                 <h2>7. Misused Headings</h2>
                 <p>
@@ -280,7 +292,7 @@ export default function MostCommonBugs() {
                 <div className="highlight">
                     <p className="fake-heading-p">Why headings are important</p>
                     <p>When trying to find information on a page, most screen reader users rely on headings.
-                        Pressing the <span className="h-key">h</span> key allows them to visit each heading to
+                        Pressing the <span className="pink-bg-white-text">h</span> key allows them to visit each heading to
                         get an idea about the structure and the content of the page.  
                     </p>
                     <p className="fake-heading-p">Recommended read <span aria-hidden="true">💡</span></p>
@@ -297,6 +309,8 @@ export default function MostCommonBugs() {
                     </p>
                 </div>
             </section>
+
+            {/* CONCLUSION */}
             <section className="bug conclusion">
                 <h2>Conclusion</h2>
                 <p>
@@ -305,14 +319,14 @@ export default function MostCommonBugs() {
                     Fortunately, these are also the easiest to fix!
                 </p>
                 <p>
-                    Our next article will go over the solutions to these bugs.
+                    Next, let's look at how to avoid or fix these bugs when building your portfolio site.
                     
                 </p>
                 
                 <div className="next-article">
                     <span className="fake-heading-p">Read next:</span>
                     <Link to="/resources/make-it-accessible" className="fake-heading-p pink-text">
-                        Let's Make It Accessible!
+                        Your Portfolio Site: Let's Make It Accessible!
                     </Link>
                 </div>
                 

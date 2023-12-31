@@ -35,7 +35,7 @@
     object-fit: cover;
 }
 
-.hero-link {
+.hero-container {
     display: flex;
     gap: 32px;
     grid-column: 1 / 3;
@@ -67,6 +67,7 @@
     align-items: center;
     font-weight: 700;
     line-height: 1;
+    
 }
 
 .link-arrow {
@@ -84,6 +85,11 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
     margin-left: 4px;
     transition-delay: 0s; 
+}
+
+.hero-link {
+    align-self: flex-start;
+    text-decoration: none;
 }
 
 .hero-link:hover .link-arrow {

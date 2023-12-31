@@ -43,7 +43,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         description: `The guidelines themselves are for the brave of heart 
                     (unless you were a lawyer in a past life).
                     This article is introducing you to the various acronyms and
-                    how to navigate the guidelines.`,
+                    how to navigate the guidelines WCAG A AA AAA.`,
         link: "/resources",
         ariaLabel: "Getting started with accessibilityy blog post.",
         image: "assets/images/image-web-3-mobile.jpg",
@@ -62,7 +62,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
-        title: "Getting started with a11y",
+        title: "Testing for a11y",
         description: "Our best .",
         link: "/resources",
         ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",

@@ -16,7 +16,7 @@ export default function Home() {
                     />
                 </div>
                 
-                <Link to="/resources/make-it-accessible" className="hero-link" onClick={() => { handleLinkClick() }}>
+                <div className="hero-container">
                     <h1 className="hero-heading">Let's Make It Accessible!</h1>
                     <div className="hero-body">
                         <p>
@@ -25,18 +25,20 @@ export default function Home() {
                             {/* Let's explore how to make it accessible to everyone. */}
                              
                         </p>
-                        <p className="read-more">
-                            Read more
-                            <i className="link-arrow"></i>
-                            <i className="link-arrow additional-arrow"></i>
-                            <i className="link-arrow additional-arrow"></i>
-                            <i className="link-arrow additional-arrow"></i>
-                            <i className="link-arrow additional-arrow"></i>
-                        </p>
+                        <Link to="/resources/make-it-accessible" className="hero-link" onClick={() => { handleLinkClick() }}>
+                            <p className="read-more">
+                                Continue to article
+                                <i className="link-arrow"></i>
+                                <i className="link-arrow additional-arrow"></i>
+                                <i className="link-arrow additional-arrow"></i>
+                                <i className="link-arrow additional-arrow"></i>
+                                <i className="link-arrow additional-arrow"></i>
+                            </p>
+                        </Link>
 
                     </div>
                     
-                </Link>
+                </div>
             </article>
 
             <HomeAside/>
