@@ -2,6 +2,7 @@ import React from "react"
 import { useDocTitle } from "../hooks/useDocTitle"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
+import handleLinkClick from "../utils/handleLinkClick"
 import './Resources.css'
 
 export default function Accessibility() {  
@@ -57,12 +58,13 @@ export default function Accessibility() {
                                         <Link 
                                             to={post.to} 
                                             className="hover-underline"
+                                            onClick={handleLinkClick}
                                         >
                                             {post.title}
                                         </Link>
                                     ) : null}
                                 </h3>
-                                
+                                <p className="post--subtitle">{post.subtitle}</p>
                                 <div className="post--description">
                                     <p>{post.description}</p>          
                                     <p className="post--author">{post.author}</p>

@@ -1,7 +1,7 @@
 export type ResourcesPostDataTypes = {
     label: string;
     title: string;
-    shortTitle?: string;
+    subtitle?: string;
     author?: string;
     description: string;
     to?: string;
@@ -14,7 +14,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "understanding-accessibility",
         "title": "What is Accessibility?",
-        "shortTitle": "",
+        "subtitle": "",
         "author": "Web for Everyone",
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. My post looks at the role it 
@@ -26,7 +26,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "title": "The Importance of Semantic HTML",
-        "shortTitle": "The Importance of Semantic HTML",
+        "subtitle": "",
         "author": "By Corina Murg",
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. My post looks at the role it 
@@ -38,7 +38,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "title": "HTML: Buttons or Links? How to Choose",
-        "shortTitle": "Buttons or Links? How to Choose",
+        "subtitle": "",
         "author": "By Corina Murg",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
@@ -51,7 +51,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "title": "How to Design Great Alt Text: An Introduction",
-        "shortTitle": "How to Design Great Alt Text",
+        "subtitle": "",
         "author": "By Caitlin Geier on deque.com/blog",
         "description": `This article from Deque on writing effective alt text emphasizes its importance in web 
             accessibility. Alt text is essential users relying on screen readers or slow internet connections. 
@@ -64,7 +64,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "title": "HTML: Tag vs. Element",
-        "shortTitle": "HTML: Tag vs. Element",
+        "subtitle": "",
         "author": "By Corina Murg",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
@@ -75,7 +75,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "css-for-accessibility",
         "title": "Is \"rem\" Always the Best Choice for Accessibility?",
-        "shortTitle": "Is \"rem\" Always the Best Choice for Accessibility?",
+        "subtitle": "",
         "author": "By Ashlee M Boyer on ashleemboyer.com",
         "description": `While rem units are often championed for their scalability, particularly for 
             text to aid with zoom and accessibility, they may not be the best choice for margins, padding, 
@@ -102,7 +102,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "build-accessible-components",
         "title": "Building the Main Navigation for a Website",
-        "shortTitle": "Building the Main Navigation for a Website",
+        "subtitle": "",
         "author": "By Manuel Matuzović on web.dev",
         "description": `This is an article published on Google's web.dev site. It's a thorough guide that 
         covers best practices for designing a navigation system that's user-friendly and accessible. 
@@ -114,7 +114,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessible-digital-presence",
         "title": "5 Tips for Making Your GitHub Profile Page Accessible",
-        "shortTitle": "Your GitHub Profile",
+        "subtitle": "",
         "author": "By Annie Streater on github.blog",
         "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
             is navigable and understandable by all users, including those with disabilities. You'll find tips '
@@ -125,12 +125,23 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "accessible-digital-presence",
-        "title": "Let's Make It Accessible",
-        "shortTitle": "Let's Make It Accessible",
+        "title": "Your Portfolio Site: Let's Make It Accessible",
+        "subtitle": "Part 1: Fixing the 7 Most Common Bugs",
         "author": "Corina Murg",
         "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
                 to welcome all visitors? Let's explore how to make it accessible to everyone.`,
-        "to": `/resources/make-it-accessible`,
+        "to": `/resources/make-it-accessible-part1`,
+        "ariaLabel": "",
+        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
+    },
+    {
+        "label": "accessible-digital-presence",
+        "title": "Your Portfolio Site: Let's Make It Accessible",
+        "subtitle": "Part 2: Improving the experience of users of assistive technology",
+        "author": "Corina Murg",
+        "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
+                to welcome all visitors? Let's explore how to make it accessible to everyone.`,
+        "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },

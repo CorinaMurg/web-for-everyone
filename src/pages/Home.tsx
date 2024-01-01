@@ -25,7 +25,7 @@ export default function Home() {
                             {/* Let's explore how to make it accessible to everyone. */}
                              
                         </p>
-                        <Link to="/resources/make-it-accessible" className="hero-link" onClick={() => { handleLinkClick() }}>
+                        <Link to="/resources/make-it-accessible-part1" className="hero-link" onClick={() => { handleLinkClick() }}>
                             <p className="read-more">
                                 Continue to article
                                 <i className="link-arrow"></i>
