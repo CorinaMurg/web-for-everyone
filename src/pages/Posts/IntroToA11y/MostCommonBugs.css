@@ -1,29 +1,87 @@
 
-.commonbugs {
+.commonbugs-container {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    
+}
+
+.back-links {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     display: flex;
-    flex-direction: column;
-    margin-inline: var(--main-margin);
-    gap: 30px;
-    font-size: 0.9rem;
-    font-weight: 500;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: var(--main-margin);
 }
 
-.commonbugs h1 {
-    font-size: 3.3rem;
-    margin-top: 50px;
-    margin-inline: auto;
+.back-links a {
+    text-decoration: none;
 }
 
-.subtitle {
+.commonbugs-container h1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: var(--main-margin);
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.commonbugs-container .subtitle {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     color: var(--pinkBright-color);
-    font-size: 1.3rem;
-    margin-inline: auto;
+    font-size: 1.4rem;
+    margin-left: var(--main-margin);
     margin-bottom: 50px;
 }
 
-/* .commonbugs * {
-    align-self: self-start;
-} */
+.commonbugs {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 75%;
+    margin-left: var(--main-margin);
+}
+
+.table-contents {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    font-size: 0.9rem;
+    font-weight: 400;
+    position: sticky;
+    top: 200px; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.table-contents h2 {
+    margin-top: 0;
+}
+
+.table-contents--list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.table-contents--list--item a {
+    align-self: flex-start;
+    color: inherit;
+    opacity: 0.8;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    text-decoration: none;
+}
 
 .commonbugs a {
     margin-inline: 5px;
@@ -36,15 +94,13 @@
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 0;
-    width: calc(50% + 60px);
-    margin-inline: auto;
 }
 
 .highlight {
     background-color: var(--lightGray-color);
     font-weight: 600;
     padding: 10px 20px;
-    width: calc(100%);
+    width: 100%;
     border-left: 2px solid var(--yellow-color);
 }
 

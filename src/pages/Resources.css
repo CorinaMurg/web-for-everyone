@@ -125,18 +125,12 @@
     opacity: 0.8;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 20px;
-    
 }
-
-/* .resources-sublist--item a {
-    align-self: flex-start;
-    color: blue;
-    margin-top: 5px;
-    padding-left: 10px;
-} */
 
 .hover-pink:hover {
     color: var(--pinkBright-color);
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .section-container h2 {

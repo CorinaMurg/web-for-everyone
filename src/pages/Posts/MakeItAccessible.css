@@ -23,8 +23,8 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 40px;
-    width: 50%;
-    margin-inline: auto;
+    /* width: 50%;
+    margin-inline: auto; */
 }
 
 .bug-code {

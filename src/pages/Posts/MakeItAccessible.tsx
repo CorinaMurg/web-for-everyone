@@ -12,20 +12,13 @@ export default function MakeItAccessible() {
             </h1>
             <p className="subtitle">Check your portfolio site for the most common a11y bugs</p>
             <section className="intro">
-                <p>Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the functionality
-                    of a website increases. However, there are a few simple steps that
+                <p>Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the 
+                    functionality of a website increases. However, there are a few simple steps that
                     you can take to ensure that your site is accessible to most users. 
                 </p>
-                {/* <p>We know from the 
-                    <span> </span>
-                    <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">WebAIM Million</a> 
-                    <span> </span>
-                    study what are the most common accessibility failures. Fortunately, these bugs have 
-                    quite straightforward solutions.
-                </p> */}
                 <p>
-                    In <a href="">The Most Common A11y Bugs</a> article we looked at the top 7 most common bugs and how they 
-                    hinder users with disabilities. 
+                    In <a href="">The Most Common A11y Bugs</a> article we looked at the top 7 most common bugs 
+                    and how they hinder users with disabilities. 
                     Now, we will explore how to check for them in your portfolio site.
                 </p>
                 <div className="highlight">
@@ -169,12 +162,23 @@ export default function MakeItAccessible() {
                         and provide no information about the destination of the link. 
                     </p>
                         
-                    <p>Users relying on speech commands might not be able to activate the link. The link does not have 
-                        an accessible name, so it is not recognized by assistive technologies.
+                    <p>Users relying on speech commands might not be able to activate the link. They would use
+                        "LinkedIn" to open the link, but "LinkedIn is not recognized by the speech recognition software.
+                        The browser can not compute an accessible name for the link since none of the attributes that 
+                        could provide one is present.
                     </p>
 
                     <div className="highlight">
-                        <p className="fake-heading-p">Reminder: Accessible Name</p>
+                        <p className="pink-text bold">Accessible Name Review</p>
+                        <p>Assitive technologies recognize an element by its accessible name. 
+                            One of the following must be present in order for the browser to compute it:</p>
+                        <ul>
+                            <li><span className="pink-text bold">1. </span>visible text</li>
+                            <li><span className="pink-text bold">2. </span>alt text</li>
+                            <li><span className="pink-text bold">3. </span>aria-label</li>
+                            <li><span className="pink-text bold">4. </span>aria-labelledby</li>
+                            <li><span className="pink-text bold">5. </span>title</li>
+                        </ul>
                     </div>
                     
                     <h3 className="pink-text">Ways to fix it</h3>

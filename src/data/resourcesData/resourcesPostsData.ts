@@ -1,7 +1,7 @@
 export type ResourcesPostDataTypes = {
     label: string;
     title: string;
-    shortTitle: string;
+    shortTitle?: string;
     author?: string;
     description: string;
     to?: string;
@@ -12,7 +12,19 @@ export type ResourcesPostDataTypes = {
 
 export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
-        "label": "html",
+        "label": "understanding-accessibility",
+        "title": "What is Accessibility?",
+        "shortTitle": "",
+        "author": "Web for Everyone",
+        "description": `In most conversations about accessibility, the use of semantic HTML is most 
+            likely to be the first and most common piece of advice. My post looks at the role it 
+            plays in accessibility and beyond.`,
+        "to": `/resources/what-is-accessibility`,
+        "ariaLabel": "What is Accessibility article by Web for Everyone.",
+        "readMoreAriaLabel": "",
+    },
+    {
+        "label": "html-for-accessibility",
         "title": "The Importance of Semantic HTML",
         "shortTitle": "The Importance of Semantic HTML",
         "author": "By Corina Murg",
@@ -24,7 +36,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
     },
     {
-        "label": "html",
+        "label": "html-for-accessibility",
         "title": "HTML: Buttons or Links? How to Choose",
         "shortTitle": "Buttons or Links? How to Choose",
         "author": "By Corina Murg",
@@ -37,7 +49,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
 
     },
     {
-        "label": "html",
+        "label": "html-for-accessibility",
         "title": "How to Design Great Alt Text: An Introduction",
         "shortTitle": "How to Design Great Alt Text",
         "author": "By Caitlin Geier on deque.com/blog",
@@ -50,7 +62,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to How to Design Great Alt Text blog post.",
     },
     {
-        "label": "html",
+        "label": "html-for-accessibility",
         "title": "HTML: Tag vs. Element",
         "shortTitle": "HTML: Tag vs. Element",
         "author": "By Corina Murg",
@@ -61,7 +73,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to HTML tag vs element blog post.",
     },
     {
-        "label": "css",
+        "label": "css-for-accessibility",
         "title": "Is \"rem\" Always the Best Choice for Accessibility?",
         "shortTitle": "Is \"rem\" Always the Best Choice for Accessibility?",
         "author": "By Ashlee M Boyer on ashleemboyer.com",
@@ -88,7 +100,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
 
     // },
     {
-        "label": "components",
+        "label": "build-accessible-components",
         "title": "Building the Main Navigation for a Website",
         "shortTitle": "Building the Main Navigation for a Website",
         "author": "By Manuel Matuzović on web.dev",
@@ -100,7 +112,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to The web.dev article on building the main navigation for a website.",
     },
     {
-        "label": "profile",
+        "label": "accessible-digital-presence",
         "title": "5 Tips for Making Your GitHub Profile Page Accessible",
         "shortTitle": "Your GitHub Profile",
         "author": "By Annie Streater on github.blog",
@@ -112,7 +124,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
     {
-        "label": "profile",
+        "label": "accessible-digital-presence",
         "title": "Let's Make It Accessible",
         "shortTitle": "Let's Make It Accessible",
         "author": "Corina Murg",
