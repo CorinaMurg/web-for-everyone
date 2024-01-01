@@ -1,10 +1,9 @@
 
-.commonbugs-container {
+.article-container {
     display: grid;
     grid-template-columns: 2fr 0.8fr;
     grid-template-rows: repeat(4, auto);
     gap: 10px;
-    
 }
 
 .back-links {
@@ -21,7 +20,7 @@
     text-decoration: none;
 }
 
-.commonbugs-container h1 {
+.article-container h1 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     margin-left: var(--main-margin);
@@ -29,7 +28,7 @@
     margin-top: 30px;
 }
 
-.commonbugs-container .subtitle {
+.article-container .subtitle {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     color: var(--pinkBright-color);
@@ -38,7 +37,7 @@
     margin-bottom: 50px;
 }
 
-.commonbugs {
+.article-content {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     display: flex;
@@ -83,7 +82,7 @@
     text-decoration: none;
 }
 
-.commonbugs a {
+.article-content a {
     margin-inline: 5px;
 }
 
