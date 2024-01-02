@@ -176,6 +176,8 @@
 
 .yellow-bg {
     background-color: var(--yellow-color);
+    padding: 0 5px;
+    border-radius: 10px;
 }
 
 /* SECTION 01 Title Element */

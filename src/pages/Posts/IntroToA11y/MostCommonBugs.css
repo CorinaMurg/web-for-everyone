@@ -32,7 +32,8 @@
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     color: var(--pinkBright-color);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin-left: var(--main-margin);
     margin-bottom: 50px;
 }
@@ -45,7 +46,7 @@
     gap: 30px;
     font-size: 0.9rem;
     font-weight: 500;
-    width: 75%;
+    width: 70%;
     margin-left: var(--main-margin);
 }
 

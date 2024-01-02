@@ -20,7 +20,9 @@ export default function Accessibility() {
     return (
         <div className="resources">
 
-            <h1>Resources to expand your accessibility skills</h1>
+            <h1>Resources to expand 
+                <span>your <span className="yellow-bg">accessibility</span> skills</span>
+            </h1>
             <aside className="aside-resources">
                 <h2 className="heading blue-heading">Table of Contents</h2>
                 <ul className="resources-list">
@@ -35,46 +37,50 @@ export default function Accessibility() {
                     ))}
                 </ul>
             </aside>
-            {Object.entries(sectionTitles).map(([label, heading], index) => (
-                <div key={index} className={`section-container section-container--${index + 1}`} >
-                    <h2 className={`blue-heading update-margin heading heading--${index}`} >
-                        <a id={`${label}`}></a>
-                        {heading}
-                    </h2>     
-                    <section className={`update-margin section section--${index}`}>
-                        {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
-                            <article key={index} className="post">
-                                <h3 id={`sub-heading--${post.title}`}>
-                                    {post.href ? (
-                                        <a  
-                                            href={post.href} 
-                                            aria-label={post.ariaLabel} 
-                                            target="_blank" rel="noopener noreferrer"
-                                            className="hover-underline"
-                                        >
-                                            {post.title}
-                                        </a>
-                                    ) : post.to ? (
-                                        <Link 
-                                            to={post.to} 
-                                            className="hover-underline"
-                                            onClick={handleLinkClick}
-                                        >
-                                            {post.title}
-                                        </Link>
-                                    ) : null}
-                                </h3>
-                                <p className="post--subtitle">{post.subtitle}</p>
-                                <div className="post--description">
-                                    <p>{post.description}</p>          
-                                    <p className="post--author">{post.author}</p>
-                                </div>
-                                
-                            </article>
-                        ))}
-                    </section>
-                </div>
-            ))}
+            <div className="resources-content">
+                {Object.entries(sectionTitles).map(([label, heading], index) => (
+                    <div key={index} className="section-container" >
+                        <h2 className={`blue-heading update-margin heading ${index}`} >
+                            <a id={`${label}`}></a>
+                            {heading}
+                        </h2>     
+                        <section className={`update-margin section section--${index}`}>
+                            {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
+                                <article key={index} className="post">
+                                    <h3 id={`${post.title}`}>
+                                        {post.href ? (
+                                            <a  
+                                                href={post.href} 
+                                                aria-label={post.ariaLabel} 
+                                                target="_blank" rel="noopener noreferrer"
+                                                className="hover-underline"
+                                            >
+                                                {post.title}
+                                            </a>
+                                        ) : post.to ? (
+                                            <Link 
+                                                to={post.to} 
+                                                className="hover-underline"
+                                                onClick={handleLinkClick}
+                                            >
+                                                {post.title}
+                                            </Link>
+                                        ) : null}
+                                    </h3>
+                                    <p className="post--subtitle">{post.subtitle}</p>
+                                    <div className="post--description">
+                                        <p>{post.description}</p>          
+                                        <p className="post--author">{post.author}</p>
+                                    </div>
+                                    
+                                </article>
+                            ))}
+                        </section>
+                    </div>
+                ))}
+                
+
+            </div>
             
         </div>
     )

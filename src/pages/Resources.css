@@ -2,34 +2,10 @@
 .resources {
     display: grid;
     grid-template-columns: 2fr 0.8fr; 
-    grid-template-rows: repeat(11, auto); 
+    grid-template-rows: repeat(2, auto); 
     gap: 20px; 
     margin-block: 64px;
     margin-inline: var(--main-margin);
-}
-
-@media screen and (max-width: 1000px) {
-    .resources {
-        grid-template-columns: 1.6fr 1fr; 
-        gap: 10px; 
-    }
-    
-}
-
-@media screen and (max-width: 800px) {
-    .resources {
-        display: flex;
-        flex-direction: column;
-    }
-    .right {
-        margin-inline: var(--navbar-margin);
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .right {
-        margin-inline: calc(0.5*var(--navbar-margin));
-    }
 }
 
 .resources a {
@@ -41,24 +17,21 @@
     padding-left: 0;
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: 8px;
 }
 
 
 .resources h1 {
+    grid-row: 1 / 2;
     grid-column: 1 / 2;
-    font-size: 1.5rem;
-}
-
-@media (max-width: 670px) {
-    .resources--intro .subheading-div {
-        width: 90%;
-    }
+    font-size: 3.3rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
     margin-top: 48px;
-    animation: moveUpOnLoad 1s ease-out;
 }
 
 .section {
@@ -68,21 +41,9 @@
     width: 80%;
 }
 
-.resources h1 {
-    grid-row: 1 / 2;
-}
-
-.section-container {
-    grid-column: 1 / 2;
-}
-.section-container--1 {
+.resources-content {
     grid-row: 2 / 3;
-}
-.section-container--2 {
-    grid-row: 3 / 4;
-}
-.section-container--3 {
-    grid-row: 4 / 5;
+    grid-column: 1 / 2;
 }
 
 .section .post {
@@ -110,15 +71,11 @@
     font-size: 0.9rem;
     font-weight: 400;
     grid-column: 2 / 3; 
-    grid-row: 2 / 6; 
+    grid-row: 2 / 3; 
     position: sticky;
     top: 200px; 
     height: 100vh; 
 }
-
-/* .resources-list {
-    margin-top: 16px;
-} */
 
 .resources-list--item {
     display: flex;
@@ -156,5 +113,37 @@
 
 .heading-link:focus svg, .heading-link:hover svg {
     opacity: 1; 
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .resources {
+        grid-template-columns: 1.6fr 1fr; 
+        gap: 10px; 
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .resources {
+        display: flex;
+        flex-direction: column;
+    }
+    .right {
+        margin-inline: var(--navbar-margin);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .right {
+        margin-inline: calc(0.5*var(--navbar-margin));
+    }
+}
+
+@media (max-width: 670px) {
+    .resources--intro .subheading-div {
+        width: 90%;
+    }
 }
 
