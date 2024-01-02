@@ -111,18 +111,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "The web.dev article on building the main navigation for a website.",
         "readMoreAriaLabel": "read more link to The web.dev article on building the main navigation for a website.",
     },
-    {
-        "label": "accessible-digital-presence",
-        "title": "5 Tips for Making Your GitHub Profile Page Accessible",
-        "subtitle": "",
-        "author": "By Annie Streater on github.blog",
-        "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
-            is navigable and understandable by all users, including those with disabilities. You'll find tips '
-            on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,
-        "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
-        "ariaLabel": "5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
-        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
-    },
+    
     {
         "label": "accessible-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
@@ -143,6 +132,18 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
                 to welcome all visitors? Let's explore how to make it accessible to everyone.`,
         "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
+        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
+    },
+    {
+        "label": "accessible-digital-presence",
+        "title": "5 Tips for Making Your GitHub Profile Page Accessible",
+        "subtitle": "",
+        "author": "By Annie Streater on github.blog",
+        "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 
+            is navigable and understandable by all users, including those with disabilities. You'll find tips '
+            on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,
+        "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
+        "ariaLabel": "5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
 ];

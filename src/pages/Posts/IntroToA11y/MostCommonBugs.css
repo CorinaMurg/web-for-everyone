@@ -55,6 +55,7 @@
     grid-column: 2 / 3;
     font-size: 0.9rem;
     font-weight: 400;
+    letter-spacing: 1px;
     position: sticky;
     top: 200px; 
     height: 100vh; 

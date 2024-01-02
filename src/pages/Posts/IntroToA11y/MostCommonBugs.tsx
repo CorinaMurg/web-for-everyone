@@ -59,7 +59,7 @@ export default function MostCommonBugs() {
             
             <article className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
-                <section className="intro" id="intro">
+                <section className="intro scroll-target" id="intro">
                     <p>
                         Here's one cool thing that happens every year: the organization WebAIM -
                             <a href="https://webaim.org/" target="_blank" rel="noreferrer">

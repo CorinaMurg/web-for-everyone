@@ -1,5 +1,7 @@
 import React from "react"
 import { useDocTitle } from "../hooks/useDocTitle"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
 import handleLinkClick from "../utils/handleLinkClick"
@@ -7,6 +9,17 @@ import './Resources.css'
 
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
+    const location = useLocation();
+
+    useEffect(() => {
+        const hash = location.hash.replace('#', ''); 
+        if (hash) {
+            const element = document.getElementById(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
@@ -20,14 +33,14 @@ export default function Accessibility() {
     return (
         <div className="resources">
 
-            <h1>Resources to expand 
-                <span>your <span className="yellow-bg">accessibility</span> skills</span>
+            <h1>Resources to grow 
+                <span>your <span className="yellow-bg">accessibility skills</span></span>
             </h1>
-            <aside className="aside-resources">
-                <h2 className="heading blue-heading">Table of Contents</h2>
-                <ul className="resources-list">
+            <div className="resources--table-contents">
+                <h2 className="blue-heading">Table of Contents</h2>
+                <ul className="resources--table-contents--list">
                     {Object.entries(sectionTitles).map(([label, heading], index) => (
-                        <li key={index} className="resources-list--item">
+                        <li key={index} className="resources--table-contents--list--item">
                             <a href={`#${label}`} 
                                 className="hover-pink"
                             >
@@ -36,15 +49,15 @@ export default function Accessibility() {
                         </li>
                     ))}
                 </ul>
-            </aside>
+            </div>
             <div className="resources-content">
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
-                    <div key={index} className="section-container" >
-                        <h2 className={`blue-heading update-margin heading ${index}`} >
-                            <a id={`${label}`}></a>
+                    <div key={index} className="section-container scroll-target" id={`${label}`}>
+                        <h2 className="blue-heading heading update-margin">
+                            {/* <a id={`${label}`}></a> */}
                             {heading}
                         </h2>     
-                        <section className={`update-margin section section--${index}`}>
+                        <div className="update-margin section">
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
                                 <article key={index} className="post">
                                     <h3 id={`${post.title}`}>
@@ -75,7 +88,7 @@ export default function Accessibility() {
                                     
                                 </article>
                             ))}
-                        </section>
+                        </div>
                     </div>
                 ))}
                 

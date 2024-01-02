@@ -8,10 +8,10 @@ export default function MakeItAccessible() {
     
     return (
         <div className="article-container makeit-container">
-            <div className="back-links">
+            <div className="back-links scroll-target" id="back-links">
                 <Link to="/resources" className="back-link hover-pink">Resources</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources/#accessible-digital-presence" className="back-link hover-pink">Accessibility and Your Digital Presence</Link>
+                <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">Accessibility and Your Digital Presence</Link>
             </div>
 
             <h1 id="intro"><span>Your Portfolio Site:</span>
@@ -23,7 +23,7 @@ export default function MakeItAccessible() {
                 <h2 className="heading blue-heading">Table of Contents</h2>
                 <ul className="table-contents--list">
                     <li className="table-contents--list--item">
-                        <a href="#intro" className="hover-pink">Introduction</a>
+                        <a href="#" className="hover-pink">Introduction</a>
                     </li>
                     <li className="table-contents--list--item">
                         <a href="#contrast" className="hover-pink">Color Contrast</a>
