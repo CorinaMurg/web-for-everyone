@@ -1,5 +1,6 @@
 export type ResourcesPostDataTypes = {
     label: string;
+    id?: string;
     title: string;
     subtitle?: string;
     author?: string;
@@ -21,6 +22,31 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             plays in accessibility and beyond.`,
         "to": `/resources/what-is-accessibility`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",
+        "readMoreAriaLabel": "",
+    },
+    {
+        "label": "understanding-accessibility",
+        "title": "How Does Accessibility Work?",
+        "subtitle": "",
+        "author": "Web for Everyone",
+        "description": `In most conversations about accessibility, the use of semantic HTML is most 
+            likely to be the first and most common piece of advice. My post looks at the role it 
+            plays in accessibility and beyond.`,
+        "to": `/resources/how-accessibility-works`,
+        "ariaLabel": "What is Accessibility article by Web for Everyone.",
+        "readMoreAriaLabel": "",
+    },
+    {
+        "label": "understanding-accessibility",
+        "id": "most-common-bugs",
+        "title": "The Most Common Accessibility Bugs",
+        "subtitle": "Findings from the 2023 WebAIM Million Study",
+        "author": "Web for Everyone",
+        "description": `In most conversations about accessibility, the use of semantic HTML is most 
+            likely to be the first and most common piece of advice. My post looks at the role it 
+            plays in accessibility and beyond.`,
+        "to": `/resources/most-common-bugs`,
+        "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
         "readMoreAriaLabel": "",
     },
     {

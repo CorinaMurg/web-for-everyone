@@ -13,7 +13,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         title: "What is Accessibility?",
         description: `And why does it matter?`,
         link: "/resources/what-is-accessibility",
-        ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
+        ariaLabel: "What is Accessibility? Why does it matter? article by Web for Everyone.",
         image: "assets/images/missionA11y.jpg",
         imageAlt: "",
     },
@@ -23,7 +23,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
                         let's explore these four concepts: 
                         accessibility tree, assitive technologies, accessibility APIs, and 
                         accessible name.`,
-        link: "/resources",
+        link: "/resources/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",

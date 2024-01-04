@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./WhatIsA11y.css"
+import "./HowA11yWorks.css"
 
 export default function MostCommonBugs() {
-    useDocTitle("Most Common A11y Bugs | Web for Everyone");    
+    useDocTitle("How Accessibility Works | Web for Everyone");    
     
     return (
         <div className="article-container commonbugs-container">
@@ -14,8 +14,8 @@ export default function MostCommonBugs() {
                 <Link to="/resources/#what-is-accessibility" className="back-link hover-pink">Understanding Accessibility</Link>
             </div>
             
-            <h1>What is Accessibility?</h1>
-            <p className="subtitle">And why does it matter?</p>
+            <h1>How Does <span className="yellow-bg">Accessibility</span> Work?</h1>
+            <p className="subtitle">Assistive Tech <span className="plus-sign">+</span> Accessibility APIs <span className="plus-sign">+</span> Accessibility Tree</p>
 
             <section className="table-contents">
                 <h2 className="heading blue-heading">Table of Contents</h2>
@@ -36,15 +36,6 @@ export default function MostCommonBugs() {
                         <a href="#empty-buttons" className="hover-pink">Empty Buttons</a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="#missing-inputLabels" className="hover-pink">Missing Input Labels</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#missing-lang" className="hover-pink">Missing Document Language</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#misused-headings" className="hover-pink">Misused Headings</a>
-                    </li> 
-                    <li className="table-contents--list--item">
                         <a href="#conclusion" className="hover-pink">Conclusion</a>
                     </li> 
                 </ul>
@@ -52,52 +43,58 @@ export default function MostCommonBugs() {
             
             <article className="article-content whatisa11y">
                  {/* *************0. INTRO********************** */}
-                <section className="intro" id="intro">
+                <section className="bug intro" id="intro">
+                    <h2>In a Nutshell</h2>
                     <p>
-                        Here's one cool thing that happens every year: the organization WebAIM -
-                            <a href="https://webaim.org/" target="_blank" rel="noreferrer">
-                                Web Accessibility in Mind
-                            </a>         
-                        - analyzes the top 1,000,000 home pages to check for accessibility errors. 
-
-                        The results have always been pretty grim, and 2023 was no exception:
+                    The web browser parses the HTML, applies CSS, executes JavaScript, and creates the DOM tree. 
+                    As part of the rendering process, the browser also builds the accessibility tree. It's a node
+                    structure and a simplified version of the DOM tree focusing only on elements that need to be exposed 
+                    to assistive technologies (AT) like screen readers or speech recognition software.
                     </p>
-                    
-                    <div className="highlight">
-                        <p className="numbers"><span>96.3</span> the percentage of home pages with a11y bugs</p> 
-                        <p className="numbers"><span>50</span> the average bugs per page</p> 
-                        <p className="numbers"><span>106,245</span> the highest number of bugs found on a single home page</p>        
-                    </div>
-                    
                     <p>
-                        WebAIM audits these pages using an automated tool, the WAVE accessibility engine. 
-                        Automated tools are not perfect and fail to detect all  
-                        accessibility barriers and guidelines violations.
-                        As a result, the actual number of bugs is likely to be higher.
+                    The accessible objects within the accessibility tree expose various states 
+                    (like checked/unchecked for a checkbox or focused for a button), as well as their name. 
+                    Assistive technologies use the browser's accessibility APIs to retrieve this information 
+                    and present it to users. 
                     </p>
-
-                    <p>
-                        I recommend reading the full 
-                            <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
-                                WebAIM Million
-                            </a>
-                        report, but in the meantime let's go over the list of the most common bugs: 
-                    </p>
-                    
-                    <p>The good news? These are some of the easiest bugs to avoid or fix.</p>
-
-                    <div className="highlight bad-news">
-                        <p className="fake-heading-p">The sad news?</p>
-                        <p>The top 6 types of bugs accounted for over 96% of all bugs found.  
-                            <span aria-hidden="true"> 😔</span>
-                        </p>
-                        <p>Worse: they've been the "most common bugs" for the last 5 years.  
-                            <span aria-hidden="true"> 😢</span>
-                        </p>
-                    </div>
                 </section>
 
+                {/* *************1. ASSITIVE TECH********************** */}
+                <section className="bug assistivetech" id="assistivetech">
+                    <h2>Assistive Technologies</h2>
+                    <p>
+                    The goal of the accessibility tree is to represent the structure of a webpage in a way that is 
+                    meaningful for users of assistive tech. This means that while the DOM tree represents the 
+                    complete structure and content of the webpage, the accessibility tree focuses on what's necessary
+                    for understanding and navigating the content through assistive technologies.
+                    </p>
+                    
+                    
+                </section>
 
+                {/* *************2. A11Y TREE********************** */}
+                <section className="bug a11ytree" id="a11ytree">
+                    <h2>The Acccessibility Tree</h2>
+                    <p>
+                    The goal of the accessibility tree is to represent the structure of a webpage in a way that is 
+                    meaningful for users of assistive tech. This means that while the DOM tree represents the 
+                    complete structure and content of the webpage, the accessibility tree focuses on what's necessary
+                    for understanding and navigating the content through assistive technologies.
+                    </p>
+                    
+                    <p>
+                    Each node in the tree is an accessible object. This is an object that needs to be exposed to 
+                    assistive technologies. It represents either an actionable element, like a link or button, 
+                    or an element that  provides information about the page content and structure, like a navbar 
+                    or a heading.
+                    </p>
+                    <p className="white-bg">
+                    The rest of the elements are marked as  "Ignored" and "generic" and … well, ignored. 
+                    So a <code>&lt;span&gt;</code> or a <code>&lt;div&gt;</code> with purely decorative roles will not appear in the accessibility tree.
+                    </p>
+                </section>
+
+                    
                 
 
                 {/* CONCLUSION */}

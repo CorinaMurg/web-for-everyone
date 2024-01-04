@@ -126,9 +126,9 @@
     opacity: 1; 
 }
 
-/* #understanding-accessibility h2 {
-    margin-top: 64px;
-} */
+.resources img {
+    width: 30%;
+}
 
 @media screen and (max-width: 1000px) {
     .resources {

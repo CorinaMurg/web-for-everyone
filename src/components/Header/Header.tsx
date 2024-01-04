@@ -30,7 +30,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
                 <span className="menu-icon sr-only">
-                    Menu
+                    Navigation Menu
                 </span>
             </button>
             <Navbar/>

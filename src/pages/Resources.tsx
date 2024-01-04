@@ -60,7 +60,7 @@ export default function Accessibility() {
                         <div className="update-margin section">
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
                                 <article key={index} className="post">
-                                    <h3 id={`${post.title}`}>
+                                    <h3 id={`${post.id}`}>
                                         {post.href ? (
                                             <a  
                                                 href={post.href} 
@@ -91,9 +91,8 @@ export default function Accessibility() {
                         </div>
                     </div>
                 ))}
-                
-
             </div>
+            {/* <img src="/assets/images/blueBlue.jpg" alt=""/> */}
             
         </div>
     )

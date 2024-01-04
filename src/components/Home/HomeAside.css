@@ -28,7 +28,8 @@
 }
 
 .aside h2 {
-    color: var(--yellow-color);
+    /* color: var(--yellow-color); */
+    color: inherit;
     font-size: 1.5rem;
     font-weight: 500;
     display: flex;

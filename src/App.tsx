@@ -5,10 +5,12 @@ import Home from "./pages/Home"
 import YourUsers from "./pages/YourUsers"
 import Resources from './pages/Resources'
 import ResourcesLayout from "./components/ResourcesLayout"
+import WhatIsA11y from "./pages/Posts/UnderstandingA11y/WhatIsA11y"
+import HowA11yWorks from "./pages/Posts/UnderstandingA11y/HowA11yWorks"
 import MakeItAccessible from "./pages/Posts/AccessibleDigitalPresence/MakeItAccessible"
 import MakeItAccessible2 from "./pages/Posts/AccessibleDigitalPresence/MakeItAccessible2"
 import MostCommonBugs from "./pages/Posts/UnderstandingA11y/MostCommonBugs"
-import WhatIsA11y from "./pages/Posts/UnderstandingA11y/WhatIsA11y"
+
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 import React from "react"
@@ -23,9 +25,11 @@ export default function App() {
                         <Route path="your-users" element={<YourUsers />} />
                         <Route path="resources" element={<ResourcesLayout />}>
                                 <Route index={true} element={<Resources />} />
+                                <Route path="what-is-accessibility" element={<WhatIsA11y />} />
+                                <Route path="how-accessibility-works" element={<HowA11yWorks />} />
                                 <Route path="make-it-accessible-part1" element={<MakeItAccessible />} />
                                 <Route path="make-it-accessible-part2" element={<MakeItAccessible2 />} />
-                                <Route path="what-is-accessibility" element={<WhatIsA11y />} />
+                                
                                 <Route path="most-common-bugs" element={<MostCommonBugs />} />
                         </Route>
                         <Route path="about" element={<About />} />

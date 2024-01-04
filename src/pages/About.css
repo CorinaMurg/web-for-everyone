@@ -58,12 +58,12 @@
     padding: 50px;
 }
 
-section {
+/* section {
     grid-row: 2 / 3;
     display: flex;
     align-items: center;
     gap: 60px;
-}
+} */
 .about--image {
     width: 300px;
     height: 300px;

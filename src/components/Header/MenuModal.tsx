@@ -45,7 +45,7 @@ export default function MenuModal ({
             }}   
         >
             <Navbar closeModal={closeModal} />
-            <button className='modal-close-button' onClick={closeModal}><span className='sr-only'>Close</span></button>
+            <button className='modal-close-button' onClick={closeModal}><span className='sr-only'>Close Navigation Menu</span></button>
         </ReactModal>
     );
 }

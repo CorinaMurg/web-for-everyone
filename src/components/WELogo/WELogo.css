@@ -5,9 +5,10 @@
 } */
 
 .logo-w {
-    color: var(--logo-w-color)
+    /* color: var(--logo-w-color) */
+    color: var(--pinkBright-color);
 }
 
 .logo-e {
-    color: var(--logo-e-color)
+    color: var(--yellow-color);
 }
