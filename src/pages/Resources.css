@@ -6,6 +6,7 @@
     gap: 10px; 
     margin-block: 64px;
     margin-inline: var(--main-margin);
+    color: inherit;
 }
 
 .resources a {
@@ -29,6 +30,7 @@
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+    color: inherit;
 }
 
 .heading {

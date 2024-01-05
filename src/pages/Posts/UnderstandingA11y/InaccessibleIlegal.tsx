@@ -146,36 +146,21 @@ export default function MostCommonBugs() {
                             projects:
                         </p>
                         <ul>
-                            <li><span className="bold">legal compliance</span> 
-                                <p>
-                                    Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                                    lawsuit with the National Federation for the Blind for $6 million? 
-                                </p>
-                             
-                                <p>
-                                    Read the 
-                                    <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link> 
-                                    post about the legal implications of inaccessible sites.
-                                </p>
+                            <li><span className="bold">legal compliance</span>: 
+                                Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                                lawsuit with the National Federation for the Blind for $6 million? 
+                                <br></br>
+                                <br></br>
+                                Read more about it in the <Link to="resources/">Does Inaccessible = Illegal?</Link> article in this series.
                             </li>
-                            <li><span className="bold">increased market share</span> 
-                                <p>
-                                    Your site can attract new visitors from the millions of users with disabilities 
-                                    who use the web.
-                                </p>
-                            </li>
-                            <li><span className="bold">improved SEO</span>
-                                <p>
-                                    Accessible websites often rank higher in search engine results because they reach a 
-                                    broader audience.
-                                </p>
-                            </li> 
+                            <li><span className="bold">improved SEO</span>: Accessible websites often rank higher in search engine results because they reach a broader audience.</li>
+                            <li><span className="bold">increased market share</span>: Including millions of users with disabilities who use the web.</li>
                         </ul>
                         
                     </div>
                     
                     <div>
-                        <h3>Web developer = Power  =  Responsability</h3>
+                        <h3>Web developer  =  Power  =  Responsability</h3>
                         <p>
                             There is one other argument that is equally compelling. As a developer, beyond any legal 
                             implications, you hold the power and the responsibility to make the web more inclusive 
@@ -189,10 +174,7 @@ export default function MostCommonBugs() {
                             Moreover, as you begin working for a company, if accessibility isn't already a 
                             focus, you could be the key influencer in spreading awareness and leading the initiative 
                             to integrate accessibility best practices. Remember, 97% of websites have some form of 
-                            accessibility issue. 
-                        </p>
-                        <p>
-                            If each one of us plays a part, our combined efforts could contribute 
+                            accessibility issue. If each one of us plays a part, our combined efforts could contribute 
                             to reducing this high percentage and be part of a much-needed change in the industry.
                         </p>
                     </div>
@@ -223,8 +205,7 @@ export default function MostCommonBugs() {
                     </p>
                     <p>
                         Your portfolio project is a great place to start implementing accessibility practices.
-                        Ready to audit it? Jump to this article for a list of common accessibility bugs you should
-                        check for:
+                        Ready to audit it? Jump to this article for a list of accessibility bugs to check for:
                     </p>
                     <div className="next-article">
                         <span className="read-next">Read next:</span>

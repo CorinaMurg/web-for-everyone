@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
-import handleLinkClick from "../utils/handleLinkClick"
+import handleLinkClick from "../utils/windowScrollTop"
 import './Resources.css'
 
 export default function Accessibility() {  

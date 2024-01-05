@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import HomeAside from "../components/Home/HomeAside"
-import handleLinkClick from "../utils/handleLinkClick"
+import handleLinkClick from "../utils/windowScrollTop"
 import "./Home.css"
 
 export default function Home() {

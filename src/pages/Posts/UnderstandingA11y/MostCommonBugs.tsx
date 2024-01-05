@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useState } from "react"
+import windowScrollTop from "../../../utils/windowScrollTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import "./MostCommonBugs.css"
 
@@ -298,8 +299,11 @@ export default function MostCommonBugs() {
                     </p>
                     
                     <div className="next-article">
-                        <span className="fake-heading-p">Read next:</span>
-                        <Link to="/resources/make-it-accessible" className="fake-heading-p pink-text">
+                        <span className="read-next">Read next:</span>
+                        <Link to="/resources/make-it-accessible" 
+                                className="read-next pink-text"
+                                onClick={() => { windowScrollTop() }}
+                        >
                             Your Portfolio Site: Let's Make It Accessible!
                         </Link>
                     </div>
