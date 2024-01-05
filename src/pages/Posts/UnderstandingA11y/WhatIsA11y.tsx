@@ -47,7 +47,8 @@ export default function MostCommonBugs() {
                  {/* *************0. INTRO********************** */}
                 <section className="intro" id="intro">
                     <p>
-                        Accessibility is about creating products that <span className="yellow-bg">everyone</span> - including people with disabilities, can 
+                        Accessibility is about creating products that <span className="yellow-bg">everyone</span>,
+                        including people with disabilities, can 
                         easily use. In web development, it means websites and apps that can be navigated and understood 
                         by all users, regardless of how they access the web.
                     </p>
@@ -66,7 +67,7 @@ export default function MostCommonBugs() {
                         <span className="pink-bg-white-text">H</span> key to 
                         hear headings read out loud, one after the other. In fact, screen reader surveys tell us 
                         that this is the preferred way for people who are blind or have low vision 
-                        to learn about the structure and the content of a webpage.
+                        to learn about the structure and content of a webpage.
 
                     </p>
                 </section>
@@ -103,8 +104,9 @@ export default function MostCommonBugs() {
                         </p>
                         <p>
                             But did you know that they are more than just visual markers? True! They are also navigational 
-                            tools for assitive tech users. That’s why we call them semantic HTML tags. 
-                            They inform assitive technologies about their content and this information
+                            tools for assistive tech users. That’s why we call them <span> </span>
+                            <span className="pink-bg-white-text" >semantic</span> <span> </span>HTML tags. 
+                            They inform assistive technologies about their content, and this information
                             is then passed on to the user. 
                         </p>
                     </div>
@@ -118,10 +120,10 @@ export default function MostCommonBugs() {
                     <div>
                         <h3>Soup anyone?</h3>
                         <p className="white-bg">
-                            Take this popular portfolio template on GitHub. It's been forked and stared over 100 times, 
+                            Take this popular portfolio template on GitHub. It's been forked and starred over 100 times, 
                             yet it lacks basic accessibility features. Not a single heading 
-                            element! It's a classic case of <span className="pink-bg-white-text">div soup</span> - 
-                            everything wrapped in generic
+                            element! It's a classic case of <span className="pink-bg-white-text">div soup</span>. 
+                            Everything is wrapped in generic
                             <span> </span>
                             <code>&lt;div&gt;</code> tags,
                             which communicate nothing to a screen reader.
@@ -153,9 +155,9 @@ export default function MostCommonBugs() {
                                 </p>
                              
                                 <p>
-                                    Read the 
+                                    Read the article
                                     <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link> 
-                                    post about the legal implications of inaccessible sites.
+                                    about the legal implications of inaccessible sites.
                                 </p>
                             </li>
                             <li><span className="bold">increased market share</span> 
@@ -181,10 +183,10 @@ export default function MostCommonBugs() {
                             implications, you hold the power and the responsibility to make the web more inclusive 
                             and to give <span className="yellow-bg">everyone</span> the ability to fully engage with it.
                         </p>
-                        <p>
-                            Ignoring this responsibility means to directly deny a group of users access
+                        {/* <p>
+                            Ignoring this responsibility means denying a group of users access
                             to information and services that many of us take for granted.
-                        </p>
+                        </p> */}
                         <p>
                             Moreover, as you begin working for a company, if accessibility isn't already a 
                             focus, you could be the key influencer in spreading awareness and leading the initiative 
@@ -203,7 +205,7 @@ export default function MostCommonBugs() {
                             not because disabilities are inherent to people with impairments. 
                         </p>
                         <p>
-                            If you told me as a blind person that I had to read the prompts on the teleprompter, 
+                            If you told me, as a blind person, that I had to read the prompts on the teleprompter, 
                             I would be disabled. But if you give them to me in Braille, I'm enabled.”
                         </p>
                         <p className="bold">Ed Summers, a blind developer and head of accessibility at GitHub</p>
@@ -223,7 +225,7 @@ export default function MostCommonBugs() {
                     </p>
                     <p>
                         Your portfolio project is a great place to start implementing accessibility practices.
-                        Ready to audit it? Jump to this article for a list of common accessibility bugs you should
+                        Are you ready to audit it? Jump to this article for a list of common accessibility bugs you should
                         check for:
                     </p>
                     <div className="next-article">
