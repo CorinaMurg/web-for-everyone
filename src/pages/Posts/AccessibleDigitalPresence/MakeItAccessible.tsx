@@ -98,7 +98,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="bug-code bug-code--contrast">
-                        <code>I'm tiny text.</code>
+                        <code>I'm normal text (16px).</code>
                         <code>I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.</code>
                         <code>I'm not-too-large (19px or larger), but bold text.</code>
                         <code>I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.</code>

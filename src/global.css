@@ -1,0 +1,24 @@
+
+/* .next-article {
+    display: flex;
+    flex-direction: row;
+} */
+
+q {
+    font-style: italic;
+    line-height: 2.3;
+    font-size: 1.2rem;
+}
+
+.next-article a {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+strong {
+    letter-spacing: 0.8px;
+}
+
+h2, h3 {
+    letter-spacing: 0.5px;
+}

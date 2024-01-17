@@ -18,13 +18,36 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
-        title: "How Does A11y Work?",
+        title: "How Does Accessibility Work?",
         description: `To understand what happens behind the scenes, 
                         let's explore these four concepts: 
                         accessibility tree, assitive technologies, accessibility APIs, and 
                         accessible name.`,
         link: "/resources/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    {
+        title: "Accessibilityy Guidelines",
+        description: `The guidelines themselves are for the brave of heart 
+                    (unless you were a lawyer in a past life).
+                    This article is introducing you to the various acronyms and
+                    how to navigate the guidelines WCAG A AA AAA.`,
+        link: "/resources/accessibility-guidelines",
+        ariaLabel: "Getting started with accessibilityy blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    
+    {
+        title: "Does inaccessible === ilegal?",
+        description: `The "Websites and Software Applications Accessibility Act" was 
+                recently Introduced in US Congress. It makes clear that websites and software
+                must be accessible to people with disabilities. In other words, lack of accessibility 
+                is discrimination!`,
+        link: "/resources/does-inaccessible-equal-illegal",
+        ariaLabel: "How can WE Web for Everyone help blog post.",
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
@@ -38,33 +61,11 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
-    {
-        title: "A11y Guidelines",
-        description: `The guidelines themselves are for the brave of heart 
-                    (unless you were a lawyer in a past life).
-                    This article is introducing you to the various acronyms and
-                    how to navigate the guidelines WCAG A AA AAA.`,
-        link: "/resources",
-        ariaLabel: "Getting started with accessibilityy blog post.",
-        image: "assets/images/image-web-3-mobile.jpg",
-        imageAlt: "",
-    },
     
-    {
-        title: "Does inaccessible === ilegal?",
-        description: `The "Websites and Software Applications Accessibility Act" was 
-                recently Introduced in US Congress. It makes clear that websites and software
-                must be accessible to people with disabilities. In other words, lack of accessibility 
-                is discrimination!`,
-        link: "/resources",
-        ariaLabel: "How can WE Web for Everyone help blog post.",
-        image: "assets/images/image-web-3-mobile.jpg",
-        imageAlt: "",
-    },
     {
         title: "Testing for a11y",
         description: "Our best .",
-        link: "/resources",
+        link: "/resources/testing-for-accessibility",
         ariaLabel: "What is Accessibility? Why does it matter? article by WE Web for Everyone.",
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",

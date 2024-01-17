@@ -45,6 +45,7 @@
     /* --darkBlue-color: #140933; */
     /* --darkBlue-color: #010b50; */
 
+    --code-bg-color: #151f28;
     --logo-bg-color: #1a73e8;
     --logo-w-color: #e60067; 
     --logo-e-color: #1a73e8;
@@ -104,8 +105,21 @@ p {
     /* font-weight: 500; */
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
 a {
     color: var(--text-dark-color);
+    letter-spacing: 0.5px;
+    
 }
 
 /* @media (prefers-reduced-motion: reduce) {  

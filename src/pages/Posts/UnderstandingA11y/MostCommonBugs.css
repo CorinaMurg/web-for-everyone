@@ -84,9 +84,9 @@
     text-decoration: none;
 }
 
-.article-content a {
+/* .article-content a {
     margin-inline: 5px;
-}
+} */
 
 .intro,
 .bug {
@@ -99,14 +99,15 @@
 
 .highlight {
     background-color: var(--lightGray-color);
-    font-weight: 600;
-    padding: 10px 20px;
+    font-weight: 500;
+    padding: 30px;
     width: 100%;
-    border-left: 2px solid var(--yellow-color);
+    /* border-left: 2px solid var(--yellow-color); */
 }
 
 .highlight h3 {
-    margin-block: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .highlight p {
