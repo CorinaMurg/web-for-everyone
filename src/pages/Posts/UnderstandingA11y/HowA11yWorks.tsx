@@ -29,7 +29,7 @@ export default function MostCommonBugs() {
                         <a href="#low-contrast" className="hover-pink">The accessible name</a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="#alt-text" className="hover-pink">Assitive teachnologies</a>
+                        <a href="#alt-text" className="hover-pink">Assistive teachnologies</a>
                     </li>
                     <li className="table-contents--list--item">
                         <a href="#empty-links" className="hover-pink">Accessibility APIs</a>
@@ -46,11 +46,11 @@ export default function MostCommonBugs() {
                     <h2>In a Nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree focusing only on elements that need to be exposed 
+                        version of the DOM tree. The accessibility tree focuses only on elements that need to be exposed 
                         to assistive technologies like screen readers or speech recognition software. 
                     </p>
                     <p className="fake-list-item">
-                        Assistive technologies then use the browser's accessibility APIs to retrieve information 
+                        Assistive technologies use the browser's accessibility APIs to retrieve information 
                         from the accessibility tree and present it to users. 
                     </p>
                 </section>
@@ -80,10 +80,11 @@ export default function MostCommonBugs() {
                     
                     <p className="white-bg">
                         The rest of the elements are ignored. 
-                        So a <code>&lt;span&gt;</code> or a <code>&lt;div&gt;</code> with purely decorative roles 
-                        will not appear in the accessibility tree.
+                        For example, a <code>&lt;span&gt;</code> or a <code>&lt;div&gt;</code> with purely decorative 
+                        role will not appear in the accessibility tree.
                     </p>
 
+                    <h3>An example of an accessibility tree</h3>
                     <p> 
                         Let's look at a simplified version of the accessibility tree for the home page of this site.
                     </p>
@@ -174,35 +175,72 @@ export default function MostCommonBugs() {
                         <code>&lt;span class="visually-hidden"&gt; form&lt;/span&gt;</code>
                         <code>&lt;/<span className="pink-text">button</span>&gt;</code>
                     </div> */}
+                    <p>
+                        Let's take a closer look at the first list item within the navigation list:
+                    </p>
+
+                    <div className="code a11ytree-code">
+                        <code className="pink-text">navigation</code>
+                        <code className="padding-left-30">list ""</code>
+                        <code className="padding-left-60">listitem ""</code>
+                        <code className="padding-left-90">link "<span className="blue-text">Home</span>"</code>
+                        <code className="padding-left-90"><span className="blue-text">focusable</span>: true</code>
+                        <code className="padding-left-90"><span className="blue-text">focused</span>: true</code>
+                        <code className="padding-left-120">StaticText "Home"</code>
+                    </div>
+
 
                     <div>
                         <p>
-                            In the case of this button, the accessibility tree would contain the following information:
+                            The accessibility tree contains information about the item's name, role, properties, and states:
                         </p>
                         <ul>
                             <li>
-                                <span className="bold">Role:</span> button
+                                name: Home
                             </li>
                             <li>
-                                <span className="bold">Name:</span> Submit form
+                                role: link
+                            </li>
+                            
+                            <li>
+                                property: focusable
                             </li>
                             <li>
-                                <span className="bold">Focusable:</span> true
-                            </li>
-                            <li>
-                                <span className="bold">Focused:</span> false (if not in focus)
+                                state: focused
                             </li>
                         </ul>
                     </div>
-                    {/* <button type="submit">
-                        Submit
-                        <span className="visually-hidden"> form</span>
-                    </button> */}
-                    <p>
-                        Notice how the name of the button is "Submit form" and not just "Submit".
-                        The name of the button is the text that will be read by the screen reader.
+                    
 
+                    <p className="white-bg">
+                        We have an actionable element, a link, with the name "Home". For a keyboard user, 
+                        this means that they can navigate to it by pressing the <code>Tab</code> key, and activate it by 
+                        pressing <code>Enter</code>. 
                     </p>
+                    <p>
+                        At the time of this snapshot, the link is focused, which means that it is
+                        highlighted and ready to be activated. 
+                    </p>
+                    <p>
+                        Each assitive technology will use the information from the accessibility tree to present the 
+                        link to the user in the most appropriate way.
+                    </p>
+                    <p>
+                        A screen reader will announce it as "Home link".
+                        A speech recognition software will recognize it as "Home" and allow the user to activate it 
+                        with the comman "click Home".
+                    </p>
+                    <p>
+                        In each case, the object is recognized or referred to by its name. 
+                        The name is computed at rendering time, and it's also called the accessible name.
+                    </p>
+                    <p>
+                        To create the accessible name, the browser uses an accessible name and description 
+                        computation algorithm that takes into account several attributes.  
+                        In this example, the name was computed from the text content of the link. 
+                    </p>
+
+                    <h3>The accessible name</h3>
                     
                 </section>
 
