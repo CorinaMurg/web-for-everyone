@@ -40,6 +40,18 @@
     background-color: var(--lightGray-color);
 }
 
+.code {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-block: 30px;
+    background-color: var(--lightGray-color);
+}
+
 .bug-code code {
     margin-block: 5px;
     font-size: 1rem;

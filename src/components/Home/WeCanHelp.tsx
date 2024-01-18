@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import WELogo from '../WELogo/WELogo';
-import { homeAsideData } from '../../data/homeData/homeAsideData';
-import './HomeAside.css';
+import { weCanHelpData } from '../../data/homeData/weCanHelpData';
+import './WeCanHelp.css';
 
 export default function HomeIntro() {
 
     return (
-        <aside className="aside">
-            <h2>
+        <section aria-labelledby="how-can-we-help" className="aside">
+            <h2 id="how-can-we-help">
                 How can&nbsp; <WELogo size="1.5rem"/> &nbsp;help
             </h2>
             <ul>
-                {homeAsideData.map((article, index) => (
+                {weCanHelpData.map((article, index) => (
                     <li key={index}> 
-                        <article> 
+                        <div> 
                             <Link to="/resources" className='aside-link'>
                                 <h3>{article.title}</h3>
                                 <p>{article.description}</p>
                             </Link>
-                        </article>
+                        </div>
                     </li>
                 ))}
             </ul>
-        </aside>
+        </section>
     )
 }

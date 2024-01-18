@@ -21,7 +21,7 @@ export default function MostCommonBugs() {
 
             {/* ***************TABLE OF CONTENTS********************* */}
             <section className="table-contents">
-                <h2 className="heading blue-heading">Table of Contents</h2>
+                <h2 className="table-contents--heading">Table of Contents</h2>
                 <ul className="table-contents--list">
                     <li className="table-contents--list--item">
                         <a href="#" className="hover-pink" aria-label="Introduction to what is accessibility">
@@ -116,26 +116,24 @@ export default function MostCommonBugs() {
                             They provide your codebase with a structure that is easy to recognize and maintain. 
                         </p>
                         <p className="white-bg">
-                            But did you know that they are more than just visual markers? True! They are also navigational 
-                            tools for assistive tech users. That’s why we call them <span> </span>
+                            But did you know that they are more than just visual markers? True! They convey information 
+                            about their content to assistive tech users. That’s why we call them <span> </span>
                             <span className="pink-bg-white-text" >semantic</span> <span> </span>HTML tags. 
-                            They inform assistive technologies about their role and content, and this information
-                            is then passed on to the user. 
                         </p>
                         <p className="white-bg">
                             For example, when a screen reader encounters the <code>&lt;nav&gt;</code> tag, it 
                             announces to the user that this section of the page is for navigation. But, if you choose
                             to wrap your navigation links in a <code>&lt;div&gt;</code> tag, the user will not be 
                             immediately aware of its purpose. A <code>&lt;div&gt;</code> is just a container 
-                            used for styling purposes or for layout, and requires additional code to make it
+                            intended for styling purposes or for layout, and requires additional code to make it
                             accessible.
 
                         </p>
                         <p>
-                            In most conversations about accessibility, the use of semantic HTML is most likely to be 
-                            the first and most common piece of advice you will receive. While JavaScript 
-                            is powerful for creating interactive and dynamic user experiences, semantic HTML forms the 
-                            backbone of web structure and accessibility.
+                            Always rely on semantic HTML. Think about the content and functionality you want to create,
+                            and choose the appropriate HTML tag. While JavaScript 
+                            will certainly help you with more complex acccessibility issues, semantic HTML is the 
+                            backbone of accessibility.
                         </p>
                     </div>
 
@@ -208,33 +206,38 @@ export default function MostCommonBugs() {
                     <h2>Web Access is Everyone's Right</h2>
                     <p>
                         In our world, digital connectivity is key, and your code should allow everyone the ability 
-                        to fully engage with the web.  The web is not just a form of entertainment; it's a
+                        to easily engage with the web.  The web is not just a form of entertainment; it's a
                         source of information and services that are integral to our daily life.
                     </p>
                     <p>
                         When was the last time you booked a flight with a travel agency? Or mailed a check to pay 
                         your bills? We regularly bypass traditional methods for online convenience.  
                         This shift to digital has been transformative for people with disabilities as well. 
-                        For them, the web opens doors to autonomy and ease, and can remove the need for physical travel 
-                        and its associated challenges. 
+                        For them, the web opens doors to autonomy and ease, and can remove many of the challenges
+                        associated with their impairments.
                     </p>
                     <p>
-                        Let’s remember: good coding practices can provide those with disabilities with the 
+                        Good coding practices can help a blind student access their online course materials,
+                        a person with limited mobility order their groceries, or a person with dyslexia read the
+                        news.
+                    </p>
+                    {/* <p>
+                        Good coding practices can provide those with disabilities with the 
                         same level of freedom and functionality that everyone else enjoys when interacting with
                         the web.
-                    </p>
+                    </p> */}
 
-                    <div className="highlight">
-                        {/* <p> 
+                    {/* <div className="highlight">
+                        <p> 
                             “Disabilities result from the interaction between people with impairments and barriers, 
                             not because disabilities are inherent to people with impairments. 
-                        </p> */}
+                        </p>
                         <q>
                             If you told me, as a blind person, that I had to read the prompts on the teleprompter, 
                             I would be disabled. But if you give them to me in Braille, I'm enabled.
                         </q>
                         <p className="bold">Ed Summers, a blind developer and head of accessibility at GitHub</p>
-                    </div>          
+                    </div>           */}
                 </section>
 
                 {/* *********NEXT***************** */}
@@ -255,7 +258,7 @@ export default function MostCommonBugs() {
                     </ul> */}
 
                     <p>
-                        The good news is that for most of these bugs there is a straightforward fix.
+                        The good news is that for most of these bugs there are easy solutions.
                         In fact, the 7 most common accessibility bugs can be fixed with only 
                         HTML and CSS! 
                     </p>

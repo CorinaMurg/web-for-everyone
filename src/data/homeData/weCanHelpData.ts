@@ -1,9 +1,9 @@
-type HomeAsideDataTypes = {
+type WeCanHelpDataTypes = {
     title: string;
     description: string;
 };
 
-export const homeAsideData: HomeAsideDataTypes[] = [
+export const weCanHelpData: WeCanHelpDataTypes[] = [
     {
         title: "Checklist for common bugs",
         description: `Most common accessibility bugs are easy to fix. You just need to know what to look for.`,

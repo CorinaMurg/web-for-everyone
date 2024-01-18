@@ -1,7 +1,7 @@
 
 .article-container {
     display: grid;
-    grid-template-columns: 2fr 0.8fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 10px;
 }
@@ -51,13 +51,13 @@
 }
 
 .table-contents {
-    grid-row: 4 / 5;
+    grid-row: 1 / 5;
     grid-column: 2 / 3;
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 1px;
     position: sticky;
-    top: 200px; 
+    top: 192px; 
     height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -67,6 +67,11 @@
 
 .table-contents h2 {
     margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .table-contents--list {
@@ -290,7 +295,7 @@ code,
 
 .pink-text {
     color: var(--pinkBright-color);
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 /* MISSING INPUT LABELS */

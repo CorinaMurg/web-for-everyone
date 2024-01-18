@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
-import HomeAside from "../components/Home/HomeAside"
+import WeCanHelp from "../components/Home/WeCanHelp"
 import handleLinkClick from "../utils/windowScrollTop"
 import "./Home.css"
 
@@ -9,7 +9,7 @@ export default function Home() {
     
     return (
         <div className="home">
-            <article className="hero-article">
+            <section aria-labelledby="lets-make-it-accessible" className="hero-article">
                 <div className="hero-image">
                     <img src="/assets/images/image-web-3-desktop.jpg" 
                         alt="" 
@@ -17,7 +17,7 @@ export default function Home() {
                 </div>
                 
                 <div className="hero-container">
-                    <h1 className="hero-heading">Let's Make It Accessible!</h1>
+                    <h1 id="lets-make-it-accessible" className="hero-heading">Let's Make It Accessible!</h1>
                     <div className="hero-body">
                         <p>
                             You're adding the finishing touches to your portfolio site.
@@ -25,7 +25,11 @@ export default function Home() {
                             {/* Let's explore how to make it accessible to everyone. */}
                              
                         </p>
-                        <Link to="/resources/make-it-accessible-part1" className="hero-link" onClick={() => { handleLinkClick() }}>
+                        <Link to="/resources/make-it-accessible-part1" 
+                            className="hero-link" 
+                            onClick={() => { handleLinkClick() }}
+                            aria-label="Continue to article about making your portfolio site accessible"
+                        >
                             <p className="read-more">
                                 Continue to article
                                 <i className="link-arrow"></i>
@@ -39,12 +43,12 @@ export default function Home() {
                     </div>
                     
                 </div>
-            </article>
+            </section>
 
-            <HomeAside/>
+            <WeCanHelp/>
 
-            <section className="mini-articles">
-                <h2>Understanding Accessibility</h2>
+            <section aria-labelledby="understanding-accessibility" className="mini-articles">
+                <h2 id="understanding-accessibility">Understanding Accessibility</h2>
                 <ul>
                     {miniArticleData.map((article, index) => (
                         <li key={index}> 

@@ -22,3 +22,31 @@ strong {
 h2, h3 {
     letter-spacing: 0.5px;
 }
+
+.fake-list-item {
+    position: relative;
+    padding-left: 20px;
+    /* display: flex;
+    align-items: center; */
+}
+.fake-list-item::before {
+    content: "•"; 
+    color: var(--pinkBright-color);
+    font-size: 25px; 
+    position: absolute;
+    left: -20px; 
+    top: -11px;
+    padding-left: 20px;
+}
+
+.padding-left-30 {
+    padding-left: 30px;
+}
+
+.padding-left-60 {
+    padding-left: 60px;
+}
+
+.padding-left-90 {
+    padding-left: 90px;
+}
