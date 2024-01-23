@@ -8,7 +8,9 @@ export default function HomeIntro() {
 
     return (
         <section aria-labelledby="how-can-we-help" className="aside">
-            <h2 id="how-can-we-help">
+            <h2 id="how-can-we-help"
+                aria-label="How can web for everyone help?"
+            >
                 How can&nbsp; <WELogo size="1.5rem"/> &nbsp;help
             </h2>
             <ul>

@@ -41,16 +41,17 @@ export default function MostCommonBugs() {
             </section>
             
             <article className="article-content whatisa11y">
-                 {/* *************0. INTRO********************** */}
+                {/* *************0. INTRO********************** */}
                 <section className="bug intro" id="intro">
-                    <h2>In a Nutshell</h2>
+                    <h2 aria-label="In a Nutshell: How Accessibility works">In a Nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree. The accessibility tree focuses only on elements that need to be exposed 
-                        to assistive technologies like screen readers or speech recognition software. 
+                        version of the DOM tree. The <strong>accessibility tree focuses only on elements that 
+                        need to be exposed to assistive technologies </strong> 
+                        like screen readers and speech recognition software. 
                     </p>
                     <p className="fake-list-item">
-                        Assistive technologies use the browser's accessibility APIs to retrieve information 
+                        When triggered, assistive technologies use the browser's accessibility APIs to retrieve information 
                         from the accessibility tree and present it to users. 
                     </p>
                 </section>
@@ -84,50 +85,61 @@ export default function MostCommonBugs() {
                         role will not appear in the accessibility tree.
                     </p>
 
-                    <h3>An example of an accessibility tree</h3>
+                    <h3>DOM tree vs. Accessibility tree</h3>
                     <p> 
-                        Let's look at a simplified version of the accessibility tree for the home page of this site.
+                        Let's take the navbar component of this site and compare its representation in the DOM 
+                        and the accessibility trees.
+                        
                     </p>
 
+                    <strong>DOM tree</strong>
                     <div className="code a11ytree-code">
-                        <code className="pink-text">banner</code>
-                        <code className="padding-left-30">link "Skip to Content"</code>
-                        <code className="padding-left-30">focusable: true</code>
-                        <br></br>
-                        <code className="padding-left-30">    link "WE | Web for Everyone"</code>
-                        <code className="padding-left-30">    focusable: true</code>
-                        <br></br>
-                        <code className="pink-text">navigation</code>
-                        <code className="padding-left-30">list ""</code>
-                        <code className="padding-left-60">listitem ""</code>
-                        <code className="padding-left-90">link "Home"</code>
-                        <code className="padding-left-90">focusable: true</code>
-                        <code className="padding-left-90">focused: true</code>
-                        <code className="padding-left-60">listitem ""</code>
-                        <code className="padding-left-60">listitem ""</code>
-                        <code className="padding-left-60">listitem ""</code>
+                        <code className="pink-text">&lt;nav&gt;</code>
+                        <code className="padding-left-30">&lt;ul&gt;</code>
+                        <code className="padding-left-60">&lt;li&gt;&lt;a&gt;<span className="blue-text">Home</span>&lt;/a&gt;&lt;/li&gt;</code>
+                        <code className="padding-left-60">&lt;li&gt;&lt;a&gt;<span className="blue-text">Your Users</span>&lt;/a&gt;&lt;/li&gt;</code>
+                        <code className="padding-left-60">&lt;li&gt;&lt;a&gt;<span className="blue-text">Resources</span>&lt;/a&gt;&lt;/li&gt;</code>
+                        <code className="padding-left-60">&lt;li&gt;&lt;a&gt;<span className="blue-text">About</span>&lt;/a&gt;&lt;/li&gt;</code>
+                        <code className="padding-left-30">&lt;/ul&gt;</code>
+                        <code className="pink-text">&lt;/nav&gt;</code>
 
-                        <br></br>
-                        <code className="pink-text">main</code>
-                        <code className="padding-left-30">region "Let's Make It Accessible!"</code>
-                        <code className="padding-left-60">heading "Let's Make It Accessible!"</code>
-                        <code className="padding-left-60">list ""</code>
-                        <br></br>
-                        <code className="padding-left-30">region "How can WE help"</code>
-                        <code className="padding-left-60">heading "How can WE help"</code>
-                        <code className="padding-left-60">list ""</code>
-                        <br></br>
-                        <code className="padding-left-30">    region "Understanding Acccessibility"</code>
-                        <code className="padding-left-60">heading "Understanding Acccessibility"</code>
-                        <code className="padding-left-60">list ""</code>
-                        <br></br>
-                        <code className="pink-text">contentinfo ""</code>
                     </div>
 
+                    <strong>Accessibility tree</strong>
+                    <div className="code a11ytree-code">
+                        <code className="pink-text">navigation</code>
+                        <code className="padding-left-30">list</code>
+                        <code className="padding-left-60">listitem</code>
+                        <code className="padding-left-90">link "<span className="blue-text">Home</span>" 
+                            <span> </span>
+                            <span className="blue-text">focusable</span>: true <span className="blue-text">focused</span>: true
+                        </code>
+                        <code className="padding-left-120">StaticText "Home"</code>
+
+                        <code className="padding-left-60">listitem</code>
+                        <code className="padding-left-90">link "<span className="blue-text">Your Users</span>"
+                            <span> </span>
+                            <span className="blue-text">focusable</span>: true
+                        </code>
+                        <code className="padding-left-120">StaticText "Your Users"</code>
+
+                        <code className="padding-left-60">listitem</code>
+                        <code className="padding-left-90">link "<span className="blue-text">Resources</span>"
+                            <span> </span>
+                            <span className="blue-text">focusable</span>: true
+                        </code>
+                        <code className="padding-left-120">StaticText "Resources"</code>
+                        <code className="padding-left-60">listitem</code>
+                        <code className="padding-left-90">link "<span className="blue-text">About</span>"
+                            <span> </span>
+                            <span className="blue-text">focusable</span>: true
+                        </code>
+                        <code className="padding-left-120">StaticText "About"</code>
+                    </div>
                     <div>
                         <p>
-                            While the DOM tree is structured by HTML tags/elements, the accessibility tree is 
-                            structured by roles.
+                            While the DOM tree is structured by HTML tags/elements, <strong>the accessibility tree is 
+                            structured by roles</strong>.
                             For each item in the accessibility tree, its role matches the function of its HTML tag.
                         </p>
                              
@@ -135,28 +147,21 @@ export default function MostCommonBugs() {
                             For example:
                         </p>
                         <p className="fake-list-item white-bg">
-                            the <code>banner</code> role goes with the <code>&lt;header&gt;</code>
+                            the <code>navigation</code> role goes with <code>&lt;nav&gt;</code>
                         </p>
-                        {/* <p className="fake-list-item">
-                            the <code>&lt;nav&gt;</code> element has the role of "navigation"
-                        </p> */}
-                        {/* <p className="fake-list-item">
-                            the <code>&lt;main&gt;</code> element has the role of "main"
-                        </p> */}
-                        {/* <p className="fake-list-item">
-                            the <code>&lt;a&gt;</code> element has the role of "link"
-                        </p> */}
                       
                         <p className="fake-list-item white-bg">
-                            the <code>heading</code> role goes with the <code>&lt;h1&gt;</code> 
+                            the <code>list</code> role goes with <code>&lt;ul&gt;</code> 
                         </p>
                         <p className="fake-list-item white-bg">
-                            the <code>contentinfo</code> role goes with the <code>&lt;footer&gt;</code> 
+                            the <code>link</code> role goes with <code>&lt;a&gt;</code> 
                         </p>
                     </div>
                     
+                    <strong>How does the browser know what role to assign to a given tag?</strong>
                     <p>
-                        Each role in the example above is implicit. It is derived from the HTML tag, 
+                        Each role in the example above is implicit. It's built in the definition of the
+                        semantic HTML tag, 
                         and it is automatically assigned by the browser when the accessibility tree is built.
                         This is one of the reasons why using semantic HTML is so important.
                     </p>
@@ -168,26 +173,11 @@ export default function MostCommonBugs() {
                     
 
                     <h3>Zooming in on an accessible object</h3>
-                    
-                    {/* <div className="bug-code">
-                        <code>&lt;<span className="pink-text">button</span> type="submit"&gt;</code>
-                        <code>Submit</code>
-                        <code>&lt;span class="visually-hidden"&gt; form&lt;/span&gt;</code>
-                        <code>&lt;/<span className="pink-text">button</span>&gt;</code>
-                    </div> */}
                     <p>
                         Let's take a closer look at the first list item within the navigation list:
                     </p>
 
-                    <div className="code a11ytree-code">
-                        <code className="pink-text">navigation</code>
-                        <code className="padding-left-30">list ""</code>
-                        <code className="padding-left-60">listitem ""</code>
-                        <code className="padding-left-90">link "<span className="blue-text">Home</span>"</code>
-                        <code className="padding-left-90"><span className="blue-text">focusable</span>: true</code>
-                        <code className="padding-left-90"><span className="blue-text">focused</span>: true</code>
-                        <code className="padding-left-120">StaticText "Home"</code>
-                    </div>
+                    
 
 
                     <div>
@@ -211,41 +201,84 @@ export default function MostCommonBugs() {
                         </ul>
                     </div>
                     
-
+                    <strong>How is this information useful?</strong>
+                    
                     <p className="white-bg">
                         We have an actionable element, a link, with the name "Home". For a keyboard user, 
                         this means that they can navigate to it by pressing the <code>Tab</code> key, and activate it by 
                         pressing <code>Enter</code>. 
                     </p>
                     <p>
-                        At the time of this snapshot, the link is focused, which means that it is
+                        At the time of this snapshot, the link was in focus, which means that it was
                         highlighted and ready to be activated. 
                     </p>
                     <p>
                         Each assitive technology will use the information from the accessibility tree to present the 
-                        link to the user in the most appropriate way.
+                        object to the user in the most appropriate way.
                     </p>
+                    
                     <p>
                         A screen reader will announce it as "Home link".
                         A speech recognition software will recognize it as "Home" and allow the user to activate it 
-                        with the comman "click Home".
+                        with the command "click Home".
                     </p>
+
+                    <h3>The accessible name</h3>
                     <p>
-                        In each case, the object is recognized or referred to by its name. 
-                        The name is computed at rendering time, and it's also called the accessible name.
+                        Notice how each object in the accessibility tree above has a name. 
+                        Every object withing the accessibility tree is recognized or referred to by its name, 
+                        also called the accessible name.
                     </p>
                     <p>
                         To create the accessible name, the browser uses an accessible name and description 
                         computation algorithm that takes into account several attributes.  
                         In this example, the name was computed from the text content of the link. 
                     </p>
+                    During the construction of the accessibility tree, the browser evaluates the elements in the DOM 
+                    to create their accessible names. If the content of a web page changes dynamically, the browser 
+                    updates the accessibility tree accordingly, and the accessible names are recomputed as necessary.
 
-                    <h3>The accessible name</h3>
+                    To create the accessible name, the browser uses an accessible name and description computation 
+                    algorithm that follows a set of (quite headache-inducing) rules. These rules take into account 
+                    the following attributes:
+                    <ul>
+                        <li>
+                            <code>aria-labelledby</code>
+                        </li>
+                        <li>
+                            <code>aria-label</code>
+                        </li>
+                        <li>
+                            <code>title</code>
+                        </li>
+                        <li>
+                            <code>alt</code>
+                        </li>
+                        <li>
+                            <code>label</code>
+                        </li>
+                    </ul>
+                     
+                    
+                    The content of these attributes is 
+                    given priority when creating the accessible name. The idea being that these were likely added 
+                    to offer a more descriptive or tailored name for the element. For example, if a button has the 
+                    visible text "Submit" and an aria-label of "Submit form," the accessible name would 
+                    be « Submit form » and that is the name a screen reader would read to describe the button.
+                    Note : The browser can also calculate the accessible description of an element which provides 
+                    information that complements the accessible name. I am still deciphering the documentation 
+                    on this topic, but my current understanding is the the accessiblr description relies on 
+                    aria-labelledby and again the headache-inducing algorithm.
+
+                    If none of the priority attributes are available, then the algorithm relies on the text within 
+                    the element. This is what the browser relied on for the “RECENT PTOJECTS” heading. 
+                    I did not assign an aria-label attribute nor any of the other priority attributes, 
+                    so it used the content of the heading to create the accessible name.
+                    
                     
                 </section>
 
                     
-                
 
                 {/* CONCLUSION */}
                 <section className="bug conclusion">

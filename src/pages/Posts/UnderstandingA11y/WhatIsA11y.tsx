@@ -137,20 +137,6 @@ export default function MostCommonBugs() {
                         </p>
                     </div>
 
-                    {/* 
-
-                    <div>
-                        <h3>Soup anyone?</h3>
-                        <p className="white-bg">
-                            Take this popular portfolio template on GitHub. It's been forked and starred over 100 times, 
-                            yet it lacks basic accessibility features. Not a single heading 
-                            element! It's a classic case of <span className="pink-bg-white-text">div soup</span>. 
-                            Everything is wrapped in generic
-                            <span> </span>
-                            <code>&lt;div&gt;</code> tags,
-                            which communicate nothing to a screen reader.
-                        </p>
-                    </div> */}
                 </section>
 
                 {/* ***************The Practical Reasons for Accessibility***************** */}
@@ -217,27 +203,11 @@ export default function MostCommonBugs() {
                         associated with their impairments.
                     </p>
                     <p>
-                        Good coding practices can help a blind student access their online course materials,
+                        Your code can help a blind student access their online course materials,
                         a person with limited mobility order their groceries, or a person with dyslexia read the
-                        news.
-                    </p>
-                    {/* <p>
-                        Good coding practices can provide those with disabilities with the 
-                        same level of freedom and functionality that everyone else enjoys when interacting with
+                        news. Everyone deserves the same level of freedom and functionality when interacting with
                         the web.
-                    </p> */}
-
-                    {/* <div className="highlight">
-                        <p> 
-                            “Disabilities result from the interaction between people with impairments and barriers, 
-                            not because disabilities are inherent to people with impairments. 
-                        </p>
-                        <q>
-                            If you told me, as a blind person, that I had to read the prompts on the teleprompter, 
-                            I would be disabled. But if you give them to me in Braille, I'm enabled.
-                        </q>
-                        <p className="bold">Ed Summers, a blind developer and head of accessibility at GitHub</p>
-                    </div>           */}
+                    </p>     
                 </section>
 
                 {/* *********NEXT***************** */}
@@ -258,7 +228,7 @@ export default function MostCommonBugs() {
                     </ul> */}
 
                     <p>
-                        The good news is that for most of these bugs there are easy solutions.
+                        The good news is that most of these bugs have easy solutions.
                         In fact, the 7 most common accessibility bugs can be fixed with only 
                         HTML and CSS! 
                     </p>
@@ -266,7 +236,7 @@ export default function MostCommonBugs() {
                     <p>
                         Your portfolio site and personal projects are a great place to start implementing 
                         accessibility practices.
-                        Are you ready to audit them? Jump to this article for a list of solutions to the 
+                        If you're ready to audit them, jump to this article for a list of solutions to the 
                         most common accessibility issues:
                     </p>
                     <div className="next-article">

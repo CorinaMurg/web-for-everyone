@@ -147,6 +147,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    margin-top: 30px;
 }
 
 .mini-articles h2 {
@@ -154,16 +155,16 @@
     font-size: 2rem;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    margin-block: 0;
+    margin-bottom: 30px;
 }
 
 .mini-article-link {
     /* border-top: 3px solid var(--darkBlue-color); */
     text-decoration: none;
     padding-top: 20px;
-    padding-inline: 20px;
+    padding-inline: 17px;
     width: 100%;
-    height: 20rem;
+    height: 18rem;
     background-color: transparent;
     transition: 0.3s;
     position: relative;
@@ -250,12 +251,6 @@
     height: 100%;
     object-fit: cover;
 } 
-
-/* .mini-top-border {
-    width: 100%;
-    height: 10px;
-    background-color: var(--yellow-color);
-} */
 
 .mini-article h3 {
     font-size: 1.2rem;

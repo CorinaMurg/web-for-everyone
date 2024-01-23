@@ -28,7 +28,7 @@ export default function Home() {
                         <Link to="/resources/make-it-accessible-part1" 
                             className="hero-link" 
                             onClick={() => { handleLinkClick() }}
-                            aria-label="Continue to article about making your portfolio site accessible"
+                            aria-label="Continue to article let's make it accessible"
                         >
                             <p className="read-more">
                                 Continue to article

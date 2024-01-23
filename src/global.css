@@ -1,14 +1,6 @@
 
-/* .next-article {
-    display: flex;
-    flex-direction: row;
-} */
 
-q {
-    font-style: italic;
-    line-height: 2.3;
-    font-size: 1.2rem;
-}
+
 
 .next-article a {
     font-size: 0.9rem;
@@ -26,9 +18,8 @@ h2, h3 {
 .fake-list-item {
     position: relative;
     padding-left: 20px;
-    /* display: flex;
-    align-items: center; */
 }
+
 .fake-list-item::before {
     content: "•"; 
     color: var(--pinkBright-color);

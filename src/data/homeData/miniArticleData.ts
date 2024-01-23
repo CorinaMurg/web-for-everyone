@@ -11,7 +11,9 @@ type MiniArticleDataTypes = {
 export const miniArticleData: MiniArticleDataTypes[] = [
     {
         title: "What is Accessibility?",
-        description: `And why does it matter?`,
+        description: `When you create 
+            sites and apps that everyone, including people with disabilities, can easily navigate, 
+            you make accessibility happen. `,
         link: "/resources/what-is-accessibility",
         ariaLabel: "What is Accessibility? Why does it matter? article by Web for Everyone.",
         image: "assets/images/missionA11y.jpg",
@@ -19,21 +21,19 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "How Does Accessibility Work?",
-        description: `To understand what happens behind the scenes, 
-                        let's explore these four concepts: 
-                        accessibility tree, assitive technologies, accessibility APIs, and 
-                        accessible name.`,
+        description: `To understand what happens behind the scene, let's take a look at the Document
+            Oject Model's parallel structure, the accessibility tree. `,
         link: "/resources/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
     {
-        title: "Accessibilityy Guidelines",
-        description: `The guidelines themselves are for the brave of heart 
-                    (unless you were a lawyer in a past life).
-                    This article is introducing you to the various acronyms and
-                    how to navigate the guidelines WCAG A AA AAA.`,
+        title: "Accessibility Guidelines",
+        description: `The guidelines themselves are for the brave of heart, 
+            but there are plenty of resources to help you understand them.
+            This article is introducing you the four principles of accessibility.
+            and the guidelines that support them.`,
         link: "/resources/accessibility-guidelines",
         ariaLabel: "Getting started with accessibilityy blog post.",
         image: "assets/images/image-web-3-mobile.jpg",
@@ -41,7 +41,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     
     {
-        title: "Does inaccessible === ilegal?",
+        title: "Does Inaccessible = Ilegal?",
         description: `The "Websites and Software Applications Accessibility Act" was 
                 recently Introduced in US Congress. It makes clear that websites and software
                 must be accessible to people with disabilities. In other words, lack of accessibility 
@@ -53,9 +53,8 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "Most Common Bugs",
-        description: `Did you know there are 6 types of bugs that are responsible for the majority of 
-            accessibility issues? For five years in a row! The good news is that they are quite easy to 
-            avoid or fix!`,
+        description: `For five years in a row, a handful of bugs have been responsible for the majority of 
+            accessibility issues. The good news is that they are quite easy to avoid or fix!`,
         link: "/resources/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/image-web-3-mobile.jpg",
