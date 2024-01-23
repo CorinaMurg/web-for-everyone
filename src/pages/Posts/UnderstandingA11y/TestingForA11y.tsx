@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./WhatIsA11y.css"
+
 import windowScrollTop from "../../../utils/windowScrollTop";
 
 export default function MostCommonBugs() {

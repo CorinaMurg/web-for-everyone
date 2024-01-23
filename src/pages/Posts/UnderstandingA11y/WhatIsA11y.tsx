@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./WhatIsA11y.css"
+import "./WhatIsA11y.module.css"
 import "../../../global.css"
 import windowScrollTop from "../../../utils/windowScrollTop";
 
