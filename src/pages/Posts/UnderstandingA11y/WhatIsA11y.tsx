@@ -1,9 +1,34 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./WhatIsA11y.module.css"
+import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
 import windowScrollTop from "../../../utils/windowScrollTop";
+import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+
+const contents = [
+    {
+        href: "#intro",
+        text: "Introduction",
+        "aria-label": "Introduction to what is accessibility"
+    },
+    {
+        href: "#The DNA of the Web is Accessible",
+        text: "The DNA of the Web is Accessible"
+    },
+    {
+        href: "#The Practical Reasons for Accessibility",
+        text: "The Practical Reasons for Accessibility"
+    },
+    {
+        href: "#Web Access is Everyone's Right",
+        text: "Web Access is Everyone's Right"
+    },
+    {
+        href: "#Next Steps",
+        text: "Next Steps"
+    },
+]
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common A11y Bugs | Web for Everyone");    
@@ -13,7 +38,9 @@ export default function MostCommonBugs() {
             <div className="back-links scroll-target">
                 <Link to="/resources" className="back-link hover-pink">Resources</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources/#what-is-accessibility" className="back-link hover-pink">Understanding Accessibility</Link>
+                <Link to="/resources/#what-is-accessibility" className="back-link hover-pink">
+                    Understanding Accessibility
+                </Link>
             </div>
             
             <h1>What is <span className="yellow-bg">Accessibility?</span></h1>

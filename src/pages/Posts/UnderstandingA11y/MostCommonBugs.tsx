@@ -5,6 +5,19 @@ import windowScrollTop from "../../../utils/windowScrollTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import "./MostCommonBugs.css"
 import "../../../global.css"
+import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+
+const contents = [
+    { href: "#", text: "WebAIM Million Study" },
+    { href: "#Low Contrast Text", text: "Low Contrast Text" },
+    { href: "#Missing Alternative Text for Images", text: "Missing Alternative Text for Images" },
+    { href: "#Empty Links", text: "Empty Links" },
+    { href: "#Empty Buttons", text: "Empty Buttons" },
+    { href: "#Missing Input Labels", text: "Missing Input Labels" },
+    { href: "#Missing Document Language", text: "Missing Document Language" },
+    { href: "#Misused Headings", text: "Misused Headings" },
+    { href: "#Conclusion", text: "Conclusion" },
+];
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common A11y Bugs | Web for Everyone");    
@@ -26,38 +39,7 @@ export default function MostCommonBugs() {
             <h1>The Most Common A11y Bugs</h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
-            <section className="table-contents">
-                <h2 className="heading blue-heading">Table of Contents</h2>
-                <ul className="table-contents--list">
-                    <li className="table-contents--list--item">
-                        <a href="#" className="hover-pink">WebAIM Million Study</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#low-contrast" className="hover-pink">Low Contrast Text</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#alt-text" className="hover-pink">Missing Alternative Text for Images</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#empty-links" className="hover-pink">Empty Links</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#empty-buttons" className="hover-pink">Empty Buttons</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#missing-inputLabels" className="hover-pink">Missing Input Labels</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#missing-lang" className="hover-pink">Missing Document Language</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#misused-headings" className="hover-pink">Misused Headings</a>
-                    </li> 
-                    <li className="table-contents--list--item">
-                        <a href="#conclusion" className="hover-pink">Conclusion</a>
-                    </li> 
-                </ul>
-            </section>
+            <TableOfContents contents={contents} />
             
             <article className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
