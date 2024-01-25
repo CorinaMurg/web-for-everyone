@@ -1,6 +1,28 @@
 
 
+.details-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
 
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
 
 .next-article a {
     font-size: 0.9rem;
@@ -11,8 +33,21 @@ strong {
     letter-spacing: 0.8px;
 }
 
-h2, h3 {
+h2, h3, h4 {
     letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 .fake-list-item {

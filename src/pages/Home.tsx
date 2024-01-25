@@ -22,7 +22,7 @@ export default function Home() {
                     >
                         Let's Make It Accessible!
                     </h1>
-                    <div className="hero-body">
+                    <div className={styles['hero-body']}>
                         <p>
                             You're adding the finishing touches to your portfolio site.
                             But will it be ready to welcome all users? 
