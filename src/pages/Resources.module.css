@@ -33,11 +33,7 @@
     color: inherit;
 }
 
-.heading {
-    margin-top: 48px;
-}
-
-.section {
+.section-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -55,7 +51,7 @@
 
 }
 
-.section .post {
+.section-content .post {
     padding-bottom: 10px;
 }
 
@@ -75,7 +71,6 @@
     margin-block: 32px;
 }
 
-/* aside component */
 .resources--table-contents {
     font-size: 0.9rem;
     font-weight: 400;
@@ -104,28 +99,8 @@
     margin-top: 20px;
 }
 
-.hover-pink:hover {
-    color: var(--pinkBright-color);
-    opacity: 1;
-    text-decoration: underline;
-}
-
 .section-container h2 {
     position: relative;
-}
-.heading-link {
-    position: absolute;
-    left: -30px;
-    top: 2px;
-}
-
-.heading-link svg {
-    opacity: 0; 
-    transition: opacity 0.3s; 
-}
-
-.heading-link:focus svg, .heading-link:hover svg {
-    opacity: 1; 
 }
 
 .resources img {

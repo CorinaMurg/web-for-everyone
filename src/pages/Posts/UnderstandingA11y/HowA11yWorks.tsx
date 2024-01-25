@@ -10,7 +10,7 @@ export default function MostCommonBugs() {
     useDocTitle("How Accessibility Works | Web for Everyone");    
     
     return (
-        <div className="article-container commonbugs-container">
+        <div className="article-container howA11yWorks-container">
             <div className="back-links">
                 <Link to="/resources" className="back-link hover-pink">Resources</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -18,35 +18,50 @@ export default function MostCommonBugs() {
             </div>
             
             <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
-            <p className="subtitle">The DOM's Powerful Sibling: the Accessibility Tree</p>
+            <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
-            <section className="table-contents">
-                <h2 className="table-contents--heading">Table of Contents</h2>
+            <div className="table-contents">
+                <h2 className="table-contents--heading">
+                    <code>Table of Contents</code>
+                </h2>
                 <ul className="table-contents--list">
                     <li className="table-contents--list--item">
-                        <a href="#" className="hover-pink">In a Nutshell</a>
+                        <a href="#" className="hover-pink">
+                            <code>In a Nutshell</code>
+                        </a>
+                    </li>
+
+                    <li className="table-contents--list--item">
+                        <a href="#The Accessibility Tree" className="hover-pink">
+                            <code>The Accessibility Tree</code>
+                        </a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="The Accessibility Tree" className="hover-pink">The Accessibility Tree</a>
+                        <a href="#DOM Tree vs. Accessibility Tree" className="hover-pink">
+                            <code className="padding-left-30">DOM Tree vs. Accessibility Tree</code>
+                        </a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="#low-contrast" className="hover-pink">The accessible name</a>
+                        <a href="#Implicit vs. Explicit Accessibility Roles" className="hover-pink">
+                            <code className="padding-left-30">Implicit vs. Explicit Accessibility Roles</code>
+                        </a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="#alt-text" className="hover-pink">Assistive teachnologies</a>
+                        <a href="#The Accessible Name" className="hover-pink">
+                            <code>The Accessible Name</code>
+                        </a>
                     </li>
                     <li className="table-contents--list--item">
-                        <a href="#empty-links" className="hover-pink">Accessibility APIs</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#conclusion" className="hover-pink">Conclusion</a>
+                        <a href="#Conclusion" className="hover-pink">
+                            <code>Conclusion</code>
+                        </a>
                     </li> 
                 </ul>
-            </section>
+            </div>
             
-            <article className="article-content whatisa11y">
-                {/* *************0. INTRO********************** */}
-                <section className="bug intro" id="intro">
+            <div className="article-content howA11yWorks">
+                {/* *************1. INTRO********************** */}
+                <div className="bug intro intro-howA11yWorks" id="intro">
                     <h2 aria-label="In a Nutshell: How Accessibility works">In a Nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
@@ -58,11 +73,11 @@ export default function MostCommonBugs() {
                         When triggered, assistive technologies use the browser's accessibility APIs to retrieve information 
                         from the accessibility tree and present it to users. 
                     </p>
-                </section>
+                </div>
 
 
                 {/* *************2. A11Y TREE********************** */}
-                <section className="bug a11ytree" id="a11ytree">
+                <div className="bug a11yTree scroll-target" id="The Accessibility Tree">
                     <h2>The Acccessibility Tree</h2>
                     
                     <div className="flex-column">
@@ -103,12 +118,11 @@ export default function MostCommonBugs() {
                             </p>
                         </details>
                     </div>
-
-                    <h3>DOM tree vs. Accessibility tree</h3>
+                    {/* *************2.1. DOM tree vs A11y Tree********************** */}
+                    <h3 className="scroll-target" id="DOM Tree vs. Accessibility Tree">DOM Tree vs. Accessibility Tree</h3>
                     <p> 
                         Let's take the navbar component of this site and compare its representation in the DOM 
                         and the accessibility trees.
-                        
                     </p>
 
                     <h4>DOM tree example</h4>
@@ -155,7 +169,6 @@ export default function MostCommonBugs() {
                             &lt;/ul&gt;
                         </code>
                         <code className="pink-text">&lt;/nav&gt;</code>
-
                     </div>
 
                     <h4>Accessibility tree example</h4>
@@ -214,9 +227,13 @@ export default function MostCommonBugs() {
                         <p>But how does the browser know what role to assign to a given element?</p>
                     </div>
                     
+                    {/* *************2.2 Implicit vs. Explicit Accessibility Roles********************** */}
+                    <h3 className="scroll-target"
+                        id="Implicit vs. Explicit Accessibility Roles"
+                    >
+                        Implicit vs. Explicit Accessibility Roles
+                    </h3>
                     
-                    <h3>Implicit vs. Explicit Accessibility Roles</h3>
-                    .
                     <h4>Implicit Roles</h4>
                     <p>
                         Each role in the example above is <strong>implicit</strong>. It's built in the definition of the
@@ -287,16 +304,11 @@ export default function MostCommonBugs() {
                     <p className="fake-list-item white-bg">depending on the desired functionality,
                         <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
                     </p>
+                </div>
 
-                    {/* <h3>Zooming in on an accessible object</h3>
-                    <p>
-                        When selecting an accessible object from the tree, we have the option to also open an 
-                        accessibility pane that displays detailed information about that object, ARIA-properties,
-
-                    </p> */}
-
-
-                    <h3>The accessible name</h3>
+                {/* **************Accessible Name***************** */}
+                <div className="bug a11yName" id="The Accessible Name">
+                    <h2>The Accessible Name</h2>
                     <p>
                         Notice how each actionable object in the accessibility tree above has a name? 
                         It is the name that assistive technologies will use to describe the object to the user
@@ -353,10 +365,7 @@ export default function MostCommonBugs() {
                         to offer a more descriptive or tailored name for the element. They could also be included
                         to provide a name when the element has no visible text. 
                     </p>
-                    {/* <p>
-                        Note : The browser can also calculate the accessible description of an element which provides 
-                        information that complements the accessible name. 
-                    </p> */}
+                   
                     <strong className="white-bg">Example: <code>button</code> with no visible text</strong>
                     <div className="bug-code bug-code--buttons">
                         <code>&lt;<span className="pink-text">button</span> aria-label="Close modal" id="closeModal"&gt;</code>
@@ -369,21 +378,19 @@ export default function MostCommonBugs() {
                         without the <code>aria-label</code> attribute. The browser will use the attribute to compute 
                         the accessible name "Close modal".
                     </p>
-                    {/* <p className="white-bg">
-                        The other option we had here was to add an <code>alt</code> attribute to the image.
-                    </p> */}
+                  
                     <p>
                         If none of the priority attributes are available, the algorithm relies on the text within 
                         the element. This is what the browser relied on for the “RECENT PTOJECTS” heading. 
                         I did not assign an aria-label attribute nor any of the other priority attributes, 
                         so it used the content of the heading to create the accessible name.
                     </p>
-                </section>
+                </div>
 
                     
 
                 {/* CONCLUSION */}
-                <section className="bug conclusion">
+                <div className="bug section conclusion-howA11yWorks" id="Conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
@@ -402,9 +409,9 @@ export default function MostCommonBugs() {
                         </Link>
                     </div>
                     
-                </section>
+                </div>
 
-            </article>
+            </div>
             
         </div>
     )

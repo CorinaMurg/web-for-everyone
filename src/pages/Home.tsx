@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import WeCanHelp from "../components/Home/WeCanHelp"
 import handleLinkClick from "../utils/windowScrollTop"
-import styles from "./Home.module.css"
+import styles from './Home.module.css'
 
 export default function Home() {
     

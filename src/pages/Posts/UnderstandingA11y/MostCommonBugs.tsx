@@ -4,6 +4,7 @@ import { useState } from "react"
 import windowScrollTop from "../../../utils/windowScrollTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import "./MostCommonBugs.css"
+import "../../../global.css"
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common A11y Bugs | Web for Everyone");    

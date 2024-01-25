@@ -5,7 +5,8 @@ import { useLocation } from "react-router-dom"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
 import handleLinkClick from "../utils/windowScrollTop"
-import './Resources.css'
+import styles from './Resources.module.css'
+import "../global.css"
 
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
@@ -29,18 +30,18 @@ export default function Accessibility() {
         "build-accessible-components": "Building Accessible Components",
         "learning-resources": "Learning Resources",
     };
-
+    {styles['hero-image']}
     return (
-        <div className="resources">
+        <div className={styles.resources}>
 
             <h1>Resources to grow 
                 <span>your <span className="yellow-bg">accessibility skills</span></span>
             </h1>
-            <div className="resources--table-contents">
+            <div className={styles['resources--table-contents']}>
                 <h2 className="blue-heading">Table of Contents</h2>
-                <ul className="resources--table-contents--list">
+                <ul className={styles['resources--table-contents--list']}>
                     {Object.entries(sectionTitles).map(([label, heading], index) => (
-                        <li key={index} className="resources--table-contents--list--item">
+                        <li key={index} className={styles['resources--table-contents--list--item']}>
                             <a href={`#${label}`} 
                                 className="hover-pink"
                             >
@@ -50,16 +51,16 @@ export default function Accessibility() {
                     ))}
                 </ul>
             </div>
-            <div className="resources-content">
+            <div className={styles['resources-content']}>
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
-                    <div key={index} className="section-container scroll-target" id={`${label}`}>
+                    <div key={index} className={`${styles['section-container']} scroll-target`} id={`${label}`}>
                         <h2 className="blue-heading heading update-margin">
                             {/* <a id={`${label}`}></a> */}
                             {heading}
                         </h2>     
-                        <div className="update-margin section">
+                        <div className={`update-margin ${styles['section-content']}`}>
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
-                                <article key={index} className="post">
+                                <article key={index} className={styles['post']}>
                                     <h3 id={`${post.id}`}>
                                         {post.href ? (
                                             <a  
@@ -80,10 +81,10 @@ export default function Accessibility() {
                                             </Link>
                                         ) : null}
                                     </h3>
-                                    <p className="post--subtitle">{post.subtitle}</p>
-                                    <div className="post--description">
+                                    <p className={styles['post--subtitle']}>{post.subtitle}</p>
+                                    <div className={styles['post--description']}>
                                         <p>{post.description}</p>          
-                                        <p className="post--author">{post.author}</p>
+                                        <p className={styles['post--author']}>{post.author}</p>
                                     </div>
                                     
                                 </article>
