@@ -1,14 +1,7 @@
 
 
 
-.intro,
-.bug {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 0;
-}
+
 
 .highlight {
     background-color: var(--lightGray-color);

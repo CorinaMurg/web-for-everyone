@@ -20,7 +20,7 @@ const contents = [
 ];
 
 export default function MostCommonBugs() {
-    useDocTitle("Most Common A11y Bugs | Web for Everyone");    
+    useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
 
     const [textColor, setTextColor] = useState('initial')
 
@@ -36,14 +36,14 @@ export default function MostCommonBugs() {
                 <Link to="/resources/#most-common-bugs" className="back-link hover-pink">Understanding Accessibility</Link>
             </div>
             
-            <h1>The Most Common A11y Bugs</h1>
+            <h1>The Most Common Accessibility Bugs</h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
             <TableOfContents contents={contents} />
             
-            <article className="article-content commonbugs">
+            <div className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
-                <section className="intro" id="intro">
+                <div className="section intro" id="intro">
                     <p>
                         Here's one cool thing that happens every year: the organization WebAIM -
                             <a href="https://webaim.org/" target="_blank" rel="noreferrer">
@@ -86,10 +86,10 @@ export default function MostCommonBugs() {
                             <span aria-hidden="true"> 😢</span>
                         </p>
                     </div>
-                </section>
+                </div>
 
                 {/* 1. LOW CONTRAST */}
-                <section className="bug low-contrast scroll-target" id="low-contrast">
+                <div className="bug section low-contrast scroll-target" id="Low Contrast Text">
                     <h2>1. Low Contrast Text</h2>
                     <p className="white-bg">
                         Found on <span className="stats">83.6%</span> of pages, this bug involves text without enough 
@@ -107,10 +107,10 @@ export default function MostCommonBugs() {
                             Change color
                         </button>
                     </div>
-                </section>
+                </div>
 
                 {/* 2. ALT TEXT */}
-                <section className="bug alt-text scroll-target" id="alt-text">
+                <div className="bug section alt-text scroll-target" id="Missing Alternative Text for Images">
                     <h2>2. Missing Alternative Text for Images</h2>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
@@ -124,17 +124,18 @@ export default function MostCommonBugs() {
                             as an empty <code>alt</code>!
                         </p>
                         <p>
-                            <span className="pink-text">Missing <code>alt</code>:</span> screen readers might read the source file name.
+                            <span className="pink-text">Missing <code>alt</code>:</span> screen readers might 
+                            read the source file name.
                         </p>
                         <p>
                             <span className="pink-text">Empty <code>alt</code>:</span> screen readers ignore the image.
                         </p>
                     
                     </div>
-                </section>
+                </div>
 
                 {/* 3. LINKS */}
-                <section className="bug empty-links scroll-target" id="empty-links">
+                <div className="bug section empty-links scroll-target" id="Empty Links">
                     <h2>3. Empty Links</h2>
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
@@ -152,10 +153,10 @@ export default function MostCommonBugs() {
                             users can struggle to understand their purpose if their text is vague.
                         </p>
                     </div>
-                </section>
+                </div>
 
                 {/* 4. BUTTONS */}
-                <section className="bug empty-buttons scroll-target" id="empty-buttons">
+                <div className="bug section empty-buttons scroll-target" id="Empty Buttons">
                     <h2>4. Empty Buttons</h2>
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons without proper 
@@ -181,10 +182,10 @@ export default function MostCommonBugs() {
                         <p><span className="pink-num">2. </span>Users relying on voice activation will not be able to 
                             trigger the action on the button.</p>
                     </div>
-                </section>
+                </div>
 
                 {/* 5. INPUT LABELS */}
-                <section className="bug missing-inputLabels scroll-target" id="missing-inputLabels">
+                <div className="bug section missing-inputLabels scroll-target" id="Missing Input Labels">
                     <h2>5. Missing Input Labels</h2>
                     <p>
                         <span className="stats">More than a third</span> 
@@ -218,10 +219,10 @@ export default function MostCommonBugs() {
                         <p className="fake-heading-p">Good news<span className="exclamation">!</span></p>
                         <p>The "a third of form inputs" is an improvement. In 2019, the ratio was 59%.</p>
                     </div>
-                </section>
+                </div>
 
                 {/* 6. LANG */}
-                <section className="bug missing-lang scroll-target" id="missing-lang">
+                <div className="bug section missing-lang scroll-target" id="Missing Document Language">
                     <h2>6. Missing Document Language</h2>
                     <p>
                         This issue was found on <span className="stats">18.6%</span> of the home pages audited.
@@ -236,10 +237,10 @@ export default function MostCommonBugs() {
                         <p><code>&lt;html <code className="pink-text">lang</code>="en"&gt;</code></p>
                     </div>
                     
-                </section>
+                </div>
 
                 {/* 7. HEADINGS */}
-                <section className="bug misused-headings scroll-target" id="misused-headings">
+                <div className="bug section misused-headings scroll-target" id="Misused Headings">
                     <h2>7. Misused Headings</h2>
                     <p>
                         <span className="stats">One fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
@@ -266,10 +267,10 @@ export default function MostCommonBugs() {
                             .
                         </p>
                     </div>
-                </section>
+                </div>
 
                 {/* CONCLUSION */}
-                <section className="bug conclusion">
+                <div className="bug section conclusion" id="Conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
@@ -291,9 +292,9 @@ export default function MostCommonBugs() {
                         </Link>
                     </div>
                     
-                </section>
+                </div>
 
-            </article>
+            </div>
             
         </div>
     )

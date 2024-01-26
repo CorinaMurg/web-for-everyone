@@ -8,7 +8,7 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 
 const contents = [
     {
-        href: "#intro",
+        href: "#",
         text: "Introduction",
         "aria-label": "Introduction to what is accessibility"
     },
@@ -47,38 +47,11 @@ export default function MostCommonBugs() {
             <p className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}
-            <section className="table-contents">
-                <h2 className="table-contents--heading">Table of Contents</h2>
-                <ul className="table-contents--list">
-                    <li className="table-contents--list--item">
-                        <a href="#" className="hover-pink" aria-label="Introduction to what is accessibility">
-                            <code>Introduction</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#The DNA of the Web is Accessible" className="hover-pink">
-                            <code>The DNA of the Web is Accessible</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#The Practical Reasons for Accessibility" className="hover-pink">
-                            <code>The Practical Reasons for Accessibility</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#Web Access is Everyone's Right" className="hover-pink">
-                            <code>Web Access is Everyone's Right</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#Next Steps" className="hover-pink">
-                            <code>Next Steps</code>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+            <TableOfContents contents={contents} />
+
+            {/* **************ARTICLE CONTENT***************** */}
             
-            <article className="article-content whatisa11y">
+            <article className={`article-content ${styles['whatisa11y']}`}>
                  {/* *************0. INTRO********************** */}
                 <section className="intro" id="intro">
                     <p>
@@ -101,28 +74,19 @@ export default function MostCommonBugs() {
                         For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
                         person with sight but limited or no hand mobility might use voice control software.
                     </p>
-                    <div>
-                        <p>
-                            The tools you need to allow for these kinds of interactions (and many others!) 
-                            are already in place:
-                        </p>
-                        <ul>
-                            <li>
-                                <p>
-                                    code syntax to create the structure and the content of your site: semantic HTML, 
-                                    CSS, and JavaScript
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    assistive technologies to bridge your site and your users: screen readers, 
-                                    voice control software, braille displays, etc.
-                                </p>
-                            </li>
-                            
-                        </ul>
-                    </div>
                     
+                    <p>
+                        The tools you need to allow for these kinds of interactions (and many others!) 
+                        are already in place:
+                    </p>
+                    <p className="fake-list-item">
+                        code syntax to create the structure and the content of your site: semantic HTML, 
+                        CSS, and JavaScript
+                    </p>
+                    <p className="fake-list-item">
+                        assistive technologies to bridge your site and your users: screen readers, 
+                        voice control software, braille displays, etc.
+                    </p>
 
                     <div className="highlight">
                         <h3>How semantic HTML improves accessibility</h3>
@@ -173,44 +137,45 @@ export default function MostCommonBugs() {
                         From a business side, there are certainly a few practical reasons that can motivate 
                         a company to prioritize accessibility:
                     </p>
-                    <ul>
-                        <li><strong>legal compliance</strong> 
-                            <p>
-                                Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                                lawsuit with the National Federation for the Blind for $6 million? 
-                            </p>
-                            <br></br>
-                            <p>
-                                Read the article <span> </span>
-                                <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link>
-                                <span> </span> 
-                                about the legal implications of inaccessible sites.
-                            </p>
-                        </li>
-                        <li><strong>increased market share</strong> 
-                            <p>
-                                A site can attract new visitors from the millions of users with disabilities 
-                                who use the web.
-                            </p>
-                        </li>
-                        <li><strong>improved SEO</strong>
-                            <p className="white-bg">
-                                Many accessibility practices align with good SEO practices. For example, 
-                                providing <code>alt</code> text for images, ensuring a logical content structure with 
-                                proper heading tags, and maintaining a clean and navigable site structure are beneficial 
-                                for both accessibility and SEO. 
-                            </p>
-                        </li> 
-                        <li><strong>positive spillover</strong>
-                            <p>
-                                Many features designed for accessibility, 
-                                such as clear navigation, easy-to-read fonts, and simple layouts, 
-                                contribute to a more intuitive and user-friendly interface for all users, not just
-                                those with disabilities. 
-                            </p>
-                        </li> 
-                    </ul>
-
+                    
+                    <div>
+                    <p className="bullet-point-line"><strong>legal compliance</strong></p>
+                    <p className="padding-left-20">
+                        Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                        lawsuit with the National Federation for the Blind for $6 million? 
+                    </p>
+                    <br></br>
+                    <p className="padding-left-20">
+                        Read the article <span> </span>
+                        <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link>
+                        <span> </span> 
+                        about the legal implications of inaccessible sites.
+                    </p>
+                    
+                    <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
+                    <p className="padding-left-20">
+                        A site can attract new visitors from the millions of users with disabilities 
+                        who use the web.
+                    </p>
+                    
+                    <p className="bullet-point-line"><strong>improved SEO</strong></p>
+                    <p className="white-bg padding-left-20">
+                        Many accessibility practices align with good SEO practices. For example, 
+                        providing <code>alt</code> text for images, ensuring a logical content structure with 
+                        proper heading tags, and maintaining a clean and navigable site structure are beneficial 
+                        for both accessibility and SEO. 
+                    </p>
+                    
+                    <p className="bullet-point-line"><strong>positive spillover</strong></p>
+                    <p className="padding-left-20">
+                        Many features designed for accessibility, 
+                        such as clear navigation, easy-to-read fonts, and simple layouts, 
+                        contribute to a more intuitive and user-friendly interface for all users, not just
+                        those with disabilities. 
+                    </p>
+                    </div>
+                    
+                        
                     <p>BUT, above all . . .</p>
                 </section>
 
