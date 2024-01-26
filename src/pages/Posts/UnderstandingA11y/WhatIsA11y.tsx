@@ -81,11 +81,11 @@ export default function MostCommonBugs() {
                     </p>
                     <p className="bullet-point-line">
                         code syntax to create the structure and the content of your site: semantic HTML, 
-                        CSS, and JavaScript
+                        CSS, and JavaScript.
                     </p>
                     <p className="bullet-point-line">
-                        assistive technologies to bridge your site and your users: screen readers, 
-                        voice control software, braille displays, etc.
+                        assistive technologies to connect your users with your site: screen readers, 
+                        voice control software, refreshable braille displays, to name a few.
                     </p>
 
                     <div className="highlight">
@@ -120,10 +120,9 @@ export default function MostCommonBugs() {
                             accessible.
                         </p>
                         <p>
-                            Always rely on semantic HTML! Think about the content and functionality you want to create,
-                            and choose the appropriate HTML tag. While JavaScript 
-                            will certainly help you with more complex acccessibility issues, semantic HTML is the 
-                            backbone of accessibility.
+                            <strong>Always rely on semantic HTML!</strong> Think about the content and functionality 
+                            you want to create,and choose the appropriate HTML tag. While JavaScript can help with more 
+                            complex acccessibility issues, semantic HTML is the backbone of accessibility.
                         </p>
                     </div>
                 </div>
@@ -156,15 +155,14 @@ export default function MostCommonBugs() {
                         who use the web.
                     </p>
                     
-                    <p className="bullet-point-line"><strong>improved SEO</strong></p>
+                    <p className="bullet-point-line margin-top-20"><strong>improved SEO</strong></p>
                     <p className="white-bg padding-left-20">
                         Many accessibility practices align with good SEO practices. For example, 
-                        providing <code>alt</code> text for images, ensuring a logical content structure with 
-                        proper heading tags, and maintaining a clean and navigable site structure are beneficial 
-                        for both accessibility and SEO. 
+                        providing <code>alt</code> text for images and ensuring a logical content structure with 
+                        proper heading tags are beneficial for both accessibility and SEO. 
                     </p>
                     
-                    <p className="bullet-point-line"><strong>positive spillover</strong></p>
+                    <p className="bullet-point-line margin-top-20"><strong>positive spillover</strong></p>
                     <p className="padding-left-20">
                         Many features designed for accessibility, 
                         such as clear navigation, easy-to-read fonts, and simple layouts, 
@@ -181,22 +179,22 @@ export default function MostCommonBugs() {
                 <div className="section scroll-target" id="Web Access is Everyone's Right">
                     <h2>Web Access is Everyone's Right</h2>
                     <p>
-                        In our world, digital connectivity is key, and your code should allow everyone the ability 
-                        to easily engage with the web.  The web is not just a form of entertainment; it's a
+                        In our world, digital connectivity is key, and your finished product should allow everyone 
+                        the ability to easily engage with the web.  The web is not just a form of entertainment; it's a
                         source of information and services that are integral to our daily life.
                     </p>
                     <p>
                         When was the last time you booked a flight with a travel agency? Or mailed a check to pay 
                         your bills? We regularly bypass traditional methods for online convenience.  
                         This shift to digital has been transformative for people with disabilities as well. 
-                        For them, the web opens doors to autonomy and ease, and can remove many of the challenges
+                        For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
                     </p>
                     <p>
                         Your code can help a blind student access their online course materials,
                         a person with limited mobility order their groceries, or a person with dyslexia read the
-                        news. Everyone deserves the same level of freedom and functionality when interacting with
-                        the web.
+                        news. <strong>Everyone deserves the same level of freedom and functionality when interacting with
+                        the web</strong>.
                     </p>     
                 </div>
 
@@ -231,6 +229,7 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="next-article">
                         <span className="read-next">Read next: </span>
+                        
                         <Link to="/resources/make-it-accessible-part1" 
                                 className="read-next pink-text"
                                 onClick = { () => { windowScrollTop() } }
@@ -253,7 +252,7 @@ export default function MostCommonBugs() {
                         </Link>
                     </div>
 
-                    <p>
+                    <p className="margin-top-30">
                         When we actively embrace accessibility and make it essential
                         to our web development learning and work, we can make a difference.
                         Together, we can build a web that's open to <span className="yellow-bg">everyone</span>!

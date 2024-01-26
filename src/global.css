@@ -195,7 +195,7 @@ h4 {
 }
 
 .highlight p {
-    margin-block: 10px;
+    margin-block: 20px;
 }
 
 .hover-pink:hover {
@@ -256,6 +256,8 @@ h4 {
 
 .next-article {
     width: 100%;
+    display: flex;
+    gap: 10px;
 }
 
 .next-article a {
