@@ -63,6 +63,13 @@
     color: var(--pinkBright-color);
 }
 
+.yellow-bg {
+    background-color: var(--yellow-color);
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+
 @font-face {
     font-family: 'Inter';
     src: url('fonts/static/Inter-VariableFont_slnt,wght.ttf') format('truetype');

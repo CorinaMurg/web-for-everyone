@@ -2,6 +2,47 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import "./MakeItAccessible.css"
+import "../../../global.css"
+import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+
+const contents = [
+    {
+        href: "#",
+        text: "Introduction",
+    },
+    {
+        href: "#Color Contrast",
+        text: "Color Contrast",
+    },
+    {
+        href: "#The 'alt' Attribute for Images",
+        text: "The 'alt' Attribute for Images",
+    },
+    {
+        href: "#Links with Discernable Text",
+        text: "Links with Discernable Text",
+    },
+    {
+        href: "#Buttons with Discernable Text",
+        text: "Buttons with Discernable Text",
+    },
+    {
+        href: "#Labels for Inputs",
+        text: "Labels for Inputs",
+    },
+    {
+        href: "#The Language Attribute",
+        text: "The Language Attribute",
+    },
+    {
+        href: "#Headings in Logical Order",
+        text: "Headings in Logical Order",
+    },
+    {
+        href: "#Conclusion",
+        text: "Conclusion",
+    },
+]
 
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible | Web for Everyone");
@@ -9,51 +50,25 @@ export default function MakeItAccessible() {
     return (
         <div className="article-container makeit-container">
             <div className="back-links scroll-target" id="back-links">
-                <Link to="/resources" className="back-link hover-pink">Resources</Link>
+                <Link to="/resources" className="back-link hover-pink">
+                    Resources
+                </Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">Accessibility and Your Digital Presence</Link>
+                <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">
+                    Accessibility and Your Digital Presence
+                </Link>
             </div>
 
-            <h1 id="intro"><span>Your Portfolio Site:</span>
+            <h1 id="intro">
+                <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
             <p className="subtitle">Check your portfolio site for the 7 most common bugs</p>
 
-            <section className="table-contents">
-                <h2 className="heading blue-heading">Table of Contents</h2>
-                <ul className="table-contents--list">
-                    <li className="table-contents--list--item">
-                        <a href="#" className="hover-pink">Introduction</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#contrast" className="hover-pink">Color Contrast</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#alt" className="hover-pink">The "alt" Attribute for Images</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#links" className="hover-pink">Links with Discernable Text</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#buttons" className="hover-pink">Buttons with Discernable Text</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#labels" className="hover-pink">Labels for Inputs</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#lang" className="hover-pink">The Language Attribute</a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#headings" className="hover-pink">Headings in Logical Order</a>
-                    </li> 
-                    <li className="table-contents--list--item">
-                        <a href="#conclusion" className="hover-pink">Conclusion</a>
-                    </li> 
-                </ul>
-            </section>
+            <TableOfContents contents={contents} />
 
             <article className="article-content makeit">
-                <section className="intro">
+                <div className="section intro">
                     <p>Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the 
                         functionality of a website increases. However, there are a few simple steps that
                         you can take to ensure that your site is accessible to most users. 
@@ -88,11 +103,11 @@ export default function MakeItAccessible() {
                         </p>
                     </div>
 
-                </section>
+                </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <section className="bug contrast scroll-target" id="contrast">
-                    <div className="bug-heading">
+                <div className="section contrast scroll-target" id="contrast">
+                    <div className="section-heading">
                         <span className="bug-number">01</span>
                         <h2>Color Contrast</h2>
                     </div>
@@ -140,7 +155,7 @@ export default function MakeItAccessible() {
                             standards WCAG A and AA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
                             and User Interface Components passes WCAG AA."/>
                     </div>
-                </section>
+                </div>
 
                 {/* ****************ALT************************* */}
                 <section className="bug alt scroll-target" id="alt">

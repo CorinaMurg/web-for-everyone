@@ -29,7 +29,7 @@ export default function MostCommonBugs() {
     };
     
     return (
-        <div className="article-container commonbugs-container">
+        <div className={`article-container ${styles['commonbugs-container']}`}>
             <div className="back-links">
                 <Link to="/resources" className="back-link hover-pink">
                     Resources
@@ -40,7 +40,7 @@ export default function MostCommonBugs() {
                 </Link>
             </div>
             
-            <h1>The Most Common Accessibility Bugs</h1>
+            <h1>The Most Common <span className="yellow-bg">Accessibility Bugs</span></h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
             <TableOfContents contents={contents} />

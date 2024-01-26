@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import windowScrollTop from "../../../utils/windowScrollTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./MostCommonBugs.css"
+import styles from "./A11yGuidelines.module.scss"
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common A11y Bugs | Web for Everyone");    
