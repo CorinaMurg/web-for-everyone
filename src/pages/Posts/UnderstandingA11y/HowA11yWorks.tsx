@@ -1,10 +1,37 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-import "./HowA11yWorks.css"
+import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
 
-
+const contents = [
+    {
+        href: "#",
+        text: "In a Nutshell",
+        ariaLabel: "In a Nutshell: How Accessibility works",
+    },
+    {
+        href: "#The Accessibility Tree",
+        text: "The Accessibility Tree",
+    },
+    {
+        href: "#DOM Tree vs. Accessibility Tree",
+        text: "DOM Tree vs. Accessibility Tree",
+    },
+    {
+        href: "#Implicit vs. Explicit Accessibility Roles",
+        text: "Implicit vs. Explicit Accessibility Roles",
+    },
+    {
+        href: "#The Accessible Name",
+        text: "The Accessible Name",
+    },
+    {
+        href: "#Conclusion",
+        text: "Conclusion",
+    },
+]
 
 export default function MostCommonBugs() {
     useDocTitle("How Accessibility Works | Web for Everyone");    
@@ -12,56 +39,23 @@ export default function MostCommonBugs() {
     return (
         <div className="article-container howA11yWorks-container">
             <div className="back-links">
-                <Link to="/resources" className="back-link hover-pink">Resources</Link>
+                <Link to="/resources" className="back-link hover-pink">
+                    Resources
+                </Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources/#how-accessibility-works" className="back-link hover-pink">Understanding Accessibility</Link>
+                <Link to="/resources/#how-accessibility-works" className="back-link hover-pink">
+                    Understanding Accessibility
+                </Link>
             </div>
             
             <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
             <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
-            <div className="table-contents">
-                <h2 className="table-contents--heading">
-                    <code>Table of Contents</code>
-                </h2>
-                <ul className="table-contents--list">
-                    <li className="table-contents--list--item">
-                        <a href="#" className="hover-pink">
-                            <code>In a Nutshell</code>
-                        </a>
-                    </li>
-
-                    <li className="table-contents--list--item">
-                        <a href="#The Accessibility Tree" className="hover-pink">
-                            <code>The Accessibility Tree</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#DOM Tree vs. Accessibility Tree" className="hover-pink">
-                            <code className="padding-left-30">DOM Tree vs. Accessibility Tree</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#Implicit vs. Explicit Accessibility Roles" className="hover-pink">
-                            <code className="padding-left-30">Implicit vs. Explicit Accessibility Roles</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#The Accessible Name" className="hover-pink">
-                            <code>The Accessible Name</code>
-                        </a>
-                    </li>
-                    <li className="table-contents--list--item">
-                        <a href="#Conclusion" className="hover-pink">
-                            <code>Conclusion</code>
-                        </a>
-                    </li> 
-                </ul>
-            </div>
+            <TableOfContents contents={contents} />
             
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}
-                <div className="bug intro intro-howA11yWorks" id="intro">
+                <div className="section intro intro-howA11yWorks" id="intro">
                     <h2 aria-label="In a Nutshell: How Accessibility works">In a Nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
@@ -77,10 +71,10 @@ export default function MostCommonBugs() {
 
 
                 {/* *************2. A11Y TREE********************** */}
-                <div className="bug a11yTree scroll-target" id="The Accessibility Tree">
+                <div className="section a11yTree scroll-target" id="The Accessibility Tree">
                     <h2>The Acccessibility Tree</h2>
                     
-                    <div className="flex-column">
+                    <div>
                         <p>
                             Each node in the tree is an accessible object. It represents either 
                         </p>
@@ -103,7 +97,7 @@ export default function MostCommonBugs() {
                         <details>
                             <summary>
                                 <span className="details-title">
-                                    How to view the accessibility tree in Chrome
+                                    How to view the accessibility tree with Dev Tools
                                 </span>
                             </summary>
                             <p>
@@ -118,8 +112,11 @@ export default function MostCommonBugs() {
                             </p>
                         </details>
                     </div>
+
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
-                    <h3 className="scroll-target" id="DOM Tree vs. Accessibility Tree">DOM Tree vs. Accessibility Tree</h3>
+                    <h3 className="scroll-target" id="DOM Tree vs. Accessibility Tree">
+                        DOM Tree vs. Accessibility Tree
+                    </h3>
                     <p> 
                         Let's take the navbar component of this site and compare its representation in the DOM 
                         and the accessibility trees.
@@ -176,27 +173,31 @@ export default function MostCommonBugs() {
                         <code className="pink-text">navigation</code>
                         <code className="padding-left-30">list</code>
                         <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">link "<span className="blue-text">Home</span>" 
+                        <code className="padding-left-90">
+                            link "<span className="blue-text">Home</span>" 
                             <span> </span>
                             <span className="blue-text">focusable</span>: true <span className="blue-text">focused</span>: true
                         </code>
                         <code className="padding-left-120">StaticText "Home"</code>
 
                         <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">link "<span className="blue-text">Your Users</span>"
+                        <code className="padding-left-90">
+                            link "<span className="blue-text">Your Users</span>"
                             <span> </span>
                             <span className="blue-text">focusable</span>: true
                         </code>
                         <code className="padding-left-120">StaticText "Your Users"</code>
 
                         <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">link "<span className="blue-text">Resources</span>"
+                        <code className="padding-left-90">
+                            link "<span className="blue-text">Resources</span>"
                             <span> </span>
                             <span className="blue-text">focusable</span>: true
                         </code>
                         <code className="padding-left-120">StaticText "Resources"</code>
                         <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">link "<span className="blue-text">About</span>"
+                        <code className="padding-left-90">
+                            link "<span className="blue-text">About</span>"
                             <span> </span>
                             <span className="blue-text">focusable</span>: true
                         </code>
@@ -230,6 +231,7 @@ export default function MostCommonBugs() {
                     {/* *************2.2 Implicit vs. Explicit Accessibility Roles********************** */}
                     <h3 className="scroll-target"
                         id="Implicit vs. Explicit Accessibility Roles"
+                        aria-label="Implicit versus Explicit Accessibility Roles"
                     >
                         Implicit vs. Explicit Accessibility Roles
                     </h3>
@@ -253,9 +255,8 @@ export default function MostCommonBugs() {
                     
                     <p className="white-bg">
                         We have a focusable (i.e. actionable) element, a link, with the name "Home". 
-                        For a keyboard user, 
-                        this means that they can navigate to it by pressing the <code>Tab</code> key, 
-                        and activate it by pressing <code>Enter</code>. 
+                        For a keyboard user, this means that they can navigate to it by pressing 
+                        the <code>Tab</code> key, and activate it by pressing <code>Enter</code>. 
                     </p>
                     <p>
                         At the time of this snapshot, the link was in focus, which means that it was
@@ -307,7 +308,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* **************Accessible Name***************** */}
-                <div className="bug a11yName" id="The Accessible Name">
+                <div className="section a11yName" id="The Accessible Name">
                     <h2>The Accessible Name</h2>
                     <p>
                         Notice how each actionable object in the accessibility tree above has a name? 
@@ -390,7 +391,7 @@ export default function MostCommonBugs() {
                     
 
                 {/* CONCLUSION */}
-                <div className="bug section conclusion-howA11yWorks" id="Conclusion">
+                <div className="section conclusion-howA11yWorks" id="Conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
