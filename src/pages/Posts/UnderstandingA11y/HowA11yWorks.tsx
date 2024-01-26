@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
+import useScrollToSection from "../../../hooks/useScrollToSection"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
@@ -36,7 +37,8 @@ const contents = [
 ]
 
 export default function MostCommonBugs() {
-    useDocTitle("How Accessibility Works | Web for Everyone");    
+    useDocTitle("How Accessibility Works | Web for Everyone");  
+    useScrollToSection();  
     
     return (
         <div className="article-container howA11yWorks-container">

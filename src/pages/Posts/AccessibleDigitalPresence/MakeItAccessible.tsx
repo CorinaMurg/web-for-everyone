@@ -88,39 +88,45 @@ export default function MakeItAccessible() {
                        
                     </p> */}
                     <div className="highlight">
-                        <p className="fake-heading-p pink-text">Automated testing tools</p>
-                        <p>
+                        <details>
+                            <summary>
+                                <span className="details-title">
+                                    Automated testing tools for accessibility
+                                </span>
+                            </summary>
+                            <p>
                             Automated tools are imperfect. You will always need to do manual testing and user 
                             testing to ensure your site is accessible to everyone. 
-                        </p>
-                        <p>
-                            However, these tools are a great first step. Moreover, as we are now looking at how to 
-                            avoid the most common accessibility bugs, you will see that they are easy to spot with these tools.
-                        </p>
-                        <p>
-                            Here are a few of the most popular accessibility browser extensions:
-                        </p>
-                        <p className="bullet-point-line">
-                            <a href=" https://wave.webaim.org/extension/" 
-                                target="_blank" rel="noreferrer"   
-                            >
-                                WebAIM's WAVE
-                            </a>
-                        </p>
-                        <p className="bullet-point-line">
-                            <a href="https://www.deque.com/axe/devtools/" 
-                                target="_blank" rel="noreferrer"
-                            >
-                                Deque's axe DevTools
-                            </a>
-                        </p>
-                        <p className="bullet-point-line">
-                            <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
-                                target="_blank" rel="noreferrer"
-                            >
-                                Google's Lighthouse
-                            </a>
-                        </p>
+                            </p>
+                            <p>
+                                However, these tools are a great first step. Moreover, as we are now looking at how to 
+                                avoid the most common accessibility bugs, you will see that they are easy to spot with these tools.
+                            </p>
+                            <p>
+                                Here are a few of the most popular accessibility browser extensions:
+                            </p>
+                            <p className="bullet-point-line">
+                                <a href=" https://wave.webaim.org/extension/" 
+                                    target="_blank" rel="noreferrer"   
+                                >
+                                    WebAIM's WAVE
+                                </a>
+                            </p>
+                            <p className="bullet-point-line">
+                                <a href="https://www.deque.com/axe/devtools/" 
+                                    target="_blank" rel="noreferrer"
+                                >
+                                    Deque's axe DevTools
+                                </a>
+                            </p>
+                            <p className="bullet-point-line">
+                                <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                                    target="_blank" rel="noreferrer"
+                                >
+                                    Google's Lighthouse
+                                </a>
+                            </p>
+                        </details>
                     </div>
                 </div>
 
@@ -158,25 +164,35 @@ export default function MakeItAccessible() {
                             test your colors as you're building. 
                         </p>
                         
-                    </div>
-                    
-                    <div className="section-image">
-                        <img src="/assets/images/colorContrast.jpg" 
-                            alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is a dark grey 
-                            (#212121) and the background color is a dark green (#078005). The contrast ratio displayed is 3.14:1."/>
-                    </div>
-
-                    <div className="highlight">
-                        <p>Checking is easy: enter the foreground and background colors for a given element, and the 
+                        <p>
+                            Checking is easy: enter the foreground and background colors for a given element, and the 
                             tool will tell you if the contrast ratio is sufficient.
                         </p>
                     </div>
 
-                    <div className="section-image">
-                        <img src="/assets/images/colorContrastAnswer.jpg" 
-                            alt="A screenshot of WebAIM's color contrast checker results. Normal Text fails both 
-                            standards WCAG A and AA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
-                            and User Interface Components passes WCAG AA."/>
+                    <div className="highlight">
+                        <details>
+                            <summary>
+                                <span className="details-title">
+                                    Example: Using WebAIM's contrast checker
+                                </span>
+                            </summary>
+                            <br></br>
+                            <p className="margin-top-30">Enter the foreground and background colors:</p>
+                            <div className="section-image">
+                                <img src="/assets/images/colorContrast.jpg" 
+                                    alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is a dark grey 
+                                    (#212121) and the background color is a dark green (#078005). The contrast ratio displayed is 3.14:1."/>
+                            </div>
+                            <br></br>
+                            <p className="margin-top-30">View the results:</p>
+                            <div className="section-image">
+                                <img src="/assets/images/colorContrastAnswer.jpg" 
+                                    alt="A screenshot of WebAIM's color contrast checker results. Normal Text fails both 
+                                    standards WCAG A and AA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
+                                    and User Interface Components passes WCAG AA."/>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
@@ -272,12 +288,11 @@ export default function MakeItAccessible() {
                                 <p><span className="pink-text bold">4. </span>aria-labelledby</p>
                                 <p><span className="pink-text bold">5. </span>title</p>
                                 <p>
-                                    <a href="/resources/how-accessibility-works#the-accessible-name" 
+                                    <Link to="/resources/how-accessibility-works#the-accessible-name" 
                                         className="pink-text"
-                                        onClick={() => scrollToSection('the-accessible-name')}
                                     >
                                         Learn more about the accessible name
-                                    </a>
+                                    </Link>
                                 </p>
                             </details>
                         </div>
