@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
-
-import windowScrollTop from "../../../utils/windowScrollTop";
+import scrollToTop from "../../../utils/scrollToTop"
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common A11y Bugs | Web for Everyone");    
@@ -211,7 +210,7 @@ export default function MostCommonBugs() {
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/make-it-accessible-part1" 
                                 className="read-next pink-text"
-                                onClick = { () => { windowScrollTop() } }
+                                onClick = { () => { scrollToTop() } }
                         >
                             Your Portfolio Site: Let's Make It Accessible!
                         </Link>
@@ -225,7 +224,7 @@ export default function MostCommonBugs() {
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/how-accessibility-works" 
                                 className="read-next pink-text"
-                                onClick = { () => { windowScrollTop() } }
+                                onClick = { () => { scrollToTop() } }
                         >
                             How Accessibility Works
                         </Link>

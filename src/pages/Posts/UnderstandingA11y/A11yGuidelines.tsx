@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import windowScrollTop from "../../../utils/windowScrollTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
+import scrollToTop from "../../../utils/scrollToTop"
 import styles from "./A11yGuidelines.module.css"
 
 export default function MostCommonBugs() {
@@ -302,7 +302,7 @@ export default function MostCommonBugs() {
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/make-it-accessible" 
                                 className="read-next pink-text"
-                                onClick={() => { windowScrollTop() }}
+                                onClick={() => { scrollToTop() }}
                         >
                             Your Portfolio Site: Let's Make It Accessible!
                         </Link>

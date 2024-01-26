@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import windowScrollTop from "../../../utils/windowScrollTop"
+import windowScrollTop from "../../../utils/scrollToTop"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"

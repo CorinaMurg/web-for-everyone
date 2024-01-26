@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
-import handleLinkClick from "../utils/windowScrollTop"
+import scrollToTop from "../utils/scrollToTop"
 import styles from './Resources.module.css'
 import "../global.css"
 
@@ -30,7 +30,7 @@ export default function Accessibility() {
         "build-accessible-components": "Building Accessible Components",
         "learning-resources": "Learning Resources",
     };
-    {styles['hero-image']}
+  
     return (
         <div className={styles.resources}>
 
@@ -75,7 +75,7 @@ export default function Accessibility() {
                                             <Link 
                                                 to={post.to} 
                                                 className="hover-underline"
-                                                onClick={handleLinkClick}
+                                                onClick={scrollToTop}
                                             >
                                                 {post.title}
                                             </Link>

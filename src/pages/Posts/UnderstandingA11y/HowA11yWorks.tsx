@@ -12,25 +12,25 @@ const contents = [
         ariaLabel: "In a Nutshell: How Accessibility works",
     },
     {
-        href: "#The Accessibility Tree",
+        href: "#the-accessibility-tree",
         text: "The Accessibility Tree",
     },
     {
-        href: "#DOM Tree vs. Accessibility Tree",
+        href: "#DOM-tree-vs-accessibility-tree",
         text: "DOM Tree vs. Accessibility Tree",
         className: "padding-left-30",
     },
     {
-        href: "#Implicit vs. Explicit Accessibility Roles",
+        href: "#implicit-vs-explicit-accessibility-roles",
         text: "Implicit vs. Explicit Roles",
         className: "padding-left-30",
     },
     {
-        href: "#The Accessible Name",
+        href: "#the-accessible-name",
         text: "The Accessible Name",
     },
     {
-        href: "#Conclusion",
+        href: "#conclusion",
         text: "Conclusion",
     },
 ]
@@ -73,17 +73,17 @@ export default function MostCommonBugs() {
 
 
                 {/* *************2. A11Y TREE********************** */}
-                <div className="section a11yTree scroll-target" id="The Accessibility Tree">
+                <div className="section a11yTree scroll-target" id="the-accessibility-tree">
                     <h2>The Acccessibility Tree</h2>
                     
                     <div>
                         <p>
                             Each node in the tree is an accessible object. It represents either 
                         </p>
-                        <p className="fake-list-item white-bg">
+                        <p className="bullet-point-line margin-top-20 white-bg">
                             an actionable element, like a <code>link</code> or <code>button</code>, or
                         </p>
-                        <p className="fake-list-item white-bg">
+                        <p className="bullet-point-line margin-top-20 white-bg">
                             an element that  provides information about the page content and structure, 
                             like a <code>navbar</code> or a <code>heading</code>.
                         </p>
@@ -106,17 +106,15 @@ export default function MostCommonBugs() {
                                 To view the accessibility tree, open the Developer Tools and select the 
                                 acccessibility tab. 
                             </p>
-
                             <p>
                                 Here a short video of how to access and use the accessbility tree
                                 and all related information in Chrome:
-
                             </p>
                         </details>
                     </div>
 
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
-                    <h3 className="scroll-target" id="DOM Tree vs. Accessibility Tree">
+                    <h3 className="section scroll-target" id="DOM-tree-vs-accessibility-tree">
                         DOM Tree vs. Accessibility Tree
                     </h3>
                     <p> 
@@ -231,8 +229,8 @@ export default function MostCommonBugs() {
                     </div>
                     
                     {/* *************2.2 Implicit vs. Explicit Accessibility Roles********************** */}
-                    <h3 className="scroll-target"
-                        id="Implicit vs. Explicit Accessibility Roles"
+                    <h3 className="section scroll-target"
+                        id="implicit-vs-explicit-accessibility-roles"
                         aria-label="Implicit versus Explicit Accessibility Roles"
                     >
                         Implicit vs. Explicit Accessibility Roles
@@ -310,7 +308,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* **************Accessible Name***************** */}
-                <div className="section a11yName" id="The Accessible Name">
+                <div className="section scroll-target a11yName" id="the-accessible-name">
                     <h2>The Accessible Name</h2>
                     <p>
                         Notice how each actionable object in the accessibility tree above has a name? 
@@ -393,11 +391,10 @@ export default function MostCommonBugs() {
                     
 
                 {/* CONCLUSION */}
-                <div className="section conclusion-howA11yWorks" id="Conclusion">
+                <div className="section scroll-target conclusion-howA11yWorks" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
-                        
                         Fortunately, these are also the easiest to fix!
                     </p>
                     <p>

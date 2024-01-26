@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import handleLinkClick from "../../utils/windowScrollTop"
+import scrollToTop from "../../utils/scrollToTop"
 import "./Footer.css"
 
 export default function Footer() {
@@ -9,17 +9,17 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link to="/" onClick={handleLinkClick} className="logo">WE <span className="logo-vertical">|</span>Web for Everyone</Link>
+                    <Link to="/" onClick={scrollToTop} className="logo">WE <span className="logo-vertical">|</span>Web for Everyone</Link>
                     
                 </div>
                 <div className="footer-right">
                     <div className="footer-right--navigation">
                         <span className="footer-heading">Site</span>
                         <ul>
-                            <li><Link to="/" onClick={handleLinkClick}><span className="footer-nav-link">Home</span></Link></li>
-                            <li><Link to="/projects" onClick={handleLinkClick}><span className="footer-nav-link">Projects</span></Link></li>
-                            <li><Link to="/accessibility" onClick={handleLinkClick}><span className="footer-nav-link">Accessibility</span></Link></li>
-                            <li><Link to="/about" onClick={handleLinkClick}><span className="footer-nav-link">About</span></Link></li>
+                            <li><Link to="/" onClick={scrollToTop}><span className="footer-nav-link">Home</span></Link></li>
+                            <li><Link to="/projects" onClick={scrollToTop}><span className="footer-nav-link">Projects</span></Link></li>
+                            <li><Link to="/accessibility" onClick={scrollToTop}><span className="footer-nav-link">Accessibility</span></Link></li>
+                            <li><Link to="/about" onClick={scrollToTop}><span className="footer-nav-link">About</span></Link></li>
                         </ul>
                     </div>
                     <div className="footer-right--social">

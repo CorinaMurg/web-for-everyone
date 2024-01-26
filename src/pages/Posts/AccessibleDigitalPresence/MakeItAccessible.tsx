@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
+import scrollToSection from "../../../utils/scrollToSection"
 import "./MakeItAccessible.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -11,35 +12,35 @@ const contents = [
         text: "Introduction",
     },
     {
-        href: "#Color Contrast",
+        href: "#color-contrast",
         text: "Color Contrast",
     },
     {
-        href: "#The 'alt' Attribute for Images",
+        href: "#the-alt-attribute-for-images",
         text: "The 'alt' Attribute for Images",
     },
     {
-        href: "#Links with Discernable Text",
+        href: "#links-with-discernable-text",
         text: "Links with Discernable Text",
     },
     {
-        href: "#Buttons with Discernable Text",
+        href: "#buttons-with-discernable-text",
         text: "Buttons with Discernable Text",
     },
     {
-        href: "#Labels for Inputs",
+        href: "#labels-for-inputs",
         text: "Labels for Inputs",
     },
     {
-        href: "#The Language Attribute",
+        href: "#the-language-attribute",
         text: "The Language Attribute",
     },
     {
-        href: "#Headings in Logical Order",
+        href: "#headings-in-logical-order",
         text: "Headings in Logical Order",
     },
     {
-        href: "#Conclusion",
+        href: "#conclusion",
         text: "Conclusion",
     },
 ]
@@ -59,56 +60,74 @@ export default function MakeItAccessible() {
                 </Link>
             </div>
 
-            <h1 id="intro">
+            <h1>
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
             <p className="subtitle">Check your portfolio site for the 7 most common bugs</p>
 
+            {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} />
 
-            <article className="article-content makeit">
+            {/* **************Article Content********************** */}
+            <div className="article-content makeit">
                 <div className="section intro">
-                    <p>Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the 
+                    <p>
+                        Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the 
                         functionality of a website increases. However, there are a few simple steps that
                         you can take to ensure that your site is accessible to most users. 
                     </p>
                     <p>
-                        The 2023 WebAIM Million Study of 1,000,000 home pages found that 96% had 
-                        detectable accessibility failures. 
+                        The 2023 WebAIM Million Study of 1,000,000 home pages found that 97% had 
+                        detectable accessibility failures.  
+                        Let's make sure your portfolio site is not one of them!
                     </p>
-                    <p>
+                    {/* <p>
                         In <a href="">The Most Common A11y Bugs</a> article we looked at the top 7 most common bugs 
                         and how they hinder users with disabilities. 
-                        Now, we will explore how to check for them in your portfolio site.
-                    </p>
+                       
+                    </p> */}
                     <div className="highlight">
                         <p className="fake-heading-p pink-text">Automated testing tools</p>
-                        <p>I recommend working with accessibility browser extensions like <span> </span>
-                            <a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank" rel="noreferrer">
-                                Google's Lighthouse
-                            </a> or <span> </span>
-                            <a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US&hsa_src=g&hsa_ad=601366939661&hsa_tgt=kwd-942809056982&hsa_mt=e&hsa_ver=3&hsa_acc=7854167720&hsa_kw=axe+browser+extension&hsa_grp=142979637091&hsa_cam=17378411167&hsa_net=adwords"
+                        <p>
+                            Automated tools are imperfect. You will always need to do manual testing and user 
+                            testing to ensure your site is accessible to everyone. 
+                        </p>
+                        <p>
+                            However, these tools are a great first step. Moreover, as we are now looking at how to 
+                            avoid the most common accessibility bugs, you will see that they are easy to spot with these tools.
+                        </p>
+                        <p>
+                            Here are a few of the most popular accessibility browser extensions:
+                        </p>
+                        <p className="bullet-point-line">
+                            <a href=" https://wave.webaim.org/extension/" 
+                                target="_blank" rel="noreferrer"   
+                            >
+                                WebAIM's WAVE
+                            </a>
+                        </p>
+                        <p className="bullet-point-line">
+                            <a href="https://www.deque.com/axe/devtools/" 
                                 target="_blank" rel="noreferrer"
                             >
                                 Deque's axe DevTools
                             </a>
-                            . These are automated tools designed to test for accessibility. </p>
-                            
-                        <p>Automated tools are imperfect. You will always need to do manual testing and user testing to ensure your site
-                            is accessible to everyone. 
                         </p>
-                        <p>However, these tools are a great first step. Moreover, as we are now looking at how to 
-                            avoid the most common accessibility bugs, you will see that they are easy to spot with these tools.
+                        <p className="bullet-point-line">
+                            <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                                target="_blank" rel="noreferrer"
+                            >
+                                Google's Lighthouse
+                            </a>
                         </p>
                     </div>
-
                 </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <div className="section contrast scroll-target" id="contrast">
+                <div className="section contrast scroll-target" id="color-contrast">
                     <div className="section-heading">
-                        <span className="bug-number">01</span>
+                        <span className="section-number">01</span>
                         <h2>Color Contrast</h2>
                     </div>
 
@@ -123,21 +142,25 @@ export default function MakeItAccessible() {
 
                     <div className="bug-body bug-body--contrast">
                         <h3>Mind the color contrast ratio to help users with low vision</h3>
-                        <p>Users with low vision can struggle with perceiving contrast. 
+                        <p>
+                            Users with low vision can struggle with perceiving contrast. 
                             They can't spot outlines, edges, and other details. 
                             Reading can also be challenging when the text color doesn't stand out much from the 
                             background.</p>
                         
-                        <p>As mentioned above, when you run a test with Lighthouse or axe DevTools, 
+                        <p>
+                            As mentioned above, when you run a test with Lighthouse or axe DevTools, 
                             if any elements failed the contrast ratio guidelines, you will know right away.
                         </p> 
-                        <p>If you'd like to me more proactive, you can use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a> to
+                        <p>
+                            If you'd like to me more proactive, you can 
+                            use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a> to
                             test your colors as you're building. 
                         </p>
                         
                     </div>
                     
-                    <div className="bug-image">
+                    <div className="section-image">
                         <img src="/assets/images/colorContrast.jpg" 
                             alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is a dark grey 
                             (#212121) and the background color is a dark green (#078005). The contrast ratio displayed is 3.14:1."/>
@@ -149,7 +172,7 @@ export default function MakeItAccessible() {
                         </p>
                     </div>
 
-                    <div className="bug-image">
+                    <div className="section-image">
                         <img src="/assets/images/colorContrastAnswer.jpg" 
                             alt="A screenshot of WebAIM's color contrast checker results. Normal Text fails both 
                             standards WCAG A and AA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
@@ -158,9 +181,9 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************ALT************************* */}
-                <section className="bug alt scroll-target" id="alt">
-                    <div className="bug-heading">
-                        <span className="bug-number">02</span>
+                <div className="section alt scroll-target" id="the-alt-attribute-for-images">
+                    <div className="section-heading">
+                        <span className="section-number">02</span>
                         <h2>The "alt" Attribute for Images</h2>
                     </div>
 
@@ -200,12 +223,12 @@ export default function MakeItAccessible() {
                         </p>
                     
                     </div>
-                </section>
+                </div>
 
                 {/* ****************LINKS************************* */}
-                <section className="bug links scroll-target" id="links">
-                    <div className="bug-heading">
-                        <span className="bug-number">03</span>
+                <div className="section links scroll-target" id="links-with-discernable-text">
+                    <div className="section-heading">
+                        <span className="section-number">03</span>
                         <h2>Links with Discernable Text</h2>
                     </div>
 
@@ -218,29 +241,45 @@ export default function MakeItAccessible() {
                     <div className="bug-body bug-body--links">
                         <h3>Help screen readers properly announce a link</h3>
                         
-                        <p>In the example above, the link to the LinkedIn profile
+                        <p>
+                            In the example above, the link to the LinkedIn profile
                             contains an icon and no visible text. A screen reader will announce part of the url 
                             (usually starting with the path segment)
                             and provide no information about the destination of the link. 
                         </p>
                             
-                        <p>Users relying on speech commands might not be able to activate the link. They would use
+                        <p>
+                            Users relying on speech commands might not be able to activate the link. They would use
                             "LinkedIn" to open the link, but "LinkedIn is not recognized by the speech recognition software.
                             The browser can not compute an accessible name for the link since none of the attributes that 
                             could provide one is present.
                         </p>
 
                         <div className="highlight">
-                            <p className="pink-text bold">Accessible Name Review</p>
-                            <p>Assitive technologies recognize an element by its accessible name. 
-                                One of the following must be present in order for the browser to compute it:</p>
-                            <ul>
-                                <li><span className="pink-text bold">1. </span>visible text</li>
-                                <li><span className="pink-text bold">2. </span>alt text</li>
-                                <li><span className="pink-text bold">3. </span>aria-label</li>
-                                <li><span className="pink-text bold">4. </span>aria-labelledby</li>
-                                <li><span className="pink-text bold">5. </span>title</li>
-                            </ul>
+                            <details>
+                                <summary>
+                                    <span className="details-title">
+                                        Accessible Name Review
+                                    </span>
+                                </summary>
+                                <p>
+                                    Assitive technologies recognize an element by its accessible name. 
+                                    One of the following must be present in order for the browser to compute it:
+                                </p>
+                                <p><span className="pink-text bold">1. </span>visible text</p>
+                                <p><span className="pink-text bold">2. </span>alt text</p>
+                                <p><span className="pink-text bold">3. </span>aria-label</p>
+                                <p><span className="pink-text bold">4. </span>aria-labelledby</p>
+                                <p><span className="pink-text bold">5. </span>title</p>
+                                <p>
+                                    <a href="/resources/how-accessibility-works#the-accessible-name" 
+                                        className="pink-text"
+                                        onClick={() => scrollToSection('the-accessible-name')}
+                                    >
+                                        Learn more about the accessible name
+                                    </a>
+                                </p>
+                            </details>
                         </div>
                         
                         <h3 className="pink-text">Ways to fix it</h3>
@@ -261,21 +300,27 @@ export default function MakeItAccessible() {
                             purpose of the link.
                         </p>
                         
-                        <p><span className="bold">Note:</span> This is not an exhaustive list of techniques you could use to make your social media
+                        <p><span className="bold">
+                            Note:</span> This is not an exhaustive list of techniques you could use to make your social media
                             links accessible. The ones shared above are the most commonly used and you can employ them
-                            anytime you use an icon instead of visible text. Plus, they also work with buttons.</p>
-                        <p className="white-bg"><span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
-                            <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute like an <code>&lt;img&gt;</code> would. 
-                            In the next section on buttons we will look at an example with an image and the <code>alt</code> attribute.
+                            anytime you use an icon instead of visible text. Plus, they also work with buttons.
+                        </p>
+                        <p className="white-bg">
+                            <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
+                            <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
+                            like an <code>&lt;img&gt;</code> would. 
+                        </p>
+                        <p className="white-bg">
+                            In the next section on buttons we will look at an example with an image and 
+                            the <code>alt</code> attribute.
                         </p>
                     </div>
-                    
-                </section>
+                </div>
                 
                 {/* ****************BUTTONS************************* */}
-                <section className="bug buttons scroll-target" id="buttons">
-                    <div className="bug-heading">
-                        <span className="bug-number">04</span>
+                <div className="section buttons scroll-target" id="buttons-with-discernable-text">
+                    <div className="section-heading">
+                        <span className="section-number">04</span>
                         <h2>Buttons with Discernable Text</h2>
                     </div>
 
@@ -299,14 +344,13 @@ export default function MakeItAccessible() {
                             Notice the "graphic" part? That's because the accessible name is computed from 
                             the <code>alt</code> text of an image.
                         </p>
-                    </div>
-                    
-                </section>
+                    </div>  
+                </div>
 
                 {/* ****************LABELS************************* */}
-                <section className="bug LABELS scroll-target" id="labels">
-                    <div className="bug-heading">
-                        <span className="bug-number">05</span>
+                <div className="section labels scroll-target" id="labels-for-inputs">
+                    <div className="section-heading">
+                        <span className="section-number">05</span>
                         <h2>Labels for Inputs</h2>
                     </div>
 
@@ -318,7 +362,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="bug-body bug-body--labels">
-                        <h3>Help assitive tech users understand the purpose of an input</h3>
+                        <h3>Help assistive tech users understand the purpose of an input</h3>
 
                         <p>You have two options:</p>
                         <p><span className="pink-text bold">Implicit Labeling:</span> This involves wrapping the input element 
@@ -340,26 +384,27 @@ export default function MakeItAccessible() {
                             <span> </span>
                             <code>for</code>
                             <span> </span>
-                            attribute must be the same as the 
-                            value of the 
-                            <span> </span>
+                            attribute must be the same as the value of the <span> </span>
                             <code>for</code>
                             <span> </span>
                             attribute of the input to which it is linked.
                         </p>
                     </div>
                     <div className="bug-code bug-code--labels">
-                        <code>&lt;<span className="pink-text">label</span> for="name"&gt;Name:&lt;/<span className="pink-text">label</span>&gt;</code>
-                        <code>&lt;<span className="pink-text">input</span> type="text" id="name" name="name"&gt;</code>
+                        <code>
+                            &lt;<span className="pink-text">label</span> for="name"&gt;Name:&lt;/
+                            <span className="pink-text">label</span>&gt;
+                        </code>
+                        <code>
+                            &lt;<span className="pink-text">input</span> type="text" id="name" name="name"&gt;
+                        </code>
                     </div>
-
-                    
-                </section>
+                </div>
 
                 {/* ****************LANG************************* */}
-                <section className="bug lang scroll-target" id="lang">
-                    <div className="bug-heading">
-                        <span className="bug-number">06</span>
+                <div className="section lang scroll-target" id="the-language-attribute">
+                    <div className="section-heading">
+                        <span className="section-number">06</span>
                         <h2>The Language Attribute</h2>
                     </div>
 
@@ -383,21 +428,29 @@ export default function MakeItAccessible() {
                     </div>
                     <div className="highlight">
                         <p className="fake-heading-p pink-text">Did you know?</p>
-                        <p>You can specify the language of a certain word or section of the page:</p>
-                        <p><code>&lt;p&gt;</code></p>
-                        <p><code>Hello in English, </code></p>
-                        <p><code>   &lt;span <span className="pink-text">lang</span>="fr"&gt;Bonjour&lt;/span&gt; </code></p>
-                        <p><code>in French.</code></p>
-                        <p><code>&lt;/p&gt;</code></p>
-                        <p>You can choose a the specific dialect:</p>
+                        <p>You can specify the language of a certain word or section of the page!</p>
+                        <p className="margin-block-0">
+                            <code>&lt;p&gt;</code>
+                        </p>
+                        <p className="margin-block-0 padding-left-30"><code>Hello in English, </code></p>
+                        <p className="margin-block-0 padding-left-30">
+                            <code>
+                                &lt;span <span className="pink-text">lang</span>="fr"&gt;Bonjour&lt;/span&gt; 
+                                in French.
+                            </code>
+                        </p>
+                        <p margin-block-0>.
+                            <code>&lt;/p&gt;</code>
+                        </p>
+                        <p className="margin-top-30">You can choose a specific dialect!</p>
                         <p><code>&lt;html <span className="pink-text">lang</span>="en-US"&gt;</code></p>
                     </div>
-                </section>
+                </div>
 
                 {/* ****************HEADINGS************************* */}
-                <section className="bug headings scroll-target" id="headings">
-                    <div className="bug-heading">
-                        <span className="bug-number">07</span>
+                <div className="section headings scroll-target" id="headings-in-logical-order">
+                    <div className="section-heading">
+                        <span className="section-number">07</span>
                         <h2>Headings in Logical Order</h2>
                     </div>
 
@@ -408,16 +461,24 @@ export default function MakeItAccessible() {
                     <div className="bug-body bug-body--headings">
                         <h3>Help screen reader users understand the structure of a page</h3>
                         <p>When trying to find information on a page, most screen reader users rely on headings.
-                            Pressing the <span className="pink-bg-white-text">h</span> key allows them to visit each heading to
-                            get an idea about the structure and the content of the page.  
+                            Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
+                            each heading to get an idea about the structure and the content of the page.  
                         </p>
                         <p className="fake-heading-p pink-text">A few rules to follow:</p>
                         <div>
-                            <p className="white-bg"><span className="pink-text bold">1. </span>Use <code>&lt;h1&gt;</code> only once per page.</p>
-                            <p className="white-bg"><span className="pink-text bold">2. </span>Use <code>&lt;h2&gt;</code> to <code>&lt;h6&gt;</code> in logical order.</p>
-                            <p className="white-bg"><span className="pink-text bold">3. </span>Don't skip heading levels.</p>
-                            <p className="white-bg"><span className="pink-text bold">4. </span>Don't use headings for decorative purposes. If you need a word or a phrase to look
-                                bigger or bolder on page, use
+                            <p className="bullet-point-line white-bg">
+                                Use <code>&lt;h1&gt;</code> only once per page.
+                            </p>
+                            <p className="bullet-point-line white-bg">
+                                Use <code>&lt;h2&gt;</code> to 
+                                <code>&lt;h6&gt;</code> in logical order.
+                            </p>
+                            <p className="bullet-point-line white-bg">
+                                Don't skip heading levels.
+                            </p>
+                            <p className="bullet-point-line white-bg">
+                                Don't use headings for decorative purposes. 
+                                If you need a word or a phrase to look bigger or bolder on page, use
                                 CSS. Do not use heading tags if a heading is not needed.
                             </p>
                         </div>
@@ -429,11 +490,8 @@ export default function MakeItAccessible() {
                             the above rules are broken.
                         </p>
                     </div>
-                    
-                </section>
-            </article>
-
-        </div>
-        
+                </div>
+            </div>
+        </div>    
     )
 }

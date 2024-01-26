@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useDocTitle } from "../../../hooks/useDocTitle"
 import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
-import windowScrollTop from "../../../utils/windowScrollTop";
+import windowScrollTop from "../../../utils/scrollToTop";
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 
 const contents = [

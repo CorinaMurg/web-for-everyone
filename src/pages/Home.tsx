@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import WeCanHelp from "../components/Home/WeCanHelp"
-import handleLinkClick from "../utils/windowScrollTop"
+import scrollToTop from "../utils/scrollToTop"
 import styles from './Home.module.css'
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
                             aria-label="Continue to article let's make it accessible"
                             to="/resources/make-it-accessible-part1" 
                             className={styles['hero-link']}
-                            onClick={() => { handleLinkClick() }}  
+                            onClick={() => { scrollToTop() }}  
                         >
                             <p className={styles['read_more']}>
                                 Continue to article
@@ -65,7 +65,7 @@ export default function Home() {
                                 </div>
                                 <Link 
                                     to={article.link} className={styles['mini-article-link']} 
-                                    onClick={() => { handleLinkClick() }}
+                                    onClick={() => { scrollToTop() }}
                                 >
                                     <span aria-hidden="true">{`0${index+1}`}</span>
                                     <h3>{article.title}</h3>

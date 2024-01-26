@@ -1,0 +1,9 @@
+
+export default function scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView();
+    }
+}
+
+

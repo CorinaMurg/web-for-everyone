@@ -14,7 +14,7 @@ export default function TableOfContents ({ contents }) {
                 {contents.map((item, index) => (
                 <li key={index} className={styles['table-contents--list--item']}>
                     <a  href={item.href} 
-                        className={`hover-pink ${item.className ? item.className : ''}`}
+                        className={`hover-pink ${item.className}`}
                         {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                     >
                         <code>{item.text}</code>
