@@ -14,7 +14,7 @@ export default function TableOfContents ({ contents }) {
                 {contents.map((item, index) => (
                 <li key={index} className={styles['table-contents--list--item']}>
                     <a  href={item.href} 
-                        className="hover-pink"
+                        className={`hover-pink ${item.className ? item.className : ''}`}
                         {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                     >
                         <code>{item.text}</code>
@@ -32,6 +32,7 @@ TableOfContents.propTypes = {
         href: PropTypes.string.isRequired,
         text: PropTypes.string.isRequired,
         ariaLabel: PropTypes.string,
+        className: PropTypes.string,
         })
     ).isRequired,
 };

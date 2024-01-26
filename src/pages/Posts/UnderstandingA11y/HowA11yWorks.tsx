@@ -18,10 +18,12 @@ const contents = [
     {
         href: "#DOM Tree vs. Accessibility Tree",
         text: "DOM Tree vs. Accessibility Tree",
+        className: "padding-left-30",
     },
     {
         href: "#Implicit vs. Explicit Accessibility Roles",
-        text: "Implicit vs. Explicit Accessibility Roles",
+        text: "Implicit vs. Explicit Roles",
+        className: "padding-left-30",
     },
     {
         href: "#The Accessible Name",
@@ -215,14 +217,14 @@ export default function MostCommonBugs() {
                         For example:
                     </p>
                     <div>
-                        <p className="fake-list-item white-bg margin-bottom-20">
+                        <p className="bullet-point-line white-bg margin-bottom-20">
                             the <code>navigation</code> role goes with <code>&lt;nav&gt;</code>
                         </p>
                       
-                        <p className="fake-list-item white-bg margin-bottom-20">
+                        <p className="bullet-point-line white-bg margin-bottom-20">
                             the <code>list</code> role goes with <code>&lt;ul&gt;</code> 
                         </p>
-                        <p className="fake-list-item white-bg margin-bottom-20">
+                        <p className="bullet-point-line white-bg margin-bottom-20">
                             the <code>link</code> role goes with <code>&lt;a&gt;</code> 
                         </p>
                         <p>But how does the browser know what role to assign to a given element?</p>
@@ -248,10 +250,10 @@ export default function MostCommonBugs() {
                         Let's zoom in on the first link object to understand why.
                     </p>
                     
-                    <p className="fake-list-item">Name: Home</p>
-                    <p className="fake-list-item">Role: link</p>
-                    <p className="fake-list-item">Property: focusable</p>
-                    <p className="fake-list-item">State: focused</p>
+                    <p className="bullet-point-line">Name: Home</p>
+                    <p className="bullet-point-line">Role: link</p>
+                    <p className="bullet-point-line">Property: focusable</p>
+                    <p className="bullet-point-line">State: focused</p>
                     
                     <p className="white-bg">
                         We have a focusable (i.e. actionable) element, a link, with the name "Home". 
@@ -298,11 +300,11 @@ export default function MostCommonBugs() {
                         fully functional until we add other attributes and events:
                     </p>
                     
-                    <p className="fake-list-item white-bg">
+                    <p className="bullet-point-line white-bg">
                         event handlers to allow the button to be activated with the <code>Enter</code><span> </span>
                         and <code>Space</code> keys (available by default with the <span> </span>
                         <code>&lt;button&gt;</code> element; important for screen reader users)</p>
-                    <p className="fake-list-item white-bg">depending on the desired functionality,
+                    <p className="bullet-point-line white-bg">depending on the desired functionality,
                         <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
                     </p>
                 </div>
