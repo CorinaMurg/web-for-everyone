@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useDocTitle } from "../../../hooks/useDocTitle"
+import useDocTitle from "../../../hooks/useDocTitle"
 import scrollToTop from "../../../utils/scrollToTop"
 
 export default function MostCommonBugs() {

@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import windowScrollTop from "../../../utils/scrollToTop"
-import { useDocTitle } from "../../../hooks/useDocTitle"
+import useDocTitle from "../../../hooks/useDocTitle"
+import useScrollToSection from "../../../hooks/useScrollToSection"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -21,6 +22,8 @@ const contents = [
 
 export default function MostCommonBugs() {
     useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
+    useScrollToSection();
+
 
     const [textColor, setTextColor] = useState('initial')
 
@@ -100,7 +103,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 1. LOW CONTRAST */}
-                <div className="section low-contrast scroll-target" id="Low Contrast Text">
+                <div className="section low-contrast scroll-target" id="low-contrast-text">
                     <h2>1. Low Contrast Text</h2>
                     <p className="white-bg">
                         Found on <span className="stats">83.6%</span> of pages, this bug involves text without enough 
@@ -122,7 +125,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 2. ALT TEXT */}
-                <div className="section alt-text scroll-target" id="Missing Alternative Text for Images">
+                <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
                     <h2>2. Missing <code>alt</code> Text for Images</h2>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
@@ -147,7 +150,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 3. LINKS */}
-                <div className="section empty-links scroll-target" id="Empty Links">
+                <div className="section empty-links scroll-target" id="empty-links">
                     <h2>3. Empty Links</h2>
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
@@ -172,7 +175,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 4. BUTTONS */}
-                <div className="section empty-buttons scroll-target" id="Empty Buttons">
+                <div className="section empty-buttons scroll-target" id="empty-buttons">
                     <h2>4. Empty Buttons</h2>
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons 
@@ -221,7 +224,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 5. INPUT LABELS */}
-                <div className="section missing-inputLabels scroll-target" id="Missing Input Labels">
+                <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
                     <h2>5. Missing Input Labels</h2>
                     <p>
                         <span className="stats">More than a third</span> 
@@ -271,7 +274,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 6. LANG */}
-                <div className="section missing-lang scroll-target" id="Missing Document Language">
+                <div className="section missing-lang scroll-target" id="missing-document-language">
                     <h2>6. Missing Document Language</h2>
                     <p>
                         This issue was found on <span className="stats">18.6%</span> of the home pages audited.
@@ -293,7 +296,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* 7. HEADINGS */}
-                <div className="section misused-headings scroll-target" id="Misused Headings">
+                <div className="section misused-headings scroll-target" id="misused-headings">
                     <h2>7. Misused Headings</h2>
                     <p>
                         <span className="stats">One fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
@@ -326,7 +329,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* CONCLUSION */}
-                <div className="section conclusion" id="Conclusion">
+                <div className="section conclusion" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.

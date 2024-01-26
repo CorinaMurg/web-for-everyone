@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import { useDocTitle } from "../../../hooks/useDocTitle"
+import useDocTitle from "../../../hooks/useDocTitle"
 import scrollToTop from "../../../utils/scrollToTop"
 import styles from "./A11yGuidelines.module.css"
 

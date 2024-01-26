@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useDocTitle } from "../../../hooks/useDocTitle"
-import scrollToSection from "../../../utils/scrollToSection"
+import useDocTitle from "../../../hooks/useDocTitle"
+import useScrollToSection from "../../../hooks/useScrollToSection"
 import "./MakeItAccessible.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -47,6 +47,7 @@ const contents = [
 
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible | Web for Everyone");
+    useScrollToSection();
     
     return (
         <div className="article-container makeit-container">

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './TableOfContents.module.css';
 import "../../global.css"
@@ -13,12 +14,12 @@ export default function TableOfContents ({ contents }) {
             <ul className={styles['table-contents--list']}>
                 {contents.map((item, index) => (
                 <li key={index} className={styles['table-contents--list--item']}>
-                    <a  href={item.href} 
+                    <Link  to={item.href} 
                         className={`hover-pink ${item.className}`}
                         {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                     >
                         <code>{item.text}</code>
-                    </a>
+                    </Link>
                 </li>
                 ))}
             </ul>

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useDocTitle } from "../../../hooks/useDocTitle"
+import useDocTitle from "../../../hooks/useDocTitle"
+import useScrollToSection from "../../../hooks/useScrollToSection"
 import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
 import windowScrollTop from "../../../utils/scrollToTop";
@@ -8,30 +9,31 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 
 const contents = [
     {
-        href: "#",
+        href: "#intro",
         text: "Introduction",
         "aria-label": "Introduction to what is accessibility"
     },
     {
-        href: "#The DNA of the Web is Accessible",
+        href: "#the-DNA-of-the-web-is-accessible",
         text: "The DNA of the Web is Accessible"
     },
     {
-        href: "#The Practical Reasons for Accessibility",
+        href: "#the-practical-reasons-for-accessibility",
         text: "The Practical Reasons for Accessibility"
     },
     {
-        href: "#Web Access is Everyone's Right",
+        href: "#web-access-is-everyone's-right",
         text: "Web Access is Everyone's Right"
     },
     {
-        href: "#Next Steps",
+        href: "#next-steps",
         text: "Next Steps"
     },
 ]
 
 export default function MostCommonBugs() {
-    useDocTitle("What is Accessiility | Web for Everyone");    
+    useDocTitle("What is Accessiility | Web for Everyone"); 
+    useScrollToSection();   
     
     return (
         <div className="article-container whatisa11y-container">
@@ -66,7 +68,7 @@ export default function MostCommonBugs() {
                 </div>
                     
                 {/* ****************The DNA of the Web is Accessible****************** */}
-                <div className="section scroll-target" id="The DNA of the Web is Accessible">
+                <div className="section scroll-target" id="the-DNA-of-the-web-is-accessible">
                     <h2>The DNA of the Web is Accessible</h2>
                     <p>
                         If you have good sight, you rely on it, along with a mouse or a keyboard, to open a webpage 
@@ -128,7 +130,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* ***************The Practical Reasons for Accessibility***************** */}
-                <div className="section scroll-target" id="The Practical Reasons for Accessibility">
+                <div className="section scroll-target" id="the-practical-reasons-for-accessibility">
                     <h2>The Practical Reasons for Accessibility</h2>
                     <p>
                         From a business side, there are certainly a few practical reasons that can motivate 
@@ -176,7 +178,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* *************Web Access is Everyone's Right******************** */}
-                <div className="section scroll-target" id="Web Access is Everyone's Right">
+                <div className="section scroll-target" id="web-access-is-everyone's-right">
                     <h2>Web Access is Everyone's Right</h2>
                     <p>
                         In our world, digital connectivity is key, and your finished product should allow everyone 
@@ -199,7 +201,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* *********NEXT***************** */}
-                <div className="bug scroll-target" id="Next Steps">
+                <div className="bug scroll-target" id="next-steps">
                     <h2>Next Steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 

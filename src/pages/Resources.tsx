@@ -1,9 +1,9 @@
 import React from "react"
-import { useDocTitle } from "../hooks/useDocTitle"
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import { Link } from "react-router-dom"
+import useDocTitle from "../hooks/useDocTitle"
+import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import scrollToTop from "../utils/scrollToTop"
 import styles from './Resources.module.css'
 import "../global.css"

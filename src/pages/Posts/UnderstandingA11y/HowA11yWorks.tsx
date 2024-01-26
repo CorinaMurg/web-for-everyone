@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useDocTitle } from "../../../hooks/useDocTitle"
+import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import styles from "./HowA11yWorks.module.css"
