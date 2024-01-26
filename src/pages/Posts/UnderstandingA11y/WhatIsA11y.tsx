@@ -31,7 +31,7 @@ const contents = [
 ]
 
 export default function MostCommonBugs() {
-    useDocTitle("Most Common A11y Bugs | Web for Everyone");    
+    useDocTitle("What is Accessiility | Web for Everyone");    
     
     return (
         <div className="article-container whatisa11y-container">
@@ -51,9 +51,9 @@ export default function MostCommonBugs() {
 
             {/* **************ARTICLE CONTENT***************** */}
             
-            <article className={`article-content ${styles['whatisa11y']}`}>
+            <div className={`article-content ${styles['whatisa11y']}`}>
                  {/* *************0. INTRO********************** */}
-                <section className="intro" id="intro">
+                <div className="setion intro" id="intro">
                     <p>
                         Becoming a web developer comes with a cool superpower: to create sites and apps
                         that <span className="yellow-bg">everyone</span>,
@@ -63,10 +63,10 @@ export default function MostCommonBugs() {
                         All visitors, regardless of how they access your finished product, will be able to navigate 
                         it and understand it.
                     </p>
-                </section>
+                </div>
                     
                 {/* ****************The DNA of the Web is Accessible****************** */}
-                <section className="bug scroll-target" id="The DNA of the Web is Accessible">
+                <div className="section scroll-target" id="The DNA of the Web is Accessible">
                     <h2>The DNA of the Web is Accessible</h2>
                     <p>
                         If you have good sight, you rely on it, along with a mouse or a keyboard, to open a webpage 
@@ -79,11 +79,11 @@ export default function MostCommonBugs() {
                         The tools you need to allow for these kinds of interactions (and many others!) 
                         are already in place:
                     </p>
-                    <p className="fake-list-item">
+                    <p className="bullet-point-line">
                         code syntax to create the structure and the content of your site: semantic HTML, 
                         CSS, and JavaScript
                     </p>
-                    <p className="fake-list-item">
+                    <p className="bullet-point-line">
                         assistive technologies to bridge your site and your users: screen readers, 
                         voice control software, braille displays, etc.
                     </p>
@@ -118,20 +118,18 @@ export default function MostCommonBugs() {
                             immediately aware of its purpose. A <code>&lt;div&gt;</code> is just a container 
                             intended for styling purposes or for layout, and requires additional code to make it
                             accessible.
-
                         </p>
                         <p>
-                            Always rely on semantic HTML. Think about the content and functionality you want to create,
+                            Always rely on semantic HTML! Think about the content and functionality you want to create,
                             and choose the appropriate HTML tag. While JavaScript 
                             will certainly help you with more complex acccessibility issues, semantic HTML is the 
                             backbone of accessibility.
                         </p>
                     </div>
-
-                </section>
+                </div>
 
                 {/* ***************The Practical Reasons for Accessibility***************** */}
-                <section className="bug scroll-target" id="The Practical Reasons for Accessibility">
+                <div className="section scroll-target" id="The Practical Reasons for Accessibility">
                     <h2>The Practical Reasons for Accessibility</h2>
                     <p>
                         From a business side, there are certainly a few practical reasons that can motivate 
@@ -177,10 +175,10 @@ export default function MostCommonBugs() {
                     
                         
                     <p>BUT, above all . . .</p>
-                </section>
+                </div>
 
                 {/* *************Web Access is Everyone's Right******************** */}
-                <section className="bug scroll-target" id="Web Access is Everyone's Right">
+                <div className="section scroll-target" id="Web Access is Everyone's Right">
                     <h2>Web Access is Everyone's Right</h2>
                     <p>
                         In our world, digital connectivity is key, and your code should allow everyone the ability 
@@ -200,10 +198,10 @@ export default function MostCommonBugs() {
                         news. Everyone deserves the same level of freedom and functionality when interacting with
                         the web.
                     </p>     
-                </section>
+                </div>
 
                 {/* *********NEXT***************** */}
-                <section className="bug scroll-target" id="Next Steps">
+                <div className="bug scroll-target" id="Next Steps">
                     <h2>Next Steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 
@@ -261,8 +259,8 @@ export default function MostCommonBugs() {
                         Together, we can build a web that's open to <span className="yellow-bg">everyone</span>!
                     </p>
                     
-                </section>
-            </article>
+                </div>
+            </div>
         </div>
     )
 }

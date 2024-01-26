@@ -1,25 +1,4 @@
-/* 
-.whatisa11y ul li{
-    margin-top: 20px;
-    line-height: 1.7;
-    margin-left: 20px;
-    position: relative;
-    color: var(--text-dark-color);
-    font-family: "Poppins", sans-serif;
-}
 
-.whatisa11y ul li span{
-    font-size: 1rem;
-}
-
-.whatisa11y ul li::before {
-    content: "•"; 
-    color: var(--pinkBright-color);
-    font-size: 25px; 
-    position: absolute;
-    left: -20px; 
-    top: -8px;
-} */
 
 
 
