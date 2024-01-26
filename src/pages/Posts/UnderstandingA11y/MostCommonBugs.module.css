@@ -1,0 +1,35 @@
+
+/* INTRO */
+.numbers {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.numbers span {
+    font-size: 1.1rem;
+    color: var(--pinkBright-color);
+    width: 6.5rem;
+    text-align: right;
+}
+
+/* LOW CONTRAST */
+
+.low-contrast--button {
+    background-color: var(--pinkBright-color);
+    border: none;
+    color: var(--text-light-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    align-self:auto;
+}
+
+.low-contrast--button:hover {
+    background-color: var(--text-dark-color);
+    cursor: pointer;
+}
+
+
+
