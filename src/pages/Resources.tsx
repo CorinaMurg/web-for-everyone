@@ -1,6 +1,6 @@
 import React from "react"
 import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import useScrollToSection from "../hooks/useScrollToSection"
 import { Link } from "react-router-dom"
 import useDocTitle from "../hooks/useDocTitle"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
@@ -10,17 +10,7 @@ import "../global.css"
 
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
-    const location = useLocation();
-
-    useEffect(() => {
-        const hash = location.hash.replace('#', ''); 
-        if (hash) {
-            const element = document.getElementById(hash);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }, [location]);
+    useScrollToSection();
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
