@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 interface Heading {
-    to: string;
+    href: string;
     text: string;
     level: number;
 }
@@ -14,7 +14,7 @@ export default function useHeadings (tags: string[]) {
         const tagsList = tags.join(', ');
         const elements = Array.from(document.querySelectorAll(tagsList))
             .map(elem => ({
-                to: `#${elem.id}`,
+                href: `#${elem.id}`,
                 text: elem.textContent || '',
                 level: Number(elem.nodeName.charAt(1))
             }));

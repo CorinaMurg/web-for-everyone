@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 import styles from './TableOfContents.module.css';
 import "../../global.css"
 
-export default function TableOfContents ({ contents }) {
+export default function TableOfContents ({ contents }: { contents: Array<any> }) {
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']}>
                 <code>Table of Contents</code>
             </h2>
             <ul className={styles['table-contents--list']}>
-                {contents.map((item, index) => (
+                {contents.map((item: any, index: number) => (
                 <li key={index} className={styles['table-contents--list--item']}>
                     <Link  to={item.href} 
                         className={`hover-pink ${item.className}`}

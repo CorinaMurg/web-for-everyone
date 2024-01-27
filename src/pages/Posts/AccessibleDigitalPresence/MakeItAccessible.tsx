@@ -5,6 +5,7 @@ import useScrollToSection from "../../../hooks/useScrollToSection"
 import "./MakeItAccessible.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../components/BackLinks/BackLinks"
 
 const contents = [
     {
@@ -51,15 +52,18 @@ export default function MakeItAccessible() {
     
     return (
         <div className="article-container makeit-container">
-            <div className="back-links scroll-target" id="back-links">
-                <Link to="/resources" className="back-link hover-pink">
-                    Resources
-                </Link>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">
-                    Accessibility and Your Digital Presence
-                </Link>
-            </div>
+            
+            {/* **************Back Links********************** */}
+            <BackLinks 
+                secondLink="Accessibility and Your Digital Presence" 
+                href="/resources#accessible-digital-presence" 
+            />
+
+            {/* **************Hero Banner********************** */}
+            {/* <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">
+                Accessibility and Your Digital Presence
+            </Link> */}
+            
 
             <h1>
                 <span>Your Portfolio Site:</span>
@@ -74,20 +78,17 @@ export default function MakeItAccessible() {
             <div className="article-content makeit">
                 <div className="section intro">
                     <p>
-                        Guaranteeing 100% accessibility is a complex task and it becomes even more challenging as the 
-                        functionality of a website increases. However, there are a few simple steps that
-                        you can take to ensure that your site is accessible to most users. 
+                        Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
+                        challenging as the functionality of a website increases. However, in a few 
+                        simple steps you can ensure that your site is free of the most common,
+                        easy-to-fix accessibility issues. 
                     </p>
                     <p>
-                        The 2023 WebAIM Million Study of 1,000,000 home pages found that 97% had 
-                        detectable accessibility failures.  
+                        The 2023 WebAIM Million Study of 1,000,000 home pages found 7 bugs 
+                        that are present on more than 97% of the sites.
                         Let's make sure your portfolio site is not one of them!
                     </p>
-                    {/* <p>
-                        In <a href="">The Most Common A11y Bugs</a> article we looked at the top 7 most common bugs 
-                        and how they hinder users with disabilities. 
-                       
-                    </p> */}
+                   
                     <div className="highlight">
                         <details>
                             <summary>
@@ -96,12 +97,13 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <p>
-                            Automated tools are imperfect. You will always need to do manual testing and user 
-                            testing to ensure your site is accessible to everyone. 
+                                Automated tools are imperfect. You will always need to do manual testing and 
+                                user testing to ensure your site is accessible to everyone. 
                             </p>
                             <p>
                                 However, these tools are a great first step. Moreover, as we are now looking at how to 
-                                avoid the most common accessibility bugs, you will see that they are easy to spot with these tools.
+                                avoid the most common accessibility bugs, you will see that they are easy to spot 
+                                with these tools.
                             </p>
                             <p>
                                 Here are a few of the most popular accessibility browser extensions:

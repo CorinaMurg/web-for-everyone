@@ -1,0 +1,17 @@
+
+.back-links {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: var(--main-margin);
+}
+
+.back-links a {
+    text-decoration: none;
+}
+
+.back-links svg {
+    margin-inline: 10px;
+}
