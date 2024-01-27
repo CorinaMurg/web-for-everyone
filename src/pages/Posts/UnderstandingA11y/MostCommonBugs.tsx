@@ -46,17 +46,17 @@ export default function MostCommonBugs() {
             <h1>The Most Common <span className="yellow-bg">Accessibility Bugs</span></h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
-            <TableOfContents contents={contents} />
+            {/* <TableOfContents contents={contents} /> */}
             
             <div className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
                 <div className="section intro" id="intro">
                     <p>
-                        Here's one cool thing that happens every year: the organization 
+                        Here's one cool thing that happens every year: 
                         <span> </span>
                         <strong>Web Accessibility in Mind</strong>, also known as <span> </span>
                             <a href="https://webaim.org/" target="_blank" rel="noreferrer">
-                                WebAIM
+                                <strong>WebAIM</strong>
                             </a>         
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
                         The results have always been pretty grim, and 2023 was no exception:
