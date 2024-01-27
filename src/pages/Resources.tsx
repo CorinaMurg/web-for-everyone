@@ -42,11 +42,11 @@ export default function Accessibility() {
                 <ul className={styles['resources--table-contents--list']}>
                     {Object.entries(sectionTitles).map(([label, heading], index) => (
                         <li key={index} className={styles['resources--table-contents--list--item']}>
-                            <a href={`#${label}`} 
+                            <Link to={`#${label}`} 
                                 className="hover-pink"
                             >
-                                {heading}
-                            </a>
+                                <code>{heading}</code>
+                            </Link>
                         </li>
                     ))}
                 </ul>
