@@ -49,7 +49,7 @@ export default function MostCommonBugs() {
             <p className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}
-            {/* <TableOfContents contents={contents} /> */}
+            <TableOfContents contents={contents} />
 
             {/* **************ARTICLE CONTENT***************** */}
             

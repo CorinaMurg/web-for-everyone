@@ -55,7 +55,7 @@ export default function MostCommonBugs() {
             <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
             <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
-            {/* <TableOfContents headings={contents} /> */}
+            <TableOfContents headings={contents} />
             
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}

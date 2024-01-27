@@ -46,7 +46,7 @@ export default function MostCommonBugs() {
             <h1>The Most Common <span className="yellow-bg">Accessibility Bugs</span></h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
-            {/* <TableOfContents contents={contents} /> */}
+            <TableOfContents contents={contents} />
             
             <div className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
