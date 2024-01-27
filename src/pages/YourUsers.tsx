@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useDocTitle } from "../hooks/useDocTitle"
+import useDocTitle from "../hooks/useDocTitle"
 import { projectsData } from "../data/projectsData/projectsData"
 import { User } from "../components/Users/User"
 import "./YourUsers.css"

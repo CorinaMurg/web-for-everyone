@@ -1,6 +1,6 @@
 
 import React from "react";
-import { useDocTitle } from "../hooks/useDocTitle";
+import useDocTitle from "../hooks/useDocTitle";
 import "./About.css";
 
 export default function About() {

@@ -1,6 +1,6 @@
 
 import React from "react"
-import { useDocTitle } from "../hooks/useDocTitle"
+import useDocTitle from "../hooks/useDocTitle"
 import { Link } from "react-router-dom"
 
 export default function NotFound() {
