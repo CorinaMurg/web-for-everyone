@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
-import "./MakeItAccessible.css"
+import styles from './MakeItAccessible2.module.css'
 
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible | Web for Everyone");

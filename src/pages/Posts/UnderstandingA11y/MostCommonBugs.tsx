@@ -28,7 +28,7 @@ export default function MostCommonBugs() {
     const [textColor, setTextColor] = useState('initial')
 
     const toggleColor = () => {
-        setTextColor(textColor === 'initial' ? '#50cbe9' : 'initial');
+        setTextColor(textColor === 'initial' ? '#169AC0' : 'initial');
     };
     
     return (
@@ -113,7 +113,7 @@ export default function MostCommonBugs() {
                     <div className="highlight">
                         <p style={{ color: textColor }}>
                             Users with vision problems would have a hard time reading this sentence if the font color 
-                            had an hex value of #50cbe9. Press the button to test it.
+                            had an hex value of #169AC0. Press the button to test it.
                         </p>
                         <button aria-label="Change text color from black to light blue."
                                 className={styles['low-contrast--button']}

@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
-import "./MakeItAccessible.css"
 import "../../../global.css"
+import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 
@@ -51,7 +51,7 @@ export default function MakeItAccessible() {
     useScrollToSection();
     
     return (
-        <div className="article-container makeit-container">
+        <div className={`article-container ${styles['makeit-container']}`}>
             
             {/* **************Back Links********************** */}
             <BackLinks 
@@ -59,7 +59,6 @@ export default function MakeItAccessible() {
                 href="/resources#accessible-digital-presence" 
             />
             
-
             <h1>
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
@@ -83,18 +82,39 @@ export default function MakeItAccessible() {
                         that are present on more than 97% of the sites.
                         Let's make sure your portfolio site is not one of them!
                     </p>
-                   
+                   <p>
+                        In this article, we will look at each bug in detail and learn how to fix it. 
+                        The article is designed to be a quick reference guide, but sufficient 
+                        information is provided to help you understand the underlying concepts.
+                        Links to additional resources are also provided.
+                   </p>
                     <div className="highlight">
                         <details>
                             <summary>
                                 <span className="details-title">
-                                    Automated testing tools for accessibility
+                                    Automated testing tools: optional, but recommended!
                                 </span>
                             </summary>
                             <p>
-                                Automated tools are imperfect. You will always need to do manual testing and 
-                                user testing to ensure your site is accessible to everyone. 
+                                Automated accessibility tools are browser extensions that can help
+                                you evaluate the accessibility of your site. 
+                                These tools are designed to scan web pages and identify potential accessibility 
+                                issues based on established web accessibility standards, such as WCAG 
+                                (Web Content Accessibility Guidelines).
                             </p>
+                            <p>
+                                While extremely useful for quickly 
+                                spotting common problems, automated tools are imperfect.
+                                It's important to note that they don't capture all 
+                                aspects of accessibility. 
+                            </p>
+                            <p>
+                                <strong>
+                                    Manual testing and user testing remain crucial for 
+                                    ensuring comprehensive accessibility.
+                                </strong>
+                            </p>
+            
                             <p>
                                 However, these tools are a great first step. Moreover, as we are now looking at how to 
                                 avoid the most common accessibility bugs, you will see that they are easy to spot 
@@ -124,12 +144,22 @@ export default function MakeItAccessible() {
                                     Google's Lighthouse
                                 </a>
                             </p>
+                            <p>
+                                Each tool has its own strengths and weaknesses. Best if you pick one and get 
+                                familiar with it. When you run a test, you will get a list of issues and
+                                and links to resources that will help you fix them.
+                            </p>
+                            <p>
+                                Please note that these tools might detect accessibility issues that are not 
+                                discussed in this article. You are welcome to contact Web for Everyone via LinkedIn
+                                if you have any questions.
+                            </p>
                         </details>
                     </div>
                 </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <div className="section contrast scroll-target" id="color-contrast">
+                <div className={`section ${styles['contrast']} scroll-target`} id="color-contrast">
                     <div className="section-heading">
                         <span className="section-number">01</span>
                         <h2>Color Contrast</h2>
@@ -137,11 +167,21 @@ export default function MakeItAccessible() {
 
                     <div className="code code--contrast">
                         <code>I'm normal text (16px).</code>
-                        <code>I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.</code>
-                        <code>I'm not-too-large (19px or larger), but bold text.</code>
-                        <code>I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.</code>
-                        <code>I'm large text (24px or larger).</code>
-                        <code>I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.</code>
+                        <code>
+                            I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.
+                        </code>
+                        <code className="code-yellow-color">
+                            <span className="code-yellow-color">I'm not-too-large (19px or larger), but bold text.</span>
+                        </code>
+                        <code>
+                            <span className="code-yellow-color">I need a contrast ratio of at least</span> <span className="pink-bg-white-text">3:1</span>.
+                        </code>
+                        <code>
+                            <span className="code-blue-color">I'm large text (24px or larger).</span>
+                        </code>
+                        <code>
+                            <span className="code-blue-color">I need a contrast ratio of at least</span> <span className="pink-bg-white-text">3:1</span>.
+                        </code>
                     </div>
        
                     <h3>Mind the color contrast ratio to help users with low vision</h3>
@@ -153,21 +193,32 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p>
-                        As mentioned above, when you run a test with Lighthouse or axe DevTools, 
+                        As mentioned above, when you run a test with an automated tool, 
                         if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
                     <p>
-                        If you'd like to me more proactive, you can 
-                        use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a> to
-                        test your colors as you're building. 
+                        If you'd like to be more proactive and test your colors as you're building, 
+                        use <span> </span>
+                        <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">
+                            <strong>WebAIM's contrast checker</strong>
+                        </a> 
+                        .  
                     </p>
-                    
-                    <p>
-                        Checking is easy: enter the foreground and background colors for a given element, and the 
-                        tool will tell you if the contrast ratio is sufficient.
-                    </p>               
+                              
+                    <p className="margin-top-30">
+                        Checking the color contrast is easy: 
+                    </p>
+                    <p className="bullet-point-line">
+                        enter the <strong>foreground and background colors</strong> for a given element
+                    </p>
+                    <p className="bullet-point-line">
+                        the tool will calculate the <strong>contrast ratio</strong> for you
+                    </p>
+                    <p className="bullet-point-line">
+                        you will get <strong>a pass or fail result</strong> for both the AA and AAA WCAG standards.
+                    </p>             
 
-                    <div className="highlight">
+                    <div className="highlight margin-top-30">
                         <details>
                             <summary>
                                 <span className="details-title">
@@ -175,20 +226,42 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <br></br>
-                            <p className="margin-top-30">Enter the foreground and background colors:</p>
+                            <p className="margin-top-30">
+                                <span className="pink-num">1. </span>Enter the foreground and background colors:
+                            </p>
                             <div className="section-image">
-                                <img src="/assets/images/colorContrast.jpg" 
-                                    alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is a dark grey 
-                                    (#212121) and the background color is a dark green (#078005). The contrast ratio displayed is 3.14:1."/>
+                                <img src="/assets/images/colorContrastInput.jpg" 
+                                    alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is blue
+                                    with hex value 169AC5 and the background color is a light gray with hex value 078005. 
+                                    The contrast ratio displayed is 3.02:1."/>
                             </div>
-                            <br></br>
-                            <p className="margin-top-30">View the results:</p>
+                            <p>
+                                Notice the <strong>lightness sliders</strong> that allow you to adjust the colors and see how 
+                                the contrast ratio changes.
+                            </p>
+                           
+                            <p style={{ marginTop: '50px' }}>
+                                <span className="pink-num">2. </span>View the contrast ratio and the pass/fail results for each standard:
+                            </p>
                             <div className="section-image">
-                                <img src="/assets/images/colorContrastAnswer.jpg" 
+                                <img src="/assets/images/colorContrastAnswers.jpg" 
                                     alt="A screenshot of WebAIM's color contrast checker results. Normal Text fails both 
-                                    standards WCAG A and AA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
+                                    standards WCAG AA and AAA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
                                     and User Interface Components passes WCAG AA."/>
                             </div>
+                            <p className="white-bg">
+                                Notice how a ratio of <span className="pink-bg-white-text">3.14:1</span> fails 
+                                WCAG AA for normal text, but passes for large text.
+                            </p>
+                            
+                            <p style={{ marginTop: '30px' }}>
+                                For quick access, you can <span> </span>
+                                <a href="https://webaim.org/resources/contrastchecker/bookmarklet" target="_blank" rel="noreferrer">
+                                    <strong>add the contrast checker to your Bookmarks bar</strong>
+                                </a> 
+                                <span> </span>in one easy step!
+                            </p>
+                           
                         </details>
                     </div>
                 </div>
@@ -203,23 +276,25 @@ export default function MakeItAccessible() {
                     <div className="code code--alt">
                         <code><span className="code-blue-color">&lt;img</span></code>
                         <code>src="..."</code>
-                        <code><span className="pink-text">alt</span>="Fill me in or leave me empty, but do include me!"</code>
+                        <code><span className="code-pink-color">alt</span>="Fill me in or leave me empty, but do include me!"</code>
                         <code><span className="code-blue-color">/&gt;</span></code>
                     </div>
-
-                   
+           
                     <h3>Help screen readers decide whether to read an image or not</h3>
-                    <p className="white bg">Is your image purely decorative? Or, is the information presented in the image also conveyed by the 
-                        adjacent text? Then it's best to leave the <code>alt</code> attribute empty.</p>
-                    
-                    <p className="white-bg">Does your image contain information that is not available in the text? 
+                    <p className="white-bg">
+                        Is your image purely decorative? Or, is the information presented in the image also 
+                        conveyed by adjacent text? Then it's best to leave the <code>alt</code> attribute empty.
+                    </p>
+                    <p className="white-bg">
+                        Does your image contain essential information that is not available in the text? 
                         Then add a short description in the <code>alt</code> attribute.
                     </p> 
                     <p className="white-bg">
-                        Either way, it's important to add the <code>alt</code> attribute to all images. If empty, 
+                        Either way, it's important to <strong>add the <code>alt</code> attribute to all images</strong>. 
+                        {/* If empty, 
                         it tells the screen reader to skip the image. This way it doesn't waste time reading it. 
                         If it's missing though, the screen reader will read the name of the source file, 
-                        which is not helpful to the user.
+                        which is not helpful to the user. */}
                     </p>
                     
                     <div className="highlight">
@@ -229,10 +304,12 @@ export default function MakeItAccessible() {
                             as an empty <code>alt</code>!
                         </p>
                         <p>
-                            <span className="pink-text bold">Missing <code>alt</code>:</span> screen readers might read the source file name.
+                            <span className="pink-text bold">Missing <code>alt</code>:</span> screen readers 
+                            might read the source file name.
                         </p>
                         <p>
-                            <span className="pink-text bold">Empty <code>alt</code>:</span> screen readers ignore the image.
+                            <span className="pink-text bold">Empty <code>alt</code>:</span> screen readers ignore 
+                            the image.
                         </p>
                     
                     </div>
@@ -268,8 +345,8 @@ export default function MakeItAccessible() {
                     </p>
                         
                     <p>
-                        Users relying on speech commands will not be able to activate the link. Their attempt to
-                        say "click on LinkedIn" will fail because the assistive tech will not recognize the 
+                        Users relying on speech commands will not be able to activate the link. The comman
+                        "click on LinkedIn" will fail because the assistive tech will not recognize the 
                         name "LinkedIn". In fact, the link has no accessible name.
                         The browser can not compute it since none of the attributes that could provide one is present.
                     </p>
@@ -305,7 +382,7 @@ export default function MakeItAccessible() {
                         </details>
                     </div>
                     
-                    <h3 className="pink-text">Ways to fix it</h3>
+                    <h3 className="pink-text">Ways to fix links to social media profiles</h3>
                     <p className="white-bg">
                         <span className="pink-num" aria-hidden="true">1. </span> 
                         Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
@@ -313,7 +390,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         <span className="pink-num" aria-hidden="true">2. </span> 
-                        Replace the image with text (e.g., LinkedIn). 
+                        Replace the icon with text (e.g., LinkedIn). 
                     </p>
                     <p className="white-bg">
                         <span className="pink-num" aria-hidden="true">3. </span> 
@@ -323,8 +400,9 @@ export default function MakeItAccessible() {
                         purpose of the link.
                     </p>
                     
-                    <p><span className="bold">
-                        Note:</span> This is not an exhaustive list of techniques you could use to make your social media
+                    <p style={{ marginTop: '40px' }}>
+                        <span className="bold">Note: </span> 
+                        This is not an exhaustive list of techniques you could use to make your social media
                         links accessible. The ones shared above are the most commonly used and you can employ them
                         anytime you use an icon instead of visible text. Plus, they also work with buttons.
                     </p>
@@ -348,23 +426,36 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--buttons">
-                        <code>&lt;<span className="pink-text">button</span> id="closeModal"&gt;</code>
-                        <code>&lt;<span className="pink-text">img</span> alt="Close modal" src="x-mark.svg"/&gt;</code>
-                        <code>&lt;/<span className="pink-text">button</span>&gt;</code>
+                        <code>
+                            <span className="code-blue-color">&lt;button</span> id="closeModal"
+                            <span className="code-blue-color">&gt;</span>
+                        </code>
+                        <code>
+                            <span className="code-pink-color">&lt;img</span> 
+                            <span className="code-yellow-color"> alt</span>="Close modal" src="x-mark.svg"
+                            <span className="code-pink-color">/&gt;</span>
+                        </code>
+                        <code><span className="code-blue-color">&lt;/button&gt;</span></code>
                     </div>
                    
                     <h3>Help screen readers properly announce a button</h3>
 
-                    <p className="white-bg">The techniques we covered in the previous section apply to buttons as well. 
-                        With an image, we have another option: we
-                        can use the <code>alt</code> attribute to provide a description. 
+                    <p className="white-bg">
+                        The techniques we covered in the previous section apply to buttons as well. 
+                        With an image, you have a new option: use the <code>alt</code> attribute to 
+                        describe the image, and it will become the accessible name of the button.
                     </p>
                     
-                    <p className="white-bg">In the example above, the button
-                        has no visible text, but contains an image with an <code>alt</code> attribute. 
-                        A screen reader will announce it as "Close modal graphic button."
+                    <p className="white-bg">
+                        In the example above, the button has no visible text, but contains an image with 
+                        an <code>alt</code> attribute. A screen reader will announce it as "Close modal graphic button."
+                    </p>
+                    <p className="white-bg">
                         Notice the "graphic" part? That's because the accessible name is computed from 
-                        the <code>alt</code> text of an image.
+                        the <code>alt</code> text of an image. This way the screen reader is announcing there is an image
+                        present. It is up to you if this information is useful to the user or not. If not, 
+                        use one of the techniques discussed in the previous section but rememeber to leave the <code>alt</code> attribute 
+                        empty!
                     </p>
                     
                 </div>
@@ -388,13 +479,22 @@ export default function MakeItAccessible() {
 
                     <h3>Help assistive tech users understand the purpose of an input</h3>
 
+                    <p className="white-bg">
+                        When it comes to your portfolio site, labels and inputs are likely to be part of your
+                        contact form.
+                        We will look at ways to make your contact form accessible in a separate article,
+                        but for now let's focus on the <code>label</code> and <code>input</code> elements.
+                    </p>
+
                     <p>You have two options:</p>
-                    <p><span className="pink-text bold">Implicit Labeling:</span> This involves wrapping the input element 
-                    inside the label element, just as in the example above. 
+                    <p className="white-bg">
+                        <span className="pink-text bold">Implicit Labeling:</span> This involves wrapping 
+                        the <code>input</code> element inside a <code>label</code> element, 
+                        just as in the example above. 
                     </p>
                     
                     <p className="white-bg"> 
-                        <span className="pink-text bold">Explicit Labeling:</span> 
+                        <span className="pink-text bold">Explicit Labeling: </span> 
                         This method involves using the 
                         <span> </span>
                         <span className="pink-bg-white-text">for</span>
@@ -406,14 +506,8 @@ export default function MakeItAccessible() {
                         attribute in the <code>&lt;input&gt;</code> tag. 
                     </p>
                     <p className="white-bg">    
-                        The value of the 
-                        <span> </span>
-                        <code>for</code>
-                        <span> </span>
-                        attribute must be the same as the value of the <span> </span>
-                        <code>for</code>
-                        <span> </span>
-                        attribute of the input to which it is linked.
+                        The value of the label's <code>for</code> attribute must be the same as the value of 
+                        the input's <code>id</code> attribute.
                     </p>
                     
                     <div className="code code--labels">
@@ -428,7 +522,7 @@ export default function MakeItAccessible() {
                         <code>
                             <span className="code-blue-color">&lt;/label&gt;</span>
                         </code>
-                        <code>
+                        <code className="margin-top-20">
                             <span className="code-yellow-color">&lt;input</span> 
                             <span className="code-pink-color"> id</span>="name" type="text" 
                             <span className="code-yellow-color">&gt;</span>
@@ -451,20 +545,26 @@ export default function MakeItAccessible() {
                     <p>It enables screen readers to correctly identify the language of the webpage content.</p>
                     
                     <p className="white-bg">
-                        Is it common that a project would lack this attribute? Not at all! 
+                        Is it common for a project to lack this attribute? Not at all! 
                         That's because when we initiate a new code base we are likely to use editors that generate 
                         an HTML file pre-configured with all the essential elements, 
                         including the <code>lang</code> attribute.
                     </p> 
                     <p className="white-bg">
-                        Portfolio sites that started as templates though, might be missing it.
-                        Rememeber to check in case you are using a template from a third party like 
-                        HTML5
+                        Portfolio sites that started as templates though might be missing it.
+                        These templates are designed to be customized, so remember to add 
+                        the <code>lang</code> attribute with the value of the language you are using.
                     </p>
                     
                     <div className="highlight">
                         <p className="fake-heading-p">Did you know?</p>
-                        <p>You can specify the language of a certain word or section of the page:</p>
+                        <p className="margin-top-30">You can choose a specific dialect:</p>
+                        <div className="code">
+                            <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
+                        </div>
+                        <p style={{ marginTop: '50px' }}>
+                            You can specify the language of a certain word or section of the page:
+                        </p>
                         <div className="code"> 
                             <code> <span className="code-blue-color">&lt;p&gt;</span></code>
                             <code className="padding-left-30">Hello in English, </code>
@@ -480,12 +580,7 @@ export default function MakeItAccessible() {
                         </div>
                         <br></br>
                         <br></br>
-                        <p className="margin-top-30">You can choose a specific dialect:</p>
                         
-                        <br></br>
-                        <div className="code">
-                            <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
-                        </div>
                         
                     </div>
                 </div>
@@ -498,42 +593,69 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--headings">
-                        <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
+                        <code>
+                            <span className="code-pink-color">&lt;h1&gt;</span>
+                            The most important heading
+                            <span className="code-pink-color">&lt;/h1&gt;</span>
+                        </code>
+                        <code className="padding-left-30">. . .</code>
+                        <code className="padding-left-30">
+                            <span className="code-yellow-color">&lt;h2&gt;</span>
+                            The second heading in line
+                            <span className="code-yellow-color">&lt;/h2&gt;</span>
+                        </code>
+                        <code className="padding-left-60">. . .</code>
+                        <code className="padding-left-60">
+                            <span className="code-blue-color">&lt;h3&gt;</span>
+                            The second heading in line
+                            <span className="code-blue-color">&lt;/h3&gt;</span>
+                        </code>
+                        <code className="padding-left-30">
+                            <span className="code-yellow-color">&lt;h2&gt;</span>
+                            The second heading in line
+                            <span className="code-yellow-color">&lt;/h2&gt;</span>
+                        </code>
+                        <code className="padding-left-60">. . .</code>
+                        <code className="padding-left-60">
+                            <span className="code-blue-color">&lt;h3&gt;</span>
+                            The second heading in line
+                            <span className="code-blue-color">&lt;/h3&gt;</span>
+                        </code>
+                        <code className="padding-left-60">. . .</code>             
                     </div>
                     
                     <h3>Help screen reader users understand the structure of a page</h3>
                     <p>
                         When trying to find information on a page, most screen reader users rely on headings.
                         Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
-                        each heading to get an idea about the structure and the content of the page.  
+                        each heading and get an idea about the structure and the content of the page.  
                     </p>
                     <p className="fake-heading-p pink-text">A few rules to follow:</p>
                     <div>
                         <p className="bullet-point-line white-bg">
-                            Use <code>&lt;h1&gt;</code> only once per page.
+                            Choose meaningful headings that describe the content of a section.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
-                            Use <code>&lt;h2&gt;</code> to 
-                            <code>&lt;h6&gt;</code> in logical order.
+                            Use <code>&lt;h1&gt;</code> at the start of your content.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
-                            Don't skip heading levels.
+                            Don't skip heading levels. Use <code>&lt;h2&gt;</code> to 
+                            <code>&lt;h6&gt;</code> in descending order.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
                             Don't use headings for decorative purposes. 
                             If you need a word or a phrase to look bigger or bolder on page, use
                             CSS. Do not use heading tags if a heading is not needed.
                         </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Choose meaningful headings that describe the content of the section.
-                        </p>
+                        
                     </div>
                     
                     <div className="highlight">
                         <p className="fake-heading-p">Did you know?</p>
-                        <p> Automated tools like Google's Lighthouse or axe DevTools can easily catch if any of 
-                            the first four rules are broken. For the last one, you will need to rely on 
-                            your own judgement though.
+                        <p> 
+                            Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
+                            For the first rule, you will need to rely on your own judgement,  but they can 
+                            easily catch if any of the other rules are broken. 
                         </p>
                     </div>
                 </div>

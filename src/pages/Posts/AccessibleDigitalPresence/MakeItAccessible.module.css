@@ -11,7 +11,6 @@
 }
 
 
-
 /* INTRO */
 .makeit .intro .highlight h2 {
     font-size: 1.5rem;
@@ -44,6 +43,9 @@
     line-height: 1;
 }
 
+.contrast .highlight p {
+    margin-block: 50px !important;
+}
 
 /* SECTION 02 ALT */
 .code--alt code:nth-of-type(2),

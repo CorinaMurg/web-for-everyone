@@ -51,15 +51,11 @@ export default function Footer() {
             </div>
             <div className="footer-bottom">
                 <div className="copyright">
-                    <span>&#169;</span><span>Corina Murg 2023</span>
+                    <span>&#169;</span><span>Web for Everyone 2023</span>
                 </div>
                 
-                <span className="vertical-bar">|</span>
-                <span className="built-span">Built with React
-                    <img className="react-logo" alt="react logo" src="/assets/react.svg"/>
-                </span>
-                <span className="vertical-bar">|</span>
-                <span>Tested with Playwright 🎭</span>
+                <span className="vertical-bar">|</span> 
+                <span className="built-span">Built with React by Corina Murg</span>
             </div>
         </footer>
     )
