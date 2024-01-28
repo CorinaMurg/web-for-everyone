@@ -166,22 +166,22 @@ export default function MakeItAccessible() {
                         <h2>Color Contrast</h2>
                     </div>
 
-                    <div className="code code--contrast">
+                    <div className={`code ${styles['code--contrast']}`}>
                         <code>I'm normal text (16px).</code>
                         <code>
                             I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.
                         </code>
-                        <code className="code-yellow-color">
-                            <span className="code-yellow-color">I'm not-too-large (19px or larger), but bold text.</span>
+                        <code className="margin-top-30">
+                            I'm not-too-large (19px or larger), but bold text.
                         </code>
                         <code>
-                            <span className="code-yellow-color">I need a contrast ratio of at least</span> <span className="pink-bg-white-text">3:1</span>.
+                            I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.
+                        </code>
+                        <code className="margin-top-30">
+                            I'm large text (24px or larger).
                         </code>
                         <code>
-                            <span className="code-blue-color">I'm large text (24px or larger).</span>
-                        </code>
-                        <code>
-                            <span className="code-blue-color">I need a contrast ratio of at least</span> <span className="pink-bg-white-text">3:1</span>.
+                            I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.
                         </code>
                     </div>
        
@@ -276,8 +276,8 @@ export default function MakeItAccessible() {
 
                     <div className="code code--alt">
                         <code><span className="code-blue-color">&lt;img</span></code>
-                        <code>src="..."</code>
-                        <code><span className="code-pink-color">alt</span>="Fill me in or leave me empty, but do include me!"</code>
+                        <code className="padding-left-30">src="..."</code>
+                        <code className="padding-left-30"><span className="code-pink-color">alt</span>="Fill me in or leave me empty, but do include me!"</code>
                         <code><span className="code-blue-color">/&gt;</span></code>
                     </div>
            
@@ -328,7 +328,7 @@ export default function MakeItAccessible() {
                             <span className="code-blue-color">&lt;a</span> href="https://www.linkedin.com/in/webforeveryone/"
                             <span className="code-blue-color">&gt;</span>
                         </code>
-                        <code>
+                        <code className="padding-left-30">
                             <span className="code-yellow-color">&lt;i</span> className="fa-brands fa-linkedin" aria-hidden="true"
                             <span className="code-yellow-color">&gt;&lt;/i&gt;</span>
                         </code>
@@ -431,7 +431,7 @@ export default function MakeItAccessible() {
                             <span className="code-blue-color">&lt;button</span> id="closeModal"
                             <span className="code-blue-color">&gt;</span>
                         </code>
-                        <code>
+                        <code className="padding-left-30">
                             <span className="code-pink-color">&lt;img</span> 
                             <span className="code-yellow-color"> alt</span>="Close modal" src="x-mark.svg"
                             <span className="code-pink-color">/&gt;</span>
