@@ -367,7 +367,6 @@ p {
 .section-heading {
     display: flex;
     align-items: center;
-    /* margin-bottom: 10px; */
     gap: 15px;
 }
 

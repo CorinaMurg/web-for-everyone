@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import "../../../global.css"
@@ -486,24 +487,19 @@ export default function MakeItAccessible() {
                         but for now let's focus on the <code>label</code> and <code>input</code> elements.
                     </p>
 
-                    <p>You have two options:</p>
+                    <p className="bold">You have two options:</p>
                     <p className="white-bg">
-                        <span className="pink-text bold">Implicit Labeling:</span> This involves wrapping 
+                        <span className="pink-text bold">Implicit Labeling:</span> It involves wrapping 
                         the <code>input</code> element inside a <code>label</code> element, 
                         just as in the example above. 
                     </p>
                     
                     <p className="white-bg"> 
                         <span className="pink-text bold">Explicit Labeling: </span> 
-                        This method involves using the 
+                        This method relies on using the <span className="pink-bg-white-text">for</span> attribute 
+                        with the <code>&lt;label&gt;</code> tag, and the <span className="pink-bg-white-text">id</span>
                         <span> </span>
-                        <span className="pink-bg-white-text">for</span>
-                        <span> </span>
-                        attribute in the <code>&lt;label&gt;</code> tag and the 
-                        <span> </span>
-                        <span className="pink-bg-white-text">id</span>
-                        <span> </span>
-                        attribute in the <code>&lt;input&gt;</code> tag. 
+                        attribute with the <code>&lt;input&gt;</code> tag. 
                     </p>
                     <p className="white-bg">    
                         The value of the label's <code>for</code> attribute must be the same as the value of 
@@ -630,7 +626,7 @@ export default function MakeItAccessible() {
                         Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
                         each heading and get an idea about the structure and the content of the page.  
                     </p>
-                    <p className="fake-heading-p pink-text">A few rules to follow:</p>
+                    <p className="fake-heading-p">A few rules to follow with headings:</p>
                     <div>
                         <p className="bullet-point-line white-bg">
                             Choose meaningful headings that describe the content of a section.
@@ -654,11 +650,39 @@ export default function MakeItAccessible() {
                         <p className="fake-heading-p">Did you know?</p>
                         <p> 
                             Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
-                            For the first rule, you will need to rely on your own judgement,  but they can 
+                        </p>
+                        <p>
+                            For the first rule, you will need to rely on your own judgement, but the tools can 
                             easily catch if any of the other rules are broken. 
                         </p>
                     </div>
                 </div>
+                    
+                {/* ****************CONCLUSION************************* */}
+                <div className="section conclusion scroll-target" id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>
+                        Congratulations! You are now familiar with the 7 most common accessibility bugs 
+                        and you know how to fix them.
+                    </p>
+                    <p>
+                        Ready to continue your accessibility bug hunt?
+                    </p>
+                    <p>
+                        Let's find the other 7 easy-to-fix bugs!
+                    </p>
+                    
+                    <div className="next-article margin-top-30">
+                        <span className="read-next">Read next:</span>
+                        <Link to="/resources/make-it-accessible2" 
+                                className="read-next pink-text"
+                                onClick={() => { scrollToTop() }}
+                        >
+                            Let's Make It Accessible! Part 2: The Other 7 Bugs
+                        </Link>
+                    </div>
+                </div>
+
             </div>
         </div>    
     )

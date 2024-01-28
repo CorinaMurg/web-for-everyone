@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import windowScrollTop from "../../../utils/scrollToTop"
+import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import styles from "./MostCommonBugs.module.css"
@@ -329,7 +329,7 @@ export default function MostCommonBugs() {
                 </div>
 
                 {/* CONCLUSION */}
-                <div className="section conclusion" id="conclusion">
+                <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
@@ -343,16 +343,13 @@ export default function MostCommonBugs() {
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/make-it-accessible" 
                                 className="read-next pink-text"
-                                onClick={() => { windowScrollTop() }}
+                                onClick={() => { scrollToTop() }}
                         >
                             Your Portfolio Site: Let's Make It Accessible!
                         </Link>
-                    </div>
-                    
+                    </div>                 
                 </div>
-
-            </div>
-            
+            </div>          
         </div>
     )
 }
