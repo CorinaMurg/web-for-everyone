@@ -84,6 +84,41 @@ a {
     padding-left: 20px;
 }
 
+.code {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 30px;
+    /* background-color: var(--lightGray-color); */
+    background-color: #151f28;
+    color: white;
+}
+
+.code code {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.code-blue-color {
+    color: var(--code-blue-color);
+}
+
+.code-yellow-color {
+    color: var(--code-yellow-color);
+}
+
+.code-pink-color {
+    color: var(--code-pink-color);
+}
+
+.code-purple-color {
+    color: var(--code-purple-color);
+}
+
+
 .conclusion {
     margin-top: 40px;
 }

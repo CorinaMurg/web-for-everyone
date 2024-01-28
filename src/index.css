@@ -49,7 +49,14 @@
     --logo-bg-color: #1a73e8;
     --logo-w-color: #e60067; 
     --logo-e-color: #1a73e8;
+
+    --code-bg-color:  #151f28;
+    --code-purple-color: #617bff;
+    --code-pink-color: #ff39a8;
+    --code-yellow-color: #ffd600;
+    --code-blue-color: #00beff;
 }
+
 
 .blue-text {
     color: blue;

@@ -39,3 +39,39 @@ TableOfContents.propTypes = {
 };
 
 
+// const getClassNames = (level: number) => {
+//     if (level === 2) {
+//         return "heading3"
+//     }
+// };
+
+// ${getClassNames(heading.level)}
+
+// export default function TableOfContents ({ headings }) {
+//     return (
+//         <div className={styles['table-contents']}>
+//             <h2 className={styles['table-contents--heading']}>
+//                 <code>Table of Contents</code>
+//             </h2>
+//             <ul className={styles['table-contents--list']}>
+//                 <li className={styles['table-contents--list--item']}>
+//                     <Link to="#intro"
+//                         className="hover-pink"
+//                         {...(introAriaLabel ? { 'aria-label': introAriaLabel } : {})}
+//                     >
+//                         <code>{intro}</code>
+//                     </Link>
+//                 </li>
+//                 {headings.map((heading, index) => (
+//                 <li key={index} className={styles['table-contents--list--item']}>
+//                     <Link  to={heading.to} 
+//                         className={`hover-pink `}
+//                         {...(heading.ariaLabel ? { 'aria-label': heading.ariaLabel } : {})}
+//                     >
+//                         <code>{heading.text}</code>
+//                     </Link>
+//                 </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );

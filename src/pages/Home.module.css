@@ -11,6 +11,7 @@
 
 .home h1 {
     line-height: 1.2;
+    font-size: 3.3rem;
 }
 
 .hero-article {
@@ -44,7 +45,8 @@
 }
 .hero-heading {
     width: 50%;
-    align-self: center;
+    justify-content: space-between;
+    /* align-self: center; */
 }
 
 .hero-body {
@@ -52,7 +54,7 @@
     /* align-self: center; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 } 
 
 

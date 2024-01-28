@@ -25,8 +25,8 @@ export default function Home() {
                     <div className={styles['hero-body']}>
                         <p>
                             You're adding the finishing touches to your portfolio site.
-                            But will it be ready to welcome all users? 
-                            Let's explore how you can check for the most common accessibility bugs.
+                            Will it be ready to welcome all users? 
+                            Let's explore how you can check for common accessibility bugs.
                             {/* Let's explore how to make it accessible to everyone. */}
                              
                         </p>
@@ -36,7 +36,7 @@ export default function Home() {
                             className={styles['hero-link']}
                             onClick={() => { scrollToTop() }}  
                         >
-                            <p className={styles['read_more']}>
+                            <p className={styles['read-more']}>
                                 Continue to article
                                 <i className={styles['link-arrow']}></i>
                                 <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>

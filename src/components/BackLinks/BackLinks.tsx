@@ -6,7 +6,7 @@ export default function BackLinks ({secondLink, href}: {secondLink: string; href
     return (
         <div className={`${styles['back-links']} scroll-target`} id="back-links">
             <Link to="/resources" className={`${styles['back-link']} hover-pink`}>
-                Resources
+                <code>Resources</code>
             </Link>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ export default function BackLinks ({secondLink, href}: {secondLink: string; href
                 <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
             <Link to={href} className={`${styles['back-link']} hover-pink`}>
-                {secondLink}
+                <code>{secondLink}</code>
             </Link>
         </div>
     );

@@ -58,11 +58,6 @@ export default function MakeItAccessible() {
                 secondLink="Accessibility and Your Digital Presence" 
                 href="/resources#accessible-digital-presence" 
             />
-
-            {/* **************Hero Banner********************** */}
-            {/* <Link to="/resources#accessible-digital-presence" className="back-link hover-pink">
-                Accessibility and Your Digital Presence
-            </Link> */}
             
 
             <h1>
@@ -140,7 +135,7 @@ export default function MakeItAccessible() {
                         <h2>Color Contrast</h2>
                     </div>
 
-                    <div className="bug-code bug-code--contrast">
+                    <div className="code code--contrast">
                         <code>I'm normal text (16px).</code>
                         <code>I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.</code>
                         <code>I'm not-too-large (19px or larger), but bold text.</code>
@@ -148,30 +143,29 @@ export default function MakeItAccessible() {
                         <code>I'm large text (24px or larger).</code>
                         <code>I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.</code>
                     </div>
-
-                    <div className="bug-body bug-body--contrast">
-                        <h3>Mind the color contrast ratio to help users with low vision</h3>
-                        <p>
-                            Users with low vision can struggle with perceiving contrast. 
-                            They can't spot outlines, edges, and other details. 
-                            Reading can also be challenging when the text color doesn't stand out much from the 
-                            background.</p>
-                        
-                        <p>
-                            As mentioned above, when you run a test with Lighthouse or axe DevTools, 
-                            if any elements failed the contrast ratio guidelines, you will know right away.
-                        </p> 
-                        <p>
-                            If you'd like to me more proactive, you can 
-                            use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a> to
-                            test your colors as you're building. 
-                        </p>
-                        
-                        <p>
-                            Checking is easy: enter the foreground and background colors for a given element, and the 
-                            tool will tell you if the contrast ratio is sufficient.
-                        </p>
-                    </div>
+       
+                    <h3>Mind the color contrast ratio to help users with low vision</h3>
+                    <p>
+                        Users with low vision can struggle with perceiving contrast. 
+                        They can't spot outlines, edges, and other details. 
+                        Reading can also be challenging when the text color doesn't stand out much from the 
+                        background.
+                    </p>
+                    
+                    <p>
+                        As mentioned above, when you run a test with Lighthouse or axe DevTools, 
+                        if any elements failed the contrast ratio guidelines, you will know right away.
+                    </p> 
+                    <p>
+                        If you'd like to me more proactive, you can 
+                        use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a> to
+                        test your colors as you're building. 
+                    </p>
+                    
+                    <p>
+                        Checking is easy: enter the foreground and background colors for a given element, and the 
+                        tool will tell you if the contrast ratio is sufficient.
+                    </p>               
 
                     <div className="highlight">
                         <details>
@@ -206,28 +200,28 @@ export default function MakeItAccessible() {
                         <h2>The "alt" Attribute for Images</h2>
                     </div>
 
-                    <div className="bug-code bug-code--alt">
-                        <code>&lt;img</code>
-                        <code>   src="..."</code>
-                        <code>   <span className="pink-text">alt</span>="Fill me in or leave me empty, but do include me!"</code>
-                        <code>/&gt;</code>
+                    <div className="code code--alt">
+                        <code><span className="code-blue-color">&lt;img</span></code>
+                        <code>src="..."</code>
+                        <code><span className="pink-text">alt</span>="Fill me in or leave me empty, but do include me!"</code>
+                        <code><span className="code-blue-color">/&gt;</span></code>
                     </div>
 
-                    <div className="bug-body bug-body--alt">
-                        <h3>Help screen readers decide whether to read an image or not</h3>
-                        <p className="white bg">Is your image purely decorative? Or, is the information presented in the image also conveyed by the 
-                            adjacent text? Then it's best to leave the <code>alt</code> attribute empty.</p>
-                        
-                        <p className="white-bg">Does your image contain information that is not available in the text? 
-                            Then add a short description in the <code>alt</code> attribute.
-                        </p> 
-                        <p className="white-bg">
-                            Either way, it's important to add the <code>alt</code> attribute to all images. If empty, 
-                            it tells the screen reader to skip the image. This way it doesn't waste time reading it. 
-                            If it's missing though, the screen reader will read the name of the image's source file, 
-                            which is not helpful to the user.
-                        </p>
-                    </div>
+                   
+                    <h3>Help screen readers decide whether to read an image or not</h3>
+                    <p className="white bg">Is your image purely decorative? Or, is the information presented in the image also conveyed by the 
+                        adjacent text? Then it's best to leave the <code>alt</code> attribute empty.</p>
+                    
+                    <p className="white-bg">Does your image contain information that is not available in the text? 
+                        Then add a short description in the <code>alt</code> attribute.
+                    </p> 
+                    <p className="white-bg">
+                        Either way, it's important to add the <code>alt</code> attribute to all images. If empty, 
+                        it tells the screen reader to skip the image. This way it doesn't waste time reading it. 
+                        If it's missing though, the screen reader will read the name of the source file, 
+                        which is not helpful to the user.
+                    </p>
+                    
                     <div className="highlight">
                         <p className="fake-heading-p">Rememeber the difference:</p>
                         <p className="gray-bg">
@@ -251,88 +245,99 @@ export default function MakeItAccessible() {
                         <h2>Links with Discernable Text</h2>
                     </div>
 
-                    <div className="bug-code bug-code--links">
-                        <code>&lt;a href="https://www.linkedin.com/in/corinamurg/"&gt;</code>
-                        <code>   &lt;i className="fa-brands fa-linkedin" aria-hidden="true"&gt;&lt;/i&gt;</code>
-                        <code>&lt;/a&gt;</code>
+                    <div className="code code--links">
+                        <code>
+                            <span className="code-blue-color">&lt;a</span> href="https://www.linkedin.com/in/webforeveryone/"
+                            <span className="code-blue-color">&gt;</span>
+                        </code>
+                        <code>
+                            <span className="code-yellow-color">&lt;i</span> className="fa-brands fa-linkedin" aria-hidden="true"
+                            <span className="code-yellow-color">&gt;&lt;/i&gt;</span>
+                        </code>
+                        <code><span className="code-blue-color">&lt;/a&gt;</span></code>
                     </div>
 
-                    <div className="bug-body bug-body--links">
-                        <h3>Help screen readers properly announce a link</h3>
+                   
+                    <h3>Help screen readers properly announce a link</h3>
+                    
+                    <p>
+                        In the example above, the link to the LinkedIn profile
+                        contains an icon and no visible text. A screen reader will announce part of the url 
+                        (usually starting with the path segment)
+                        and provide no information about the destination of the link. 
+                    </p>
                         
-                        <p>
-                            In the example above, the link to the LinkedIn profile
-                            contains an icon and no visible text. A screen reader will announce part of the url 
-                            (usually starting with the path segment)
-                            and provide no information about the destination of the link. 
-                        </p>
-                            
-                        <p>
-                            Users relying on speech commands might not be able to activate the link. They would use
-                            "LinkedIn" to open the link, but "LinkedIn is not recognized by the speech recognition software.
-                            The browser can not compute an accessible name for the link since none of the attributes that 
-                            could provide one is present.
-                        </p>
+                    <p>
+                        Users relying on speech commands will not be able to activate the link. Their attempt to
+                        say "click on LinkedIn" will fail because the assistive tech will not recognize the 
+                        name "LinkedIn". In fact, the link has no accessible name.
+                        The browser can not compute it since none of the attributes that could provide one is present.
+                    </p>
 
-                        <div className="highlight">
-                            <details>
-                                <summary>
-                                    <span className="details-title">
-                                        Accessible Name Review
-                                    </span>
-                                </summary>
-                                <p>
-                                    Assitive technologies recognize an element by its accessible name. 
-                                    One of the following must be present in order for the browser to compute it:
-                                </p>
-                                <p><span className="pink-text bold">1. </span>visible text</p>
-                                <p><span className="pink-text bold">2. </span>alt text</p>
-                                <p><span className="pink-text bold">3. </span>aria-label</p>
-                                <p><span className="pink-text bold">4. </span>aria-labelledby</p>
-                                <p><span className="pink-text bold">5. </span>title</p>
-                                <p>
-                                    <Link to="/resources/how-accessibility-works#the-accessible-name" 
-                                        className="pink-text"
-                                    >
-                                        Learn more about the accessible name
-                                    </Link>
-                                </p>
-                            </details>
-                        </div>
-                        
-                        <h3 className="pink-text">Ways to fix it</h3>
-                        <p className="white-bg">
-                            <span className="pink-num" aria-hidden="true">1. </span> 
-                            Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
+                    <div className="highlight">
+                        <details>
+                            <summary>
+                                <span className="details-title">
+                                    Accessible Name Review
+                                </span>
+                            </summary>
+                            <p>
+                                Assitive technologies recognize an element by its accessible name. 
+                                One of the following must be present in order for the browser to compute it:
+                            </p>
+                            <p><span className="pink-text bold">1. </span>visible text</p>
+                            <p><span className="pink-text bold">2. </span>alt text (when an image is present)</p>
+                            <p><span className="pink-text bold">3. </span>aria-label</p>
+                            <p><span className="pink-text bold">
+                                4. </span>aria-labelledby (it has the highest priority among all the other attributes)
                             
-                        </p>
-                        <p>
-                            <span className="pink-num" aria-hidden="true">2. </span> 
-                            Replace the image with text (e.g., LinkedIn). 
-                        </p>
-                        <p className="white-bg">
-                            <span className="pink-num" aria-hidden="true">3. </span> 
-                            Keep the icon, but add text with a <code>visually-hidden</code> class
-                            (so the text is not visible on the screen). Screen readers 
-                            will announce the text, while sighted users will rely on the icon to figure out the 
-                            purpose of the link.
-                        </p>
-                        
-                        <p><span className="bold">
-                            Note:</span> This is not an exhaustive list of techniques you could use to make your social media
-                            links accessible. The ones shared above are the most commonly used and you can employ them
-                            anytime you use an icon instead of visible text. Plus, they also work with buttons.
-                        </p>
-                        <p className="white-bg">
-                            <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
-                            <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
-                            like an <code>&lt;img&gt;</code> would. 
-                        </p>
-                        <p className="white-bg">
-                            In the next section on buttons we will look at an example with an image and 
-                            the <code>alt</code> attribute.
-                        </p>
+                            </p>
+                            <p><span className="pink-text bold">5. </span>title (avoid it since it's tricky
+                                to make it accessible to screen reader users)
+                            </p>
+                            <p>
+                                <Link to="/resources/how-accessibility-works#the-accessible-name" 
+                                    className="pink-text"
+                                >
+                                    Learn more about the accessible name
+                                </Link>
+                            </p>
+                        </details>
                     </div>
+                    
+                    <h3 className="pink-text">Ways to fix it</h3>
+                    <p className="white-bg">
+                        <span className="pink-num" aria-hidden="true">1. </span> 
+                        Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
+                        
+                    </p>
+                    <p>
+                        <span className="pink-num" aria-hidden="true">2. </span> 
+                        Replace the image with text (e.g., LinkedIn). 
+                    </p>
+                    <p className="white-bg">
+                        <span className="pink-num" aria-hidden="true">3. </span> 
+                        Keep the icon, but add text with a <code>visually-hidden</code> class
+                        (so the text is not visible on the screen). Screen readers 
+                        will announce the text, while sighted users will rely on the icon to figure out the 
+                        purpose of the link.
+                    </p>
+                    
+                    <p><span className="bold">
+                        Note:</span> This is not an exhaustive list of techniques you could use to make your social media
+                        links accessible. The ones shared above are the most commonly used and you can employ them
+                        anytime you use an icon instead of visible text. Plus, they also work with buttons.
+                    </p>
+                    <p className="white-bg">
+                        <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
+                        <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
+                        like an <code>&lt;img&gt;</code> would. 
+                    </p>
+                    <p className="white-bg">
+                        In the next section on buttons we will look at an example with an image and 
+                        the <code>alt</code> attribute.
+                    </p>
+                    
                 </div>
                 
                 {/* ****************BUTTONS************************* */}
@@ -342,27 +347,26 @@ export default function MakeItAccessible() {
                         <h2>Buttons with Discernable Text</h2>
                     </div>
 
-                    <div className="bug-code bug-code--buttons">
+                    <div className="code code--buttons">
                         <code>&lt;<span className="pink-text">button</span> id="closeModal"&gt;</code>
                         <code>&lt;<span className="pink-text">img</span> alt="Close modal" src="x-mark.svg"/&gt;</code>
                         <code>&lt;/<span className="pink-text">button</span>&gt;</code>
                     </div>
+                   
+                    <h3>Help screen readers properly announce a button</h3>
 
-                    <div className="bug-body bug-body--buttons">
-                        <h3>Help screen readers properly announce a button</h3>
-
-                        <p className="white-bg">The techniques we covered in the previous section apply to buttons as well. 
-                            With an image, we have another option: we
-                            can use the <code>alt</code> attribute to provide a description. 
-                        </p>
-                        
-                        <p className="white-bg">In the example above, the button
-                            has no visible text, but contains an image with an <code>alt</code> attribute. 
-                            A screen reader will announce it as "Close modal graphic button."
-                            Notice the "graphic" part? That's because the accessible name is computed from 
-                            the <code>alt</code> text of an image.
-                        </p>
-                    </div>  
+                    <p className="white-bg">The techniques we covered in the previous section apply to buttons as well. 
+                        With an image, we have another option: we
+                        can use the <code>alt</code> attribute to provide a description. 
+                    </p>
+                    
+                    <p className="white-bg">In the example above, the button
+                        has no visible text, but contains an image with an <code>alt</code> attribute. 
+                        A screen reader will announce it as "Close modal graphic button."
+                        Notice the "graphic" part? That's because the accessible name is computed from 
+                        the <code>alt</code> text of an image.
+                    </p>
+                    
                 </div>
 
                 {/* ****************LABELS************************* */}
@@ -372,49 +376,62 @@ export default function MakeItAccessible() {
                         <h2>Labels for Inputs</h2>
                     </div>
 
-                    <div className="bug-code bug-code--labels">
-                        <code>&lt;<span className="pink-text">label</span>&gt;</code> 
-                        <code>Name: </code>
-                        <code>&lt;<span className="pink-text">input</span> type="text" id="name" name="name"&gt;</code>
-                        <code>&lt;/<span className="pink-text">label</span>&gt;</code>
+                    <div className="code code--labels">
+                        <code><span className="code-blue-color">&lt;label&gt;</span></code> 
+                        <code className="padding-left-30">Enter your full name: </code>
+                        <code className="padding-left-30">
+                            <span className="code-yellow-color">&lt;input</span> id="name" type="text"  
+                            <span className="code-yellow-color">&gt;</span>
+                        </code>
+                        <code><span className="code-blue-color">&lt;/label&gt;</span></code>
                     </div>
 
-                    <div className="bug-body bug-body--labels">
-                        <h3>Help assistive tech users understand the purpose of an input</h3>
+                    <h3>Help assistive tech users understand the purpose of an input</h3>
 
-                        <p>You have two options:</p>
-                        <p><span className="pink-text bold">Implicit Labeling:</span> This involves wrapping the input element 
-                        inside the label element, just as in the example above. 
-                        </p>
-                        
-                        <p className="white-bg"> <span className="pink-text bold">Explicit Labeling:</span> This method involves using the 
-                            <span> </span>
-                            <span className="pink-bg-white-text">for</span>
-                            <span> </span>
-                            attribute in the <code>&lt;label&gt;</code> tag and the 
-                            <span> </span>
-                            <span className="pink-bg-white-text">id</span>
-                            <span> </span>
-                            attribute in the <code>&lt;input&gt;</code> tag. 
-                        </p>
-                        <p className="white-bg">    
-                            The value of the 
-                            <span> </span>
-                            <code>for</code>
-                            <span> </span>
-                            attribute must be the same as the value of the <span> </span>
-                            <code>for</code>
-                            <span> </span>
-                            attribute of the input to which it is linked.
-                        </p>
-                    </div>
-                    <div className="bug-code bug-code--labels">
+                    <p>You have two options:</p>
+                    <p><span className="pink-text bold">Implicit Labeling:</span> This involves wrapping the input element 
+                    inside the label element, just as in the example above. 
+                    </p>
+                    
+                    <p className="white-bg"> 
+                        <span className="pink-text bold">Explicit Labeling:</span> 
+                        This method involves using the 
+                        <span> </span>
+                        <span className="pink-bg-white-text">for</span>
+                        <span> </span>
+                        attribute in the <code>&lt;label&gt;</code> tag and the 
+                        <span> </span>
+                        <span className="pink-bg-white-text">id</span>
+                        <span> </span>
+                        attribute in the <code>&lt;input&gt;</code> tag. 
+                    </p>
+                    <p className="white-bg">    
+                        The value of the 
+                        <span> </span>
+                        <code>for</code>
+                        <span> </span>
+                        attribute must be the same as the value of the <span> </span>
+                        <code>for</code>
+                        <span> </span>
+                        attribute of the input to which it is linked.
+                    </p>
+                    
+                    <div className="code code--labels">
                         <code>
-                            &lt;<span className="pink-text">label</span> for="name"&gt;Name:&lt;/
-                            <span className="pink-text">label</span>&gt;
+                            <span className="code-blue-color">&lt;label</span> <span className="code-pink-color"></span>
+                            <span className="code-pink-color">for</span>="name"
+                            <span className="code-blue-color">&gt;</span>
+                        </code>
+                        <code className="padding-left-30">
+                            Enter your full name:
                         </code>
                         <code>
-                            &lt;<span className="pink-text">input</span> type="text" id="name" name="name"&gt;
+                            <span className="code-blue-color">&lt;/label&gt;</span>
+                        </code>
+                        <code>
+                            <span className="code-yellow-color">&lt;input</span> 
+                            <span className="code-pink-color"> id</span>="name" type="text" 
+                            <span className="code-yellow-color">&gt;</span>
                         </code>
                     </div>
                 </div>
@@ -426,42 +443,50 @@ export default function MakeItAccessible() {
                         <h2>The Language Attribute</h2>
                     </div>
 
-                    <div className="bug-code bug-code--lang">
-                        <p><code>&lt;html <span className="pink-text">lang</span>="en"&gt;</code></p>
+                    <div className="code code--lang">
+                        <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
                     </div>
-
-                    <div className="bug-body bug-body--lang">
-                        <h3>Use a valid language in the "lang" attribute</h3>
-                        <p>It enables screen readers to correctly identify the language of the webpage content.</p>
-                        
-                        <p className="white-bg">Is it common that a project would lack this attribute? Not at all! That's because 
-                            when we initiate a new code base we are likely to use editors that generate an HTML 
-                            file pre-configured with all the essential elements, including the <code>lang</code> attribute.
-                        </p> 
-                        <p className="white-bg">
-                            The only sites I came across that lacked the <code>lang</code> attribute were bbc.com 
-                            (last checked on December 27, 2023) and portfolio sites that had started as templates and 
-                            had not been updated to include it. Rememeber to check in case you are using a template!
-                        </p>
-                    </div>
+              
+                    <h3>Use a valid language in the "lang" attribute</h3>
+                    <p>It enables screen readers to correctly identify the language of the webpage content.</p>
+                    
+                    <p className="white-bg">
+                        Is it common that a project would lack this attribute? Not at all! 
+                        That's because when we initiate a new code base we are likely to use editors that generate 
+                        an HTML file pre-configured with all the essential elements, 
+                        including the <code>lang</code> attribute.
+                    </p> 
+                    <p className="white-bg">
+                        Portfolio sites that started as templates though, might be missing it.
+                        Rememeber to check in case you are using a template from a third party like 
+                        HTML5
+                    </p>
+                    
                     <div className="highlight">
-                        <p className="fake-heading-p pink-text">Did you know?</p>
-                        <p>You can specify the language of a certain word or section of the page!</p>
-                        <p className="margin-block-0">
-                            <code>&lt;p&gt;</code>
-                        </p>
-                        <p className="margin-block-0 padding-left-30"><code>Hello in English, </code></p>
-                        <p className="margin-block-0 padding-left-30">
-                            <code>
-                                &lt;span <span className="pink-text">lang</span>="fr"&gt;Bonjour&lt;/span&gt; 
-                                in French.
+                        <p className="fake-heading-p">Did you know?</p>
+                        <p>You can specify the language of a certain word or section of the page:</p>
+                        <div className="code"> 
+                            <code> <span className="code-blue-color">&lt;p&gt;</span></code>
+                            <code className="padding-left-30">Hello in English, </code>
+                            <code className="padding-left-30">
+                                <span className="code-yellow-color">
+                                    &lt;span </span>
+                                <span className="code-pink-color">lang</span>="fr"
+                                <span className="code-yellow-color">&gt;</span>Bonjour
+                                <span className="code-yellow-color">&lt;/span&gt;</span>
+                                <span> </span>in French.
                             </code>
-                        </p>
-                        <p margin-block-0>.
-                            <code>&lt;/p&gt;</code>
-                        </p>
-                        <p className="margin-top-30">You can choose a specific dialect!</p>
-                        <p><code>&lt;html <span className="pink-text">lang</span>="en-US"&gt;</code></p>
+                            <code><span className="code-blue-color">&lt;/p&gt;</span></code>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <p className="margin-top-30">You can choose a specific dialect:</p>
+                        
+                        <br></br>
+                        <div className="code">
+                            <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -472,40 +497,43 @@ export default function MakeItAccessible() {
                         <h2>Headings in Logical Order</h2>
                     </div>
 
-                    <div className="bug-code bug-code--headings">
-                        <p><code>&lt;html <span className="pink-text">lang</span>="en"&gt;</code></p>
+                    <div className="code code--headings">
+                        <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
                     </div>
-
-                    <div className="bug-body bug-body--headings">
-                        <h3>Help screen reader users understand the structure of a page</h3>
-                        <p>When trying to find information on a page, most screen reader users rely on headings.
-                            Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
-                            each heading to get an idea about the structure and the content of the page.  
+                    
+                    <h3>Help screen reader users understand the structure of a page</h3>
+                    <p>
+                        When trying to find information on a page, most screen reader users rely on headings.
+                        Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
+                        each heading to get an idea about the structure and the content of the page.  
+                    </p>
+                    <p className="fake-heading-p pink-text">A few rules to follow:</p>
+                    <div>
+                        <p className="bullet-point-line white-bg">
+                            Use <code>&lt;h1&gt;</code> only once per page.
                         </p>
-                        <p className="fake-heading-p pink-text">A few rules to follow:</p>
-                        <div>
-                            <p className="bullet-point-line white-bg">
-                                Use <code>&lt;h1&gt;</code> only once per page.
-                            </p>
-                            <p className="bullet-point-line white-bg">
-                                Use <code>&lt;h2&gt;</code> to 
-                                <code>&lt;h6&gt;</code> in logical order.
-                            </p>
-                            <p className="bullet-point-line white-bg">
-                                Don't skip heading levels.
-                            </p>
-                            <p className="bullet-point-line white-bg">
-                                Don't use headings for decorative purposes. 
-                                If you need a word or a phrase to look bigger or bolder on page, use
-                                CSS. Do not use heading tags if a heading is not needed.
-                            </p>
-                        </div>
+                        <p className="bullet-point-line white-bg margin-top-20">
+                            Use <code>&lt;h2&gt;</code> to 
+                            <code>&lt;h6&gt;</code> in logical order.
+                        </p>
+                        <p className="bullet-point-line white-bg margin-top-20">
+                            Don't skip heading levels.
+                        </p>
+                        <p className="bullet-point-line white-bg margin-top-20">
+                            Don't use headings for decorative purposes. 
+                            If you need a word or a phrase to look bigger or bolder on page, use
+                            CSS. Do not use heading tags if a heading is not needed.
+                        </p>
+                        <p className="bullet-point-line white-bg margin-top-20">
+                            Choose meaningful headings that describe the content of the section.
+                        </p>
                     </div>
-
+                    
                     <div className="highlight">
-                        <p className="fake-heading-p pink-text">Did you know?</p>
+                        <p className="fake-heading-p">Did you know?</p>
                         <p> Automated tools like Google's Lighthouse or axe DevTools can easily catch if any of 
-                            the above rules are broken.
+                            the first four rules are broken. For the last one, you will need to rely on 
+                            your own judgement though.
                         </p>
                     </div>
                 </div>
