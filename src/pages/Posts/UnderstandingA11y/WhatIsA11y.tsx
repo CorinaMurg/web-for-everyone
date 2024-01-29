@@ -1,0 +1,271 @@
+import React from "react"
+import { Link } from "react-router-dom"
+import useDocTitle from "../../../hooks/useDocTitle"
+import useScrollToSection from "../../../hooks/useScrollToSection"
+import styles from "./WhatIsA11y.module.css"
+import "../../../global.css"
+import scrollToTop from "../../../utils/scrollToTop";
+import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../components/BackLinks/BackLinks"
+
+const contents = [
+    {
+        href: "#intro",
+        text: "Introduction",
+        "aria-label": "Introduction to what is accessibility"
+    },
+    {
+        href: "#the-DNA-of-the-web-is-accessible",
+        text: "The DNA of the Web is Accessible"
+    },
+    {
+        href: "#the-practical-reasons-for-accessibility",
+        text: "The Practical Reasons for Accessibility"
+    },
+    {
+        href: "#web-access-is-everyone's-right",
+        text: "Web Access is Everyone's Right"
+    },
+    {
+        href: "#next-steps",
+        text: "Next Steps"
+    },
+]
+
+export default function WhatIsA11y() {
+    useDocTitle("What is Accessiility | Web for Everyone"); 
+    useScrollToSection();   
+    
+    return (
+        <div className="article-container whatisa11y-container">
+            <BackLinks 
+                secondLink="Understanding Accessibility"
+                href="/resources#understanding-accessibility" 
+            />
+            
+            <h1>What is <span className="yellow-bg">Accessibility?</span></h1>
+            <p className="subtitle">And why does it matter?</p>
+
+            {/* ***************TABLE OF CONTENTS********************* */}
+            <TableOfContents contents={contents} />
+
+            {/* **************ARTICLE CONTENT***************** */}
+            
+            <div className={`article-content ${styles['whatisa11y']}`}>
+                 {/* *************0. INTRO********************** */}
+                <div className="setion intro" id="intro">
+                    <p>
+                        Becoming a web developer comes with a cool superpower: to create sites and apps
+                        that <span className="yellow-bg">everyone</span>,
+                        including people with disabilities, can easily navigate. 
+                        
+                        When you put this superpower to use, you make accessibility happen.
+                        All visitors, regardless of how they access your finished product, will be able to navigate 
+                        it and understand it.
+                    </p>
+                </div>
+                    
+                {/* ****************The DNA of the Web is Accessible****************** */}
+                <div className="section scroll-target" id="the-DNA-of-the-web-is-accessible">
+                    <h2>The DNA of the Web is Accessible</h2>
+                    <p>
+                        If you have good sight, you rely on it, along with a mouse or a keyboard, to open a webpage 
+                        and check out its content. 
+                        For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
+                        person with sight but limited or no hand mobility might use voice control software.
+                    </p>
+                    
+                    <p>
+                        The tools you need to allow for these kinds of interactions (and many others!) 
+                        are already in place:
+                    </p>
+                    <p className="bullet-point-line">
+                        code syntax to create the structure and the content of your site: semantic HTML, 
+                        CSS, and JavaScript.
+                    </p>
+                    <p className="bullet-point-line">
+                        assistive technologies to connect your users with your site: screen readers, 
+                        voice control software, refreshable braille displays, to name a few.
+                    </p>
+
+                    <div className="highlight">
+                        <h3>How semantic HTML improves accessibility</h3>
+                        <p className="white-bg">
+                            You’ve probably used HTML tags like 
+                            <span> </span>
+                            <code>&lt;nav&gt;</code>,
+                            <span> </span>
+                            <code>&lt;main&gt;</code>,
+                            <span> </span>
+                            <code>&lt;footer&gt;</code>,
+                            <span> </span>
+                            <code>&lt;button&gt;</code>, or
+                            <span> </span>
+                            <code>&lt;h1&gt;</code>.
+                            
+                            They provide your codebase with a structure that is easy to recognize and maintain. 
+                        </p>
+                        <p>
+                            For example, you would use the <code>&lt;nav&gt;</code> tags to designate your navigation
+                            section, and the <code>&lt;button&gt;</code> tags for your footer section.
+                        </p>
+                        <p className="white-bg">
+                            But did you know that they are more than just visual markers for developers? True! 
+                            They convey information about their content to assistive tech users. That’s why we call them <span> </span>
+                            <span className="pink-bg-white-text" >semantic</span> <span> </span>HTML tags. 
+                        </p>
+                        <p className="white-bg">
+                            For example, when a screen reader encounters the <code>&lt;nav&gt;</code> tag, it 
+                            actually announces to the user that this section of the page is for navigation. But, if 
+                            you chose
+                            to wrap your navigation links in a <code>&lt;div&gt;</code> tag, the user would not be 
+                            immediately aware of its purpose. A <code>&lt;div&gt;</code> is just a container 
+                            intended for styling purposes or for layout, and requires additional code to make it
+                            accessible.
+                        </p>
+                        <p>
+                            <strong>Always rely on semantic HTML!</strong> Think about the content and functionality 
+                            you want to create,and choose the appropriate HTML tag. While JavaScript can help with more 
+                            complex acccessibility issues, semantic HTML is the backbone of accessibility.
+                        </p>
+                    </div>
+                </div>
+
+                {/* ***************The Practical Reasons for Accessibility***************** */}
+                <div className="section scroll-target" id="the-practical-reasons-for-accessibility">
+                    <h2>The Practical Reasons for Accessibility</h2>
+                    <p>
+                        From a business side, there are certainly a few practical reasons that can motivate 
+                        a company to prioritize accessibility:
+                    </p>
+                    
+                    <div>
+                    <p className="bullet-point-line"><strong>legal compliance</strong></p>
+                    <p className="padding-left-20">
+                        Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                        lawsuit with the National Federation for the Blind for $6 million? 
+                    </p>
+                    <br></br>
+                    <p className="padding-left-20">
+                        Read the article <span> </span>
+                        <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link>
+                        <span> </span> 
+                        about the legal implications of inaccessible sites.
+                    </p>
+                    
+                    <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
+                    <p className="padding-left-20">
+                        A site can attract new visitors from the millions of users with disabilities 
+                        who use the web.
+                    </p>
+                    
+                    <p className="bullet-point-line margin-top-20"><strong>improved SEO</strong></p>
+                    <p className="white-bg padding-left-20">
+                        Many accessibility practices align with good SEO practices. For example, 
+                        providing <code>alt</code> text for images and ensuring a logical content structure with 
+                        proper heading tags are beneficial for both accessibility and SEO. 
+                    </p>
+                    
+                    <p className="bullet-point-line margin-top-20"><strong>positive spillover</strong></p>
+                    <p className="padding-left-20">
+                        Many features designed for accessibility, 
+                        such as clear navigation, easy-to-read fonts, and simple layouts, 
+                        contribute to a more intuitive and user-friendly interface for all users, not just
+                        those with disabilities. 
+                    </p>
+                    </div>
+                    
+                        
+                    <p>BUT, above all . . .</p>
+                </div>
+
+                {/* *************Web Access is Everyone's Right******************** */}
+                <div className="section scroll-target" id="web-access-is-everyone's-right">
+                    <h2>Web Access is Everyone's Right</h2>
+                    <p>
+                        In our world, digital connectivity is key, and your finished product should allow everyone 
+                        the ability to easily engage with the web.  The web is not just a form of entertainment; it's a
+                        source of information and services that are integral to our daily life.
+                    </p>
+                    <p>
+                        When was the last time you booked a flight with a travel agency? Or mailed a check to pay 
+                        your bills? We regularly bypass traditional methods for online convenience.  
+                        This shift to digital has been transformative for people with disabilities as well. 
+                        For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
+                        associated with their impairments.
+                    </p>
+                    <p>
+                        Your code can help a blind student access their online course materials,
+                        a person with limited mobility order their groceries, or a person with dyslexia read the
+                        news. <strong>Everyone deserves the same level of freedom and functionality when interacting with
+                        the web</strong>.
+                    </p>     
+                </div>
+
+                {/* *********NEXT***************** */}
+                <div className="bug scroll-target" id="next-steps">
+                    <h2>Next Steps</h2>
+                    <p> 
+                        Whether it's inconvenience or lack of awareness, the majority of websites are not 
+                        accessible. 
+                        A staggering 97% of them have some accessibility bugs!
+                    </p>
+                    
+                    {/* <p>BUT, you can play a part in reducing this high percentage:</p>
+                    <ul>
+                        <li>set accessibility as a goal</li>
+                        <li>follow good coding practices </li>
+                        <li>ask questions</li>
+                        <li>spread the word </li>
+                    </ul> */}
+
+                    <p>
+                        The good news is that most of these bugs have easy solutions.
+                        In fact, the 7 most common accessibility bugs can be fixed with only 
+                        HTML and CSS! 
+                    </p>
+                    
+                    <p>
+                        Your portfolio site and personal projects are a great place to start implementing 
+                        accessibility practices.
+                        If you're ready to audit them, jump to this article for a list of solutions to the 
+                        most common accessibility issues:
+                    </p>
+                    <div className="next-article">
+                        <span className="read-next">Read next: </span>
+                        
+                        <Link to="/resources/make-it-accessible-part1" 
+                                className="read-next pink-text"
+                                onClick = { () => { scrollToTop() } }
+                        >
+                            Your Portfolio Site: Let's Make It Accessible!
+                        </Link>
+                    </div>
+                    
+                    <p>Interested in learning about how accessibility works? Visit the next article 
+                        in the "Understanding Accessibility" series:
+                    </p>
+                         
+                    <div className="next-article">
+                        <span className="read-next">Read next: </span>
+                        <Link to="/resources/how-accessibility-works" 
+                                className="read-next pink-text"
+                                onClick = { () => { scrollToTop() } }
+                        >
+                            How Accessibility Works
+                        </Link>
+                    </div>
+
+                    <p className="margin-top-30">
+                        When we actively embrace accessibility and make it essential
+                        to our web development learning and work, we can make a difference.
+                        Together, we can build a web that's open to <span className="yellow-bg">everyone</span>!
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
