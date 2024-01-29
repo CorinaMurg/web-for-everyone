@@ -207,16 +207,9 @@ main {
     color: var(--text-light-color);
 }
 
-*:focus-visible {
-    outline: 3px dashed var(--text-dark-color);
-    outline-offset: 2px;
-}
 
-.read-more {
-    color: var(--text-dark-color);
-    font-weight: 700;
-    font-size: 0.9rem;
-}
+
+
 
 
 

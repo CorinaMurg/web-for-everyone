@@ -17,9 +17,9 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "id": "what-is-accessibility",
         "title": "What is Accessibility?",
         "subtitle": "",
-        "author": "Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
+        "author": "By Web for Everyone",
+        "description": `In most conversations about accessibility, the use of semantic HTML is
+            likely to be the first and most common piece of advice. This article looks at the role it 
             plays in accessibility and beyond.`,
         "to": `/resources/what-is-accessibility`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",
@@ -30,10 +30,10 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "id": "how-accessibility-works",
         "title": "How Does Accessibility Work?",
         "subtitle": "",
-        "author": "Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
-            plays in accessibility and beyond.`,
+        "author": "By Web for Everyone",
+        "description": `Have you met the DOM' powerful sibling, the accessibility tree? 
+            It's a node structure made up of accessible objects and the key player in making
+            acessibility happen.`,
         "to": `/resources/how-accessibility-works`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",
         "readMoreAriaLabel": "",
@@ -153,20 +153,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "Is rem Always the Best Choice for Accessibility blog post by Ashlee M Boyer.",
         "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility, a blog post by Ashlee M Boyer.",
     },
-    // {
-    //     "label": "ai",
-    //     "title": "Can AI Help Boost Accessibility?",
-    //     "shortTitle": "Can AI Help Boost Accessibility?",
-    //     "author": "By UW News on washington.edu",
-    //     "description": `This article published by "UW News" discusses a study by University of Washington 
-    //     researchers on the accessibility potential of AI tools. The study found mixed results; while AI helped 
-    //     in some tasks, such as summarizing texts and composing messages, it also frequently produced errors 
-    //     and exhibited ableist biases. `,
-    //     "href": "https://www.washington.edu/news/2023/11/02/ai-accessibility-chatgpt-midjourney-ableist/",
-    //     "ariaLabel": "Can AI Help Boost Accessibility, a University of Washington News article.",
-    //     "readMoreAriaLabel": "read more link to Can AI Help Boost Accessibility, University of Washington News article.",
-
-    // },
+   
     {
         "label": "build-accessible-components",
         "title": "Building the Main Navigation for a Website",
@@ -183,10 +170,10 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessible-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
-        "subtitle": "Part 1: Fixing the 7 Most Common Bugs",
+        "subtitle": "Part One: Finding the 7 Most Common Bugs",
         "author": "Corina Murg",
         "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
-                to welcome all visitors? Let's explore how to make it accessible to everyone.`,
+                to welcome all visitors? Let's check for the most common accessibility bugs.`,
         "to": `/resources/make-it-accessible-part1`,
         "ariaLabel": "",
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
@@ -194,10 +181,10 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessible-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
-        "subtitle": "Part 2: Improving the experience of users of assistive technology",
+        "subtitle": "Part 2: On the hunt for 7 more bugs",
         "author": "Corina Murg",
-        "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
-                to welcome all visitors? Let's explore how to make it accessible to everyone.`,
+        "description": `You've fixed the 7 most common accessibility bugs. Can we find 7 more? Will they be
+            as easy to fix? Let's learn where to look and how to avoid them.`,
         "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",

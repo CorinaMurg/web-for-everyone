@@ -9,3 +9,9 @@ Explain: aria-hidden for icon
 
 Accessibility Statement
 https://dequeuniversity.com/accessibility-statement
+
+Add description to images re: color contrast
+
+allow for pinch and zoom
+
+focus vs focus:visible

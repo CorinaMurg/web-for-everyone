@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../components/BackLinks/BackLinks"
 import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
 
@@ -42,20 +43,16 @@ export default function MostCommonBugs() {
     
     return (
         <div className="article-container howA11yWorks-container">
-            <div className="back-links">
-                <Link to="/resources" className="back-link hover-pink">
-                    Resources
-                </Link>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources/#how-accessibility-works" className="back-link hover-pink">
-                    Understanding Accessibility
-                </Link>
-            </div>
+            
+            <BackLinks 
+                secondLink="Understanding Accessibility" 
+                href="/resources#accessible-digital-presence" 
+            />
             
             <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
             <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
-            <TableOfContents headings={contents} />
+            <TableOfContents contents={contents} />
             
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}

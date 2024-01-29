@@ -27,8 +27,6 @@ export default function Home() {
                             You're adding the finishing touches to your portfolio site.
                             Will it be ready to welcome all users? 
                             Let's explore how you can check for common accessibility bugs.
-                            {/* Let's explore how to make it accessible to everyone. */}
-                             
                         </p>
                         <Link 
                             aria-label="Continue to article let's make it accessible"

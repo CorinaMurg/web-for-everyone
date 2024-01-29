@@ -48,15 +48,15 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {
-    useDocTitle("Let's Make It Accessible | Web for Everyone");
+    useDocTitle("Let's Make It Accessible Part 1 | Web for Everyone");
     useScrollToSection();
     
     return (
-        <div className={`article-container ${styles['makeit-container']}`}>
+        <div className={`article-container ${styles['makeItOne-container']}`}>
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Accessibility and Your Digital Presence" 
+                secondLink="Your Digital Presence: Make It Accessible"
                 href="/resources#accessible-digital-presence" 
             />
             
@@ -64,13 +64,13 @@ export default function MakeItAccessible() {
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
-            <p className="subtitle">Check your portfolio site for the 7 most common bugs</p>
+            <p className="subtitle">Part One: Finding the 7 Most Common Bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} />
 
             {/* **************Article Content********************** */}
-            <div className="article-content makeit">
+            <div className="article-content makeItOne">
                 <div className="section intro">
                     <p>
                         Guaranteeing 100% accessibility is a complex task, and it becomes ever more 

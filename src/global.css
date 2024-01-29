@@ -92,7 +92,6 @@ a {
     font-size: 1rem;
     font-weight: 500;
     padding: 30px;
-    /* background-color: var(--lightGray-color); */
     background-color: #151f28;
     color: white;
 }
@@ -140,6 +139,11 @@ a {
 .fake-heading-p {
     font-weight: 700;
     font-size: 1rem;
+}
+
+*:focus-visible {
+    outline: 3px dashed var(--text-dark-color);
+    outline-offset: 2px;
 }
 
 .font-size-1 {
@@ -342,6 +346,11 @@ p {
     font-weight: 700;
 }
 
+.read-more {
+    color: var(--text-dark-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
 
 .read-next {
     font-weight: 600;

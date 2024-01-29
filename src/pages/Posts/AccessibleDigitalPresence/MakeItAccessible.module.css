@@ -1,15 +1,10 @@
 
-.makeit-container h1 {
+.makeItOne-container h1 {
     display: flex;
     flex-direction: column;
     align-items: self-start;
     text-align: center;
 } 
-
-.makeit-container h3 {
-    font-size: 1.2rem;
-}
-
 
 /* INTRO */
 .makeit .intro .highlight h2 {
@@ -17,8 +12,6 @@
 }
 
 /* SECTION 01 CONTRAST */
-
-
 .code--contrast code:nth-of-type(1),
 .code--contrast code:nth-of-type(2) {
     font-size: 1rem;
@@ -38,27 +31,6 @@
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1;
-}
-
-/* SECTION 02 ALT */
-.code--alt code:nth-of-type(2),
-.code--alt code:nth-of-type(3) {
-    padding-left: 30px;
-}
-
-.alt .highlight p:nth-of-type(2) {
-    margin-bottom: 30px;
-}
-
-
-/* LINKS */
-.code--links code:nth-of-type(2) {
-    padding-left: 30px;
-}
-
-/* BUTTONS */
-.code--buttons code:nth-of-type(2) {
-    padding-left: 30px;
 }
 
 

@@ -14,9 +14,9 @@ export default function Accessibility() {
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
+        "accessible-digital-presence": "Your Digital Presence: Make it Accessible",
         "html-for-accessibility": "HTML for Accessibility",
         "css-for-accessibility": "CSS for Accessibility",
-        "accessible-digital-presence": "Accessibility and Your Digital Presence",
         "build-accessible-components": "Building Accessible Components",
         "learning-resources": "Learning Resources",
     };
