@@ -12,7 +12,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     {
         title: "What is Accessibility?",
         description: `When you create 
-            sites and apps that everyone, including people with disabilities, can easily navigate, 
+            websites and apps that everyone, including people with disabilities, can easily navigate and understand, 
             you make accessibility happen. `,
         link: "/resources/what-is-accessibility",
         ariaLabel: "What is Accessibility? Why does it matter? article by Web for Everyone.",
@@ -20,11 +20,21 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         imageAlt: "",
     },
     {
-        title: "How Does Accessibility Work?",
-        description: `To understand what happens behind the scene, let's take a look at the Document
-            Oject Model's parallel structure, the accessibility tree. `,
+        title: "How Accessibility Works",
+        description: `Take a peek behind the scenes! Learn about the accessibility tree, the DOM's parallel structure,
+            and how assistive technologies can use it to make the web accessible to everyone.`,
+        
         link: "/resources/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
+        image: "assets/images/image-web-3-mobile.jpg",
+        imageAlt: "",
+    },
+    {
+        title: "Most Common Bugs",
+        description: `The bad news: for five years in a row, a handful of bugs has been responsible for the majority of 
+            accessibility issues. The good news: they are quite easy to avoid or fix!`,
+        link: "/resources/most-common-bugs",
+        ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
@@ -51,15 +61,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         image: "assets/images/image-web-3-mobile.jpg",
         imageAlt: "",
     },
-    {
-        title: "Most Common Bugs",
-        description: `For five years in a row, a handful of bugs have been responsible for the majority of 
-            accessibility issues. The good news is that they are quite easy to avoid or fix!`,
-        link: "/resources/most-common-bugs",
-        ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
-        image: "assets/images/image-web-3-mobile.jpg",
-        imageAlt: "",
-    },
+    
     
     {
         title: "Testing for a11y",

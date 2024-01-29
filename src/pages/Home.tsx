@@ -54,7 +54,7 @@ export default function Home() {
             <section aria-labelledby="understanding-accessibility" className={styles['mini-articles']}>
                 <h2 id="understanding-accessibility">Understanding Accessibility</h2>
                 <ul>
-                    {miniArticleData.map((article, index) => (
+                    {miniArticleData.slice(0, 3).map((article, index) => (
                         <li key={index}> 
                             <article className={`${styles['mini-article']} ${styles[`mini-article-${index+1}`]}`}>
 

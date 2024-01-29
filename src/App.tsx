@@ -13,8 +13,6 @@ import MostCommonBugs from "./pages/Posts/UnderstandingA11y/MostCommonBugs"
 import TestingForA11y from "./pages/Posts/UnderstandingA11y/TestingForA11y"
 import MakeItAccessible from "./pages/Posts/AccessibleDigitalPresence/MakeItAccessible"
 import MakeItAccessible2 from "./pages/Posts/AccessibleDigitalPresence/MakeItAccessible2"
-
-
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 import React from "react"
@@ -31,12 +29,10 @@ export default function App() {
                             <Route index={true} element={<Resources />} />
                             <Route path="what-is-accessibility" element={<WhatIsA11y />} />
                             <Route path="how-accessibility-works" element={<HowA11yWorks />} />
-                            <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
-                            <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} />
+                            {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
+                            <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
                             <Route path="most-common-bugs" element={<MostCommonBugs />} />
-                            <Route path="testing-for-accessibility" element={<TestingForA11y />} />
-                            
-                            <Route path="does-inaccessible-equal-ilegal" element={<InaccessibleIllegal />} />
+                            {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
                             <Route path="make-it-accessible-part1" element={<MakeItAccessible />} />
                             <Route path="make-it-accessible-part2" element={<MakeItAccessible2 />} />
                                 

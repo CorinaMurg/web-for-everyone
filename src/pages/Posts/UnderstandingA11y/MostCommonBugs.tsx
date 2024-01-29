@@ -7,17 +7,18 @@ import useScrollToSection from "../../../hooks/useScrollToSection"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../components/BackLinks/BackLinks"
 
 const contents = [
     { href: "#", text: "WebAIM Million Study" },
-    { href: "#Low Contrast Text", text: "Low Contrast Text" },
-    { href: "#Missing Alternative Text for Images", text: "Missing Alternative Text for Images" },
-    { href: "#Empty Links", text: "Empty Links" },
-    { href: "#Empty Buttons", text: "Empty Buttons" },
-    { href: "#Missing Input Labels", text: "Missing Input Labels" },
-    { href: "#Missing Document Language", text: "Missing Document Language" },
-    { href: "#Misused Headings", text: "Misused Headings" },
-    { href: "#Conclusion", text: "Conclusion" },
+    { href: "#low-contrast-text", text: "Low Contrast Text" },
+    { href: "#missing-alt-text-for-images", text: "Missing Alt Text for Images" },
+    { href: "#empty-links", text: "Empty Links" },
+    { href: "#empty-buttons", text: "Empty Buttons" },
+    { href: "#missing-input-labels", text: "Missing Input Labels" },
+    { href: "#missing-document-language", text: "Missing Document Language" },
+    { href: "#misused-headings", text: "Misused Headings" },
+    { href: "#conclusion", text: "Conclusion" },
 ];
 
 export default function MostCommonBugs() {
@@ -33,15 +34,10 @@ export default function MostCommonBugs() {
     
     return (
         <div className={`article-container ${styles['commonbugs-container']}`}>
-            <div className="back-links">
-                <Link to="/resources" className="back-link hover-pink">
-                    Resources
-                </Link>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                <Link to="/resources/#most-common-bugs" className="back-link hover-pink">
-                    Understanding Accessibility
-                </Link>
-            </div>
+            <BackLinks 
+                secondLink="Understanding Accessibility"
+                href="/resources#understanding-accessibility" 
+            />
             
             <h1>The Most Common <span className="yellow-bg">Accessibility Bugs</span></h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
