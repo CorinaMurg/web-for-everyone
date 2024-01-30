@@ -1,5 +1,5 @@
 
-.aside {
+.we-can-help {
     background-color: var(--lightGray-color);
     background-color: var(--darkBlue-color);
     color: var(--text-light-color);
@@ -9,25 +9,28 @@
     overflow: hidden;
 }
 
-.aside ul li {
+.we-can-help ul {
+    padding-inline-start: 0;
+}
+.we-can-help ul li {
     padding-bottom: 30px;
     border-bottom: 0.3px solid var(--grayishBlue-color);
 }
 
-.aside-link:focus-visible {
+.we-can-help--link:focus-visible {
     outline: 3px dashed red !important;
 }
 
-.aside ul li:last-of-type {
+.we-can-help ul li:last-of-type {
     border-bottom: none;
 }
 
-.aside article:last-child {
+.we-can-help article:last-child {
     padding-bottom: 0;
     border-bottom: none;
 }
 
-.aside h2 {
+.we-can-help h2 {
     /* color: var(--yellow-color); */
     color: inherit;
     font-size: 1.5rem;
@@ -35,7 +38,7 @@
     display: flex;
 }
 
-.aside h3 {
+.we-can-help h3 {
     color: inherit;
     font-size: 1rem;
     font-weight: 500;
@@ -43,18 +46,18 @@
     margin-bottom: 5px;
 }
 
-.aside p {
+.we-can-help p {
     color: var(--grayishBlue-color);
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.5;
 }
 
-.aside a {
+.we-can-help a {
     color: inherit;
     text-decoration: none;
 }
 
-.aside .article-link {
+.we-can-help .article-link {
     text-decoration: underline;
 }

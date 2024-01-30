@@ -25,8 +25,8 @@ export default function Home() {
                     <div className={styles['hero-body']}>
                         <p>
                             You're adding the finishing touches to your portfolio site.
-                            Will it be ready to welcome all users? 
-                            Let's explore how you can check for common accessibility bugs.
+                            Will it be ready to welcome <em>all</em> users? 
+                            Let's explore how to check for common accessibility bugs.
                         </p>
                         <Link 
                             aria-label="Continue to article let's make it accessible"

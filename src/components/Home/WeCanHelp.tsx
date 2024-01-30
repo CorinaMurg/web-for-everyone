@@ -7,7 +7,7 @@ import './WeCanHelp.css';
 export default function HomeIntro() {
 
     return (
-        <section aria-labelledby="how-can-we-help" className="aside">
+        <section aria-labelledby="how-can-we-help" className="we-can-help">
             <h2 id="how-can-we-help"
                 aria-label="How can web for everyone help?"
             >
@@ -17,7 +17,7 @@ export default function HomeIntro() {
                 {weCanHelpData.map((article, index) => (
                     <li key={index}> 
                         <div> 
-                            <Link to="/resources" className='aside-link'>
+                            <Link to="/resources" className='we-can-help--link'>
                                 <h3>{article.title}</h3>
                                 <p>{article.description}</p>
                             </Link>
