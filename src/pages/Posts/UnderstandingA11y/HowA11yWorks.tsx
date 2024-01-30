@@ -20,11 +20,13 @@ const contents = [
     {
         href: "#DOM-tree-vs-accessibility-tree",
         text: "DOM Tree vs. Accessibility Tree",
+        ariaLabel: "DOM Tree versus Accessibility Tree",
         className: "padding-left-30",
     },
     {
         href: "#implicit-vs-explicit-accessibility-roles",
         text: "Implicit vs. Explicit Roles",
+        ariaLabel: "Implicit versus Explicit Accessibility Roles",
         className: "padding-left-30",
     },
     {
@@ -46,7 +48,7 @@ export default function MostCommonBugs() {
             
             <BackLinks 
                 secondLink="Understanding Accessibility" 
-                href="/resources#accessible-digital-presence" 
+                href="/resources#understanding-accessibility" 
             />
             
             <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
@@ -60,13 +62,13 @@ export default function MostCommonBugs() {
                     <h2 aria-label="In a Nutshell: How Accessibility works">In a Nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree. The <strong>accessibility tree focuses only on elements that 
-                        need to be exposed to assistive technologies </strong> 
-                        like screen readers or speech recognition software. 
+                        version of the DOM tree. The <strong>accessibility tree contains only elements that 
+                        need to be exposed to assistive technologies</strong>, 
+                        like a button or a heading. 
                     </p>
                     <p className="fake-list-item">
-                        When triggered, assistive technologies use the browser's accessibility APIs to retrieve information 
-                        from the accessibility tree and present it to users. 
+                        When triggered, assistive technologies use the browser's accessibility APIs to retrieve 
+                        information from the accessibility tree and present it to users. 
                     </p>
                 </div>
 
@@ -77,7 +79,8 @@ export default function MostCommonBugs() {
                     
                     <div>
                         <p>
-                            Each node in the tree is an accessible object. It represents either 
+                            Each node in the tree is an <strong>accessible object</strong>. 
+                            It represents either 
                         </p>
                         <p className="bullet-point-line margin-top-20 white-bg">
                             an actionable element, like a <code>link</code> or <code>button</code>, or
@@ -121,15 +124,15 @@ export default function MostCommonBugs() {
                         and the accessibility trees.
                     </p>
 
-                    <h4>DOM tree example</h4>
+                    <h4 className="margin-top-20">DOM tree example</h4>
                     <div className="code a11ytree-code">
-                        <code className="pink-text">&lt;nav&gt;</code>
-                        <code className="padding-left-30">&lt;ul&gt;</code>
+                        <code><span className="code-blue-color">&lt;nav&gt;</span></code>
+                        <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
                         <code className="padding-left-60">
                             &lt;li&gt;
                         </code>
                         <code className="padding-left-90">
-                            &lt;a&gt;<span className="blue-text">Home</span>&lt;/a&gt;
+                            <span className="code-pink-color">&lt;a&gt;</span>Home<span className="code-pink-color">&lt;/a&gt;</span>
                         </code>
                         <code className="padding-left-60">
                             &lt;/li&gt;
@@ -138,72 +141,40 @@ export default function MostCommonBugs() {
                             &lt;li&gt;
                         </code>
                         <code className="padding-left-90">
-                            &lt;a&gt;<span className="blue-text">Your Users</span>&lt;/a&gt;
+                            <span className="code-pink-color">&lt;a&gt;</span>Your Users<span className="code-pink-color">&lt;/a&gt;</span>
                         </code>
                         <code className="padding-left-60">
                             &lt;/li&gt;
                         </code>
-                        <code className="padding-left-60 margin-top-10">
-                            &lt;li&gt;
-                        </code>
-                        <code className="padding-left-90">
-                            &lt;a&gt;<span className="blue-text">Resources</span>&lt;/a&gt;
-                        </code>
-                        <code className="padding-left-60">
-                            &lt;/li&gt;
-                        </code>
-                        <code className="padding-left-60 margin-top-10">
-                            &lt;li&gt;
-                        </code>
-                        <code className="padding-left-90">
-                            &lt;a&gt;<span className="blue-text">About</span>&lt;/a&gt;
-                        </code>
-                        <code className="padding-left-60">
-                            &lt;/li&gt;
-                        </code>
-                        <code className="padding-left-30">
-                            &lt;/ul&gt;
-                        </code>
-                        <code className="pink-text">&lt;/nav&gt;</code>
+                        <code className="padding-left-60">. . .</code>
+                        <code><span className="code-yellow-color padding-left-30">&lt;/ul&gt;</span></code>
+                        <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
                     </div>
 
-                    <h4>Accessibility tree example</h4>
+                    <h4 className="margin-top-40">Accessibility tree example</h4>
                     <div className="code a11ytree-code">
-                        <code className="pink-text">navigation</code>
-                        <code className="padding-left-30">list</code>
+                        <code><span className="code-blue-color">navigation</span></code>
+                        <code className="padding-left-30"><span className="code-yellow-color">list</span></code>
                         <code className="padding-left-60">listitem</code>
                         <code className="padding-left-90">
-                            link "<span className="blue-text">Home</span>" 
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
                             <span> </span>
-                            <span className="blue-text">focusable</span>: true <span className="blue-text">focused</span>: true
+                            <span className="code-purple-color">focusable</span>: true <span className="code-purple-color">focused</span>: true
                         </code>
                         <code className="padding-left-120">StaticText "Home"</code>
 
                         <code className="padding-left-60">listitem</code>
                         <code className="padding-left-90">
-                            link "<span className="blue-text">Your Users</span>"
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
                             <span> </span>
-                            <span className="blue-text">focusable</span>: true
+                            <span className="code-purple-color">focusable</span>: true
                         </code>
                         <code className="padding-left-120">StaticText "Your Users"</code>
 
-                        <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">
-                            link "<span className="blue-text">Resources</span>"
-                            <span> </span>
-                            <span className="blue-text">focusable</span>: true
-                        </code>
-                        <code className="padding-left-120">StaticText "Resources"</code>
-                        <code className="padding-left-60">listitem</code>
-                        <code className="padding-left-90">
-                            link "<span className="blue-text">About</span>"
-                            <span> </span>
-                            <span className="blue-text">focusable</span>: true
-                        </code>
-                        <code className="padding-left-120">StaticText "About"</code>
+                        <code className="padding-left-60">. . .</code>
                     </div>
                     
-                    <p>
+                    <p className="margin-top-20">
                         While the DOM tree is structured by HTML tags/elements, <strong>the accessibility tree is 
                         structured by roles</strong>.
                         For each object in the accessibility tree, its role matches the function of its 
@@ -215,16 +186,18 @@ export default function MostCommonBugs() {
                     </p>
                     <div>
                         <p className="bullet-point-line white-bg margin-bottom-20">
-                            the <code>navigation</code> role goes with <code>&lt;nav&gt;</code>
+                            the <code>navigation</code> role goes with the <code>&lt;nav&gt;</code> tag
                         </p>
                       
                         <p className="bullet-point-line white-bg margin-bottom-20">
-                            the <code>list</code> role goes with <code>&lt;ul&gt;</code> 
+                            the <code>list</code> role goes with the <code>&lt;ul&gt;</code> tag
                         </p>
                         <p className="bullet-point-line white-bg margin-bottom-20">
-                            the <code>link</code> role goes with <code>&lt;a&gt;</code> 
+                            the <code>link</code> role goes with the <code>&lt;a&gt;</code> tag
                         </p>
-                        <p>But how does the browser know what role to assign to a given element?</p>
+                        <p className="margin-top-40">
+                            <strong>But how does the browser know what role to assign to a given element?</strong>
+                        </p>
                     </div>
                     
                     {/* *************2.2 Implicit vs. Explicit Accessibility Roles********************** */}
@@ -234,16 +207,23 @@ export default function MostCommonBugs() {
                     >
                         Implicit vs. Explicit Accessibility Roles
                     </h3>
+                    <p>
+                        Some roles are assigned by default, based on the HTML tag used to create the element.
+                        These are called <strong>implicit roles</strong>. Developers can also assign a role to an element
+                        using ARIA attributes. These are called <strong>explicit roles</strong>.
+                    </p>
                     
-                    <h4>Implicit Roles</h4>
+                    <h4 className="margin-top-20">Implicit Roles</h4>
                     <p>
                         Each role in the example above is <strong>implicit</strong>. It's built in the definition of the
-                        semantic HTML tag used to create an element. When the browser builds the accessibility tree, 
-                        it assigns the role, and all the related properties and states, to the corresponding 
+                        semantic HTML tag used to create the element. When the browser builds the accessibility tree, 
+                        it assigns the role, and all related properties and states, to the corresponding 
                         accessible object.
                     </p>
                     <p>
-                        This is one of the reasons why using semantic HTML is so important. 
+                        <strong>This is one of the reasons why using semantic HTML is so important!</strong>
+                    </p>
+                    <p> 
                         Let's zoom in on the first link object to understand why.
                     </p>
                     
@@ -253,46 +233,60 @@ export default function MostCommonBugs() {
                     <p className="bullet-point-line">State: focused</p>
                     
                     <p className="white-bg">
-                        We have a focusable (i.e. actionable) element, a link, with the name "Home". 
+                        We have a <strong>link</strong> with the <strong>name</strong> "Home".
+                        It's a <strong>focusable</strong> (i.e. actionable) element.
                         For a keyboard user, this means that they can navigate to it by pressing 
                         the <code>Tab</code> key, and activate it by pressing <code>Enter</code>. 
                     </p>
                     <p>
-                        At the time of this snapshot, the link was in focus, which means that it was
-                        highlighted and ready to be activated. 
+                        At the time of this snapshot, the link was <strong>in focus</strong>, or selected and
+                        ready to be activated. 
                     </p>
                     <p>
                         Each assistive technology will use the information from the accessibility tree to present the 
-                        object to the user in the most appropriate way.
+                        object to the user in the most appropriate way:
                     </p>
                     
-                    <p>
-                        A screen reader will announce it as "Home link".
+                    <p className="bullet-point-line">
+                        A screen reader will announce it as <strong>"Home link"</strong>.
+                    </p>
+                    <p className="bullet-point-line">
                         A speech recognition software will recognize it as "Home" and allow the user to activate it 
-                        with the command "click Home".
+                        with the command <strong>"click Home"</strong>.
                     </p>
                     
                     <p className="white-bg">By using the semantic <code>&lt;a&gt;</code> tag we get a lot of 
                         the functionality expected from a link for free, using only HTML!
                     </p>
 
-                    <h4>Explicit Roles</h4>
+                    <h4 className="margin-top-40">Explicit Roles</h4>
                     <p>
-                        We can also explicitly assign a role to an HTML element using ARIA 
-                        (Accessible Rich Internet Applications) attributes. These are a set of attributes that
-                        can be added in order to modify or improve the default behavior of an element and 
+                        As a developer, you can also explicitly assign a role to an HTML element using <strong>ARIA</strong>
+                        (<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer" className="hover-pink">
+                            <strong>Accessible Rich Internet Applications</strong>
+                        </a>
+                        ) attributes. These are a set of attributes that
+                        can be added to HTML tags in order to modify or improve the default behavior of an element and 
                         make it accessible.
                     </p>
                     <strong className="white-bg">Example: create a button from a <code>&lt;div&gt;</code></strong>
-                    <div className="bug-code bug-code--buttons">
-                        <code>&lt;<span className="pink-text">div</span> role="button" tabindex="0"&gt;</code>
-                        <code>Close</code>
-                        <code>&lt;/<span className="pink-text">div</span>&gt;</code>
+                    <div className="code">
+                        <code>
+                            <span className="code-blue-color">&lt;div</span> 
+                            <span className="code-yellow-color"> role</span>="button" 
+                            <span className="code-purple-color"> tabindex</span>="0"
+                            
+                            <span className="code-blue-color">&gt;</span>
+                        </code>
+                        <code className="padding-left-30">Close</code>
+                        <code><span className="code-blue-color">&lt;/div&gt;</span></code>
                     </div>
                     <p className="white-bg">
                         Here, we have a <code>div</code>, a non-semantic element, with an assigned role 
                         of <code>button</code>. 
                         This means that the element will be treated as a button by assistive technologies.
+                    </p>
+                    <p className="white-bg">
                         While the <code>tabindex</code> attribute makes it focusable, the button will not be
                         fully functional until we add other attributes and events:
                     </p>
@@ -300,7 +294,7 @@ export default function MostCommonBugs() {
                     <p className="bullet-point-line white-bg">
                         event handlers to allow the button to be activated with the <code>Enter</code><span> </span>
                         and <code>Space</code> keys (available by default with the <span> </span>
-                        <code>&lt;button&gt;</code> element; important for screen reader users)</p>
+                        <code>&lt;button&gt;</code> element; important for screen reader users!)</p>
                     <p className="bullet-point-line white-bg">depending on the desired functionality,
                         <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
                     </p>

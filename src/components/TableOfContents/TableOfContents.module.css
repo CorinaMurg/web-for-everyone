@@ -40,8 +40,7 @@
 .table-contents--list--item a {
     align-self: flex-start;
     color: inherit;
-    opacity: 0.8;
-    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.9;
     margin-top: 20px;
     text-decoration: none;
 }
