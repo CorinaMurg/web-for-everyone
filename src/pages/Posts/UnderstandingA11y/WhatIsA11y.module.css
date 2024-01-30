@@ -1,6 +1,11 @@
 
 
-
+/* 
+.whatIsA11y li::marker {
+    color: var(--pinkBright-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+} */
 
 
 

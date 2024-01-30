@@ -50,6 +50,10 @@ footer a {
     margin-bottom: 10px;
 }
 
+footer ul {
+    padding-inline-start: 0;
+}
+
 footer li {
     margin-bottom: 25px;
 }
@@ -80,16 +84,15 @@ footer li {
     text-transform: uppercase;
 }
 
-.react-logo {
-    width: 16px;
-    aspect-ratio: 1 / 1;
-}
 
+
+
+/* 
 .built-span {
     display: flex;
     align-items: center;
     gap: 4px;
-}
+} */
 
 
 @media (min-width: 801px) and (max-width: 1200px) {

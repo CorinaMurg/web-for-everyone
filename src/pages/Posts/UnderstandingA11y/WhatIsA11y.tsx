@@ -51,7 +51,7 @@ export default function WhatIsA11y() {
 
             {/* **************ARTICLE CONTENT***************** */}
             
-            <div className={`article-content ${styles['whatisa11y']}`}>
+            <div className={`article-content ${styles['whatIsA11y']}`}>
                  {/* *************0. INTRO********************** */}
                 <div className="setion intro" id="intro">
                     <p>
@@ -69,64 +69,85 @@ export default function WhatIsA11y() {
                 <div className="section scroll-target" id="the-DNA-of-the-web-is-accessible">
                     <h2>The DNA of the Web is Accessible</h2>
                     <p>
-                        If you have good sight, you rely on it, along with a mouse or a keyboard, to open a webpage 
-                        and check out its content. 
+                        If you have good sight and hand mobility, you can rely on them to navigate
+                        to a webpage and check out its content (probably with the help a mouse or a keyboard). 
                         For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
-                        person with sight but limited or no hand mobility might use voice control software.
+                        person with good sight but limited or no hand mobility might use speech recognition software.
                     </p>
                     
                     <p>
-                        The tools you need to allow for these kinds of interactions (and many others!) 
-                        are already in place:
+                        As a developer, the tools you need to allow for these kinds of interactions (and many others!) 
+                        are the same tools you use to build your website or app:
                     </p>
-                    <p className="bullet-point-line">
-                        code syntax to create the structure and the content of your site: semantic HTML, 
-                        CSS, and JavaScript.
+                    <ul>
+                        <li><p className="bullet-point-line">HTML (with a little help from ARIA attributes)</p></li>
+                        <li><p className="bullet-point-line margin-top-20">CSS</p></li>
+                        <li><p className="bullet-point-line margin-top-20">JavaScript</p></li>
+                    </ul>
+                    <strong className=" margin-top-20 white-bg">
+                        Should your HTML file be a soup of <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags?
+                    </strong>
+                    <p className="white-bg">
+                        Of course not! We are lucky to be a developers at a time when <code>HTML5</code> is the 
+                        standard, and it comes with a whole set of semantic tags. These are tags that share the 
+                        purpose of their content with the browser, and thus with the assistive technologies that 
+                        people with disabilities use to access the web.
                     </p>
-                    <p className="bullet-point-line">
-                        assistive technologies to connect your users with your site: screen readers, 
-                        voice control software, refreshable braille displays, to name a few.
-                    </p>
+                    <strong className="margin-top-20">
+                        Our job as developers is two fold:
+                    </strong>
+                    <ul>
+                        <li>
+                            <p className="bullet-point-line">
+                                Set accessibility as a goal. This includes being aware of the ways in which 
+                                users of all abilities interact with the web.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="bullet-point-line margin-top-20">
+                                Follow good coding practices.
+                            </p>
+                        </li>
+                    </ul>
+                    <strong className="margin-top-20">
+                        Then the browser and the assistive technologies can take care of the rest! 
+                    </strong>
 
-                    <div className="highlight">
+                    <div className="highlight margin-top-20">
                         <h3>How semantic HTML improves accessibility</h3>
                         <p className="white-bg">
-                            You’ve probably used HTML tags like 
-                            <span> </span>
-                            <code>&lt;nav&gt;</code>,
-                            <span> </span>
-                            <code>&lt;main&gt;</code>,
-                            <span> </span>
-                            <code>&lt;footer&gt;</code>,
-                            <span> </span>
-                            <code>&lt;button&gt;</code>, or
-                            <span> </span>
-                            <code>&lt;h1&gt;</code>.
+                            You’ve probably used HTML tags like <code>&lt;nav&gt;</code>,
+                            <span> </span><code>&lt;button&gt;</code>, or <code>&lt;h1&gt;</code>.
                             
                             They provide your codebase with a structure that is easy to recognize and maintain. 
                         </p>
-                        <p>
-                            For example, you would use the <code>&lt;nav&gt;</code> tags to designate your navigation
-                            section, and the <code>&lt;button&gt;</code> tags for your footer section.
+                        <p className="white-bg">
+                            For example, to designate a navigation
+                            section you would use the <code>&lt;nav&gt;</code> tags, and for the main heading
+                            of a page you would choose the <code>&lt;h1&gt;</code> tags.
                         </p>
                         <p className="white-bg">
-                            But did you know that they are more than just visual markers for developers? True! 
-                            They convey information about their content to assistive tech users. That’s why we call them <span> </span>
-                            <span className="pink-bg-white-text" >semantic</span> <span> </span>HTML tags. 
+                            Did you know that these tags are more than just markers for your code? True! 
+                            They convey information about their content to assistive tech users as well. 
+                            That’s why we call them <span className="pink-bg-white-text" >semantic</span> HTML tags. 
                         </p>
                         <p className="white-bg">
-                            For example, when a screen reader encounters the <code>&lt;nav&gt;</code> tag, it 
-                            actually announces to the user that this section of the page is for navigation. But, if 
-                            you chose
-                            to wrap your navigation links in a <code>&lt;div&gt;</code> tag, the user would not be 
-                            immediately aware of its purpose. A <code>&lt;div&gt;</code> is just a container 
-                            intended for styling purposes or for layout, and requires additional code to make it
-                            accessible.
+                            For example, when a screen reader encounters the navigation section of your site, it 
+                            will announce it to the user as such. And that's because you chose
+                            to wrap your navigation links in <code>&lt;nav&gt;</code> tags. 
                         </p>
+                        <p className="white-bg">
+                            Had you chosen a <code>&lt;div&gt;</code> instead, 
+                            the user would not be immediately aware of its purpose. A <code>&lt;div&gt;</code> has
+                            no semantic meaning. It is just a container intended for styling purposes or for layout, 
+                            and requires additional code to make it accessible.
+                        </p>
+    
+                        <strong>Always rely on semantic HTML!</strong>  
                         <p>
-                            <strong>Always rely on semantic HTML!</strong> Think about the content and functionality 
-                            you want to create,and choose the appropriate HTML tag. While JavaScript can help with more 
-                            complex acccessibility issues, semantic HTML is the backbone of accessibility.
+                            Think about the content and the functionality 
+                            you want to create, and choose the appropriate HTML tags. While JavaScript can help with more 
+                            complex acccessibility issues, semantic HTML is the foundation of accessibility.
                         </p>
                     </div>
                 </div>
@@ -140,43 +161,44 @@ export default function WhatIsA11y() {
                     </p>
                     
                     <div>
-                    <p className="bullet-point-line"><strong>legal compliance</strong></p>
-                    <p className="padding-left-20">
-                        Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                        lawsuit with the National Federation for the Blind for $6 million? 
-                    </p>
-                    <br></br>
-                    <p className="padding-left-20">
-                        Read the article <span> </span>
-                        <Link to="resources/" className="bold pink-text">Does Inaccessible = Illegal?</Link>
-                        <span> </span> 
-                        about the legal implications of inaccessible sites.
-                    </p>
+                        <p className="bullet-point-line"><strong>legal compliance</strong></p>
+                        
+                        <p className="padding-left-20">
+                            The legal implications of inaccessible sites are real!
+                        </p>
+                        <p className="margin-top-20 padding-left-20">
+                            While the accessibility guidelines established by the W3C (the World Wide Web Consortium)
+                            are not legally binding, many countries have adopted legislation founded on them.
+                        </p>
+                        <p className="margin-top-20 padding-left-20">
+                            Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                            lawsuit with the National Federation for the Blind for $6 million? 
+                        </p>
+                        
+                        <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
+                        <p className="padding-left-20">
+                            A site can attract new visitors from the millions of users with disabilities 
+                            who use the web.
+                        </p>
                     
-                    <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
-                    <p className="padding-left-20">
-                        A site can attract new visitors from the millions of users with disabilities 
-                        who use the web.
-                    </p>
-                    
-                    <p className="bullet-point-line margin-top-20"><strong>improved SEO</strong></p>
-                    <p className="white-bg padding-left-20">
-                        Many accessibility practices align with good SEO practices. For example, 
-                        providing <code>alt</code> text for images and ensuring a logical content structure with 
-                        proper heading tags are beneficial for both accessibility and SEO. 
-                    </p>
-                    
-                    <p className="bullet-point-line margin-top-20"><strong>positive spillover</strong></p>
-                    <p className="padding-left-20">
-                        Many features designed for accessibility, 
-                        such as clear navigation, easy-to-read fonts, and simple layouts, 
-                        contribute to a more intuitive and user-friendly interface for all users, not just
-                        those with disabilities. 
-                    </p>
+                        <p className="bullet-point-line margin-top-20"><strong>improved SEO</strong></p>
+                        <p className="white-bg padding-left-20">
+                            Many accessibility practices align with good SEO practices. For example, 
+                            providing <code>alt</code> text for images and ensuring a logical content structure with 
+                            proper heading tags are beneficial for both accessibility and SEO. 
+                        </p>
+                        
+                        <p className="bullet-point-line margin-top-20"><strong>positive spillover</strong></p>
+                        <p className="padding-left-20">
+                            Many features designed for accessibility, 
+                            such as clear navigation, easy-to-read fonts, and simple layouts, 
+                            contribute to a more intuitive and user-friendly interface for all users, not just
+                            those with disabilities. 
+                        </p>
                     </div>
                     
                         
-                    <p>BUT, above all . . .</p>
+                    <strong>BUT, above all . . .</strong>
                 </div>
 
                 {/* *************Web Access is Everyone's Right******************** */}
@@ -197,13 +219,13 @@ export default function WhatIsA11y() {
                     <p>
                         Your code can help a blind student access their online course materials,
                         a person with limited mobility order their groceries, or a person with dyslexia read the
-                        news. <strong>Everyone deserves the same level of freedom and functionality when interacting with
+                        news. <strong>Everyone deserves a high level of freedom and functionality when interacting with
                         the web</strong>.
                     </p>     
                 </div>
 
                 {/* *********NEXT***************** */}
-                <div className="bug scroll-target" id="next-steps">
+                <div className="section scroll-target" id="next-steps">
                     <h2>Next Steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 
