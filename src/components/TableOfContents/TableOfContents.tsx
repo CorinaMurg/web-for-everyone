@@ -14,12 +14,12 @@ export default function TableOfContents ({ contents }: { contents: Array<any> })
             <ul className={styles['table-contents--list']}>
                 {contents.map((item: any, index: number) => (
                 <li key={index} className={styles['table-contents--list--item']}>
-                    <Link  to={item.href} 
+                    <a  href={item.href} 
                         className={`hover-pink ${item.className}`}
                         {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                     >
                         <code>{item.text}</code>
-                    </Link>
+                    </a>
                 </li>
                 ))}
             </ul>

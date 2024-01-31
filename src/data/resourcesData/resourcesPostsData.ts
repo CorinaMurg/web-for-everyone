@@ -39,32 +39,32 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "",
     },
     
-    {
-        "label": "understanding-accessibility",
-        "id": "accessibility-guidelines",
-        "title": "Accessibility Guidelines",
-        "subtitle": "Findings from the 2023 WebAIM Million Study",
-        "author": "Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
-            plays in accessibility and beyond.`,
-        "to": `/resources/accessibility-guidelines`,
-        "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-        "readMoreAriaLabel": "",
-    },
-    {
-        "label": "understanding-accessibility",
-        "id": "does-inaccessible-equal-illegal",
-        "title": "Does Inaccessible Equal Illegal?",
-        "subtitle": "Findings from the 2023 WebAIM Million Study",
-        "author": "Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
-            plays in accessibility and beyond.`,
-        "to": `/resources/does-inaccessible-equal-illegal`,
-        "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-        "readMoreAriaLabel": "",
-    },
+    // {
+    //     "label": "understanding-accessibility",
+    //     "id": "accessibility-guidelines",
+    //     "title": "Accessibility Guidelines",
+    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
+    //     "author": "Web for Everyone",
+    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
+    //         likely to be the first and most common piece of advice. My post looks at the role it 
+    //         plays in accessibility and beyond.`,
+    //     "to": `/resources/accessibility-guidelines`,
+    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
+    //     "readMoreAriaLabel": "",
+    // },
+    // {
+    //     "label": "understanding-accessibility",
+    //     "id": "does-inaccessible-equal-illegal",
+    //     "title": "Does Inaccessible Equal Illegal?",
+    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
+    //     "author": "Web for Everyone",
+    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
+    //         likely to be the first and most common piece of advice. My post looks at the role it 
+    //         plays in accessibility and beyond.`,
+    //     "to": `/resources/does-inaccessible-equal-illegal`,
+    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
+    //     "readMoreAriaLabel": "",
+    // },
     {
         "label": "understanding-accessibility",
         "id": "most-common-bugs",
@@ -78,19 +78,19 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
         "readMoreAriaLabel": "",
     },
-    {
-        "label": "understanding-accessibility",
-        "id": "testing-for-accessibility",
-        "title": "Testing for Accessibility",
-        "subtitle": "Findings from the 2023 WebAIM Million Study",
-        "author": "Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
-            plays in accessibility and beyond.`,
-        "to": `/resources/testing-for-accessibility`,
-        "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-        "readMoreAriaLabel": "",
-    },
+    // {
+    //     "label": "understanding-accessibility",
+    //     "id": "testing-for-accessibility",
+    //     "title": "Testing for Accessibility",
+    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
+    //     "author": "Web for Everyone",
+    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
+    //         likely to be the first and most common piece of advice. My post looks at the role it 
+    //         plays in accessibility and beyond.`,
+    //     "to": `/resources/testing-for-accessibility`,
+    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
+    //     "readMoreAriaLabel": "",
+    // },
     {
         "label": "html-for-accessibility",
         "title": "The Importance of Semantic HTML",
@@ -191,7 +191,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "accessible-digital-presence",
-        "title": "5 Tips for Making Your GitHub Profile Page Accessible",
+        "title": "Tips for an Accessible GitHub Profile",
         "subtitle": "",
         "author": "By Annie Streater on github.blog",
         "description": `This GitHub blog post provides practical advice on how to ensure your GitHub profile 

@@ -10,7 +10,7 @@ import "../global.css"
 
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
-    useScrollToSection();
+    // useScrollToSection();
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
@@ -32,11 +32,11 @@ export default function Accessibility() {
                 <ul className={styles['resources--table-contents--list']}>
                     {Object.entries(sectionTitles).map(([label, heading], index) => (
                         <li key={index} className={styles['resources--table-contents--list--item']}>
-                            <Link to={`#${label}`} 
+                            <a href={`#${label}`} 
                                 className="hover-pink"
                             >
                                 <code>{heading}</code>
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -44,8 +44,9 @@ export default function Accessibility() {
             <div className={styles['resources-content']}>
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
                     <div key={index} className={`${styles['section-container']} scroll-target`} id={`${label}`}>
-                        <h2 className="blue-heading heading update-margin">
-                            {/* <a id={`${label}`}></a> */}
+                        <h2 className="blue-heading heading update-margin ">
+                            {/* does not scroll corectly */}
+                            {/* <a id={`${label}`} className="scroll-target"></a> */}
                             {heading}
                         </h2>     
                         <div className={`update-margin ${styles['section-content']}`}>

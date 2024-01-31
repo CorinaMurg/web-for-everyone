@@ -49,7 +49,7 @@ const contents = [
 
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible Part 1 | Web for Everyone");
-    useScrollToSection();
+    // useScrollToSection();
     
     return (
         <div className={`article-container ${styles['makeItOne-container']}`}>
@@ -160,10 +160,14 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <div className={`section ${styles['contrast']} scroll-target`} id="color-contrast">
-                    <div className="section-heading">
+                <div className={`section ${styles['contrast']} `} >
+                    <div className="section-heading scroll-target" id="color-contrast">
                         <span className="section-number">01</span>
-                        <h2>Color Contrast</h2>
+                        <h2>
+                            {/* does not scroll correctly. better screen reader support though */}
+                            {/* <a id="color-contrast" className="scroll-target"></a> */}
+                            Color Contrast
+                        </h2>
                     </div>
 
                     <div className={`code ${styles['code--contrast']}`}>

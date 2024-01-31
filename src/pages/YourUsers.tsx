@@ -18,14 +18,14 @@ export default function YourUsers() {
                 </div>
 
             </div>
-            <div className="users--container">
+            {/* <div className="users--container">
                 {projectsData.map((project) => (
                     <User
                         key={project.title}
                         {...project}
                     />
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -9,7 +9,7 @@ import "../../../global.css"
 
 const contents = [
     {
-        href: "#",
+        href: "#intro",
         text: "In a Nutshell",
         ariaLabel: "In a Nutshell: How Accessibility works",
     },
@@ -58,8 +58,11 @@ export default function MostCommonBugs() {
             
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}
-                <div className="section intro intro-howA11yWorks" id="intro">
-                    <h2 aria-label="In a Nutshell: How Accessibility works">In a Nutshell</h2>
+                <div className="section intro intro-howA11yWorks" >
+                    <h2 aria-label="In a Nutshell: How Accessibility works">
+                        In a Nutshell
+                        <a id="intro"></a>
+                    </h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
                         version of the DOM tree. The <strong>accessibility tree contains only elements that 
