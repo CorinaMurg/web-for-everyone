@@ -678,7 +678,7 @@ export default function MakeItAccessible() {
                     
                     <div className="next-article margin-top-30">
                         <span className="read-next">Read next:</span>
-                        <Link to="/resources/make-it-accessible2" 
+                        <Link to="/resources/make-it-accessible-part2" 
                                 className="read-next pink-text"
                                 onClick={() => { scrollToTop() }}
                         >

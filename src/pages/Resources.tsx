@@ -14,7 +14,7 @@ export default function Accessibility() {
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
-        "accessible-digital-presence": "Your Digital Presence: Make it Accessible",
+        "accessible-digital-presence": "Build an Accessible Digital Presence",
         "html-for-accessibility": "HTML for Accessibility",
         "css-for-accessibility": "CSS for Accessibility",
         "build-accessible-components": "Building Accessible Components",
@@ -28,7 +28,9 @@ export default function Accessibility() {
                 <span>your <span className="yellow-bg">accessibility skills</span></span>
             </h1>
             <div className={styles['resources--table-contents']}>
-                <h2 className="blue-heading">Table of Contents</h2>
+                <h2>
+                    <code>Table of Contents</code>
+                </h2>
                 <ul className={styles['resources--table-contents--list']}>
                     {Object.entries(sectionTitles).map(([label, heading], index) => (
                         <li key={index} className={styles['resources--table-contents--list--item']}>
@@ -45,8 +47,6 @@ export default function Accessibility() {
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
                     <div key={index} className={`${styles['section-container']} scroll-target`} id={`${label}`}>
                         <h2 className="blue-heading heading update-margin ">
-                            {/* does not scroll corectly */}
-                            {/* <a id={`${label}`} className="scroll-target"></a> */}
                             {heading}
                         </h2>     
                         <div className={`update-margin ${styles['section-content']}`}>

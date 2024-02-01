@@ -195,7 +195,7 @@ h4 {
     margin-top: 48px;
 }
 
-.heading-link {
+/* .heading-link {
     position: absolute;
     left: -30px;
     top: 2px;
@@ -208,7 +208,7 @@ h4 {
 
 .heading-link:focus svg, .heading-link:hover svg {
     opacity: 1; 
-}
+} */
 
 .highlight {
     background-color: var(--lightGray-color);

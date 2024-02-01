@@ -1,7 +1,7 @@
 
 .resources {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 0.8fr; 
     grid-template-rows: repeat(2, auto); 
     gap: 10px; 
     margin-block: 64px;
@@ -27,37 +27,10 @@
     font-size: 3.3rem;
     line-height: 1.4;
     margin-top: 35px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     display: flex;
     flex-direction: column;
     color: inherit;
-}
-
-.section-container h2 {
-    position: relative;
-}
-
-.section-container h2 a {
-    position: absolute;
-    left: -25px;
-}
-
-svg {
-    stroke: gray;
-    width: 18px; 
-    height: 18px; 
-    visibility: hidden; 
-}
-
-.section-container h2 a:focus-within svg {
-    visibility: visible; 
-}
-
-.section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 80%;
 }
 
 .resources-content {
@@ -68,7 +41,13 @@ svg {
     gap: 30px;
     font-size: 0.9rem;
     font-weight: 500;
+}
 
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 80%;
 }
 
 .section-content .post {
@@ -96,7 +75,7 @@ svg {
     font-size: 0.9rem;
     font-weight: 400;
     grid-column: 2 / 3; 
-    grid-row: 2 / 3; 
+    grid-row: 1 / 3; 
     position: sticky;
     top: 100px; 
     height: 100vh; 
@@ -107,7 +86,12 @@ svg {
 }
 
 .resources--table-contents h2 {
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .resources--table-contents--list--item {
@@ -122,14 +106,6 @@ svg {
     opacity: 0.8;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 20px;
-}
-
-.section-container h2 {
-    position: relative;
-}
-
-.resources img {
-    width: 30%;
 }
 
 @media screen and (max-width: 1000px) {
