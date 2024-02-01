@@ -119,7 +119,7 @@ export default function MakeItAccessible() {
                             <p>
                                 However, these tools are a great first step. Moreover, as we are now looking at how to 
                                 avoid the most common accessibility bugs, you will see that they are easy to spot 
-                                with these tools.
+                                with these tools. 
                             </p>
                             <p>
                                 Here are a few of the most popular accessibility browser extensions:

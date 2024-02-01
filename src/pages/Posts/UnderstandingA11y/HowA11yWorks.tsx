@@ -67,7 +67,7 @@ export default function MostCommonBugs() {
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
                         version of the DOM tree. The <strong>accessibility tree contains only elements that 
                         need to be exposed to assistive technologies</strong>, 
-                        like a button or a heading. 
+                        like links or headings. 
                     </p>
                     <p className="fake-list-item">
                         When triggered, assistive technologies use the browser's accessibility APIs to retrieve 
@@ -83,21 +83,24 @@ export default function MostCommonBugs() {
                     <div>
                         <p>
                             Each node in the tree is an <strong>accessible object</strong>. 
-                            It represents either 
+                            It can represent one of the following:
                         </p>
                         <p className="bullet-point-line margin-top-20 white-bg">
-                            an actionable element, like a <code>link</code> or <code>button</code>, or
+                            an actionable element, like a <code>link</code> or <code>button</code>;
                         </p>
                         <p className="bullet-point-line margin-top-20 white-bg">
-                            an element that  provides information about the page content and structure, 
+                            an element that  provides information about the page content and structure,
                             like a <code>navbar</code> or a <code>heading</code>.
+                        </p>
+                        <p className="bullet-point-line margin-top-20 white-bg">
+                            an element that holds text content, usually wrapped 
+                            in tags like <code>&lt;p&gt;</code> or <code>&lt;code&gt;</code>.
                         </p>
                     </div>
                     
                     <p className="white-bg">
-                        The rest of the elements are ignored. 
-                        For example, a <code>&lt;span&gt;</code> or a <code>&lt;div&gt;</code> with purely decorative 
-                        role will not appear in the accessibility tree.
+                        Any <code>div</code> element with purely decorative or container role
+                        will be labeled as "ignored" or "generic".
                     </p>
 
                     <div className="highlight">
@@ -107,13 +110,22 @@ export default function MostCommonBugs() {
                                     How to view the accessibility tree with Dev Tools
                                 </span>
                             </summary>
-                            <p>
-                                To view the accessibility tree, open the Developer Tools and select the 
-                                acccessibility tab. 
+                            <p className="margin-top-50">
+                                <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q&t=9s" 
+                                    target="_blank" rel="noopener noreferrer" 
+                                    className="hover-pink"
+                                >
+                                    <strong>Video: Debugging accessibility with Chrome DevTools</strong>
+                                </a>
                             </p>
                             <p>
-                                Here a short video of how to access and use the accessbility tree
-                                and all related information in Chrome:
+                                This is a great video on using Chrome's Dev Tools to look up
+                                the accessibility tree. The process is very similar in Edge.
+                            </p>
+                            <p>
+                                Please note that the video starts with an introduction
+                                to Google's Lighthouse, and the part about the accessibility tree starts at 
+                                minute 6:00.
                             </p>
                         </details>
                     </div>
@@ -128,7 +140,7 @@ export default function MostCommonBugs() {
                     </p>
 
                     <h4 className="margin-top-20">DOM tree example</h4>
-                    <div className="code a11ytree-code">
+                    <div className="code">
                         <code><span className="code-blue-color">&lt;nav&gt;</span></code>
                         <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
                         <code className="padding-left-60">
@@ -212,8 +224,11 @@ export default function MostCommonBugs() {
                     </h3>
                     <p>
                         Some roles are assigned by default, based on the HTML tag used to create the element.
-                        These are called <strong>implicit roles</strong>. Developers can also assign a role to an element
-                        using ARIA attributes. These are called <strong>explicit roles</strong>.
+                        These are called <strong>implicit roles</strong>. 
+                        Developers can also assign a role to an element
+                        with special attributes called <abbr title="Accessible Rich Internet Applications">ARIA</abbr>
+                        (<strong aria-hidden="true">Accessible Rich Internet Applications</strong>). 
+                        These are called <strong>explicit roles</strong>.
                     </p>
                     
                     <h4 className="margin-top-20">Implicit Roles</h4>
@@ -242,7 +257,7 @@ export default function MostCommonBugs() {
                         the <code>Tab</code> key, and activate it by pressing <code>Enter</code>. 
                     </p>
                     <p>
-                        At the time of this snapshot, the link was <strong>in focus</strong>, or selected and
+                        At the time of this snapshot, the link was <strong>in focus</strong>, i.e. selected and
                         ready to be activated. 
                     </p>
                     <p>
@@ -306,38 +321,48 @@ export default function MostCommonBugs() {
                 {/* **************Accessible Name***************** */}
                 <div className="section scroll-target a11yName" id="the-accessible-name">
                     <h2>The Accessible Name</h2>
-                    <p>
-                        Notice how each actionable object in the accessibility tree above has a name? 
-                        It is the name that assistive technologies will use to describe the object to the user
-                        (or, in case of speech recognition software, the name that the user will use to activate 
-                        the object). It's called the <strong>accessible name</strong>.
-                    </p>
+                    <div className="code a11ytree-code">
                         
-                    <div className="highlight">
-                        <details>
-                            <summary>
-                                <span className="details-title">
-                                    Does every object have an accessible name?
-                                </span>
-                            </summary>
-                            <p>
-                                No. Actionable objects must have an accessible name.
-                                For example, a button without a name is useless.
-                                But notice how the <code>list</code> and <code>listitem</code> objects in the
-                                accessibility tree above do not have a name.
-                                This is because they are not actionable objects.
-                                They are there to provide information about the page structure and content.
-                                Same with the <code>navigation</code> object.
-                            </p>
+                        <code>listitem</code>
+                        <code className="padding-left-30">
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
+                        </code>
+                        <code className="padding-left-60">StaticText "Home"</code>
 
-                        </details>
+                        <code>listitem</code>
+                        <code className="padding-left-30">
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
+                        </code>
+                        <code className="padding-left-60">StaticText "Your Users"</code>
                     </div>
-
+                    <p className="white-bg">
+                        Notice how each <code>link</code> in our 
+                        accessibility tree example has a name? 
+                        It is the name that assistive technologies will use to announce the link to the user
+                        (or, in case of speech recognition software, the name that will be used to activate 
+                        the link). 
+                    </p>
                     <p>
-                        During the construction of the accessibility tree, the browser evaluates the elements 
-                        in the DOM 
-                        to create their accessible names. If the content of a web page changes dynamically, the browser 
-                        updates the accessibility tree accordingly, and the accessible names are recomputed as necessary.
+                        Certain elements must have a name (or a label), and it has to be descriptive enough to convey the
+                        element's purpose. In our example, the name associated with each link happens to be the 
+                        visible text content of the link, but it doesn't always have to be.
+                    </p>
+
+                    {/* <p>Here's a list of the elements that must have a name:</p>
+                    <ul>
+                        <li className="bullet-point-line">links and buttons</li>
+                        <li className="bullet-point-line">all form elements like inputs, buttons, and selects</li>
+                        <li className="bullet-point-line">images (unless they have a decorative purpose)</li>
+                        <li className="bullet-point-line">headings</li>
+
+                    </ul> */}
+         
+                    <p>
+                        During the construction of the accessibility tree, the browser evaluates each element
+                        in the DOM to create its name, also called <strong>the accessible name</strong>. 
+                        If the content of a web page changes dynamically, 
+                        it updates the accessibility tree accordingly, and the accessible names are recomputed 
+                        as necessary.
                     </p>
                     <p className="white-bg">
                         To create the accessible name, the browser uses the 
@@ -347,41 +372,70 @@ export default function MostCommonBugs() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            accessible name and description computation algorithm
+                            <strong>accessible name and description computation algorithm</strong>
                         </a>
                         <span> </span> 
-                        that follows a set of (quite headache-inducing) rules. 
-                        These rules take into account several attributes: <span> </span>
-                        <code>aria-labelledby</code>, <code>aria-label</code>, <code>title</code>, <code>alt</code>,
-                        and <code>label</code>.
+                        that follows a set of (quite headache-inducing) rules. This algorithm takes into account
+                        the visible text content or label of the element, but several other attributes as well:
                     </p>
-                    
+                    <ul>
+                        <li className="bullet-point-line white-bg">
+                            <code>aria-labelledby</code>
+                        </li>
+                        <li className="bullet-point-line margin-top-20 white-bg">
+                            <code>aria-label</code>
+                        </li>
+                        <li className="bullet-point-line margin-top-20 white-bg">
+                            <code>title</code>
+                        </li>
+                        <li className="bullet-point-line margin-top-20 white-bg">
+                            <code>alt</code>
+                        </li>
+                    </ul>
+                        
                     <p>
-                        The content of these attributes is 
+                        In fact, the content of these attributes is 
                         given priority when creating the accessible name. The idea being that these were likely added 
                         to offer a more descriptive or tailored name for the element. They could also be included
                         to provide a name when the element has no visible text. 
                     </p>
-                   
-                    <strong className="white-bg">Example: <code>button</code> with no visible text</strong>
-                    <div className="bug-code bug-code--buttons">
-                        <code>&lt;<span className="pink-text">button</span> aria-label="Close modal" id="closeModal"&gt;</code>
-                        <code>&lt;<span className="pink-text">img</span> src="x-mark.svg"/&gt;</code>
-                        <code>&lt;/<span className="pink-text">button</span>&gt;</code>
-                    </div>
-                    <p className="white-bg">
-                        The button contains an image and no visible text. For the sighted user, it will be obvious 
-                        that its purpose is to close the modal. But for a screen reader user, it would be a mystery
-                        without the <code>aria-label</code> attribute. The browser will use the attribute to compute 
-                        the accessible name "Close modal".
-                    </p>
-                  
                     <p>
                         If none of the priority attributes are available, the algorithm relies on the text within 
-                        the element. This is what the browser relied on for the “RECENT PTOJECTS” heading. 
-                        I did not assign an aria-label attribute nor any of the other priority attributes, 
-                        so it used the content of the heading to create the accessible name.
+                        the element. 
                     </p>
+                   
+                    <div className="highlight">
+                        <details>
+                            <summary>
+                                <span className="details-title gray-bg">
+                                    Example: <code>button</code> with no visible text
+                                </span>
+                            </summary>
+                            <div className="code margin-top-50 margin-bottom-30">
+                                <code>
+                                    <span className="code-blue-color">&lt;button</span> aria-label="Close modal" id="closeModal"
+                                    <span className="code-blue-color">&gt;</span>
+                                </code>
+                                <code className="padding-left-30">
+                                    <span className="code-yellow-color">&lt;img</span> src="x-mark.svg"
+                                    <span className="code-yellow-color">/&gt;</span>
+                                </code>
+                                <code><span className="code-blue-color">&lt;/button&gt;</span></code>
+                            </div>
+                            <p className="margin-top-50 gray-bg">
+                                The button contains an image and no visible text. 
+                                The browser will use the <code>aria-label</code> attribute to compute 
+                                the accessible name "Close modal".
+                            </p>
+                            <p className="gray-bg">
+                                For the sighted user, it will be obvious that the purpose of the button is to close 
+                                the modal. But for a screen reader user, it would be a mystery
+                                without the <code>aria-label</code> attribute. 
+                            </p>
+                        </details>
+                    </div>
+                  
+                    
                 </div>
 
                     

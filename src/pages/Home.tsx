@@ -11,7 +11,7 @@ export default function Home() {
         <div className={styles.home}>
             <section aria-labelledby="lets-make-it-accessible" className={styles['hero-article']}>
                 <div className={styles['hero-image']}>
-                    <img src="/assets/images/image-web-3-desktop.jpg" 
+                    <img src="/assets/images/istockLarge2.jpg" 
                         alt="" 
                     />
                 </div>
@@ -25,7 +25,7 @@ export default function Home() {
                     <div className={styles['hero-body']}>
                         <p>
                             You're adding the finishing touches to your portfolio site.
-                            Will it be ready to welcome <em>all</em> users? 
+                            Will it be ready to welcome all users? 
                             Let's explore how to check for common accessibility bugs.
                         </p>
                         <Link 

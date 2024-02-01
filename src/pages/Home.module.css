@@ -140,6 +140,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     grid-gap: 48px;
+    padding-inline-start: 0;
 }
 
 .mini-article {

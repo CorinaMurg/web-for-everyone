@@ -16,7 +16,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
             you make accessibility happen. `,
         link: "/resources/what-is-accessibility",
         ariaLabel: "What is Accessibility? Why does it matter? article by Web for Everyone.",
-        image: "assets/images/missionA11y.jpg",
+        image: "assets/images/istockSmall2.jpg",
         imageAlt: "",
     },
     {
@@ -26,7 +26,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         
         link: "/resources/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
-        image: "assets/images/image-web-3-mobile.jpg",
+        image: "assets/images/istockSmall3.jpg",
         imageAlt: "",
     },
     {
@@ -35,7 +35,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
             accessibility issues. The good news: they are quite easy to avoid or fix!`,
         link: "/resources/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
-        image: "assets/images/image-web-3-mobile.jpg",
+        image: "assets/images/istockSmall1.jpg",
         imageAlt: "",
     },
     {
