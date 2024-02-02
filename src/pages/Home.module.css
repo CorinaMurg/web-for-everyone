@@ -75,7 +75,7 @@
 
 .link-arrow {
     border: solid var(--text-dark-color);
-    border-width: 0 1.5px 1.5px 0;
+    border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
     margin-left: 8px;
