@@ -45,7 +45,7 @@ const contents = [
 
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible Part 1 | Web for Everyone");
-    // useScrollToSection();
+    useScrollToSection();
     
     return (
         <div className={`article-container ${styles['makeItOne-container']}`}>

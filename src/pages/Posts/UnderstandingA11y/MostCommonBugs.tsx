@@ -4,6 +4,7 @@ import { useState } from "react"
 import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import scrollToSection from "../../../utils/scrollToSection"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -24,7 +25,6 @@ const contents = [
 export default function MostCommonBugs() {
     useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
     useScrollToSection();
-
 
     const [textColor, setTextColor] = useState('initial')
 

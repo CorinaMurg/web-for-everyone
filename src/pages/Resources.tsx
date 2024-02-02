@@ -10,7 +10,7 @@ import "../global.css"
 
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
-    // useScrollToSection();
+    useScrollToSection();
 
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
