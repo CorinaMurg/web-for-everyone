@@ -80,7 +80,14 @@ export default function WhatIsA11y() {
                         are the same tools you use to build your website or app:
                     </p>
                     <ul>
-                        <li><p className="bullet-point-line">HTML (with a little help from ARIA attributes)</p></li>
+                        <li>
+                            <p className="bullet-point-line">
+                                HTML (with a little help 
+                                from <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
+                                    <strong>ARIA</strong>
+                                </a> attributes)
+                            </p>
+                        </li>
                         <li><p className="bullet-point-line margin-top-20">CSS</p></li>
                         <li><p className="bullet-point-line margin-top-20">JavaScript</p></li>
                     </ul>
@@ -88,7 +95,7 @@ export default function WhatIsA11y() {
                         Should your HTML file be a soup of <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags?
                     </strong>
                     <p className="white-bg">
-                        Of course not! We are lucky to be a developers at a time when <code>HTML5</code> is the 
+                        Of course not! We are lucky to be developers at a time when <code>HTML5</code> is the 
                         standard, and it comes with a whole set of semantic tags. These are tags that share the 
                         purpose of their content with the browser, and thus with the assistive technologies that 
                         people with disabilities use to access the web.
@@ -142,8 +149,9 @@ export default function WhatIsA11y() {
                             no semantic meaning. It is just a container intended for styling purposes or for layout, 
                             and requires additional code to make it accessible.
                         </p>
-    
-                        <strong>Always rely on semantic HTML!</strong>  
+                        <br/>
+                        <strong>Always rely on semantic HTML!</strong>
+                        <br/>  
                         <p>
                             Think about the content and the functionality 
                             you want to create, and choose the appropriate HTML tags. While JavaScript can help with more 
@@ -162,18 +170,18 @@ export default function WhatIsA11y() {
                     
                     <div>
                         <p className="bullet-point-line"><strong>legal compliance</strong></p>
-                        
                         <p className="padding-left-20">
+                            Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                            lawsuit with the National Federation for the Blind for $6 million? 
+                        </p>
+                        <p className="margin-top-20 padding-left-20">
                             The legal implications of inaccessible sites are real!
                         </p>
                         <p className="margin-top-20 padding-left-20">
                             While the accessibility guidelines established by the W3C (the World Wide Web Consortium)
                             are not legally binding, many countries have adopted legislation founded on them.
                         </p>
-                        <p className="margin-top-20 padding-left-20">
-                            Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                            lawsuit with the National Federation for the Blind for $6 million? 
-                        </p>
+                        
                         
                         <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
                         <p className="padding-left-20">
@@ -243,7 +251,7 @@ export default function WhatIsA11y() {
 
                     <p>
                         The good news is that most of these bugs have easy solutions.
-                        In fact, the 7 most common accessibility bugs can be fixed with only 
+                        In fact, the 6 most common accessibility bugs can be fixed with only 
                         HTML and CSS! 
                     </p>
                     
