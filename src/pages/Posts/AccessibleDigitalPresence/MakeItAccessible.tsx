@@ -296,24 +296,21 @@ export default function MakeItAccessible() {
                     </p> 
                     <p className="white-bg">
                         Either way, it's important to <strong>add the <code>alt</code> attribute to all images</strong>. 
-                        {/* If empty, 
-                        it tells the screen reader to skip the image. This way it doesn't waste time reading it. 
-                        If it's missing though, the screen reader will read the name of the source file, 
-                        which is not helpful to the user. */}
                     </p>
                     
                     <div className="highlight">
                         <p className="fake-heading-p">Rememeber the difference:</p>
-                        <p className="gray-bg">
+                        <p className="white-bg">
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
-                        <p>
-                            <span className="pink-text bold">Missing <code>alt</code>:</span> screen readers 
+                        <br/>
+                        <p className="white-bg">
+                            <span className="pink-text bold">Missing</span> <code>alt</code>: screen readers 
                             might read the source file name.
                         </p>
-                        <p>
-                            <span className="pink-text bold">Empty <code>alt</code>:</span> screen readers ignore 
+                        <p className="white-bg">
+                            <span className="pink-text bold">Empty</span> <code>alt</code>: screen readers ignore 
                             the image.
                         </p>
                     
@@ -350,8 +347,9 @@ export default function MakeItAccessible() {
                     </p>
                         
                     <p>
-                        Users relying on speech commands will not be able to activate the link. The comman
-                        "click on LinkedIn" will fail because the assistive tech will not recognize the 
+                        Users relying on speech commands will not be able to activate the link. The command
+                        <span className="bold"> "click LinkedIn"</span> would fail because the assistive tech could 
+                        not recognize the 
                         name "LinkedIn". In fact, the link has no accessible name.
                         The browser can not compute it since none of the attributes that could provide one is present.
                     </p>
@@ -364,7 +362,7 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <p>
-                                Assitive technologies recognize an element by its accessible name. 
+                                Assitive technologies recognize an interactive element by its accessible name. 
                                 One of the following must be present in order for the browser to compute it:
                             </p>
                             <p><span className="pink-text bold">1. </span>visible text</p>
@@ -414,7 +412,7 @@ export default function MakeItAccessible() {
                     <p className="white-bg">
                         <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
                         <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
-                        like an <code>&lt;img&gt;</code> would. 
+                        like an <code>&lt;img&gt;</code> tag would. 
                     </p>
                     <p className="white-bg">
                         In the next section on buttons we will look at an example with an image and 
@@ -457,9 +455,9 @@ export default function MakeItAccessible() {
                     </p>
                     <p className="white-bg">
                         Notice the "graphic" part? That's because the accessible name is computed from 
-                        the <code>alt</code> text of an image. This way the screen reader is announcing there is an image
+                        the <code>alt</code> text of an image. This way the screen reader is also announcing there is an image
                         present. It is up to you if this information is useful to the user or not. If not, 
-                        use one of the techniques discussed in the previous section but rememeber to leave the <code>alt</code> attribute 
+                        use one of the techniques discussed in the previous section and leave the <code>alt</code> attribute 
                         empty!
                     </p>
                     

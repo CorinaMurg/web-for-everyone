@@ -101,7 +101,7 @@ a {
     margin-bottom: 30px;
 }
 
-.code code {
+.code code:not(:last-of-type) {
     margin-bottom: 10px;
     color: white;
 }

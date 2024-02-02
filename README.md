@@ -29,3 +29,7 @@ TABLE OF CONTENTS
 
 NAVBAR
 - underline the links
+
+
+TOPICS TO MENTION
+- WCAG and its levels
