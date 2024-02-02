@@ -142,7 +142,7 @@ export default function MostCommonBugs() {
                         screen reader users do not know what the purpose of the image is. 
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">An important distinction to make:</p>
+                        <p className="fake-heading-p">An important distinction to make: <span className="hide-from-sr">💡</span></p>
                         <p className="white-bg margin-bottom-30">
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
@@ -173,7 +173,9 @@ export default function MostCommonBugs() {
                         and the destination of a link.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">Avoid vague text as well <span aria-hidden="true">💡</span></p>
+                        <p className="fake-heading-p">
+                            Avoid vague text as well <span aria-hidden="true">💡</span>
+                        </p>
                         <br />
                         <p>
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
@@ -390,7 +392,7 @@ export default function MostCommonBugs() {
                                 // className="read-next"
                                 onClick={() => { scrollToTop() }}
                         >
-                            Your Portfolio Site: Let's Make It Accessible!
+                            Let's Make It Accessible! Part One: Finding the 7 Most Common Bugs
                         </Link>
                     </div>                 
                 </div>
