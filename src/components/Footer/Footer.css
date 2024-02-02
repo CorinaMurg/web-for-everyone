@@ -15,6 +15,15 @@ footer {
     padding-bottom: 40px;
 }
 
+footer .logo {
+    color: var(--cream-color);
+    font-weight: 500;
+}
+
+footer .logo-vertical {
+    font-weight: 200;
+}
+
 .footer-right {
     display: flex;
     align-items: left;

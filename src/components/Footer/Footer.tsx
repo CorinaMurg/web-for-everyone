@@ -10,9 +10,8 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    {/* <Link to="/" onClick={scrollToTop} className="logo">WE <span className="logo-vertical">|</span>Web for Everyone</Link> */}
                     <Link className="logo" to="/">
-                        <WELogo size="1.7rem"/>
+                        <WELogo size="1.7rem" weight="500"/>
                         <span className="logo-vertical"> | </span> 
                         Web for Everyone
                     </Link>
