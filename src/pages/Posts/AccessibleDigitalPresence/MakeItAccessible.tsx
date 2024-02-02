@@ -92,6 +92,7 @@ export default function MakeItAccessible() {
                                     Automated testing tools: optional, but recommended!
                                 </span>
                             </summary>
+                            <br/>
                             <p>
                                 Automated accessibility tools are browser extensions that can help
                                 you evaluate the accessibility of your site. 
@@ -143,8 +144,8 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 Each tool has its own strengths and weaknesses. Best if you pick one and get 
-                                familiar with it. When you run a test, you will get a list of issues and
-                                and links to resources that will help you fix them.
+                                familiar with it. When you run a test, it lists the accessibility issues it found, 
+                                as well as links to documentation and hints on how to fix them.
                             </p>
                             <p>
                                 Please note that these tools might detect accessibility issues that are not 
@@ -156,32 +157,26 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <div className={`section ${styles['contrast']} `} >
-                    <div className="section-heading scroll-target" id="color-contrast">
+                <div className={`section ${styles['contrast']} scroll-target`} id="color-contrast">
+                    <div className="section-heading" >
                         <span className="section-number">01</span>
                         <h2>
-                            {/* does not scroll correctly. better screen reader support though */}
-                            {/* <a id="color-contrast" className="scroll-target"></a> */}
                             Color Contrast
                         </h2>
                     </div>
 
                     <div className={`code ${styles['code--contrast']}`}>
-                        <code>I'm normal text (16px).</code>
-                        <code>
-                            I need a contrast ratio of at least <span className="pink-bg-white-text">4.5:1</span>.
+                        <code style={{ }}>
+                            Normal text (16px): min. contrast 
+                            ratio of <span className="pink-bg-white-text">4.5:1</span>
                         </code>
                         <code className="margin-top-30">
-                            I'm not-too-large (19px or larger), but bold text.
-                        </code>
-                        <code>
-                            I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.
+                            19px or larger, and bold: min contrast ratio of <span> </span>
+                            <span className="pink-bg-white-text">3:1</span>
                         </code>
                         <code className="margin-top-30">
-                            I'm large text (24px or larger).
-                        </code>
-                        <code>
-                            I need a contrast ratio of at least <span className="pink-bg-white-text">3:1</span>.
+                            24px or larger: min contrast ratio of <span> </span>
+                            <span className="pink-bg-white-text">3:1</span>
                         </code>
                     </div>
        
@@ -194,14 +189,19 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p>
-                        As mentioned above, when you run a test with an automated tool, 
-                        if any elements failed the contrast ratio guidelines, you will know right away.
+                        When you run a test with automated tools like <span> </span>
+                        <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                            target="_blank" rel="noreferrer"
+                        >
+                            Google's Lighthouse
+                        </a>
+                        , if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
                     <p>
                         If you'd like to be more proactive and test your colors as you're building, 
                         use <span> </span>
                         <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">
-                            <strong>WebAIM's contrast checker</strong>
+                            WebAIM's contrast checker
                         </a> 
                         .  
                     </p>
@@ -258,7 +258,7 @@ export default function MakeItAccessible() {
                             <p style={{ marginTop: '30px' }}>
                                 For quick access, you can <span> </span>
                                 <a href="https://webaim.org/resources/contrastchecker/bookmarklet" target="_blank" rel="noreferrer">
-                                    <strong>add the contrast checker to your Bookmarks bar</strong>
+                                    add the contrast checker to your Bookmarks bar
                                 </a> 
                                 <span> </span>in one easy step!
                             </p>
@@ -372,9 +372,7 @@ export default function MakeItAccessible() {
                                 to make it accessible to screen reader users)
                             </p>
                             <p>
-                                <Link to="/resources/how-accessibility-works#the-accessible-name" 
-                                    className="pink-text"
-                                >
+                                <Link to="/resources/how-accessibility-works#the-accessible-name">
                                     Learn more about the accessible name
                                 </Link>
                             </p>
@@ -580,8 +578,8 @@ export default function MakeItAccessible() {
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Congratulations! You are now familiar with the 6 most common accessibility bugs 
-                        and you know how to fix them.
+                        Congratulations! You are now familiar with how to fix or avoid the 6 most common 
+                        accessibility issues.
                     </p>
                     <p>
                         Ready to continue your accessibility bug hunt?
@@ -593,7 +591,6 @@ export default function MakeItAccessible() {
                     <div className="next-article margin-top-30">
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/make-it-accessible-part2" 
-                                className="read-next pink-text"
                                 onClick={() => { scrollToTop() }}
                         >
                             Let's Make It Accessible! Part 2: On the Hunt for 6 More Bugs
