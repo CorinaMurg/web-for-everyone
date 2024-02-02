@@ -183,7 +183,7 @@
     content: "";
     height: 4px;
     /* background: var(--lightGray-color); */
-    background: var(--darkBlue-color);
+    background: var(--text-dark-color);
     width: 100%;
     position: absolute;
     top: 0;

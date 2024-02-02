@@ -1,7 +1,6 @@
 
 .we-can-help {
-    background-color: var(--lightGray-color);
-    background-color: var(--darkBlue-color);
+    background-color: var(--text-dark-color);
     color: var(--text-light-color);
     padding: 10px 20px;
     display: flex;
