@@ -142,7 +142,9 @@ export default function MostCommonBugs() {
                         screen reader users do not know what the purpose of the image is. 
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">An important distinction to make: <span className="hide-from-sr">💡</span></p>
+                        <p className="fake-heading-p">
+                            An important distinction to make: <span aria-hidden="true">💡</span>
+                        </p>
                         <p className="white-bg margin-bottom-30">
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
