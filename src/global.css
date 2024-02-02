@@ -1,9 +1,14 @@
 
 a {
-    color: var(--text-dark-color);
+    color: var(--blue-color);
     letter-spacing: 0.5px;
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--text-dark-color);
+    font-weight: 600;
 }
 
 .article-container {

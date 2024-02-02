@@ -52,7 +52,7 @@ export default function MostCommonBugs() {
                         <span> </span>
                         <strong>Web Accessibility in Mind</strong>, also known as <span> </span>
                         <a href="https://webaim.org/" target="_blank" rel="noreferrer">
-                            <strong>WebAIM</strong>
+                            WebAIM
                         </a>         
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
                         The results have always been pretty grim, and 2023 was no exception:
@@ -104,7 +104,10 @@ export default function MostCommonBugs() {
 
                 {/* 1. LOW CONTRAST */}
                 <div className="section low-contrast scroll-target" id="low-contrast-text">
-                    <h2>1. Low Contrast Text</h2>
+                    <div className="section-heading">
+                        <span className="section-number">01</span>
+                        <h2>Low Contrast Text</h2>
+                    </div>
                     <p className="white-bg">
                         Found on <span className="stats">83.6%</span> of pages, this bug involves text without enough 
                         contrast against its background. This text is hard to read, especially for users with visual 
@@ -129,7 +132,10 @@ export default function MostCommonBugs() {
 
                 {/* 2. ALT TEXT */}
                 <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
-                    <h2>2. Missing <code>alt</code> Text for Images</h2>
+                    <div className="section-heading">
+                        <span className="section-number">02</span>
+                        <h2>Missing <code>alt</code> Text for Images</h2>
+                    </div>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
                         When images lack the <code>alt</code> attribute, 
@@ -157,7 +163,10 @@ export default function MostCommonBugs() {
 
                 {/* 3. LINKS */}
                 <div className="section empty-links scroll-target" id="empty-links">
-                    <h2>3. Empty Links</h2>
+                    <div className="section-heading">
+                        <span className="section-number">03</span>
+                        <h2>Empty Links</h2>
+                    </div>
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
                         This is a problem because screen reader users rely on link text to understand the context 
@@ -165,7 +174,8 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <p className="fake-heading-p">Avoid vague text as well <span aria-hidden="true">💡</span></p>
-                        <p className="margin-top-20">
+                        <br />
+                        <p>
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
                             <span> </span><span className="pink-bg-white-text">continue</span> is not very 
                             helpful either.
@@ -182,7 +192,10 @@ export default function MostCommonBugs() {
 
                 {/* 4. BUTTONS */}
                 <div className="section empty-buttons scroll-target" id="empty-buttons">
-                    <h2>4. Empty Buttons</h2>
+                    <div className="section-heading">
+                        <span className="section-number">04</span>
+                        <h2>Empty Buttons</h2>
+                    </div>
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons 
                         without proper text descriptions.
@@ -190,7 +203,7 @@ export default function MostCommonBugs() {
                         button if its text is vague or missing.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">An example with an empty button</p>
+                        <p className="fake-heading-p">Example: an empty button</p>
                         <div className="code">
                             <code>
                                 <span className="code-blue-color">&lt;button&gt;</span>
@@ -217,7 +230,7 @@ export default function MostCommonBugs() {
                         <p className="white-bg">
                             An interactive element like a button must have a descriptive <span> </span>
                             <Link to="/resources/how-accessibility-works#the-accessible-name">
-                                <span className="bold">accessible name</span>
+                                accessible name
                             </Link>. 
                             This button is missing any of the attributes that could be used by the browser 
                             to compute an accessible name: 
@@ -237,35 +250,42 @@ export default function MostCommonBugs() {
 
                 {/* 5. INPUT LABELS */}
                 <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
-                    <h2>5. Missing Input Labels</h2>
+                    <div className="section-heading">
+                        <span className="section-number">05</span>
+                        <h2>Missing Input Labels</h2>
+                    </div>
                     <p>
                         <span className="stats">More than a third</span> 
                         of form inputs were not properly labeled.
                         Without labels, assitive tech users struggle to understand or use the input.
                     </p>
+                    <p>
+                        <span className="bold">The good news? </span>
+                        This is an improvement from 2019 when the ratio was 59%.
+                    </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">An input without a label</p>
-                        <p>
-                            <code className="padding-left-20">
-                                &lt;<span className="pink-text">label</span>&gt;
-                            </code> 
-                        </p>
-                        <p>
-                            <code className="padding-left-40">
-                                &lt;<span className="pink-text">input</span> type="text" id="email"&gt;
+                        <p className="fake-heading-p">Example: an input without a label</p>
+                        
+                        <div className="code">
+                            <code>
+                                <span className="code-blue-color">&lt;label&gt;</span>
                             </code>
-                        </p>
-                        <p>
-                            <code className="padding-left-20">
-                                &lt;/<span className="pink-text">label</span>&gt;
+                            <code className="padding-left-30">
+                                <span className="code-yellow-color">&lt;input</span> type="text" id="email"
+                                <span className="code-yellow-color">&gt;</span>
                             </code>
-                        </p>
+                            <code>
+                                <span className="code-blue-color">&lt;/label&gt;</span>
+                            </code>
+                        </div>
+                    
                         <p className="fake-heading-p margin-top-30">
                             Issue <span aria-hidden="true"> 🛠️</span>
                         </p>
-                        <p>
-                            The input is wrapped in label tags without a text. Attributes like "aria-label" or 
-                            "aria-labelledby" that can be used to provide an accessible name are not present.
+                        <p className="white-bg">
+                            The input is wrapped in label tags without inner text. Attributes 
+                            like <code>aria-label</code> or <code>aria-labelledby</code>
+                            that could be used to provide an accessible name are not present.
                         </p>
                         <p className="fake-heading-p">Consequences</p>
                         <p>
@@ -273,21 +293,18 @@ export default function MostCommonBugs() {
                             understand the purpose of the input. 
                         </p>
                         <p>
-                            <span className="pink-num">2. </span>Voice activation users have
-                            no clues about how to refer to the input.
+                            <span className="pink-num">2. </span>Users relying on speech commands do not 
+                            have a way to trigger the input.
                         </p>
-                    </div>
-                    <div className="highlight">   
-                        <p className="fake-heading-p">
-                            Good news<span className="exclamation">!</span>
-                        </p>
-                        <p>The "a third of form inputs" is an improvement. In 2019, the ratio was 59%.</p>
                     </div>
                 </div>
 
                 {/* 6. LANG */}
                 <div className="section missing-lang scroll-target" id="missing-document-language">
-                    <h2>6. Missing Document Language</h2>
+                    <div className="section-heading">
+                        <span className="section-number">06</span>
+                        <h2>Missing Document Language</h2>
+                    </div>
                     <p>
                         This issue was found on <span className="stats">18.6%</span> of the home pages audited.
                     </p>
@@ -298,19 +315,34 @@ export default function MostCommonBugs() {
                         various languages.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">
+                        <p className="fake-heading-p white-bg">
                             Note: the <code>lang</code> attribute is added 
-                            to the <code>html</code> tag<span className="exclamation">!</span>
+                            to the <code>html</code> tag <span aria-hidden="true">💡</span>
                         </p>
-                        <p><code>&lt;html <code className="pink-text">lang</code>="en"&gt;</code></p>
+                        <div className="code">
+                            <code>&lt;html <code className="code-pink-color">lang</code>="en"&gt;</code>
+                        </div>
                     </div>
                     
                 </div>
 
+                <div>
+                    <p className="fake-heading-p margin-top-30">
+                        Done with the 6 most common accessibility bugs! 
+                    </p>
+                    <p className="fake-heading-p">
+                        Do you have time for a bonus bug? Too important to leave out!
+                    </p>
+                </div>
+
                 {/* 7. HEADINGS */}
                 <div className="section misused-headings scroll-target" id="misused-headings">
-                    <h2>7. Misused Headings</h2>
-                    <p>
+                    <div className="section-heading">
+                        <span className="section-number">Bonus Bug:</span>
+                        <h2>Misused Headings</h2>
+                    </div>
+                   
+                    <p className="white-bg">
                         <span className="stats">One fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
                         Skipped heading levels (e.g., jumping from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code>) 
                         were found on more than <span className="stats">40%</span> of all pages.
@@ -320,15 +352,16 @@ export default function MostCommonBugs() {
                         <p className="fake-heading-p">Why headings are important</p>
                         <p>
                             When trying to find information on a page, most screen reader users rely on headings.
-                            Pressing the <span className="pink-bg-white-text">h</span> key allows them to visit each 
+                            Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit each 
                             heading to get an idea about the structure and the content of the page.  
                         </p>
-                        <p className="fake-heading-p margin-top-30">
+                        <br />
+                        <p className="fake-heading-p">
                             Recommended read <span aria-hidden="true">💡</span>
                         </p>
                         <p>
                             Learn about the way screen reader users navigate the web and find information on a page 
-                            from the
+                            from the <span> </span>
                             <a href="https://webaim.org/projects/screenreadersurvey9/#finding"
                                 target="_blank" 
                                 rel="noreferrer"
@@ -354,7 +387,7 @@ export default function MostCommonBugs() {
                     <div className="next-article">
                         <span className="read-next">Read next:</span>
                         <Link to="/resources/make-it-accessible" 
-                                className="read-next pink-text"
+                                // className="read-next"
                                 onClick={() => { scrollToTop() }}
                         >
                             Your Portfolio Site: Let's Make It Accessible!
