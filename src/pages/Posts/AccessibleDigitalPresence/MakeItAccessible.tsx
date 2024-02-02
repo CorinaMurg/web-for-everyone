@@ -344,9 +344,9 @@ export default function MakeItAccessible() {
                         
                     <p>
                         Users relying on speech commands will not be able to activate the link. The command
-                        <span className="bold"> "click LinkedIn"</span> would fail because the assistive tech could 
+                        <span className="bold"> "click LinkedIn"</span> would fail because the software would 
                         not recognize the 
-                        name "LinkedIn". In fact, the link has no accessible name.
+                        name "LinkedIn". In fact, <span className="bold">the link has no accessible name</span>!
                         The browser can not compute it since none of the attributes that could provide one is present.
                     </p>
 
