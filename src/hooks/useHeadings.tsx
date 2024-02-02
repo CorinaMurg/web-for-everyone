@@ -1,3 +1,5 @@
+// to be used with table of contents to dynamically generate a list of headings from the page
+
 import { useState, useEffect } from 'react';
 
 interface Heading {

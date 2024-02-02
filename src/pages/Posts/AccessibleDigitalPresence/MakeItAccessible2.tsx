@@ -15,7 +15,7 @@ const contents = [
     },
     {
         href: "#title-element",
-        text: "Title Element",
+        text: "The Title Element",
     },
     {
         href: "#skip-link",
@@ -24,18 +24,6 @@ const contents = [
     {
         href: "#visible-focus",
         text: "Visible Focus",
-    },
-    {
-        href: "#buttons-with-discernable-text",
-        text: "Buttons with Discernable Text",
-    },
-    {
-        href: "#labels-for-inputs",
-        text: "Labels for Inputs",
-    },
-    {
-        href: "#the-language-attribute",
-        text: "The Language Attribute",
     },
     {
         href: "#headings-in-logical-order",
@@ -64,7 +52,7 @@ export default function MakeItAccessible() {
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
-            <p className="subtitle">Part 2: On the Hunt for 7 More Bugs</p>
+            <p className="subtitle">Part 2: On the Hunt for 6 More Bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} />
@@ -95,7 +83,7 @@ export default function MakeItAccessible() {
                 {/* ****************TITLE ELEMENT************************* */}
                 <div className={`section ${styles['title']} scroll-target`} id="title-element">
                     <div className="section-heading">
-                        <span className="section-number">08</span>
+                        <span className="section-number">07</span>
                         <h2>Title Element</h2>
                     </div>
 
@@ -141,7 +129,7 @@ export default function MakeItAccessible() {
                 {/* ****************SKIP LINK************************* */}
                 <div className="section skip scroll-target" id="skip-link">
                     <div className="section-heading">
-                        <span className="section-number">09</span>
+                        <span className="section-number">08</span>
                         <h2>Skip Link</h2>
                     </div>
 
@@ -153,7 +141,7 @@ export default function MakeItAccessible() {
                         </code>
                         <code className="padding-left-60"><span className="code-pink-color">Skip to main content</span></code>
                         <code className="padding-left-30"><span className="code-yellow-color">&lt;/a&gt;</span></code>
-                        <code className="padding-left-30">... other navigation elements</code>
+                        <code className="padding-left-30">// other navigation elements</code>
                         <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
                     </div>
            
@@ -239,7 +227,7 @@ export default function MakeItAccessible() {
                 {/* ****************VISIBLE FOCUS************************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
-                        <span className="section-number">10</span>
+                        <span className="section-number">09</span>
                         <h2>Visible Focus</h2>
                     </div>
 
@@ -252,7 +240,7 @@ export default function MakeItAccessible() {
         
                     <h3>Let keyboard users know where they are on the page</h3>
                     <p>
-                        It is important that the element that receives the focus changes its appearance. 
+                        It is important that the element that receives focus changes its appearance. 
                         This way the user knows exactly where the focus is.  
                     </p>
                     <p>
@@ -323,172 +311,10 @@ export default function MakeItAccessible() {
                     </div>
                 </div>
                 
-                {/* ****************BUTTONS************************* */}
-                <div className="section buttons scroll-target" id="buttons-with-discernable-text">
-                    <div className="section-heading">
-                        <span className="section-number">04</span>
-                        <h2>Buttons with Discernable Text</h2>
-                    </div>
-
-                    <div className="code code--buttons">
-                        <code>
-                            <span className="code-blue-color">&lt;button</span> id="closeModal"
-                            <span className="code-blue-color">&gt;</span>
-                        </code>
-                        <code className="padding-left-30">
-                            <span className="code-pink-color">&lt;img</span> 
-                            <span className="code-yellow-color"> alt</span>="Close modal" src="x-mark.svg"
-                            <span className="code-pink-color">/&gt;</span>
-                        </code>
-                        <code><span className="code-blue-color">&lt;/button&gt;</span></code>
-                    </div>
-                   
-                    <h3>Help screen readers properly announce a button</h3>
-
-                    <p className="white-bg">
-                        The techniques we covered in the previous section apply to buttons as well. 
-                        With an image, you have a new option: use the <code>alt</code> attribute to 
-                        describe the image, and it will become the accessible name of the button.
-                    </p>
-                    
-                    <p className="white-bg">
-                        In the example above, the button has no visible text, but contains an image with 
-                        an <code>alt</code> attribute. A screen reader will announce it as "Close modal graphic button."
-                    </p>
-                    <p className="white-bg">
-                        Notice the "graphic" part? That's because the accessible name is computed from 
-                        the <code>alt</code> text of an image. This way the screen reader is announcing there is an image
-                        present. It is up to you if this information is useful to the user or not. If not, 
-                        use one of the techniques discussed in the previous section but rememeber to leave the <code>alt</code> attribute 
-                        empty!
-                    </p>
-                    
-                </div>
-
-                {/* ****************LABELS************************* */}
-                <div className="section labels scroll-target" id="labels-for-inputs">
-                    <div className="section-heading">
-                        <span className="section-number">05</span>
-                        <h2>Labels for Inputs</h2>
-                    </div>
-
-                    <div className="code code--labels">
-                        <code><span className="code-blue-color">&lt;label&gt;</span></code> 
-                        <code className="padding-left-30">Enter your full name: </code>
-                        <code className="padding-left-30">
-                            <span className="code-yellow-color">&lt;input</span> id="name" type="text"  
-                            <span className="code-yellow-color">&gt;</span>
-                        </code>
-                        <code><span className="code-blue-color">&lt;/label&gt;</span></code>
-                    </div>
-
-                    <h3>Help assistive tech users understand the purpose of an input</h3>
-
-                    <p className="white-bg">
-                        When it comes to your portfolio site, labels and inputs are likely to be part of your
-                        contact form.
-                        We will look at ways to make your contact form accessible in a separate article,
-                        but for now let's focus on the <code>label</code> and <code>input</code> elements.
-                    </p>
-
-                    <p className="bold">You have two options:</p>
-                    <p className="white-bg">
-                        <span className="pink-text bold">Implicit Labeling:</span> It involves wrapping 
-                        the <code>input</code> element inside a <code>label</code> element, 
-                        just as in the example above. 
-                    </p>
-                    
-                    <p className="white-bg"> 
-                        <span className="pink-text bold">Explicit Labeling: </span> 
-                        This method relies on using the <span className="pink-bg-white-text">for</span> attribute 
-                        with the <code>&lt;label&gt;</code> tag, and the <span className="pink-bg-white-text">id</span>
-                        <span> </span>
-                        attribute with the <code>&lt;input&gt;</code> tag. 
-                    </p>
-                    <p className="white-bg">    
-                        The value of the label's <code>for</code> attribute must be the same as the value of 
-                        the input's <code>id</code> attribute.
-                    </p>
-                    
-                    <div className="code code--labels">
-                        <code>
-                            <span className="code-blue-color">&lt;label</span> <span className="code-pink-color"></span>
-                            <span className="code-pink-color">for</span>="name"
-                            <span className="code-blue-color">&gt;</span>
-                        </code>
-                        <code className="padding-left-30">
-                            Enter your full name:
-                        </code>
-                        <code>
-                            <span className="code-blue-color">&lt;/label&gt;</span>
-                        </code>
-                        <code className="margin-top-20">
-                            <span className="code-yellow-color">&lt;input</span> 
-                            <span className="code-pink-color"> id</span>="name" type="text" 
-                            <span className="code-yellow-color">&gt;</span>
-                        </code>
-                    </div>
-                </div>
-
-                {/* ****************LANG************************* */}
-                <div className="section lang scroll-target" id="the-language-attribute">
-                    <div className="section-heading">
-                        <span className="section-number">06</span>
-                        <h2>The Language Attribute</h2>
-                    </div>
-
-                    <div className="code code--lang">
-                        <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
-                    </div>
-              
-                    <h3>Use a valid language in the "lang" attribute</h3>
-                    <p>It enables screen readers to correctly identify the language of the webpage content.</p>
-                    
-                    <p className="white-bg">
-                        Is it common for a project to lack this attribute? Not at all! 
-                        That's because when we initiate a new code base we are likely to use editors that generate 
-                        an HTML file pre-configured with all the essential elements, 
-                        including the <code>lang</code> attribute.
-                    </p> 
-                    <p className="white-bg">
-                        Portfolio sites that started as templates though might be missing it.
-                        These templates are designed to be customized, so remember to add 
-                        the <code>lang</code> attribute with the value of the language you are using.
-                    </p>
-                    
-                    <div className="highlight">
-                        <p className="fake-heading-p">Did you know?</p>
-                        <p className="margin-top-30">You can choose a specific dialect:</p>
-                        <div className="code">
-                            <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
-                        </div>
-                        <p style={{ marginTop: '50px' }}>
-                            You can specify the language of a certain word or section of the page:
-                        </p>
-                        <div className="code"> 
-                            <code> <span className="code-blue-color">&lt;p&gt;</span></code>
-                            <code className="padding-left-30">Hello in English, </code>
-                            <code className="padding-left-30">
-                                <span className="code-yellow-color">
-                                    &lt;span </span>
-                                <span className="code-pink-color">lang</span>="fr"
-                                <span className="code-yellow-color">&gt;</span>Bonjour
-                                <span className="code-yellow-color">&lt;/span&gt;</span>
-                                <span> </span>in French.
-                            </code>
-                            <code><span className="code-blue-color">&lt;/p&gt;</span></code>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        
-                        
-                    </div>
-                </div>
-
                 {/* ****************HEADINGS************************* */}
                 <div className="section headings scroll-target" id="headings-in-logical-order">
                     <div className="section-heading">
-                        <span className="section-number">07</span>
+                        <span className="section-number">10</span>
                         <h2>Headings in Logical Order</h2>
                     </div>
 
@@ -507,7 +333,7 @@ export default function MakeItAccessible() {
                         <code className="padding-left-60">. . .</code>
                         <code className="padding-left-60">
                             <span className="code-blue-color">&lt;h3&gt;</span>
-                            The second heading in line
+                            The third heading in line
                             <span className="code-blue-color">&lt;/h3&gt;</span>
                         </code>
                         <code className="padding-left-30">
@@ -518,7 +344,7 @@ export default function MakeItAccessible() {
                         <code className="padding-left-60">. . .</code>
                         <code className="padding-left-60">
                             <span className="code-blue-color">&lt;h3&gt;</span>
-                            The second heading in line
+                            The third heading in line
                             <span className="code-blue-color">&lt;/h3&gt;</span>
                         </code>
                         <code className="padding-left-60">. . .</code>             
@@ -539,7 +365,7 @@ export default function MakeItAccessible() {
                             Use <code>&lt;h1&gt;</code> at the start of your content.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
-                            Don't skip heading levels. Use <code>&lt;h2&gt;</code> to 
+                            Don't skip heading levels. Use <code>&lt;h1&gt;</code> to 
                             <code>&lt;h6&gt;</code> in descending order.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
@@ -561,28 +387,27 @@ export default function MakeItAccessible() {
                         </p>
                     </div>
                 </div>
+
+
                     
                 {/* ****************CONCLUSION************************* */}
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Congratulations! You are now familiar with the 7 most common accessibility bugs 
-                        and you know how to fix them.
+                        Congratulations! You are now familiar with 12 accessibility issues and 
+                        how to fix them.
                     </p>
                     <p>
-                        Ready to continue your accessibility bug hunt?
-                    </p>
-                    <p>
-                        Let's find the other 7 easy-to-fix bugs!
+                        Ready to learn more about accessibility?
                     </p>
                     
-                    <div className="next-article margin-top-30">
+                    <div className="next-article">
                         <span className="read-next">Read next:</span>
-                        <Link to="/resources/make-it-accessible2" 
+                        <Link to="/resources" 
                                 className="read-next pink-text"
                                 onClick={() => { scrollToTop() }}
                         >
-                            Let's Make It Accessible! Part 2: The Other 7 Bugs
+                            Resources
                         </Link>
                     </div>
                 </div>

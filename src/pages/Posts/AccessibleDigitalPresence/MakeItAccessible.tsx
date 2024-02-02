@@ -38,10 +38,6 @@ const contents = [
         text: "The Language Attribute",
     },
     {
-        href: "#headings-in-logical-order",
-        text: "Headings in Logical Order",
-    },
-    {
         href: "#conclusion",
         text: "Conclusion",
     },
@@ -83,12 +79,12 @@ export default function MakeItAccessible() {
                         that are present on more than 97% of the sites.
                         Let's make sure your portfolio site is not one of them!
                     </p>
-                   <p>
-                        In this article, we will look at each bug in detail and learn how to fix it. 
-                        The article is designed to be a quick reference guide, but sufficient 
-                        information is provided to help you understand the underlying concepts.
-                        Links to additional resources are also provided.
-                   </p>
+                    <p>
+                            In this article, we will look at each bug in detail and learn how to fix it. 
+                            The article is designed to be a quick reference guide, but sufficient 
+                            information is provided to help you understand the underlying concepts.
+                            Links to additional resources are also provided.
+                    </p>
                     <div className="highlight">
                         <details>
                             <summary>
@@ -576,102 +572,22 @@ export default function MakeItAccessible() {
                             </code>
                             <code><span className="code-blue-color">&lt;/p&gt;</span></code>
                         </div>
-                        <br></br>
-                        <br></br>
-                        
-                        
                     </div>
                 </div>
 
-                {/* ****************HEADINGS************************* */}
-                <div className="section headings scroll-target" id="headings-in-logical-order">
-                    <div className="section-heading">
-                        <span className="section-number">07</span>
-                        <h2>Headings in Logical Order</h2>
-                    </div>
-
-                    <div className="code code--headings">
-                        <code>
-                            <span className="code-pink-color">&lt;h1&gt;</span>
-                            The most important heading
-                            <span className="code-pink-color">&lt;/h1&gt;</span>
-                        </code>
-                        <code className="padding-left-30">. . .</code>
-                        <code className="padding-left-30">
-                            <span className="code-yellow-color">&lt;h2&gt;</span>
-                            The second heading in line
-                            <span className="code-yellow-color">&lt;/h2&gt;</span>
-                        </code>
-                        <code className="padding-left-60">. . .</code>
-                        <code className="padding-left-60">
-                            <span className="code-blue-color">&lt;h3&gt;</span>
-                            The second heading in line
-                            <span className="code-blue-color">&lt;/h3&gt;</span>
-                        </code>
-                        <code className="padding-left-30">
-                            <span className="code-yellow-color">&lt;h2&gt;</span>
-                            The second heading in line
-                            <span className="code-yellow-color">&lt;/h2&gt;</span>
-                        </code>
-                        <code className="padding-left-60">. . .</code>
-                        <code className="padding-left-60">
-                            <span className="code-blue-color">&lt;h3&gt;</span>
-                            The second heading in line
-                            <span className="code-blue-color">&lt;/h3&gt;</span>
-                        </code>
-                        <code className="padding-left-60">. . .</code>             
-                    </div>
-                    
-                    <h3>Help screen reader users understand the structure of a page</h3>
-                    <p>
-                        When trying to find information on a page, most screen reader users rely on headings.
-                        Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
-                        each heading and get an idea about the structure and the content of the page.  
-                    </p>
-                    <p className="fake-heading-p">A few rules to follow with headings:</p>
-                    <div>
-                        <p className="bullet-point-line white-bg">
-                            Choose meaningful headings that describe the content of a section.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Use <code>&lt;h1&gt;</code> at the start of your content.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Don't skip heading levels. Use <code>&lt;h2&gt;</code> to 
-                            <code>&lt;h6&gt;</code> in descending order.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Don't use headings for decorative purposes. 
-                            If you need a word or a phrase to look bigger or bolder on page, use
-                            CSS. Do not use heading tags if a heading is not needed.
-                        </p>
-                        
-                    </div>
-                    
-                    <div className="highlight">
-                        <p className="fake-heading-p">Did you know?</p>
-                        <p> 
-                            Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
-                        </p>
-                        <p>
-                            For the first rule, you will need to rely on your own judgement, but the tools can 
-                            easily catch if any of the other rules are broken. 
-                        </p>
-                    </div>
-                </div>
                     
                 {/* ****************CONCLUSION************************* */}
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Congratulations! You are now familiar with the 7 most common accessibility bugs 
+                        Congratulations! You are now familiar with the 6 most common accessibility bugs 
                         and you know how to fix them.
                     </p>
                     <p>
                         Ready to continue your accessibility bug hunt?
                     </p>
                     <p>
-                        Let's find the other 7 easy-to-fix bugs!
+                        Let's find the other 6 easy-to-fix bugs!
                     </p>
                     
                     <div className="next-article margin-top-30">
@@ -680,7 +596,7 @@ export default function MakeItAccessible() {
                                 className="read-next pink-text"
                                 onClick={() => { scrollToTop() }}
                         >
-                            Let's Make It Accessible! Part 2: The Other 7 Bugs
+                            Let's Make It Accessible! Part 2: On the Hunt for 6 More Bugs
                         </Link>
                     </div>
                 </div>
