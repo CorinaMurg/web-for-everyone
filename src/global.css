@@ -461,12 +461,15 @@ ul {
 .warning {
     background-color: var(--lightPink-color);
     font-weight: 500;
-    padding: 30px;
-    padding-left: 60px;
+    padding: 10px 30px 10px 60px;
     width: 100%;
     border-left: 2px solid var(--pinkBright-color);
     position: relative;
     margin-block: 30px;
+}
+
+.warning p {
+    margin-block: 20px;
 }
 
 .white-bg code {
