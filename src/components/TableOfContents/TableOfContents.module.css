@@ -34,15 +34,15 @@
 .table-contents--list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .table-contents--list--item a {
     align-self: flex-start;
     color: inherit;
     opacity: 0.9;
-    margin-top: 20px;
     text-decoration: none;
+    letter-spacing: 0.2px;
 }
 
 .table-contents ul {

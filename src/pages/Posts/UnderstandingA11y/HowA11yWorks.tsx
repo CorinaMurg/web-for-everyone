@@ -14,6 +14,7 @@ const contents = [
         href: "#",
         text: "In a Nutshell",
         ariaLabel: "In a Nutshell: How Accessibility works",
+        
     },
     {
         href: "#the-accessibility-tree",
@@ -276,6 +277,7 @@ export default function MostCommonBugs() {
                     {/* ************Zooming in on an accessible object***************** */}
                     <div className="highlight">
                         <h4>Zooming in on an accessible object</h4>
+                        <br/>
                         <p> 
                             Let's look at the first link object to understand why using semantic HTML helps accessibility.
                         </p>
@@ -379,8 +381,8 @@ export default function MostCommonBugs() {
                     <div className="warning">
                         <WarningTriangle/>
                         <p>
-                            Given a certain functionality you want to implement,
-                            if the HTML tag for it exists, use it! Don't jump to ARIA right away.
+                            If you want to implement a certain functionality and
+                            the HTML tag for it exists, use it! Don't jump to ARIA right away.
                         </p>
                         <p>
                             The first rule of ARIA is: <strong>don't use ARIA</strong>!
@@ -431,6 +433,7 @@ export default function MostCommonBugs() {
                         visible text content of the link, but it doesn't always have to be.
                     </p>
                     
+                    {/* *****Accessible Name Computation Algorithm***** */}
                     <div className="section scroll-target" id="the-accessible-name-computation-algorithm">
                         <h3>
                             Accessible Name Computation Algorithm
