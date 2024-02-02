@@ -5,7 +5,7 @@
 /* INTRO */
 .numbers {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     width: 100%;
 }
@@ -13,7 +13,7 @@
 .numbers span {
     font-size: 1.1rem;
     color: var(--pinkBright-color);
-    width: 6.5rem;
+    width: 4.5rem;
     text-align: right;
 }
 

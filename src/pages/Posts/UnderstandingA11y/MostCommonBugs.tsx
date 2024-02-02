@@ -51,22 +51,22 @@ export default function MostCommonBugs() {
                         Here's one cool thing that happens every year: 
                         <span> </span>
                         <strong>Web Accessibility in Mind</strong>, also known as <span> </span>
-                            <a href="https://webaim.org/" target="_blank" rel="noreferrer">
-                                <strong>WebAIM</strong>
-                            </a>         
+                        <a href="https://webaim.org/" target="_blank" rel="noreferrer">
+                            <strong>WebAIM</strong>
+                        </a>         
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
                         The results have always been pretty grim, and 2023 was no exception:
                     </p>
                     
                     <div className="highlight">
                         <p className={styles['numbers']}>
-                            <span>96.3</span> the percentage of home pages with a11y bugs
+                            <span>96.3</span> percentage of home pages with a11y bugs
                         </p> 
                         <p className={styles['numbers']}>
-                            <span>50</span> the average bugs per page
+                            <span>50</span> average bugs per page
                         </p> 
                         <p className={styles['numbers']}>
-                            <span>106,245</span> the highest number of bugs found on a single home page
+                            <span>106,245</span> highest number of bugs found on a single home page
                         </p>        
                     </div>
                     
@@ -77,7 +77,10 @@ export default function MostCommonBugs() {
                         As a result, the actual number of bugs is likely to be higher.
                     </p>
                     
-                    <p>The good news? These are some of the easiest bugs to avoid or fix!</p>
+                    <p>
+                        <span className="bold">The good news? </span>
+                        These are some of the easiest bugs to avoid or fix!
+                    </p>
 
                     <div className="highlight bad-news">
                         <p className="fake-heading-p">The sad news?</p>
@@ -90,11 +93,12 @@ export default function MostCommonBugs() {
                         </p>
                     </div>
                     <p>
-                        Consider reading the full <span> </span>
+                        The full <span> </span>
                             <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                                 WebAIM Million
                             </a>
-                        <span> </span>report, but in the meantime let's go over the list of the most common bugs. 
+                        <span> </span>report makes for an interesting and informative read. Below we will go 
+                        over the list of most common bugs. 
                     </p>
                 </div>
 
@@ -108,14 +112,17 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <p style={{ color: textColor }}>
-                            Users with vision problems would have a hard time reading this sentence if the font color 
-                            had an hex value of #169AC0. Press the button to test it.
+                            Users with vision problems would have a hard time reading this sentence 
+                            if the font color had an hex value of #169AC0 (light blue). 
+                        </p>
+                        <p>
+                            Press the button to test it.
                         </p>
                         <button aria-label="Change text color from black to light blue."
                                 className={styles['low-contrast--button']}
                                 onClick={() => toggleColor()}
                         >
-                            Change color
+                            Change text color
                         </button>
                     </div>
                 </div>
@@ -137,8 +144,8 @@ export default function MostCommonBugs() {
                         <br />
                         <p className="white-bg">
                             <span className="pink-text">Missing</span> <code>alt</code>: screen readers might 
-                            read the source file name. Add a descriptive <code>alt</code> attribute to the image
-                            if it adds value to the content.
+                            read the source file name. Add a descriptive <code>alt</code> value if the image
+                            is important for understanding your content.
                         </p>
                         <p className="white-bg">
                             <span className="pink-text">Empty</span> <code>alt</code>: screen readers ignore the image.
@@ -168,7 +175,7 @@ export default function MostCommonBugs() {
                             navigate through the various links provided on the page.</p>
                         <p className="margin-top-20">
                             As a result, the links are announced separately from their surrounding text and
-                            users can struggle to understand their purpose if their text is vague.
+                            users can struggle to understand their purpose if the text is vague.
                         </p>
                     </div>
                 </div>
@@ -208,8 +215,12 @@ export default function MostCommonBugs() {
                             Remember <span aria-hidden="true">💡</span>
                         </p>
                         <p className="white-bg">
-                            An interactive element like a button must have a descriptive accessible name. 
-                            This button is missing each of the attributes that can provide an accessible name: 
+                            An interactive element like a button must have a descriptive <span> </span>
+                            <Link to="/resources/how-accessibility-works#the-accessible-name">
+                                <span className="bold">accessible name</span>
+                            </Link>. 
+                            This button is missing any of the attributes that could be used by the browser 
+                            to compute an accessible name: 
                             visible text, <code>aria-label</code>, <code>aria-labelledby</code>, or <code>alt</code>.
                         </p>
                         <p className="fake-heading-p">Consequences</p>
