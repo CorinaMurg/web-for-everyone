@@ -130,16 +130,19 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <p className="fake-heading-p">An important distinction to make:</p>
-                        <p className="gray-bg margin-bottom-30">
+                        <p className="white-bg margin-bottom-30">
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
-                        <p>
-                            <span className="pink-text">Missing <code>alt</code>:</span> screen readers might 
-                            read the source file name.
+                        <br />
+                        <p className="white-bg">
+                            <span className="pink-text">Missing</span> <code>alt</code>: screen readers might 
+                            read the source file name. Add a descriptive <code>alt</code> attribute to the image
+                            if it adds value to the content.
                         </p>
-                        <p>
-                            <span className="pink-text">Empty <code>alt</code>:</span> screen readers ignore the image.
+                        <p className="white-bg">
+                            <span className="pink-text">Empty</span> <code>alt</code>: screen readers ignore the image.
+                            If your image is purely decorative, do use an empty <code>alt</code> attribute.
                         </p>
                     
                     </div>
@@ -154,7 +157,7 @@ export default function MostCommonBugs() {
                         and the destination of a link.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">Good to remember: avoid vague text<span className="exclamation">!</span></p>
+                        <p className="fake-heading-p">Avoid vague text as well <span aria-hidden="true">💡</span></p>
                         <p className="margin-top-20">
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
                             <span> </span><span className="pink-bg-white-text">continue</span> is not very 
@@ -176,26 +179,24 @@ export default function MostCommonBugs() {
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons 
                         without proper text descriptions.
-                        This issue is very similar to empty links: users can struggle to understand the purpose of a 
+                        This issue is very similar to empty links: users struggle to understand the purpose of a 
                         button if its text is vague or missing.
                     </p>
                     <div className="highlight">
                         <p className="fake-heading-p">An example with an empty button</p>
-                        <p>
-                            <code className="padding-left-20">
-                                &lt;<span className="pink-text">button</span> id="closeModal"&gt;
+                        <div className="code">
+                            <code>
+                                <span className="code-blue-color">&lt;button&gt;</span>
                             </code>
-                        </p>
-                        <p>
-                            <code className="padding-left-40">
-                                &lt;<span className="pink-text">img</span> src="x-mark.svg"/&gt;
+                            <code className="padding-left-30">
+                                <span className="code-yellow-color">&lt;img</span> src="x-mark.svg"
+                                <span className="code-yellow-color">&gt;</span>
                             </code>
-                        </p>
-                        <p>
-                            <code className="padding-left-20">
-                                &lt;/<span className="pink-text">button</span>&gt;
+                            <code>
+                                <span className="code-blue-color">&lt;/button&gt;</span>
                             </code>
-                        </p>
+                        </div>
+                        
                         <p className="fake-heading-p margin-top-30">
                             Issue <span aria-hidden="true"> 🛠️</span>
                         </p>
@@ -204,9 +205,13 @@ export default function MostCommonBugs() {
                             Within the accessibility tree, this button object does not have an accessible name.
                         </p>
                         <p className="fake-heading-p">
-                            Remember<span className="exclamation">!</span>
+                            Remember <span aria-hidden="true">💡</span>
                         </p>
-                        <p>Assitive technologies recognize an accessible object by its accessible name.</p>
+                        <p className="white-bg">
+                            An interactive element like a button must have a descriptive accessible name. 
+                            This button is missing each of the attributes that can provide an accessible name: 
+                            visible text, <code>aria-label</code>, <code>aria-labelledby</code>, or <code>alt</code>.
+                        </p>
                         <p className="fake-heading-p">Consequences</p>
                         <p>
                             <span className="pink-num">1. </span>A screen reader will announce this button as ... button, 
