@@ -272,10 +272,10 @@ export default function MakeItAccessible() {
                     </p>
                     <div className="highlight margin-top-30">
                         <details>
-                            <summary className="gray-bg">
+                            <summary className="white-bg">
                                 <span className="details-title">
                                     Why <code>:focus-visible</code> and 
-                                    not <code>:focus</code>?
+                                    not <code>:focus</code>? 
                                 </span>
                             </summary>
                             <p className="white-bg" style={{ marginTop: '40px' }}>
@@ -377,7 +377,7 @@ export default function MakeItAccessible() {
                     </div>
                     
                     <div className="highlight">
-                        <p className="fake-heading-p">Did you know?</p>
+                        <p className="fake-heading-p">Did you know? <span aria-hidden="true"> 💡</span></p>
                         <p> 
                             Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
                         </p>
