@@ -33,3 +33,10 @@ NAVBAR
 
 TOPICS TO MENTION
 - WCAG and its levels
+
+
+SCREEN READER 
+- pronounces "read" incorrectly as in Recommended read
+
+MINI ARTICLES, POSTS IN RESOURCES
+- should the link wrap the entire article
