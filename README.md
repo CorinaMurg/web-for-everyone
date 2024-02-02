@@ -40,3 +40,6 @@ SCREEN READER
 
 MINI ARTICLES, POSTS IN RESOURCES
 - should the link wrap the entire article
+
+MUST MENTION
+-WCAG A AA AAA (link it to Color COntrast checker in Make It Accessible)
