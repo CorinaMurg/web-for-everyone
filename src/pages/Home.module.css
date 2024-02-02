@@ -65,6 +65,7 @@
 }
 
 .home .read-more {
+    color: var(--text-dark-color);
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -163,6 +164,7 @@
 
 .mini-article-link {
     /* border-top: 3px solid var(--darkBlue-color); */
+    color: var(--text-dark-color);
     text-decoration: none;
     padding-top: 20px;
     padding-inline: 17px;
