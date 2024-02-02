@@ -60,7 +60,7 @@ export default function MakeItAccessible() {
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
-            <p className="subtitle">Part One: Finding the 7 Most Common Bugs</p>
+            <p className="subtitle">Part One: Finding the 6 Most Common Bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} />
@@ -75,8 +75,8 @@ export default function MakeItAccessible() {
                         easy-to-fix accessibility issues. 
                     </p>
                     <p>
-                        The 2023 WebAIM Million Study of 1,000,000 home pages found 7 bugs 
-                        that are present on more than 97% of the sites.
+                        The 2023 WebAIM Million Study of 1,000,000 home pages found 6 bugs 
+                        that are present on 97% of the sites.
                         Let's make sure your portfolio site is not one of them!
                     </p>
                     <p>
