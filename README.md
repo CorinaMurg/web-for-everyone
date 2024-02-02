@@ -25,3 +25,7 @@ TABLE OF CONTENTS
 - is "out of list" important
 - <a> vs <Link>
 - add a skip-table-contents link?
+- underline the titles
+
+NAVBAR
+- underline the links
