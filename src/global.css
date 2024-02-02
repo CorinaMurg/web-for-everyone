@@ -1,8 +1,9 @@
 
-
 a {
     color: var(--text-dark-color);
     letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .article-container {
@@ -97,6 +98,7 @@ a {
     padding: 30px;
     background-color: #151f28;
     color: white;
+    margin-block: 30px;
 }
 
 .code code {
@@ -211,12 +213,14 @@ h4 {
 } */
 
 .highlight {
-    background-color: var(--lightGray-color);
+    background-color: white;
     font-weight: 500;
     padding: 30px;
     width: 100%;
-    /* border-left: 2px solid var(--yellow-color); */
+    border-left: 2px solid gray;
+    margin-top: 30px;
 }
+
 
 .highlight h3 {
     margin-top: 10px;
@@ -452,6 +456,17 @@ ul {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.warning {
+    background-color: var(--lightPink-color);
+    font-weight: 500;
+    padding: 30px;
+    padding-left: 60px;
+    width: 100%;
+    border-left: 2px solid var(--pinkBright-color);
+    position: relative;
+    margin-block: 30px;
 }
 
 .white-bg code {

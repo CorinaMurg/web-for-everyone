@@ -26,7 +26,7 @@
     --red-color: #ae2012;
     --green-color: #0ba95b;
     --purpleLight-color: hsl(274, 100%, 81%);
-    --lightPink-color: #fff7f0;
+    --lightPink-color: #ffe9ed;
     --purple-color: #7b5ea7;
     --lightGray-color: #f6f6f6;
     --gray-color:#808080;
@@ -35,6 +35,8 @@
     --max-margin: 120px;
     --navbar-margin: 32px;
     --yellow-border: 3px;
+
+    --cream-color: #fbf6ea;
 
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
@@ -90,7 +92,7 @@
 }
 
 body {
-    background-color: var(--text-light-color);
+    background-color: var(--cream-color);
     color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
