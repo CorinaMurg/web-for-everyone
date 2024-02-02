@@ -311,7 +311,7 @@ export default function MostCommonBugs() {
                         </p>
                         <br/>
                         <p className="white-bg">
-                            By using the semantic <code>&lt;a&gt;</code> tag we get a lot of 
+                            By using the semantic <code>&lt;a&gt;</code> tag we get all 
                             the functionality expected from a link for free, using only HTML!
                         </p>
                     </div>
@@ -322,7 +322,7 @@ export default function MostCommonBugs() {
                             Explicit Roles
                         </h3>
                         <p>
-                            As a developer, you can also explicitly assign a role to an HTML element using
+                            Developers can also explicitly assign a role to an HTML element using
                             <span> </span>
                             <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer" className="hover-pink">
                                 <strong>ARIA</strong>
