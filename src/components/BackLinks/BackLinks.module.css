@@ -1,5 +1,7 @@
 
 .back-links {
+    
+    font-family: monospace;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     display: flex;
@@ -9,6 +11,7 @@
 }
 
 .back-links a {
+    color: var(--text-dark-color);
     text-decoration: none;
 }
 
