@@ -17,14 +17,15 @@ export default function HomeIntro() {
                 {weCanHelpData.map((article, index) => (
                     <li key={index}> 
                         <div> 
-                            <Link to="/resources" className='we-can-help--link'>
+                            {/* <Link to="/resources" className='we-can-help--link'> */}
                                 <h3>{article.title}</h3>
                                 <p>{article.description}</p>
-                            </Link>
+                            {/* </Link> */}
                         </div>
                     </li>
                 ))}
             </ul>
+            
         </section>
     )
 }

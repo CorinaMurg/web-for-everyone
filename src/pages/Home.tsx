@@ -43,7 +43,6 @@ export default function Home() {
                                 <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
                             </p>
                         </Link>
-
                     </div>
                     
                 </div>
