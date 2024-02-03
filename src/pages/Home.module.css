@@ -28,6 +28,7 @@
     height: 300px;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    background-color: var(--yellow-color);
 }
 
 .hero-image img {

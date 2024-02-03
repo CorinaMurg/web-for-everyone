@@ -11,7 +11,7 @@ export default function Home() {
         <div className={styles.home}>
             <section aria-labelledby="lets-make-it-accessible" className={styles['hero-article']}>
                 <div className={styles['hero-image']}>
-                    <img src="/assets/images/istockLarge2.jpg" 
+                    <img src="/assets/images/iconsChart.jpg" 
                         alt="" 
                     />
                 </div>
