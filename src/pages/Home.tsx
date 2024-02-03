@@ -68,8 +68,11 @@ export default function Home() {
                         <li key={index}> 
                             <article className={`${styles['mini-article']} ${styles[`mini-article-${index+1}`]}`}>
 
-                                <div className={styles['mini-article-image']}>
-                                    <img src={article.image} alt='' loading="lazy"/>
+                                <div className={`${styles['mini-article-image']} ${styles[`mini-article-image-${index+1}`]}`}>
+                                    {/* <img src={article.image} alt='' loading="lazy"/> */}
+                                    <div className={styles['svg-wrap']}>
+                                        <div dangerouslySetInnerHTML={{ __html: article.svg }} />
+                                    </div>
                                 </div>
                                 <Link 
                                     to={article.link} className={styles['mini-article-link']} 
