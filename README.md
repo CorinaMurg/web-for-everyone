@@ -43,3 +43,12 @@ MINI ARTICLES, POSTS IN RESOURCES
 
 MUST MENTION
 -WCAG A AA AAA (link it to Color COntrast checker in Make It Accessible)
+
+TO FIX:
+- middle icon, no wrap, enlarge icon, make it blue
+
+- fimisg makeitA11y2
+- About
+-WCAG
+- Your Users
+LinkedIn
