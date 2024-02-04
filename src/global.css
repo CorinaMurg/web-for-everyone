@@ -133,9 +133,9 @@ a:hover {
     margin-top: 40px;
 }
 
-details p {
+/* details p {
     margin-left: 10px;
-}
+} */
 .exclamation {
     color: var(--pinkBright-color);
     font-size: 1.2rem;
@@ -476,6 +476,10 @@ ul {
 
 .warning p {
     margin-block: 20px;
+}
+
+.warning a {
+    color: var(--text-dark-color);
 }
 
 .white-bg code {

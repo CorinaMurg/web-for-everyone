@@ -125,6 +125,7 @@ export default function MostCommonBugs() {
                         will be labeled as "ignored" or "generic".
                     </p>
 
+                    {/* How to view the accessibility tree with Dev Tools */}
                     <div className="highlight">
                         <details>
                             <summary>
@@ -138,7 +139,7 @@ export default function MostCommonBugs() {
                                     target="_blank" rel="noopener noreferrer" 
                                     className="hover-pink"
                                 >
-                                    <strong>Video: Debugging accessibility with Chrome DevTools</strong>
+                                    Video: Debugging accessibility with Chrome DevTools
                                 </a>
                             </p>
                             <p>
@@ -381,8 +382,8 @@ export default function MostCommonBugs() {
                     <div className="warning">
                         <WarningTriangle/>
                         <p>
-                            If you want to implement a certain functionality and
-                            the HTML tag for it exists, use it! Don't jump to ARIA right away.
+                            Don't jump to ARIA right away! If you want to implement a certain functionality and
+                            the HTML tag for it exists, use it! 
                         </p>
                         <p>
                             The first rule of ARIA is: <strong>don't use ARIA</strong>!
