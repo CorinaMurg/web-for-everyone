@@ -424,7 +424,7 @@ export default function MostCommonBugs() {
                         Notice how each <code>link</code> in our 
                         accessibility tree example has a name? 
                         It is the name that assistive technologies will use to announce the link to the user
-                        (or, in case of speech recognition software, the name that will be used to activate 
+                        (or, for speech recognition software, the name that will be used to activate 
                         the link). 
                     </p>
                     <p>
@@ -453,27 +453,32 @@ export default function MostCommonBugs() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <strong>accessible name and description computation algorithm</strong>
+                                accessible name and description computation algorithm
                             </a>
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. This algorithm takes into account
-                            the visible text content or label of the element, but several other attributes are considered
+                            the visible text or the label of the element, but several other attributes are considered
                             as well:
                         </p>
-                        <ul>
-                            <li className="bullet-point-line white-bg">
-                                <code>aria-labelledby</code>
-                            </li>
-                            <li className="bullet-point-line margin-top-20 white-bg">
-                                <code>aria-label</code>
-                            </li>
-                            <li className="bullet-point-line margin-top-20 white-bg">
-                                <code>title</code>
-                            </li>
-                            <li className="bullet-point-line margin-top-20 white-bg">
-                                <code>alt</code>
-                            </li>
-                        </ul>                    
+                       
+                        <div className="padding-left-20">
+                            <p className="bullet-point-line">
+                                    <strong>aria-labelledby</strong>
+                            </p>
+                            <p className="padding-left-20">It has the highest priority among all the other attributes.</p>
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>aria-label</strong>
+                            </p>
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>title</strong>
+                            </p>
+                            <p className="padding-left-20">Avoid it! It's tricky to make it accessible to screen reader users.</p>
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>alt</strong>
+                            </p>
+                            
+                        </div>
+                                                    
                         <p>
                             In fact, the content of these attributes is 
                             given priority when creating the accessible name. The idea being that these were likely added 
