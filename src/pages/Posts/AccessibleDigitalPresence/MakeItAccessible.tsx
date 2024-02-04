@@ -217,14 +217,17 @@ export default function MakeItAccessible() {
                         Checking the color contrast is easy: 
                     </p>
                     <p className="bullet-point-line">
-                        enter the <strong>foreground and background colors</strong> for a given element
+                        enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
                     </p>
                     <p className="bullet-point-line">
                         the tool will calculate the <strong>contrast ratio</strong> for you
                     </p>
                     <p className="bullet-point-line">
                         you will get a <strong>pass</strong> or <strong>fail</strong> result for both 
-                        the AA and AAA WCAG standards.
+                        the 
+                        {/* <Link to="/resources/understanding">
+                            AA and AAA WCAG standards
+                        </Link>. */}
                     </p>             
 
                     <div className="highlight margin-top-30">
