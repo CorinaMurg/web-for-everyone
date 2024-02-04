@@ -449,7 +449,6 @@ export default function MostCommonBugs() {
                             To create the accessible name, the browser uses the 
                             <span> </span>
                             <a href="https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te"
-                                className="hover-pink"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -473,10 +472,19 @@ export default function MostCommonBugs() {
                                 <strong>title</strong>
                             </p>
                             <p className="padding-left-20">Avoid it! It's tricky to make it accessible to screen reader users.</p>
+                            <p className="margin-top-20 padding-left-20">
+                                Please note this is an attribute that is added to the opening HTML tag of an element.
+                                Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
+                                a title for a web page.
+                            </p>
                             <p className="bullet-point-line margin-top-20">
                                 <strong>alt</strong>
-                            </p>
-                            
+                            </p>  
+                            <p className="padding-left-20 white-bg">
+                                Use for interactive images. For example, given a link that contains an image and no 
+                                visible text or ARIA attributes, the browser will use the <code>alt</code> attribute 
+                                to compute the accessible name.
+                            </p>    
                         </div>
                                                     
                         <p>
@@ -489,6 +497,21 @@ export default function MostCommonBugs() {
                             If none of the priority attributes are available, the algorithm relies on the text within 
                             the element. 
                         </p>
+                    </div>
+
+                    <div className="highlight">
+                        <details>
+                            <summary>
+                                    A closer look at some ARIA attributes
+                            </summary>
+                            <br></br>
+                            <p className="margin-top-50">
+                                Aria-label
+                            </p>
+                            <p>
+                                aria-labelledby
+                            </p>
+                        </details>
                     </div>
                                      
                     {/* Example: <code>button</code> with no visible text */}

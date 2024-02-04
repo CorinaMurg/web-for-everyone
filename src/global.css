@@ -133,15 +133,6 @@ a:hover {
     margin-top: 40px;
 }
 
-
-/* .details-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-} */
-
 details p {
     margin-left: 10px;
 }
@@ -445,7 +436,7 @@ strong {
 
 summary {
     cursor: pointer;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
