@@ -347,6 +347,10 @@ export default function MakeItAccessible() {
                     <h3>Help screen readers properly announce a link</h3>
                     
                     <p>
+                        You have to be careful with your social media links. 
+                        If they are coded like the example above, they are not accessible.
+                    </p>
+                    <p>
                         In the example above, the link to the LinkedIn profile
                         contains an icon and no visible text. A screen reader will announce part of the url 
                         (usually starting with the path segment)
@@ -373,16 +377,13 @@ export default function MakeItAccessible() {
                                 Assitive technologies recognize an interactive element by its accessible name. 
                                 One of the following must be present in order for the browser to compute it:
                             </p>
-                            <p><span className="pink-text bold">1. </span><strong>visible text</strong></p>
-                            <p><span className="pink-text bold">2. </span><strong>alt text</strong> (when an image is present)</p>
-                            <p><span className="pink-text bold">3. </span><strong>aria-label</strong></p>
-                            <p><span className="pink-text bold">
-                                4. </span><strong>aria-labelledby</strong> (it has the highest priority among all the other attributes)
-                            
-                            </p>
-                            <p><span className="pink-text bold">5. </span><strong>title</strong> (avoid it since it's tricky
-                                to make it accessible to screen reader users)
-                            </p>
+                            <div className="padding-left-20">
+                                <p className="bullet-point-line"><strong>visible text</strong></p>
+                                <p className="bullet-point-line"><strong>alt text</strong></p>
+                                <p className="bullet-point-line"><strong>aria-label</strong></p>
+                                <p className="bullet-point-line"><strong>aria-labelledby</strong></p>
+                                <p className="bullet-point-line"><strong>title</strong></p>
+                            </div>
                             <p>
                                 <Link to="/resources/how-accessibility-works#the-accessible-name">
                                     Learn more about the accessible name
@@ -391,7 +392,7 @@ export default function MakeItAccessible() {
                         </details>
                     </div>
                     
-                    <h3 className="pink-text">Ways to fix links to social media profiles</h3>
+                    <h3 className="pink-text">Ways to fix the links to social media profiles</h3>
                     <p className="white-bg">
                         <span className="pink-num" aria-hidden="true">1. </span> 
                         Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
