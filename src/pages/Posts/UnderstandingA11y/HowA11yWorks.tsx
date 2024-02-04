@@ -431,7 +431,7 @@ export default function MostCommonBugs() {
                     <p>
                         Certain elements must have a name (or a label), and it has to be descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
-                        visible text content of the link, but it doesn't always have to be.
+                        visible text of the link, but other attributes can be used to compute the name.
                     </p>
                     
                     {/* *****Accessible Name Computation Algorithm***** */}
