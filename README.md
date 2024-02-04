@@ -41,12 +41,15 @@ SCREEN READER
 MINI ARTICLES, POSTS IN RESOURCES
 - should the link wrap the entire article
 
+HOW A11Y WORKS
+- add explanation with a11y panel in dev tools re: accessible name computation
+
 MUST MENTION
 -WCAG A AA AAA (link it to Color COntrast checker in Make It Accessible)
 
 TO FIX:
 - middle icon, no wrap, enlarge icon, make it blue
-
+- when suing the back button in the browser, it should scroll to the same section as before
 - fimisg makeitA11y2
 - About
 -WCAG
