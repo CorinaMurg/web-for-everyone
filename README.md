@@ -1,3 +1,19 @@
+1. when using the back button in the browser, it should scroll to the same section as before
+2. Finish MakeItA11y-2
+3. About
+4. Your Users
+5. Responsive
+6. Dark Mode
+7. WCAG review
+8. Logo
+9. LinkedIn page WE
+10. LinkedIn page Corina
+11. A11y statement https://dequeuniversity.com/accessibility-statement
+
+
+
+
+
 
 Page title: react helmet or react head
 
@@ -6,8 +22,6 @@ Visible lists: do they also have to be programatic lists
 
 Explain: aria-hidden for icon
 
-Accessibility Statement
-https://dequeuniversity.com/accessibility-statement
 
 Add description or alt to images re: color contrast
 
@@ -27,13 +41,6 @@ TABLE OF CONTENTS
 - add a skip-table-contents link?
 - underline the titles
 
-NAVBAR
-- underline the links
-
-
-TOPICS TO MENTION
-- WCAG and its levels
-
 
 SCREEN READER 
 - pronounces "read" incorrectly as in Recommended read
@@ -49,9 +56,3 @@ MUST MENTION
 
 TO FIX:
 - middle icon, no wrap, enlarge icon, make it blue
-- when suing the back button in the browser, it should scroll to the same section as before
-- fimisg makeitA11y2
-- About
--WCAG
-- Your Users
-LinkedIn
