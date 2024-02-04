@@ -7,6 +7,7 @@ import "../../../global.css"
 import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
+import WarningTriangle from "../../../components/WarningTriangle"
 
 const contents = [
     {
@@ -85,6 +86,8 @@ export default function MakeItAccessible() {
                             information is provided to help you understand the underlying concepts.
                             Links to additional resources are also provided.
                     </p>
+
+                    {/* **************Automated testing tools****************** */}
                     <div className="highlight">
                         <details>
                             <summary>
@@ -97,21 +100,11 @@ export default function MakeItAccessible() {
                                 Automated accessibility tools are browser extensions that can help
                                 you evaluate the accessibility of your site. 
                                 These tools are designed to scan web pages and identify potential accessibility 
-                                issues based on established web accessibility standards, such as WCAG 
-                                (Web Content Accessibility Guidelines).
-                            </p>
-                            <p>
-                                While extremely useful for quickly 
-                                spotting common problems, automated tools are imperfect.
-                                It's important to note that they don't capture all 
-                                aspects of accessibility. 
-                            </p>
-                            <p>
-                                <strong>
-                                    Manual testing and user testing remain crucial for 
-                                    ensuring comprehensive accessibility.
-                                </strong>
-                            </p>
+                                issues based on best practices and standards established by
+                                the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">
+                                    Web Content Accessibility Guidelines
+                                </a>, known as <span className="bold">WCAG</span>.
+                            </p> 
             
                             <p>
                                 However, these tools are a great first step. Moreover, as we are now looking at how to 
@@ -152,6 +145,21 @@ export default function MakeItAccessible() {
                                 discussed in this article. You are welcome to contact Web for Everyone via LinkedIn
                                 if you have any questions.
                             </p>
+                            <div className="warning">
+                                <WarningTriangle />
+                                <p>
+                                    While extremely useful for quickly 
+                                    spotting common problems, automated tools are imperfect.
+                                    It's important to note that they don't capture all 
+                                    aspects of accessibility. 
+                                </p>
+                                <p>
+                                    <strong>
+                                        Manual testing and user testing remain crucial for 
+                                        ensuring comprehensive accessibility.
+                                    </strong>
+                                </p>
+                            </div>
                         </details>
                     </div>
                 </div>
@@ -182,9 +190,8 @@ export default function MakeItAccessible() {
        
                     <h3>Mind the color contrast ratio to help users with low vision</h3>
                     <p>
-                        Users with low vision can struggle with perceiving contrast. 
-                        They can't spot outlines, edges, and other details. 
-                        Reading can also be challenging when the text color doesn't stand out much from the 
+                        Users with low vision can struggle with perceiving contrast, and
+                        reading can be challenging when the text color doesn't stand out much from the 
                         background.
                     </p>
                     
@@ -216,7 +223,8 @@ export default function MakeItAccessible() {
                         the tool will calculate the <strong>contrast ratio</strong> for you
                     </p>
                     <p className="bullet-point-line">
-                        you will get <strong>a pass or fail result</strong> for both the AA and AAA WCAG standards.
+                        you will get a <strong>pass</strong> or <strong>fail</strong> result for both 
+                        the AA and AAA WCAG standards.
                     </p>             
 
                     <div className="highlight margin-top-30">
