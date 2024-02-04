@@ -92,6 +92,20 @@ export default function MostCommonBugs() {
                             <span aria-hidden="true"> 😢</span>
                         </p>
                     </div>
+                    <div className="highlight margin-top-20 padding-left-20">
+                        <details>
+                            <summary>A quick view of the standards for accessibility</summary>
+                            <p>
+                                The W3C is an international community that develops standards for the web. 
+                                It was founded in 1994 by Tim Berners-Lee, the inventor of the World Wide Web. 
+                            </p>
+                            <p>
+                                For standards on web accessibility, the W3C has developed the Web Content
+                                Accessibility Guidelines (WCAG). These guidelines are internationally recognized
+                                and are the basis for many national accessibility laws.
+                            </p>
+                        </details>
+                    </div>
                     <p>
                         The full <span> </span>
                             <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
@@ -390,8 +404,7 @@ export default function MostCommonBugs() {
                     
                     <div className="next-article">
                         <span className="read-next">Read next:</span>
-                        <Link to="/resources/make-it-accessible" 
-                                // className="read-next"
+                        <Link to="/resources/make-it-accessible-part1" 
                                 onClick={() => { scrollToTop() }}
                         >
                             Let's Make It Accessible! Part One: Finding the 7 Most Common Bugs

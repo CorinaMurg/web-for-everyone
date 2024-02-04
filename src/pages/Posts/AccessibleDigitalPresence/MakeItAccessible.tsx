@@ -223,11 +223,11 @@ export default function MakeItAccessible() {
                         the tool will calculate the <strong>contrast ratio</strong> for you
                     </p>
                     <p className="bullet-point-line">
-                        you will get a <strong>pass</strong> or <strong>fail</strong> result for both 
-                        the 
-                        {/* <Link to="/resources/understanding">
-                            AA and AAA WCAG standards
-                        </Link>. */}
+                        you will get a <strong>pass</strong> or <strong>fail</strong> result for 
+                        the <span> </span>
+                        <Link to="/resources">
+                            AA and AAA levels of accessibility compliance
+                        </Link>.
                     </p>             
 
                     <div className="highlight margin-top-30">
@@ -293,12 +293,12 @@ export default function MakeItAccessible() {
                     </div>
            
                     <h3>Help screen readers decide whether to read an image or not</h3>
-                    <p className="white-bg">
-                        Is your image purely decorative? Or, is the information presented in the image also 
-                        conveyed by adjacent text? Then it's best to leave the <code>alt</code> attribute empty.
+                    <p className="bullet-point-line white-bg">
+                        Is your image <strong>purely decorative</strong>? Or, is the information presented in the image 
+                        conveyed by the adjacent text as well? Then it's best to leave the <code>alt</code> attribute empty.
                     </p>
-                    <p className="white-bg">
-                        Does your image contain essential information that is not available in the text? 
+                    <p className="bullet-point-line white-bg">
+                        Does your image contain <strong>essential information</strong> that is not available in the text? 
                         Then add a short description in the <code>alt</code> attribute.
                     </p> 
                     <p className="white-bg">
@@ -355,9 +355,9 @@ export default function MakeItAccessible() {
                         
                     <p>
                         Users relying on speech commands will not be able to activate the link. The command
-                        <span className="bold"> "click LinkedIn"</span> would fail because the software would 
+                        <strong> "click LinkedIn"</strong> would fail because the software would 
                         not recognize the 
-                        name "LinkedIn". In fact, <span className="bold">the link has no accessible name</span>!
+                        name "LinkedIn". In fact, <strong>the link has no accessible name</strong>!
                         The browser can not compute it since none of the attributes that could provide one is present.
                     </p>
 
@@ -368,18 +368,19 @@ export default function MakeItAccessible() {
                                     Accessible Name Review
                                 </span>
                             </summary>
+                            <br/>
                             <p>
                                 Assitive technologies recognize an interactive element by its accessible name. 
                                 One of the following must be present in order for the browser to compute it:
                             </p>
-                            <p><span className="pink-text bold">1. </span>visible text</p>
-                            <p><span className="pink-text bold">2. </span>alt text (when an image is present)</p>
-                            <p><span className="pink-text bold">3. </span>aria-label</p>
+                            <p><span className="pink-text bold">1. </span><strong>visible text</strong></p>
+                            <p><span className="pink-text bold">2. </span><strong>alt text</strong> (when an image is present)</p>
+                            <p><span className="pink-text bold">3. </span><strong>aria-label</strong></p>
                             <p><span className="pink-text bold">
-                                4. </span>aria-labelledby (it has the highest priority among all the other attributes)
+                                4. </span><strong>aria-labelledby</strong> (it has the highest priority among all the other attributes)
                             
                             </p>
-                            <p><span className="pink-text bold">5. </span>title (avoid it since it's tricky
+                            <p><span className="pink-text bold">5. </span><strong>title</strong> (avoid it since it's tricky
                                 to make it accessible to screen reader users)
                             </p>
                             <p>
@@ -409,13 +410,13 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p style={{ marginTop: '40px' }}>
-                        <span className="bold">Note: </span> 
+                        <strong>Note: </strong> 
                         This is not an exhaustive list of techniques you could use to make your social media
                         links accessible. The ones shared above are the most commonly used and you can employ them
                         anytime you use an icon instead of visible text. Plus, they also work with buttons.
                     </p>
                     <p className="white-bg">
-                        <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
+                        <strong>What about the <code>alt</code> attribute?</strong> An icon displayed with an
                         <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
                         like an <code>&lt;img&gt;</code> tag would. 
                     </p>
@@ -456,14 +457,15 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         In the example above, the button has no visible text, but contains an image with 
-                        an <code>alt</code> attribute. A screen reader will announce it as "Close modal graphic button."
+                        an <code>alt</code> attribute. A screen reader will announce it as <strong>"Close modal graphic button"</strong>.
                     </p>
                     <p className="white-bg">
-                        Notice the "graphic" part? That's because the accessible name is computed from 
-                        the <code>alt</code> text of an image. This way the screen reader is also announcing there is an image
-                        present. It is up to you if this information is useful to the user or not. If not, 
-                        use one of the techniques discussed in the previous section and leave the <code>alt</code> attribute 
-                        empty!
+                        Notice the <strong>"graphic"</strong> part? Since the image has 
+                        an <code>alt</code> text, the screen reader has to announce there is an image present. 
+                        It is up to you if this information is useful to the user or not. If not, 
+                        use one of the techniques discussed in the <strong>Links</strong> section (like 
+                        <code>aria-label</code> or visible text) and rememeber to leave the <code>alt</code> attribute 
+                        empty.
                     </p>
                     
                 </div>
@@ -589,8 +591,8 @@ export default function MakeItAccessible() {
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Congratulations! You are now familiar with how to fix or avoid the 6 most common 
-                        accessibility issues.
+                        Congratulations! You are now familiar with the 6 most common 
+                        accessibility issues, and techniques to avoid them in your portfolio site.
                     </p>
                     <p>
                         Ready to continue your accessibility bug hunt?

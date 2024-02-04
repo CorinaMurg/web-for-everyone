@@ -133,14 +133,18 @@ a:hover {
     margin-top: 40px;
 }
 
-.details-title {
+
+/* .details-title {
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
-}
+} */
 
+details p {
+    margin-left: 10px;
+}
 .exclamation {
     color: var(--pinkBright-color);
     font-size: 1.2rem;
@@ -441,7 +445,12 @@ strong {
 
 summary {
     cursor: pointer;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
+
 summary::marker {
     color: var(--pinkBright-color);
     font-size: 1.2rem;

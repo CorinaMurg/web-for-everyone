@@ -84,7 +84,7 @@ export default function WhatIsA11y() {
                             <p className="bullet-point-line">
                                 HTML (with a little help 
                                 from <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
-                                    <strong>ARIA</strong>
+                                    ARIA
                                 </a> attributes)
                             </p>
                         </li>
@@ -101,13 +101,19 @@ export default function WhatIsA11y() {
                         people with disabilities use to access the web.
                     </p>
                     <strong className="margin-top-20">
-                        Our job as developers is two fold:
+                        Our job as developers is threefold:
                     </strong>
                     <ul>
                         <li>
                             <p className="bullet-point-line">
-                                Set accessibility as a goal. This includes being aware of the ways in which 
-                                users of all abilities interact with the web.
+                                Set accessibility as a goal. Learn about the ways in which 
+                                users of all abilities interact with the web and the functionality
+                                we need to provide for each group. 
+                            </p>
+                        </li>
+                        <li>
+                            <p className="bullet-point-line margin-top-20">
+                                Ask questions. Reach out for help and guidance.
                             </p>
                         </li>
                         <li>
@@ -116,10 +122,11 @@ export default function WhatIsA11y() {
                             </p>
                         </li>
                     </ul>
-                    <strong className="margin-top-20">
-                        Then the browser and the assistive technologies can take care of the rest! 
-                    </strong>
-
+                    <p>
+                        <strong className="margin-top-20">
+                            If we do our part, then the browser and the assistive technologies can do theirs.
+                        </strong>
+                    </p>
                     <div className="highlight margin-top-20">
                         <h3>How semantic HTML improves accessibility</h3>
                         <p className="white-bg">
@@ -139,7 +146,7 @@ export default function WhatIsA11y() {
                             That’s why we call them <span className="pink-bg-white-text" >semantic</span> HTML tags. 
                         </p>
                         <p className="white-bg">
-                            For example, when a screen reader encounters the navigation section of your site, it 
+                            When a screen reader encounters the navigation section of your site, it 
                             will announce it to the user as such. And that's because you chose
                             to wrap your navigation links in <code>&lt;nav&gt;</code> tags. 
                         </p>
@@ -181,7 +188,6 @@ export default function WhatIsA11y() {
                             While the accessibility guidelines established by the W3C (the World Wide Web Consortium)
                             are not legally binding, many countries have adopted legislation founded on them.
                         </p>
-                        
                         
                         <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
                         <p className="padding-left-20">
@@ -240,14 +246,6 @@ export default function WhatIsA11y() {
                         accessible. 
                         A staggering 97% of them have some accessibility bugs!
                     </p>
-                    
-                    {/* <p>BUT, you can play a part in reducing this high percentage:</p>
-                    <ul>
-                        <li>set accessibility as a goal</li>
-                        <li>follow good coding practices </li>
-                        <li>ask questions</li>
-                        <li>spread the word </li>
-                    </ul> */}
 
                     <p>
                         The good news is that most of these bugs have easy solutions.
@@ -265,10 +263,9 @@ export default function WhatIsA11y() {
                         <span className="read-next">Read next: </span>
                         
                         <Link to="/resources/make-it-accessible-part1" 
-                                className="read-next pink-text"
                                 onClick = { () => { scrollToTop() } }
                         >
-                            Your Portfolio Site: Let's Make It Accessible!
+                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
                     </div>
                     
@@ -279,7 +276,6 @@ export default function WhatIsA11y() {
                     <div className="next-article">
                         <span className="read-next">Read next: </span>
                         <Link to="/resources/how-accessibility-works" 
-                                className="read-next pink-text"
                                 onClick = { () => { scrollToTop() } }
                         >
                             How Accessibility Works
