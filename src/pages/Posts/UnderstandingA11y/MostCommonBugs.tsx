@@ -59,7 +59,21 @@ export default function MostCommonBugs() {
                     </p>
                     
                     <div className="highlight">
-                        <p className={styles['numbers']}>
+                        <dl className={styles['numbers']}>
+                            <dt><span>96.3</span></dt>
+                            <dd>percentage of home pages with a11y bugs</dd>
+                        </dl>.
+                        <br />
+                        <dl className={styles['numbers']}>
+                            <dt><span>50</span></dt>
+                            <dd>average bugs per page</dd>
+                        </dl>
+                        <br />
+                        <dl className={styles['numbers']}>
+                            <dt><span>106,245</span></dt>
+                            <dd>highest number of bugs found on a single home page</dd>
+                        </dl>
+                        {/* <p className={styles['numbers']}>
                             <span>96.3</span> percentage of home pages with a11y bugs
                         </p> 
                         <p className={styles['numbers']}>
@@ -67,7 +81,7 @@ export default function MostCommonBugs() {
                         </p> 
                         <p className={styles['numbers']}>
                             <span>106,245</span> highest number of bugs found on a single home page
-                        </p>        
+                        </p>         */}
                     </div>
                     
                     <p>

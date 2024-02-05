@@ -8,9 +8,10 @@
     gap: 20px;
     align-items: center;
     width: 100%;
+    padding-block: 10px;
 }
 
-.numbers span {
+.numbers dt {
     font-size: 1.1rem;
     color: var(--pinkBright-color);
     width: 4.5rem;
