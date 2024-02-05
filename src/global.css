@@ -224,6 +224,9 @@ h4 {
     margin-top: 30px;
 }
 
+.highlight .fake-heading-p {
+    margin-top: 10px;
+}
 
 .highlight h3 {
     margin-top: 10px;

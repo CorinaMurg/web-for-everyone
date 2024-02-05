@@ -7,7 +7,7 @@
 }
 
 .custom-outline--button {
-    background-color: #8b9df8;
+    background-color: #7db9f1;
     border: none;
     color: var(--text-dark-color);
     font-size: 0.9rem;
@@ -15,29 +15,49 @@
     padding: 10px 15px;
     align-self:auto;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .custom-outline--button:focus-visible {
     outline: 3px dashed var(--text-dark-color);
 }
 
-.brightness--button {
-    background-color: #8b9df8;
+.brightness--container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.brightness--links {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    padding-inline-start: 0;  
+}
+
+.brightness-links li {
+    list-style: none;
+}
+
+.brightness--links a {
+    background-color: #a1b0f8;
     border: none;
     color: var(--text-dark-color);
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 10px 15px;
-    align-self:auto;
-    padding-left: 20px;
+    padding: 5px 45px;
+    text-align: center;
+    text-decoration: none;
 }
 
-.custom-outline--button:focus {
-    outline: none;
-    background-color: blueviolet;
+.brightness--links li:not(:last-child) a {
+    border-right: 1.5px solid black;
 }
 
-.custom-outline--button:focus-visible {
+
+.brightness--links li a:focus-visible {
     outline: none;
-    background-color: blueviolet;
+    background-color: #08196e;
+    color: white;
 }
