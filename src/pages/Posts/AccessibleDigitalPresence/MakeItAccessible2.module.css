@@ -5,3 +5,39 @@
     align-items: self-start;
     text-align: center;
 }
+
+.custom-outline--button {
+    background-color: #8b9df8;
+    border: none;
+    color: var(--text-dark-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    align-self:auto;
+    padding-left: 20px;
+}
+
+.custom-outline--button:focus-visible {
+    outline: 3px dashed var(--text-dark-color);
+}
+
+.brightness--button {
+    background-color: #8b9df8;
+    border: none;
+    color: var(--text-dark-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    align-self:auto;
+    padding-left: 20px;
+}
+
+.custom-outline--button:focus {
+    outline: none;
+    background-color: blueviolet;
+}
+
+.custom-outline--button:focus-visible {
+    outline: none;
+    background-color: blueviolet;
+}
