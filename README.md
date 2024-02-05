@@ -14,9 +14,14 @@
 14. WCAG
 
 
+NICE HAVES:
+- custom hook for title or react helmet or react head
+
+BONUS TO-DO:
+- allow users to enter style info for button in Focus Visible
 
 
-Page title: react helmet or react head
+
 
 
 Visible lists: do they also have to be programatic lists

@@ -22,6 +22,10 @@ const contents = [
         text: "Skip Link",
     },
     {
+        href: "#keyboard-navigation",
+        text: "Keyboard Navigation",
+    },
+    {
         href: "#visible-focus",
         text: "Visible Focus",
     },
@@ -80,10 +84,51 @@ export default function MakeItAccessible() {
                     
                 </div>
 
+                {/* ****************PINCH AND ZOOM************************* */}
+                <div className={`section ${styles['pinch']} scroll-target`} id="pinch-zoom">
+                    <div className="section-heading">
+                        <span aria-hidden="true" className="section-number">07</span>
+                        <h2>Meta Viewport</h2>
+                    </div>
+
+                    <div className={`code ${styles['code--title']}`}>
+                        <code><span className="code-blue-color">&lt;head&gt;</span></code>
+                        <code className="padding-left-30">
+                            <span className="code-yellow-color">&lt;meta&gt;</span>
+                        </code>
+                        <code className="padding-left-60">
+                            name="viewport"
+                        </code>
+                        <code className="padding-left-60"><span className="code-pink-color">// remove these attributes!</span></code>
+                        <code className="padding-left-60">
+                            content="user-scalable=<span className="code-pink-color">no</span>, 
+                            maximum-scale=<span className="code-pink-color">1.0</span>"
+                        </code>
+                        <code className="padding-left-30">
+                            <span className="code-yellow-color">/&gt;</span>
+                        </code>
+                        <code><span className="code-blue-color">&lt;head&gt;</span></code>
+                    </div>
+       
+                    <h3>Allow zooming of at least 200%</h3>
+                    <p className="white-bg">
+                        Do not disable scaling and zooming!
+                        Either one of <code>user-scalable="no"</code> or <code>maximum-scale="1.0"</code> can
+                        prevent users from zooming in on your site. Those with low vision need the ability to zoom
+                        in to read the content, and in fact, any user would benefit from the "pinch and zoom" feature 
+                        on a mobile device.
+                    </p>
+                    <p className="white-bg">
+                        Make sure not to include the <code>user-scalable="no"</code> attribute, and set the
+                        <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines that require
+                        a minimum zoom level of 200%.
+                    </p>
+                </div>
+
                 {/* ****************TITLE ELEMENT************************* */}
                 <div className={`section ${styles['title']} scroll-target`} id="title-element">
                     <div className="section-heading">
-                        <span className="section-number">07</span>
+                        <span aria-hidden="true" className="section-number">08</span>
                         <h2>Title Element</h2>
                     </div>
 
@@ -91,7 +136,7 @@ export default function MakeItAccessible() {
                         <code><span className="code-blue-color">&lt;head&gt;</span></code>
                         <code className="padding-left-30">
                             <span className="code-yellow-color">&lt;title&gt;</span>
-                            Web for Everyone | Home
+                            Web for Everyone
                             <span className="code-yellow-color">&lt;/title&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;head&gt;</span></code>
@@ -129,7 +174,7 @@ export default function MakeItAccessible() {
                 {/* ****************SKIP LINK************************* */}
                 <div className="section skip scroll-target" id="skip-link">
                     <div className="section-heading">
-                        <span className="section-number">08</span>
+                        <span aria-hidden="true" className="section-number">08</span>
                         <h2>Skip Link</h2>
                     </div>
 
@@ -177,7 +222,7 @@ export default function MakeItAccessible() {
                         </p>
                         <p>
                             <strong>How to activate the link</strong>: open the page, 
-                            press the <span className="pink-bg-white-text">Tab</span> key.
+                            press the <span className="yellow-bg-dark-text">Tab</span> key.
                             The skip link is the first element to receive focus.
                         </p>
                         <p>
@@ -195,7 +240,8 @@ export default function MakeItAccessible() {
                         <p>
                             As of the time of this writing (January 5th, 2024), the skip link is not present. 
                             Tab through the navigation until you reach the main content. 
-                            Choose an article and click on it. Now tab through the navigation (again!) to reach the main content.
+                            Choose an article and click on it. Now tab through the navigation (again!) to reach 
+                            the body of the article.
                         </p>
                     </div>
                     
@@ -241,9 +287,9 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************KEYBOARD NAVIGATION******************* */}
-                <div className="section focus scroll-target" id="visible-focus">
+                <div className="section keyboard scroll-target" id="keyboard-navigation">
                     <div className="section-heading">
-                        <span className="section-number">09</span>
+                        <span aria-hidden="true" className="section-number">09</span>
                         <h2>Keyboard Navigation</h2>
                     </div>
 
@@ -267,7 +313,7 @@ export default function MakeItAccessible() {
                         Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
                         (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
                         through the interactive elements on the page. Each element should receive focus 
-                        (you should see a an outline around it. More about how to style the outline in the next section).
+                        (you should see an outline around it. More about how to style the outline in the next section).
                     </p>
                     <p className="padding-left-20 white-bg">
                         If you used semantic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
@@ -279,8 +325,10 @@ export default function MakeItAccessible() {
 
                     </p>
                     <p className="bullet-point-line white-bg margin-top-20">
-                        Press the <span className="yellow-bg-dark-text">Enter</span> key to activate a link,  or <span className="yellow-bg-dark-text">Enter</span>
-                        or <span className="yellow-bg-dark-text">Space</span> to activate a button. The expected action should happen.
+                        Press the <span className="yellow-bg-dark-text">Enter</span> key to activate a link, 
+                        or <span className="yellow-bg-dark-text">Enter</span>
+                        or <span className="yellow-bg-dark-text">Space</span> to activate a button. 
+                        It should trigger the expected action.
                         Again, if you used semantic HTML tags, this will happen automatically.
                         With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
                     </p>
@@ -290,7 +338,7 @@ export default function MakeItAccessible() {
                 {/* ****************VISIBLE FOCUS************************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
-                        <span className="section-number">10</span>
+                        <span aria-hidden="true" className="section-number">10</span>
                         <h2>Visible Focus</h2>
                     </div>
 
@@ -337,7 +385,7 @@ export default function MakeItAccessible() {
                         </p>
                         <p className="padding-left-20">
                             Change the color and the style to match your design, but make sure you have a contrast ratio of at 
-                            least <span className="pink-bg-white-text">3.0:1</span> between the outline and the 
+                            least <span className="pink-bg-white-text">3.0 : 1</span> between the outline and the 
                             background color of the element, as well as between the outline and the background of
                             the page.
                         </p>
@@ -357,8 +405,7 @@ export default function MakeItAccessible() {
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
                                 button below and see the custom focus outline in action.
                             </p>
-                            <button aria-label="Example of button with custom outline for focus. No functionality."
-                                    className={styles['custom-outline--button']}
+                            <button aria-hidden="true" className={styles['custom-outline--button']}
                             >
                                 Custom outline
                             </button>
@@ -374,7 +421,7 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <p className="white-bg" style={{ marginTop: '40px' }}>
-                                <strong>Browser Default Focus Style: </strong>
+                                <strong>Browser Default Focus Styles: </strong>
                                 Browsers apply default focus styles in two scenarios:
                             </p>
                             <p className="bullet-point-line">
@@ -388,13 +435,14 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 This behavior is designed to aid accessibility for keyboard 
-                                users without cluttering the interface for mouse users.
+                                users and improve user experience for all visitors, without cluttering the interface 
+                                for mouse users.
                             </p>
 
                             <p style={{ marginTop: '40px' }}>
                                 <strong>Custom Focus Styles: </strong>
                                 When you override the default focus styles using 
-                                the <code className="pink-bg-white-text">:focus</code> pseudo-class, your custom style will apply to all 
+                                the <code className="pink-bg-white-text">:focus</code> pseudo-class, your custom styles will apply to all 
                                 focus events, regardless of how they were triggered (mouse click or keyboard 
                                 navigation). 
                             </p>
@@ -425,17 +473,17 @@ export default function MakeItAccessible() {
                             It could be with that same color, like a change from a light blue to a darker blue. 
                             Or, it could be with a different color, like a change from light blue to dark gray.
                         </p>
-                        <div className={`margin-top-30 ${styles['brightness--container']}`} aria-hidden="true">
+                        <div aria-hidden="true" className={`margin-top-30 ${styles['brightness--container']}`}>
                             <p>
                                 <strong>For you: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
-                                links below and notice the change in the background's shade. Try not to click on them, so you
-                                don't scroll away from this section.
+                                links below and notice the change in the background's shade. (Try not to click on them, so you
+                                don't scroll away from this section!)
                             </p>                     
                             <ul className={`${styles['brightness--links']}`}>
-                                <li><a href="" >Link 1</a></li>
-                                <li><a href="" >Link 2</a></li>
-                                <li><a href="" >Link 3</a></li>           
+                                <li><a aria-hidden="true" href="" >Link 1</a></li>
+                                <li><a aria-hidden="true" href="" >Link 2</a></li>
+                                <li><a aria-hidden="true" href="" >Link 3</a></li>           
                             </ul>   
                             <br></br>           
                         </div>                
@@ -446,7 +494,7 @@ export default function MakeItAccessible() {
                 {/* ****************HEADINGS************************* */}
                 <div className="section headings scroll-target" id="headings-in-logical-order">
                     <div className="section-heading">
-                        <span className="section-number">11</span>
+                        <span aria-hidden="true" className="section-number">11</span>
                         <h2>Headings in Logical Order</h2>
                     </div>
 
