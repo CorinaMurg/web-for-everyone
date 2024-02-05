@@ -113,7 +113,7 @@ export default function MakeItAccessible() {
                     <h3>Allow zooming of at least 200%</h3>
                     <p className="white-bg">
                         Do not disable scaling and zooming!
-                        Either one of <code>user-scalable="no"</code> or <code>maximum-scale="1.0"</code> can
+                        Either one of <code>user-scalable=no</code> or <code>maximum-scale=1.0</code> can
                         prevent users from zooming in on your site. Those with low vision need the ability to zoom
                         in to read the content, and in fact, any user would benefit from the "pinch and zoom" feature 
                         on a mobile device.
@@ -174,7 +174,7 @@ export default function MakeItAccessible() {
                 {/* ****************SKIP LINK************************* */}
                 <div className="section skip scroll-target" id="skip-link">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">08</span>
+                        <span aria-hidden="true" className="section-number">09</span>
                         <h2>Skip Link</h2>
                     </div>
 
@@ -289,7 +289,7 @@ export default function MakeItAccessible() {
                 {/* ****************KEYBOARD NAVIGATION******************* */}
                 <div className="section keyboard scroll-target" id="keyboard-navigation">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">09</span>
+                        <span aria-hidden="true" className="section-number">10</span>
                         <h2>Keyboard Navigation</h2>
                     </div>
 
@@ -338,7 +338,7 @@ export default function MakeItAccessible() {
                 {/* ****************VISIBLE FOCUS************************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">10</span>
+                        <span aria-hidden="true" className="section-number">11</span>
                         <h2>Visible Focus</h2>
                     </div>
 
@@ -494,7 +494,7 @@ export default function MakeItAccessible() {
                 {/* ****************HEADINGS************************* */}
                 <div className="section headings scroll-target" id="headings-in-logical-order">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">11</span>
+                        <span aria-hidden="true" className="section-number">12</span>
                         <h2>Headings in Logical Order</h2>
                     </div>
 
