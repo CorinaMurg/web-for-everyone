@@ -31,10 +31,7 @@ Explain: aria-hidden for icon
 
 Add description or alt to images re: color contrast
 
-focus vs focus:visible: check explanation
 
-6 More Bugs:
-- allow for pinch and zoom
 
 ABOUT EACH ARTICLE
 - table of contents: should be aside or a section

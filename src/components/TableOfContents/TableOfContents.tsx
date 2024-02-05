@@ -8,21 +8,24 @@ import "../../global.css"
 export default function TableOfContents ({ contents }: { contents: Array<any> }) {
     return (
         <div className={styles['table-contents']}>
-            <h2 className={styles['table-contents--heading']}>
+            <h2 className={styles['table-contents--heading']} id="table-contents">
                 Table of Contents
             </h2>
-            <ul className={styles['table-contents--list']}>
-                {contents.map((item: any, index: number) => (
-                <li key={index} className={styles['table-contents--list--item']}>
-                    <a  href={item.href} 
-                        className={`hover-pink ${item.className}`}
-                        {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
-                    >
-                        {item.text}
-                    </a>
-                </li>
-                ))}
-            </ul>
+            <nav aria-labelledby='table-contents'>
+                <ul className={styles['table-contents--list']}>
+                    {contents.map((item: any, index: number) => (
+                    <li key={index} className={styles['table-contents--list--item']}>
+                        <a  href={item.href} 
+                            className={`hover-pink ${item.className}`}
+                            {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
+                        >
+                            {item.text}
+                        </a>
+                    </li>
+                    ))}
+                </ul>
+            </nav>
+            
         </div>
     );
 };
