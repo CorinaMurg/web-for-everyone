@@ -511,7 +511,7 @@ export default function MakeItAccessible() {
                         <div aria-hidden="true" className={`margin-top-30 ${styles['brightness--container']}`}>
                             <p>
                                 <strong>For you to test: </strong>
-                                Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
+                                Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate through the 
                                 links below and notice the change in the background's shade. (Try not to click on them, so you
                                 don't scroll away from this section!)
                             </p>                     
