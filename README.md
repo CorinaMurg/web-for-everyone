@@ -1,16 +1,17 @@
 1. when using the back button in the browser, it should scroll to the same section as before
 2. Finish MakeItA11y-2
 3. About
-4. Your Users
+4. WCAG review
 5. Responsive
 6. Dark Mode
-7. WCAG review
 8. Logo
 9. LinkedIn page WE
 10. LinkedIn page Corina
 11. A11y statement https://dequeuniversity.com/accessibility-statement
 
-
+12. Your Users
+13. Is inaccessible ilegal?
+14. WCAG
 
 
 

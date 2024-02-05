@@ -18,7 +18,8 @@
     --blue-color: #1a73c6;
     --dark-blue-color: #1a73e9;
     --orange-color: #fb8500;
-    --yellow-color: #ffb703;
+    --yellow-color: rgb(255, 183, 3);
+    --yellowFaded-color: rgba(255, 183, 3, 0.5);
     /* --yellow-color: #feb662; */
     --burntYellow-color: #feb662;
     --pink-color: #f38ba3;
@@ -55,7 +56,7 @@
     --code-bg-color:  #151f28;
     --code-purple-color: #617bff;
     --code-pink-color: #ff39a8;
-    --code-yellow-color: #ffd600;
+    --code-yellow-color: rgb(255, 214, 0);
     --code-blue-color: #00beff;
 
     /* Hero Design */

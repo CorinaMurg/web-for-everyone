@@ -22,7 +22,7 @@ export default function Accessibility() {
     };
   
     return (
-        <div className={styles.resources}>
+        <div className={`${styles.resources} no-back-links-container`}>
 
             <h1>Resources to grow 
                 <span>your <span className="yellow-bg">accessibility skills</span></span>

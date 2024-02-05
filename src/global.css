@@ -155,6 +155,7 @@ a:hover {
 .font-size-1 {
     font-size: 1.1rem;
 }
+
 .gray-bg code { 
     background-color: #adb5bd;
     color: var(--text-dark-color);
@@ -187,6 +188,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    line-height: 1.5;
     /* margin-top: 50px; */
 }
 
@@ -483,7 +485,14 @@ ul {
 }
 
 .white-bg code {
-    background-color: #dee2e6;
+    background-color: var(--grayishBlue-color);
     padding: 2px 3px;
     border-radius: 3px;
+}
+
+.yellow-bg-dark-text {
+    background-color: var(--yellowFaded-color);
+    color: var(--text-dark-color);
+    padding: 1px 3px;
+    border-radius: 2px;
 }

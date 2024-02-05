@@ -224,11 +224,11 @@ export default function MakeItAccessible() {
                     
                 </div>
 
-                {/* ****************VISIBLE FOCUS************************* */}
+                {/* ****************KEYBOARD NAVIGATION******************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
                         <span className="section-number">09</span>
-                        <h2>Visible Focus</h2>
+                        <h2>Keyboard Navigation</h2>
                     </div>
 
                     <div className="code code--focus">
@@ -238,38 +238,104 @@ export default function MakeItAccessible() {
                         <code>&#125;</code>   
                     </div>
         
-                    <h3>Let keyboard users know where they are on the page</h3>
+                    <h3>Allow keyboard-only users to navigate a page</h3>
+                    <p>
+                        Not everyone can use a mouse. People who are blind or have low vision, as well as those
+                        with mobility issues, rely on a keyboard to navigate the web. 
+                    </p>
+                    <p>
+                        Make sure all interactive elements on your site are reachable and usable with a keyboard.
+                    </p>
+                    <p><strong>How to test:</strong></p>
+                    <p className="bullet-point-line white-bg">
+                        Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
+                        (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
+                        through the interactive elements on the page. Each element should receive focus 
+                        (you should see a an outline around it. More about how to style the outline in the next section).
+                    </p>
+                    <p className="padding-left-20 white-bg">
+                        If you used semantic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
+                        this will happen automatically. 
+                    </p>
+                    <p className="padding-left-20 white-bg">
+                        If you used <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>,
+                        and forgot the <code>tabindex</code> attribute, the element will be skipped.
+
+                    </p>
+                    <p className="bullet-point-line white-bg margin-top-20">
+                        Press the <span className="yellow-bg-dark-text">Enter</span> key to activate a link,  or <span className="yellow-bg-dark-text">Enter</span>
+                        or <span className="yellow-bg-dark-text">Space</span> to activate a button. The expected action should happen.
+                        Again, if you used semantic HTML tags, this will happen automatically.
+                        With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
+                    </p>
+
+                </div>
+
+                {/* ****************VISIBLE FOCUS************************* */}
+                <div className="section focus scroll-target" id="visible-focus">
+                    <div className="section-heading">
+                        <span className="section-number">10</span>
+                        <h2>Visible Focus</h2>
+                    </div>
+
+                    <div className="code">
+                        <code><span className="code-pink-color">// do not remove the outline unless you create a custom style</span></code>
+                        <code className="margin-top-10"><span className="code-blue-color">button</span>:focus &#123;</code>
+                        <code className="padding-left-30"><span className="code-yellow-color">outline</span>: none;</code>
+                        <code>&#125;</code>   
+                    </div>
+        
+                    <h3>Let sighted keyboard users know where they are on the page</h3>
                     <p>
                         It is important that the element that receives focus changes its appearance. 
                         This way the user knows exactly where the focus is.  
                     </p>
                     <p>
                         Most browsers have a default focus style, but depending on the design of your site,
-                        it might not be always visible.
+                        it might not always be visible.
                         For example, the default focus style in Chrome is a black outline.
                         If you have a button with a black or very dark background color, the focus will not be visible.
                     </p>
                     <p>
-                        The example above is just one way to add a focus style to a button. 
+                        Here are a couple of ways to provide visual clues to sighted keyboard users:
                     </p>
-                    <p className="bold bullet-point-line white-bg">
-                        It defines an <code>outline</code> that is 3 pixels wide, solid, and blue in color. 
-                    </p>
-                    <p className="padding-left-20">
-                        Change the color and the width to match your design, but make sure you have a contrast ratio of at 
-                        least <span className="pink-bg-white-text">3.0:1</span> between the outline and the 
-                        background color of the element, as well as between the outline and the background of
-                        the page.
-                    </p>
-                    <p className="bold bullet-point-line white-bg">
-                        The <code>outline-offset</code> is used to 
-                        set the space between the outline and the edge of the element.
-                    </p>
-                    <p className="padding-left-20">
-                        It's not required, but it does improve accessibility and focus visibility.
-                        Plus, when used, you only have to worry about the contrast ratio between the outline and the
-                        background of the page.
-                    </p>
+                    <div className="padding-left-20">
+                        <p className="bullet-point-line">
+                            Create a custom outline. 
+                        </p>
+                        <p className="bullet-point-line margin-top-20">
+                            Change in brightness to indicate focus.
+                        </p>
+                    </div>
+
+                    <div className="highlight">
+                        <p className="fake-heading-p">Example: creating a custom outline</p>
+                        <div className="code code--focus">
+                            <code><span className="code-blue-color">button</span>:focus-visible &#123;</code>
+                            <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px solid blue;</code>
+                            <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
+                            <code>&#125;</code>   
+                        </div>
+                        <p className="bold bullet-point-line white-bg">
+                            Define an <code>outline</code> that is 3 pixels wide, solid, and blue in color. 
+                        </p>
+                        <p className="padding-left-20">
+                            Change the color and the width to match your design, but make sure you have a contrast ratio of at 
+                            least <span className="pink-bg-white-text">3.0:1</span> between the outline and the 
+                            background color of the element, as well as between the outline and the background of
+                            the page.
+                        </p>
+                        <p className="bold bullet-point-line white-bg">
+                            Use <code>outline-offset</code> to 
+                            set the space between the outline and the edge of the element.
+                        </p>
+                        <p className="padding-left-20">
+                            It's not required, but it does improve accessibility and focus visibility.
+                            Plus, when used, you only have to worry about the contrast ratio between the outline and the
+                            background of the page.
+                        </p>
+                    </div>
+                    
                     <div className="highlight margin-top-30">
                         <details>
                             <summary className="white-bg">
@@ -299,16 +365,27 @@ export default function MakeItAccessible() {
                             </p>    
                         </details>
                     </div>
-                    <p className="margin-top-30 white-bg">
-                        Given the importance of the focus style, the code below 
-                        is a <span className="pink-bg-white-text">must-never-use</span> unless custom styles are
-                        applied with <code>focus-visible</code>!
-                    </p>
-                    <div className="code">
-                        <code><span className="code-blue-color">button</span>:focus &#123;</code>
-                        <code className="padding-left-30"><span className="code-yellow-color">outline</span>: none;</code>
-                        <code>&#125;</code>   
+                    <div className="highlight margin-top-30">
+                        <p className="fake-heading-p">Example: change in brightness to indicate focus</p>
+                        <p>
+                            One of the most important accessibility guidelines is to ensure that color alone is not 
+                            used to convey information. This includes the focus state. 
+                        </p>
+                        <p>
+                            For example, changing the background color of 
+                            a button from blue to green when it receives focus (assuming the outline was removed) 
+                            is not recommended. Users who are color blind will not be able to tell the difference.
+                        </p>
+                        <p>
+                            <strong>Instead, rely on a change in brightness to indicate focus.</strong>
+                        </p>
+                        <p>
+                            It could be with that same color, like a change from a light blue to a darker blue. 
+                            Or, it could be with a different color, like a change from light blue to dark gray.
+                        </p>
+                        
                     </div>
+                    
                 </div>
                 
                 {/* ****************HEADINGS************************* */}
