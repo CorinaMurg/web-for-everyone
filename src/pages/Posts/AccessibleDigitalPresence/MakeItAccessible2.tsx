@@ -436,7 +436,7 @@ export default function MakeItAccessible() {
                         
                         <div className="margin-top-30 margin-bottom-20" aria-hidden="true">
                             <p>
-                                <strong>For you: </strong>
+                                <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
                                 button below and see the custom focus outline in action.
                             </p>
@@ -510,7 +510,7 @@ export default function MakeItAccessible() {
                         </p>
                         <div aria-hidden="true" className={`margin-top-30 ${styles['brightness--container']}`}>
                             <p>
-                                <strong>For you: </strong>
+                                <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
                                 links below and notice the change in the background's shade. (Try not to click on them, so you
                                 don't scroll away from this section!)
