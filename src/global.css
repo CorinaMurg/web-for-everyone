@@ -455,8 +455,43 @@ summary::marker {
 
 ul {
     list-style-type: none;
-    /* padding-inline-start: 0; */
+    padding-inline-start: 0;
 }
+
+/* ul[class^="list-padding-0"] {
+    padding-inline-start: 0;
+} */
+
+ul[class^="list-padding-10"] {
+    padding-inline-start: 10px;
+}
+
+ul[class^="bullet-point-list"] li{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-left: 20px;
+    margin-block: 10px;
+}
+
+/* .bullet-point-line {
+    position: relative;
+    padding-left: 20px;
+    /* margin-top: 20px; */
+
+
+ul[class^="bullet-point-list"] li::before {
+    content: "•"; 
+    color: var(--pinkBright-color);
+    font-size: 25px; 
+    position: absolute;
+    left: -20px; 
+    top: -11px;
+    padding-left: 20px;
+} 
 
 .visually-hidden {
     position: absolute;

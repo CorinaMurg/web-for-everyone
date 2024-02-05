@@ -8,7 +8,9 @@
 9. LinkedIn page WE
 10. LinkedIn page Corina
 11. A11y statement https://dequeuniversity.com/accessibility-statement
+12 Highlight TOC titles in use
 
+Extra Articles
 12. Your Users
 13. Is inaccessible ilegal?
 14. WCAG

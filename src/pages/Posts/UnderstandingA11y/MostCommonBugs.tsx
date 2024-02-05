@@ -73,18 +73,9 @@ export default function MostCommonBugs() {
                             <dt><span>106,245</span></dt>
                             <dd>highest number of bugs found on a single home page</dd>
                         </dl>
-                        {/* <p className={styles['numbers']}>
-                            <span>96.3</span> percentage of home pages with a11y bugs
-                        </p> 
-                        <p className={styles['numbers']}>
-                            <span>50</span> average bugs per page
-                        </p> 
-                        <p className={styles['numbers']}>
-                            <span>106,245</span> highest number of bugs found on a single home page
-                        </p>         */}
                     </div>
                     
-                    <p>
+                    <p className="margin-top-20">
                         WebAIM audits these pages using an automated tool, the WAVE accessibility engine. 
                         Automated tools are not perfect and fail to detect all  
                         accessibility barriers and guidelines violations.
@@ -268,15 +259,17 @@ export default function MostCommonBugs() {
                             to compute an accessible name: 
                             visible text, <code>aria-label</code>, <code>aria-labelledby</code>, or <code>alt</code>.
                         </p>
-                        <p className="fake-heading-p">Consequences</p>
-                        <p>
-                            <span className="pink-num">1. </span>A screen reader will announce this button as ... button, 
-                            and no other information attached. Users will not know what its function is.
-                        </p>
-                        <p>
-                            <span className="pink-num">2. </span>Users relying on voice activation will not be able to 
-                            trigger the action on the button.
-                        </p>
+                        <p className="fake-heading-p">Consequences of empty buttons</p>
+                        <ul className="bullet-point-list">
+                            <li>
+                                A screen reader will announce this button as ... button, and no other 
+                                information attached. Users will not know what its function is.
+                            </li>
+                            <li>
+                                Users relying on voice activation will not be able to trigger the action on the button.
+                            </li>
+                        </ul>
+                        <br/>
                     </div>
                 </div>
 
@@ -319,15 +312,16 @@ export default function MostCommonBugs() {
                             like <code>aria-label</code> or <code>aria-labelledby</code>
                             that could be used to provide an accessible name are not present.
                         </p>
-                        <p className="fake-heading-p">Consequences</p>
-                        <p>
-                            <span className="pink-num">1. </span>Screen reader users will not 
-                            understand the purpose of the input. 
-                        </p>
-                        <p>
-                            <span className="pink-num">2. </span>Users relying on speech commands do not 
-                            have a way to trigger the input.
-                        </p>
+                        <p className="fake-heading-p">Consequences of missing input labels</p>
+                        <ul className="bullet-point-list">
+                            <li>
+                                Screen reader users will not understand the purpose of the input
+                            </li>
+                            <li>
+                                Users relying on speech commands do not have a way to trigger the input.
+                            </li>
+                        </ul>
+                        <br/>
                     </div>
                 </div>
 
