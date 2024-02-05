@@ -407,7 +407,7 @@ export default function MostCommonBugs() {
                         <Link to="/resources/make-it-accessible-part1" 
                                 onClick={() => { scrollToTop() }}
                         >
-                            Let's Make It Accessible! Part One: Finding the 7 Most Common Bugs
+                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
                     </div>                 
                 </div>

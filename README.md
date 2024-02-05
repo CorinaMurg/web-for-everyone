@@ -1,5 +1,5 @@
 1. when using the back button in the browser, it should scroll to the same section as before
-2. Finish MakeItA11y-2
+2. 
 3. About
 4. WCAG review
 5. Responsive
@@ -19,7 +19,7 @@ NICE HAVES:
 
 BONUS TO-DO:
 - allow users to enter style info for button in Focus Visible
-
+- link to a differen page with a cute cat
 
 
 

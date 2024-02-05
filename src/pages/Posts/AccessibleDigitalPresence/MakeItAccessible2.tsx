@@ -3,15 +3,19 @@ import { Link } from "react-router-dom"
 import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
-import "../../../global.css"
-import styles from "./MakeItAccessible2.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
+import "../../../global.css"
+import styles from "./MakeItAccessible2.module.css"
 
 const contents = [
     {
         href: "#",
         text: "Introduction",
+    },
+    {
+        href: "#zooming-scaling",
+        text: "Zooming and Scaling",
     },
     {
         href: "#title-element",
@@ -65,30 +69,28 @@ export default function MakeItAccessible() {
             <div className="article-content makeItTwo">
                 <div className="section intro">
                     <p>
-                        Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
-                        challenging as the functionality of a website increases. However, in a few 
-                        simple steps you can ensure that your site is free of the most common,
-                        easy-to-fix accessibility issues. 
+                        This article continues our exploration of accessibility issues that can affect your 
+                        portfolio site. We started with <span> </span>
+                        <Link to="/resources/make-it-accessible-part1" 
+                                onClick={() => { scrollToTop() }}
+                        >
+                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
+                        </Link>
+                        , and will now cover 6 more issues. 
                     </p>
                     <p>
-                        The 2023 WebAIM Million Study of 1,000,000 home pages found 7 bugs 
-                        that are present on more than 97% of the sites.
-                        Let's make sure your portfolio site is not one of them!
+                        As was the case with the first group, 
+                        these are also issues that can be kept in check with just semantic HTML and CSS. (Well,
+                        there is just one exception, depending on which JavaScript library you use.)
                     </p>
-                   <p>
-                        In this article, we will look at each bug in detail and learn how to fix it. 
-                        The article is designed to be a quick reference guide, but sufficient 
-                        information is provided to help you understand the underlying concepts.
-                        Links to additional resources are also provided.
-                   </p>
                     
                 </div>
 
                 {/* ****************PINCH AND ZOOM************************* */}
-                <div className={`section ${styles['pinch']} scroll-target`} id="pinch-zoom">
+                <div className={`section ${styles['pinch']} scroll-target`} id="zooming-scaling">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">07</span>
-                        <h2>Meta Viewport</h2>
+                        <h2>Zooming and Scaling</h2>
                     </div>
 
                     <div className={`code ${styles['code--title']}`}>
@@ -114,7 +116,7 @@ export default function MakeItAccessible() {
                     <p className="white-bg">
                         Do not disable scaling and zooming!
                         Either one of <code>user-scalable=no</code> or <code>maximum-scale=1.0</code> can
-                        prevent users from zooming in on your site. Those with low vision need the ability to zoom
+                        prevent users from zooming in on a page. Those with low vision need the ability to zoom
                         in to read the content, and in fact, any user would benefit from the "pinch and zoom" feature 
                         on a mobile device.
                     </p>
@@ -132,7 +134,7 @@ export default function MakeItAccessible() {
                         <h2>Title Element</h2>
                     </div>
 
-                    <div className={`code ${styles['code--title']}`}>
+                    <div className="code">
                         <code><span className="code-blue-color">&lt;head&gt;</span></code>
                         <code className="padding-left-30">
                             <span className="code-yellow-color">&lt;title&gt;</span>
@@ -158,17 +160,50 @@ export default function MakeItAccessible() {
                         Do make sure each page has a unique title!
                     </h4>
                     
-                    <p className="white-bg">
-                        It gets more complex with a Single Page Application (SPA), but each framework has specific 
-                        features or libraries that allow for updating the <code>title</code> with each page.
-                        Research, choose one, and implement it.
+                    <p>
+                        It gets more complicated with a Single Page Application (SPA), but each framework has specific 
+                        features or libraries that allow for updating the <code>title</code> for each page.
+                        Research, choose a method, and implement it. (This is the one case where you might need to use JavaScript!)
                     </p>
 
-                    <p className="white-bg">
-                        <span className="bold">Note: </span>
-                        This site was built in React, and relies on a custom hook to update 
-                        the <code>title</code> for each page.
-                    </p>
+                    <div className="highlight">
+                        <details>
+                            <summary>
+                                <span className="details-title">
+                                    Example: React Custom Hook to Update the Title
+                                </span>
+                            </summary>
+                            <div className="code margin-top-50">
+                                <code>
+                                    import &#123; <span className="code-yellow-color">useEffect</span> &#125; from 'react';
+                                </code>
+                                <br/>
+                                <code>
+                                    function <span className="code-blue-color">useDocTitle</span>
+                                    (<span className="code-pink-color">title</span>) &#123;
+                                </code>
+                                <code className="padding-left-30"><span className="code-yellow-color">useEffect</span>(() =&gt; &#123;</code>
+                                <code className="padding-left-60">document.title = title;</code>
+                                <code className="padding-left-30">&#125;, [<span className="code-pink-color">title</span>]);</code>
+                                <code>&#125;;</code>
+                            </div>
+                            <br/>
+                            <p>Then import the hook and use it in your component:</p>
+                            <div className="code">
+                                <code>
+                                    import <span className="code-blue-color">useDocTitle</span> from './useDocTitle';
+                                </code>
+                                <br/>
+                                <code>
+                                    function <span className="code-yellow-color">MyPage</span>() &#123;
+                                </code>
+                                <code className="padding-left-30">
+                                    <span className="code-blue-color">useDocTitle</span>("Web for Everyone");
+                                </code>
+                                <code>&#125;</code>
+                            </div>
+                        </details>
+                    </div>
                 </div>
 
                 {/* ****************SKIP LINK************************* */}
@@ -574,9 +609,16 @@ export default function MakeItAccessible() {
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Congratulations! You are now familiar with 12 accessibility issues and 
-                        how to fix them.
+                        Wow, you did it! You now know how to avoid 12 accessibility issues. 
+                        Congratulations!  <span aria-hidden="true"> 🎉 😎</span>
                     </p>
+                    <p>
+                        Continue to practice and make accessibility a habit. And equally important, 
+                        spread the word and share your knowledge with others. Because together we can build 
+                        a <span className="yellow-bg">web for everyone</span>.
+
+                    </p>
+                    <br/>
                     <p>
                         Ready to learn more about accessibility?
                     </p>
