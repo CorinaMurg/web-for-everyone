@@ -15,6 +15,7 @@ THURSDAY
 13. Program all visible lists
 14. Explain Assistive tech
 15. Forms (ask Adam?)
+16. Add button to close modals
 
 Small parts:
 1. visually-hidden code or link to code pen

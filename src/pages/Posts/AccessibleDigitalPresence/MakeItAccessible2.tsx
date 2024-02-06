@@ -79,8 +79,8 @@ export default function MakeItAccessible() {
                         , and will now cover 6 more issues. 
                     </p>
                     <p>
-                        As was the case with the first group, 
-                        these are also issues that can be kept in check with just semantic HTML and CSS. (Well,
+                        As was the case with the first set of bugs, 
+                        these are issues that can be kept in check with just semantic HTML and CSS. (Well,
                         there is just one exception, depending on which JavaScript library you use.)
                     </p>
                     
@@ -113,17 +113,23 @@ export default function MakeItAccessible() {
                     </div>
        
                     <h3>Allow zooming of at least 200%</h3>
-                    <p className="white-bg">
-                        Do not disable scaling and zooming!
-                        Either one of <code>user-scalable=no</code> or <code>maximum-scale=1.0</code> can
-                        prevent users from zooming in on a page. Those with low vision need the ability to zoom
-                        in to read the content, and in fact, any user would benefit from the "pinch and zoom" feature 
-                        on a mobile device.
+                    <p>
+                        <strong>Do not disable scaling and zooming!</strong>
                     </p>
                     <p className="white-bg">
-                        Make sure not to include the <code>user-scalable="no"</code> attribute, and set the
-                        <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines that require
-                        a minimum zoom level of 200%.
+                        Either one of <code>user-scalable=no</code> or <code>maximum-scale=1.0</code> can
+                        prevent users from zooming in on a page. Those with low vision need the ability to zoom
+                        in to read the content. In fact, any user would benefit from the "pinch and zoom" feature 
+                        on a mobile device!
+                    </p>
+                    <p>For that purpose:</p>
+                    <p className="bullet-point-line white-bg">
+                        Make sure not to include the <code>user-scalable=no</code> attribute
+                        in the <code>viewport</code> meta tag.
+                    </p>
+                    <p className="bullet-point-line white-bg">
+                        set the <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines 
+                        that require a minimum zoom level of 200%.
                     </p>
                 </div>
 
@@ -258,14 +264,17 @@ export default function MakeItAccessible() {
                         <p>
                             <strong>How to activate the link</strong>: open the page, 
                             press the <span className="yellow-bg-dark-text">Tab</span> key.
-                            The skip link is the first element to receive focus.
+                            The skip link is the first element to receive focus. Pressing enter will take you 
+                            to their main content.
+
                         </p>
                         <p>
                             If not for the link, notice how many elements
-                            a visitor would have to tab through before reaching the main content!
+                            a visitor would have to first tab through before reaching the main content!
                         </p>
                         <br></br>
-                        <p>Now for an opposite experience, check out the <span> </span>
+                        <p>
+                            Now for an opposite experience, check out the <span> </span>
                             <a href="https://www.bbc.com/" target="_blank" rel="noreferrer"> 
                                 <span className="bold">BBC</span>
                             </a> <span> </span>
@@ -337,8 +346,8 @@ export default function MakeItAccessible() {
         
                     <h3>Allow keyboard-only users to navigate a page</h3>
                     <p>
-                        Not everyone can use a mouse. People who are blind or have low vision, as well as those
-                        with mobility issues, rely on a keyboard to navigate the web. 
+                        <strong>Not everyone can use a mouse!</strong> People who are blind or have low vision, 
+                        as well as those without fine motor skills, rely on a keyboard to navigate the web. 
                     </p>
                     <p>
                         Make sure all interactive elements on your site are reachable and usable with a keyboard.
@@ -360,9 +369,8 @@ export default function MakeItAccessible() {
 
                     </p>
                     <p className="bullet-point-line white-bg margin-top-20">
-                        Press the <span className="yellow-bg-dark-text">Enter</span> key to activate a link, 
-                        or <span className="yellow-bg-dark-text">Enter</span>
-                        or <span className="yellow-bg-dark-text">Space</span> to activate a button. 
+                        Press <span className="yellow-bg-dark-text">Enter</span> to activate the element 
+                        (for a button the <span className="yellow-bg-dark-text">Space</span> bar will also work).
                         It should trigger the expected action.
                         Again, if you used semantic HTML tags, this will happen automatically.
                         With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
@@ -387,7 +395,8 @@ export default function MakeItAccessible() {
                     <h3>Let sighted keyboard users know where they are on the page</h3>
                     <p>
                         It is important that the element that receives focus changes its appearance. 
-                        This way the user knows exactly where the focus is.  
+                        This way the user knows exactly where the focus is and which element will be activated
+                        wif they press the <span className="yellow-bg-dark-text">Enter</span> key.
                     </p>
                     <p>
                         Most browsers have a default focus style, the <strong>focus ring</strong>, but depending on the design of your site,
@@ -403,13 +412,13 @@ export default function MakeItAccessible() {
                             Create a custom outline. 
                         </p>
                         <p className="bullet-point-line margin-top-20">
-                            Change the brightness of the background color.
+                            Change the brightness (shade) of the background color.
                         </p>
                     </div>
 
                     <div className="highlight">
-                        <p className="fake-heading-p">Example: Creating a custom outline</p>
-                        <div className="code code--focus">
+                        <h4>Example: Creating a custom focus outline</h4>
+                        <div className="code">
                             <code><span className="code-blue-color">button</span>:focus-visible &#123;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
@@ -491,7 +500,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="highlight margin-top-30">
-                        <p className="fake-heading-p">Example: Change in brightness to indicate focus</p>
+                        <h4>Example: Change in brightness to indicate focus</h4>
                         <p>
                             One of the most important accessibility guidelines is to ensure that color alone is not 
                             used to convey information. This applies to the focus state as well.
@@ -592,7 +601,7 @@ export default function MakeItAccessible() {
                     </div>
                     
                     <div className="highlight">
-                        <p className="fake-heading-p">Did you know? <span aria-hidden="true"> 💡</span></p>
+                        <h4 aria-label="Did you know automated tools can help with headings?">Did you know? <span aria-hidden="true"> 💡</span></h4>
                         <p> 
                             Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
                         </p>
