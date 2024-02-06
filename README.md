@@ -3,13 +3,13 @@ TUESDAY
 2. About
 3. Responsive
 4. AA and AAA (link in Color Contrast)
-4.1. Assistive Tech: Add it to How A11y Works
-5. Links: not bold
+5. Assistive Tech: Add it to How A11y Works
+
 WEDNESDAY
 6. Dark Mode
 8. Logo
 9. LinkedIn page WE
-10. LinkedIn page Corina
+10. LinkedIn page Corina, GitHub
 11. A11y statement https://dequeuniversity.com/accessibility-statement
 THURSDAY
 12. Highlight TOC titles in use
@@ -50,6 +50,7 @@ ABOUT EACH ARTICLE
 - table of contents: should be aside or a section
 - article should be div or article
 - sections with labelledby in each article
+- aria-hidden for the 01 numbers
 
 TABLE OF CONTENTS
 - is "out of list" important

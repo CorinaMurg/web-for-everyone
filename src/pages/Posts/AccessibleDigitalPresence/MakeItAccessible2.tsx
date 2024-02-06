@@ -253,11 +253,11 @@ export default function MakeItAccessible() {
                     </p>
 
                     <div className="highlight">
-                        <p className="fake-heading-p">Example: A Skip Link in Action</p>
+                        <h4>Example: A Skip Link in Action</h4>
                         <p>
                             Check out how the <span> </span>
                             <a href="https://www.nytimes.com/" target="_blank" rel="noreferrer"> 
-                                <span className="bold">New York Times</span>
+                                New York Times
                             </a> <span> </span>
                             has implemented the skip link. 
                         </p>
@@ -276,7 +276,7 @@ export default function MakeItAccessible() {
                         <p>
                             Now for an opposite experience, check out the <span> </span>
                             <a href="https://www.bbc.com/" target="_blank" rel="noreferrer"> 
-                                <span className="bold">BBC</span>
+                                BBC
                             </a> <span> </span>
                             site.
                         </p>
@@ -372,6 +372,8 @@ export default function MakeItAccessible() {
                         Press <span className="yellow-bg-dark-text">Enter</span> to activate the element 
                         (for a button the <span className="yellow-bg-dark-text">Space</span> bar will also work).
                         It should trigger the expected action.
+                    </p>
+                    <p className="padding-left-20 white-bg">
                         Again, if you used semantic HTML tags, this will happen automatically.
                         With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
                     </p>
@@ -386,7 +388,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code">
-                        <code><span className="code-pink-color">// do not remove the outline unless you create a custom style</span></code>
+                        <code>// do not remove the outline unless you add another visual clue</code>
                         <code className="margin-top-10"><span className="code-blue-color">button</span>:focus &#123;</code>
                         <code className="padding-left-30"><span className="code-yellow-color">outline</span>: none;</code>
                         <code>&#125;</code>   
@@ -396,10 +398,11 @@ export default function MakeItAccessible() {
                     <p>
                         It is important that the element that receives focus changes its appearance. 
                         This way the user knows exactly where the focus is and which element will be activated
-                        wif they press the <span className="yellow-bg-dark-text">Enter</span> key.
+                        if they press the <span className="yellow-bg-dark-text">Enter</span> key.
                     </p>
                     <p>
-                        Most browsers have a default focus style, the <strong>focus ring</strong>, but depending on the design of your site,
+                        Most browsers have a default focus style, the <strong>focus ring</strong>. 
+                        Depending on the design of your site,
                         it might not always be visible.
                         For example, the default focus style in Chrome is a black outline.
                         If you have a button with a black or very dark background color, the outline will not be visible.
