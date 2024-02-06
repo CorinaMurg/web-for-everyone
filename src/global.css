@@ -8,7 +8,17 @@ a {
 
 a:hover {
     color: var(--text-dark-color);
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+
+.article-content a {
+    padding: 2px;
+}
+
+.article-content a:hover {
+    background-color: var(--yellowFaded-color);
+    border-radius: 4px;
+    
 }
 
 .article-container {
@@ -551,5 +561,5 @@ ul[class^="bullet-point-list"] li::before {
     background-color: var(--yellowFaded-color);
     color: var(--text-dark-color);
     padding: 1px 3px;
-    border-radius: 2px;
+    border-radius: 4px;
 }

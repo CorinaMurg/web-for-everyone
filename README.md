@@ -1,13 +1,16 @@
+TUESDAY
 1. when using the back button in the browser, it should scroll to the same section as before
-2. 
-3. About
+2. About
+3. Responsive
 4. AA and AAA (link in Color Contrast)
-5. Responsive
+5. Links: not bold
+WEDNESDAY
 6. Dark Mode
 8. Logo
 9. LinkedIn page WE
 10. LinkedIn page Corina
 11. A11y statement https://dequeuniversity.com/accessibility-statement
+THURSDAY
 12. Highlight TOC titles in use
 13. Program all visible lists
 14. Explain Assistive tech
