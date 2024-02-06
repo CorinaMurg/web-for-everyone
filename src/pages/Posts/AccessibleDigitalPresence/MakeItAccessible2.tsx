@@ -601,7 +601,9 @@ export default function MakeItAccessible() {
                     </div>
                     
                     <div className="highlight">
-                        <h4 aria-label="Did you know automated tools can help with headings?">Did you know? <span aria-hidden="true"> 💡</span></h4>
+                        <h4 aria-label="Did you know automated tools can help with headings?">
+                            Did you know? <span aria-hidden="true"> 💡</span>
+                        </h4>
                         <p> 
                             Automated tools like Google's Lighthouse or axe DevTools can help with headings too!
                         </p>

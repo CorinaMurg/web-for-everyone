@@ -181,7 +181,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "title": "Your Portfolio Site: Let's Make It Accessible",
         "subtitle": "Part 2: On the hunt for 6 more bugs",
         "author": "By Web for Everyone",
-        "description": `You've fixed the 6 most common accessibility bugs. Can we find 6 more? Will they be
+        "description": `We've caught the 6 most common accessibility bugs. Can we find 6 more? Will they be
             as easy to fix? Let's learn where to look and how to avoid them.`,
         "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
