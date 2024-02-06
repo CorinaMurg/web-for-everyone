@@ -137,7 +137,6 @@ export default function MostCommonBugs() {
                             <p className="margin-top-50">
                                 <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q&t=9s" 
                                     target="_blank" rel="noopener noreferrer" 
-                                    className="hover-pink"
                                 >
                                     Video: Debugging accessibility with Chrome DevTools
                                 </a>
@@ -217,7 +216,6 @@ export default function MostCommonBugs() {
                                     <span className="code-purple-color">focusable</span>: true
                                 </code>
                                 <code className="padding-left-120">StaticText "Your Users"</code>
-
                                 <code className="padding-left-60">. . .</code>
                             </div>
                         </div>
@@ -262,7 +260,7 @@ export default function MostCommonBugs() {
                         Developers can also explicitly assign a role to an element
                         using a set of special roles and attributes called <span> </span>
                         <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
-                            <strong>Accessible Rich Internet Applications</strong>
+                            Accessible Rich Internet Applications
                         </a>
                         , often referred to
                         by the acronym <strong>ARIA</strong>. 
@@ -325,8 +323,8 @@ export default function MostCommonBugs() {
                         </p>
                         <br/>
                         <p className="white-bg">
-                            By using the semantic <code>&lt;a&gt;</code> tag we get all 
-                            the functionality expected from a link for free, using only HTML!
+                            By relying on the semantic <code>&lt;a&gt;</code> tag we get all 
+                            the functionality expected from a link for free. With only HTML!
                         </p>
                     </div>
 
@@ -338,8 +336,8 @@ export default function MostCommonBugs() {
                         <p>
                             Developers can also explicitly assign a role to an HTML element using
                             <span> </span>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer" className="hover-pink">
-                                <strong>ARIA</strong>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer">
+                                ARIA
                             </a>
                             <span> </span>
                             roles and attributes. These are added to HTML tags in order to modify or improve the default behavior 
@@ -386,7 +384,8 @@ export default function MostCommonBugs() {
                             event handlers to allow the button to be activated with 
                             the <span className="yellow-bg-dark-text">Enter</span> <span> </span>
                             or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
-                            <code>&lt;button&gt;</code> tag; important for screen reader users!)</p>
+                            <code>&lt;button&gt;</code> tag; important for screen reader users!)
+                        </p>
                         <p className="bullet-point-line white-bg">
                             depending on the desired functionality, <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
                         </p>
@@ -401,8 +400,8 @@ export default function MostCommonBugs() {
                             The first rule of ARIA is: <strong>don't use ARIA</strong>!
                         </p>
                         <p>
-                            More precisely, from the <a href="https://www.w3.org/TR/using-aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
-                                <strong>W3C's Using ARIA documentation</strong>
+                            More precisely, from the <a href="https://www.w3.org/TR/using-aria/" target="_blank" rel="noopener noreferrer">
+                                W3C's Using ARIA documentation
                             </a>:
                         </p>
 
@@ -673,7 +672,6 @@ export default function MostCommonBugs() {
                                 <p className="bullet-point-line margin-top-20">
                                     <span className="bold">headings</span>: the majority of screen reader users 
                                     rely on headings to learn about the structure and content of a page
-
                                 </p>
                             </li>
                         </ul>

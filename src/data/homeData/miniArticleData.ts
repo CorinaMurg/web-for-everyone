@@ -23,7 +23,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "How Accessibility Works",
-        description: `Take a peek behind the scenes! Learn about the accessibility tree, the DOM's parallel structure,
+        description: `Take a peek behind the scenes! Learn about the DOM's powerful sibling, the accessibility tree, 
             and how assistive technologies can use it to make the web accessible to everyone.`,
         
         link: "/resources/how-accessibility-works",

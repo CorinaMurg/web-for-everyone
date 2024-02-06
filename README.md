@@ -3,6 +3,7 @@ TUESDAY
 2. About
 3. Responsive
 4. AA and AAA (link in Color Contrast)
+4.1. Assistive Tech: Add it to How A11y Works
 5. Links: not bold
 WEDNESDAY
 6. Dark Mode
