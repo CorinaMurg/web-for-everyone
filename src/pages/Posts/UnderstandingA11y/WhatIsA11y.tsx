@@ -225,17 +225,36 @@ export default function WhatIsA11y() {
                     </p>
                     <p>
                         When was the last time you booked a flight with a travel agency? Or mailed a check to pay 
-                        your bills? We regularly bypass traditional methods for online convenience.  
+                        your bills? We regularly bypass traditional methods for online convenience. 
+                    </p>
+                    <p> 
                         This shift to digital has been transformative for people with disabilities as well. 
                         For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
                     </p>
+                    <div>
+                        
+                    
                     <p>
-                        Your code can help a blind student access their online course materials,
-                        a person with limited mobility order their groceries, or a person with dyslexia read the
-                        news. <strong>Everyone deserves a high level of freedom and functionality when interacting with
+                        Your code can help 
+                    </p>
+                    <ul className="bullet-point-list">
+                        <li>
+                            a blind student access their online course materials,
+                        </li>
+                        <li>
+                            a person with limited mobility order their groceries, 
+                        </li>
+                        <li>
+                            a person with dyslexia read the news. 
+                        </li>
+                    </ul>
+                    </div>
+                    <p> 
+                        <strong>Everyone deserves a high level of freedom and functionality when interacting with
                         the web</strong>.
-                    </p>     
+                    </p>
+                      
                 </div>
 
                 {/* *********NEXT***************** */}
@@ -256,7 +275,7 @@ export default function WhatIsA11y() {
                     <p>
                         Your portfolio site and personal projects are a great place to start implementing 
                         accessibility practices.
-                        If you're ready to audit them, jump to this article for a list of solutions to the 
+                        If you're ready to audit them, jump to the next article for a list of solutions to the 
                         most common accessibility issues:
                     </p>
                     <div className="next-article">
@@ -269,7 +288,8 @@ export default function WhatIsA11y() {
                         </Link>
                     </div>
                     
-                    <p>Interested in learning about how accessibility works? Visit the next article 
+                    <p>
+                        Interested in learning about how accessibility works? Visit the next article 
                         in the "Understanding Accessibility" series:
                     </p>
                          
