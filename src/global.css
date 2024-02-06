@@ -458,14 +458,6 @@ ul {
     padding-inline-start: 0;
 }
 
-/* ul[class^="list-padding-0"] {
-    padding-inline-start: 0;
-} */
-
-ul[class^="list-padding-10"] {
-    padding-inline-start: 10px;
-}
-
 ul[class^="bullet-point-list"] li{
     display: flex;
     align-items: center;
@@ -476,11 +468,6 @@ ul[class^="bullet-point-list"] li{
     padding-left: 20px;
     margin-block: 10px;
 }
-
-/* .bullet-point-line {
-    position: relative;
-    padding-left: 20px;
-    /* margin-top: 20px; */
 
 
 ul[class^="bullet-point-list"] li::before {

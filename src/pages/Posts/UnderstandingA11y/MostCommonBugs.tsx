@@ -55,13 +55,13 @@ export default function MostCommonBugs() {
                             WebAIM
                         </a>         
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
-                        The results have always been pretty grim, and 2023 was no exception:
+                        The results have always been quite grim, and 2023 was no exception:
                     </p>
                     
                     <div className="highlight">
                         <dl className={styles['numbers']}>
                             <dt><span>96.3</span></dt>
-                            <dd>percentage of home pages with a11y bugs</dd>
+                            <dd>percentage of home pages with accessibility bugs</dd>
                         </dl>.
                         <br />
                         <dl className={styles['numbers']}>
@@ -74,51 +74,95 @@ export default function MostCommonBugs() {
                             <dd>highest number of bugs found on a single home page</dd>
                         </dl>
                     </div>
-                    
+ 
                     <p className="margin-top-20">
                         WebAIM audits these pages using an automated tool, the WAVE accessibility engine. 
                         Automated tools are not perfect and fail to detect all  
                         accessibility barriers and guidelines violations.
                         As a result, the actual number of bugs is likely to be higher.
                     </p>
-                    
-                    <p>
-                        <span className="bold">The good news? </span>
-                        These are some of the easiest bugs to avoid or fix!
-                    </p>
-
-                    <div className="highlight bad-news">
-                        <p className="fake-heading-p">The sad news?</p>
-                        <p className="margin-top-20">
-                            The top 6 types of bugs accounted for over 96% of all bugs found.  
-                            <span aria-hidden="true"> 😔</span>
-                        </p>
-                        <p>Worse: they've been the "most common bugs" for the last 5 years.  
-                            <span aria-hidden="true"> 😢</span>
-                        </p>
-                    </div>
-                    <div className="highlight margin-top-20 padding-left-20">
+                    <div className="highlight margin-top-20">
                         <details>
-                            <summary>A quick view of the standards for accessibility</summary>
+                            <summary>
+                                How do we determine what constitutes an accessibility bug?
+                            </summary>
+                            <br />
                             <p>
-                                The W3C is an international community that develops standards for the web. 
-                                It was founded in 1994 by Tim Berners-Lee, the inventor of the World Wide Web. 
+                                <strong>Standards</strong> and <strong>best practices</strong> informed by user experience!
                             </p>
                             <p>
-                                For standards on web accessibility, the W3C has developed the Web Content
-                                Accessibility Guidelines (WCAG). These guidelines are internationally recognized
-                                and are the basis for many national accessibility laws.
+                                The Web Content Accessibility Guidelines (WCAG) 
+                                are the international standards for web accessibility. 
+                                They are not an easy read, but they become one with practice.
                             </p>
-                        </details>
+                            <p>   
+                                In this article, we will review the 6 most common accessibility bugs by referencing the negative
+                                impact they have on users with disabilities, without mentioning the specific WCAG
+                                guidelines that they violate. 
+                            </p>
+
+                            <p>For an overview of the WCAG guidelines, the article <span> </span>
+                                <a href="https://tetralogical.com/blog/2020/04/10/wcag-primer/" target="_blank" rel="noreferrer">
+                                    WCAG primer by Léonie Watson 
+                                </a> is a great start.
+                            </p>
+                        </details>         
                     </div>
-                    <p>
+                    
+                    <p className="margin-top-30">
                         The full <span> </span>
                             <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                                 WebAIM Million
                             </a>
                         <span> </span>report makes for an interesting and informative read. Below we will go 
-                        over the list of most common bugs. 
+                        over the list of the 6 most common bugs found in the 2023 study.
                     </p>
+                    <p>
+                        What do we know about them?
+                    </p>
+                    <ul className="bullet-point-list padding-left-20">
+                        <li>
+                            They accounted for almost 97% of all bugs found!
+                        </li>
+                        <li>
+                            They've been the "most common bugs" for the last 5 years!
+                        </li>
+
+                    </ul>
+                    <p>
+                        <strong>The good news? </strong>
+                        These are some of the easiest bugs to avoid or fix!
+                    </p>
+                    
+
+                    {/* <div className="highlight margin-top-20 padding-left-20">
+                        <details>
+                            <summary>A quick view of the standards for accessibility</summary>
+                            <p>
+                                The World Wide Web Consortium, better know as W3C, is an international community 
+                                that develops standards for the web. 
+                            </p>
+                            <p>
+                                For standards on web accessibility, the W3C has setup the  the Web Content
+                                Accessibility Guidelines (WCAG). These guidelines are internationally recognized
+                                and are the basis for many national accessibility laws.
+                            </p>
+                            <div>
+                        <h3>Standards</h3>
+                        <p>
+                            The Web Content Accessibility Guidelines (WCAG) 
+                            are the international standards for web accessibility. 
+                            They are also the basis for many national accessibility laws.
+                        </p>
+                        <h3>Feedback from users with disabilities</h3>
+                        <p>
+                            Aren't the guidelines based on the needs of users with disabilities? 
+                            They are, but they are also playing catch-up with the ever-changing web and the new ways 
+                            people use it. What ultimately matters is the user experience. 
+                        </p>
+                    </div>
+                        </details>
+                    </div> */}
                 </div>
 
                 {/* 1. LOW CONTRAST */}

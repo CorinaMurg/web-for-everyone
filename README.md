@@ -8,7 +8,8 @@
 9. LinkedIn page WE
 10. LinkedIn page Corina
 11. A11y statement https://dequeuniversity.com/accessibility-statement
-12 Highlight TOC titles in use
+12. Highlight TOC titles in use
+13. Program all visible lists
 
 Extra Articles
 12. Your Users
