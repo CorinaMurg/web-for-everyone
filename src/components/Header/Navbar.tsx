@@ -21,7 +21,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                         Home
                     </NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink
                         to="/your-users"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
@@ -29,7 +29,7 @@ export default function Navbar({ closeModal }: NavbarProps) {
                     >
                         Your Users
                     </NavLink>
-                </li>
+                </li> */}
                 
                 <li>
                     <NavLink
