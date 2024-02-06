@@ -164,55 +164,64 @@ export default function MostCommonBugs() {
                             and the accessibility trees.
                         </p>
 
-                        <h4 className="margin-top-20">Navbar: DOM tree representation</h4>
-                        <div className="code">
-                            <code><span className="code-blue-color">&lt;nav&gt;</span></code>
-                            <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
-                            <code className="padding-left-60">
-                                &lt;li&gt;
-                            </code>
-                            <code className="padding-left-90">
-                                <span className="code-pink-color">&lt;a&gt;</span>Home<span className="code-pink-color">&lt;/a&gt;</span>
-                            </code>
-                            <code className="padding-left-60">
-                                &lt;/li&gt;
-                            </code>
-                            <code className="padding-left-60 margin-top-10">
-                                &lt;li&gt;
-                            </code>
-                            <code className="padding-left-90">
-                                <span className="code-pink-color">&lt;a&gt;</span>Your Users<span className="code-pink-color">&lt;/a&gt;</span>
-                            </code>
-                            <code className="padding-left-60">
-                                &lt;/li&gt;
-                            </code>
-                            <code className="padding-left-60">. . .</code>
-                            <code><span className="code-yellow-color padding-left-30">&lt;/ul&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
+                        <div className="highlight">
+                            <h4 className="margin-top-10">Navbar: DOM tree representation</h4>
+                            <br/>
+                            <br/>
+                            <div className="code">
+                                <code><span className="code-blue-color">&lt;nav&gt;</span></code>
+                                <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
+                                <code className="padding-left-60">
+                                    &lt;li&gt;
+                                </code>
+                                <code className="padding-left-90">
+                                    <span className="code-pink-color">&lt;a&gt;</span>Home<span className="code-pink-color">&lt;/a&gt;</span>
+                                </code>
+                                <code className="padding-left-60">
+                                    &lt;/li&gt;
+                                </code>
+                                <code className="padding-left-60 margin-top-10">
+                                    &lt;li&gt;
+                                </code>
+                                <code className="padding-left-90">
+                                    <span className="code-pink-color">&lt;a&gt;</span>Your Users<span className="code-pink-color">&lt;/a&gt;</span>
+                                </code>
+                                <code className="padding-left-60">
+                                    &lt;/li&gt;
+                                </code>
+                                <code className="padding-left-60">. . .</code>
+                                <code><span className="code-yellow-color padding-left-30">&lt;/ul&gt;</span></code>
+                                <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
+                            </div>
                         </div>
 
-                        <h4 className="margin-top-40">Navbar: Accessibility tree representation</h4>
-                        <div className="code a11ytree-code">
-                            <code><span className="code-blue-color">navigation</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">list</span></code>
-                            <code className="padding-left-60">listitem</code>
-                            <code className="padding-left-90">
-                                <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
-                                <span> </span>
-                                <span className="code-purple-color">focusable</span>: true <span className="code-purple-color">focused</span>: true
-                            </code>
-                            <code className="padding-left-120">StaticText "Home"</code>
+                        <div className="highlight">
+                            <h4 className="margin-top-10">Navbar: Accessibility tree representation</h4>
+                            <br/>
+                            <br/>
+                            <div className="code a11ytree-code">
+                                <code><span className="code-blue-color">navigation</span></code>
+                                <code className="padding-left-30"><span className="code-yellow-color">list</span></code>
+                                <code className="padding-left-60">listitem</code>
+                                <code className="padding-left-90">
+                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
+                                    <span> </span>
+                                    <span className="code-purple-color">focusable</span>: true <span className="code-purple-color">focused</span>: true
+                                </code>
+                                <code className="padding-left-120">StaticText "Home"</code>
 
-                            <code className="padding-left-60">listitem</code>
-                            <code className="padding-left-90">
-                                <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
-                                <span> </span>
-                                <span className="code-purple-color">focusable</span>: true
-                            </code>
-                            <code className="padding-left-120">StaticText "Your Users"</code>
+                                <code className="padding-left-60">listitem</code>
+                                <code className="padding-left-90">
+                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
+                                    <span> </span>
+                                    <span className="code-purple-color">focusable</span>: true
+                                </code>
+                                <code className="padding-left-120">StaticText "Your Users"</code>
 
-                            <code className="padding-left-60">. . .</code>
+                                <code className="padding-left-60">. . .</code>
+                            </div>
                         </div>
+                       
                         <p className="margin-top-20">
                             While the DOM tree is structured by HTML tags/elements, <strong>the accessibility tree is 
                             structured by roles</strong>.
@@ -277,7 +286,7 @@ export default function MostCommonBugs() {
                         
                     {/* ************Zooming in on an accessible object***************** */}
                     <div className="highlight">
-                        <h4>Zooming in on an accessible object</h4>
+                        <h4 className="margin-top-10">Zooming in on an accessible object</h4>
                         <br/>
                         <p> 
                             Let's look at the first link object to understand why using semantic HTML helps accessibility.
@@ -337,9 +346,7 @@ export default function MostCommonBugs() {
 
                     {/* ************Example: create a button from a div****************** */}
                     <div className="highlight">
-                        <h4 className="white-bg"
-                            id="create-button-from-div"
-                        >
+                        <h4 className="white-bg margin-top-10" id="create-button-from-div">
                             Example: create a button from a <code>&lt;div&gt;</code>
                         </h4>
                         <div className="code margin-top-30">
@@ -494,25 +501,24 @@ export default function MostCommonBugs() {
                             to offer a more descriptive or tailored name for the element. They could also be included
                             to provide a name when the element has no visible text. 
                         </p>
+                        <div className="highlight">
+                            <details>
+                                <summary>
+                                        A closer look at some ARIA attributes
+                                </summary>
+                                <br></br>
+                                <p className="margin-top-50">
+                                    Aria-label
+                                </p>
+                                <p>
+                                    aria-labelledby
+                                </p>
+                            </details>
+                        </div>
                         <p>
                             If none of the priority attributes are available, the algorithm relies on the text within 
                             the element. 
                         </p>
-                    </div>
-
-                    <div className="highlight">
-                        <details>
-                            <summary>
-                                    A closer look at some ARIA attributes
-                            </summary>
-                            <br></br>
-                            <p className="margin-top-50">
-                                Aria-label
-                            </p>
-                            <p>
-                                aria-labelledby
-                            </p>
-                        </details>
                     </div>
                                      
                     {/* Example: <code>button</code> with no visible text */}
@@ -613,10 +619,9 @@ export default function MostCommonBugs() {
                     </p>
                     
                     <div className="next-article">
-                        <span className="fake-heading-p">Read next:</span>
+                        <span className="read-next">Read next:</span>
                         <Link 
                             to="/resources/most-common-bugs" 
-                            className="fake-heading-p pink-text"
                             onClick={scrollToTop}
                         >
                             Most Common Acessibility Bugs
