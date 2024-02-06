@@ -28,6 +28,7 @@
     font-weight: 500;
     padding: 10px 15px;
     align-self:auto;
+    margin-bottom: 20px;
 }
 
 .low-contrast--button:hover {

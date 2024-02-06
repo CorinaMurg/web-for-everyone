@@ -177,6 +177,7 @@ export default function MostCommonBugs() {
                         impairments.
                     </p>
                     <div className="highlight">
+                        <h3>Example: text with low contrast ratio</h3>
                         <p style={{ color: textColor }}>
                             Users with vision problems would have a hard time reading this sentence 
                             if the font color had an hex value of #169AC0 (light blue). 
@@ -202,25 +203,26 @@ export default function MostCommonBugs() {
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
                         When images lack the <code>alt</code> attribute, 
-                        screen reader users do not know what the purpose of the image is. 
+                        screen reader users do not know what the purpose of the image is. Usually, when 
+                        this attribute is missing, the screen reader will read the source file name.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">
-                            An important distinction to make: <span aria-hidden="true">💡</span>
+                        <h3 className="white-bg margin-bottom-30">
+                            An empty <code>alt</code> is NOT a missing <code>alt</code>!
+                            <span aria-hidden="true"> 💡</span>
+                        </h3>
+                        <p>
+                            An important distinction to make: 
                         </p>
-                        <p className="white-bg margin-bottom-30">
-                            A missing <code>alt</code> attribute is NOT the same 
-                            as an empty <code>alt</code>!
-                        </p>
-                        <br />
+                        
                         <p className="white-bg">
-                            <span className="pink-text">Missing</span> <code>alt</code>: screen readers might 
+                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
                             read the source file name. Add a descriptive <code>alt</code> value if the image
                             is important for understanding your content.
                         </p>
-                        <p className="white-bg">
-                            <span className="pink-text">Empty</span> <code>alt</code>: screen readers ignore the image.
-                            If your image is purely decorative, do use an empty <code>alt</code> attribute.
+                        <p>
+                            <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
+                            If your image is purely decorative, the attribute should be empty.
                         </p>
                     
                     </div>
@@ -233,19 +235,28 @@ export default function MostCommonBugs() {
                         <h2>Empty Links</h2>
                     </div>
                     <p>
-                        <span className="stats">Half</span> of the home pages tested had links without proper text descriptions.
-                        This is a problem because screen reader users rely on link text to understand the context 
-                        and the destination of a link.
+                        <span className="stats">Half</span> of the home pages tested had links without a name.
+                        This is a problem because screen reader users rely on a descriptive name
+                        to understand the purpose and the destination of a link.
+                    </p>
+                    <p>
+                        Follow this link to <span> </span>        
+                        <Link to="/resources/how-accessibility-works#the-accessible-name">
+                            review how the name of a link is determined
+                        </Link> 
+                        .
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">
+                        <h3>
                             Avoid vague text as well <span aria-hidden="true">💡</span>
-                        </p>
-                        <br />
+                        </h3>
                         <p>
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
-                            <span> </span><span className="pink-bg-white-text">continue</span> is not very 
+                            <span> </span><span className="pink-bg-white-text">read more</span> is not very 
                             helpful either.
+                        </p>
+                        <p>
+                            <strong>A good example:</strong> "Click here to learn more about our services"
                         </p>
                         <p className="margin-top-20">
                             Instead of reading through an entire page, some screen reader users prefer to
@@ -254,6 +265,7 @@ export default function MostCommonBugs() {
                             As a result, the links are announced separately from their surrounding text and
                             users can struggle to understand their purpose if the text is vague.
                         </p>
+                        
                     </div>
                 </div>
 
@@ -270,7 +282,7 @@ export default function MostCommonBugs() {
                         button if its text is vague or missing.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">Example: an empty button</p>
+                        <h3>Example: an empty button</h3>
                         <div className="code">
                             <code>
                                 <span className="code-blue-color">&lt;button&gt;</span>
@@ -306,11 +318,11 @@ export default function MostCommonBugs() {
                         <p className="fake-heading-p">Consequences of empty buttons</p>
                         <ul className="bullet-point-list">
                             <li>
-                                A screen reader will announce this button as ... button, and no other 
-                                information attached. Users will not know what its function is.
+                                A screen reader will announce this button as ... "button", and no other 
+                                information attached. Users would not be aware of its purpose.
                             </li>
                             <li>
-                                Users relying on voice activation will not be able to trigger the action on the button.
+                                Users relying on voice commands would not be able to trigger the action on the button.
                             </li>
                         </ul>
                         <br/>
@@ -333,7 +345,7 @@ export default function MostCommonBugs() {
                         This is an improvement from 2019 when the ratio was 59%.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">Example: an input without a label</p>
+                        <h3>Example: an input without a label</h3>
                         
                         <div className="code">
                             <code>
@@ -376,19 +388,19 @@ export default function MostCommonBugs() {
                         <h2>Missing Document Language</h2>
                     </div>
                     <p>
-                        This issue was found on <span className="stats">18.6%</span> of the home pages audited.
+                        This bug was found on <span className="stats">18.6%</span> of the home pages audited.
                     </p>
-                    <p>
+                    <p className="white-bg">
                         When setting up their screen reader, users choose a default language. 
-                        If a webpage doesn't have a "lang" attribute, the screen reader defaults to the user's 
+                        If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to the user's 
                         chosen language. This can be problematic for multilingual users accessing content in 
                         various languages.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p white-bg">
-                            Note: the <code>lang</code> attribute is added 
+                        <h3 className="white-bg">
+                            The <code>lang</code> is added 
                             to the <code>html</code> tag <span aria-hidden="true">💡</span>
-                        </p>
+                        </h3>
                         <div className="code">
                             <code>&lt;html <code className="code-pink-color">lang</code>="en"&gt;</code>
                         </div>
@@ -397,11 +409,11 @@ export default function MostCommonBugs() {
                 </div>
 
                 <div>
-                    <p className="fake-heading-p margin-top-30">
+                    <p className="margin-top-30">
                         Done with the 6 most common accessibility bugs! 
                     </p>
-                    <p className="fake-heading-p">
-                        Do you have time for a bonus bug? Too important to leave out!
+                    <p>
+                        Do you have time for a <strong>bonus bug</strong>? Too important to leave out!
                     </p>
                 </div>
 
@@ -419,7 +431,7 @@ export default function MostCommonBugs() {
                         About <span className="stats">8%</span> of pages had no headings at all.
                     </p>
                     <div className="highlight">
-                        <p className="fake-heading-p">Why headings are important</p>
+                        <h3>Why headings are important</h3>
                         <p>
                             When trying to find information on a page, most screen reader users rely on headings.
                             Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit each 
@@ -430,8 +442,8 @@ export default function MostCommonBugs() {
                             Recommended read <span aria-hidden="true">💡</span>
                         </p>
                         <p>
-                            Learn about the way screen reader users navigate the web and find information on a page 
-                            from the <span> </span>
+                            Learn about the range of options screen reader users have to navigate the web and to
+                            find information on a page from the <span> </span>
                             <a href="https://webaim.org/projects/screenreadersurvey9/#finding"
                                 target="_blank" 
                                 rel="noreferrer"

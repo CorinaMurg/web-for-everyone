@@ -10,7 +10,7 @@
 11. A11y statement https://dequeuniversity.com/accessibility-statement
 12. Highlight TOC titles in use
 13. Program all visible lists
-
+14. Assistive tech
 Extra Articles
 12. Your Users
 13. Is inaccessible ilegal?
