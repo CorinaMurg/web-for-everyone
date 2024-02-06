@@ -1,7 +1,7 @@
 1. when using the back button in the browser, it should scroll to the same section as before
 2. 
 3. About
-4. WCAG review
+4. 
 5. Responsive
 6. Dark Mode
 8. Logo
@@ -11,6 +11,7 @@
 12. Highlight TOC titles in use
 13. Program all visible lists
 14. Assistive tech
+
 Extra Articles
 12. Your Users
 13. Is inaccessible ilegal?

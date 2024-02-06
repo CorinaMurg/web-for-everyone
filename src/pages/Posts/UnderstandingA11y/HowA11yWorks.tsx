@@ -261,7 +261,7 @@ export default function MostCommonBugs() {
                          
                         Developers can also explicitly assign a role to an element
                         using a set of special roles and attributes called <span> </span>
-                        <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
+                        <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
                             <strong>Accessible Rich Internet Applications</strong>
                         </a>
                         , often referred to
@@ -289,13 +289,16 @@ export default function MostCommonBugs() {
                         <h4 className="margin-top-10">Zooming in on an accessible object</h4>
                         <br/>
                         <p> 
-                            Let's look at the first link object to understand why using semantic HTML helps accessibility.
+                            Let's look at the first link object to understand why using semantic HTML helps 
+                            accessibility. The tree holds the following information:
                         </p>
-                    
-                        <p className="bullet-point-line">Name: Home</p>
-                        <p className="bullet-point-line">Role: link</p>
-                        <p className="bullet-point-line">Property: focusable</p>
-                        <p className="bullet-point-line">State: focused</p>
+                        <ul className="bullet-point-list padding-left-20">
+                            <li>Name: Home</li>
+                            <li>Role: link</li>
+                            <li>Property: focusable</li>
+                            <li>State: focused</li>
+                        </ul>
+
                         <br/>
                         <p className="white-bg">
                             We have a <strong>link</strong> with the <strong>name</strong> "Home".
@@ -307,6 +310,7 @@ export default function MostCommonBugs() {
                             At the time of this snapshot, the link was <strong>in focus</strong>, i.e. selected and
                             ready to be activated. 
                         </p>
+                        <br/>
                         <p>
                             Each assistive technology will use the information from the accessibility tree to present the 
                             object to the user in the most appropriate way:
@@ -366,11 +370,11 @@ export default function MostCommonBugs() {
                         <p className="white-bg">
                             The element will be treated as a button by assistive technologies.
                             The <code>role</code> and <code>aria-label</code> are <strong>ARIA</strong> tools
-                            that allow us to modify the default behavior of the <code>div</code>.
+                            that allow us to modify the default behavior of the div.
                         </p>
                         
-                        <p className="gray-bg">
-                            Is this button accessible yet? Absolutely not!
+                        <p>
+                            <strong>Is this button accessible yet? Absolutely not!</strong>
                         </p>
                         
                         <p className="white-bg">
@@ -379,8 +383,9 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="bullet-point-line white-bg">
-                            event handlers to allow the button to be activated with the <code>Enter</code><span> </span>
-                            and <code>Space</code> keys (available by default with the <span> </span>
+                            event handlers to allow the button to be activated with 
+                            the <span className="yellow-bg-dark-text">Enter</span> <span> </span>
+                            or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
                             <code>&lt;button&gt;</code> tag; important for screen reader users!)</p>
                         <p className="bullet-point-line white-bg">
                             depending on the desired functionality, <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
@@ -429,7 +434,7 @@ export default function MostCommonBugs() {
                         <code className="padding-left-60">StaticText "Your Users"</code>
                     </div>
                     <p className="white-bg">
-                        Notice how each <code>link</code> in our 
+                        Notice how each <span className="pink-bg-white-text">link</span> in our 
                         accessibility tree example has a name? 
                         It is the name that assistive technologies will use to announce the link to the user
                         (or, for speech recognition software, the name that will be used to activate 
@@ -472,15 +477,117 @@ export default function MostCommonBugs() {
                             <p className="bullet-point-line">
                                     <strong>aria-labelledby</strong>
                             </p>
-                            <p className="padding-left-20">It has the highest priority among all the other attributes.</p>
+                            <p className="padding-left-20">
+                                It has the highest priority among all the other attributes.
+                            </p>
+                            <p className="margin-top-20 padding-left-20">
+                                It references the ID of another element that has visual text. The text of that 
+                                element then becomes the name of the current element. 
+                            </p>
+
                             <p className="bullet-point-line margin-top-20">
                                 <strong>aria-label</strong>
                             </p>
+                            <p className="padding-left-20">
+                                It takes a string value that becomes the name of the element.
+                            </p>
+                            <div className="highlight-small">
+                                <details>
+                                    <summary>
+                                        <strong>aria-label</strong> vs. <strong>aria-labelledby</strong>
+                                    </summary>
+                                    <br></br>
+                                    <p>
+                                        The attributes serve similar purposes in providing accessible names for elements, 
+                                        but they do have distinct differences:
+                                    </p>
+                                    <p className="bullet-point-line white-bg">
+                                        <code>aria-label</code> takes a string value that becomes the name (label) of 
+                                        the element. It is added to the opening tag of the element.
+                                    </p>
+                                    <div className="code-small">
+                                        <code>
+                                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="closeModal"
+                                            <span className="code-blue-color">&gt;</span>
+                                        </code>
+                                        <code className="padding-left-30">
+                                            <span className="code-blue-color">&lt;img </span> 
+                                            src="x-mark.svg"
+                                            <span className="code-blue-color">/&gt;</span>
+                                        </code>
+                                        <code><span className="code-blue-color">&lt;/button&gt;</span></code>
+                                    </div>
+                                    <br/>
+                                    <p className="bullet-point-line white-bg">
+                                        <code>aria-labelledby</code> references the ID of another element. The text of that 
+                                        element then labels (names) the current element. 
+                                    </p>
+                                    <p className="padding-left-20">
+                                        It can be used to reference multiple IDs, providing a way to concatenate 
+                                        labels from different elements.
+                                    </p>
+                                    <div className="code-small">
+                                        <code>
+                                            <span className="code-blue-color">&lt;h2</span> 
+                                            <span className="code-yellow-color"> id</span>="table-contents"&gt;Table of Contents
+                                            <span className="code-blue-color">&lt;h2&gt;</span>
+                                        </code>
+                                        <br/>
+                                        <code>
+                                            <span className="code-blue-color">&lt;nav</span> 
+                                            <span className="code-yellow-color"> aria-labelledby</span>="table-of-contents"
+                                            <span className="code-blue-color">&gt;</span>
+                                        </code>
+                                        <code className="padding-left-30">
+                                            // navigation links 
+                                        </code>
+                                        <code>
+                                            <span className="code-blue-color">&lt;/nav&gt;</span>
+                                        </code>
+
+                                    </div>
+                                    <br/>
+                                    <p>
+                                        <strong className="fake-heading-p">Key Differences</strong>
+                                    </p>
+                                    
+                                    <p>
+                                        <strong className="yellow-bg-dark-text">Direct vs. Indirect Labeling</strong>  
+                                    </p>
+                                    <p className="bullet-point-line">
+                                        <strong>aria-label</strong> provides a direct label to an element using a 
+                                        string value
+                                    </p>
+                                    <p className="bullet-point-line">
+                                        <strong>aria-labelledby</strong> provides an indirect label by referencing the 
+                                        IDs of other elements that contain the labeling text.
+                                    </p>
+                                    <p >
+                                        <strong className="yellow-bg-dark-text">Visibility</strong>
+                                    </p>
+                                    <p className="bullet-point-line white-bg">
+                                        <strong>aria-label</strong> is not visually displayed; 
+                                        it's only announced by screen readers. 
+                                    </p>
+                                    <p className="bullet-point-line white-bg">
+                                        <strong>aria-labelledby</strong> references elements that are usually visible on 
+                                        the page, linking their visible text to the current element. It is also announced by screen readers.
+                                    </p>
+                                    <p>
+                                        <strong className="yellow-bg-dark-text">Concatenation</strong>
+                                    </p>
+                                    <p className="bullet-point-line">
+                                        While <strong>aria-label</strong> takes a single string, 
+                                        <strong> aria-labelledby</strong> can reference multiple IDs, allowing for 
+                                        the concatenation of text from various elements to form a complete label.
+                                    </p>
+                                </details>
+                            </div>
                             <p className="bullet-point-line margin-top-20">
                                 <strong>title</strong>
                             </p>
                             <p className="padding-left-20">Avoid it! It's tricky to make it accessible to screen reader users.</p>
-                            <p className="margin-top-20 padding-left-20">
+                            <p className="margin-top-20 padding-left-20 white-bg">
                                 Please note this is an attribute that is added to the opening HTML tag of an element.
                                 Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
                                 a title for a web page.
@@ -489,7 +596,7 @@ export default function MostCommonBugs() {
                                 <strong>alt</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
-                                Use for interactive images. For example, given a link that contains an image and no 
+                                Use it for interactive images. For example, given a link that contains an image and no 
                                 visible text or ARIA attributes, the browser will use the <code>alt</code> attribute 
                                 to compute the accessible name.
                             </p>    
@@ -501,20 +608,7 @@ export default function MostCommonBugs() {
                             to offer a more descriptive or tailored name for the element. They could also be included
                             to provide a name when the element has no visible text. 
                         </p>
-                        <div className="highlight">
-                            <details>
-                                <summary>
-                                        A closer look at some ARIA attributes
-                                </summary>
-                                <br></br>
-                                <p className="margin-top-50">
-                                    Aria-label
-                                </p>
-                                <p>
-                                    aria-labelledby
-                                </p>
-                            </details>
-                        </div>
+
                         <p>
                             If none of the priority attributes are available, the algorithm relies on the text within 
                             the element. 
@@ -586,7 +680,9 @@ export default function MostCommonBugs() {
 
                         <p className="margin-top-30">
                             The name is important because it's the main way for assistive technologies to convey
-                            the purpose or the content of these elements to the user. 
+                            the purpose or the content of these elements to the user. In the case of speech recognition
+                            software, the name must also be part of the command that will activate the element (links and buttons, for example),
+                            or bring it into focus (form fields, for example).
                         </p>   
                         <p className="margin-top-30">
                             When using speech recognition software,

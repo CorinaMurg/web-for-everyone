@@ -122,7 +122,7 @@ export default function MostCommonBugs() {
                     </p>
                     <ul className="bullet-point-list padding-left-20">
                         <li>
-                            They accounted for almost 96% of all bugs found!
+                            They accounted for 96% of all bugs found!
                         </li>
                         <li>
                             They've been the "most common bugs" for the last 5 years!
@@ -277,7 +277,7 @@ export default function MostCommonBugs() {
                     </div>
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons 
-                        without proper text descriptions.
+                        with no name.
                         This issue is very similar to empty links: users struggle to understand the purpose of a 
                         button if its text is vague or missing.
                     </p>
@@ -413,7 +413,7 @@ export default function MostCommonBugs() {
                         Done with the 6 most common accessibility bugs! 
                     </p>
                     <p>
-                        Do you have time for a <strong>bonus bug</strong>? Too important to leave out!
+                        Do you have time for a <strong>bonus bug</strong>? Too important to leave it out!
                     </p>
                 </div>
 
