@@ -311,22 +311,29 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="highlight">
-                        <h4>The difference between missing and empty for <code>alt</code></h4>
+                        <h4><span className="yellow-bg-dark-text">Missing</span>, <span> </span>
+                            <span className="yellow-bg-dark-text">empty</span>, or <span className="yellow-bg-dark-text">descriptive</span>?
+                            <span aria-hidden="true"> 🤔</span>
+                        </h4>
                         <br/>
                         <p className="white-bg">
-                            A missing <code>alt</code> attribute is NOT the same 
-                            as an empty <code>alt</code>!
-                        </p>
-                        
-                        <p className="white-bg">
                             <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
-                            read the source file name. Add a descriptive <code>alt</code> value if the image
-                            is important for understanding your content.
+                            read the source file name.
                         </p>
                         <p>
                             <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
-                        </p>       
+                        </p>  
+                        <p className="white-bg">
+                            <strong><span className="pink-text">Descriptive</span> alt</strong>: add informative text if the image
+                            is important for understanding your content.
+                        </p> 
+                        <br/>
+                        <p className="white-bg">
+                            <strong>Remember</strong>:
+                            A missing <code>alt</code> attribute is NOT the same 
+                            as an empty <code>alt</code>!
+                        </p>
                     </div>
                 </div>
 
@@ -356,17 +363,27 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         In the example above, the link to the LinkedIn profile
-                        contains an icon and no visible text. A screen reader will announce part of the url 
+                        contains an icon and no visible text. Here are just a couple of examples
+                        of how it would impact users relying on assitive tech:
+                    </p>
+                    <p className="bullet-point-line">
+                        A screen reader will announce part of the url 
                         (usually starting with the path segment)
                         and provide no information about the destination of the link. 
                     </p>
                         
-                    <p>
+                    <p className="bullet-point-line">
                         Users relying on speech commands will not be able to activate the link. The command
                         <strong> "click LinkedIn"</strong> would fail because the software would 
-                        not recognize the 
-                        name "LinkedIn". In fact, <strong>the link has no accessible name</strong>!
+                        not recognize the name "LinkedIn". 
+                    </p>
+                    <p>
+                        The problem: <strong>the link has no accessible name</strong>!
                         The browser can not compute it since none of the attributes that could provide one is present.
+                    </p>
+                    <p>
+                        Click below to review the accessible name, or continue reading for
+                        ways to fix the links to social media profiles.
                     </p>
 
                     <div className="highlight">
@@ -390,13 +407,13 @@ export default function MakeItAccessible() {
                             </div>
                             <p>
                                 <Link to="/resources/how-accessibility-works#the-accessible-name">
-                                    Learn more about the accessible name
+                                    Learn more about computing the accessible name
                                 </Link>
                             </p>
                         </details>
                     </div>
-                    
-                    <h3 className="pink-text">Ways to fix the links to social media profiles</h3>
+                    <br/>
+                    <h3>Ways to fix the links to social media profiles</h3>
                     <p className="white-bg">
                         <span className="pink-num" aria-hidden="true">1. </span> 
                         Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
@@ -468,8 +485,8 @@ export default function MakeItAccessible() {
                         Notice the <strong>"graphic"</strong> part? Since the image has 
                         an <code>alt</code> text, the screen reader has to announce there is an image present. 
                         It is up to you if this information is useful to the user or not. If not, 
-                        use one of the techniques discussed in the <strong>Links</strong> section (like 
-                        <code>aria-label</code> or visible text) and rememeber to leave the <code>alt</code> attribute 
+                        use one of the techniques discussed in the <strong>Links</strong> section (like adding <span> </span>
+                        <code>aria-label</code> or visible text) and remember to leave the <code>alt</code> attribute 
                         empty.
                     </p>
                     
@@ -501,15 +518,15 @@ export default function MakeItAccessible() {
                         but for now let's focus on the <code>label</code> and <code>input</code> elements.
                     </p>
 
-                    <p className="bold">You have two options:</p>
-                    <p className="white-bg">
-                        <span className="pink-text bold">Implicit Labeling:</span> It involves wrapping 
+                    <p><strong>You have two options</strong>:</p>
+                    <p className="bullet-point-line white-bg">
+                        <strong>Implicit Labeling:</strong> It involves wrapping 
                         the <code>input</code> element inside a <code>label</code> element, 
                         just as in the example above. 
                     </p>
                     
-                    <p className="white-bg"> 
-                        <span className="pink-text bold">Explicit Labeling: </span> 
+                    <p className="bullet-point-line white-bg"> 
+                        <strong>Explicit Labeling: </strong> 
                         This method relies on using the <span className="pink-bg-white-text">for</span> attribute 
                         with the <code>&lt;label&gt;</code> tag, and the <span className="pink-bg-white-text">id</span>
                         <span> </span>
@@ -552,7 +569,10 @@ export default function MakeItAccessible() {
                     </div>
               
                     <h3>Use a valid language in the "lang" attribute</h3>
-                    <p>It enables screen readers to correctly identify the language of the webpage content.</p>
+                    <p>
+                        It enables screen readers to correctly identify the language of a webpage's content, so 
+                        it can use the correct pronunciation.
+                    </p>
                     
                     <p className="white-bg">
                         Is it common for a project to lack this attribute? Not at all! 
@@ -567,8 +587,10 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="highlight">
-                        <p className="fake-heading-p">Did you know?</p>
-                        <p className="margin-top-30">You can choose a specific dialect:</p>
+                        <h4 aria-label="Did you know what the lang attribute can do?">
+                            Did you know? <span aria-hidden="true"> 💡</span>
+                        </h4>
+                        <p style={{ marginTop: '30px' }}>You can choose a specific dialect:</p>
                         <div className="code">
                             <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
                         </div>

@@ -10,7 +10,11 @@
 11. A11y statement https://dequeuniversity.com/accessibility-statement
 12. Highlight TOC titles in use
 13. Program all visible lists
-14. Assistive tech
+14. Explain Assistive tech
+15. Forms (ask Adam?)
+
+Small parts:
+1. visually-hidden code or link to code pen
 
 Extra Articles
 12. Your Users
