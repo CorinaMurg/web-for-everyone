@@ -209,6 +209,7 @@ h3 {
 
 h4 {
     font-size: 1.2rem;
+    margin-block: 20px;
 }
 
 .heading {
@@ -233,7 +234,7 @@ h4 {
 .highlight {
     background-color: white;
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 10px 30px;
     width: 100%;
     border: 1.7px solid gray;
     margin-top: 30px;

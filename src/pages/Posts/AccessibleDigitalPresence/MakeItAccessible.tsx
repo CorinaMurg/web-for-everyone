@@ -76,8 +76,13 @@ export default function MakeItAccessible() {
                         easy-to-fix accessibility issues. 
                     </p>
                     <p>
-                        The 2023 WebAIM Million Study of 1,000,000 home pages found 6 bugs 
-                        that are present on 97% of the sites.
+                        The <span> </span>      
+                        <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
+                            2023 WebAIM Million Study
+                        </a>
+                        <span> </span>
+                        of 1,000,000 home pages found 6 bugs 
+                        that are present on 96% of the sites.
                         Let's make sure your portfolio site is not one of them!
                     </p>
                     <p>
@@ -306,21 +311,22 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="highlight">
-                        <p className="fake-heading-p">Rememeber the difference:</p>
+                        <h4>The difference between missing and empty for <code>alt</code></h4>
+                        <br/>
                         <p className="white-bg">
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
-                        <br/>
+                        
                         <p className="white-bg">
-                            <span className="pink-text bold">Missing</span> <code>alt</code>: screen readers 
-                            might read the source file name.
+                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
+                            read the source file name. Add a descriptive <code>alt</code> value if the image
+                            is important for understanding your content.
                         </p>
-                        <p className="white-bg">
-                            <span className="pink-text bold">Empty</span> <code>alt</code>: screen readers ignore 
-                            the image.
-                        </p>
-                    
+                        <p>
+                            <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
+                            If your image is purely decorative, the attribute should be empty.
+                        </p>       
                     </div>
                 </div>
 
@@ -342,10 +348,8 @@ export default function MakeItAccessible() {
                         </code>
                         <code><span className="code-blue-color">&lt;/a&gt;</span></code>
                     </div>
-
-                   
-                    <h3>Help screen readers properly announce a link</h3>
-                    
+               
+                    <h3>Help screen readers properly announce a link</h3>            
                     <p>
                         You have to be careful with your social media links. 
                         If they are coded like the example above, they are not accessible.

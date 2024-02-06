@@ -1,7 +1,7 @@
 1. when using the back button in the browser, it should scroll to the same section as before
 2. 
 3. About
-4. 
+4. AA and AAA (link in Color Contrast)
 5. Responsive
 6. Dark Mode
 8. Logo

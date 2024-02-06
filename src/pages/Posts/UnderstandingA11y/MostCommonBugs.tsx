@@ -248,7 +248,7 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <h3>
-                            Avoid vague text as well <span aria-hidden="true">💡</span>
+                            Avoid vague text as well! <span aria-hidden="true">💡</span>
                         </h3>
                         <p>
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
@@ -336,8 +336,8 @@ export default function MostCommonBugs() {
                         <h2>Missing Input Labels</h2>
                     </div>
                     <p>
-                        <span className="stats">More than a third</span> 
-                        of form inputs were not properly labeled.
+                        <span className="stats">More than a third</span> of
+                        form inputs were not properly labeled.
                         Without labels, assitive tech users struggle to understand or use the input.
                     </p>
                     <p>
@@ -399,7 +399,7 @@ export default function MostCommonBugs() {
                     <div className="highlight">
                         <h3 className="white-bg">
                             The <code>lang</code> is added 
-                            to the <code>html</code> tag <span aria-hidden="true">💡</span>
+                            to the <code>html</code> tag! <span aria-hidden="true">💡</span>
                         </h3>
                         <div className="code">
                             <code>&lt;html <code className="code-pink-color">lang</code>="en"&gt;</code>
