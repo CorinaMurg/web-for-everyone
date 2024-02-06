@@ -122,7 +122,7 @@ export default function MostCommonBugs() {
                     </p>
                     <ul className="bullet-point-list padding-left-20">
                         <li>
-                            They accounted for almost 97% of all bugs found!
+                            They accounted for almost 96% of all bugs found!
                         </li>
                         <li>
                             They've been the "most common bugs" for the last 5 years!
