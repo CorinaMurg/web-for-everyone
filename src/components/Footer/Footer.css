@@ -62,6 +62,11 @@ footer a {
     margin-bottom: 10px;
 }
 
+footer a:focus-visible {
+    outline: 3px dashed var(--cream-color);
+    outline-offset: 2px;
+}
+
 footer a:hover {
     color: var(--cream-color);
     font-weight: 300;
@@ -96,7 +101,7 @@ footer li {
 
 .footer-heading {
     font-size: 1rem;
-    color: var(--pinkBright-color);
+    color: var(--code-pink-color);
     font-weight: 300;
     text-transform: uppercase;
 }
