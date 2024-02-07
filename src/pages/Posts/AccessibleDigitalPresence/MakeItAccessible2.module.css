@@ -29,6 +29,23 @@
     margin-bottom: 10px;
 }
 
+.brightness--did-you-know {
+    padding-bottom: 20px;
+}
+.brightness--did-you-know h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.brightness--did-you-know li p {
+    margin-block: 10px !important;
+}
+
+
+
 .brightness--links {
     display: flex;
     gap: 0;

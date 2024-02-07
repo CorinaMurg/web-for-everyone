@@ -533,9 +533,31 @@ export default function MakeItAccessible() {
                                 <li><a aria-hidden="true" href="" >Link 3</a></li>           
                             </ul>   
                             <br></br>           
-                        </div>                
+                        </div> 
+                        <br/>     
+                        <div className={styles['brightness--did-you-know']}>
+                            <h4>
+                                <span>Did you know? <span aria-hidden="true"> 💡</span></span>
+                                <span>You can emulate vision deficiencies in DevTools! </span>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <p className="bullet-point-line">Open <strong> Dev tools </strong> and click on the <strong>three dots</strong> in the top right corner</p>
+                                </li>
+                                <li>
+                                    <p className="bullet-point-line">Go to <strong>More tools</strong> and then <strong>Rendering</strong></p>
+                                </li>
+                                <li>
+                                    <p className="bullet-point-line">Scroll to the bottom and select <strong>Emulate vision deficiencies</strong></p>
+                                </li>
+                                <li>
+                                    <p className="bullet-point-line">Choose the deficiency you want to emulate and see how your site looks!</p>
+                                </li>
+
+                            </ul>
+                        </div>          
                     </div>
-                    
+                                      
                 </div>
                 
                 {/* ****************HEADINGS************************* */}

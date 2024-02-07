@@ -117,6 +117,10 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.highlight .code {
+    margin-top: 30px;
+}
+
 .code-small {
     width: 95%;
     display: flex;
@@ -276,6 +280,11 @@ h4 {
 .highlight p,
 .highlight-small p {
     margin-block: 20px;
+}
+
+.highlight p:first-of-type,
+.highlight-small p:first-of-type {
+    margin-top: 30px;
 }
 
 .hover-pink:hover {
@@ -460,7 +469,7 @@ p {
 
 .stats {
     font-weight: 600;
-    padding: 2px 3px;
+    padding: 1px 2px;
     border-radius: 3px;
     background-color: #dee2e6;
 }

@@ -112,9 +112,9 @@ export default function MakeItAccessible() {
                             </p> 
             
                             <p>
-                                However, these tools are a great first step. Moreover, as we are now looking at how to 
-                                avoid the most common accessibility bugs, you will see that they are easy to spot 
-                                with these tools. 
+                                These tools are a great first step when checking for accessibility issues. 
+                                Moreover, as we are now looking at how to 
+                                avoid the most common accessibility bugs, these tools do a great job at spotting them.
                             </p>
                             <p>
                                 Here are a few of the most popular accessibility browser extensions:
@@ -158,11 +158,17 @@ export default function MakeItAccessible() {
                                     It's important to note that they don't capture all 
                                     aspects of accessibility. 
                                 </p>
-                                <p>
-                                    <strong>
-                                        Manual testing and user testing remain crucial for 
-                                        ensuring comprehensive accessibility.
-                                    </strong>
+                                <p>  
+                                    A comprehensive accessibility test must include:
+                                </p>
+                                <p className="bullet-point-line">
+                                    <strong>manual testing</strong>: navigating with only the 
+                                    keyboard, using different assistive technologies, to name a few
+                                </p>
+                                <p className="bullet-point-line">
+                                    <strong>user testing</strong>: involving people with disabilities in the process
+                                    of evaluating the site
+
                                 </p>
                             </div>
                         </details>
