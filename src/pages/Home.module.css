@@ -154,7 +154,8 @@
     grid-row: 2 / 4;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 130px;
+    border-top: 1.5px solid var(--text-dark-color);
 }
 .mini-articles ul {
     display: grid;
@@ -179,7 +180,7 @@
     font-size: 2rem;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 

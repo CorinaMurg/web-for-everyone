@@ -81,10 +81,6 @@ export default function Home() {
                     ))}
                 </ul>
             </section>
-            {/* <div>
-                <img src="/assets/images/yellowBg.jpg" alt=""/>
-            </div> */}
-            
         </div>
     )
 }
