@@ -520,7 +520,7 @@ export default function MakeItAccessible() {
                             It could be with that same color, like a change from a light blue to a darker blue. 
                             Or, it could be with a different color, like a change from light blue to dark gray.
                         </p>
-                        <div aria-hidden="true" className={`margin-top-30 ${styles['brightness--container']}`}>
+                        <div aria-hidden="true" className={styles['brightness--container']}>
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate through the 

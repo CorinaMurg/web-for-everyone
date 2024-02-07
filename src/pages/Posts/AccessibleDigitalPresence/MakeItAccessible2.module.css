@@ -22,29 +22,17 @@
     outline: 3px dashed var(--text-dark-color);
 }
 
+.custom-outline--button:hover {
+    background-color: #08196e;
+    color: white;
+}
+
 .brightness--container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
 }
-
-.brightness--did-you-know {
-    padding-bottom: 20px;
-}
-.brightness--did-you-know h4 {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.brightness--did-you-know li p {
-    margin-block: 10px !important;
-}
-
-
 
 .brightness--links {
     display: flex;
@@ -66,6 +54,7 @@
     padding: 5px 45px;
     text-align: center;
     text-decoration: none;
+    border-radius: 0 !important;
 }
 
 .brightness--links li:not(:last-child) a {
@@ -77,4 +66,25 @@
     outline: none;
     background-color: #08196e;
     color: white;
+}
+
+.brightness--links li a:hover {
+    background-color: #08196e;
+    color: white;
+}
+
+.brightness--did-you-know {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.brightness--did-you-know h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.brightness--did-you-know li p {
+    margin-block: 10px !important;
 }
