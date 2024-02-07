@@ -285,19 +285,17 @@ export default function MostCommonBugs() {
                     {/* ************Zooming in on an accessible object***************** */}
                     <div className="highlight">
                         <h4 className="margin-top-10">Zooming in on an accessible object</h4>
-                        <br/>
                         <p> 
                             Let's look at the first link object to understand why using semantic HTML helps 
-                            accessibility. The tree holds the following information:
+                            accessibility. 
                         </p>
+                        <p><strong>Details available</strong></p>
                         <ul className="bullet-point-list padding-left-20">
                             <li>Name: Home</li>
                             <li>Role: link</li>
                             <li>Property: focusable</li>
                             <li>State: focused</li>
                         </ul>
-
-                        <br/>
                         <p className="white-bg">
                             We have a <strong>link</strong> with the <strong>name</strong> "Home".
                             It's a <strong>focusable</strong> (i.e. actionable) element.
@@ -309,9 +307,10 @@ export default function MostCommonBugs() {
                             ready to be activated. 
                         </p>
                         <br/>
+                        <p><strong>Assitive tech reaction</strong></p>
                         <p>
                             Each assistive technology will use the information from the accessibility tree to present the 
-                            object to the user in the most appropriate way:
+                            object to the user in the most appropriate way.
                         </p>
                     
                         <p className="bullet-point-line">
@@ -322,6 +321,7 @@ export default function MostCommonBugs() {
                             with the command <strong>"click Home"</strong>.
                         </p>
                         <br/>
+                        <p><strong>Isn't semantic HTML cool?</strong><span aria-hidden="true"> 😎</span></p>
                         <p className="white-bg">
                             By relying on the semantic <code>&lt;a&gt;</code> tag we get all 
                             the functionality expected from a link for free. With only HTML!
@@ -440,7 +440,7 @@ export default function MostCommonBugs() {
                         the link). 
                     </p>
                     <p>
-                        Certain elements must have a name (or a label), and it has to be descriptive enough to convey the
+                        <strong>Certain elements must have a name</strong> (or a label), and it has to be descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
                     </p>
@@ -468,7 +468,7 @@ export default function MostCommonBugs() {
                             </a>
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. This algorithm takes into account
-                            the visible text or the label of the element, but several other attributes are considered
+                            the visible text or label of the element, but several other attributes are considered
                             as well:
                         </p>
                        
@@ -646,45 +646,36 @@ export default function MostCommonBugs() {
                         
                     <div className="warning">
                         <WarningTriangle/>
-                        <p>Here's a list of elements that must have a <span className="bold">
+                        <p>These elements that must have a <span className="bold">
                             descriptive accessible name</span>:
+                        </p>              
+                        <p className="bullet-point-line">
+                            <span className="bold">links</span> and 
+                            <span className="bold"> buttons</span>
                         </p>
-                        <ul>
-                            <li>
-                                <p className="bullet-point-line margin-top-20">
-                                    <span className="bold">links</span> and 
-                                    <span className="bold"> buttons</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p className="bullet-point-line margin-top-20">
-                                    <span className="bold">all form elements</span>, like inputs or radio buttons
-                                </p>
-                            </li>
-                            <li>
-                                <p className="bullet-point-line margin-top-20 gray-bg">
-                                    <span className="bold">images</span>: unless they have a decorative purpose, images must have an <code>alt</code> attribute
-                                    that describes their content
-
-                                </p>
-                            </li>
-                            <li>
-                                <p className="bullet-point-line margin-top-20">
-                                    <span className="bold">headings</span>: the majority of screen reader users 
-                                    rely on headings to learn about the structure and content of a page
-                                </p>
-                            </li>
-                        </ul>
-
-                        <p className="margin-top-30">
-                            The name is important because it's the main way for assistive technologies to convey
-                            the purpose or the content of these elements to the user. In the case of speech recognition
-                            software, the name must also be part of the command that will activate the element (links and buttons, for example),
-                            or bring it into focus (form fields, for example).
-                        </p>   
-                        <p className="margin-top-30">
+                    
+                        <p className="bullet-point-line ">
+                            <span className="bold">all form elements</span>, like inputs or radio buttons
+                        </p>
+                        <p className="padding-left-20">
+                            For interactive elements, assistive technologies need it to convey
+                            the purpose or the content of these elements to the user. 
+                        </p>  
+                        <p className="padding-left-20">
                             When using speech recognition software,
-                            the name must also be part of the command that will activate the element.
+                            the name must also be part of the command that will activate the element (like in the case
+                            of links and buttons) or bring it into focus (in case of form fields, for example).
+                        </p>
+                    
+                        <p className="bullet-point-line gray-bg">
+                            <span className="bold">images</span>: unless they have a decorative purpose, images must have an <code>alt</code> attribute
+                            that describes their content
+
+                        </p>
+                    
+                        <p className="bullet-point-line margin-top-20">
+                            <span className="bold">headings</span>: the majority of screen reader users 
+                            rely on headings to learn about the structure and content of a page
                         </p>
                     </div>           
                 </div>
