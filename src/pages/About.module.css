@@ -125,7 +125,7 @@
 
 .about--me--text p {
     font-size: 0.9rem;
-    /* margin-block: 50px; */
+    font-weight: 500;
     line-height: 2;
 }
 
