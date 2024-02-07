@@ -497,8 +497,8 @@ export default function MostCommonBugs() {
                                     </summary>
                                     <br></br>
                                     <p>
-                                        The attributes serve similar purposes in providing accessible names for elements, 
-                                        but they do have distinct differences:
+                                        The attributes serve similar purposes. They both provide accessible names 
+                                        for elements, but in different ways.
                                     </p>
                                     <p className="bullet-point-line white-bg">
                                         <code>aria-label</code> takes a string value that becomes the name (label) of 
@@ -525,6 +525,7 @@ export default function MostCommonBugs() {
                                         It can be used to reference multiple IDs, providing a way to concatenate 
                                         labels from different elements.
                                     </p>
+                                    
                                     <div className="code-small">
                                         <code>
                                             <span className="code-blue-color">&lt;h2</span> 
@@ -538,13 +539,29 @@ export default function MostCommonBugs() {
                                             <span className="code-blue-color">&gt;</span>
                                         </code>
                                         <code className="padding-left-30">
-                                            // navigation links 
+                                            // table of contents links 
                                         </code>
                                         <code>
                                             <span className="code-blue-color">&lt;/nav&gt;</span>
                                         </code>
-
                                     </div>
+                                    <p className="padding-left-20">
+                                        A screen reader user can navigate
+                                        through the landmarks of a page by pressing the <span className="pink-bg-white-text">D</span> key.
+                                        The code above creates a navigation landmark with a table of contents.
+                                        
+                                    </p>
+                                    <p className="padding-left-20 white-bg">
+                                        Your <strong>navbar</strong> and <strong>main</strong> are examples of built-in landmarks. 
+                                        Screen readers will announce them as "navigation" and "main" respectively. 
+                                        They don't require a name since they are unique landmarks and users 
+                                        recognize them by their roles. 
+                                    </p>
+                                    <p className="padding-left-20 white-bg">     
+                                        But, if you want to re-use a landmark tag like <code>&lt;nav&gt;</code>,
+                                        then you must name the landmark using <strong>aria-labelledby</strong>. 
+                                        If you need to create a custom landmark, use the <code>&lt;section&gt;</code> tag.
+                                    </p>
                                     <br/>
                                     <p>
                                         <strong className="fake-heading-p">Key Differences</strong>
@@ -578,7 +595,7 @@ export default function MostCommonBugs() {
                                     <p className="bullet-point-line">
                                         While <strong>aria-label</strong> takes a single string, 
                                         <strong> aria-labelledby</strong> can reference multiple IDs, allowing for 
-                                        the concatenation of text from various elements to form a complete label.
+                                        the concatenation of text from various elements.
                                     </p>
                                 </details>
                             </div>
