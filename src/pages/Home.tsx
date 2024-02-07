@@ -11,13 +11,7 @@ export default function Home() {
     
     return (
         <div className={styles.home}>
-            <section aria-labelledby="lets-make-it-accessible" className={styles['hero']}>
-                {/* <div className={styles['hero-image']}>
-                    <img src="/assets/images/iconsChart.jpg" 
-                        alt="" 
-                    />
-                </div> */}
-                
+            <section aria-labelledby="lets-make-it-accessible" className={styles['hero']}> 
                 <div className={styles['hero--design']}>
                     <div className={styles['hero--design--svg-grid']}>
                         {svgIconsData.map((icon, index) => (
@@ -45,13 +39,13 @@ export default function Home() {
                             className={styles['hero--link']}
                             onClick={() => { scrollToTop() }}  
                         >
-                            <p className={styles['read-more']}>
+                            <p className={styles['continue-to-article']}>
                                 Continue to article
                                 <i className={styles['link-arrow']}></i>
                                 <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
                                 <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
+                                {/* <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> */}
+                                {/* <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> */}
                             </p>
                         </Link>
                     </div>
@@ -60,7 +54,7 @@ export default function Home() {
             </section>
 
             <WeCanHelp/>
-
+            
             <section aria-labelledby="understanding-accessibility" className={styles['mini-articles']}>
                 <h2 id="understanding-accessibility">Understanding Accessibility</h2>
                 <ul>

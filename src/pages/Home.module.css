@@ -84,17 +84,20 @@
     line-height: 1.5;
 }
 
-.home .read-more {
-    color: var(--text-dark-color);
+.home .continue-to-article {
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
     font-weight: 600;
     line-height: 1;
-    background-color: var(--text-dark-color);
-    padding: 15px 30px;
+    background-color: var(--hero-darkGreen);
+    padding: 15px 15px 15px 35px;
     color: var(--cream-color);
-    margin-top: 20px;
-    
+    margin-top: 20px; 
+}
+
+.home .continue-to-article:hover {
+    background-color: var(--text-dark-color);
 }
 
 .link-arrow {
@@ -137,11 +140,6 @@
 .hero--link:hover .additional-arrow:nth-child(4) {
     opacity: 0.4;
     transition-delay: 0.3s; 
-}
-
-.hero--link:hover .additional-arrow:nth-child(5) {
-    opacity: 0.2;
-    transition-delay: 0.4s; 
 }
 
 /* /////////////////////////////////////////////////// */

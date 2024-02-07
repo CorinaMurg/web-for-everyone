@@ -404,12 +404,6 @@ p {
     font-weight: 700;
 }
 
-.read-more {
-    color: var(--text-dark-color);
-    font-weight: 700;
-    font-size: 0.9rem;
-}
-
 .read-next {
     font-weight: 600;
     font-size: 1rem;
