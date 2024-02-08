@@ -10,7 +10,7 @@ type NavbarProps = {
 export default function Navbar({ closeModal }: NavbarProps) {
 
     return (
-        <nav className="navbar">
+        <nav aria-label="site links" className="navbar">
             <ul className="primary-navigation">
                 <li>
                     <NavLink

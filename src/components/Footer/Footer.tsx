@@ -17,7 +17,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className="footer-right">
-                    <div className="footer-right--navigation">
+                    <nav aria-label="site links" className="footer-right--navigation">
                         <h3 className="footer-heading">Site Links</h3>
                         <ul>
                             <li><Link to="/" onClick={scrollToTop}><span className="footer-nav-link">Home</span></Link></li>
@@ -25,7 +25,7 @@ export default function Footer() {
                             <li><Link to="/accessibility" onClick={scrollToTop}><span className="footer-nav-link">Resources</span></Link></li>
                             <li><Link to="/about" onClick={scrollToTop}><span className="footer-nav-link">About</span></Link></li>
                         </ul>
-                    </div>
+                    </nav>
                     <div className="footer-right--social">
                         <h3 className="footer-heading">Contact</h3>
                         <a href="https://www.linkedin.com/in/webforeveryone/" target="_blank" rel="noopener noreferrer">

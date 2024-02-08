@@ -501,7 +501,7 @@ export default function MostCommonBugs() {
                                         for elements, but in different ways.
                                     </p>
                                     <p className="bullet-point-line white-bg">
-                                        <code>aria-label</code> takes a string value that becomes the name (label) of 
+                                        <code>aria-label</code> takes a string value that becomes the name of 
                                         the element. It is added to the opening tag of the element.
                                     </p>
                                     <div className="code-small">
@@ -519,11 +519,11 @@ export default function MostCommonBugs() {
                                     <br/>
                                     <p className="bullet-point-line white-bg">
                                         <code>aria-labelledby</code> references the ID of another element. The text of that 
-                                        element then labels (names) the current element. 
+                                        element now becomes the name of the current element. 
                                     </p>
                                     <p className="padding-left-20">
                                         It can be used to reference multiple IDs, providing a way to concatenate 
-                                        labels from different elements.
+                                        names from different elements.
                                     </p>
                                     
                                     <div className="code-small">
@@ -547,20 +547,23 @@ export default function MostCommonBugs() {
                                     </div>
                                     <p className="padding-left-20">
                                         A screen reader user can navigate
-                                        through the landmarks of a page by pressing the <span className="pink-bg-white-text">D</span> key.
+                                        through the landmarks (i.e. the main sections of a page) by pressing 
+                                        the <span className="pink-bg-white-text">D</span> key.
                                         The code above creates a navigation landmark with a table of contents.
                                         
                                     </p>
                                     <p className="padding-left-20 white-bg">
-                                        Your <strong>navbar</strong> and <strong>main</strong> are examples of built-in landmarks. 
-                                        Screen readers will announce them as "navigation" and "main" respectively. 
+                                        Your <strong>navbar</strong> and <strong>header</strong> are examples 
+                                        of built-in landmarks. 
+                                        Screen readers will announce them as "navigation" and "banner" respectively. 
                                         They don't require a name since they are unique landmarks and users 
                                         recognize them by their roles. 
                                     </p>
                                     <p className="padding-left-20 white-bg">     
-                                        But, if you want to re-use a landmark tag like <code>&lt;nav&gt;</code>,
-                                        then you must name the landmark using <strong>aria-labelledby</strong>. 
-                                        If you need to create a custom landmark, use the <code>&lt;section&gt;</code> tag.
+                                        But, if you need a second navigation landmark, like in our example, 
+                                        then you must assign to each a unique name, either 
+                                        with <strong>aria-labelledby</strong> or <strong>aria-label</strong>. 
+                                        For a custom landmark, use the <code>&lt;section&gt;</code> tag.
                                     </p>
                                     <br/>
                                     <p>
@@ -572,11 +575,11 @@ export default function MostCommonBugs() {
                                     </p>
                                     <p className="bullet-point-line">
                                         <strong>aria-label</strong> provides a direct label to an element using a 
-                                        string value
+                                        string value.
                                     </p>
                                     <p className="bullet-point-line">
-                                        <strong>aria-labelledby</strong> provides an indirect label by referencing the 
-                                        IDs of other elements that contain the labeling text.
+                                        <strong>aria-labelledby</strong> provides an indirect label by referencing content
+                                        available on the page.
                                     </p>
                                     <p >
                                         <strong className="yellow-bg-dark-text">Visibility</strong>
@@ -587,7 +590,7 @@ export default function MostCommonBugs() {
                                     </p>
                                     <p className="bullet-point-line white-bg">
                                         <strong>aria-labelledby</strong> references elements that are usually visible on 
-                                        the page, linking their visible text to the current element. It is also announced by screen readers.
+                                        the page. It is also announced by screen readers. 
                                     </p>
                                     <p>
                                         <strong className="yellow-bg-dark-text">Concatenation</strong>

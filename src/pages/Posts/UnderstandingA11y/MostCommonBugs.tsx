@@ -391,7 +391,7 @@ export default function MostCommonBugs() {
                         </p>
                         <p className="white-bg">
                             The input is wrapped in label tags without inner text. Attributes 
-                            like <code>aria-label</code> or <code>aria-labelledby</code>
+                            like <code>aria-label</code> or <code>aria-labelledby</code> <span> </span>
                             that could be used to provide an accessible name are not present.
                         </p>
                         <p className="fake-heading-p">Consequences of missing input labels</p>
@@ -421,6 +421,11 @@ export default function MostCommonBugs() {
                         If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to the user's 
                         chosen language. This can be problematic for multilingual users accessing content in 
                         various languages.
+                    </p>
+                    <p className="white-bg">
+                        For example, let's say a user with a screen reader set to English wants to read a webpage
+                        in French. If the page's <code>lang</code> attribute is missing, the screen reader will
+                        read the French text in English!
                     </p>
                     <div className="highlight">
                         <h3 className="white-bg">
