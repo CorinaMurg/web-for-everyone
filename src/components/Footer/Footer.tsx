@@ -21,7 +21,7 @@ export default function Footer() {
                         <h3 className="footer-heading">Site Links</h3>
                         <ul>
                             <li><Link to="/" onClick={scrollToTop}><span className="footer-nav-link">Home</span></Link></li>
-                            <li><Link to="/projects" onClick={scrollToTop}><span className="footer-nav-link">Your Users</span></Link></li>
+                            {/* <li><Link to="/projects" onClick={scrollToTop}><span className="footer-nav-link">Your Users</span></Link></li> */}
                             <li><Link to="/accessibility" onClick={scrollToTop}><span className="footer-nav-link">Resources</span></Link></li>
                             <li><Link to="/about" onClick={scrollToTop}><span className="footer-nav-link">About</span></Link></li>
                         </ul>

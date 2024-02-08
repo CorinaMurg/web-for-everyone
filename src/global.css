@@ -11,6 +11,10 @@ a:hover {
     /* font-weight: 600; */
 }
 
+a:focus-visible {
+    text-decoration: none;
+}
+
 .article-content a {
     padding: 2px;
 }
@@ -162,9 +166,13 @@ a:hover {
     margin-top: 40px;
 }
 
-/* details p {
-    margin-left: 10px;
-} */
+.dark-bg-white-text {
+    background-color: var(--text-dark-color);
+    color: var(--cream-color);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
 .exclamation {
     color: var(--pinkBright-color);
     font-size: 1.2rem;
@@ -560,6 +568,14 @@ ul[class^="bullet-point-list"] li::before {
     background-color: var(--grayishBlue-color);
     padding: 2px 3px;
     border-radius: 3px;
+}
+
+.white-bg-dark-text {
+    background-color: var(--cream-color);
+    color: var(--text-dark-color);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 2px;
 }
 
 .yellow-bg-dark-text {

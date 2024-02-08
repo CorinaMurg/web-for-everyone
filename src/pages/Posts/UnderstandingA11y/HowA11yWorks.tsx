@@ -675,8 +675,8 @@ export default function MostCommonBugs() {
                             <span className="bold">all form elements</span>, like inputs or radio buttons
                         </p>
                         <p className="padding-left-20">
-                            For interactive elements, assistive technologies need it to convey
-                            the purpose or the content of these elements to the user. 
+                            For an interactive element, assistive technologies need its name to convey
+                            its purpose or the content to the user. 
                         </p>  
                         <p className="padding-left-20">
                             When using speech recognition software,

@@ -1,50 +1,51 @@
-TUESDAY
+<span className="pink-text bold">&#x2714; </span> 
+
+WEDNESDAY
 1. when using the back button in the browser, it should scroll to the same section as before
 2. About
-3. Responsive
+3. 
 4. AA and AAA (link in Color Contrast)
 5. Assistive Tech: Add it to How A11y Works
 
-WEDNESDAY
-6. Dark Mode
-8. Logo
-9. LinkedIn page WE
-10. LinkedIn page Corina, GitHub
-11. A11y statement https://dequeuniversity.com/accessibility-statement
+6. Close button for details
+7. Highlight TOC titles in use
+8. Program all visible lists
+9. description or alt to images re: color contrast
+
 THURSDAY
-12. Highlight TOC titles in use
-13. Program all visible lists
-14. Explain Assistive tech
-15. Forms (ask Adam?)
-16. Add button to close modals
+8. Responsive
+9. 
+10. Logo
+11. LinkedIn page WE
+12. LinkedIn page Corina, GitHub
+13. A11y statement https://dequeuniversity.com/accessibility-statement
+
+FRIDAY
+
+SATURDAY
+
+SUNDAY
+Dark Mode
 
 Small parts:
-1. visually-hidden code or link to code pen
+1. visually-hidden code: link to code pen
 
 Extra Articles
 12. Your Users
 13. Is inaccessible ilegal?
 14. WCAG
+15. Forms (ask Adam?)
 
-
-NICE HAVES:
-- custom hook for title or react helmet or react head
+New Bugs:
+- dark mode
+- rem not px
 
 BONUS TO-DO:
 - allow users to enter style info for button in Focus Visible
 - link to a differen page with a cute cat
 
 
-
-
-Visible lists: do they also have to be programatic lists
-
 Explain: aria-hidden for icon
-
-
-Add description or alt to images re: color contrast
-
-
 
 ABOUT EACH ARTICLE
 - table of contents: should be aside or a section
@@ -56,7 +57,6 @@ TABLE OF CONTENTS
 - is "out of list" important
 - <a> vs <Link>
 - add a skip-table-contents link?
-- underline the titles
 
 
 SCREEN READER 
@@ -71,5 +71,3 @@ HOW A11Y WORKS
 MUST MENTION
 -WCAG A AA AAA (link it to Color COntrast checker in Make It Accessible)
 
-TO FIX:
-- middle icon, no wrap, enlarge icon, make it blue

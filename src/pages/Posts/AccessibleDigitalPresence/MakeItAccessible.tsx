@@ -141,9 +141,9 @@ export default function MakeItAccessible() {
                                 </a>
                             </p>
                             <p>
-                                Each tool has its own strengths and weaknesses. Best if you pick one and get 
+                                Each tool has its own strengths. Best if you pick one and get 
                                 familiar with it. When you run a test, it lists the accessibility issues it found, 
-                                as well as links to documentation and hints on how to fix them.
+                                as well as links to documentation and examples on how to fix them.
                             </p>
                             <p>
                                 Please note that these tools might detect accessibility issues that are not 
@@ -184,19 +184,21 @@ export default function MakeItAccessible() {
                         </h2>
                     </div>
 
-                    <div className={`code ${styles['code--contrast']}`}>
-                        <code style={{ }}>
-                            Normal text (16px): min. contrast 
-                            ratio of <span className="pink-bg-white-text">4.5:1</span>
-                        </code>
-                        <code className="margin-top-30">
-                            19px or larger, and bold: min contrast ratio of <span> </span>
-                            <span className="pink-bg-white-text">3:1</span>
-                        </code>
-                        <code className="margin-top-30">
-                            24px or larger: min contrast ratio of <span> </span>
-                            <span className="pink-bg-white-text">3:1</span>
-                        </code>
+                    <div className="code">
+                        <dl className={styles['numbers']}>
+                            <dt><code><span className="code-blue-color">Text smaller than 19px:</span></code></dt>
+                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">4.5:1</span></code></dd>
+                        </dl>
+                        <br />
+                        <dl className={styles['numbers']}>
+                            <dt><code><span className="code-yellow-color">Text 19px or larger, and bold:</span></code></dt>
+                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3:1</span></code></dd>
+                        </dl>
+                        <br />
+                        <dl className={styles['numbers']}>
+                            <dt><code><span className="code-purple-color">Text 24px or larger:</span></code></dt>
+                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3:1</span></code></dd>
+                        </dl>
                     </div>
        
                     <h3>Mind the color contrast ratio to help users with low vision</h3>
@@ -224,8 +226,8 @@ export default function MakeItAccessible() {
                         .  
                     </p>
                               
-                    <p className="margin-top-30">
-                        Checking the color contrast is easy: 
+                    <p className="margin-top-20">
+                        <strong>Checking the color contrast is straightforward</strong>: 
                     </p>
                     <p className="bullet-point-line">
                         enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
@@ -287,6 +289,40 @@ export default function MakeItAccessible() {
                            
                         </details>
                     </div>
+                    {/* *****COLOR CONTRAST FOR LINKS***** */}
+                    <div className="highlight">
+                        <h4 className={styles['two-line-heading']}>
+                            <span>Did you know?</span>
+                            <span>You also have to check the contrast ratio for links!<span aria-hidden="true"> 💡</span></span> 
+                        </h4>
+                        <p>
+                            Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
+                        </p>
+                        
+                        <p style={{ marginTop: "30px"}} className="padding-left-20">
+                            <span className="pink-text bold">&#x2714; </span> 
+                            Contrast with background is at least <span className="dark-bg-white-text">4.5:1</span> for smaller 
+                            text, and <span className="dark-bg-white-text">3:1</span> for larger text
+                        </p>
+                        <p className="padding-left-20">
+                            <span className="pink-text bold">&#x2714; </span>
+                            Links are underlined, <strong>OR</strong> the next two conditions are met:
+                        </p>
+                        <p className="padding-left-20">
+                            <span className="pink-text bold">&#x2714; </span>
+                            Contrast with surrounding text is at least 3:1
+                        </p>
+                        <p className="padding-left-20">
+                            <span className="pink-text bold">&#x2714; </span>
+                            On mouse hover and keyboard focus: there are non-color visual clues (like underline or a focus ring)
+                        </p>     
+                        <p style={{ marginTop: "30px"}}>
+                            And to help you, WebAIM has a special contrast checker for links! <span> </span>
+                            <a href="https://webaim.org/resources/linkcontrastchecker/" target="_blank" rel="noreferrer">
+                            WebAIM's link contrast checker
+                            </a>!
+                        </p>        
+                    </div>
                 </div>
 
                 {/* ****************ALT************************* */}
@@ -303,7 +339,7 @@ export default function MakeItAccessible() {
                         <code><span className="code-blue-color">/&gt;</span></code>
                     </div>
            
-                    <h3>Help screen readers decide whether to read an image or not</h3>
+                    <h3>Help screen readers decide whether to announce an image or not</h3>
                     <p className="bullet-point-line white-bg">
                         Is your image <strong>purely decorative</strong>? Or, is the information presented in the image 
                         conveyed by the adjacent text as well? Then it's best to leave the <code>alt</code> attribute empty.
@@ -324,7 +360,7 @@ export default function MakeItAccessible() {
                         <br/>
                         <p className="white-bg">
                             <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
-                            read the source file name.
+                            read the source file name. When you have an image, the <code>alt</code> attribute is required!
                         </p>
                         <p>
                             <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
@@ -440,7 +476,7 @@ export default function MakeItAccessible() {
                     <p style={{ marginTop: '40px' }}>
                         <strong>Note: </strong> 
                         This is not an exhaustive list of techniques you could use to make your social media
-                        links accessible. The ones shared above are the most commonly used and you can employ them
+                        links accessible. The ones shared here are the most commonly used and you can employ them
                         anytime you use an icon instead of visible text. Plus, they also work with buttons.
                     </p>
                     <p className="white-bg">
