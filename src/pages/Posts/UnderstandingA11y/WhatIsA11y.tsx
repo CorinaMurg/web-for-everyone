@@ -70,14 +70,14 @@ export default function WhatIsA11y() {
                     <h2>The DNA of the Web is Accessible</h2>
                     <p>
                         If you have good sight and hand mobility, you can rely on them to navigate
-                        to a webpage and check out its content (probably with the help a mouse or a keyboard). 
+                        to a webpage and check out its content (probably with the help of a mouse or a keyboard). 
                         For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
                         person with good sight but limited or no hand mobility might use speech recognition software.
                     </p>
                     
                     <p>
                         As a developer, the tools you need to allow for these kinds of interactions (and many others!) 
-                        are the same tools you use to build your website or app:
+                        are the same tools you use to build your websites or apps:
                     </p>
                     <ul>
                         <li>
@@ -97,7 +97,7 @@ export default function WhatIsA11y() {
                     <p className="white-bg">
                         Of course not! We are lucky to be developers at a time when <code>HTML5</code> is the 
                         standard, and it comes with a whole set of semantic tags. These are tags that share the 
-                        purpose of their content with the browser, and thus with the assistive technologies that 
+                        purpose of their content with the browser and the assistive technologies that 
                         people with disabilities use to access the web.
                     </p>
                     <strong className="margin-top-20">
@@ -124,7 +124,7 @@ export default function WhatIsA11y() {
                     </ul>
                     <p>
                         <strong className="margin-top-20">
-                            If we do our part, then the browser and the assistive technologies can do theirs.
+                            If we do our part, then the browser and the assistive technologies can do theirs!
                         </strong>
                     </p>
                     <div className="highlight margin-top-20">
@@ -220,7 +220,7 @@ export default function WhatIsA11y() {
                     <h2>Web Access is Everyone's Right</h2>
                     <p>
                         In our world, digital connectivity is key, and your finished product should allow everyone 
-                        the ability to easily engage with the web.  The web is not just a form of entertainment; it's a
+                        the ability to easily engage with it.  The web is not just a form of entertainment; it's a
                         source of information and services that are integral to our daily life.
                     </p>
                     <p>
@@ -232,24 +232,23 @@ export default function WhatIsA11y() {
                         For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
                     </p>
-                    <div>
+                   
                         
                     
                     <p>
-                        Your code can help 
+                        Your code can help:
                     </p>
-                    <ul className="bullet-point-list">
-                        <li>
-                            a blind student access their online course materials,
-                        </li>
-                        <li>
-                            a person with limited mobility order their groceries, 
-                        </li>
-                        <li>
-                            a person with dyslexia read the news. 
-                        </li>
-                    </ul>
-                    </div>
+                    <p className="padding-left-20">
+                        <span className="pink-text bold">&#x2714; </span>a blind student access their online course materials,
+                    </p>
+                    <p className="padding-left-20">
+                        <span className="pink-text bold">&#x2714; </span>a person with limited mobility order their groceries,
+                    </p>
+                    <p className="padding-left-20">
+                        <span className="pink-text bold">&#x2714; </span>a person with dyslexia read the news.
+                    </p>
+                        
+                    
                     <p> 
                         <strong>Everyone deserves a high level of freedom and functionality when interacting with
                         the web</strong>.
@@ -261,7 +260,7 @@ export default function WhatIsA11y() {
                 <div className="section scroll-target" id="next-steps">
                     <h2>Next Steps</h2>
                     <p> 
-                        Whether it's inconvenience or lack of awareness, the majority of websites are not 
+                        Due to inconvenience or lack of awareness, the majority of websites are not 
                         accessible. 
                         A staggering 97% of them have some accessibility bugs!
                     </p>
@@ -276,7 +275,7 @@ export default function WhatIsA11y() {
                         Your portfolio site and personal projects are a great place to start implementing 
                         accessibility practices.
                         If you're ready to audit them, jump to the next article for a list of solutions to the 
-                        most common accessibility issues:
+                        most common issues:
                     </p>
                     <div className="next-article">
                         <span className="read-next">Read next: </span>
