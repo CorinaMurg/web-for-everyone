@@ -73,8 +73,7 @@ export default function WhatIsA11y() {
                         to a webpage and check out its content (probably with the help of a mouse or a keyboard). 
                         For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
                         person with good sight but limited or no hand mobility might use speech recognition software.
-                    </p>
-                    
+                    </p>    
                     <p>
                         As a developer, the tools you need to allow for these kinds of interactions (and many others!) 
                         are the same tools you use to build your websites or apps:
@@ -100,7 +99,65 @@ export default function WhatIsA11y() {
                         purpose of their content with the browser and the assistive technologies that 
                         people with disabilities use to access the web.
                     </p>
-                    <strong className="margin-top-20">
+
+                    {/* WHAT ARE ASSISTIVE TECH */}
+                    <div className="highlight margin-top-20">
+                        <details>
+                            <summary>What are assistive technologies?</summary>
+                            <p>
+                                Assistive technologies are software or hardware that help people with disabilities 
+                                interact with the web.  
+                            </p>
+                            <p>
+                                Here's an overview of some of the most common assistive technologies:
+                            </p>
+                            <p>
+                                <strong className="pink-text">1.</strong><strong> Screen Readers</strong> are typically used by people who are blind 
+                                or have vision impairments. Users navigate through the UI elements with the 
+                                keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
+                            </p>
+                            <p>
+                                <strong className="pink-text">2.</strong><strong> Screen Readers with Braille Displays</strong> for users with both 
+                                vision and hearing impairments. The screen reader 
+                                translates the content on the screen into a format that can be read on a 
+                                braille display. These displays are fitted braille cells that change dynamically.
+                            </p>
+                            <p>
+                                <strong className="pink-text">3.</strong><strong> Screen Magnifiers</strong> are designed to enlarge the content on 
+                                screen, making it more readable for users with low vision. These tools often 
+                                include additional features to enhance contrast and reduce glare.
+                            </p>
+                            <p>
+                                <strong className="pink-text">4.</strong><strong> Speech Recognition Software</strong> allows users to interact with 
+                                their devices using voice commands. This technology is beneficial for people 
+                                with mobility issues or those who need a hands-free interraction with the web. 
+                                Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
+                                Dictation. Windows has integrated Cortana for voice commands.
+                            </p>
+                            <p>
+                                <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts written text into 
+                                spoken words using synthetic voices. This technology benefits users with reading 
+                                difficulties, such as dyslexia, or those who prefer auditory learning.
+                            </p>
+                            
+                            <p>
+                                <strong className="pink-text">6.</strong><strong> Alternate Input Technologies</strong> simulate the functionality of 
+                                the keyboard for people with more severe physical disabilities. Examples include 
+                                head pointers that allow users to perform mouse movements, clicks, and typing tasks 
+                                using head movements, and sip&puff devices controlled 
+                                by inhaling or exhaling. 
+                            </p>
+                            <p>
+                                <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
+                                a traditional mouse. 
+                                Examples include trackballs, which can be easier to manipulate than a standard 
+                                mouse; joystick mice, suitable for individuals with limited hand dexterity; 
+                                and eye-tracking systems, which allow mouse control through eye movements.
+                            </p>   
+                        </details>
+                    </div>
+
+                    <strong className="margin-top-30">
                         Our job as developers is threefold:
                     </strong>
                     <ul>
@@ -231,21 +288,18 @@ export default function WhatIsA11y() {
                         This shift to digital has been transformative for people with disabilities as well. 
                         For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
-                    </p>
-                   
-                        
-                    
+                    </p>                  
                     <p>
-                        Your code can help:
+                        <strong>Your code can help!</strong> It can allow:
                     </p>
                     <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a blind student access their online course materials,
+                        <span className="pink-text bold">&#x2714; </span>a blind student to access their online course materials,
                     </p>
                     <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a person with limited mobility order their groceries,
+                        <span className="pink-text bold">&#x2714; </span>a person with limited mobility to order their groceries,
                     </p>
                     <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a person with dyslexia read the news.
+                        <span className="pink-text bold">&#x2714; </span>a person with dyslexia to read the news.
                     </p>
                         
                     

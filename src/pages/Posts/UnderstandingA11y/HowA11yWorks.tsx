@@ -188,7 +188,7 @@ export default function MostCommonBugs() {
                                 <code className="padding-left-60">
                                     &lt;/li&gt;
                                 </code>
-                                <code className="padding-left-60">. . .</code>
+                                <code className="padding-left-60">// other list items</code>
                                 <code><span className="code-yellow-color padding-left-30">&lt;/ul&gt;</span></code>
                                 <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
                             </div>
@@ -216,7 +216,7 @@ export default function MostCommonBugs() {
                                     <span className="code-purple-color">focusable</span>: true
                                 </code>
                                 <code className="padding-left-120">StaticText "Your Users"</code>
-                                <code className="padding-left-60">. . .</code>
+                                <code className="padding-left-60">// other list items</code>
                             </div>
                         </div>
                        
