@@ -373,6 +373,11 @@ h4 {
     font-family: inherit;
 }
 
+.note {
+    display: flex;
+    gap: 10px;
+}
+
 p {
     /* font-size: 0.9rem; */
     line-height: 2;
@@ -483,7 +488,7 @@ p {
     font-weight: 600;
     padding: 1px 2px;
     border-radius: 3px;
-    background-color: #dee2e6;
+    background-color: var(--grayishBlue-color);
 }
 
 .stats-dark-bg {
