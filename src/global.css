@@ -125,14 +125,10 @@ a:focus-visible {
     font-size: 0.9rem;
     font-weight: 500;
     padding: 30px;
-    background-color: #151f28;
-    color: white;
+    background-color: var(--code-bg-color);
+    color: var(--cream-color);
     margin-bottom: 30px;
 }
-
-/* .highlight .code {
-    margin-top: 30px;
-} */
 
 .code-small {
     width: 95%;
@@ -143,8 +139,8 @@ a:focus-visible {
     font-size: 1rem;
     font-weight: 500;
     padding: 25px;
-    background-color: #151f28;
-    color: white;
+    background-color: var(--code-bg-color);
+    color: var(--cream-color);
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -443,7 +439,7 @@ p {
     font-weight: 600;
     font-size: 0.9rem;
     /* to match the padding for links */
-    padding: 2px;
+    padding-block: 2px;
 }
 
 .scroll-target::before {

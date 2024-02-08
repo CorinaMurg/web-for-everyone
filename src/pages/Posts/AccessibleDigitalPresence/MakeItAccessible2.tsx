@@ -337,11 +337,17 @@ export default function MakeItAccessible() {
                         <h2>Keyboard Navigation</h2>
                     </div>
 
-                    <div className="code code--focus">
-                        <code><span className="code-blue-color">button</span>:focus-visible &#123;</code>
-                        <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px solid blue;</code>
-                        <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
-                        <code>&#125;</code>   
+                    <div className={styles['code-keyboard']}>
+                        <div className={styles['code-keyboard--div']}>
+                            <code>Home</code>
+                        </div>
+                        <div className={`${styles['code-keyboard--div']} ${styles['focus-ring']}`}>
+                            <code>Resources</code>
+                        </div>
+                        <div className={styles['code-keyboard--div']}>
+                            <code>About</code>
+                        </div>
+                           
                     </div>
         
                     <h3>Allow keyboard-only users to navigate a page</h3>
@@ -357,10 +363,10 @@ export default function MakeItAccessible() {
                         Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
                         (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
                         through the interactive elements on the page. Each element should receive focus 
-                        (you should see an outline around it. More about how to style the outline in the next section).
+                        and you should see an outline around it. (More about how to style the outline in the next section.)
                     </p>
                     <p className="padding-left-20 white-bg">
-                        If you used semantic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
+                        If you used semanic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
                         this will happen automatically. 
                     </p>
                     <p className="padding-left-20 white-bg">
@@ -418,11 +424,12 @@ export default function MakeItAccessible() {
                             Change the brightness (shade) of the background color.
                         </p>
                     </div>
-
+                    
+                    {/* ***Example: Creating a custom focus outline*** */}
                     <div className="highlight">
                         <h4>Example: Creating a custom focus outline</h4>
                         <div className="code">
-                            <code><span className="code-blue-color">button</span>:focus-visible &#123;</code>
+                            <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
                             <code>&#125;</code>   
@@ -432,7 +439,7 @@ export default function MakeItAccessible() {
                         </p>
                         <p className="padding-left-20">
                             Change the color and the style to match your design, but make sure you have a contrast ratio of at 
-                            least <span className="pink-bg-white-text">3.0 : 1</span> between the outline and the 
+                            least <span className="pink-bg-white-text"><code>3.0:1</code></span> between the outline and the 
                             background color of the element, as well as between the outline and the background of
                             the page.
                         </p>

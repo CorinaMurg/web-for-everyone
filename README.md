@@ -3,17 +3,12 @@
 WEDNESDAY
 1. when using the back button in the browser, it should scroll to the same section as before
 2. About
-3. 
-4. 
-5. Assistive Tech: Add it to How A11y Works
-
+3. .note class
+4. example links and buttons
 6. Close button for details
 7. Highlight TOC titles in use
-8. Program all visible lists
-9. description or alt to images re: color contrast
 
-JULIA
-Post ? in Discord re: landmarks, 
+9. description or alt to images re: color contrast
 test: icon with and wout aria-hidden
 
 THURSDAY

@@ -88,3 +88,27 @@
 .brightness--did-you-know li p {
     margin-block: 10px !important;
 }
+
+.code-keyboard {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 30px;
+    background-color: var(--code-bg-color);
+    color: var(--cream-color);
+    margin-bottom: 30px;
+}
+
+.code-keyboard--div {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: var(--cream-color);
+}
+
+.focus-ring {
+    border: 4px dashed var(--code-blue-color);
+}

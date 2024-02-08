@@ -237,10 +237,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p className="bullet-point-line">
                         you will get a <strong>pass</strong> or <strong>fail</strong> result for 
-                        the <span> </span>
-                        <Link to="/resources">
-                            AA and AAA levels of accessibility compliance
-                        </Link>
+                        the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
                     </p>   
                     <p className="margin-top-20">
                         <strong>Note</strong>: The <strong>4.5:1</strong> (for smaller text) and <span> </span>
@@ -249,7 +246,7 @@ export default function MakeItAccessible() {
                     <p>
                         The <strong>AAA</strong> level requires
                         a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
-                        Whenever possible, aim for the AAA level as it provides the best experience for users with low vision.
+                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
                     </p>          
 
                     <div className="highlight margin-top-30">
