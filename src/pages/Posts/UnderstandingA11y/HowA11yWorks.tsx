@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
@@ -66,6 +67,12 @@ const contents = [
 export default function MostCommonBugs() {
     useDocTitle("How Accessibility Works | Web for Everyone");  
     useScrollToSection();  
+
+    const [isOpen, setIsOpen] = useState(true); 
+
+    const toggleDetails = () => {
+        setIsOpen(!isOpen);
+    };
     
     return (
         <div className="article-container howA11yWorks-container">
@@ -399,27 +406,14 @@ export default function MostCommonBugs() {
                         <p>
                             The first rule of ARIA is: <strong>don't use ARIA</strong>!
                         </p>
-                        <p>
-                            More precisely, from the <a href="https://www.w3.org/TR/using-aria/" target="_blank" rel="noopener noreferrer">
-                                W3C's Using ARIA documentation
-                            </a>:
-                        </p>
-
-                        <blockquote>
-                            <p className="margin-top-20">
-                                "<strong>If you can use a native HTML element or attribute</strong> with the semantics and behavior you 
-                                require already built in, instead of re-purposing an element and adding an ARIA role, 
-                                state or property to make it accessible, <strong>then do so</strong>."
-                            </p>
-                        </blockquote>
+                        
                     </div>
                 </div>
 
                 {/* **************Accessible Name***************** */}
                 <div className="section scroll-target a11yName" id="the-accessible-name">
                     <h2>The Accessible Name</h2>
-                    <div className="code">
-                        
+                    <div className="code">             
                         <code>listitem</code>
                         <code className="padding-left-30">
                             <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
@@ -490,118 +484,7 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20">
                                 It takes a string value that becomes the name of the element.
                             </p>
-                            <div className="highlight-small">
-                                <details>
-                                    <summary>
-                                        <strong>aria-label</strong> vs. <strong>aria-labelledby</strong>
-                                    </summary>
-                                    <br></br>
-                                    <p>
-                                        The attributes serve similar purposes. They both provide accessible names 
-                                        for elements, but in different ways.
-                                    </p>
-                                    <p className="bullet-point-line white-bg">
-                                        <code>aria-label</code> takes a string value that becomes the name of 
-                                        the element. It is added to the opening tag of the element.
-                                    </p>
-                                    <div className="code-small">
-                                        <code>
-                                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="closeModal"
-                                            <span className="code-blue-color">&gt;</span>
-                                        </code>
-                                        <code className="padding-left-30">
-                                            <span className="code-blue-color">&lt;img </span> 
-                                            src="x-mark.svg"
-                                            <span className="code-blue-color">/&gt;</span>
-                                        </code>
-                                        <code><span className="code-blue-color">&lt;/button&gt;</span></code>
-                                    </div>
-                                    <br/>
-                                    <p className="bullet-point-line white-bg">
-                                        <code>aria-labelledby</code> references the ID of another element. The text of that 
-                                        element now becomes the name of the current element. 
-                                    </p>
-                                    <p className="padding-left-20">
-                                        It can be used to reference multiple IDs, providing a way to concatenate 
-                                        names from different elements.
-                                    </p>
-                                    
-                                    <div className="code-small">
-                                        <code>
-                                            <span className="code-blue-color">&lt;h2</span> 
-                                            <span className="code-yellow-color"> id</span>="table-contents"&gt;Table of Contents
-                                            <span className="code-blue-color">&lt;h2&gt;</span>
-                                        </code>
-                                        <br/>
-                                        <code>
-                                            <span className="code-blue-color">&lt;nav</span> 
-                                            <span className="code-yellow-color"> aria-labelledby</span>="table-of-contents"
-                                            <span className="code-blue-color">&gt;</span>
-                                        </code>
-                                        <code className="padding-left-30">
-                                            // table of contents links 
-                                        </code>
-                                        <code>
-                                            <span className="code-blue-color">&lt;/nav&gt;</span>
-                                        </code>
-                                    </div>
-                                    <p className="padding-left-20">
-                                        A screen reader user can navigate
-                                        through the landmarks (i.e. the main sections of a page) by pressing 
-                                        the <span className="pink-bg-white-text">D</span> key.
-                                        The code above creates a navigation landmark with a table of contents.
-                                        
-                                    </p>
-                                    <p className="padding-left-20 white-bg">
-                                        Your <strong>navbar</strong> and <strong>header</strong> are examples 
-                                        of built-in landmarks. 
-                                        Screen readers will announce them as "navigation" and "banner" respectively. 
-                                        They don't require a name since they are unique landmarks and users 
-                                        recognize them by their roles. 
-                                    </p>
-                                    <p className="padding-left-20 white-bg">     
-                                        But, if you need a second navigation landmark, like in our example, 
-                                        then you must assign to each a unique name, either 
-                                        with <strong>aria-labelledby</strong> or <strong>aria-label</strong>. 
-                                        For a custom landmark, use the <code>&lt;section&gt;</code> tag.
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        <strong className="fake-heading-p">Key Differences</strong>
-                                    </p>
-                                    
-                                    <p>
-                                        <strong className="yellow-bg-dark-text">Direct vs. Indirect Labeling</strong>  
-                                    </p>
-                                    <p className="bullet-point-line">
-                                        <strong>aria-label</strong> provides a direct label to an element using a 
-                                        string value.
-                                    </p>
-                                    <p className="bullet-point-line">
-                                        <strong>aria-labelledby</strong> provides an indirect label by referencing content
-                                        available on the page.
-                                    </p>
-                                    <p >
-                                        <strong className="yellow-bg-dark-text">Visibility</strong>
-                                    </p>
-                                    <p className="bullet-point-line white-bg">
-                                        <strong>aria-label</strong> is not visually displayed; 
-                                        it's only announced by screen readers. 
-                                    </p>
-                                    <p className="bullet-point-line white-bg">
-                                        <strong>aria-labelledby</strong> references elements that are usually visible on 
-                                        the page. It is also announced by screen readers. 
-                                    </p>
-                                    <p>
-                                        <strong className="yellow-bg-dark-text">Concatenation</strong>
-                                    </p>
-                                    <p className="bullet-point-line">
-                                        While <strong>aria-label</strong> takes a single string, 
-                                        <strong> aria-labelledby</strong> can reference multiple IDs, allowing for 
-                                        the concatenation of text from various elements.
-                                    </p>
-                                </details>
-                            </div>
+                            
                             <p className="bullet-point-line margin-top-20">
                                 <strong>title</strong>
                             </p>
@@ -681,7 +564,7 @@ export default function MostCommonBugs() {
                         <p className="bullet-point-line ">
                             <span className="bold">all form elements</span>, like inputs or radio buttons
                         </p>
-                        <p className="padding-left-20">
+                        {/* <p className="padding-left-20">
                             For an interactive element, assistive technologies need its name to convey
                             its purpose or the content to the user. 
                         </p>  
@@ -689,17 +572,17 @@ export default function MostCommonBugs() {
                             When using speech recognition software,
                             the name must also be part of the command that will activate the element (like in the case
                             of links and buttons) or bring it into focus (in case of form fields, for example).
-                        </p>
+                        </p> */}
                     
-                        <p className="bullet-point-line gray-bg">
-                            <span className="bold">images</span>: unless they have a decorative purpose, images must have an <code>alt</code> attribute
-                            that describes their content
+                        {/* <p className="bullet-point-line gray-bg">
+                            <span className="bold">images</span>, if they are interactive
 
-                        </p>
+                        </p> */}
                     
                         <p className="bullet-point-line margin-top-20">
-                            <span className="bold">headings</span>: the majority of screen reader users 
-                            rely on headings to learn about the structure and content of a page
+                            <span className="bold">headings</span>
+                            {/* : the majority of screen reader users 
+                            rely on headings to learn about the structure and content of a page */}
                         </p>
                     </div>           
                 </div>

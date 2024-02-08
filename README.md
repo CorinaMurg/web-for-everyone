@@ -1,17 +1,18 @@
 <span className="pink-text bold">&#x2714; </span> 
 
-WEDNESDAY
+THURSDAY
+Highlight TOC titles in use
 1. when using the back button in the browser, it should scroll to the same section as before
 2. About
 3. .note class
 4. example links and buttons
-6. Close button for details
-7. Highlight TOC titles in use
+6. 
+7. 
 
 9. description or alt to images re: color contrast
 test: icon with and wout aria-hidden
 
-THURSDAY
+FRIDAY
 8. Responsive
 9. 
 10. Logo
@@ -19,7 +20,6 @@ THURSDAY
 12. LinkedIn page Corina, GitHub
 13. A11y statement https://dequeuniversity.com/accessibility-statement
 
-FRIDAY
 
 SATURDAY
 

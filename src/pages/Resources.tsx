@@ -17,7 +17,7 @@ export default function Accessibility() {
         "accessible-digital-presence": "Build an Accessible Digital Presence",
         "html-for-accessibility": "HTML for Accessibility",
         "css-for-accessibility": "CSS for Accessibility",
-        "build-accessible-components": "Building Accessible Components",
+        "example-accessible-components": "Examples of Accessible Components",
         // "learning-resources": "Learning Resources",
     };
   

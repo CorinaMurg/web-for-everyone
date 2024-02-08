@@ -96,9 +96,9 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
-            likely to be the first and most common piece of advice. My post looks at the role it 
+            likely to be the first and most common piece of advice. This post looks at the role it 
             plays in accessibility and beyond.`,
-        "to": `/resources/semantic-html`,
+        "href": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
         "ariaLabel": "The importance of semantic HTML blog post.",
         "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
     },
@@ -110,14 +110,14 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
-        "to": `/resources/buttons-or-links`,
+        "to": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
         "ariaLabel": "HTML: buttons or links? How to choose blog post.",
         "readMoreAriaLabel": "read more link to HTML: buttons or links? How to choose blog post.",
 
     },
     {
         "label": "html-for-accessibility",
-        "title": "How to Design Great Alt Text: An Introduction",
+        "title": "How to Design Great Alt Text",
         "subtitle": "",
         "author": "By Caitlin Geier on deque.com/blog",
         "description": `Alt text is essential for users relying on screen readers or slow internet connections. 
@@ -129,12 +129,24 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "title": "Similar, but Different: HTML and ARIA terms",
+        "subtitle": "",
+        "author": "By Web for Everyone",
+        "description": `If you need to hide an element from view, do you use "display: none", "visibility: hidden", or "aria-hidden"?
+            For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
+            Let's match these terms agaist each other to see how they differ.`,
+        "to": `/resources/similar-but-different`,
+        "ariaLabel": "How to Design Great Alt Text: An Introduction by Caitlin Geier on deque.com/blog.",
+        "readMoreAriaLabel": "read more link to How to Design Great Alt Text blog post.",
+    },
+    {
+        "label": "html-for-accessibility",
         "title": "HTML: Tag vs. Element",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
-        "to": `/resources/tag-vs-element`,
+        "href": `https://dev.to/corinamurg/html-tag-vs-element-3dc5`,
         "ariaLabel": "HTML tag vs element blog post published by Corina.",
         "readMoreAriaLabel": "read more link to HTML tag vs element blog post.",
     },
@@ -153,7 +165,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
    
     {
-        "label": "build-accessible-components",
+        "label": "example-accessible-components",
         "title": "Building the Main Navigation for a Website",
         "subtitle": "",
         "author": "By Manuel Matuzović on web.dev",
@@ -192,9 +204,9 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "title": "Tips for an Accessible GitHub Profile",
         "subtitle": "",
         "author": "By Annie Streater on github.blog",
-        "description": `A post with practical advice on how to ensure your GitHub profile 
-            is navigable and understandable by all users, including those with disabilities. You'll find tips
-            on link context, image alt text, heading structure, plain language, and use of emojis. Enjoy!`,
+        "description": `A post with practical advice on how to ensure  
+            all users, including those with disabilities, can navigate and understand your GitHub profile. You'll find tips
+            on link context, alt text for images, heading structure, plain language, and use of emojis. A treat!`,
         "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
         "ariaLabel": "5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
