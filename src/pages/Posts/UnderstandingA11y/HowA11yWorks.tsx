@@ -290,11 +290,11 @@ export default function MostCommonBugs() {
                             accessibility. 
                         </p>
                         <p><strong>Details available</strong></p>
-                        <ul className="bullet-point-list padding-left-20">
-                            <li>Name: Home</li>
-                            <li>Role: link</li>
-                            <li>Property: focusable</li>
-                            <li>State: focused</li>
+                        <ul className="checkmark-list padding-left-20">
+                            <li><span className="pink-text bold">&#x2714; </span><span>Name: Home</span></li>
+                            <li><span className="pink-text bold">&#x2714; </span>Role: link</li>
+                            <li><span className="pink-text bold">&#x2714; </span>Property: focusable</li>
+                            <li><span className="pink-text bold">&#x2714; </span>State: focused</li>
                         </ul>
                         <p className="white-bg">
                             We have a <strong>link</strong> with the <strong>name</strong> "Home".

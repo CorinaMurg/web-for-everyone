@@ -108,6 +108,15 @@ a:focus-visible {
     padding-left: 20px;
 }
 
+.checkmark-line p {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-block: 10px;
+} 
+
 .code {
     width: 100%;
     display: flex;
@@ -541,6 +550,16 @@ ul[class^="bullet-point-list"] li::before {
     left: -20px; 
     top: -11px;
     padding-left: 20px;
+} 
+
+ul[class^="checkmark-list"] li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-block: 10px;
 } 
 
 .visually-hidden {

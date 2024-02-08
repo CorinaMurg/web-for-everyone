@@ -302,29 +302,31 @@ export default function MakeItAccessible() {
                     <div className="highlight">
                         <h4 className={styles['two-line-heading']}>
                             <span>Did you know?</span>
-                            <span>You also have to check the contrast ratio for links!<span aria-hidden="true"> 💡</span></span> 
+                            <span>You have to check the contrast ratio for links too!<span aria-hidden="true"> 💡</span></span> 
                         </h4>
                         <p>
                             Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
                         </p>
-                        
-                        <p style={{ marginTop: "30px"}} className="padding-left-20">
-                            <span className="pink-text bold">&#x2714; </span> 
-                            <span className="margin-right-5">Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 
-                            text, and <span className="dark-bg-white-text"><code>3.0:1</code></span> for larger text</span>
-                        </p>
-                        <p className="padding-left-20">
-                            <span className="pink-text bold">&#x2714; </span>
-                            <span className="margin-right-5">Links are underlined, <strong>OR</strong> the next two conditions are met:</span>
-                        </p>
-                        <p className="padding-left-20">
-                            <span className="pink-text bold">&#x2714; </span>
-                            <span className="margin-right-5">Contrast with surrounding text is at least <span className="dark-bg-white-text"><code>3.0:1</code></span></span>
-                        </p>
-                        <p className="padding-left-20">
-                            <span className="pink-text bold">&#x2714; </span>
-                            <span className="margin-right-5">Non-color visual clues (like underline or a focus ring) are available on mouse hover and keyboard focus</span>
-                        </p>     
+                        <div style={{ marginTop: "30px"}} className="checkmark-line padding-left-20">
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span> 
+                                <span>Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 
+                                text, and <span className="dark-bg-white-text"><code>3.0:1</code></span> for larger text</span>
+                            </p>
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>Links are underlined, <strong>OR</strong> the next two conditions are met:</span>
+                            </p>
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>Contrast with surrounding text is at least <span className="dark-bg-white-text"><code>3.0:1</code></span></span>
+                            </p>
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>Non-color visual clues (like underline or a focus ring) are available on mouse hover and keyboard focus</span>
+                            </p>   
+                        </div>
+                          
                         <p style={{ marginTop: "30px"}}>
                             And to help you, WebAIM has a special contrast checker for links! <span> </span>
                             <a href="https://webaim.org/resources/linkcontrastchecker/" target="_blank" rel="noreferrer">
