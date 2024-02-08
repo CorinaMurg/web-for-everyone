@@ -159,7 +159,7 @@ export default function MakeItAccessible() {
                                     aspects of accessibility. 
                                 </p>
                                 <p>  
-                                    A comprehensive accessibility test must include:
+                                    For a comprehensive accessibility audit companies must include:
                                 </p>
                                 <p className="bullet-point-line">
                                     <strong>manual testing</strong>: navigating with only the 
@@ -192,12 +192,12 @@ export default function MakeItAccessible() {
                         <br />
                         <dl className={styles['numbers']}>
                             <dt><code><span className="code-yellow-color">Text 19px or larger, and bold:</span></code></dt>
-                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3:1</span></code></dd>
+                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
                         <br />
                         <dl className={styles['numbers']}>
                             <dt><code><span className="code-purple-color">Text 24px or larger:</span></code></dt>
-                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3:1</span></code></dd>
+                            <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
                     </div>
        
@@ -240,8 +240,17 @@ export default function MakeItAccessible() {
                         the <span> </span>
                         <Link to="/resources">
                             AA and AAA levels of accessibility compliance
-                        </Link>.
-                    </p>             
+                        </Link>
+                    </p>   
+                    <p className="margin-top-20">
+                        <strong>Note</strong>: The <strong>4.5:1</strong> (for smaller text) and <span> </span>
+                        <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
+                    </p>
+                    <p>
+                        The <strong>AAA</strong> level requires
+                        a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
+                        Whenever possible, aim for the AAA level as it provides the best experience for users with low vision.
+                    </p>          
 
                     <div className="highlight margin-top-30">
                         <details>
@@ -301,26 +310,26 @@ export default function MakeItAccessible() {
                         
                         <p style={{ marginTop: "30px"}} className="padding-left-20">
                             <span className="pink-text bold">&#x2714; </span> 
-                            Contrast with background is at least <span className="dark-bg-white-text">4.5:1</span> for smaller 
-                            text, and <span className="dark-bg-white-text">3:1</span> for larger text
+                            <span className="margin-right-5">Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 
+                            text, and <span className="dark-bg-white-text"><code>3.0:1</code></span> for larger text</span>
                         </p>
                         <p className="padding-left-20">
                             <span className="pink-text bold">&#x2714; </span>
-                            Links are underlined, <strong>OR</strong> the next two conditions are met:
+                            <span className="margin-right-5">Links are underlined, <strong>OR</strong> the next two conditions are met:</span>
                         </p>
                         <p className="padding-left-20">
                             <span className="pink-text bold">&#x2714; </span>
-                            Contrast with surrounding text is at least 3:1
+                            <span className="margin-right-5">Contrast with surrounding text is at least <span className="dark-bg-white-text"><code>3.0:1</code></span></span>
                         </p>
                         <p className="padding-left-20">
                             <span className="pink-text bold">&#x2714; </span>
-                            On mouse hover and keyboard focus: there are non-color visual clues (like underline or a focus ring)
+                            <span className="margin-right-5">Non-color visual clues (like underline or a focus ring) are available on mouse hover and keyboard focus</span>
                         </p>     
                         <p style={{ marginTop: "30px"}}>
                             And to help you, WebAIM has a special contrast checker for links! <span> </span>
                             <a href="https://webaim.org/resources/linkcontrastchecker/" target="_blank" rel="noreferrer">
                             WebAIM's link contrast checker
-                            </a>!
+                            </a>
                         </p>        
                     </div>
                 </div>

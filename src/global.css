@@ -334,6 +334,10 @@ h4 {
     margin-bottom: 20px;
 }
 
+.margin-right-5 {
+    margin-left: 5px;
+
+}
 .margin-top-10 {
     margin-top: 10px;
 }
@@ -423,7 +427,7 @@ p {
 
 .read-next {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     /* to match the padding for links */
     padding: 2px;
 }
