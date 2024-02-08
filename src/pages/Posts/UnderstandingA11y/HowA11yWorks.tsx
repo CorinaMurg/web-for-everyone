@@ -602,7 +602,11 @@ export default function MostCommonBugs() {
                             <p className="bullet-point-line margin-top-20">
                                 <strong>title</strong>
                             </p>
-                            <p className="padding-left-20">Avoid it! It's tricky to make it accessible to screen reader users.</p>
+                            <p className="padding-left-20">
+                                Avoid it! It's tricky to make it accessible to screen reader users.
+                                You can still use it to provide a visual tooltip on mouseover, but don't rely on it for
+                                the accessible name.
+                            </p>
                             <p className="margin-top-20 padding-left-20 white-bg">
                                 Please note this is an attribute that is added to the opening HTML tag of an element.
                                 Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 

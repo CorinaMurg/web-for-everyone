@@ -62,7 +62,7 @@ export default function MostCommonBugs() {
                         <dl className={styles['numbers']}>
                             <dt><span>96.3</span></dt>
                             <dd>percentage of home pages with accessibility bugs</dd>
-                        </dl>.
+                        </dl>
                         <br />
                         <dl className={styles['numbers']}>
                             <dt><span>50</span></dt>
@@ -84,7 +84,7 @@ export default function MostCommonBugs() {
                     <div className="highlight margin-top-20">
                         <details>
                             <summary>
-                                How do we determine what constitutes an accessibility bug?
+                                How do we decide what constitutes an accessibility bug?
                             </summary>
                             <br />
                             <p>
@@ -95,10 +95,22 @@ export default function MostCommonBugs() {
                                 are the international standards for web accessibility. 
                                 They are not an easy read, but they become one with practice.
                             </p>
+                            <p>
+                                The guidelines have three levels of conformance: A, AA, and AAA.
+                                Level A provides only the most basic level of accessibility, and the 
+                                recommended level for most websites is AA (which requires that level A has also been met).
+                            </p>
+                            <p>
+                                Some guidelines are staggered across all three levels, while others are specific to just one level or two.
+                                For example, the requirement that every web page has a title is a level A, 
+                                while the target size for clickable areas has both level AA and a AAA requirements. For the AA level,
+                                any clickable area must be of minimum 24 by 24 pixels. For the AAA level, the minimum size must be 44 by 44 pixels.
+
+                            </p>
                             <p>   
                                 In this article, we will review the 6 most common accessibility bugs by referencing the negative
                                 impact they have on users with disabilities, without mentioning the specific WCAG
-                                guidelines that they violate. 
+                                guidelines that they violate or the level of conformance they fail to meet.
                             </p>
 
                             <p>For an overview of the WCAG guidelines, the article <span> </span>
