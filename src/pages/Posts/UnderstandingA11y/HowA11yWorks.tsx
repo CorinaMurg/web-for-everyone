@@ -482,7 +482,13 @@ export default function MostCommonBugs() {
                                 <strong>aria-label</strong>
                             </p>
                             <p className="padding-left-20">
-                                It takes a string value that becomes the name of the element.
+                                It takes a string value that becomes the name of the element. It is added to the
+                                opening tag of the element.
+                            </p>
+                            <p className="padding-left-20 margin-top-20">
+                                <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
+                                    Read more about the difference between <code>aria-label</code> and <code>aria-labelledby</code>
+                                </Link>
                             </p>
                             
                             <p className="bullet-point-line margin-top-20">

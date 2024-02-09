@@ -8,7 +8,7 @@ Highlight TOC titles in use
 4. example links and buttons
 6. 
 7. 
-
+8. Similar but Different
 9. description or alt to images re: color contrast
 test: icon with and wout aria-hidden
 
