@@ -1,21 +1,23 @@
 <span className="pink-text bold">&#x2714; </span> 
 
 THURSDAY
-Highlight TOC titles in use
-1. when using the back button in the browser, it should scroll to the same section as before
-2. About
+
+1. test: icon with and wout aria-hidden
+2. description or alt to images re: color contrast / Explain: aria-hidden for icon
 3. 
 4. example links and buttons
-6. 
-7. 
-8. Similar but Different
-9. description or alt to images re: color contrast
-test: icon with and wout aria-hidden
+
+
 
 FRIDAY
+5. Responsive
+6. External links
+6. when using the back button in the browser, it should scroll to the same section as before
+7. Highlight TOC titles in use
 8. Responsive
-9. 
+9. Similar but Different
 10. Logo
+10.1 About 
 11. LinkedIn page WE
 12. LinkedIn page Corina, GitHub
 13. A11y statement https://dequeuniversity.com/accessibility-statement
@@ -44,13 +46,9 @@ BONUS TO-DO:
 - link to a differen page with a cute cat
 
 
-Explain: aria-hidden for icon
-
 ABOUT EACH ARTICLE
-- table of contents: should be aside or a section
 - article should be div or article
 - sections with labelledby in each article
-- aria-hidden for the 01 numbers
 
 TABLE OF CONTENTS
 - is "out of list" important
@@ -67,6 +65,4 @@ MINI ARTICLES, POSTS IN RESOURCES
 HOW A11Y WORKS
 - add explanation with a11y panel in dev tools re: accessible name computation
 
-MUST MENTION
--WCAG A AA AAA (link it to Color COntrast checker in Make It Accessible)
 

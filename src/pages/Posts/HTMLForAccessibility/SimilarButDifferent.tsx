@@ -234,8 +234,8 @@ export default function SimilarButDifferent() {
                     </p>
                     <p className="bullet-point-line">
                         when it is beneficial to the user, regardless of navigation method. For example,
-                        a mouse user will see the focus when clicking on an input field, but not when
-                        clicking on a link.
+                        for a mouse user it's helpful to see the focus when clicking on an input field, 
+                        but there is no added value from it when clicking on a link.
                     </p>
                     <p>
                         This behavior is designed to aid accessibility for keyboard 
@@ -254,13 +254,9 @@ export default function SimilarButDifferent() {
                         <code className="pink-bg-white-text">:focus-visible</code> mimics the default browser behavior 
                         when it comes to applying focus styles. It applies to elements reached via keyboard
                         and to certain elements reached via mouse click. So smart!
-                    </p>      
-                    
+                    </p>          
                 </div>
                     
-                
-                
-
                 {/* CONCLUSION */}
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
@@ -285,5 +281,7 @@ export default function SimilarButDifferent() {
         </div>
     )
 }
+
+
 
 

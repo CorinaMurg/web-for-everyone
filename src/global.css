@@ -100,6 +100,11 @@ a:focus-visible {
     font-weight: 600;
 }
 
+.border-top {
+    border-top: 1.7px solid gray;
+    margin-top: 60px;
+    padding-top: 30px;
+}
 
 .bullet-point-line {
     position: relative;
@@ -235,6 +240,19 @@ background: var(--pinkBright-color);
     color: var(--pinkBright-color);
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.external-linksvg-wrap {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 5px; */
+}
+
+.external-linksvg-wrap svg {
+    fill: var(--blue-color);
+    height: 1rem;
 }
 
 .fake-heading-p {
@@ -556,7 +574,8 @@ p {
     background-color: gray;
 }
 
-strong {
+strong,
+b {
     letter-spacing: 0.8px;
 }
 

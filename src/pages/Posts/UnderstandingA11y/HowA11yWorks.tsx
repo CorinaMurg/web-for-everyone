@@ -146,6 +146,11 @@ export default function MostCommonBugs() {
                                     target="_blank" rel="noopener noreferrer" 
                                 >
                                     Video: Debugging accessibility with Chrome DevTools
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
                                 </a>
                             </p>
                             <p>
@@ -268,6 +273,11 @@ export default function MostCommonBugs() {
                         using a set of special roles and attributes called <span> </span>
                         <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
                             Accessible Rich Internet Applications
+                            <span className="sr-only"> opens in a new tab</span>
+                            <span className="external-linksvg-wrap">
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                            </span>
                         </a>
                         , often referred to
                         by the acronym <strong>ARIA</strong>. 
@@ -341,13 +351,8 @@ export default function MostCommonBugs() {
                             Explicit Roles
                         </h3>
                         <p>
-                            Developers can also explicitly assign a role to an HTML element using
-                            <span> </span>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer">
-                                ARIA
-                            </a>
-                            <span> </span>
-                            roles and attributes. These are added to HTML tags in order to modify or improve the default behavior 
+                            Developers can also explicitly assign a role to an HTML element using <b>ARIA</b> roles                          
+                            and attributes. These are added to HTML tags in order to modify or improve the default behavior 
                             of an element and make it accessible.
                         </p>
                     </div>
@@ -459,6 +464,11 @@ export default function MostCommonBugs() {
                                 rel="noopener noreferrer"
                             >
                                 accessible name and description computation algorithm
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
                             </a>
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. This algorithm takes into account
@@ -559,15 +569,13 @@ export default function MostCommonBugs() {
                         
                     <div className="warning">
                         <WarningTriangle/>
-                        <p>These elements that must have a <span className="bold">
+                        <p>These elements must have a <span className="bold">
                             descriptive accessible name</span>:
                         </p>              
                         <p className="bullet-point-line">
-                            <span className="bold">links</span> and 
-                            <span className="bold"> buttons</span>
-                        </p>
-                    
-                        <p className="bullet-point-line ">
+                            <span className="bold">links</span> and <span className="bold"> buttons</span>
+                        </p>   
+                        <p className="bullet-point-line">
                             <span className="bold">all form elements</span>, like inputs or radio buttons
                         </p>
                         {/* <p className="padding-left-20">
@@ -585,7 +593,7 @@ export default function MostCommonBugs() {
 
                         </p> */}
                     
-                        <p className="bullet-point-line margin-top-20">
+                        <p className="bullet-point-line">
                             <span className="bold">headings</span>
                             {/* : the majority of screen reader users 
                             rely on headings to learn about the structure and content of a page */}

@@ -53,7 +53,12 @@ export default function MostCommonBugs() {
                         <strong>Web Accessibility in Mind</strong>, best known as <span> </span>
                         <a href="https://webaim.org/" target="_blank" rel="noreferrer">
                             WebAIM
-                        </a>         
+                            <span className="sr-only"> opens in a new tab</span>
+                            <span className="external-linksvg-wrap">
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                            </span>
+                        </a>        
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
                         The results have always been quite grim, and 2023 was no exception:
                     </p>
@@ -115,7 +120,13 @@ export default function MostCommonBugs() {
                             <p>For an overview of the WCAG guidelines, the article <span> </span>
                                 <a href="https://tetralogical.com/blog/2020/04/10/wcag-primer/" target="_blank" rel="noreferrer">
                                     WCAG primer by Léonie Watson 
-                                </a> is a great start.
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
+                                </a>
+                                <span> </span> is a great start.
                             </p>
                             </div>
                         </details>         
@@ -125,8 +136,14 @@ export default function MostCommonBugs() {
                         The full <span> </span>
                             <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                                 WebAIM Million
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
                             </a>
-                        <span> </span>report makes for an interesting and informative read, do check it out!
+                            <span> </span>
+                        report makes for an interesting and informative read, do check it out!
                         In the meantime, let's go over the list of the 6 most common bugs found in the 2023 study.
                     </p>
                     <div className="note">
@@ -159,36 +176,6 @@ export default function MostCommonBugs() {
                         <strong>The good news? </strong>
                         These are some of the easiest bugs to avoid or fix!
                     </p>
-                    
-
-                    {/* <div className="highlight margin-top-20 padding-left-20">
-                        <details>
-                            <summary>A quick view of the standards for accessibility</summary>
-                            <p>
-                                The World Wide Web Consortium, better know as W3C, is an international community 
-                                that develops standards for the web. 
-                            </p>
-                            <p>
-                                For standards on web accessibility, the W3C has setup the  the Web Content
-                                Accessibility Guidelines (WCAG). These guidelines are internationally recognized
-                                and are the basis for many national accessibility laws.
-                            </p>
-                            <div>
-                        <h3>Standards</h3>
-                        <p>
-                            The Web Content Accessibility Guidelines (WCAG) 
-                            are the international standards for web accessibility. 
-                            They are also the basis for many national accessibility laws.
-                        </p>
-                        <h3>Feedback from users with disabilities</h3>
-                        <p>
-                            Aren't the guidelines based on the needs of users with disabilities? 
-                            They are, but they are also playing catch-up with the ever-changing web and the new ways 
-                            people use it. What ultimately matters is the user experience. 
-                        </p>
-                    </div>
-                        </details>
-                    </div> */}
                 </div>
 
                 {/* 1. LOW CONTRAST */}
@@ -480,6 +467,11 @@ export default function MostCommonBugs() {
                                 rel="noreferrer"
                             >
                                 WebAIM's Screen Reader User Survey
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
                             </a>
                             .
                         </p>

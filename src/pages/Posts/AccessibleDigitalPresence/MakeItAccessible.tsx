@@ -8,6 +8,7 @@ import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
+import externalLinkSvg from "../../../data/svgData/externalLinkSvg.svg"
 
 const contents = [
     {
@@ -79,6 +80,11 @@ export default function MakeItAccessible() {
                         The <span> </span>      
                         <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                             2023 WebAIM Million Study
+                            <span className="sr-only"> opens in a new tab</span>
+                            <span className="external-linksvg-wrap">
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                            </span>
                         </a>
                         <span> </span>
                         of 1,000,000 home pages found 6 bugs 
@@ -107,9 +113,16 @@ export default function MakeItAccessible() {
                                 you evaluate the accessibility of your site. 
                                 These tools are designed to scan web pages and identify potential accessibility 
                                 issues based on best practices and standards established by
-                                the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">
+                                the
+                                 <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">
                                     Web Content Accessibility Guidelines
-                                </a>, known as <span className="bold">WCAG</span>.
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
+                                </a>
+                                , bettwer known as <span className="bold">WCAG</span>. 
                             </p> 
             
                             <p>
@@ -125,6 +138,11 @@ export default function MakeItAccessible() {
                                     target="_blank" rel="noreferrer"   
                                 >
                                     WebAIM's WAVE
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
                                 </a>
                             </p>
                             <p className="bullet-point-line">
@@ -132,6 +150,11 @@ export default function MakeItAccessible() {
                                     target="_blank" rel="noreferrer"
                                 >
                                     Deque's axe DevTools
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
                                 </a>
                             </p>
                             <p className="bullet-point-line">
@@ -139,6 +162,11 @@ export default function MakeItAccessible() {
                                     target="_blank" rel="noreferrer"
                                 >
                                     Google's Lighthouse
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
                                 </a>
                             </p>
                             <p>
@@ -160,7 +188,8 @@ export default function MakeItAccessible() {
                                     aspects of accessibility. 
                                 </p>
                                 <p>  
-                                    For a comprehensive accessibility audit companies must include:
+                                    When you will be working for a more complex site, a comprehensive accessibility 
+                                    audit will have to include:
                                 </p>
                                 <p className="bullet-point-line">
                                     <strong>manual testing</strong>: navigating with only the 
@@ -216,6 +245,11 @@ export default function MakeItAccessible() {
                             target="_blank" rel="noreferrer"
                         >
                             Google's Lighthouse
+                            <span className="sr-only"> opens in a new tab</span>
+                            <span className="external-linksvg-wrap">
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                            </span>
                         </a>
                         , if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
@@ -224,6 +258,11 @@ export default function MakeItAccessible() {
                         use <span> </span>
                         <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">
                             WebAIM's contrast checker
+                            <span className="sr-only"> opens in a new tab</span>
+                            <span className="external-linksvg-wrap">
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                            </span>
                         </a> 
                         .  
                     </p>
@@ -301,7 +340,12 @@ export default function MakeItAccessible() {
                                 For quick access, you can <span> </span>
                                 <a href="https://webaim.org/resources/contrastchecker/bookmarklet" target="_blank" rel="noreferrer">
                                     add the contrast checker to your Bookmarks bar
-                                </a> 
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
+                                </a>
                                 <span> </span>in one easy step!
                             </p>
                             </div>
@@ -339,7 +383,12 @@ export default function MakeItAccessible() {
                         <p style={{ marginTop: "30px"}}>
                             And to help you, WebAIM has a special contrast checker for links! <span> </span>
                             <a href="https://webaim.org/resources/linkcontrastchecker/" target="_blank" rel="noreferrer">
-                            WebAIM's link contrast checker
+                                WebAIM's link contrast checker
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
                             </a>
                         </p>        
                     </div>
@@ -445,7 +494,7 @@ export default function MakeItAccessible() {
                         the browser can not compute it here since none of the attributes that could provide one is present.
                     </p>
                     <p>
-                        Follow this link to
+                        Follow this link to <span> </span>
                         <Link to="/resources/how-accessibility-works#the-accessible-name">
                             review the accessible name
                         </Link>

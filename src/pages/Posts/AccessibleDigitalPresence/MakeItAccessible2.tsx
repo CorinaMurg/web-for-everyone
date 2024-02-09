@@ -260,7 +260,13 @@ export default function MakeItAccessible() {
                             Check out how the <span> </span>
                             <a href="https://www.nytimes.com/" target="_blank" rel="noreferrer"> 
                                 New York Times
-                            </a> <span> </span>
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
+                            </a>
+                            <span> </span>
                             has implemented the skip link. 
                         </p>
                         <p>
@@ -279,7 +285,13 @@ export default function MakeItAccessible() {
                             Now for an opposite experience, check out the <span> </span>
                             <a href="https://www.bbc.com/" target="_blank" rel="noreferrer"> 
                                 BBC
-                            </a> <span> </span>
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
+                            </a>
+                            <span> </span>
                             site.
                         </p>
                        
@@ -468,52 +480,23 @@ export default function MakeItAccessible() {
                                 Custom outline
                             </button>
                         </div>
+                        <div className="border-top">
+                            <p>
+                                <b>Question</b>: why <span className="pink-bg-white-text"><code>:focus-visible</code></span> and 
+                                not <span className="pink-bg-white-text"><code>:focus</code></span>?
+                            </p>
+                            <p> 
+                                <b>:focus-visible</b> is smarter. It applies the style to all keyboard interractions, 
+                                and only to specific mouse interractions (when it is beneficial to the user!)</p>
+                            <p>
+                                Follow this link to read more about <span> </span>
+                                <Link to="/resources/how-accessibility-works#the-accessible-name">
+                                    how <b>:focus-visible</b> and <b>:focus</b> match against each other.
+                                </Link>
+                            </p>
+                        </div>
                     </div>
                     
-                    <div className="highlight margin-top-30">
-                        <details>
-                            <summary className="white-bg">
-                                <span className="details-title">
-                                    Why <code>:focus-visible</code> and 
-                                    not <code>:focus</code>? 
-                                </span>
-                            </summary>
-                            <div className="details-content">
-                            <p className="white-bg" style={{ marginTop: '40px' }}>
-                                <strong>Browser Default Focus Styles: </strong>
-                                Browsers apply default focus styles in two scenarios:
-                            </p>
-                            <p className="bullet-point-line">
-                                when elements are focused via keyboard navigation, regardless of the type of 
-                                element (button, link, input, etc.)
-                            </p>
-                            <p className="bullet-point-line">
-                                when it is beneficial to the user, regardless of navigation method. For example,
-                                a mouse user will see the focus when clicking on an input field, but not when
-                                clicking on a link.
-                            </p>
-                            <p>
-                                This behavior is designed to aid accessibility for keyboard 
-                                users and improve user experience for all visitors, without cluttering the interface 
-                                for mouse users.
-                            </p>
-
-                            <p style={{ marginTop: '40px' }}>
-                                <strong>Custom Focus Styles: </strong>
-                                When you override the default focus styles using 
-                                the <code className="pink-bg-white-text">:focus</code> pseudo-class, your custom styles will apply to all 
-                                focus events, regardless of how they were triggered (mouse click or keyboard 
-                                navigation). 
-                            </p>
-
-                            <p style={{ marginTop: '40px' }}>
-                                <span className="bold">The Better Choice for Custom Styles: </span>
-                                <code className="pink-bg-white-text">:focus-visible</code> mimics the default browser behavior 
-                                when it comes to applying focus styles. 
-                            </p>  
-                            </div>  
-                        </details>
-                    </div>
 
                     <div className="highlight margin-top-30">
                         <h4>Example: Change in brightness to indicate focus</h4>
@@ -548,7 +531,7 @@ export default function MakeItAccessible() {
                             <br></br>           
                         </div> 
                         <br/>     
-                        <div className={styles['brightness--did-you-know']}>
+                        <div className={`${styles['brightness--did-you-know']} border-top`}>
                             <h4>
                                 <span>Did you know? <span aria-hidden="true"> 💡</span></span>
                                 <span>You can emulate vision deficiencies in DevTools! </span>

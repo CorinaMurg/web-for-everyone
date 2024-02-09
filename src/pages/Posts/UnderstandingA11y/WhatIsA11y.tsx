@@ -82,9 +82,16 @@ export default function WhatIsA11y() {
                         <li>
                             <p className="bullet-point-line">
                                 HTML (with a little help 
-                                from <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
+                                from 
+                                <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer" className="hover-pink">
                                     ARIA
-                                </a> attributes)
+                                    <span className="sr-only"> opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                    </span>
+                                </a>
+                                <span> </span> attributes)
                             </p>
                         </li>
                         <li><p className="bullet-point-line margin-top-20">CSS</p></li>
@@ -121,7 +128,7 @@ export default function WhatIsA11y() {
                                 <strong className="pink-text">2.</strong><strong> Screen Readers with Braille Displays</strong> for users with both 
                                 vision and hearing impairments. The screen reader 
                                 translates the content on the screen into a format that can be read on a 
-                                braille display. These displays are fitted braille cells that change dynamically.
+                                braille display. These displays are fitted with braille cells that change dynamically.
                             </p>
                             <p>
                                 <strong className="pink-text">3.</strong><strong> Screen Magnifiers</strong> are designed to enlarge the content on 
@@ -130,14 +137,14 @@ export default function WhatIsA11y() {
                             </p>
                             <p>
                                 <strong className="pink-text">4.</strong><strong> Speech Recognition Software</strong> allows users to interact with 
-                                their devices using voice commands. This technology is beneficial for people 
+                                their devices using voice commands. This technology helps people 
                                 with mobility issues or those who need a hands-free interraction with the web. 
                                 Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
                                 Dictation. Windows has integrated Cortana for voice commands.
                             </p>
                             <p>
                                 <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts written text into 
-                                spoken words using synthetic voices. This technology benefits users with reading 
+                                spoken words using synthetic voices. It benefits users with reading 
                                 difficulties, such as dyslexia, or those who prefer auditory learning.
                             </p>
                             
@@ -152,7 +159,7 @@ export default function WhatIsA11y() {
                                 <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
                                 a traditional mouse. 
                                 Examples include trackballs, which can be easier to manipulate than a standard 
-                                mouse; joystick mice, suitable for individuals with limited hand dexterity; 
+                                mouse; joystick mice, for people with limited hand dexterity; 
                                 and eye-tracking systems, which allow mouse control through eye movements.
                             </p>   
                             </div>
