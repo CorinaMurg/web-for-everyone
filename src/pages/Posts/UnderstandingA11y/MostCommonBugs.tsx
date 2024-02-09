@@ -63,13 +63,11 @@ export default function MostCommonBugs() {
                             <dt><span>96.3</span></dt>
                             <dd>percentage of home pages with accessibility bugs</dd>
                         </dl>
-                        <br />
-                        <dl className={styles['numbers']}>
+                        <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><span>50</span></dt>
                             <dd>average bugs per page</dd>
                         </dl>
-                        <br />
-                        <dl className={styles['numbers']}>
+                        <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><span>106,245</span></dt>
                             <dd>highest number of bugs found on a single home page</dd>
                         </dl>

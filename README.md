@@ -4,7 +4,7 @@ THURSDAY
 Highlight TOC titles in use
 1. when using the back button in the browser, it should scroll to the same section as before
 2. About
-3. .note class
+3. 
 4. example links and buttons
 6. 
 7. 

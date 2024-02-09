@@ -86,10 +86,10 @@ export default function MakeItAccessible() {
                         Let's make sure your portfolio site is not one of them!
                     </p>
                     <p>
-                            In this article, we will look at each bug in detail and learn how to fix it. 
-                            The article is designed to be a quick reference guide, but sufficient 
-                            information is provided to help you understand the underlying concepts.
-                            Links to additional resources are also provided.
+                        In this article, we will look at each bug in detail and learn how to fix it. 
+                        The article is designed to be a quick reference guide, but it provides sufficient 
+                        information, as well as links to additional resources, to help you understand the 
+                        underlying concepts.
                     </p>
 
                     {/* **************Automated testing tools****************** */}
@@ -191,13 +191,13 @@ export default function MakeItAccessible() {
                             <dt><code><span className="code-blue-color">Text smaller than 19px:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">4.5:1</span></code></dd>
                         </dl>
-                        <br />
-                        <dl className={styles['numbers']}>
+                       
+                        <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><code><span className="code-yellow-color">Text 19px or larger, and bold:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
-                        <br />
-                        <dl className={styles['numbers']}>
+                      
+                        <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><code><span className="code-purple-color">Text 24px or larger:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
@@ -256,7 +256,7 @@ export default function MakeItAccessible() {
                         </div>  
                     </div>
                             
-
+                    {/* Example: Using WebAIM's contrast checker */}
                     <div className="highlight margin-top-30">
                         <details>
                             <summary>
@@ -271,10 +271,11 @@ export default function MakeItAccessible() {
                             </p>
                             <div className="section-image">
                                 <img src="/assets/images/colorContrastInput.jpg" 
-                                    alt="A screenshot of WebAIM's color contrast checker. The foreground color entered is blue
-                                    with hex value 169AC5 and the background color is a light gray with hex value 078005. 
+                                    alt="WebAIM's color contrast checker.  
                                     The contrast ratio displayed is 3.02:1."/>
                             </div>
+                            {/* The foreground color entered is blue
+                                    with hex value 169AC5 and the background color is a light gray with hex value 078005. */}
                             <p>
                                 Notice the <strong>lightness sliders</strong> that allow you to adjust the colors and see how 
                                 the contrast ratio changes.
@@ -285,10 +286,12 @@ export default function MakeItAccessible() {
                             </p>
                             <div className="section-image">
                                 <img src="/assets/images/colorContrastAnswers.jpg" 
-                                    alt="A screenshot of WebAIM's color contrast checker results. Normal Text fails both 
-                                    standards WCAG AA and AAA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
-                                    and User Interface Components passes WCAG AA."/>
+                                    alt="WebAIM's color contrast checker results."/>
                             </div>
+                            {/* Normal Text fails both 
+                                    standards WCAG AA and AAA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
+                                    and User Interface Components passes WCAG AA. */}
+
                             <p className="white-bg">
                                 Notice how a ratio of <span className="pink-bg-white-text">3.14:1</span> fails 
                                 WCAG AA for normal text, but passes for large text.
