@@ -166,7 +166,7 @@ export default function MakeItAccessible() {
                         Do make sure each page has a unique title!
                     </h4>
                     
-                    <p>
+                    <p className="white-bg">
                         It gets more complicated with a Single Page Application (SPA), but each framework has specific 
                         features or libraries that allow for updating the <code>title</code> for each page.
                         Research, choose a method, and implement it. (This is the one case where you might need to use JavaScript!)
@@ -179,36 +179,38 @@ export default function MakeItAccessible() {
                                     Example: React Custom Hook to Update the Title
                                 </span>
                             </summary>
-                            <div className="code margin-top-50">
-                                <code>
-                                    import &#123; <span className="code-yellow-color">useEffect</span> &#125; from 'react';
-                                </code>
+                            <div className="details-content">
+                                <div className="code margin-top-50">
+                                    <code>
+                                        import &#123; <span className="code-yellow-color">useEffect</span> &#125; from 'react';
+                                    </code>
+                                    <br/>
+                                    <code>
+                                        function <span className="code-blue-color">useDocTitle</span>
+                                        (<span className="code-pink-color">title</span>) &#123;
+                                    </code>
+                                    <code className="padding-left-30"><span className="code-yellow-color">useEffect</span>(() =&gt; &#123;</code>
+                                    <code className="padding-left-60">document.title = title;</code>
+                                    <code className="padding-left-30">&#125;, [<span className="code-pink-color">title</span>]);</code>
+                                    <code>&#125;;</code>
+                                </div>
                                 <br/>
-                                <code>
-                                    function <span className="code-blue-color">useDocTitle</span>
-                                    (<span className="code-pink-color">title</span>) &#123;
-                                </code>
-                                <code className="padding-left-30"><span className="code-yellow-color">useEffect</span>(() =&gt; &#123;</code>
-                                <code className="padding-left-60">document.title = title;</code>
-                                <code className="padding-left-30">&#125;, [<span className="code-pink-color">title</span>]);</code>
-                                <code>&#125;;</code>
+                                <p>Then import the hook and use it in your component:</p>
+                                <div className="code">
+                                    <code>
+                                        import <span className="code-blue-color">useDocTitle</span> from './useDocTitle';
+                                    </code>
+                                    <br/>
+                                    <code>
+                                        function <span className="code-yellow-color">MyPage</span>() &#123;
+                                    </code>
+                                    <code className="padding-left-30">
+                                        <span className="code-blue-color">useDocTitle</span>("Web for Everyone");
+                                    </code>
+                                    <code>&#125;</code>
+                                </div>
                             </div>
-                            <br/>
-                            <p>Then import the hook and use it in your component:</p>
-                            <div className="code">
-                                <code>
-                                    import <span className="code-blue-color">useDocTitle</span> from './useDocTitle';
-                                </code>
-                                <br/>
-                                <code>
-                                    function <span className="code-yellow-color">MyPage</span>() &#123;
-                                </code>
-                                <code className="padding-left-30">
-                                    <span className="code-blue-color">useDocTitle</span>("Web for Everyone");
-                                </code>
-                                <code>&#125;</code>
-                            </div>
-                        </details>
+                        </details>       
                     </div>
                 </div>
 
@@ -296,6 +298,7 @@ export default function MakeItAccessible() {
                                     Example: Code for a Skip Link
                                 </span>
                             </summary>
+                            <div className="details-content">
                             <div className="code margin-top-30">
                                 <code><span className="code-blue-color">.skip-to-content</span> &#123;</code>
                                 <code className="padding-left-30">background-color: orange;</code>
@@ -320,6 +323,7 @@ export default function MakeItAccessible() {
                                     <span className="code-pink-color">transform</span>: translateY(0%);
                                 </code>
                                 <code>&#125;</code>
+                            </div>
                             </div>
                         </details>
                     </div>
@@ -474,6 +478,7 @@ export default function MakeItAccessible() {
                                     not <code>:focus</code>? 
                                 </span>
                             </summary>
+                            <div className="details-content">
                             <p className="white-bg" style={{ marginTop: '40px' }}>
                                 <strong>Browser Default Focus Styles: </strong>
                                 Browsers apply default focus styles in two scenarios:
@@ -505,7 +510,8 @@ export default function MakeItAccessible() {
                                 <span className="bold">The Better Choice for Custom Styles: </span>
                                 <code className="pink-bg-white-text">:focus-visible</code> mimics the default browser behavior 
                                 when it comes to applying focus styles. 
-                            </p>    
+                            </p>  
+                            </div>  
                         </details>
                     </div>
 

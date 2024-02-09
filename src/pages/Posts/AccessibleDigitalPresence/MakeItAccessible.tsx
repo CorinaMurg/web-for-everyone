@@ -101,6 +101,7 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <br/>
+                            <div className="details-content">
                             <p>
                                 Automated accessibility tools are browser extensions that can help
                                 you evaluate the accessibility of your site. 
@@ -171,6 +172,7 @@ export default function MakeItAccessible() {
 
                                 </p>
                             </div>
+                            </div>
                         </details>
                     </div>
                 </div>
@@ -239,15 +241,21 @@ export default function MakeItAccessible() {
                         you will get a <strong>pass</strong> or <strong>fail</strong> result for 
                         the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
                     </p>   
-                    <p className="margin-top-20">
-                        <strong>Note</strong>: The <strong>4.5:1</strong> (for smaller text) and <span> </span>
-                        <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
-                    </p>
-                    <p>
-                        The <strong>AAA</strong> level requires
-                        a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
-                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
-                    </p>          
+                    <div className="note margin-top-30">
+                        <p><strong>Note</strong>:</p>
+                        <div>
+                            <p>
+                                The <strong>4.5:1</strong> (for smaller text) and <span> </span>
+                                <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
+                            </p>
+                            <p className="margin-top-20">
+                                The <strong>AAA</strong> level requires
+                                a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
+                                Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
+                            </p>  
+                        </div>  
+                    </div>
+                            
 
                     <div className="highlight margin-top-30">
                         <details>
@@ -257,6 +265,7 @@ export default function MakeItAccessible() {
                                 </span>
                             </summary>
                             <br></br>
+                            <div className="details-content">
                             <p className="margin-top-30">
                                 <span className="pink-num">1. </span>Enter the foreground and background colors:
                             </p>
@@ -292,12 +301,12 @@ export default function MakeItAccessible() {
                                 </a> 
                                 <span> </span>in one easy step!
                             </p>
-                           
+                            </div>
                         </details>
                     </div>
                     {/* *****COLOR CONTRAST FOR LINKS***** */}
                     <div className="highlight">
-                        <h4 className={styles['two-line-heading']}>
+                        <h4 className="two-line-heading">
                             <span>Did you know?</span>
                             <span>You have to check the contrast ratio for links too!<span aria-hidden="true"> 💡</span></span> 
                         </h4>
@@ -429,40 +438,17 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         The problem: <strong>the link has no accessible name</strong>!
-                        The browser can not compute it since none of the attributes that could provide one is present.
+                        Assitive technologies recognize an interactive element by its accessible name, but
+                        the browser can not compute it here since none of the attributes that could provide one is present.
                     </p>
                     <p>
-                        Click below to review the accessible name, or continue reading for
-                        ways to fix the links to social media profiles.
+                        Follow this link to
+                        <Link to="/resources/how-accessibility-works#the-accessible-name">
+                            review the accessible name
+                        </Link>
+                        , or continue reading for a list of solutions.
                     </p>
 
-                    <div className="highlight">
-                        <details>
-                            <summary>
-                                <span className="details-title">
-                                    Accessible Name Review
-                                </span>
-                            </summary>
-                            <br/>
-                            <p>
-                                Assitive technologies recognize an interactive element by its accessible name. 
-                                One of the following must be present in order for the browser to compute it:
-                            </p>
-                            <div className="padding-left-20">
-                                <p className="bullet-point-line"><strong>visible text</strong></p>
-                                <p className="bullet-point-line"><strong>alt text</strong></p>
-                                <p className="bullet-point-line"><strong>aria-label</strong></p>
-                                <p className="bullet-point-line"><strong>aria-labelledby</strong></p>
-                                <p className="bullet-point-line"><strong>title</strong></p>
-                            </div>
-                            <p>
-                                <Link to="/resources/how-accessibility-works#the-accessible-name">
-                                    Learn more about computing the accessible name
-                                </Link>
-                            </p>
-                        </details>
-                    </div>
-                    <br/>
                     <h3>Ways to fix the links to social media profiles</h3>
                     <p className="white-bg">
                         <span className="pink-num" aria-hidden="true">1. </span> 
@@ -481,13 +467,15 @@ export default function MakeItAccessible() {
                         purpose of the link.
                     </p>
                     
-                    <p style={{ marginTop: '40px' }}>
-                        <strong>Note: </strong> 
-                        This is not an exhaustive list of techniques you could use to make your social media
-                        links accessible. The ones shared here are the most commonly used and you can employ them
-                        anytime you use an icon instead of visible text. Plus, they also work with buttons.
-                    </p>
-                    <p className="white-bg">
+                    <div className="note" style={{ marginTop: '20px' }}>
+                        <p><strong>Note: </strong></p>
+                        <p>
+                            This is not an exhaustive list of techniques you could use to make your social media
+                            links accessible. The ones shared here are the most commonly used and you can employ them
+                            anytime you use an icon instead of visible text. Plus, they also work with buttons.
+                        </p>  
+                    </div>
+                    <p className="white-bg margin-top-20">
                         <strong>What about the <code>alt</code> attribute?</strong> An icon displayed with an
                         <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
                         like an <code>&lt;img&gt;</code> tag would. 

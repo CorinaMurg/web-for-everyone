@@ -100,10 +100,11 @@ export default function WhatIsA11y() {
                         people with disabilities use to access the web.
                     </p>
 
-                    {/* WHAT ARE ASSISTIVE TECH */}
+                    {/* *********WHAT ARE ASSISTIVE TECH************* */}
                     <div className="highlight margin-top-20">
                         <details>
                             <summary>What are assistive technologies?</summary>
+                            <div className="details-content">
                             <p>
                                 Assistive technologies are software or hardware that help people with disabilities 
                                 interact with the web.  
@@ -154,6 +155,7 @@ export default function WhatIsA11y() {
                                 mouse; joystick mice, suitable for individuals with limited hand dexterity; 
                                 and eye-tracking systems, which allow mouse control through eye movements.
                             </p>   
+                            </div>
                         </details>
                     </div>
 

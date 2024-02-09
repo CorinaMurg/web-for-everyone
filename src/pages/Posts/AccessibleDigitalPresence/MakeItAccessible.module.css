@@ -34,14 +34,6 @@
     text-align: right;
 }
 
-.two-line-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
 /* 
 
 .code--contrast code:nth-of-type(2) {

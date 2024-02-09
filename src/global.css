@@ -208,6 +208,29 @@ a:focus-visible {
     padding: 1px 3px;
     border-radius: 2px;
 }
+
+.details-content {
+    max-height: 250px; 
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.details-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.details-content::-webkit-scrollbar-track {
+    background: var(--cream-color);
+}
+
+.details-content::-webkit-scrollbar-thumb {
+    background: var(--yellowFaded-color);
+}
+
+.details-content::-webkit-scrollbar-thumb:hover {
+background: var(--pinkBright-color); 
+}
+  
 .exclamation {
     color: var(--pinkBright-color);
     font-size: 1.2rem;
@@ -549,6 +572,14 @@ summary::marker {
     color: var(--pinkBright-color);
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.two-line-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
 ul {

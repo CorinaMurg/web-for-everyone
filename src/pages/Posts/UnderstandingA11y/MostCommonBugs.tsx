@@ -87,6 +87,7 @@ export default function MostCommonBugs() {
                                 How do we decide what constitutes an accessibility bug?
                             </summary>
                             <br />
+                            <div className="details-content">
                             <p>
                                 <strong>Standards</strong> and <strong>best practices</strong> informed by user experience!
                             </p>
@@ -118,6 +119,7 @@ export default function MostCommonBugs() {
                                     WCAG primer by Léonie Watson 
                                 </a> is a great start.
                             </p>
+                            </div>
                         </details>         
                     </div>
                     
