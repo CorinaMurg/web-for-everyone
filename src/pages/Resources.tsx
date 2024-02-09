@@ -53,7 +53,7 @@ export default function Accessibility() {
                         <h2 className="blue-heading heading">
                             {heading}
                         </h2>     
-                        <div className={`update-margin ${styles['section-content']}`}>
+                        <div className={`${styles['section-content']}`}>
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
                                 <article key={index} className={styles['post']}>
                                     <h3 id={`${post.id}`}>
