@@ -116,16 +116,9 @@ body {
       max-width: 1440px;
       margin: 0 auto;
     }
-    nav {
+    header {
         max-width: 1441px;
-        margin: 0 auto;
     } 
-}
-
-@media screen and (max-width: 450px) {
-    body {
-        font-size: 0.9rem;
-    }
 }
 
 body::-webkit-scrollbar {
