@@ -71,7 +71,7 @@ a:focus-visible {
     gap: 30px;
     font-size: 0.9rem;
     font-weight: 500;
-    width: 70%;
+    width: 39rem;
     margin-left: var(--main-margin);
 }
 
@@ -277,8 +277,15 @@ background: var(--pinkBright-color);
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    /* font-size: 3.5rem; */
     font-weight: 600;
+}
+
+@media screen and (max-width: 1050px){
+    h1 {
+        font-size: 2.5rem;
+    
+    }
 }
 
 h1,

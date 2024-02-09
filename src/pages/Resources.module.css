@@ -33,6 +33,10 @@
     color: inherit;
 }
 
+.resources h1 span {
+    align-self: flex-start;
+}
+
 .resources-content {
     grid-row: 2 / 3;
     grid-column: 1 / 2;

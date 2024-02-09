@@ -24,7 +24,8 @@ export default function Accessibility() {
     return (
         <div className={`${styles.resources} no-back-links-container`}>
 
-            <h1>Resources to grow 
+            <h1>
+                Resources to grow 
                 <span>your <span className="yellow-bg">accessibility skills</span></span>
             </h1>
             <div className={styles['resources--table-contents']}>
@@ -49,7 +50,7 @@ export default function Accessibility() {
             <div className={styles['resources-content']}>
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
                     <div key={index} className={`${styles['section-container']} scroll-target`} id={`${label}`}>
-                        <h2 className="blue-heading heading update-margin ">
+                        <h2 className="blue-heading heading">
                             {heading}
                         </h2>     
                         <div className={`update-margin ${styles['section-content']}`}>

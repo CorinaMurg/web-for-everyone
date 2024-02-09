@@ -2,16 +2,19 @@
 
 THURSDAY
 
-1. test: icon with and wout aria-hidden
+1. test: icon with and w/out aria-hidden
 2. description or alt to images re: color contrast / Explain: aria-hidden for icon
 3. 
 4. example links and buttons
-
+5. Checkout h1 values
+6. TOC move at the top for smaller screens
+7. Add # for headings
+8. Download fonts
+9. Wrap summaries in links
 
 
 FRIDAY
 5. Responsive
-6. External links
 6. when using the back button in the browser, it should scroll to the same section as before
 7. Highlight TOC titles in use
 8. Responsive

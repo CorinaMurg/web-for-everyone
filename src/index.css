@@ -103,6 +103,9 @@ body {
     color: var(--text-dark-color);
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     -ms-overflow-style: none;
     position: relative;
     scrollbar-width: none;

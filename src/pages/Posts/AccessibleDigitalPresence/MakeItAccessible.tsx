@@ -73,7 +73,7 @@ export default function MakeItAccessible() {
                     <p>
                         Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
                         challenging as the functionality of a website increases. However, in a few 
-                        simple steps you can ensure that your site is free of the most common,
+                        steps you can make sure that your site is free of the most common,
                         easy-to-fix accessibility issues. 
                     </p>
                     <p>
@@ -87,8 +87,8 @@ export default function MakeItAccessible() {
                             </span>
                         </a>
                         <span> </span>
-                        of 1,000,000 home pages found 6 bugs 
-                        that are present on 96% of the sites.
+                        of 1,000,000 home pages found a specific group of 6 bugs 
+                        that were present on 96% of the pages.
                         Let's make sure your portfolio site is not one of them!
                     </p>
                     <p>
@@ -594,7 +594,7 @@ export default function MakeItAccessible() {
                         <code className="padding-left-30">Enter your full name: </code>
                         <code className="padding-left-30">
                             <span className="code-yellow-color">&lt;input</span> id="name" type="text"  
-                            <span className="code-yellow-color">&gt;</span>
+                            <span className="code-yellow-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/label&gt;</span></code>
                     </div>
