@@ -48,11 +48,15 @@ a:focus-visible {
     margin-left: var(--main-margin);
     font-size: 3rem;
     margin-top: 30px;
+    font-weight: 600;
 }
 
-/* .article-container h3 {
-    margin-top: 50px;
-} */
+@media screen and (max-width: 1050px){
+    .article-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
 .article-container .subtitle {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
@@ -276,17 +280,6 @@ background: var(--pinkBright-color);
     border-radius: 3px;
 }
 
-h1 {
-    /* font-size: 3.5rem; */
-    font-weight: 600;
-}
-
-@media screen and (max-width: 1050px){
-    h1 {
-        font-size: 2.5rem;
-    
-    }
-}
 
 h1,
 h2,
