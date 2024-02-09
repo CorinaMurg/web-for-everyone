@@ -180,7 +180,7 @@ export default function MakeItAccessible() {
                 {/* ****************COLOR CONTRAST************************* */}
                 <div className={`section ${styles['contrast']} scroll-target`} id="color-contrast">
                     <div className="section-heading" >
-                        <span className="section-number">01</span>
+                        <span aria-hidden="true" className="section-number">01</span>
                         <h2>
                             Color Contrast
                         </h2>
@@ -348,7 +348,7 @@ export default function MakeItAccessible() {
                 {/* ****************ALT************************* */}
                 <div className="section alt scroll-target" id="the-alt-attribute-for-images">
                     <div className="section-heading">
-                        <span className="section-number">02</span>
+                        <span aria-hidden="true" className="section-number">02</span>
                         <h2>The "alt" Attribute for Images</h2>
                     </div>
 
@@ -401,7 +401,7 @@ export default function MakeItAccessible() {
 
                 {/* ****************LINKS************************* */}
                 <div className="section links scroll-target" id="links-with-discernable-text">
-                    <div className="section-heading">
+                    <div aria-hidden="true" className="section-heading">
                         <span className="section-number">03</span>
                         <h2>Links with Discernable Text</h2>
                     </div>
@@ -493,7 +493,7 @@ export default function MakeItAccessible() {
                 {/* ****************BUTTONS************************* */}
                 <div className="section buttons scroll-target" id="buttons-with-discernable-text">
                     <div className="section-heading">
-                        <span className="section-number">04</span>
+                        <span aria-hidden="true" className="section-number">04</span>
                         <h2>Buttons with Discernable Text</h2>
                     </div>
 
@@ -536,7 +536,7 @@ export default function MakeItAccessible() {
                 {/* ****************LABELS************************* */}
                 <div className="section labels scroll-target" id="labels-for-inputs">
                     <div className="section-heading">
-                        <span className="section-number">05</span>
+                        <span aria-hidden="true" className="section-number">05</span>
                         <h2>Labels for Inputs</h2>
                     </div>
 
@@ -601,7 +601,7 @@ export default function MakeItAccessible() {
                 {/* ****************LANG************************* */}
                 <div className="section lang scroll-target" id="the-language-attribute">
                     <div className="section-heading">
-                        <span className="section-number">06</span>
+                        <span aria-hidden="true" className="section-number">06</span>
                         <h2>The Language Attribute</h2>
                     </div>
 

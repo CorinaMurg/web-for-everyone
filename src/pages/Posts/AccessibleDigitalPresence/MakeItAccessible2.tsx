@@ -651,9 +651,7 @@ export default function MakeItAccessible() {
                         </p>
                     </div>
                 </div>
-
-
-                    
+            
                 {/* ****************CONCLUSION************************* */}
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>

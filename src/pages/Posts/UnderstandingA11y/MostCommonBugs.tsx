@@ -194,7 +194,7 @@ export default function MostCommonBugs() {
                 {/* 1. LOW CONTRAST */}
                 <div className="section low-contrast scroll-target" id="low-contrast-text">
                     <div className="section-heading">
-                        <span className="section-number">01</span>
+                        <span aria-hidden="true" className="section-number">01</span>
                         <h2>Low Contrast Text</h2>
                     </div>
                     <p className="white-bg">
@@ -223,7 +223,7 @@ export default function MostCommonBugs() {
                 {/* 2. ALT TEXT */}
                 <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
                     <div className="section-heading">
-                        <span className="section-number">02</span>
+                        <span aria-hidden="true" className="section-number">02</span>
                         <h2>Missing <code>alt</code> Text for Images</h2>
                     </div>
                     <p className="white-bg">
@@ -257,7 +257,7 @@ export default function MostCommonBugs() {
                 {/* 3. LINKS */}
                 <div className="section empty-links scroll-target" id="empty-links">
                     <div className="section-heading">
-                        <span className="section-number">03</span>
+                        <span aria-hidden="true" className="section-number">03</span>
                         <h2>Empty Links</h2>
                     </div>
                     <p>
@@ -298,7 +298,7 @@ export default function MostCommonBugs() {
                 {/* 4. BUTTONS */}
                 <div className="section empty-buttons scroll-target" id="empty-buttons">
                     <div className="section-heading">
-                        <span className="section-number">04</span>
+                        <span aria-hidden="true" className="section-number">04</span>
                         <h2>Empty Buttons</h2>
                     </div>
                     <p>
@@ -358,7 +358,7 @@ export default function MostCommonBugs() {
                 {/* 5. INPUT LABELS */}
                 <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
                     <div className="section-heading">
-                        <span className="section-number">05</span>
+                        <span aria-hidden="true" className="section-number">05</span>
                         <h2>Missing Input Labels</h2>
                     </div>
                     <p>
@@ -410,7 +410,7 @@ export default function MostCommonBugs() {
                 {/* 6. LANG */}
                 <div className="section missing-lang scroll-target" id="missing-document-language">
                     <div className="section-heading">
-                        <span className="section-number">06</span>
+                        <span aria-hidden="true" className="section-number">06</span>
                         <h2>Missing Document Language</h2>
                     </div>
                     <p>
