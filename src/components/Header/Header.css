@@ -114,3 +114,22 @@ nav ul {
     }
 
 }
+
+@media (max-width: 360px) {
+    header {
+        align-items:baseline;
+        line-height: 1;
+        padding-bottom: 40px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-vertical {
+        display: none !important;
+    }
+    
+}
