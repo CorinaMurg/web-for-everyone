@@ -50,10 +50,16 @@
     padding-inline-start: 0;
 }
 
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     .table-contents {
-        display: none;
+        position: relative;
+        height: auto;
+        top: 0;
+        /* margin-left: var(--main-margin); */
+        margin-bottom: 50px;
     }
-    
+
+    .table-contents h2 {
+        margin-bottom: 0;
+    }
 }

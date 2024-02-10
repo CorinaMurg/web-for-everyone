@@ -54,7 +54,7 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your Digital Presence: Make It Accessible"
+                secondLink="Your Digital Presence"
                 href="/resources#accessible-digital-presence" 
             />
             
@@ -214,7 +214,7 @@ export default function MakeItAccessible() {
                             Color Contrast
                         </h2>
                     </div>
-
+                    
                     <div className="code">
                         <dl className={styles['numbers']}>
                             <dt><code><span className="code-blue-color">Text smaller than 19px:</span></code></dt>
@@ -426,7 +426,6 @@ export default function MakeItAccessible() {
                             <span className="yellow-bg-dark-text">empty</span>, or <span className="yellow-bg-dark-text">descriptive</span>?
                             <span aria-hidden="true"> 🤔</span>
                         </h4>
-                        <br/>
                         <p className="white-bg">
                             <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
                             read the source file name. When you have an image, the <code>alt</code> attribute is required!
@@ -439,7 +438,6 @@ export default function MakeItAccessible() {
                             <strong><span className="pink-text">Descriptive</span> alt</strong>: add informative text if the image
                             is important for understanding your content.
                         </p> 
-                        <br/>
                         <p className="white-bg">
                             <strong>Remember</strong>:
                             A missing <code>alt</code> attribute is NOT the same 

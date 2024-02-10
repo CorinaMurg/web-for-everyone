@@ -230,13 +230,12 @@ export default function MostCommonBugs() {
                         
                         <p className="white-bg">
                             <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
-                            read the source file name. Add a descriptive <code>alt</code> value if the image
-                            is important for understanding your content.
+                            read the source file name. When you have an image, the <code>alt</code> attribute is required!
                         </p>
                         <p>
                             <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
-                        </p>
+                        </p>  
                     
                     </div>
                 </div>

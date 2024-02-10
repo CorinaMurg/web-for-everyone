@@ -39,8 +39,8 @@ export default function Footer() {
                     <span>&#169;</span><span>Web for Everyone 2023</span>
                 </div>
                 
-                <span className="vertical-bar">|</span> 
-                <span className="built-span">Built with React by Corina Murg</span>
+                <span className="vertical-bar" style={{ fontWeight: "500"}}> · </span> 
+                <span className="built-span"><span> </span>made with ❤️ and React by Corina Murg</span>
             </div>
         </footer>
     )

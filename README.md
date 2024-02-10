@@ -1,5 +1,12 @@
 <span className="pink-text bold">&#x2714; </span> 
 
+FIX
+color contrast code
+warning class on small screen 
+make2 keyboard navigation code
+make the 3 links buttons, add code to change focus cue on touch devices
+https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
+
 THURSDAY
 
 1. test: icon with and w/out aria-hidden
@@ -13,7 +20,7 @@ THURSDAY
 9. Wrap summaries in links
 10. Add LIKE buttons
 11. Add scroll to top???
-
+12. Langauge: website vs app????
 
 FRIDAY
 5. Responsive

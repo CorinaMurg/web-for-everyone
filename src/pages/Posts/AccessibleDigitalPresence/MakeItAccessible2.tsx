@@ -52,7 +52,7 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your Digital Presence: Make It Accessible" 
+                secondLink="Your Digital Presence" 
                 href="/resources#accessible-digital-presence" 
             />
             

@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     margin-top: 80px;
-    margin-left: var(--main-margin);
+    /* margin-left: var(--main-margin); */
 }
 
 .back-links a {
