@@ -43,10 +43,6 @@ footer .logo-vertical {
     gap: 16px;
 }
 
-/* .footer-left {
-    margin-left: 24px;
-} */
-
 .footer-bottom {
     display: flex;
     align-items: center;
@@ -110,17 +106,6 @@ footer li {
     text-transform: uppercase;
 }
 
-
-
-
-/* 
-.built-span {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-} */
-
-
 @media (min-width: 801px) and (max-width: 1200px) {
     footer {
         padding: 2rem calc(var(--navbar-margin));
@@ -182,17 +167,6 @@ footer li {
     .footer-right {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .logo-vertical {
-        display: none !important;
-    }
-    
+    }    
 }
     
