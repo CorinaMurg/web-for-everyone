@@ -9,6 +9,8 @@
     color: inherit;
 }
 
+
+
 .resources a {
     text-decoration: none;
     color: var(--text-dark-color);
@@ -112,33 +114,69 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .resources {
-        grid-template-columns: 1.6fr 1fr; 
+        grid-template-columns: 1.8fr 1fr; 
         gap: 10px; 
     }
-    
+    .section-content {
+        width: 95%;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
+    .resources h1 {
+        font-size: 2.6rem; 
+    }
+}
+
+@media screen and (max-width: 900px) {
     .resources {
         display: flex;
         flex-direction: column;
     }
-    .right {
-        margin-inline: var(--navbar-margin);
-    }
-}
 
-@media screen and (max-width: 450px) {
-    .right {
-        margin-inline: calc(0.5*var(--navbar-margin));
+    .resources h1 {
+        font-size: 3rem;
+        margin-top: 20px;
     }
-}
-
-@media (max-width: 670px) {
-    .resources--intro .subheading-div {
+    .resources--table-contents {
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+    .section-content {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .resources h1 {
+        font-size: 2.3rem;
+    }
+    .section-content {
+        width: 98%;
+    }
+    .resources--table-contents h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .resources h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .resources h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .resources h1 {
+        font-size: 1.4rem;
     }
 }
 
