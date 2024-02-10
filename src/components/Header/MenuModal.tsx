@@ -38,7 +38,7 @@ export default function MenuModal ({
                   borderRadius: '0',
                   padding: '30px',
                   border: 'none',
-                  background: 'white',
+                  background: '#fbf6ea',
                   width: '100%',
                   height: '100%',   
                 },
