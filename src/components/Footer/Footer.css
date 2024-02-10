@@ -63,8 +63,14 @@ footer a {
 }
 
 footer a:focus-visible {
-    outline: 3px dashed var(--cream-color);
-    outline-offset: 2px;
+    outline: 2px dashed var(--cream-color);
+    outline-offset: 4px;
+}
+
+footer .logo:hover {
+    font-weight: 500;
+    outline: 2px dashed var(--cream-color);
+    outline-offset: 4px;
 }
 
 footer a:hover {
@@ -101,9 +107,10 @@ footer li {
 
 .footer-heading {
     font-size: 1rem;
-    color: var(--code-pink-color);
+    color: var(--pinkBright-color);
     font-weight: 300;
     text-transform: uppercase;
+    padding-top: 3px;
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
