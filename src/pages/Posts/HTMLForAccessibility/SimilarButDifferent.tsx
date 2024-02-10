@@ -252,7 +252,7 @@ export default function SimilarButDifferent() {
 
                     <p>
                         <code className="pink-bg-white-text">:focus-visible</code> mimics the default browser behavior 
-                        when it comes to applying focus styles. It applies to elements reached via keyboard
+                        when it comes to applying focus styles. It applies to all elements reached via keyboard
                         and to certain elements reached via mouse click. So smart!
                     </p>          
                 </div>

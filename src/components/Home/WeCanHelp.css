@@ -1,5 +1,7 @@
 
 .we-can-help {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
     background-color: var(--text-dark-color);
     color: var(--text-light-color);
     padding: 10px 20px;
@@ -11,6 +13,14 @@
 @media screen and (max-width: 900px) {
     .we-can-help {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .we-can-help {
+        display: block;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
     }
 }
 

@@ -45,7 +45,7 @@ header .logo:hover {
     color: var(--text-dark-color);
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     .header-left span {
         font-size: 0.8rem;
     }  
@@ -55,7 +55,7 @@ header .logo:hover {
     .header-left span {
         display: none;
     }  
-}
+} */
 
 .skip-to-content {
     position: absolute;

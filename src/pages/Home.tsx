@@ -20,15 +20,15 @@ export default function Home() {
                     </div> */}
                     <img src="/assets/images/heroYellowImage.jpg" alt=""/>
                 </div>
-                <div className={styles['hero--container']}>
+                <div className={styles['hero--text']}>
                     <h1 id="lets-make-it-accessible" 
-                        className={styles['hero--container--heading']}
+                        className={styles['hero--text--heading']}
                     >
                         <span>Let's Make It</span>
                         <span>Accessible!</span>
                         {/* Let's Make It Accessible! */}
                     </h1>
-                    <div className={styles['hero--container--body']}>
+                    <div className={styles['hero--text--body']}>
                         <p>
                             You're adding the finishing touches to your portfolio site.
                             Will it be ready to welcome all users, including those with disabilities? 
