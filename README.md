@@ -6,11 +6,13 @@ THURSDAY
 2. description or alt to images re: color contrast / Explain: aria-hidden for icon
 3. 
 4. example links and buttons
-5. Checkout h1 values
+5. 
 6. TOC move at the top for smaller screens
 7. Add # for headings
 8. Download fonts
 9. Wrap summaries in links
+10. Add LIKE buttons
+11. Add scroll to top???
 
 
 FRIDAY

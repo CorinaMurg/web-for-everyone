@@ -4,10 +4,10 @@ import WELogo from '../WELogo/WELogo';
 import { weCanHelpData } from '../../data/homeData/weCanHelpData';
 import './WeCanHelp.css';
 
-export default function HomeIntro() {
+export default function WeCanHelp() {
 
     return (
-        <section aria-labelledby="how-can-we-help" className="we-can-help">
+        <aside aria-labelledby="how-can-we-help" className="we-can-help">
             <h2 id="how-can-we-help"
                 aria-label="How can web for everyone help?"
             >
@@ -26,6 +26,6 @@ export default function HomeIntro() {
                 ))}
             </ul>
             
-        </section>
+        </aside>
     )
 }
