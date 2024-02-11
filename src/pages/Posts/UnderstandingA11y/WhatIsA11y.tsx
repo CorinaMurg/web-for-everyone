@@ -320,8 +320,8 @@ export default function WhatIsA11y() {
                         
                     
                     <p> 
-                        <strong>Everyone deserves a high level of freedom and functionality when interacting with
-                        the web</strong>.
+                        <span className="yellow-bg">Everyone</span> deserves a high level of freedom and functionality when interacting with
+                        the web.
                     </p>
                       
                 </div>
