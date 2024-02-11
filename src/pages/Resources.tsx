@@ -60,31 +60,31 @@ export default function Accessibility() {
                         </h2>     
                         <div className={`${styles['section-content']}`}>
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
-                                <article key={index} className={styles['post']}>
+                                <article key={index} className={styles.article}>
                                     <h3 id={`${post.id}`}>
                                         {post.href ? (
                                             <a  
                                                 href={post.href} 
                                                 aria-label={post.ariaLabel} 
                                                 target="_blank" rel="noopener noreferrer"
-                                                className="hover-underline"
+                                                className={styles['article--link']}
                                             >
                                                 {post.title}
                                             </a>
                                         ) : post.to ? (
                                             <Link 
                                                 to={post.to} 
-                                                className="hover-underline"
+                                                className={styles['article--link']}
                                                 onClick={scrollToTop}
                                             >
                                                 {post.title}
                                             </Link>
                                         ) : null}
                                     </h3>
-                                    <p className={styles['post--subtitle']}>{post.subtitle}</p>
-                                    <div className={styles['post--description']}>
+                                    <p className={styles['article--subtitle']}>{post.subtitle}</p>
+                                    <div className={styles['article--description']}>
                                         <p>{post.description}</p>          
-                                        <p className={styles['post--author']}>{post.author}</p>
+                                        <p className={styles['article--author']}><strong>{post.author}</strong></p>
                                     </div>
                                     
                                 </article>

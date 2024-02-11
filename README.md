@@ -35,7 +35,7 @@ FRIDAY
 
 SUNDAY
 1. Wrap summaries in links
-2. Highlight TOC titles in use
+2. 
 3. when using the back button in the browser, it should scroll to the same section as before
 7. what is A11y: display:none are also ignored
 
