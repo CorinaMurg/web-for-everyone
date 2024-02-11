@@ -1,8 +1,8 @@
 import React from "react"
-import { useEffect } from "react"
-import useScrollToSection from "../hooks/useScrollToSection"
 import { Link } from "react-router-dom"
+import useScrollToSection from "../hooks/useScrollToSection"
 import useDocTitle from "../hooks/useDocTitle"
+import useHighlightTOC from "../hooks/useHighlightTOC"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
 import scrollToTop from "../utils/scrollToTop"
 import styles from './Resources.module.css'
@@ -11,7 +11,7 @@ import "../global.css"
 export default function Accessibility() {  
     useDocTitle("Resources | Web for Everyone");
     useScrollToSection();
-
+    const { activeId } = useHighlightTOC();
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
         "accessible-digital-presence": "Your Digital Presence",
@@ -42,7 +42,7 @@ export default function Accessibility() {
                         {Object.entries(sectionTitles).map(([label, heading], index) => (
                             <li key={index} className={styles['resources--table-contents--list--item']}>
                                 <a href={`#${label}`} 
-                                    className="hover-pink"
+                                    className={`hover-pink ${label === activeId ? styles.active : ''}`}
                                 >
                                     <code>{heading}</code>
                                 </a>
@@ -92,9 +92,7 @@ export default function Accessibility() {
                         </div>
                     </div>
                 ))}
-            </div>
-            {/* <img src="/assets/images/blueBlue.jpg" alt=""/> */}
-            
+            </div>       
         </div>
     )
 }

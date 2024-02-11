@@ -113,6 +113,12 @@
     margin-top: 20px;
 }
 
+.resources--table-contents--list--item a.active {
+    color: var(--pinkBright-color);
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1050px) {
     .resources {
         grid-template-columns: 1.8fr 1fr; 

@@ -25,6 +25,7 @@ FRIDAY
 
 9. Similar but Different
 10. More links to Resources
+11. Fix Contact WE
 10. Logo
 11. About 
 11. LinkedIn page WE
