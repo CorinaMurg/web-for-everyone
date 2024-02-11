@@ -367,7 +367,7 @@ export default function WhatIsA11y() {
                     <p className="margin-top-30">
                         When we actively embrace accessibility and make it essential
                         to our web development learning and work, we can make a difference.
-                        Together, we can build a web that's open to <span className="yellow-bg">everyone</span>!
+                        Let's build a web that's open to <span className="yellow-bg">everyone</span>!
                     </p>
                     
                 </div>

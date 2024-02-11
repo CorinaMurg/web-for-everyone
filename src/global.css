@@ -450,7 +450,7 @@ h4 {
 .next-article {
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 3px;
 }
 
 .next-article a {
@@ -710,6 +710,13 @@ ul[class^="checkmark-list"] li {
     .section-heading {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .next-article {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .next-article a {
+        line-height: 1.8;
     }
 }
 
