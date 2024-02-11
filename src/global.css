@@ -24,20 +24,6 @@ a:focus-visible {
     margin-left: var(--main-margin);
 }
 
-.article-heading-desktop {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-    margin-top: 30px;
-    font-weight: 600;
-}
-
-.article-heading-desktop span {
-    align-self: flex-start;
-}
-
 .article-container .subtitle {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
@@ -85,6 +71,30 @@ a:focus-visible {
     align-self: flex-start;
 }
 
+.article-heading-desktop {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.resources .article-heading-desktop {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.resources .article-heading-desktop span,
+.article-heading-desktop span {
+    align-self: flex-start;
+}
+
+.resources .article-heading-mobile,
 .article-heading-mobile {
     display: none;
 }
@@ -719,6 +729,7 @@ ul[class^="checkmark-list"] li {
 }
 
 @media screen and (max-width: 950px) {
+    .resources .article-heading-desktop,
     .article-heading-desktop {
         font-size: 2.6rem; 
     }
@@ -730,6 +741,7 @@ ul[class^="checkmark-list"] li {
         flex-direction: column;
     }
 
+    .resources .article-heading-desktop,
     .article-heading-desktop {
         font-size: 3rem;
         margin-top: 20px;
@@ -745,9 +757,6 @@ ul[class^="checkmark-list"] li {
     header {
         padding-bottom: 10px;
     }
-    .hero--design {
-        height: 7rem;
-    }
 }
 
 @media screen and (max-width: 620px) {
@@ -757,9 +766,12 @@ ul[class^="checkmark-list"] li {
         width: 100%;
     }
 
+    .resources .article-heading-desktop,
     .article-heading-desktop {
         display: none;
     }
+
+    .resources .article-heading-mobile,
     .article-heading-mobile {
         display: flex;
         flex-direction: column;
@@ -768,6 +780,7 @@ ul[class^="checkmark-list"] li {
         font-weight: 600;
     }
 
+    .resources .article-heading-mobile span,
     .article-heading-mobile span {
         align-self: flex-start;
     }
