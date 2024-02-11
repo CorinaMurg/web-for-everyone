@@ -145,6 +145,10 @@
         height: auto;
         top: 0;
     }
+    .resources--table-contents h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
     .section-content {
         width: 90%;
     }
@@ -152,31 +156,36 @@
 
 @media screen and (max-width: 620px) {
     .resources h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
     .section-content {
         width: 98%;
     }
-    .resources--table-contents h2 {
-        margin-top: 0;
-    }
+   
 }
 
 @media screen and (max-width: 510px) {
     .resources h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
+    .resources h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
     .resources h1 {
         font-size: 1.7rem;
     }
+
 }
 
 @media screen and (max-width: 360px) {
     .resources h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }
 

@@ -7,18 +7,19 @@ THURSDAY
 
 1. test: icon with and w/out aria-hidden
 2. description or alt to images re: color contrast / Explain: aria-hidden for icon
-3. image for small screens
-5. what is A11y: display:none are also ignored
+
 7. Add # for headings
 8. Download fonts
-9. Wrap summaries in links
-10. Add LIKE buttons
+9. 
+
 11. Add scroll to top???
 12. Langauge: website vs app????
+13. label and input: which one is better? Add a finishing snetence
+
 
 FRIDAY
-6. when using the back button in the browser, it should scroll to the same section as before
-7. Highlight TOC titles in use
+
+7. 
 
 9. Similar but Different
 10. Logo
@@ -31,6 +32,16 @@ FRIDAY
 SATURDAY
 
 SUNDAY
+1. Wrap summaries in links
+2. Highlight TOC titles in use
+3. when using the back button in the browser, it should scroll to the same section as before
+4. Add LIKE buttons
+5. Add WeCanHelp to tablet mode
+6. image for small screens
+7. what is A11y: display:none are also ignored
+
+
+MONDAY
 Dark Mode
 
 Small parts:

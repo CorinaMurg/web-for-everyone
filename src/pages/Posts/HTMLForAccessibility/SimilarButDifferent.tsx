@@ -26,10 +26,6 @@ const contents = [
         text: "focus vs focus-visible",
         ariaLabel: "Compare focus and focus-visible",
     },
-    {
-        href: "#next-steps",
-        text: "Next Steps"
-    },
 ]
 
 export default function SimilarButDifferent() {
@@ -38,7 +34,7 @@ export default function SimilarButDifferent() {
 
     
     return (
-        <div className={`article-container ${styles['commonbugs-container']}`}>
+        <div className="article-container make-it">
             <BackLinks 
                 secondLink="HTML for Accessibility"
                 href="/resources#html-for-accessibility" 
@@ -48,22 +44,25 @@ export default function SimilarButDifferent() {
                 <span>Similar, but Different:</span>
                 <span className="yellow-bg">HTML and ARIA Terms</span>
             </h1>
-            <p className="subtitle">Matching terms agaist each other to see how they differ</p>
+            <p className="subtitle">Matching terms agaist each other</p>
 
             <TableOfContents contents={contents} />
             
-            <div className={`article-content ${styles.similarButDifferent}`}>
+            <div className={`article-content ${styles['similar-but-different']}`}>
                  {/* *************0. INTRO********************** */}
-                <div className="section intro" id="intro">
+                {/* <div className="section intro" id="intro">
                     <p>
                         In this article, we will compare similar terms from HTML and ARIA to see how they differ.
                     </p>
-                </div>
+                </div> */}
 
                 {/* *** ARIA-LABEL VS ARIA-LABELLEDBY */}
                 <div className="section scroll-target" id="aria-label-aria-labelledby">
                     <h2 aria-label="Compare aria-label and aria-labelledby">
-                        aria-label <span className={styles['versus-icon']}>⚔️</span> aria-labelledby
+                        <span>
+                            aria-label<span className={styles['versus-icon']}>⚔️</span>
+                        </span>
+                        <span>aria-labelledby</span>
                     </h2>       
                     <p>
                         The attributes serve similar purposes. They both provide accessible names 
@@ -171,7 +170,10 @@ export default function SimilarButDifferent() {
                 {/* **********TITLE VS HEADING************* */}
                 <div className="section scroll-target" id="title-heading">
                     <h2 aria-label="Compare title and heading">
-                        title <span className={styles['versus-icon']}>⚔️</span> heading
+                        <span>
+                            title<span className={styles['versus-icon']}>⚔️</span> 
+                        </span>
+                        <span>heading</span>
                     </h2>       
                     <div className="code">
                         <code><span className="code-blue-color">&lt;head&gt;</span></code>
@@ -209,9 +211,10 @@ export default function SimilarButDifferent() {
                 </div>
 
                 {/* **********FOCUS VS FOCUS-VISIBLE************* */}
-                <div className="section scroll-target" id="focus-focus-visible">
+                <div className={`section scroll-target ${styles['focus-focus-visible']}`} id="focus-focus-visible">
                     <h2 aria-label="Compare focus and focus-visible">
-                        focus <span className={styles['versus-icon']}>⚔️</span> focus-visible
+                        <span>focus<span className={styles['versus-icon']}>⚔️</span></span> 
+                        <span>focus-visible</span>
                     </h2>     
                     <div className="code">
                         <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
@@ -258,7 +261,7 @@ export default function SimilarButDifferent() {
                 </div>
                     
                 {/* CONCLUSION */}
-                <div className="section conclusion scroll-target" id="conclusion">
+                {/* <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
@@ -276,7 +279,7 @@ export default function SimilarButDifferent() {
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
                     </div>                 
-                </div>
+                </div> */}
             </div>          
         </div>
     )

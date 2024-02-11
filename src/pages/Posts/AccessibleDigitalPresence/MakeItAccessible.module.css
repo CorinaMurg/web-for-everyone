@@ -1,15 +1,4 @@
 
-.makeItOne-container h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    text-align: center;
-} 
-
-/* INTRO */
-.makeit .intro .highlight h2 {
-    font-size: 1.5rem;
-}
 
 /* SECTION 01 CONTRAST */
 .code--contrast code {

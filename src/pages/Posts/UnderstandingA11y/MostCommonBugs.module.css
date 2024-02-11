@@ -1,6 +1,12 @@
-.commonbugs-container h1 {
+/* .commonbugs-container h1 {
     width: 70%;
 }
+
+@media screen and (max-width: 1200px) {
+    .commonbugs-container h1 {
+        width: 100%;
+    } 
+} */
 
 /* INTRO */
 .numbers {

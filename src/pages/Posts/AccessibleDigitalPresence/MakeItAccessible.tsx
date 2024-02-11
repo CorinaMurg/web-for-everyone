@@ -50,7 +50,7 @@ export default function MakeItAccessible() {
     useScrollToSection();
     
     return (
-        <div className={`article-container ${styles['makeItOne-container']}`}>
+        <div className="article-container make-it">
             
             {/* **************Back Links********************** */}
             <BackLinks 

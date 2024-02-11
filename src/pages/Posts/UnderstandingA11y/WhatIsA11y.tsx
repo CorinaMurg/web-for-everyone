@@ -323,7 +323,7 @@ export default function WhatIsA11y() {
                 <div className="section scroll-target" id="next-steps">
                     <h2>Next Steps</h2>
                     <p> 
-                        Due to inconvenience or lack of awareness, the majority of websites are not 
+                        Whether it's inconvenience or lack of awareness, the majority of websites are not 
                         accessible. 
                         A staggering 97% of them have some accessibility bugs!
                     </p>
