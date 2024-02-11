@@ -18,26 +18,24 @@ THURSDAY
 
 
 FRIDAY
-
+4. Add LIKE buttons
+5. Add WeCanHelp to tablet mode
+6. image for small screens
 7. 
 
 9. Similar but Different
+10. More links to Resources
 10. Logo
-10.1 About 
+11. About 
 11. LinkedIn page WE
 12. LinkedIn page Corina, GitHub
 13. A11y statement https://dequeuniversity.com/accessibility-statement
 
 
-SATURDAY
-
 SUNDAY
 1. Wrap summaries in links
 2. Highlight TOC titles in use
 3. when using the back button in the browser, it should scroll to the same section as before
-4. Add LIKE buttons
-5. Add WeCanHelp to tablet mode
-6. image for small screens
 7. what is A11y: display:none are also ignored
 
 

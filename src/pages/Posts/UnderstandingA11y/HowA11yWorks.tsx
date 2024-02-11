@@ -82,7 +82,13 @@ export default function MostCommonBugs() {
                 href="/resources#understanding-accessibility" 
             />
             
-            <h1>How <span className="yellow-bg">Accessibility</span> works</h1>
+            <h1 className="article-heading-desktop">
+                <span>How <span className="yellow-bg">Accessibility</span> works</span> 
+            </h1>
+            <h1 className="article-heading-mobile">
+                <span>How</span>
+                <span><span className="yellow-bg">Accessibility</span> works</span>
+            </h1>
             <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
             <TableOfContents contents={contents} />

@@ -18,7 +18,8 @@ export default function Home() {
                             <SvgCard key={index} svg={icon.svg}/>
                         ))}                 
                     </div> */}
-                    <img src="/assets/images/heroYellowImage.jpg" alt=""/>
+                    <img className="hero-img-desktop" src="/assets/images/heroYellowImage.jpg" alt=""/>
+                    {/* <img className="hero-img-mobile" src="/assets/images/heroYellowImage-mobile.jpg" alt=""/> */}
                 </div>
                 <div className={styles['hero--text']}>
                     <h1 id="lets-make-it-accessible" 

@@ -43,7 +43,14 @@ export default function WhatIsA11y() {
                 href="/resources#understanding-accessibility" 
             />
             
-            <h1>What is <span className="yellow-bg">Accessibility?</span></h1>
+            <h1 className="article-heading-desktop">
+                <span>What is <span className="yellow-bg">Accessibility?</span></span>
+                
+            </h1>
+            <h1 className="article-heading-mobile">
+                <span>What is</span>
+                <span className="yellow-bg">Accessibility?</span>
+            </h1>
             <p className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}

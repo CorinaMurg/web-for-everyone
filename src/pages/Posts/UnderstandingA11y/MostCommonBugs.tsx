@@ -39,9 +39,14 @@ export default function MostCommonBugs() {
                 href="/resources#understanding-accessibility" 
             />
             
-            <h1>
+            <h1 className="article-heading-desktop">
                 <span>The Most Common</span>
                 <span className="yellow-bg">Accessibility Bugs</span>
+            </h1>
+            <h1 className="article-heading-mobile">
+                <span>The Most Common</span>
+                <span><span className="yellow-bg">Accessibility</span> Bugs</span>
+                
             </h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 

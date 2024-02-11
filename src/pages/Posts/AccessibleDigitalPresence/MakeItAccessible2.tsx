@@ -48,7 +48,7 @@ export default function MakeItAccessible() {
     useScrollToSection();
     
     return (
-        <div className="article-container make-it">
+        <div className="article-container">
             
             {/* **************Back Links********************** */}
             <BackLinks 
@@ -56,9 +56,14 @@ export default function MakeItAccessible() {
                 href="/resources#accessible-digital-presence" 
             />
             
-            <h1>
+            <h1 className="article-heading-desktop">
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
+            </h1>
+            <h1 className="article-heading-mobile">
+                <span>Your Portfolio:</span>
+                <span>Let's Make It</span>
+                <span className="yellow-bg">Accessible!</span>
             </h1>
             <p className="subtitle">Part 2: On the Hunt for 6 More Bugs</p>
 
