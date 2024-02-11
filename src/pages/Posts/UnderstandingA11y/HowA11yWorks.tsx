@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
@@ -12,7 +13,7 @@ import "../../../global.css"
 
 const contents = [
     {
-        href: "#",
+        href: "#intro",
         text: "In a Nutshell",
         ariaLabel: "In a Nutshell: How Accessibility works",
         
@@ -67,12 +68,7 @@ const contents = [
 export default function MostCommonBugs() {
     useDocTitle("How Accessibility Works | Web for Everyone");  
     useScrollToSection();  
-
-    const [isOpen, setIsOpen] = useState(true); 
-
-    const toggleDetails = () => {
-        setIsOpen(!isOpen);
-    };
+    const { activeId } = useHighlightTOC();
     
     return (
         <div className="article-container howA11yWorks-container">
@@ -91,11 +87,11 @@ export default function MostCommonBugs() {
             </h1>
             <p className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId}/>
             
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}
-                <div id="intro" className="section intro" >
+                <div id="intro" className="section intro scroll-target" >
                     <h2 aria-label="In a Nutshell: How Accessibility works">
                         In a Nutshell
                     </h2>

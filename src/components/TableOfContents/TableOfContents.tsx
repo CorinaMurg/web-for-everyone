@@ -1,11 +1,21 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import styles from './TableOfContents.module.css';
 import "../../global.css"
 
-export default function TableOfContents ({ contents }: { contents: Array<any> }) {
+interface ContentItem {
+  href: string;
+  text: string;
+  ariaLabel?: string;
+  className?: string;
+}
+
+interface TableOfContentsProps {
+  contents: ContentItem[];
+  activeId: string; 
+}
+
+const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId }) => {
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']} id="table-contents">
@@ -13,10 +23,10 @@ export default function TableOfContents ({ contents }: { contents: Array<any> })
             </h2>
             <nav aria-labelledby='table-contents'>
                 <ul className={styles['table-contents--list']}>
-                    {contents.map((item: any, index: number) => (
+                    {contents.map((item, index) => (
                     <li key={index} className={styles['table-contents--list--item']}>
-                        <a  href={item.href} 
-                            className={`hover-pink ${item.className}`}
+                        <a href={item.href} 
+                            className={`hover-pink ${item.className} ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                         >
                             <code>{item.text}</code>
@@ -24,22 +34,50 @@ export default function TableOfContents ({ contents }: { contents: Array<any> })
                     </li>
                     ))}
                 </ul>
-            </nav>
-            
+            </nav>            
         </div>
     );
 };
 
-TableOfContents.propTypes = {
-    contents: PropTypes.arrayOf(
-        PropTypes.shape({
-        href: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired,
-        ariaLabel: PropTypes.string,
-        className: PropTypes.string,
-        })
-    ).isRequired,
-};
+export default TableOfContents;
+
+
+// export default function TableOfContents ({ contents }: { contents: Array<any> }) {
+//     return (
+//         <div className={styles['table-contents']}>
+//             <h2 className={styles['table-contents--heading']} id="table-contents">
+//                 <code>Table of Contents</code>
+//             </h2>
+//             <nav aria-labelledby='table-contents'>
+//                 <ul className={styles['table-contents--list']}>
+//                     {contents.map((item: any, index: number) => (
+//                     <li key={index} className={styles['table-contents--list--item']}>
+//                         <a  href={item.href} 
+//                             className={`hover-pink ${item.className}`}
+//                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
+//                         >
+//                             <code>{item.text}</code>
+//                         </a>
+//                     </li>
+//                     ))}
+//                 </ul>
+//             </nav>
+            
+//         </div>
+//     );
+// };
+
+// TableOfContents.propTypes = {
+//     contents: PropTypes.arrayOf(
+//         PropTypes.shape({
+//         href: PropTypes.string.isRequired,
+//         text: PropTypes.string.isRequired,
+//         ariaLabel: PropTypes.string,
+//         className: PropTypes.string,
+//         activeID: PropTypes.string,
+//         })
+//     ).isRequired,
+// };
 
 
 // const getClassNames = (level: number) => {

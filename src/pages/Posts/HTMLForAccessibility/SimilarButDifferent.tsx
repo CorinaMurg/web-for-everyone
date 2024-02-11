@@ -1,10 +1,7 @@
 import React from "react"
-import { Link } from "react-router-dom"
-import { useState } from "react"
-import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
-import scrollToSection from "../../../utils/scrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import styles from "./SimilarButDifferent.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -18,12 +15,12 @@ const contents = [
     },
     {
         href: "#title-heading",
-        text: "title vs heading",
+        text: "title vs. heading",
         ariaLabel: "Compare title and heading",
     },
     {
         href: "#focus-focus-visible",
-        text: "focus vs focus-visible",
+        text: "focus vs. focus-visible",
         ariaLabel: "Compare focus and focus-visible",
     },
 ]
@@ -31,7 +28,7 @@ const contents = [
 export default function SimilarButDifferent() {
     useDocTitle("Similar but Different | Web for Everyone");    
     useScrollToSection();
-
+    const { activeId } = useHighlightTOC();
     
     return (
         <div className="article-container similar-different">
@@ -51,7 +48,7 @@ export default function SimilarButDifferent() {
             </h1>
             <p className="subtitle">Matching terms agaist each other</p>
 
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId}/>
             
             <div className={`article-content ${styles['similar-but-different']}`}>
                  {/* *************0. INTRO********************** */}

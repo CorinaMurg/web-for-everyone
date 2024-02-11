@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
 import scrollToTop from "../../../utils/scrollToTop";
@@ -35,7 +36,7 @@ const contents = [
 export default function WhatIsA11y() {
     useDocTitle("What is Accessiility | Web for Everyone"); 
     useScrollToSection();   
-    
+    const { activeId } = useHighlightTOC();
     return (
         <div className="article-container whatisa11y-container">
             <BackLinks 
@@ -54,13 +55,14 @@ export default function WhatIsA11y() {
             <p className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId}/>
 
             {/* **************ARTICLE CONTENT***************** */}
             
             <div className={`article-content ${styles['whatIsA11y']}`}>
                  {/* *************0. INTRO********************** */}
-                <div className="setion intro" id="intro">
+                <div className="section intro scroll-target" id="intro">
+                    <h2 className="sr-only">Introduction: The Definition of Accessibility</h2>
                     <p>
                         Becoming a web developer comes with a cool superpower: to create sites and apps
                         that <span className="yellow-bg">everyone</span>,

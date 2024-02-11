@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import "../../../global.css"
 import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -12,7 +13,7 @@ import externalLinkSvg from "../../../data/svgData/externalLinkSvg.svg"
 
 const contents = [
     {
-        href: "#",
+        href: "#intro",
         text: "Introduction",
     },
     {
@@ -48,7 +49,7 @@ const contents = [
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible Part 1 | Web for Everyone");
     useScrollToSection();
-    
+    const { activeId } = useHighlightTOC();
     return (
         <div className="article-container">
             
@@ -70,11 +71,12 @@ export default function MakeItAccessible() {
             <p className="subtitle">Part One: Finding the 6 Most Common Bugs</p>
 
             {/* **************Table of Contents********************** */}
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId}/>
 
             {/* **************Article Content********************** */}
             <div className="article-content makeItOne">
-                <div className="section intro">
+                <div className="section intro scroll-target" id="intro">
+                    <h2 className="sr-only">Introduction</h2>
                     <p>
                         Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
                         challenging as the functionality of a website increases. However, in a few 

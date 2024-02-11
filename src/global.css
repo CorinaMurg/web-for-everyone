@@ -31,7 +31,7 @@ a:focus-visible {
     font-size: 1.3rem;
     font-weight: 600;
     /* margin-left: var(--main-margin); */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .article-content {
@@ -320,6 +320,10 @@ h3 {
     line-height: 1.5;
     margin-bottom: 0;
 }
+
+/* h2, h3 {
+    scroll-margin-top: 40px;
+} */
 
 h4 {
     font-size: 1.2rem;

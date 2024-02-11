@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import "../../../global.css"
@@ -10,7 +11,7 @@ import styles from "./MakeItAccessible2.module.css"
 
 const contents = [
     {
-        href: "#",
+        href: "#intro",
         text: "Introduction",
     },
     {
@@ -46,7 +47,7 @@ const contents = [
 export default function MakeItAccessible() {
     useDocTitle("Let's Make It Accessible Part 2 | Web for Everyone");
     useScrollToSection();
-    
+    const { activeId } = useHighlightTOC();
     return (
         <div className="article-container">
             
@@ -68,11 +69,12 @@ export default function MakeItAccessible() {
             <p className="subtitle">Part 2: On the Hunt for 6 More Bugs</p>
 
             {/* **************Table of Contents********************** */}
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId}/>
 
             {/* **************Article Content********************** */}
             <div className="article-content makeItTwo">
-                <div className="section intro">
+                <div className="section intro scroll-target" id="intro">
+                    <h2 className="sr-only">Introduction</h2>
                     <p>
                         This article continues our exploration of accessibility issues that can affect your 
                         portfolio site. We started with <span> </span>
@@ -81,11 +83,11 @@ export default function MakeItAccessible() {
                         >
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
-                        , and will now cover 6 more issues. 
+                        , and will now cover another set of six. 
                     </p>
                     <p>
-                        As was the case with the first set of bugs, 
-                        these are issues that can be kept in check with just semantic HTML and CSS. (Well,
+                        As was the case with the first set, 
+                        we will zoom on bugs that can be kept in check with just semantic HTML and CSS. (Well,
                         there is just one exception, depending on which JavaScript library you use.)
                     </p>
                     

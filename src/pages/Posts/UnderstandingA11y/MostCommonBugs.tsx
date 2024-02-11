@@ -4,6 +4,7 @@ import { useState } from "react"
 import scrollToTop from "../../../utils/scrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import scrollToSection from "../../../utils/scrollToSection"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
@@ -11,7 +12,7 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 import BackLinks from "../../../components/BackLinks/BackLinks"
 
 const contents = [
-    { href: "#", text: "WebAIM Million Study" },
+    { href: "#intro", text: "WebAIM Million Study" },
     { href: "#low-contrast-text", text: "Low Contrast Text" },
     { href: "#missing-alt-text-for-images", text: "Missing Alt Text for Images" },
     { href: "#empty-links", text: "Empty Links" },
@@ -25,7 +26,7 @@ const contents = [
 export default function MostCommonBugs() {
     useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
     useScrollToSection();
-
+    const { activeId} = useHighlightTOC();
     const [textColor, setTextColor] = useState('initial')
 
     const toggleColor = () => {
@@ -50,11 +51,12 @@ export default function MostCommonBugs() {
             </h1>
             <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
-            <TableOfContents contents={contents} />
+            <TableOfContents contents={contents} activeId={activeId} />
             
             <div className="article-content commonbugs">
                  {/* *************0. INTRO********************** */}
-                <div className="section intro" id="intro">
+                <div className="section intro scroll-target" id="intro">
+                    <h2 className="sr-only">WebAIM Million Study</h2>
                     <p>
                         Here's one cool thing that happens every year: 
                         <span> </span>
