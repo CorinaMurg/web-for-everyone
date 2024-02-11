@@ -113,7 +113,7 @@ body {
 
 @media (max-width: 600px) {
     :root {
-        --main-margin: 35px;
+        --main-margin: 15px;
     }  
 }
 

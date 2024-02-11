@@ -23,8 +23,8 @@
 }
 
 .custom-outline--button:hover {
-    background-color: #08196e;
-    color: white;
+    outline: 3px dashed var(--text-dark-color);
+    outline-offset: 4px;
 }
 
 .brightness--container {
@@ -34,41 +34,43 @@
     margin-bottom: 10px;
 }
 
-.brightness--links {
+.brightness--buttons {
     display: flex;
     gap: 0;
     align-items: center;
     padding-inline-start: 0;  
 }
 
-.brightness-links li {
-    list-style: none;
-}
-
-.brightness--links a {
-    background-color: #a1b0f8;
+.brightness--buttons button {
+    background-color: var(--blue-color);
     border: none;
-    color: var(--text-dark-color);
+    color: white;
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 5px 45px;
+    padding: 10px 45px;
     text-align: center;
     text-decoration: none;
     border-radius: 0 !important;
 }
 
-.brightness--links li:not(:last-child) a {
+.brightness--buttons button:not(:last-child) {
     border-right: 1.5px solid black;
 }
 
 
-.brightness--links li a:focus-visible {
+.brightness--buttons button:focus-visible {
     outline: none;
     background-color: #08196e;
     color: white;
 }
 
-.brightness--links li a:hover {
+.brightness--buttons button:active {
+    outline: none;
+    background-color: #08196e;
+    color: white;
+}
+
+.brightness--buttons button:hover {
     background-color: #08196e;
     color: white;
 }
@@ -107,6 +109,13 @@
     background-color: transparent;
     padding: 10px 20px;
     color: var(--cream-color);
+}
+
+@media screen and (max-width: 600px) {
+    .code-keyboard {
+        gap: 15px;
+        padding-left: 15px;
+    } 
 }
 
 .focus-ring {

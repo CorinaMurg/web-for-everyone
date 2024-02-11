@@ -173,10 +173,6 @@ a:focus-visible {
     margin-bottom: 30px;
 }
 
-.code code {
-    padding-right: 20px;
-}
-
 .highlight .code {
     width: 100%;
 }
@@ -753,7 +749,7 @@ ul[class^="checkmark-list"] li {
         font-size: 2.3rem;
     }
     .section {
-        width: 98%;
+        width: 100%;
     }
     .table-contents {
         margin-top: 0;
@@ -763,6 +759,18 @@ ul[class^="checkmark-list"] li {
 @media screen and (max-width: 510px) {
     .article-container h1 {
         font-size: 2rem;
+    }
+
+    .code, .code-small {
+        padding-left: 10px;
+    }
+
+    .highlight, .highlight-small {
+        padding: 10px;
+    }
+
+    .warning {
+        padding: 30px 10px 10px 15px;
     }
 }
 

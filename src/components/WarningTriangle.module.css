@@ -21,3 +21,13 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 510px) {
+    .warning-triangle {
+        left: 15px;
+        top: 15px;
+    }
+    .warning-triangle::after {
+        left: -2.5px;
+    }
+}

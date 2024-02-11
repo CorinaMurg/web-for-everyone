@@ -473,9 +473,12 @@ export default function MakeItAccessible() {
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
-                                button below and see the custom focus outline in action.
+                                button below and see the custom focus outline in action. 
+                                The button is coded 
+                                such that pressing it on a touch screen, or hovering over it with a mouse, 
+                                will also trigger the focus outline.
                             </p>
-                            <button aria-hidden="true" className={styles['custom-outline--button']}
+                            <button aria-label="Used for teaching purposes, it triggers no action" className={styles['custom-outline--button']}
                             >
                                 Custom outline
                             </button>
@@ -487,7 +490,7 @@ export default function MakeItAccessible() {
                             </p>
                             <p> 
                                 <b>:focus-visible</b> is smarter. It applies the style to all keyboard interractions, 
-                                and only to specific mouse interractions (when it is beneficial to the user!)</p>
+                                and only to specific mouse interractions (when beneficial to the user!)</p>
                             <p>
                                 Follow this link to read more about <span> </span>
                                 <Link to="/resources/how-accessibility-works#the-accessible-name">
@@ -510,23 +513,26 @@ export default function MakeItAccessible() {
                             is not recommended. Users who are color blind would not be able to tell the difference.
                         </p>
                         <p>
-                            <strong>Instead, rely on a change in brightness to indicate focus.</strong>
+                            <strong>Instead, rely on a change in brightness to indicate focus.</strong> 
                         </p>
                         <p>
                             It could be with that same color, like a change from a light blue to a darker blue. 
                             Or, it could be with a different color, like a change from light blue to dark gray.
+                            These are great 
+                            options when you have a family of interactive elements nested together.
                         </p>
                         <div aria-hidden="true" className={styles['brightness--container']}>
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate through the 
-                                links below and notice the change in the background's shade. (Try not to click on them, so you
-                                don't scroll away from this section!)
+                                buttons below and notice the change in the background's shade. The button are coded 
+                                such that pressing them on a touch screen, or hovering over them with a mouse, 
+                                will also trigger a change in brightness.
                             </p>                     
-                            <ul className={`${styles['brightness--links']}`}>
-                                <li><a aria-hidden="true" href="" >Link 1</a></li>
-                                <li><a aria-hidden="true" href="" >Link 2</a></li>
-                                <li><a aria-hidden="true" href="" >Link 3</a></li>           
+                            <ul className={`${styles['brightness--buttons']}`}>
+                                <button aria-label="Used for teaching purposes, it triggers no action">Do</button>
+                                <button aria-label="Used for teaching purposes, it triggers no action">Re</button>
+                                <button aria-label="Used for teaching purposes, it triggers no action">Mi</button>           
                             </ul>   
                             <br></br>           
                         </div> 

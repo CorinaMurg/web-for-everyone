@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
             <div className="footer-bottom">
                 <div className="copyright">
-                    <span>&#169;</span><span>Web for Everyone 2023</span>
+                    <span>&#169;</span><span>Web for Everyone 2024</span>
                 </div>
                 
                 <span className="vertical-bar" style={{ fontWeight: "500"}}> · </span> 
