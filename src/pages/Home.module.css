@@ -301,7 +301,7 @@
     -moz-transition: height 1s; 
     -ms-transition: height 1s; 
     -o-transition: height 1s;
-    transition: height 1s;
+    transition: height 1.5s;
     overflow: hidden;
     z-index: -1;
 }

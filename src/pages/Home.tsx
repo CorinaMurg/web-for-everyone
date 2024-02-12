@@ -35,7 +35,8 @@ export default function Home() {
                             Will it be ready to welcome all users, including those with disabilities? 
                         </p>
                         <p>
-                            Scroll down to explore accessibility essentials, or jump straight to squashing common bugs!
+                            Scroll down to explore accessibility essentials, or jump straight to 
+                            squashing some bugs!
                         </p>
                         <Link 
                             aria-label="Continue to article let's make it accessible"

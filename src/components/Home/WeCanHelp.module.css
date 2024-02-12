@@ -4,7 +4,7 @@
     grid-row: 1 / 2;
     background-color: var(--text-dark-color);
     color: var(--text-light-color);
-    padding: 10px 20px;
+    padding: 25px 20px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -38,6 +38,7 @@
 
 .we-can-help ul li:last-of-type {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 .we-can-help article:last-child {
@@ -76,12 +77,13 @@
 
 .we-can-help a:hover {
     font-weight: 700;
+    color: var(--cream-color);
 }
 
 .we-can-help a:focus-visible {
     text-decoration: none;
     outline: 3px dashed var(--pinkBright-color);
-    outline-offset: 4px;
+    outline-offset: 2.5px;
 }
 
 .we-can-help .external-linksvg-wrap svg {
