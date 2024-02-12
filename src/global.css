@@ -764,6 +764,10 @@ ul[class^="checkmark-list"] li {
     header {
         padding-bottom: 10px;
     }
+    .note {
+        flex-direction: column;
+    }
+  
 }
 
 @media screen and (max-width: 620px) {

@@ -55,12 +55,13 @@
         position: relative;
         height: auto;
         top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     .table-contents h2 {
         font-size: 1.1rem;
         font-weight: 700;
         margin-bottom: 10px;
+        margin-top: 20px;
     }
 }
