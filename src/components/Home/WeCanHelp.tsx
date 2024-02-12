@@ -27,13 +27,13 @@ export default function WeCanHelp() {
                         <h3>Contact</h3>
                         <p>
                             Use <span> </span>
-                            <a href="" target='_blank' rel="noopener noreferrer">
-                                
-                                    <span style={{ color: "var(--pinkBright-color", fontSize: "1.1rem", fontWeight: "600"}}>W</span>
-                                    <span style={{ color: "var(--yellow-color", fontSize: "1.1rem", fontWeight: "600"}}>E</span>
-                                    's LinkedIn page
-                                
-                                <span className="sr-only"> opens in a new tab</span>
+                            <a href="https://www.linkedin.com/company/webforeveryone" 
+                                target='_blank' rel="noopener noreferrer"
+                                aria-label="Web for Everyone's LinkedIn page. Opens in a new tab."    
+                            >   
+                                <span style={{ color: "var(--pinkBright-color", fontSize: "1.1rem", fontWeight: "600"}}>W</span>
+                                <span style={{ color: "var(--yellow-color", fontSize: "1.1rem", fontWeight: "600"}}>E</span>
+                                's LinkedIn page
                                 {/* <span className={styles['external-linksvg-wrap']}>
                                     &nbsp;
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512">
