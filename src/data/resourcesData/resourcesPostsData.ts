@@ -18,9 +18,8 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "title": "What is Accessibility?",
         "subtitle": "",
         "author": "By Web for Everyone",
-        "description": `In most conversations about accessibility, the use of semantic HTML is
-            likely to be the first and most common piece of advice. This article looks at the role it 
-            plays in accessibility and beyond.`,
+        "description": `When you create websites and apps that everyone, including people with disabilities, 
+            can easily navigate and understand, you make accessibility happen.`,
         "to": `/resources/what-is-accessibility`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",
         "readMoreAriaLabel": "",

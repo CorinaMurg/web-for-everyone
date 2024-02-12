@@ -51,7 +51,7 @@
 .section-content {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 90px;
     width: 70%;
 }
 
@@ -78,8 +78,8 @@
     padding-left: 20px;
 }
 
-.article--description p {
-    margin-block: 16px;
+.article--author {
+    margin-top: 16px;
 }
 
 .article a::after {
