@@ -50,7 +50,7 @@ Extra Articles
 13. Is inaccessible ilegal?
 14. WCAG
 15. Forms (ask Adam?)
-
+RESOURCES: make each artice a link
 New Bugs:
 - dark mode
 - rem not px
