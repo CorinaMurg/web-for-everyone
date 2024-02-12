@@ -71,13 +71,17 @@
 .we-can-help a {
     color: inherit;
     text-decoration: underline;
+    font-weight: 600;
     text-underline-offset: 3px;
     padding: 2px;
 }
 
 .we-can-help a:hover {
-    font-weight: 700;
-    color: var(--cream-color);
+   
+    color: var(--cream-color); 
+    text-decoration: none;
+    outline: 3px dashed var(--pinkBright-color);
+    outline-offset: 2.5px;
 }
 
 .we-can-help a:focus-visible {
