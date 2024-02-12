@@ -41,24 +41,24 @@ export const resourcesTipsData: ResourcesTipDataTypes[] = [
         the Enter key) users expect to be redirected to a new location.`
     ],
     },
-    {
-        "left": "title",
-        "right": "heading",
-        "descriptionLeft": [`The <title> tag is used within the <head> section of an HTML document. 
-            It defines the title of the document or webpage, but it's not visible in the main content 
-            area of the webpage. Instead, it's displayed on the browser's title bar or 
-            tab.`,
-            `The title is important for accessibility as it is the first element that a screen reader will
-            announce about a page. It is also used by search engines to identify the page and can be crucial 
-            for SEO (Search Engine Optimization).`,
-        ],
-        "descriptionRight": [`Headings are used within the <body> of the HTML document and are represented by 
-            the <h1>, <h2>, <h3>, <h4>, <h5>, and <h6> tags. Headings are visible to the users and help them 
-            navigate through the content. They define the titles or subtitles we see on a page.`,
-            `Screen reader users and search engines use headings to understand the structure and content of a 
-            webpage.`
-        ],
-    },
+    // {
+    //     "left": "title",
+    //     "right": "heading",
+    //     "descriptionLeft": [`The <title> tag is used within the <head> section of an HTML document. 
+    //         It defines the title of the document or webpage, but it's not visible in the main content 
+    //         area of the webpage. Instead, it's displayed on the browser's title bar or 
+    //         tab.`,
+    //         `The title is important for accessibility as it is the first element that a screen reader will
+    //         announce about a page. It is also used by search engines to identify the page and can be crucial 
+    //         for SEO (Search Engine Optimization).`,
+    //     ],
+    //     "descriptionRight": [`Headings are used within the <body> of the HTML document and are represented by 
+    //         the <h1>, <h2>, <h3>, <h4>, <h5>, and <h6> tags. Headings are visible to the users and help them 
+    //         navigate through the content. They define the titles or subtitles we see on a page.`,
+    //         `Screen reader users and search engines use headings to understand the structure and content of a 
+    //         webpage.`
+    //     ],
+    // },
     {
         "left": "label",
         "right": "aria-label",

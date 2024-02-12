@@ -20,8 +20,7 @@ THURSDAY
 FRIDAY
 4. Add LIKE buttons
 5. Add WeCanHelp to tablet mode
-6. image for small screens
-7. 
+6. TypeScript
 
 9. Similar but Different
 10. More links to Resources
@@ -34,7 +33,7 @@ FRIDAY
 
 
 SUNDAY
-1. Wrap summaries in links
+1. 
 2. 
 3. when using the back button in the browser, it should scroll to the same section as before
 7. what is A11y: display:none are also ignored
