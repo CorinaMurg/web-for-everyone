@@ -130,6 +130,7 @@ body::-webkit-scrollbar {
 
 main {
     padding-top: 5rem;
+    width: 100%;
 }
 
 
