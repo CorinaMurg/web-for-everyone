@@ -31,8 +31,8 @@ export default function WeCanHelp() {
                                 target='_blank' rel="noopener noreferrer"
                                 aria-label="Web for Everyone's LinkedIn page. Opens in a new tab."    
                             >   
-                                <span style={{ color: "var(--pinkBright-color", fontSize: "1.1rem", fontWeight: "600"}}>W</span>
-                                <span style={{ color: "var(--yellow-color", fontSize: "1.1rem", fontWeight: "600"}}>E</span>
+                                <span style={{ color: "var(--pinkBright-color", fontSize: "1.1rem", fontWeight: "500"}}>W</span>
+                                <span style={{ color: "var(--yellow-color", fontSize: "1.1rem", fontWeight: "500"}}>E</span>
                                 's LinkedIn page
                                 {/* <span className={styles['external-linksvg-wrap']}>
                                     &nbsp;
