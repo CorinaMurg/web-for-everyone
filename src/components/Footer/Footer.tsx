@@ -28,7 +28,7 @@ export default function Footer() {
                     </nav>
                     <div className="footer-right--social">
                         <h3 className="footer-heading">Contact</h3>
-                        <a href="https://www.linkedin.com/in/webforeveryone/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/webforeveryone/" target="_blank" rel="noopener noreferrer">
                             <span className="footer-nav-link">LinkedIn</span>
                         </a>
                     </div>
