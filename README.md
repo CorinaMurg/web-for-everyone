@@ -10,20 +10,20 @@ THURSDAY
 
 7. Add # for headings
 8. Download fonts
-9. 
+4. Add LIKE buttons
 
 11. Add scroll to top???
 12. Langauge: website vs app????
 13. label and input: which one is better? Add a finishing snetence
-
+5. Add WeCanHelp to tablet mode
+10. More links to Resources
+9. Similar but Different
 
 FRIDAY
-4. Add LIKE buttons
-5. Add WeCanHelp to tablet mode
+
+
 6. TypeScript
 
-9. Similar but Different
-10. More links to Resources
 11. Fix Contact WE
 10. Logo
 11. About 
