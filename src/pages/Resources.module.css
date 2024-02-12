@@ -55,41 +55,22 @@
     width: 70%;
 }
 
-.section-content .article {
+.article {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.section-content .article--link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 100;
-}
-
-.section-content .article:hover {
-    outline: 3px dashed var(--text-dark-color);
-    outline-offset: 4px;
-}
-
-.section-content .article:hover {
-    background-color: var(--lightGray-color);
-}
-
-.section-content .article:hover .article--description{
-    border-left: none;
-}
-
-.article h3 {
-    padding-bottom: 40px;
-}
+/* .article h3 {
+    margin-bottom: 10px;
+} */
 .article--subtitle {
     font-size: 1rem;
     font-weight: 600;
     color: inherit;
     opacity: 0.7;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .article--description {
@@ -101,6 +82,31 @@
     margin-block: 16px;
 }
 
+.article a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.article:hover {
+    outline: 3px dashed var(--text-dark-color);
+    outline-offset: 4px;
+}
+
+.article:hover {
+    background-color: var(--lightGray-color);
+}
+
+.article:hover .article--description{
+    border-left: none;
+}
+
+
+/* *****TABLE OF CONTENTS***** */
 .resources--table-contents {
     font-size: 0.9rem;
     font-weight: 400;
@@ -113,11 +119,14 @@
 
 .resources--table-contents ul {
     padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
 }
 
 .resources--table-contents h2 {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -127,7 +136,7 @@
 .resources--table-contents--list--item {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     margin-top: 20px;
 }
 
@@ -135,7 +144,6 @@
     align-self: flex-start;
     color: inherit;
     opacity: 0.8;
-   
 }
 
 .resources--table-contents--list--item a.active {
@@ -190,6 +198,9 @@
     } */
     .section-content {
         width: 98%;
+    }
+    .article--link {
+        padding-bottom: 20px;
     }
    
 }

@@ -61,31 +61,35 @@ export default function Accessibility() {
                         <div className={`${styles['section-content']}`}>
                             {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
                                 <article key={index} className={styles.article}>
-                                    <h3 id={`${post.id}`}>
-                                        {post.href ? (
-                                            <a  
-                                                href={post.href} 
-                                                aria-label={post.ariaLabel} 
-                                                target="_blank" rel="noopener noreferrer"
-                                                className={styles['article--link']}
-                                            >
-                                                {post.title}
-                                            </a>
-                                        ) : post.to ? (
-                                            <Link 
-                                                to={post.to} 
-                                                className={styles['article--link']}
-                                                onClick={scrollToTop}
-                                            >
-                                                {post.title}
-                                            </Link>
-                                        ) : null}
-                                    </h3>
-                                    <p className={styles['article--subtitle']}>{post.subtitle}</p>
-                                    <div className={styles['article--description']}>
-                                        <p>{post.description}</p>          
-                                        <p className={styles['article--author']}><strong>{post.author}</strong></p>
-                                    </div>
+                                        <div>
+                                            <h3 id={`${post.id}`}>
+                                                {post.href ? (
+                                                    <a  
+                                                        href={post.href} 
+                                                        aria-label={post.ariaLabel} 
+                                                        target="_blank" rel="noopener noreferrer"
+                                                        className={styles['article--link']}
+                                                    >
+                                                        {post.title}
+                                                    </a>
+                                                ) : post.to ? (
+                                                    <Link 
+                                                        to={post.to} 
+                                                        className={styles['article--link']}
+                                                        onClick={scrollToTop}
+                                                    >
+                                                        {post.title}
+                                                    </Link>
+                                                ) : null}
+                                            </h3>
+                                            <p className={styles['article--subtitle']}>{post.subtitle}</p>
+                                        </div>
+                                        <div className={styles['article--description']}>
+                                            <p>{post.description}</p>          
+                                            <p className={styles['article--author']}><strong>{post.author}</strong></p>
+                                        </div>
+                                    
+                                    
                                     
                                 </article>
                             ))}
