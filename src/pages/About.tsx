@@ -63,9 +63,17 @@ export default function About() {
                         <p>As a teacher my focus was on creating learning experiences that were inclusive and accessible. 
                             For that reason, the frontend's concern with accessible web products deeply resonates with me.</p> */}
 
-                        <p>I am excited to collaborate on projects with developers from all over the world, 
+                        <p>
+                            I am excited to collaborate on projects with developers from all over the world, 
                             and engage in conversations about our responsibility to ensure that every user feels seen 
-                            and valued. I believe in a web where everyone has a place!</p>
+                            and valued. 
+                        </p>
+                        <p>
+                            . . .
+                        </p>
+                        {/* <p>
+                            I believe in a web where everyone has a place!    
+                        </p> */}
                     </div>
                 </div>
             </section>
