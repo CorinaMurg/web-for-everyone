@@ -87,7 +87,6 @@
     justify-content: space-between;
 } 
 
-
 .hero--text--body p {
     font-size: 0.9rem;
     font-weight: 500;
@@ -298,31 +297,70 @@
     z-index: 1;
 }
 
-.mini-article h3 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .mini-article--text {
     border-top: 3px solid var(--text-dark-color);
     color: var(--text-dark-color);
-    padding-top: 40px;
+    padding-top: 16px;
     padding-inline: 17px;
     width: 100%;
 }
 
-.mini-article--text p {
-    font-weight: 300;
+.mini-article--text h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-block: 20px;
+    gap: 20px;
 }
 
+.mini-article h3 span {
+    color: var(--gray-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.mini-article--text p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* .mini-article--text .continue-to-article svg {
+    display: none;
+}
+.mini-article--text .continue-to-article svg {
+    display: inline-block;
+} */
+
+
 .mini-article:hover {
-    background-color: var(--hover-bg-color);
+    outline: 3px dashed var(--text-dark-color);
+}
+
+.mini-article:hover h3 span {
+    color: var(--pinkBright-color);
+}
+
+.mini-article:hover h3 span {
+    color: var(--pinkBright-color);
+}
+
+.mini-article:hover svg circle  {
+    fill: var(--pinkBright-color);
+}
+
+.mini-article:hover .mini-article--text svg path  {
+    fill: white;
+}
+
+
+.mini-article:focus-within {
+    /* background-color: var(--hover-bg-color); */
     outline: 3px dashed var(--text-dark-color);
 }
 
 .mini-article:focus-within {
-    background-color: var(--hover-bg-color);
+    /* background-color: var(--hover-bg-color); */
     outline: 3px dashed var(--text-dark-color);
 }
 
@@ -422,21 +460,5 @@
     object-fit: cover;
 }  */
 
-.mini-article h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-block: 20px;
-}
 
-.mini-article span {
-    /* color: var(--gray-color); */
-    font-size: 1.3rem;
-    font-weight: 600;
-    /* margin-top: 50px; */
-}
-
-.mini-article p {
-    font-size: 0.9rem;
-    font-weight: 500;
-}
 
