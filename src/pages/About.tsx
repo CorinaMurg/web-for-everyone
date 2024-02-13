@@ -57,7 +57,9 @@ export default function About() {
                     />
                 </div>
                 <div className={styles['about--me--text']}>
-                    <h2>I'm Corina, and I'd love to help you build an accessible portfolio site.</h2>
+                    <h2>
+                        I'm Corina, and I'd love to help you build an accessible portfolio site.
+                    </h2>
                     
                     <div>
                         <p>
@@ -65,7 +67,7 @@ export default function About() {
                             that every user feels seen and valued. 
                         </p>
                         <p>
-                            I initiated the <b>Web for Everyone</b> project to help entry-level developers 
+                            I created the <b>Web for Everyone</b> project to help entry-level developers 
                             embrace accessibility at the start of their careers. As a Trusted Tester 
                             certified accessibility specialist, I share practical techniques to avoid 
                             common bugs in your portfolio site and projects.  
@@ -88,6 +90,7 @@ export default function About() {
                         &nbsp;
                         <p>
                             <span className="pink-text bold">&#x2714; </span>
+                            &nbsp;
                             <strong>Familiar with the basics of accessibility?</strong>
                         </p>
                         <p>
@@ -99,6 +102,7 @@ export default function About() {
                         &nbsp;
                         <p>
                             <span className="pink-text bold">&#x2714; </span>
+                            &nbsp;
                             <strong>Looking to collaborate on an accessibility review?</strong>
                         </p>
                         <p>
@@ -117,7 +121,12 @@ export default function About() {
                             <span> </span> to share the link to your portfolio site or project, and 
                             any accessibility help you are looking for.
                         </p>
+                        &nbsp;
+                        <p>
+                            <strong>Let's build a web for everyone!</strong>
+                        </p>
                     </div>
+                    
                 </div>
             </section>
         </div>
