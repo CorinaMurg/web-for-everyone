@@ -27,7 +27,6 @@ export default function Home() {
                     >
                         <span>Let's Make It</span>
                         <span>Accessible!</span>
-                        {/* Let's Make It Accessible! */}
                     </h1>
                     <div className={styles['hero--text--body']}>
                         <p>
@@ -53,11 +52,6 @@ export default function Home() {
                             <svg aria-hidden="true" id="bug" width="34" height="34" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" >
                                 <path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L477.4 348.9c1.7-9.4 2.6-19 2.6-28.9h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H479.7c-1.1-14.1-5-27.5-11.1-39.5c.7-.6 1.4-1.2 2.1-1.9l64-64c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-64 64c-.7 .7-1.3 1.4-1.9 2.1C409.2 164.1 393.1 160 376 160H264c-8.3 0-16.3 1-24 2.8L38.8 5.1zm392 430.3L336 360.7V479.2c36.6-3.6 69.7-19.6 94.8-43.8zM166.7 227.3c-3.4 9-5.6 18.7-6.4 28.7H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c0 24.6 5.5 47.8 15.4 68.6c-2.2 1.3-4.2 2.9-6 4.8l-64 64c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l63.1-63.1c24.5 21.8 55.8 36.2 90.3 39.6V335.5L166.7 227.3zM320 0c-53 0-96 43-96 96v3.6c0 15.7 12.7 28.4 28.4 28.4H387.6c15.7 0 28.4-12.7 28.4-28.4V96c0-53-43-96-96-96z"/>
                             </svg>
-                                {/* <i className={styles['link-arrow']}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> */}
-                                {/* <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> */}
-                                {/* <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> */} 
                         </Link>
                     </div>
                     
@@ -73,20 +67,24 @@ export default function Home() {
                         <li key={index}> 
                             <article className={`${styles['mini-article']} ${styles[`mini-article-${index+1}`]}`}>
 
-                                <div className={`${styles['mini-article-image']} ${styles[`mini-article-image-${index+1}`]}`}>
+                                <div className={`${styles['mini-article--image']} ${styles[`mini-article--image-${index+1}`]}`}>
                                     {/* <img src={article.image} alt='' loading="lazy"/> */}
                                     <div className={styles['svg-wrap']}>
                                         <div dangerouslySetInnerHTML={{ __html: article.svg }} />
                                     </div>
                                 </div>
-                                <Link 
-                                    to={article.link} className={styles['mini-article-link']} 
-                                    onClick={() => { scrollToTop() }}
-                                >
-                                    <span aria-hidden="true">{`0${index+1}`}</span>
-                                    <h3>{article.title}</h3>
+                                <div className={styles['mini-article--text']}>
+                                    <Link 
+                                        to={article.link} className={styles['mini-article--link']} 
+                                        onClick={() => { scrollToTop() }}
+                                    >   
+                                        <h3>
+                                            <span aria-hidden="true">{`0${index+1}`}</span>
+                                            {article.title}
+                                        </h3>
+                                    </Link>
                                     <p>{article.description}</p>
-                                </Link>
+                                </div>
                             </article>
                         </li>
                     ))}

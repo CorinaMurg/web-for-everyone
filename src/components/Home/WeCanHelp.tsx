@@ -28,12 +28,9 @@ export default function WeCanHelp() {
                         <p>
                             Use&nbsp;
                             <a href="https://www.linkedin.com/company/webforeveryone" 
-                                target='_blank' rel="noopener noreferrer"
-                                aria-label="Web for Everyone's LinkedIn page. Opens in a new tab."    
+                                target='_blank' rel="noopener noreferrer" 
                             >       
-                                <span style={{ color: "var(--pinkBright-color", fontSize: "1.1rem", fontWeight: "500"}}>W</span>
-                            <span style={{ color: "var(--yellow-color", fontSize: "1.1rem", fontWeight: "500"}}>E</span>
-                                's LinkedIn page
+                                LinkedIn
                                 <span className="sr-only"> opens in a new tab</span>
                                 <span className="external-linksvg-wrap">
                                     &nbsp;

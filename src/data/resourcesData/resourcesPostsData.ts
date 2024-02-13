@@ -31,7 +31,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "subtitle": "",
         "author": "By Web for Everyone",
         "description": `Have you met the DOM' powerful sibling, the accessibility tree? 
-            It's a node structure made up of accessible objects and the key player in making
+            It's a node structure made up of accessible objects and a key player in making
             acessibility happen.`,
         "to": `/resources/how-accessibility-works`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",

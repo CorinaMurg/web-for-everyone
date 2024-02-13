@@ -94,3 +94,12 @@
 .we-can-help svg path {
     fill: var(--pinkBright-color);
 }
+
+/* .we-can-help li:nth-of-type(3) a span:nth-of-type(2) {
+    background-color: white;
+    height: 0.8rem;
+    width: 0.95rem;
+   font-size: 0;
+    border-radius: 5px;
+    padding: 0;
+} */

@@ -170,7 +170,13 @@
         font-size: 2.3rem;
     }
 }
+
 /* LINK ARROWS
+<i className={styles['link-arrow']}></i>
+                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
+                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
+                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
+                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> 
 .link-arrow {
     border: solid var(--cream-color);
     border-width: 0 2px 2px 0;
@@ -225,6 +231,16 @@
     margin-top: 130px;
     border-top: 1.5px solid var(--text-dark-color);
 }
+
+.mini-articles h2 {
+    align-self: self-start;
+    font-size: 2rem;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .mini-articles ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -252,6 +268,9 @@
     }
 }
 
+/* .mini-articles ul li {
+    position: relative;
+} */
 
 .mini-article {
     width: 100%;
@@ -261,35 +280,54 @@
     justify-content: start;
     align-items: start;
     margin-top: 30px;
-}
-
-.mini-articles h2 {
-    align-self: self-start;
-    font-size: 2rem;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.mini-article-link {
-    /* border-top: 3px solid var(--darkBlue-color); */
-    color: var(--text-dark-color);
-    text-decoration: none;
-    padding-top: 40px;
-    padding-inline: 17px;
-    width: 100%;
-    height: 20rem;
-    background-color: transparent;
-    transition: 0.3s;
     position: relative;
 }
 
-.mini-article-link p {
+.mini-article a {
+    text-decoration: none;
+    color: var(--text-dark-color);
+    cursor: pointer;
+}
+
+.mini-article a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.mini-article h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mini-article--text {
+    border-top: 3px solid var(--text-dark-color);
+    color: var(--text-dark-color);
+    padding-top: 40px;
+    padding-inline: 17px;
+    width: 100%;
+}
+
+.mini-article--text p {
     font-weight: 300;
 }
 
-.mini-article-link::before {
+.mini-article:hover {
+    background-color: var(--hover-bg-color);
+    outline: 3px dashed var(--text-dark-color);
+}
+
+.mini-article:focus-within {
+    background-color: var(--hover-bg-color);
+    outline: 3px dashed var(--text-dark-color);
+}
+
+/* .mini-article-link::before {
     content: "";
     height: 4px;
     background: var(--text-dark-color);
@@ -304,25 +342,11 @@
     transition: height 1.5s;
     overflow: hidden;
     z-index: -1;
-}
+} */
 
-.mini-article-link:hover::before {
+/* .mini-article-link:hover::before {
     height: 100%;
-}
-
-.mini-article-link:hover h3 {
-    color: var(--text-light-color);
-}
-
-.mini-article-link:hover p {
-    color: var(--grayishBlue-color);
-    font-weight: 300;
-}
-
-.mini-article-link:hover span {
-    color: var(--grayishBlue-color);
-    font-weight: 300;
-}
+} */
 
 .mini-article-1 {
     grid-column: 1 / 2;
@@ -355,7 +379,7 @@
 }
 
 
-.mini-article-image {
+.mini-article--image {
     width: 100%;
     height: 150px;
     display: flex;
@@ -363,7 +387,7 @@
     align-items: center;
 }
 
-.mini-article-image .svg-wrap {
+.mini-article--image .svg-wrap {
     width: 130px;
     height: 100px;
     display: flex;
@@ -372,24 +396,24 @@
     background-color: var(--cream-color);
 }
 
-.mini-article-image-1 {
+.mini-article--image-1 {
     background-color: var(--yellow-color);
 }
-.mini-article-image-1 .svg-wrap svg{
+.mini-article--image-1 .svg-wrap svg{
     fill: var(--hero-lightBlue);
 }
 
-.mini-article-image-2 {
+.mini-article--image-2 {
     background-color: var(--hero-lightBlue);
 }
 .mini-article-image-2 .svg-wrap svg{
     fill: var(--hero-orange);
 }
 
-.mini-article-image-3 {
+.mini-article--image-3 {
     background-color: var(--hero-pink);
 }
-.mini-article-image-3 .svg-wrap svg{
+.mini-article--image-3 .svg-wrap svg{
     fill: var(--hero-darkGreen);
 }
 
