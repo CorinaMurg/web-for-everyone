@@ -1,5 +1,6 @@
 <span className="pink-text bold">&#x2714; </span> 
-
+Dark Mode
+About
 
 https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
 
@@ -25,8 +26,8 @@ FRIDAY
 6. TypeScript
 
 11. Fix Contact WE
-10. Logo
-11. About 
+
+
 11. LinkedIn page WE
 12. LinkedIn page Corina, GitHub
 13. A11y statement https://dequeuniversity.com/accessibility-statement
