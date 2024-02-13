@@ -6,11 +6,11 @@ type WeCanHelpDataTypes = {
 export const weCanHelpData: WeCanHelpDataTypes[] = [
     {
         title: "Checklist for common bugs",
-        description: `Most common bugs are easy to fix. You just need to know what to look for.`,
+        description: `The most common bugs are not hard to catch. You just need to know where to look!`,
     },
     {
         title: "Evaluate your portfolio site",
-        description: `Squashing accessibility bugs is more fun with a partner! Send a request on LinkedIn.`,
+        description: `Because squashing accessibility bugs is more fun with a partner! `,
     },
     // {
     //     title: "Schedule a call",

@@ -59,25 +59,63 @@ export default function About() {
                     <h2>I'm Corina, and I'd love to help you build an accessible portfolio site.</h2>
                     
                     <div>
-                        {/* <p>I am a self-taught software engineer with a background in math teaching.</p>
-
-                        <p>As a teacher my focus was on creating learning experiences that were inclusive and accessible. 
-                            For that reason, the frontend's concern with accessible web products deeply resonates with me.</p> */}
-
                         <p>
-                            As web developers, we have the power to create a more inclusive web, and to ensure 
+                            As web developers, we have the power to create an inclusive web, and to ensure 
                             that every user feels seen and valued. 
                         </p>
                         <p>
-                            I initiated the Web for Everyone project to help developers build accessible portfolio sites.
-                            If you are new accessibility, I recommend starting with the 
-                            <Link to="/resources#understanding-accessibility"> 
-                                Understanding Accessibility section
-                            </Link>
+                            I initiated the <b>Web for Everyone</b> project to help entry-level developers 
+                            embrace accessibility at the start of their careers. As a Trusted Tester 
+                            certified accessibility specialist, I share practical techniques to avoid 
+                            common bugs in your portfolio site and projects.  
                         </p>
-                        {/* <p>
-                            I believe in a web where everyone has a place!    
-                        </p> */}
+                        
+                        <h3>How to get started</h3>
+                        
+                        <p>
+                            <span className="pink-text bold">&#x2714; </span> 
+                            &nbsp;
+                            <strong>New accessibility?</strong>
+                        </p>
+                        <p>       
+                            I recommend beginning with the <span> </span>
+                            <Link to="/resources#understanding-accessibility"> 
+                                Understanding Accessibility
+                            </Link> series. You will receive an overview of accessibility concepts and learn about the
+                            most common accessibility issues.
+                        </p>
+                        &nbsp;
+                        <p>
+                            <span className="pink-text bold">&#x2714; </span>
+                            <strong>Familiar with the basics of accessibility?</strong>
+                        </p>
+                        <p>
+                            Start with the <span> </span>
+                            <Link to="/resources#your-digital-presence"> 
+                                Your Digital Presence
+                            </Link> series to evaluate your portfolio site and fix common bugs.
+                        </p>
+                        &nbsp;
+                        <p>
+                            <span className="pink-text bold">&#x2714; </span>
+                            <strong>Looking to collaborate on an accessibility review?</strong>
+                        </p>
+                        <p>
+                            Get in touch via&nbsp;
+                            <a href="https://www.linkedin.com/company/webforeveryone" 
+                                target='_blank' rel="noopener noreferrer"
+                                aria-label="Web for Everyone's LinkedIn page. Opens in a new tab."    
+                            >       
+                                Web for Everyone's LinkedIn
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
+                                </span>
+                            </a>   
+                            <span> </span> to share the link to your portfolio site or project, and 
+                            any accessibility help you are looking for.
+                        </p>
                     </div>
                 </div>
             </section>

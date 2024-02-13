@@ -7,6 +7,14 @@
     margin-inline: var(--main-margin);
     padding-inline: 70px;
 }
+.about a {
+    padding: 2px;
+}
+
+.about a:hover {
+    background-color: var(--yellowFaded-color);
+    border-radius: 4px;
+}
 
 .about h1 {
     text-align: center;
@@ -28,6 +36,10 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
+}
+
+.about p {
+    margin-block: 20px;
 }
 
 .rectangle {
@@ -100,8 +112,8 @@
 
 
 .about--me--image {
-    width: 320px;
-    /* height: 250px; */
+    width: 300px;
+    height: 300px;
     aspect-ratio: 1/1;  
 }
 
@@ -126,10 +138,23 @@
     line-height: 1.5;
 }
 
+.about--me--text h3 {
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 .about--me--text p {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 2;
+}
+
+.we-container {
+    background-color: var(--text-dark-color);
+    display: inline;
+    padding: 2px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -28,7 +28,7 @@
     padding-inline-start: 0;
 }
 .we-can-help ul li {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     border-bottom: 0.3px solid var(--grayishBlue-color);
 }
 
@@ -56,7 +56,7 @@
 .we-can-help h3 {
     color: inherit;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 25px;
     margin-bottom: 5px;
 }
@@ -65,23 +65,24 @@
     color: var(--grayishBlue-color);
     font-size: 0.9rem;
     font-weight: 300;
-    /* line-height: 1.5; */
+    line-height: 1.7;
 }
 
 .we-can-help a {
     color: inherit;
     text-decoration: underline;
     font-weight: 400;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px !important;
     padding: 2px;
 }
 
 .we-can-help a:hover {
-   
-    color: var(--cream-color); 
-    text-decoration: none;
-    outline: 3px dashed var(--pinkBright-color);
-    outline-offset: 2.5px;
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 400;
+    text-underline-offset: 5px !important;
+    /* padding: 2px; */
+    text-decoration-thickness: 6px;
 }
 
 .we-can-help a:focus-visible {
@@ -90,13 +91,6 @@
     outline-offset: 2.5px;
 }
 
-.we-can-help .external-linksvg-wrap svg {
-    /* color: var(--pinkBright-color); */
-    color: white;
-    height: 1rem;
-}
-
-.we-can-help .external-linksvg-wrap svg path {
-    color: var(--pinkBright-color);
-    /* color: white; */
+.we-can-help svg path {
+    fill: var(--pinkBright-color);
 }
