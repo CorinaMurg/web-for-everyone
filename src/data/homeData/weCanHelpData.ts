@@ -9,7 +9,7 @@ export const weCanHelpData: WeCanHelpDataTypes[] = [
         description: `Most common bugs are easy to fix. You just need to know what to look for.`,
     },
     {
-        title: "Audit your portfolio site",
+        title: "Evaluate your portfolio site",
         description: `Squashing accessibility bugs is more fun with a partner! Send a request on LinkedIn.`,
     },
     // {
