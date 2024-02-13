@@ -1,11 +1,22 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
 About
+Add link to dev.to
+Publish blog
+Delete corinamurg.dev
+Resources: check all links
+Add logo
+Add padding to WeCanHelp
+Picture Corina
+Background LinkedIn
+12. LinkedIn page Corina (Revere bullet points), GitHub
+13. A11y statement https://dequeuniversity.com/accessibility-statement
+Tagged project, add to LinkedIn
 
 https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
 
 THURSDAY
-
+Title + favicon
 1. test: icon with and w/out aria-hidden
 2. description or alt to images re: color contrast / Explain: aria-hidden for icon
 
@@ -24,18 +35,6 @@ FRIDAY
 
 
 6. TypeScript
-
-11. Fix Contact WE
-
-
-11. LinkedIn page WE
-12. LinkedIn page Corina, GitHub
-13. A11y statement https://dequeuniversity.com/accessibility-statement
-
-
-SUNDAY
-1. 
-2. 
 3. when using the back button in the browser, it should scroll to the same section as before
 7. what is A11y: display:none are also ignored
 

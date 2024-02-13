@@ -91,11 +91,11 @@
 .hero--text--body p {
     font-size: 0.9rem;
     font-weight: 500;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 .hero--text--body p:nth-of-type(2) {
-    margin-block: 15px;
+    margin-block: 20px;
 }
 
 .home .continue-to-article {

@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import useDocTitle from "../hooks/useDocTitle";
 import styles from "./About.module.css";
 
@@ -64,12 +65,15 @@ export default function About() {
                             For that reason, the frontend's concern with accessible web products deeply resonates with me.</p> */}
 
                         <p>
-                            I am excited to collaborate on projects with developers from all over the world, 
-                            and engage in conversations about our responsibility to ensure that every user feels seen 
-                            and valued. 
+                            As web developers, we have the power to create a more inclusive web, and to ensure 
+                            that every user feels seen and valued. 
                         </p>
                         <p>
-                            . . .
+                            I initiated the Web for Everyone project to help developers build accessible portfolio sites.
+                            If you are new accessibility, I recommend starting with the 
+                            <Link to="/resources#understanding-accessibility"> 
+                                Understanding Accessibility section
+                            </Link>
                         </p>
                         {/* <p>
                             I believe in a web where everyone has a place!    
