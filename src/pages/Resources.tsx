@@ -71,6 +71,7 @@ export default function Accessibility() {
                                                     className={styles['article--link']}
                                                 >
                                                     {post.title}
+                                                    <span className="sr-only"> opens in a new tab</span>
                                                 </a>
                                             ) : post.to ? (
                                                 <Link 

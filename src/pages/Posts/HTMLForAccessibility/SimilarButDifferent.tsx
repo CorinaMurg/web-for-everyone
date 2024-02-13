@@ -261,24 +261,6 @@ export default function SimilarButDifferent() {
                         and to certain elements reached via mouse click. So smart!
                     </p>          
                 </div>
-
-                {/* *** LABEL VS ARIA-LABEL */}
-                <div className="section scroll-target" id="aria-label-aria-labelledby">
-                    <h2 aria-label="Compare aria-label and aria-labelledby">
-                        <span>
-                            aria-label<span className={styles['versus-icon']}>⚔️</span>
-                        </span>
-                        <span>aria-labelledby</span>
-                    </h2>       
-                    <p>
-                        The attributes serve similar purposes. They both provide accessible names 
-                        for elements, but in different ways.
-                    </p>
-                    <p>
-                        <span className="pink-bg-white-text"><code>aria-label</code></span> takes a string value that becomes the name of 
-                        the element. It is added to the opening tag of the element.
-                    </p>
-                </div>
                     
                 {/* CONCLUSION */}
                 {/* <div className="section conclusion scroll-target" id="conclusion">

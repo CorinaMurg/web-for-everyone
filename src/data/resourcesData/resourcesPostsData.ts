@@ -97,7 +97,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `In most conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. This post looks at the role it 
             plays in accessibility and beyond.`,
-        "href": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
+        "href": `https://dev.to/corinamurg/use-semantic-html-4b97`,
         "ariaLabel": "The importance of semantic HTML blog post.",
         "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
     },
@@ -109,7 +109,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
-        "to": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
+        "href": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
         "ariaLabel": "HTML: buttons or links? How to choose blog post.",
         "readMoreAriaLabel": "read more link to HTML: buttons or links? How to choose blog post.",
 
