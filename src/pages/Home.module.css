@@ -98,7 +98,7 @@
     margin-block: 20px;
 }
 
-.home .continue-to-article {
+.continue-to-article {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -110,28 +110,27 @@
     color: var(--text-dark-color);
 }
 
-
-.home .continue-to-article svg[id="arrow"] circle {
+.continue-to-article svg[id="arrow"] circle {
     fill: var(--hero-lightBlue)
 }
-.home .continue-to-article svg[id="bug"] {
+.continue-to-article svg[id="bug"] {
     display: none; 
   }
   
-.home .continue-to-article:hover svg[id="arrow"] {
+.continue-to-article:hover svg[id="arrow"] {
     display: none; 
 }
 
-.home .continue-to-article:focus-visible svg[id="arrow"] {
+.continue-to-article:focus-visible svg[id="arrow"] {
     display: none; 
 }
 
-.home .continue-to-article:hover svg[id="bug"] {
+.continue-to-article:hover svg[id="bug"] {
     display: block; 
     fill: var(--pinkBright-color);
 }
 
-.home .continue-to-article:focus-visible svg[id="bug"] {
+.continue-to-article:focus-visible svg[id="bug"] {
     display: block; 
     fill: var(--pinkBright-color);
 }

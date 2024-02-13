@@ -104,10 +104,10 @@ a:focus-visible {
 
 .blue-heading {
     align-self: left;
-    color: var(--blue-color);
+    color: var(--pinkBright-color);
     display: inline-block;
     line-height: 1.1;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -182,6 +182,47 @@ a:focus-visible {
     background-color: var(--code-bg-color);
     color: var(--cream-color);
     margin-bottom: 30px;
+}
+
+.continue-to-article {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+    align-self: flex-start;
+    text-decoration: none;
+    color: var(--text-dark-color);
+}
+
+.continue-to-article svg[id="arrow"] circle {
+    fill: var(--hero-lightBlue)
+}
+.continue-to-article svg[id="bug"] {
+    display: none; 
+  }
+  
+.continue-to-article:hover svg[id="arrow"] {
+    display: none; 
+}
+
+.continue-to-article:focus-visible svg[id="arrow"] {
+    display: none; 
+}
+
+.continue-to-article:hover svg[id="bug"] {
+    display: block; 
+    fill: var(--pinkBright-color);
+}
+
+.continue-to-article:focus-visible svg[id="bug"] {
+    display: block; 
+    fill: var(--pinkBright-color);
+}
+
+.continue-to-article-container {
+    display: flex;
 }
 
 .highlight .code {
