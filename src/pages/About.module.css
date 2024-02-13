@@ -11,9 +11,16 @@
     padding: 2px;
 }
 
-.about a:hover {
+/* .about a:hover {
     background-color: var(--yellowFaded-color);
     border-radius: 4px;
+} */
+
+.about a:hover {
+    text-underline-offset: 5px;
+    /* text-decoration-thickness: 6px; */
+    text-decoration-style: wavy;
+    text-decoration-color: var(--blue-color);
 }
 
 .about h1 {

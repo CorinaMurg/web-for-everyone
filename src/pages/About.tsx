@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useDocTitle from "../hooks/useDocTitle";
 import styles from "./About.module.css";
+import "../global.css";
 
 export default function About() {
     useDocTitle("About | Web for Everyone");
