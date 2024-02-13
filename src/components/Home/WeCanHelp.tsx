@@ -39,7 +39,7 @@ export default function WeCanHelp() {
                                     </svg>    
                                 </span>
                             </a>&nbsp; to
-                            share the link to your portfolio site, and any accessibility help you are looking for.
+                            share the link to your portfolio site or project, and any accessibility help you are looking for.
                         </p>
                     </div>
                 </li>
