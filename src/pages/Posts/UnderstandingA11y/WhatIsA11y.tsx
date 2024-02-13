@@ -91,7 +91,7 @@ export default function WhatIsA11y() {
                         <li>
                             <p className="bullet-point-line">
                                 HTML (with a little help 
-                                from 
+                                from <span> </span>
                                 <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
                                     ARIA
                                     <span className="sr-only"> opens in a new tab</span>

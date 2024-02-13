@@ -167,7 +167,7 @@ export default function MakeItAccessible() {
                                 </a>
                             </p>
                             <p className="bullet-point-line">
-                                <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                                <a href="https://developer.chrome.com/docs/lighthouse/overview/" 
                                     target="_blank" rel="noreferrer"
                                 >
                                     Google's Lighthouse
@@ -250,7 +250,7 @@ export default function MakeItAccessible() {
                     
                     <p>
                         When you run a test with automated tools like <span> </span>
-                        <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                        <a href="https://developer.chrome.com/docs/lighthouse/overview/" 
                             target="_blank" rel="noreferrer"
                         >
                             Google's Lighthouse

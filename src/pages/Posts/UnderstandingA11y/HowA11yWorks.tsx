@@ -499,7 +499,7 @@ export default function MostCommonBugs() {
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
-                                    Read more about the difference between <code>aria-label</code> and <code>aria-labelledby</code>
+                                    Read more about the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
                                 </Link>
                             </p>
                             

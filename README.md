@@ -1,12 +1,12 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
-About
+About: a11y chat
 Add link to dev.to
 Publish blog
 Delete corinamurg.dev
 Resources: check all links
 Add logo
-Add padding to WeCanHelp
+
 Picture Corina
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub
