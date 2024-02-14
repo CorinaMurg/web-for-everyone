@@ -121,10 +121,10 @@ export default function MostCommonBugs() {
                                 while the target size for clickable areas has both level AA and AAA requirements. 
                                 For the AA level, any clickable area must be of minimum 24 by 24 pixels. 
                                 For the AAA level, the minimum size must be 44 by 44 pixels. 
-                                In this way the guidelines establish a minimum level of accessibility for all users,
-                                while also recommending an desirable level of accessibility that would 
-                                provide the best possible experience for users with various needs.
-
+                            </p>
+                            <p>
+                                In this way, the guidelines establish a minimum level of accessibility for all users,
+                                while also recommending a desirable level that will benefit the largest number of users. 
                             </p>
                             <p>   
                                 In this article, we will review the 6 most common accessibility bugs by referencing the negative
