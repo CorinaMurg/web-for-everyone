@@ -5,7 +5,7 @@ About: a11y chat
 Publish blog
 Delete corinamurg.dev
 Resources: check all links
-Add logo
+
 
 Picture Corina
 Background LinkedIn
