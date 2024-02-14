@@ -41,14 +41,14 @@
 
 .table-contents--list--item a:hover {
     color: var(--pinkBright-color);
-    font-weight: bold; 
+    font-weight: 550; 
     opacity: 1;
 }
 
 .table-contents--list--item a.active {
     color: var(--pinkBright-color);
     /* font-family: monospace; */
-    font-weight: 500; 
+    font-weight: 550; 
     text-decoration: underline;
     opacity: 1;
 }
