@@ -177,7 +177,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     
     {
-        "label": "accessible-digital-presence",
+        "label": "your-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
         "subtitle": "Part One: Finding the 6 Most Common Bugs",
         "author": "By Web for Everyone",
@@ -188,7 +188,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
     {
-        "label": "accessible-digital-presence",
+        "label": "your-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
         "subtitle": "Part 2: On the hunt for 6 more bugs",
         "author": "By Web for Everyone",
@@ -199,7 +199,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
     {
-        "label": "accessible-digital-presence",
+        "label": "your-digital-presence",
         "title": "Tips for an Accessible GitHub Profile",
         "subtitle": "",
         "author": "By Annie Streater on github.blog",

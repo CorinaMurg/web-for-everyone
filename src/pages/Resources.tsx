@@ -14,7 +14,7 @@ export default function Accessibility() {
     const { activeId } = useHighlightTOC();
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
-        "accessible-digital-presence": "Your Digital Presence",
+        "your-digital-presence": "Your Digital Presence",
         "html-for-accessibility": "HTML for Accessibility",
         "css-for-accessibility": "CSS for Accessibility",
         "example-accessible-components": "Examples of Accessible Components",

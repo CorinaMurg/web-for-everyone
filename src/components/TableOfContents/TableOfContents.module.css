@@ -43,6 +43,7 @@
     color: var(--pinkBright-color);
     font-weight: bold; 
     text-decoration: underline;
+    opacity: 1;
 }
 
 

@@ -2,12 +2,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useDocTitle from "../hooks/useDocTitle";
+import useScrollToSection from "../hooks/useScrollToSection"
 import styles from "./About.module.css";
 import "../global.css";
 
 export default function About() {
     useDocTitle("About | Web for Everyone");
-
+    useScrollToSection();
     return (
         <div className={styles.about}>
             <hgroup>
@@ -78,14 +79,14 @@ export default function About() {
                         <p>
                             <span className="pink-text bold">&#x2714; </span> 
                             &nbsp;
-                            <strong>New accessibility?</strong>
+                            <strong>New to accessibility?</strong>
                         </p>
                         <p>       
-                            I recommend beginning with the <span> </span>
+                            Start with the <span> </span>
                             <Link to="/resources#understanding-accessibility"> 
                                 Understanding Accessibility
                             </Link> series. You will receive an overview of accessibility concepts and learn about the
-                            most common accessibility issues.
+                            most common accessibility bugs.
                         </p>
                         &nbsp;
                         <p>
@@ -97,7 +98,7 @@ export default function About() {
                             Start with the <span> </span>
                             <Link to="/resources#your-digital-presence"> 
                                 Your Digital Presence
-                            </Link> series to evaluate your portfolio site and fix common bugs.
+                            </Link> series to evaluate your portfolio site and eliminate, if present, 12 common bugs.
                         </p>
                         &nbsp;
                         <p>
