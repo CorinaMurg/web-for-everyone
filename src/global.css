@@ -513,6 +513,7 @@ h4 {
 .next-article {
     /* width: 100%; */
     display: flex;
+    
     gap: 3px;
 }
 
@@ -523,6 +524,7 @@ h4 {
 
 .note {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 

@@ -246,10 +246,20 @@ export default function MakeItAccessible() {
                         Users with low vision can struggle with perceiving contrast, and
                         reading can be challenging when the text color doesn't stand out much from the 
                         background.
-                    </p>
-                    
+                    </p>            
                     <p>
-                        When you run a test with automated tools like <span> </span>
+                        The <strong>4.5:1</strong> (for smaller text) and <span> </span>
+                        <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
+                    </p>
+                    <p>
+                        The <strong>AAA</strong> level requires
+                        a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
+                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
+                    </p>  
+
+                    <h3>How to check the color contrast ratio</h3>
+                    <p>
+                        When you run an accessibility report with automated tools like <span> </span>
                         <a href="https://developer.chrome.com/docs/lighthouse/overview/" 
                             target="_blank" rel="noreferrer"
                         >
@@ -275,21 +285,6 @@ export default function MakeItAccessible() {
                         </a> 
                         .  
                     </p>
-
-                    <div className="note margin-top-30">
-                        <b>Note</b>
-                        <div>
-                            <p>
-                                The <strong>4.5:1</strong> (for smaller text) and <span> </span>
-                                <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
-                            </p>
-                            <p className="margin-top-20">
-                                The <strong>AAA</strong> level requires
-                                a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
-                                Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
-                            </p>  
-                        </div>  
-                    </div>
 
                     <p className="margin-top-20">
                         <strong>Checking the color contrast is straightforward</strong>: 
@@ -726,14 +721,14 @@ export default function MakeItAccessible() {
                         Let's find the other 6 easy-to-fix bugs!
                     </p>
                     
-                    <div className="next-article margin-top-30">
+                    <p className="margin-top-30">
                         <b>Read next:</b>
                         <Link to="/resources/make-it-accessible-part2" 
                                 onClick={() => { scrollToTop() }}
                         >
                             Let's Make It Accessible! Part 2: On the Hunt for 6 More Bugs
                         </Link>
-                    </div>
+                    </p>
                 </div>
 
             </div>
