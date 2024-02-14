@@ -10,9 +10,10 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link className="logo" to="/">
-                        <WELogo size="1.7rem" weight="500"/>
-                        <span className="logo-vertical"> | </span> 
+                    <Link className="logo-link" to="/">
+                        <div className="logo-container">
+                            <img src="/assets/faviconHigh.png" alt="" />
+                        </div> 
                         Web for Everyone
                     </Link>
                 </div>

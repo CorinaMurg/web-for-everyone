@@ -15,13 +15,9 @@ footer {
     padding-bottom: 40px;
 }
 
-footer .logo {
+footer .logo-link {
     color: var(--cream-color);
     font-weight: 500;
-}
-
-footer .logo-vertical {
-    font-weight: 200;
 }
 
 .footer-right {
@@ -68,7 +64,7 @@ footer a:focus-visible {
     outline-offset: 4px;
 }
 
-footer .logo:hover {
+footer .logo-link:hover {
     font-weight: 500;
     outline: 2px dashed var(--cream-color);
     outline-offset: 4px;

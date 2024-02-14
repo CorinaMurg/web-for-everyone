@@ -17,9 +17,11 @@ export default function Header() {
         <header>
             <a className="skip-to-content" href="#main">Skip to Content</a>
             <div className="header-left">
-                <Link className="logo" to="/">
-                    <WELogo size="1.7rem" weight="600"/>
-                    <span className="logo-vertical"> | </span> 
+                <Link className="logo-link" to="/">
+                    <div className="logo-container">
+                        <img src="/assets/faviconHigh.png" alt="" />
+                    </div>
+                     
                     Web for Everyone
                 </Link>
             </div>

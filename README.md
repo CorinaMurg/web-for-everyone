@@ -1,7 +1,7 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
 About: a11y chat
-Add link to dev.to
+
 Publish blog
 Delete corinamurg.dev
 Resources: check all links
@@ -9,7 +9,7 @@ Add logo
 
 Picture Corina
 Background LinkedIn
-12. LinkedIn page Corina (Revere bullet points), GitHub
+12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to
 13. A11y statement https://dequeuniversity.com/accessibility-statement
 Tagged project, add to LinkedIn
 
