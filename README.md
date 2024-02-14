@@ -6,6 +6,7 @@ Publish blog
 Delete corinamurg.dev
 Resources: check all links
 Check on mobile
+With screen reader check modal
 
 Picture Corina
 Background LinkedIn

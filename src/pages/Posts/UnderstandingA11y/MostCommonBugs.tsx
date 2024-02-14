@@ -115,10 +115,15 @@ export default function MostCommonBugs() {
                                 recommended level for most websites is AA (which requires that level A has also been met).
                             </p>
                             <p>
-                                Some guidelines are staggered across all three levels, while others are specific to just one level or two.
+                                Some guidelines are staggered across all three levels, while others are specific 
+                                to just one level or two.
                                 For example, the requirement that every web page has a title is a level A, 
-                                while the target size for clickable areas has both level AA and AAA requirements. For the AA level,
-                                any clickable area must be of minimum 24 by 24 pixels. For the AAA level, the minimum size must be 44 by 44 pixels.
+                                while the target size for clickable areas has both level AA and AAA requirements. 
+                                For the AA level, any clickable area must be of minimum 24 by 24 pixels. 
+                                For the AAA level, the minimum size must be 44 by 44 pixels. 
+                                In this way the guidelines establish a minimum level of accessibility for all users,
+                                while also recommending an desirable level of accessibility that would 
+                                provide the best possible experience for users with various needs.
 
                             </p>
                             <p>   

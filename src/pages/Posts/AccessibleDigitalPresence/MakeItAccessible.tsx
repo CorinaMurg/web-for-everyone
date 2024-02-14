@@ -275,20 +275,7 @@ export default function MakeItAccessible() {
                         </a> 
                         .  
                     </p>
-                              
-                    <p className="margin-top-20">
-                        <strong>Checking the color contrast is straightforward</strong>: 
-                    </p>
-                    <p className="bullet-point-line">
-                        enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
-                    </p>
-                    <p className="bullet-point-line">
-                        the tool will calculate the <strong>contrast ratio</strong> for you
-                    </p>
-                    <p className="bullet-point-line">
-                        you will get a <strong>pass</strong> or <strong>fail</strong> result for 
-                        the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
-                    </p>   
+
                     <div className="note margin-top-30">
                         <p><strong>Note</strong>:</p>
                         <div>
@@ -303,6 +290,20 @@ export default function MakeItAccessible() {
                             </p>  
                         </div>  
                     </div>
+
+                    <p className="margin-top-20">
+                        <strong>Checking the color contrast is straightforward</strong>: 
+                    </p>
+                    <p className="bullet-point-line">
+                        enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
+                    </p>
+                    <p className="bullet-point-line">
+                        the tool will calculate the <strong>contrast ratio</strong> for you
+                    </p>
+                    <p className="bullet-point-line">
+                        you will get a <strong>pass</strong> or <strong>fail</strong> result for 
+                        the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
+                    </p>   
                             
                     {/* Example: Using WebAIM's contrast checker */}
                     <div className="highlight margin-top-30">
@@ -364,7 +365,7 @@ export default function MakeItAccessible() {
                     <div className="highlight">
                         <h4 className="two-line-heading">
                             <span>Did you know?</span>
-                            <span>You have to check the contrast ratio for links too!<span aria-hidden="true"> 💡</span></span> 
+                            <span>Links also have to follow the color contrast rules!<span aria-hidden="true"> 💡</span></span> 
                         </h4>
                         <p>
                             Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
@@ -464,7 +465,7 @@ export default function MakeItAccessible() {
 
                     <div className="code code--links">
                         <code>
-                            <span className="code-blue-color">&lt;a</span> href="https://www.linkedin.com/in/webforeveryone/"
+                            <span className="code-blue-color">&lt;a</span> href="https://www.linkedin.com/company/webforeveryone/"
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">
@@ -529,9 +530,9 @@ export default function MakeItAccessible() {
                     <div className="note" style={{ marginTop: '20px' }}>
                         <p><strong>Note: </strong></p>
                         <p>
-                            This is not an exhaustive list of techniques you could use to make your social media
-                            links accessible. The ones shared here are the most commonly used and you can employ them
-                            anytime you use an icon instead of visible text. Plus, they also work with buttons.
+                            This is not an exhaustive list of techniques to make your social media
+                            links accessible. These techniques are easy to apply
+                            anytime you use an icon instead of visible text. Plus, they also work with buttons!
                         </p>  
                     </div>
                     <p className="white-bg margin-top-20">

@@ -131,7 +131,7 @@ export default function MostCommonBugs() {
                     
                     <p className="white-bg">
                         Any <code>div</code> element with purely decorative or container role
-                        will be labeled as "ignored" or "generic".
+                        will be labeled as "ignored" or "generic". 
                     </p>
 
                     {/* How to view the accessibility tree with Dev Tools */}
@@ -542,7 +542,7 @@ export default function MostCommonBugs() {
                     {/* Example: <code>button</code> with no visible text */}
                     <div id="example-button-no-visible-text" className="scroll-target">
                         <div className="highlight">  
-                            <h3 className="gray-bg">
+                            <h3 className="white-bg">
                                     Example: <code>button</code> with no visible text
                             </h3>
                             <div className="code margin-top-50 margin-bottom-30">
@@ -556,12 +556,12 @@ export default function MostCommonBugs() {
                                 </code>
                                 <code><span className="code-blue-color">&lt;/button&gt;</span></code>
                             </div>
-                            <p className="margin-top-50 gray-bg">
+                            <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
                                 The browser will use the <code>aria-label</code> attribute to compute 
                                 the accessible name "Close modal".
                             </p>
-                            <p className="gray-bg">
+                            <p className="white-bg">
                                 For the sighted user, it will be obvious that the purpose of the button is to close 
                                 the modal. But for a screen reader user, it would be a mystery
                                 without the <code>aria-label</code> attribute. 

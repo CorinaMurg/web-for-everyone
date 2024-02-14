@@ -86,8 +86,9 @@ export default function MakeItAccessible() {
                         , and will now cover another set of six. 
                     </p>
                     <p>
-                        As was the case with the first set, 
-                        we will zoom on bugs that can be kept in check with just semantic HTML and CSS. (Well,
+                        With the first six bugs we learned that they can be kept in check with just semantic 
+                        HTML and CSS.
+                        This second group is no different. (Well,
                         there is just one exception, depending on which JavaScript library you use.)
                     </p>
                     
@@ -164,6 +165,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p className="bullet-point-line">
                         It helps sighted users identify a certain page when they have multiple tabs open.
+                        (It's true, the favicon can play the same role and better since it's placed before the title.)
                     </p>
                     <p className="bullet-point-line">
                         It helps screen reader users understand which page they are on. As they navigate from page 
@@ -427,24 +429,23 @@ export default function MakeItAccessible() {
                     <p>
                         It is important that the element that receives focus changes its appearance. 
                         This way the user knows exactly where the focus is and which element will be activated
-                        if they press the <span className="yellow-bg-dark-text">Enter</span> key.
+                        if they press the <span className="yellow-bg-dark-text">Enter</span> or <span className="yellow-bg-dark-text">Space</span> key.
                     </p>
                     <p>
                         Most browsers have a default focus style, the <strong>focus ring</strong>. 
-                        Depending on the design of your site,
-                        it might not always be visible.
-                        For example, the default focus style in Chrome is a black outline.
-                        If you have a button with a black or very dark background color, the outline will not be visible.
+                        For example, the default focus style in Chrome is double black and white outline.
+                        You can style it to match your design, but it's important to keep it visible. 
+                        {/* For that, pay attention to the contrast ratio between the focus style and the background color of the element, as well as the background of the page. */}
                     </p>
                     <p>
                         Here are a couple of ways to provide visual clues to sighted keyboard users:
                     </p>
                     <div className="padding-left-20">
                         <p className="bullet-point-line">
-                            Create a custom outline. 
+                            Create a custom focus outline
                         </p>
                         <p className="bullet-point-line margin-top-20">
-                            Change the brightness (shade) of the background color.
+                            Change the brightness (shade) of the element's background color
                         </p>
                     </div>
                     
@@ -500,7 +501,7 @@ export default function MakeItAccessible() {
                                 and only to specific mouse interractions (when beneficial to the user!)</p>
                             <p>
                                 Follow this link to read more about <span> </span>
-                                <Link to="/resources/how-accessibility-works#the-accessible-name">
+                                <Link to="/resources/similar-but-different#focus-focus-visible">
                                     how <b>:focus-visible</b> and <b>:focus</b> match against each other.
                                 </Link>
                             </p>
