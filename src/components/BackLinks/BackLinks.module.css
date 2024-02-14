@@ -20,3 +20,11 @@
     margin-inline: 10px;
     stroke: gray;
 }
+
+.back-links a:hover {
+    color: var(--pinkBright-color);
+    font-weight: bold; 
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}

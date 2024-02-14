@@ -2,7 +2,7 @@
 .table-contents {
     grid-row: 1 / 5;
     grid-column: 2 / 3;
-    /* font-family: monospace; */
+    font-family: monospace;
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -36,11 +36,18 @@
     color: inherit;
     opacity: 0.9;
     text-decoration: none;
-    letter-spacing: -0.1px;
+    letter-spacing: 0.1px;
+}
+
+.table-contents--list--item a:hover {
+    color: var(--pinkBright-color);
+    font-weight: bold; 
+    opacity: 1;
 }
 
 .table-contents--list--item a.active {
     color: var(--pinkBright-color);
+    font-family: monospace;
     font-weight: bold; 
     text-decoration: underline;
     opacity: 1;
