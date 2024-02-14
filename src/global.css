@@ -826,6 +826,10 @@ ul[class^="checkmark-list"] li {
     .note {
         flex-direction: column;
     }
+
+    .article-container p {
+        line-height: 1.5;
+    }
   
 }
 
