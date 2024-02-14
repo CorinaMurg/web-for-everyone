@@ -39,9 +39,6 @@ FRIDAY
 7. what is A11y: display:none are also ignored
 
 
-MONDAY
-Dark Mode
-
 Small parts:
 1. visually-hidden code: link to code pen
 
