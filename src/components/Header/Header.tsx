@@ -19,7 +19,7 @@ export default function Header() {
             <div className="header-left">
                 <Link className="logo-link" to="/">
                     <div className="logo-container">
-                        <img src="/assets/faviconHigh.png" alt="" />
+                        <img src="/assets/faviconDull.png" alt="" />
                     </div>
                      
                     Web for Everyone
