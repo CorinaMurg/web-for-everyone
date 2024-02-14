@@ -19,7 +19,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId })
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']} id="table-contents">
-                <code>Table of Contents</code>
+                Table of Contents
             </h2>
             <nav aria-labelledby='table-contents'>
                 <ul className={styles['table-contents--list']}>
@@ -29,7 +29,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId })
                             className={`hover-pink ${item.className} ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                         >
-                            <code>{item.text}</code>
+                            {item.text}
                         </a>
                     </li>
                     ))}

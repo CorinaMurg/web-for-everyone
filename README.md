@@ -1,7 +1,7 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
 About: a11y chat
-
+Make WeCanHelp smaller
 Publish blog
 Delete corinamurg.dev
 Resources: check all links
