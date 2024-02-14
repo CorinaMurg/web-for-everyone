@@ -277,7 +277,7 @@ export default function MakeItAccessible() {
                     </p>
 
                     <div className="note margin-top-30">
-                        <p><strong>Note</strong>:</p>
+                        <b>Note</b>
                         <div>
                             <p>
                                 The <strong>4.5:1</strong> (for smaller text) and <span> </span>
@@ -528,7 +528,7 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="note" style={{ marginTop: '20px' }}>
-                        <p><strong>Note: </strong></p>
+                        <b>Note:</b>
                         <p>
                             This is not an exhaustive list of techniques to make your social media
                             links accessible. These techniques are easy to apply
@@ -727,7 +727,7 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="next-article margin-top-30">
-                        <span className="read-next">Read next:</span>
+                        <b>Read next:</b>
                         <Link to="/resources/make-it-accessible-part2" 
                                 onClick={() => { scrollToTop() }}
                         >

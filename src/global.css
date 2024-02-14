@@ -511,7 +511,7 @@ h4 {
 }
 
 .next-article {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     gap: 3px;
 }
@@ -582,7 +582,7 @@ p {
     font-weight: 600;
     font-size: 0.9rem;
     /* to match the padding for links */
-    padding-block: 2px;
+    /* padding-block: 2px; */
 }
 
 .scroll-target::before {
@@ -648,7 +648,7 @@ p {
 
 strong,
 b {
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
 }
 
 summary {
@@ -828,7 +828,7 @@ ul[class^="checkmark-list"] li {
     }
 
     .article-container p {
-        line-height: 1.5;
+        line-height: 1.7;
     }
   
 }
