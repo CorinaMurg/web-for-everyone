@@ -87,7 +87,7 @@ export default function Accessibility() {
                                     </div>
                                     <div className={styles['article--description']}>
                                         <p>{post.description}</p>          
-                                        <p className={`${styles['article--author']} continue-to-article`}>         
+                                        <p className={`${styles['article--author']}`}>         
                                             {post.author}
                                             <svg aria-hidden="true" id="arrow" width="26" height="26" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="17" cy="17" r="17" fill="currentColor"></circle>

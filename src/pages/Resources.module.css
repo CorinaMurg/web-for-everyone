@@ -72,6 +72,9 @@
     z-index: 1;
 }
 
+.article .article--author svg circle {
+    fill: var(--hero-lightBlue);
+}
 .article .article--author svg {
     display: none;
 }
@@ -113,6 +116,9 @@
     line-height: 2;
     font-size: 1rem;
     font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 /* *****TABLE OF CONTENTS***** */
