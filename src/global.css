@@ -448,13 +448,15 @@ h4 {
 }
 
 .hover-underline {
-    text-decoration: none;
-    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    /* position: relative;
     align-self: start;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
-.hover-underline::before {
+/* .hover-underline::before {
     content: "";
     position: absolute;
     left: 0;
@@ -467,7 +469,7 @@ h4 {
 
 .hover-underline:hover::before {
     width: 100%; 
-}
+} */
 
 .margin-block-0 {
     margin-block: 0;

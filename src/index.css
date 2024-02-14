@@ -1,6 +1,4 @@
 
-
-
 :root {
     --text-light-color: #fff;
     --text-dark-color: #151f28;
@@ -12,6 +10,7 @@
     --burntYellow-color: #feb662;
     --pink-color: #f38ba3;
     --pinkBright-color: #de0265;
+    --pink-for-dark-bg-color: #fc2083;
     --red-color: #ae2012;
     --green-color: #0ba95b;
     --purpleLight-color: hsl(274, 100%, 81%);
