@@ -577,10 +577,10 @@ export default function MakeItAccessible() {
                     <p className="white-bg">
                         Notice the <strong>"graphic"</strong> part? Since the image has 
                         an <code>alt</code> text, the screen reader has to announce there is an image present. 
-                        It is up to you if this information is useful to the user or not. If not, 
+                        It is up to you if this information is useful to the user or not (most likely not?!). If not, 
                         use one of the techniques discussed in the <strong>Links</strong> section (like adding <span> </span>
-                        <code>aria-label</code> or visible text) and remember to leave the <code>alt</code> attribute 
-                        empty.
+                        <code>aria-label</code> or visible text) and remember to include the <code>alt</code> attrinute but leave
+                        it empty.
                     </p>
                     
                 </div>
@@ -722,7 +722,7 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p className="margin-top-30">
-                        <b>Read next:</b>
+                        <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part2" 
                                 onClick={() => { scrollToTop() }}
                         >
