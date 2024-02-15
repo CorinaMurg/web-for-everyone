@@ -82,7 +82,8 @@
     display: inline-block;
 }
 
-.article:focus-within {
+
+.article:focus-within:not(:active) {
     outline: 3px dashed var(--text-dark-color);
     outline-offset: 4px;
 }
@@ -91,11 +92,15 @@
     display: inline-block;
 }
 
-.article:focus-within .article--description{
+.article:focus-within:not(:active) .article--description{
     border-left: none;
 }
 
 .article a:focus-visible {
+    outline: none;
+}
+
+.article:focus-visible {
     outline: none;
 }
 

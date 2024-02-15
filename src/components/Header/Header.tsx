@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
 import "./Header.css"
-import WELogo from "../WELogo/WELogo";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +20,6 @@ export default function Header() {
                     <div className="logo-container">
                         <img src="/assets/faviconDull.png" alt="" />
                     </div>
-                     
                     Web for Everyone
                 </Link>
             </div>
