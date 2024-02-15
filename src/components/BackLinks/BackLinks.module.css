@@ -1,13 +1,31 @@
 
 .back-links {
-    
     font-family: monospace;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
+    margin-top: 50px;
     /* margin-left: var(--main-margin); */
+}
+
+.back-links ol {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.back-links ol li {
+    display: inline;
+}
+
+.back-links ol li + li::before {
+    display: inline-block;
+    margin: 0 15px;
+    transform: rotate(15deg);
+    border-right: 0.15em solid currentcolor;
+    height: 0.8em;
+    content: "";
 }
 
 .back-links a {

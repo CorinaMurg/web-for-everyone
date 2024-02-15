@@ -38,6 +38,7 @@ export default function MostCommonBugs() {
             <BackLinks 
                 secondLink="Understanding Accessibility"
                 href="/resources#understanding-accessibility" 
+                current="The Most Common Accessibility Bugs"
             />
             
             <h1 className="article-heading-desktop">

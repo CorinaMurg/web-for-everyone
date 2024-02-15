@@ -42,6 +42,7 @@ export default function WhatIsA11y() {
             <BackLinks 
                 secondLink="Understanding Accessibility"
                 href="/resources#understanding-accessibility" 
+                current="What is Accessibility?"
             />
             
             <h1 className="article-heading-desktop">
