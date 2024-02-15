@@ -749,6 +749,9 @@ ul[class^="checkmark-list"] li {
     border-radius: 3px;
     font-weight: 600;
     color: rgb(59, 59, 59);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.1px;
 }
 
 .white-bg p code {
@@ -757,7 +760,6 @@ ul[class^="checkmark-list"] li {
     padding: 2px 4px;
     border-radius: 3px;
     font-size: 0.9rem;
-    /* font-size: 0.9em; */
     font-weight: 500;
     color: rgb(59, 59, 59);
     box-decoration-break: clone;
