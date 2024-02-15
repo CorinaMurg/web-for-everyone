@@ -16,6 +16,7 @@ replace pink bullet points to list-style
 color contrast algorithm
 scroll bar styles
 add svg to backlinks
+related articles
 Picture Corina
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to

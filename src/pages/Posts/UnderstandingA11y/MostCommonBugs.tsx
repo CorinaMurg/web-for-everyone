@@ -327,7 +327,7 @@ export default function MostCommonBugs() {
                         <p className="fake-heading-p margin-top-30">
                             Issue <span aria-hidden="true"> 🛠️</span>
                         </p>
-                        <p className="gray-bg">
+                        <p className="white-bg">
                             Text is replaced by an image with no <code>alt</code> text. 
                             Within the accessibility tree, this button object does not have an accessible name.
                         </p>
@@ -403,7 +403,7 @@ export default function MostCommonBugs() {
                                 Screen reader users will not understand the purpose of the input
                             </li>
                             <li>
-                                Users relying on speech commands do not have a way to bring focus to the input.
+                                Users relying on speech commands do not have a way to select the input.
                             </li>
                         </ul>
                         <br/>

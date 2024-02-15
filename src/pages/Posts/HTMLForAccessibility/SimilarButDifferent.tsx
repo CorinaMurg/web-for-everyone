@@ -157,7 +157,7 @@ export default function SimilarButDifferent() {
                         it's only announced by screen readers. 
                     </p>
                     <p className="bullet-point-line white-bg">
-                        <strong>aria-labelledby</strong> references elements that are usually visible on 
+                        <strong>aria-labelledby</strong> references elements that are visible on 
                         the page. It is also announced by screen readers. 
                     </p>
                     <p>
@@ -165,8 +165,8 @@ export default function SimilarButDifferent() {
                     </p>
                     <p className="bullet-point-line">
                         While <strong>aria-label</strong> takes a single string, 
-                        <strong> aria-labelledby</strong> can reference multiple IDs, allowing for 
-                        the concatenation of text from various elements.
+                        <strong> aria-labelledby</strong> can reference multiple IDs, and we can
+                        concatenate the names of different elements.
                     </p>
                 </div>               
 
