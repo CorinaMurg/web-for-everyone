@@ -13,6 +13,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-height: 300px; 
+    width: 300px;
+    white-space: normal;
+    overflow-y: auto;
+}
+
+.table-contents::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table-contents::-webkit-scrollbar-track {
+    background: var(--cream-color);
+}
+
+.table-contents::-webkit-scrollbar-thumb {
+    background: var(--gray-color);
+}
+
+.table-contents::-webkit-scrollbar-thumb:hover {
+background: var(--pinkBright-color); 
 }
 
 .table-contents h2 {

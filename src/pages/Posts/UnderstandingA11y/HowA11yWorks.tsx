@@ -26,7 +26,7 @@ const contents = [
         href: "#DOM-tree-vs-accessibility-tree",
         text: "DOM Tree vs. Accessibility Tree",
         ariaLabel: "DOM Tree versus Accessibility Tree",
-        className: "padding-left-30",
+        listClassName: "padding-left-20",
     },
     {
         href: "#implicit-vs-explicit-accessibility-roles",
@@ -37,13 +37,13 @@ const contents = [
         href: "#implicit-roles",
         text: "Implicit Roles",
         ariaLabel: "Implicit Accessibility Roles",  
-        className: "padding-left-30", 
+        listClassName: "padding-left-20", 
     },
     {
         href: "#explicit-roles",
         text: "Explicit Roles",
         ariaLabel: "Explicit Accessibility Roles", 
-        className: "padding-left-30",  
+        listClassName: "padding-left-20",  
     },
     {
         href: "#the-accessible-name",
@@ -52,12 +52,12 @@ const contents = [
     {
         href: "#the-accessible-name-computation-algorithm",
         text: "The Accessible Name Algorithm",
-        className: "padding-left-30",
+        listClassName: "padding-left-20",
     },
     {
         href: "#example-button-no-visible-text",
         text: "Example: Button with no Visible Text",
-        className: "padding-left-30",
+        listClassName: "padding-left-20",
     },
     {
         href: "#conclusion",

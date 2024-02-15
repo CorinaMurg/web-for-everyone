@@ -8,6 +8,7 @@ interface ContentItem {
   text: string;
   ariaLabel?: string;
   className?: string;
+  listClassName?: string;
 }
 
 interface TableOfContentsProps {
@@ -24,7 +25,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId })
             <nav aria-labelledby='table-contents'>
                 <ul>
                     {contents.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} className={item.listClassName}>
                         <a href={item.href} 
                             className={`hover-pink ${item.className} ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}

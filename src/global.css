@@ -130,6 +130,10 @@ a:focus-visible {
     /* margin-top: 20px; */
 }
 
+.bullet-list-item {
+    list-style-type: disc;
+}
+
 .bullet-point-line::before {
     content: "•"; 
     color: var(--pinkBright-color);
@@ -481,6 +485,10 @@ h4 {
 
 .margin-bottom-20 {
     margin-bottom: 20px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
 }
 
 .margin-right-5 {
