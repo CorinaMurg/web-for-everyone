@@ -16,7 +16,7 @@ export default function BackLinks ({secondLink, href, current}: {secondLink: str
                         <code>{secondLink}</code>
                     </Link>
                 </li>
-                <li className='sr-only'>
+                <li>
                     <a href="" aria-current="page">
                         <code>{current}</code>
                     </a>

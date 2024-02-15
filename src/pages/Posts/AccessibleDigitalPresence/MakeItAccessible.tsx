@@ -57,7 +57,7 @@ export default function MakeItAccessible() {
             <BackLinks 
                 secondLink="Your Digital Presence"
                 href="/resources#your-digital-presence" 
-                current="Let's Make It Accessible Part 1"
+                current="Let's Make It Accessible - Part One"
             />
             
             <h1 className="article-heading-desktop">

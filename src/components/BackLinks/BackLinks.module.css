@@ -11,7 +11,7 @@
     list-style: none;
     padding-inline-start: 0;
     display: flex;
-    gap: 5px;
+    /* gap: 2px; */
     align-items: center;
 }
 
@@ -21,9 +21,9 @@
 
 .back-links ol li + li::before {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
     transform: rotate(15deg);
-    border-right: 0.15em solid currentcolor;
+    border-right: 0.17em solid currentcolor;
     height: 0.8em;
     content: "";
 }
