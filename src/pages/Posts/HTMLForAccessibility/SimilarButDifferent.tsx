@@ -35,6 +35,7 @@ export default function SimilarButDifferent() {
             <BackLinks 
                 secondLink="HTML for Accessibility"
                 href="/resources#html-for-accessibility" 
+                current="Similar but Different: HTML and ARIA terms"
             />
             
             <h1 className="article-heading-desktop">

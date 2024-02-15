@@ -259,6 +259,10 @@ a:focus-visible {
     color: var(--code-blue-color);
 }
 
+.code-gray-color {
+    color: rgb(169, 167, 167);
+}
+
 .code-yellow-color {
     color: var(--code-yellow-color);
 }
@@ -282,6 +286,7 @@ a:focus-visible {
     font-weight: 600;
     padding: 1px 3px;
     border-radius: 2px;
+    font-size: 0.8rem;
 }
 
 .details-content {
@@ -420,14 +425,14 @@ h4 {
     max-width: 560px;
 }
 
-.highlight-small {
-    background-color: white;
-    font-weight: 500;
+.highlight-one-line {
     padding: 10px 20px;
-    width: 100%;
     margin-top: 20px;
-    border: 1.7px solid gray;
-    border-radius: 5px;
+}
+
+.highlight-small {
+    padding: 10px 20px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -601,6 +606,11 @@ p {
     /* to match the padding for links */
     /* padding-block: 2px; */
 }
+
+/* * {
+    scrollbar-width: thin;
+    scrollbar-color: blue red;
+} */
 
 .scroll-target::before {
     content: '';

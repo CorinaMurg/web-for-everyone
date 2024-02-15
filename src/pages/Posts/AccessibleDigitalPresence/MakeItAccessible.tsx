@@ -109,7 +109,7 @@ export default function MakeItAccessible() {
                     </p>
 
                     {/* **************Automated testing tools****************** */}
-                    <div className="highlight">
+                    <div className="highlight highlight-one-line">
                         <details>
                             <summary>
                                 <span className="details-title">
@@ -249,13 +249,15 @@ export default function MakeItAccessible() {
                         background.
                     </p>            
                     <p>
-                        The <strong>4.5:1</strong> (for smaller text) and <span> </span>
-                        <strong>3.0:1</strong> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
+                        The <span className="dark-bg-white-text">4.5:1</span> (for smaller text) and <span> </span>
+                        <span className="dark-bg-white-text">3.0:1</span> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
                     </p>
                     <p>
                         The <strong>AAA</strong> level requires
-                        a <strong>7.0:1</strong> contrast ratio for smaller text, and <strong>4.5:1</strong> for larger text.
-                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience for users with low vision.
+                        a <span className="dark-bg-white-text">7.0:1</span> contrast ratio for smaller text, 
+                        and <span className="dark-bg-white-text">4.5:1</span> for larger text.
+                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience 
+                        for users with low vision.
                     </p>  
 
                     <h3>How to check the color contrast ratio</h3>
@@ -302,7 +304,7 @@ export default function MakeItAccessible() {
                     </p>   
                             
                     {/* Example: Using WebAIM's contrast checker */}
-                    <div className="highlight margin-top-30">
+                    <div className="highlight highlight-one-line margin-top-30">
                         <details>
                             <summary>
                                 <span className="details-title">
@@ -594,6 +596,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--labels">
+                        <code><span className="code-gray-color">// Implicit label by wrapping the input</span></code>
                         <code><span className="code-blue-color">&lt;label&gt;</span></code> 
                         <code className="padding-left-30">Enter your full name: </code>
                         <code className="padding-left-30">
@@ -601,37 +604,9 @@ export default function MakeItAccessible() {
                             <span className="code-yellow-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/label&gt;</span></code>
-                    </div>
-
-                    <h3>Help assistive tech users understand the purpose of an input</h3>
-
-                    <p className="white-bg">
-                        When it comes to your portfolio site, labels and inputs are likely to be part of your
-                        contact form.
-                        We will look at ways to make your contact form accessible in a separate article,
-                        but for now let's focus on the <code>label</code> and <code>input</code> elements.
-                    </p>
-
-                    <p><strong>You have two options</strong>:</p>
-                    <p className="bullet-point-line white-bg">
-                        <strong>Implicit Labeling:</strong> It involves wrapping 
-                        the <code>input</code> element inside a <code>label</code> element, 
-                        just as in the example above. 
-                    </p>
-                    
-                    <p className="bullet-point-line white-bg"> 
-                        <strong>Explicit Labeling: </strong> 
-                        This method relies on using the <span className="pink-bg-white-text">for</span> attribute 
-                        with the <code>&lt;label&gt;</code> tag, and the <span className="pink-bg-white-text">id</span>
-                        <span> </span>
-                        attribute with the <code>&lt;input&gt;</code> tag. 
-                    </p>
-                    <p className="white-bg">    
-                        The value of the label's <code>for</code> attribute must be the same as the value of 
-                        the input's <code>id</code> attribute.
-                    </p>
-                    
-                    <div className="code code--labels">
+                        <br/>
+                        <br/>
+                        <code><span className="code-gray-color">// Explicit label by referencing the "id" of the input</span></code>
                         <code>
                             <span className="code-blue-color">&lt;label</span> <span className="code-pink-color"></span>
                             <span className="code-pink-color">for</span>="name"
@@ -643,12 +618,42 @@ export default function MakeItAccessible() {
                         <code>
                             <span className="code-blue-color">&lt;/label&gt;</span>
                         </code>
-                        <code className="margin-top-20">
+                        <code>
                             <span className="code-yellow-color">&lt;input</span> 
                             <span className="code-pink-color"> id</span>="name" type="text" 
                             <span className="code-yellow-color">&gt;</span>
                         </code>
                     </div>
+
+                    <h3>Help assistive tech users understand the purpose of an input</h3>
+
+                    <p className="white-bg">
+                        When it comes to your portfolio site, labels and inputs are likely to be part of your
+                        contact form.
+                        We will look at ways to make your contact form accessible in a separate article,
+                        but for now we are only focusing on the <code>label</code> and <code>input</code> elements.
+                    </p>
+                    <p>
+                        <strong>Why are labels important?</strong>
+                    </p>
+                    <p className="bullet-point-line"> 
+                        For the screen reader user, the label is the only way to understand the purpose of the input.
+                    </p>
+                    <p className="bullet-point-line">
+                        while speech command users rely on the label to select the input or any other form field.
+                    </p>
+                    <p className="bullet-point-line">
+                        Sighted users can click on the label to bring focus to the input. This is actually a way for a
+                        developer to test if a label is properly associated with an input.
+                    </p>
+
+                    <p className="white-bg">
+                        While both examples above are valid, the explicit method will cause 
+                        problems for users relying on speech commands, specifically those using the 
+                        Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
+                        software, it's best to use the implicit method (with the <code>for</code> attribute) until this issue is resolved.
+                    </p>
+                    
                 </div>
 
                 {/* ****************LANG************************* */}

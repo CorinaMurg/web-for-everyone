@@ -14,6 +14,8 @@ TOC height for dektop
 scrollToTop to nav links
 replace pink bullet points to list-style
 color contrast algorithm
+scroll bar styles
+add svg to backlinks
 Picture Corina
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to

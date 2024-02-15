@@ -350,7 +350,8 @@ export default function MostCommonBugs() {
                                 information attached. Users would not be aware of its purpose.
                             </li>
                             <li>
-                                Users relying on voice commands would not be able to trigger the action on the button.
+                                Users relying on speech commands would not be able to trigger the action 
+                                on the button.
                             </li>
                         </ul>
                         <br/>
@@ -402,7 +403,7 @@ export default function MostCommonBugs() {
                                 Screen reader users will not understand the purpose of the input
                             </li>
                             <li>
-                                Users relying on speech commands do not have a way to trigger the input.
+                                Users relying on speech commands do not have a way to bring focus to the input.
                             </li>
                         </ul>
                         <br/>

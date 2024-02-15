@@ -529,8 +529,17 @@ export default function MostCommonBugs() {
                         </p>
 
                         <p>
-                            If none of the priority attributes are available, the algorithm relies on the text within 
-                            the element. 
+                            If none of the priority attributes are available, the algorithm relies on <strong>visible text</strong>.</p>
+                        <p>
+                            <b>Recommended reading: </b>
+                            Article by Adrian Roselli on why the <span> </span>
+                            <a href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                visible text is the best choice for the accessible name
+                            </a>.
+                            
                         </p>
                     </div>
                                      
