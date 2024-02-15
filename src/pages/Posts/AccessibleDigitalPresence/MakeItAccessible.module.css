@@ -1,11 +1,11 @@
 
 
 /* SECTION 01 CONTRAST */
-.code--contrast code {
+/* .code--contrast code {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1;
-}
+} */
 
 .numbers {
     display: flex;
@@ -21,5 +21,15 @@
     color: var(--cream-color);
     width: 17rem;
     text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    .code--contrast {
+        padding-inline: 10px;
+    }
+    .numbers dt {
+        text-align: left;
+        width: auto;
+    }   
 }
 

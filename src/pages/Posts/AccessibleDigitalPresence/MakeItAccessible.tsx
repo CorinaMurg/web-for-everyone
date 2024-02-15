@@ -217,7 +217,7 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************COLOR CONTRAST************************* */}
-                <div className={`section ${styles['contrast']} scroll-target`} id="color-contrast">
+                <div className={`section ${styles.contrast} scroll-target`} id="color-contrast">
                     <div className="section-heading" >
                         <span aria-hidden="true" className="section-number">01</span>
                         <h2>
@@ -225,18 +225,18 @@ export default function MakeItAccessible() {
                         </h2>
                     </div>
                     
-                    <div className="code">
+                    <div className={`code ${styles['code--contrast']}`}>
                         <dl className={styles['numbers']}>
                             <dt><code><span className="code-blue-color">Text smaller than 19px:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">4.5:1</span></code></dd>
                         </dl>
                        
-                        <dl className={` ${styles['numbers']} margin-top-20`}>
+                        <dl className={`${styles['numbers']} margin-top-20`}>
                             <dt><code><span className="code-yellow-color">Text 19px or larger, and bold:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
                       
-                        <dl className={` ${styles['numbers']} margin-top-20`}>
+                        <dl className={`${styles['numbers']} margin-top-20`}>
                             <dt><code><span className="code-purple-color">Text 24px or larger:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
