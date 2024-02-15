@@ -4,10 +4,12 @@ About: a11y chat
 Make WeCanHelp smaller
 Publish blog
 Delete corinamurg.dev
-Resources: check all links
+
 Check on mobile
 With screen reader check modal
-
+apply for allyTO Camp deadline Feb 19
+Plag
+Beta
 Picture Corina
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to

@@ -11,7 +11,7 @@ export default function Home() {
     
     return (
         <div className={styles.home}>
-            <section aria-labelledby="lets-make-it-accessible" className={styles['hero']}> 
+            <section className={styles['hero']}> 
                 <div className={styles['hero--design']}>
                     {/* <div className={styles['hero--design--svg-grid']}>
                         {svgIconsData.map((icon, index) => (
