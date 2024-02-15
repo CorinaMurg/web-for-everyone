@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link className="logo-link" to="/">
+                    <Link className="logo-link" to="/" onClick={() => { scrollToTop()}}>
                         <div className="logo-container">
                             <img src="/assets/faviconDull.png" alt="" />
                         </div> 

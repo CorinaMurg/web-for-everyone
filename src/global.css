@@ -414,6 +414,12 @@ h4 {
     border-radius: 5px;
 }
 
+.highlight-dl {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 560px;
+}
+
 .highlight-small {
     background-color: white;
     font-weight: 500;
@@ -883,6 +889,9 @@ ul[class^="checkmark-list"] li {
     }
     .table-contents {
         margin-top: 0;
+    }
+    .highlight-dl {
+        padding: 10px;
     }
 }
 

@@ -6,6 +6,7 @@
     gap: 20px;
     align-items: center;
     width: 100%;
+    max-width: 560px;
     padding-block: 10px;
 }
 
@@ -16,6 +17,12 @@
     text-align: right;
 }
 
+@media screen and (max-width: 560px) {
+    .numbers dt {
+        text-align: left;
+        width: auto;
+    }   
+}
 /* LOW CONTRAST */
 
 .low-contrast--button {

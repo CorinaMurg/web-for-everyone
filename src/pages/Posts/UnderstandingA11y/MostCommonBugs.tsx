@@ -73,7 +73,7 @@ export default function MostCommonBugs() {
                         The results have always been quite grim, and 2023 was no exception:
                     </p>
                     
-                    <div className="highlight">
+                    <div className="highlight highlight-dl">
                         <dl className={styles['numbers']}>
                             <dt><span>96.3</span></dt>
                             <dd>percentage of home pages with accessibility bugs</dd>
