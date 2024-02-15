@@ -7,7 +7,6 @@
     font-weight: 450;
     letter-spacing: 2px;
     position: sticky;
-    position: -webkit-sticky;
     top: 170px; 
     height: 100vh; 
     display: flex;
@@ -17,6 +16,7 @@
     width: 300px;
     white-space: normal;
     overflow-y: auto;
+    padding-left: 5px;
 }
 
 .table-contents::-webkit-scrollbar {
