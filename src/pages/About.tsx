@@ -85,7 +85,7 @@ export default function About() {
                             Start with the <span> </span>
                             <Link to="/resources#understanding-accessibility"> 
                                 Understanding Accessibility
-                            </Link> series. You will receive an overview of accessibility concepts and learn about the
+                            </Link> series for an overview of accessibility concepts and to learn about the
                             most common accessibility bugs.
                         </p>
                         &nbsp;
@@ -98,7 +98,8 @@ export default function About() {
                             Start with the <span> </span>
                             <Link to="/resources#your-digital-presence"> 
                                 Your Digital Presence
-                            </Link> series to evaluate your portfolio site and eliminate, if present, 12 common bugs.
+                            </Link> series to evaluate your portfolio site and eliminate, if present, 
+                            the 6 most common bugs (plus another 6 bonus bugs!)
                         </p>
                         &nbsp;
                         <p>
