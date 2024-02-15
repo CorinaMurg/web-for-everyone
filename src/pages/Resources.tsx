@@ -38,9 +38,9 @@ export default function Accessibility() {
                     <code>Table of Contents</code>
                 </h2>
                 <nav aria-labelledby="table-of-contents">
-                    <ul className={styles['resources--table-contents--list']}>
+                    <ul className={styles['resources--table-contents']}>
                         {Object.entries(sectionTitles).map(([label, heading], index) => (
-                            <li key={index} className={styles['resources--table-contents--list--item']}>
+                            <li key={index}>
                                 <a href={`#${label}`} 
                                     className={`hover-pink ${label === activeId ? styles.active : ''}`}
                                 >
