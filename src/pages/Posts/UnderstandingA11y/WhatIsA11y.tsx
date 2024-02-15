@@ -349,29 +349,29 @@ export default function WhatIsA11y() {
                         If you're ready to audit them, jump to the next article for a list of solutions to the 
                         most common issues:
                     </p>
-                    <div className="next-article">
-                        <span className="read-next">Read next: </span>
-                        
+
+                    <p className="margin-top-30">
+                        <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part1" 
                                 onClick = { () => { scrollToTop() } }
                         >
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
-                    </div>
+                    </p>
                     
                     <p>
                         Interested in learning about how accessibility works? Visit the next article 
                         in the "Understanding Accessibility" series:
                     </p>
                          
-                    <div className="next-article">
-                        <span className="read-next">Read next: </span>
+                    <p className="margin-top-30">
+                        <b>Read next: </b>
                         <Link to="/resources/how-accessibility-works" 
                                 onClick = { () => { scrollToTop() } }
                         >
                             How Accessibility Works
                         </Link>
-                    </div>
+                    </p>
 
                     <p className="margin-top-30">
                         When we actively embrace accessibility and make it essential

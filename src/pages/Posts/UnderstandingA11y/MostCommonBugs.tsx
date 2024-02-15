@@ -503,14 +503,14 @@ export default function MostCommonBugs() {
                         Next, let's look at how to avoid or fix these bugs when building your portfolio site.
                     </p>
                     
-                    <div className="next-article">
-                        <span className="read-next">Read next:</span>
+                    <p>
+                        <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part1" 
                                 onClick={() => { scrollToTop() }}
                         >
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
-                    </div>                 
+                    </p>                 
                 </div>
             </div>          
         </div>

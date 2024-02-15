@@ -97,7 +97,7 @@ export default function MostCommonBugs() {
                     </h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree. The <strong>accessibility tree contains only elements that 
+                        version of the DOM tree. The accessibility tree contains only <strong>elements that 
                         need to be exposed to assistive technologies</strong>, 
                         like links or headings. 
                     </p>
@@ -131,40 +131,35 @@ export default function MostCommonBugs() {
                     
                     <p className="white-bg">
                         Any <code>div</code> element with purely decorative or container role
-                        will be labeled as "ignored" or "generic". 
+                        will be ignored. 
                     </p>
 
                     {/* How to view the accessibility tree with Dev Tools */}
-                    <div className="highlight">
-                        <details>
-                            <summary>
-                                <span className="details-title">
-                                    How to view the accessibility tree with Dev Tools
+                    <div className="highlight"> 
+                        <h3>
+                            Find the accessibility tree with Dev Tools <span aria-hidden="true">🔍</span>
+                        </h3>
+                        <p className="margin-top-50">
+                            <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q&t=9s" 
+                                target="_blank" rel="noopener noreferrer" 
+                            >
+                                Video: Debugging accessibility with Chrome DevTools
+                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="external-linksvg-wrap">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
                                 </span>
-                            </summary>
-                            <br></br>
-                            <p className="margin-top-50">
-                                <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q&t=9s" 
-                                    target="_blank" rel="noopener noreferrer" 
-                                >
-                                    Video: Debugging accessibility with Chrome DevTools
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
-                            </p>
-                            <p>
-                                This is a great video on using Chrome's Dev Tools to look up
-                                the accessibility tree. The process is very similar in Edge.
-                            </p>
-                            <p>
-                                Please note that the video starts with an introduction
-                                to Google's Lighthouse. The part about the accessibility tree starts at 
-                                minute 6:00.
-                            </p>
-                        </details>
+                            </a>
+                        </p>
+                        <p>
+                            This is a great video on using Chrome's Dev Tools to look up
+                            the accessibility tree. The process is very similar in Edge.
+                        </p>
+                        <p>
+                            Please note that the video starts with an introduction
+                            to Google's Lighthouse. The part about the accessibility tree starts at 
+                            minute 6:00.
+                        </p>  
                     </div>
 
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
@@ -179,8 +174,6 @@ export default function MostCommonBugs() {
 
                         <div className="highlight">
                             <h4 className="margin-top-10">Navbar: DOM tree representation</h4>
-                            <br/>
-                            <br/>
                             <div className="code">
                                 <code><span className="code-blue-color">&lt;nav&gt;</span></code>
                                 <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
@@ -210,8 +203,7 @@ export default function MostCommonBugs() {
 
                         <div className="highlight">
                             <h4 className="margin-top-10">Navbar: Accessibility tree representation</h4>
-                            <br/>
-                            <br/>
+                        
                             <div className="code a11ytree-code">
                                 <code><span className="code-blue-color">navigation</span></code>
                                 <code className="padding-left-30"><span className="code-yellow-color">list</span></code>
@@ -303,7 +295,9 @@ export default function MostCommonBugs() {
                         
                     {/* ************Zooming in on an accessible object***************** */}
                     <div className="highlight">
-                        <h4 className="margin-top-10">Zooming in on an accessible object</h4>
+                        <h4 className="margin-top-10">
+                            Zooming in on an accessible object <span aria-hidden="true">🔍</span>
+                        </h4>
                         <p> 
                             Let's look at the first link object to understand why using semantic HTML helps 
                             accessibility. 
@@ -626,15 +620,15 @@ export default function MostCommonBugs() {
                         Next, let's look at the most common accessibility issues.   
                     </p>
                     
-                    <div className="next-article">
-                        <span className="read-next">Read next:</span>
+                    <p className="margin-top-30">
+                        <b>Read next: </b>
                         <Link 
                             to="/resources/most-common-bugs" 
                             onClick={scrollToTop}
                         >
                             Most Common Acessibility Bugs
                         </Link>
-                    </div>
+                    </p>
                     
                 </div>
             </div>         

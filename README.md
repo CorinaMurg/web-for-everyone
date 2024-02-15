@@ -10,6 +10,8 @@ With screen reader check modal
 apply for allyTO Camp deadline Feb 19
 Plag
 Beta
+TOC height for dektop
+scrollToTop to nav links
 Picture Corina
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to

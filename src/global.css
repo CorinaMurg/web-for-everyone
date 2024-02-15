@@ -751,7 +751,7 @@ ul[class^="checkmark-list"] li {
     color: rgb(59, 59, 59);
 }
 
-.white-bg code {
+.white-bg p code {
     background-color: var(--grayishBlue-color);
     padding: 1px 3px;
     padding: 2px 4px;
