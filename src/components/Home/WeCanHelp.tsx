@@ -30,8 +30,9 @@ export default function WeCanHelp() {
                             <a href="https://www.linkedin.com/company/webforeveryone" 
                                 target='_blank' rel="noopener noreferrer" 
                             >       
+                                <span className="sr-only"> Web for Everyone's </span>
                                 LinkedIn
-                                <span className="sr-only"> opens in a new tab</span>
+                                <span className="sr-only">page&nbsp; opens in a new tab</span>
                                 <span className="external-linksvg-wrap">
                                     &nbsp;
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512">
