@@ -89,8 +89,8 @@
 } 
 
 .hero--text--body p {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -108,7 +108,7 @@
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .continue-to-article svg[id="arrow"] circle {
@@ -322,8 +322,9 @@
 }
 
 .mini-article--text p {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 /* .mini-article--text .continue-to-article svg {
