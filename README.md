@@ -1,7 +1,20 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
+BETA
+Check on mobile
+scroll bar styles
+add svg to backlinks
+back button scroll
+Nav modal
+
+LinkedIn
+GitHub
+Resume
+Typescript
+
+
 About: a11y chat
-Make WeCanHelp smaller
+
 Publish blog
 Delete corinamurg.dev
 
@@ -9,15 +22,15 @@ Check on mobile
 With screen reader check modal
 apply for allyTO Camp deadline Feb 19
 Plag
-Beta
-TOC height for dektop
-scrollToTop to nav links
+
+
 replace pink bullet points to list-style
 color contrast algorithm
-scroll bar styles
-add svg to backlinks
+
+
 related articles
 Picture Corina
+
 Background LinkedIn
 12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to
 13. A11y statement https://dequeuniversity.com/accessibility-statement
@@ -25,8 +38,8 @@ Tagged project, add to LinkedIn
 
 https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
 
-THURSDAY
-Title + favicon
+
+
 1. test: icon with and w/out aria-hidden
 2. description or alt to images re: color contrast / Explain: aria-hidden for icon
 
@@ -36,7 +49,7 @@ Title + favicon
 
 11. Add scroll to top???
 12. Langauge: website vs app????
-13. label and input: which one is better? Add a finishing snetence
+
 5. Add WeCanHelp to tablet mode
 10. More links to Resources
 9. Similar but Different

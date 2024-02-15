@@ -9,7 +9,7 @@ export const weCanHelpData: WeCanHelpDataTypes[] = [
         description: `The most common bugs are not hard to catch. You just need to know where to look!`,
     },
     {
-        title: "Evaluate your portfolio site",
+        title: "Review your portfolio site",
         description: `Because squashing accessibility bugs is more fun with a partner! `,
     },
     // {
