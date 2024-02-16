@@ -493,8 +493,9 @@ export default function MostCommonBugs() {
                                 opening tag of the element.
                             </p>
                             <p className="padding-left-20 margin-top-20">
+                                Read more about <span> </span>
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
-                                    Read more about the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
+                                    the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
                                 </Link>
                             </p>
                             
@@ -532,7 +533,7 @@ export default function MostCommonBugs() {
                             If none of the priority attributes are available, the algorithm relies on <strong>visible text</strong>.</p>
                         <p>
                             <b>Recommended reading: </b>
-                            Article by Adrian Roselli on why the <span> </span>
+                            A post by Adrian Roselli, an accessibility expert, on why the <span> </span>
                             <a href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
                                 target="_blank"
                                 rel="noopener noreferrer"
