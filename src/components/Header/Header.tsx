@@ -23,6 +23,7 @@ export default function Header() {
                     Web for Everyone
                 </Link>
             </div>
+            
             <button 
                 className="mobile-nav-toggle" 
                 aria-controls="primary-navigation"

@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import WeCanHelp from "../components/Home/WeCanHelp"
@@ -9,6 +10,12 @@ import styles from './Home.module.css'
 
 export default function Home() {
     
+    const [isBetaOpen, setIsBetaOpen] = useState(true);
+
+    const closeBeta = () => {
+        setIsBetaOpen(false);
+    }
+
     return (
         <div className={styles.home}>
             <section className={styles['hero']}> 
@@ -20,6 +27,31 @@ export default function Home() {
                     </div> */}
                     <img className="hero-img-desktop" src="/assets/images/heroYellowImage.jpg" alt=""/>
                     {/* <img className="hero-img-mobile" src="/assets/images/heroYellowImage-mobile.jpg" alt=""/> */}
+                    
+                    {isBetaOpen &&
+                        <div className={styles.beta}>
+                            <p className={styles['beta-message']}>
+                                <span>This site is in Beta. </span>
+                                We welcome&nbsp;
+                                <a href="https://www.linkedin.com/company/webforeveryone" 
+                                    target='_blank' rel="noopener noreferrer" 
+                                > 
+                                    your feedback
+                                    <span className="sr-only">page&nbsp; opens in a new tab</span>
+                                    <span className="external-linksvg-wrap">
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512">
+                                            <path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/>
+                                        </svg>    
+                                    </span>
+                                </a>&nbsp;
+                            </p>
+                            <button className={styles['beta-button']} onClick={() => closeBeta()}>
+                                <span className='sr-only'>Close Beta message</span>
+                            </button>
+                        </div>
+                    }
+                    
                 </div>
                 <div className={styles['hero--text']}>
                     <h1 id="lets-make-it-accessible" 

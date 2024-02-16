@@ -323,12 +323,14 @@ background: var(--pinkBright-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
     /* margin-right: 5px; */
 }
 
 .external-linksvg-wrap svg {
     fill: var(--blue-color);
     height: 1rem;
+    line-height: 1;
 }
 
 /* .external-linksvg-wrap svg path {
