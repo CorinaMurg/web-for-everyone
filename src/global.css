@@ -704,6 +704,10 @@ summary::marker {
     margin-bottom: 30px;
 }
 
+.two-line-heading span:not[aria-hidden] {
+    display: block;
+}
+
 ul {
     list-style-type: none;
     padding-inline-start: 0;

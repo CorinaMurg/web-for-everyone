@@ -455,7 +455,7 @@ export default function MakeItAccessible() {
                 </div>
 
                 {/* ****************LINKS************************* */}
-                <div className="section links scroll-target" id="links-with-discernable-text">
+                <div className={`${styles.links} section scroll-target`} id="links-with-discernable-text">
                     <div aria-hidden="true" className="section-heading">
                         <span className="section-number">03</span>
                         <h2>Links with Discernable Text</h2>
@@ -508,32 +508,32 @@ export default function MakeItAccessible() {
                     </p>
 
                     <h3>Ways to fix the links to social media profiles</h3>
-                    <p className="white-bg">
-                        <span className="pink-num" aria-hidden="true">1. </span> 
-                        Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
+                    <ol className="checkmark-line">
+                        <li>
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>Replace the icon with text (e.g., LinkedIn).</span>
+                            </p>
+                        </li>
                         
-                    </p>
-                    <p>
-                        <span className="pink-num" aria-hidden="true">2. </span> 
-                        Replace the icon with text (e.g., LinkedIn). 
-                    </p>
-                    <p className="white-bg">
-                        <span className="pink-num" aria-hidden="true">3. </span> 
-                        Keep the icon, but add text with a <code>visually-hidden</code> class
-                        (so the text is not visible on the screen). Screen readers 
-                        will announce the text, while sighted users will rely on the icon to figure out the 
-                        purpose of the link.
-                    </p>
+                        <li>
+                            <p className="white-bg">
+                                <span className="pink-text bold">&#x2714; </span>       
+                                <span>Keep the icon, but add text with a <code>visually-hidden</code> class
+                                (so the text is not visible on the screen). Screen readers 
+                                will announce the text, while sighted users will rely on the icon to figure out the 
+                                purpose of the link.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p className="white-bg">
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).</span>
+                            </p>
+                        </li>
+                    </ol>
                     
-                    <div className="note" style={{ marginTop: '20px' }}>
-                        <b>Note:</b>
-                        <p>
-                            This is not an exhaustive list of techniques to make your social media
-                            links accessible. These techniques are easy to apply
-                            anytime you use an icon instead of visible text. Plus, they also work with buttons!
-                        </p>  
-                    </div>
-                    <p className="white-bg margin-top-20">
+                    <p className="white-bg">
                         <strong>What about the <code>alt</code> attribute?</strong> An icon displayed with an
                         <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
                         like an <code>&lt;img&gt;</code> tag would. 
@@ -686,8 +686,8 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="highlight">
-                        <h4 aria-label="Did you know what the lang attribute can do?">
-                            Did you know? <span aria-hidden="true"> 💡</span>
+                        <h4>
+                            Do you what else the lang attribute can do?! <span aria-hidden="true"> 💡</span>
                         </h4>
                         <p style={{ marginTop: '30px' }}>You can choose a specific dialect:</p>
                         <div className="code">
