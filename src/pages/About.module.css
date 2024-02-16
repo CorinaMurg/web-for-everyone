@@ -57,6 +57,7 @@
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     background-color: var(--hero-lightBlue);
+    /* background-color: #755cde; */
 }
 
 .rectangle-1 svg {

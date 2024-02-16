@@ -394,7 +394,7 @@
 .mini-article--text p {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 /* .mini-article--text .continue-to-article svg {
@@ -407,9 +407,9 @@
 .mini-article svg circle {
     fill: var(--hero-lightBlue);
 }
-.mini-article:hover {
+/* .mini-article:hover {
     outline: 3px dashed var(--text-dark-color);
-}
+} */
 
 .mini-article:hover h3 span {
     color: var(--pinkBright-color);
