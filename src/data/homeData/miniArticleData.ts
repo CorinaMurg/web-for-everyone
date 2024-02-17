@@ -34,8 +34,9 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "The Most Common Bugs",
-        description: `The bad news: for five years in a row, a handful of bugs has been responsible for the majority of 
-            accessibility issues. The good news: they are quite easy to avoid or fix!`,
+        description: `The bad news: for several years in a row, a handful of bugs has been responsible for 
+            the majority of 
+            accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
         link: "/resources/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/istockSmall1.jpg",

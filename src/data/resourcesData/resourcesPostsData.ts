@@ -179,7 +179,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "your-digital-presence",
         "title": "Your Portfolio Site: Let's Make It Accessible",
-        "subtitle": "Part One: Finding the 6 Most Common Bugs",
+        "subtitle": "Part One: Fixing the 6 Most Common Bugs",
         "author": "By Web for Everyone",
         "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,

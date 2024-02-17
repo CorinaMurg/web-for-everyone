@@ -171,7 +171,7 @@ export default function MostCommonBugs() {
                             <Link to="/resources/make-it-accessible-part1" 
                                     onClick={() => { scrollToTop() }}
                             >
-                                Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
+                                Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
                             </Link>
                             .
                         </p>
@@ -245,8 +245,9 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
-                            read the source file name. When you have an image, the <code>alt</code> attribute is required!
+                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers 
+                            read the source file name. When you have an image, the <code>alt</code> attribute 
+                            is required!
                         </p>
                         <p>
                             <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
@@ -510,7 +511,7 @@ export default function MostCommonBugs() {
                         <Link to="/resources/make-it-accessible-part1" 
                                 onClick={() => { scrollToTop() }}
                         >
-                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
+                            Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
                         </Link>
                     </p>                 
                 </div>
