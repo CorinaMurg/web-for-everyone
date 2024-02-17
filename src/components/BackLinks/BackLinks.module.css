@@ -4,6 +4,7 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin-top: 50px;
+
 }
 
 .back-links ol {
@@ -32,7 +33,7 @@
     display: inline-block;
     margin: 0 10px;
     transform: rotate(15deg);
-    border-right: 0.17em solid currentcolor;
+    border-right: 0.13em solid gray;
     height: 0.8em;
     content: "";
     /* background-image: url(/assets/arrow-gray.svg);
@@ -43,6 +44,7 @@
 
 .back-links a {
     color: var(--text-dark-color);
+    opacity: 0.9;
     text-decoration: none;
     letter-spacing: -0.2px;
 }
@@ -56,6 +58,7 @@
 .back-links ol li:nth-of-type(2) a{
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-decoration-color: gray;
 }
 
 .back-links ol li:nth-of-type(1) a:hover {

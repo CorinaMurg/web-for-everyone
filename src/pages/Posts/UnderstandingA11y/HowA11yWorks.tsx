@@ -489,7 +489,7 @@ export default function MostCommonBugs() {
                                 <strong>aria-label</strong>
                             </p>
                             <p className="padding-left-20 white-bg">
-                                It is added to the opening tag of the element, and takes a string value 
+                                It takes a string value 
                                 that becomes the (accessible) name of the element. For example, <span> </span>
                                 <code>aria-label="Web for Everyone's LinkedIn"</code> could be used to provide the name
                                 for a LinkedIn icon.
@@ -582,33 +582,18 @@ export default function MostCommonBugs() {
                         <WarningTriangle/>
                         <p>These elements must have a <span className="bold">
                             descriptive accessible name</span>:
-                        </p>              
-                        <p className="bullet-point-line">
-                            <span className="bold">links</span> and <span className="bold"> buttons</span>
-                        </p>   
-                        <p className="bullet-point-line">
-                            <span className="bold">all form elements</span>, like inputs or radio buttons
-                        </p>
-                        {/* <p className="padding-left-20">
-                            For an interactive element, assistive technologies need its name to convey
-                            its purpose or the content to the user. 
-                        </p>  
-                        <p className="padding-left-20">
-                            When using speech recognition software,
-                            the name must also be part of the command that will activate the element (like in the case
-                            of links and buttons) or bring it into focus (in case of form fields, for example).
-                        </p> */}
-                    
-                        {/* <p className="bullet-point-line gray-bg">
-                            <span className="bold">images</span>, if they are interactive
-
-                        </p> */}
-                    
-                        <p className="bullet-point-line">
-                            <span className="bold">headings</span>
-                            {/* : the majority of screen reader users 
-                            rely on headings to learn about the structure and content of a page */}
-                        </p>
+                        </p>          
+                        <ul className="bullet-point-list">
+                            <li>
+                                <span className="bold">links&nbsp;</span> and&nbsp; <span className="bold"> buttons</span>
+                            </li>  
+                            <li>
+                                <span className="bold">all form elements</span>, like inputs or radio buttons
+                            </li>
+                            <li>
+                                <span className="bold">headings</span>
+                            </li> 
+                        </ul>    
                     </div>           
                 </div>
 

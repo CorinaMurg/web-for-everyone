@@ -443,6 +443,10 @@
     outline: 3px dashed var(--text-dark-color);
 }
 
+.mini-article:active {
+    outline: none;
+}
+
 /* .mini-article-link::before {
     content: "";
     height: 4px;
