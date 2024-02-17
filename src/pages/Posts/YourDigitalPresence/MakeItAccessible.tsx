@@ -69,7 +69,7 @@ export default function MakeItAccessible() {
                 <span>Let's Make It</span>
                 <span className="yellow-bg">Accessible!</span>
             </h1>
-            <p className="subtitle">Part One: Finding the 6 Most Common Bugs</p>
+            <p className="subtitle">Part One: Fixing the 6 Most Common Bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>

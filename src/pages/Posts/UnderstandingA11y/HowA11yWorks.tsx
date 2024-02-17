@@ -111,7 +111,7 @@ export default function MostCommonBugs() {
 
                 {/* *************2. A11Y TREE********************** */}
                 <div className="section a11yTree scroll-target" id="the-accessibility-tree">
-                    <h2>The Acccessibility Tree</h2>           
+                    <h2>The Acccessibility Tree <span aria-hidden="true"> 🌳</span></h2>           
                     <div>
                         <p>
                             Each node in the tree is an <strong>accessible object</strong>. 
@@ -321,7 +321,7 @@ export default function MostCommonBugs() {
                             ready to be activated. 
                         </p>
                         <br/>
-                        <p><strong>Assitive tech reaction</strong></p>
+                        <p><strong>Assitive tech behavior</strong></p>
                         <p>
                             Each assistive technology will use the information from the accessibility tree to present the 
                             object to the user in the most appropriate way.
@@ -469,7 +469,7 @@ export default function MostCommonBugs() {
                             </a>
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. This algorithm takes into account
-                            the visible text or label of the element, but several other attributes are considered
+                            the <strong>visible text</strong> or <strong> label</strong> of the element, but several other attributes are considered
                             as well:
                         </p>
                        
@@ -488,9 +488,12 @@ export default function MostCommonBugs() {
                             <p className="bullet-point-line margin-top-20">
                                 <strong>aria-label</strong>
                             </p>
-                            <p className="padding-left-20">
-                                It takes a string value that becomes the name of the element. It is added to the
-                                opening tag of the element.
+                            <p className="padding-left-20 white-bg">
+                                It is added to the opening tag of the element, and takes a string value 
+                                that becomes the (accessible) name of the element. For example, <span> </span>
+                                <code>aria-label="Web for Everyone's LinkedIn"</code> could be used to provide the name
+                                for a LinkedIn icon.
+                                
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 Read more about <span> </span>
@@ -521,16 +524,17 @@ export default function MostCommonBugs() {
                                 to compute the accessible name.
                             </p>    
                         </div>
-                                                    
-                        <p>
-                            In fact, the content of these attributes is 
-                            given priority when creating the accessible name. The idea being that these were likely added 
-                            to offer a more descriptive or tailored name for the element. They could also be included
-                            to provide a name when the element has no visible text. 
-                        </p>
 
+                        <p className="white-bg">
+                            If none of these attributes are available, the algorithm relies on the 
+                            existing visible text or label (or, if these can't be used for design reasons,
+                            text with a <code>visually-hidden</code> class).
+                        </p>                        
                         <p>
-                            If none of the priority attributes are available, the algorithm relies on <strong>visible text</strong>.</p>
+                            Otherwise, the content of these attributes is 
+                            given priority. The idea being that they were added either because there's no 
+                            visible text, or to offer a more descriptive or tailored name for the element.
+                        </p>
                         <p>
                             <b>Recommended reading: </b>
                             A post by Adrian Roselli, an accessibility expert, on why the <span> </span>
