@@ -95,7 +95,7 @@ export default function MostCommonBugs() {
                         accessibility barriers and guidelines violations.
                         As a result, the actual number of bugs is likely to be higher.
                     </p>
-                    <div className="highlight margin-top-20">
+                    <div className="highlight-one-line highlight margin-top-20">
                         <details>
                             <summary>
                                 How do we decide what constitutes an accessibility bug?
@@ -120,11 +120,11 @@ export default function MostCommonBugs() {
                                 to just one level or two.
                                 For example, the requirement that every web page has a title is a level A, 
                                 while the target size for clickable areas has both level AA and AAA requirements. 
-                                For the AA level, any clickable area must be of minimum 24 by 24 pixels. 
+                                For the AA level, any clickable area (for example, the size of a button) must be of minimum 24 by 24 pixels. 
                                 For the AAA level, the minimum size must be 44 by 44 pixels. 
                             </p>
                             <p>
-                                In this way, the guidelines establish a minimum level of accessibility for all users,
+                                In this way, the guidelines establish a minimum level of accessibility,
                                 while also recommending a desirable level that will benefit the largest number of users. 
                             </p>
                             <p>   
@@ -162,21 +162,8 @@ export default function MostCommonBugs() {
                         report makes for an interesting and informative read, do check it out!
                         In the meantime, let's go over the list of the 6 most common bugs found in the 2023 study.
                     </p>
-                    <div className="note">
-                        <p><strong>Note</strong>:</p>
-                        <p>
-                            This article focuses on statistics from the study and why these bugs are problematic 
-                            for users with disabilities.
-                            We discuss in-depth solutions in <span> </span>
-                            <Link to="/resources/make-it-accessible-part1" 
-                                    onClick={() => { scrollToTop() }}
-                            >
-                                Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
-                            </Link>
-                            .
-                        </p>
-                    </div>
-                    <p className="margin-top-30">
+                    
+                    <p>
                         What do we know about the <strong>6 most common accessibility bugs</strong>?
                     </p>
                     <ul className="bullet-point-list padding-left-20">
@@ -191,6 +178,17 @@ export default function MostCommonBugs() {
                     <p>
                         <strong>The good news? </strong>
                         These are some of the easiest bugs to avoid or fix!
+                    </p>
+                    <p>
+                        <strong>Note</strong>: This article focuses on statistics from the study and why these bugs are problematic 
+                        for users with disabilities.
+                        We discuss in-depth solutions in <span> </span>
+                        <Link to="/resources/make-it-accessible-part1" 
+                                onClick={() => { scrollToTop() }}
+                        >
+                            Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
+                        </Link>
+                        .
                     </p>
                 </div>
 
