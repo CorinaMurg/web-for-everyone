@@ -16,13 +16,14 @@
 
 @media (max-width: 650px) {
     .back-links ol {
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 10px; */
+        display: none;
     }
-    .back-links ol li + li::before {
+    /* .back-links ol li + li::before {
         display: none !important;
-    }
+    } */
 }
 
 .back-links ol li {

@@ -864,16 +864,17 @@ ul[class^="checkmark-list"] li {
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 650px) {
     header {
         padding-bottom: 10px;
-    }
-    .note {
-        flex-direction: column;
     }
 
     .article-container p {
         line-height: 1.7;
+    }
+
+    .article-container h1 {
+        margin-top: 0;
     }
   
 }
