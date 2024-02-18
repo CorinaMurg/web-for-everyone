@@ -291,7 +291,7 @@ a:focus-visible {
     font-size: 0.8rem;
 }
 
-.details-content {
+.details-content:not(:has(.code)) {
     max-height: 250px; 
     overflow-y: auto;
     padding-right: 20px;
