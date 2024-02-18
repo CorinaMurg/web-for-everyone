@@ -45,13 +45,14 @@ header .logo-link:hover {
     align-items: center;
     justify-content: center;
     width: 1.58rem;
-    height: 1.5rem;
+    /* height: 1.5rem; */
 }
 
 .logo-container img {
     width: 1.58rem;
     height: 100%;
-    aspect-ratio: 1.053 / 1;
+    aspect-ratio: 1.06 / 1;
+    margin-left: -4px;
 }
 
 /* @media (max-width: 450px) {

@@ -1,9 +1,7 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
-BETA
 Check on mobile
 scroll bar styles
-add svg to backlinks
 back button scroll
 Nav modal
 
