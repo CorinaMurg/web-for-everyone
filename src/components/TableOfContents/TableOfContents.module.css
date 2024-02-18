@@ -7,18 +7,18 @@
     font-weight: 450;
     letter-spacing: 2px;
     position: sticky;
-    top: 170px; 
+    top: 130px; 
     height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-height: 300px; 
+    /* max-height: 300px;  */
     width: 300px;
     white-space: normal;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding-left: 5px;
 }
-
+/* 
 .table-contents::-webkit-scrollbar {
     width: 5px;
 }
@@ -33,7 +33,7 @@
 
 .table-contents::-webkit-scrollbar-thumb:hover {
 background: var(--pinkBright-color); 
-}
+} */
 
 .table-contents h2 {
     margin-top: 0;
