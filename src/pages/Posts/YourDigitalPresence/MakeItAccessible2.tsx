@@ -87,8 +87,8 @@ export default function MakeItAccessible() {
                         , and will now cover another set of six. 
                     </p>
                     <p>
-                        With the first six bugs we learned that they can be kept in check with just semantic 
-                        HTML and CSS.
+                        The first six bugs we studied can be kept in check with just semantic 
+                        HTML, or in some cases, with a little bit of CSS or ARIA attributes.
                         This second group is no different. (Well,
                         there is just one exception, depending on which JavaScript library you use.)
                     </p>
@@ -292,7 +292,7 @@ export default function MakeItAccessible() {
                         </p>
                         <br></br>
                         <p>
-                            Now for an opposite experience, check out the <span> </span>
+                            Now for an opposite experience, visit the <span> </span>
                             <a href="https://www.bbc.com/" target="_blank" rel="noreferrer"> 
                                 BBC
                                 <span className="sr-only"> opens in a new tab</span>
@@ -308,8 +308,8 @@ export default function MakeItAccessible() {
                         <p>
                             As of the time of this writing (January 5th, 2024), the skip link is not present. 
                             Tab through the navigation until you reach the main content. 
-                            Choose an article and click on it. Now tab through the navigation (again!) to reach 
-                            the body of the article.
+                            Choose an article and click on it. To reach the body of the article
+                            you have to tab through the navigation (again!). 
                         </p>
                     </div>
                     
@@ -434,12 +434,12 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         Most browsers have a default focus style, the <strong>focus ring</strong>. 
-                        For example, the default focus style in Chrome is double black and white outline.
+                        For example, the default focus style in Chrome is a double, black and white outline.
                         You can style it to match your design, but it's important to keep it visible. 
                         {/* For that, pay attention to the contrast ratio between the focus style and the background color of the element, as well as the background of the page. */}
                     </p>
                     <p>
-                        Here are a couple of ways to provide visual clues to sighted keyboard users:
+                        If you choose to override the default outline, here are two options
                     </p>
                     <div className="padding-left-20">
                         <p className="bullet-point-line">
@@ -460,7 +460,7 @@ export default function MakeItAccessible() {
                             <code>&#125;</code>   
                         </div>
                         <p className="bold bullet-point-line white-bg">
-                            Define an <code>outline</code> that is 3 pixels thick, dashed, and black. 
+                            Here we define an <code>outline</code> that is 3 pixels thick, dashed, and black. 
                         </p>
                         <p className="padding-left-20">
                             Change the color and the style to match your design, but make sure you have a contrast ratio of at 
@@ -513,8 +513,9 @@ export default function MakeItAccessible() {
                     <div className="highlight margin-top-30">
                         <h4>Example: Change in brightness to indicate focus</h4>
                         <p>
-                            One of the most important accessibility guidelines is to ensure that color alone is not 
-                            used to convey information. This applies to the focus state as well.
+                            One of the most important accessibility guidelines is to ensure that <span> </span>
+                            <strong>color alone is not used to convey information</strong>. 
+                            This applies to the focus state as well.
                         </p>
                         <p>
                             For example, changing the background color of 
@@ -667,15 +668,14 @@ export default function MakeItAccessible() {
                     <p>
                         Ready to learn more about accessibility?
                     </p>
-                    
-                    <div className="next-article">
-                        <span className="read-next">Read next:</span>
+                    <p>
+                        <b>Read next: </b>
                         <Link to="/resources" 
                                 onClick={() => { scrollToTop() }}
                         >
                             Resources
                         </Link>
-                    </div>
+                    </p>
                 </div>
 
             </div>

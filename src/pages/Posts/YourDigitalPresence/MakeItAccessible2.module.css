@@ -10,9 +10,11 @@
     background-color: #a1b0f8;
     border: none;
     color: var(--text-dark-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 10px 15px;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+    padding: 12px 20px;
     align-self:auto;
     padding-left: 20px;
     cursor: pointer;
@@ -45,9 +47,10 @@
     background-color: var(--blue-color);
     border: none;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 10px 45px;
+    letter-spacing: 0.3px;
+    padding: 12px 55px;
     text-align: center;
     text-decoration: none;
     border-radius: 0 !important;
@@ -120,4 +123,21 @@
 
 .focus-ring {
     border: 4px dashed var(--code-blue-color);
+}
+
+@media screen and (max-width: 450px) {
+    .brightness--buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brightness--buttons button {
+        width: 50%;
+    }
+    .brightness--buttons button:not(:last-child) {
+        border-right: none;
+    }
+    .brightness--buttons button:not(:last-child) {
+        border-bottom: 1.5px solid black;
+    }
 }
