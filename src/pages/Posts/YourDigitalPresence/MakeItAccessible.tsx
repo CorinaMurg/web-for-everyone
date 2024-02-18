@@ -647,8 +647,11 @@ export default function MakeItAccessible() {
                         developer to test if a label is properly associated with an input.
                     </p>
 
+                    <p>
+                        <strong>Which method should you use?</strong>
+                    </p>
                     <p className="white-bg">
-                        Which method should you use? Both are valid, but the explicit method (label wraping the input) will cause 
+                        Both are valid, but the explicit method (label wraping the input) will cause 
                         problems for users relying on speech commands, specifically those using the 
                         Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
                         software, it's best to use the implicit method (with the <code>for</code> attribute) until this issue is resolved.
@@ -687,14 +690,14 @@ export default function MakeItAccessible() {
                     
                     <div className="highlight">
                         <h4>
-                            Do you what else the lang attribute can do?! <span aria-hidden="true"> 💡</span>
+                            Do you know what else the lang attribute can do?! <span aria-hidden="true"> 💡</span>
                         </h4>
-                        <p style={{ marginTop: '30px' }}>You can choose a specific dialect:</p>
+                        <p style={{ marginTop: '30px' }}>Use a specific dialect:</p>
                         <div className="code">
                             <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
                         </div>
                         <p style={{ marginTop: '50px' }}>
-                            You can specify the language of a certain word or section of the page:
+                            Specify the language of a certain word or section of the page:
                         </p>
                         <div className="code"> 
                             <code> <span className="code-blue-color">&lt;p&gt;</span></code>
