@@ -1,0 +1,15 @@
+
+.svg-wrap {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    /* margin-right: 5px; */
+}
+
+.svg-wrap svg {
+    fill: var(--blue-color);
+    height: 1rem;
+    line-height: 1;
+}

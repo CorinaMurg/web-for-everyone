@@ -11,11 +11,11 @@ header {
     z-index: 100;
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
     header {
         padding: 16px calc(0.5*var(--navbar-margin));
     }
-}
+} */
 .header-left {
     display: flex;
     flex-direction: column;
