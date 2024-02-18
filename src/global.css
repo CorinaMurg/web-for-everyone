@@ -44,6 +44,7 @@ a:focus-visible {
     color: var(--pinkBright-color);
     font-size: 1.3rem;
     font-weight: 600;
+    letter-spacing: 0.3px;
     /* margin-left: var(--main-margin); */
     /* margin-bottom: 50px; */
 }
