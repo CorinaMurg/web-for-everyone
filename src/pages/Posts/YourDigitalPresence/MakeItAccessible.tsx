@@ -119,7 +119,7 @@ export default function MakeItAccessible() {
                             <br/>
                             <div className="details-content">
                             <p>
-                                Automated accessibility tools are browser extensions that can help
+                                These are browser extensions that can help
                                 you evaluate the accessibility of your site. 
                                 These tools are designed to scan web pages and identify potential accessibility 
                                 issues based on best practices and standards established by
@@ -137,11 +137,11 @@ export default function MakeItAccessible() {
             
                             <p>
                                 These tools are a great first step when checking for accessibility issues. 
-                                Moreover, as we are now looking at how to 
-                                avoid the most common accessibility bugs, these tools do a great job at spotting them.
+                                Moreover, as we are now looking at how to avoid the most common 
+                                accessibility bugs, these tools do a great job at spotting them.
                             </p>
                             <p>
-                                Here are a few of the most popular accessibility browser extensions:
+                                Here are a few of the most popular browser extensions:
                             </p>
                             <p className="bullet-point-line">
                                 <a href=" https://wave.webaim.org/extension/" 
@@ -194,11 +194,11 @@ export default function MakeItAccessible() {
                                 <p>
                                     While extremely useful for quickly 
                                     spotting common problems, automated tools are imperfect.
-                                    It's important to note that they don't capture all 
-                                    aspects of accessibility. 
+                                    They can't test all aspects of accessibility, and will catch only about 30% of
+                                    issues (maybe up to 50% on a less complex site).
                                 </p>
                                 <p>  
-                                    When you will be working for a more complex site, a comprehensive accessibility 
+                                    When building a more complex website, a comprehensive accessibility 
                                     audit will have to include:
                                 </p>
                                 <p className="bullet-point-line">
@@ -631,16 +631,16 @@ export default function MakeItAccessible() {
                         When it comes to your portfolio site, labels and inputs are likely to be part of your
                         contact form.
                         We will look at ways to make your contact form accessible in a separate article,
-                        but for now we are only focusing on the <code>label</code> and <code>input</code> elements.
+                        but now let's focus on the <code>label</code> and <code>input</code> elements.
                     </p>
                     <p>
                         <strong>Why are labels important?</strong>
                     </p>
                     <p className="bullet-point-line"> 
-                        For the screen reader user, the label is the only way to understand the purpose of the input.
+                        For screen reader users, the label is the only way to understand the purpose of the input.
                     </p>
                     <p className="bullet-point-line">
-                        while speech command users rely on the label to select the input or any other form field.
+                        Speech command users rely on the label to select the input or any other form field.
                     </p>
                     <p className="bullet-point-line">
                         Sighted users can click on the label to bring focus to the input. This is actually a way for a
@@ -648,7 +648,7 @@ export default function MakeItAccessible() {
                     </p>
 
                     <p className="white-bg">
-                        While both examples above are valid, the explicit method will cause 
+                        Which method should you use? Both are valid, but the explicit method (label wraping the input) will cause 
                         problems for users relying on speech commands, specifically those using the 
                         Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
                         software, it's best to use the implicit method (with the <code>for</code> attribute) until this issue is resolved.
@@ -667,7 +667,7 @@ export default function MakeItAccessible() {
                         <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
                     </div>
               
-                    <h3>Use a valid language in the "lang" attribute</h3>
+                    <h3 className="white-bg">Use a valid language in the <code>lang</code> attribute</h3>
                     <p>
                         It enables screen readers to correctly identify the language of a webpage's content, so 
                         it can use the correct pronunciation.

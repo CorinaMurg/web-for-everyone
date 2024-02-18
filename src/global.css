@@ -141,7 +141,7 @@ a:focus-visible {
     font-size: 25px; 
     position: absolute;
     left: -20px; 
-    top: -11px;
+    top: -9px;
     padding-left: 20px;
 }
 
@@ -781,7 +781,8 @@ ul[class^="checkmark-list"] li {
     background-color: var(--grayishBlue-color);
     padding: 1px 3px;
     border-radius: 3px;
-    font-weight: 500;
+    font-weight: inherit;
+    font-size: inherit;
     color: rgb(59, 59, 59);
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
