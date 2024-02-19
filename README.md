@@ -1,7 +1,5 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
-Check on mobile
-scroll bar styles
 back button scroll
 Nav modal
 
@@ -14,7 +12,7 @@ Typescript
 About: a11y chat
 
 Publish blog
-Delete corinamurg.dev
+
 
 Check on mobile
 With screen reader check modal

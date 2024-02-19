@@ -43,6 +43,8 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
+    border: 2px solid var(--text-dark-color);
+    border-radius: 5px;
 }
 
 .about p {
@@ -58,6 +60,8 @@
     grid-row: 1 / 2;
     background-color: var(--hero-lightBlue);
     /* background-color: #755cde; */
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .rectangle-1 svg {
@@ -106,6 +110,8 @@
     background-color: var(--hero-orange);
     align-items: center;
     justify-content: center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .rectangle-5 svg {

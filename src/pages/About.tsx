@@ -68,10 +68,11 @@ export default function About() {
                             that every user feels seen and valued. 
                         </p>
                         <p>
-                            I created the <b>Web for Everyone</b> project to help entry-level developers 
-                            embrace accessibility at the start of their careers. As a Trusted Tester 
+                            I created <b>Web for Everyone</b> to help entry-level developers 
+                            embrace accessibility at the start of their careers. 
+                            {/* As a Trusted Tester 
                             certified accessibility specialist, I share practical techniques to avoid 
-                            common bugs in your portfolio site and projects.  
+                            common bugs in your portfolio site and projects.   */}
                         </p>
                         
                         <h3>How to get started</h3>
@@ -82,7 +83,7 @@ export default function About() {
                             <strong>New to accessibility?</strong>
                         </p>
                         <p>       
-                            Start with the <span> </span>
+                            Jump to the <span> </span>
                             <Link to="/resources#understanding-accessibility"> 
                                 Understanding Accessibility
                             </Link> series for an overview of accessibility concepts and to learn about the
@@ -105,7 +106,7 @@ export default function About() {
                         <p>
                             <span className="pink-text bold">&#x2714; </span>
                             &nbsp;
-                            <strong>Looking to collaborate on an accessibility review?</strong>
+                            <strong>Looking for guidance?</strong>
                         </p>
                         <p>
                             Get in touch via&nbsp;
