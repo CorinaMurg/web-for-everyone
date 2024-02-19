@@ -9,7 +9,7 @@ import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
-import externalLinkSvg from "../../../data/svgData/externalLinkSvg.svg"
+import ExternalLink from "../../../components/ExternalLink/ExternalLink"
 
 const contents = [
     {
@@ -85,17 +85,11 @@ export default function MakeItAccessible() {
                         easy-to-fix accessibility issues. 
                     </p>
                     <p>
-                        The <span> </span>      
-                        <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
-                            2023 WebAIM Million Study
-                            <span className="sr-only"> opens in a new tab</span>
-                            <span className="external-linksvg-wrap">
-                                &nbsp;
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512">
-                                    <path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/>
-                                </svg>    
-                            </span>
-                        </a>
+                        The <span> </span>
+                        <ExternalLink 
+                            href="https://webaim.org/projects/million/" 
+                            visibleText="2023 WebAIM Million Study"
+                        />      
                         <span> </span>
                         of 1,000,000 home pages found a specific group of 6 bugs 
                         that were present on 96% of the pages.
@@ -123,15 +117,11 @@ export default function MakeItAccessible() {
                                 you evaluate the accessibility of your site. 
                                 These tools are designed to scan web pages and identify potential accessibility 
                                 issues based on best practices and standards established by
-                                the
-                                 <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">
-                                    Web Content Accessibility Guidelines
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
+                                the <span> </span>
+                                <ExternalLink 
+                                    href="https://www.w3.org/WAI/standards-guidelines/wcag/" 
+                                    visibleText="Web Content Accessibility Guidelines"
+                                />
                                 , bettwer known as <span className="bold">WCAG</span>. 
                             </p> 
             
@@ -144,40 +134,22 @@ export default function MakeItAccessible() {
                                 Here are a few of the most popular browser extensions:
                             </p>
                             <p className="bullet-point-line">
-                                <a href=" https://wave.webaim.org/extension/" 
-                                    target="_blank" rel="noreferrer"   
-                                >
-                                    WebAIM's WAVE
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
+                                <ExternalLink
+                                    href=" https://wave.webaim.org/extension/" 
+                                    visibleText="WebAIM's WAVE"
+                                />
                             </p>
                             <p className="bullet-point-line">
-                                <a href="https://www.deque.com/axe/devtools/" 
-                                    target="_blank" rel="noreferrer"
-                                >
-                                    Deque's axe DevTools
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
+                                <ExternalLink
+                                    href="https://www.deque.com/axe/devtools/" 
+                                    visibleText="Deque's axe DevTools"
+                                />
                             </p>
                             <p className="bullet-point-line">
-                                <a href="https://developer.chrome.com/docs/lighthouse/overview/" 
-                                    target="_blank" rel="noreferrer"
-                                >
-                                    Google's Lighthouse
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
+                                <ExternalLink
+                                    href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
+                                    visibleText="Chrome's Accessibility Reference"
+                                />
                             </p>
                             <p>
                                 Each tool has its own strengths. Best if you pick one and get 
@@ -263,29 +235,19 @@ export default function MakeItAccessible() {
                     <h3>How to check the color contrast ratio</h3>
                     <p>
                         When you run an accessibility report with automated tools like <span> </span>
-                        <a href="https://developer.chrome.com/docs/lighthouse/overview/" 
-                            target="_blank" rel="noreferrer"
-                        >
-                            Google's Lighthouse
-                            <span className="sr-only"> opens in a new tab</span>
-                            <span className="external-linksvg-wrap">
-                                &nbsp;
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                            </span>
-                        </a>
+                        <ExternalLink
+                            href="https://developer.chrome.com/docs/lighthouse/overview/" 
+                            visibleText="Google's Lighthouse"
+                        />
                         , if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
                     <p>
                         If you'd like to be more proactive and test your colors as you're building, 
                         use <span> </span>
-                        <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">
-                            WebAIM's contrast checker
-                            <span className="sr-only"> opens in a new tab</span>
-                            <span className="external-linksvg-wrap">
-                                &nbsp;
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                            </span>
-                        </a> 
+                        <ExternalLink
+                            href="https://webaim.org/resources/contrastchecker/" 
+                            visibleText="WebAIM's contrast checker"
+                        />
                         .  
                     </p>
 
@@ -321,8 +283,6 @@ export default function MakeItAccessible() {
                                     alt="WebAIM's color contrast checker.  
                                     The contrast ratio displayed is 3.02:1."/>
                             </div>
-                            {/* The foreground color entered is blue
-                                    with hex value 169AC5 and the background color is a light gray with hex value 078005. */}
                             <p>
                                 Notice the <strong>lightness sliders</strong> that allow you to adjust the colors and see how 
                                 the contrast ratio changes.
@@ -346,14 +306,10 @@ export default function MakeItAccessible() {
                             
                             <p style={{ marginTop: '30px' }}>
                                 For quick access, you can <span> </span>
-                                <a href="https://webaim.org/resources/contrastchecker/bookmarklet" target="_blank" rel="noreferrer">
-                                    add the contrast checker to your Bookmarks bar
-                                    <span className="sr-only"> opens in a new tab</span>
-                                    <span className="external-linksvg-wrap">
-                                        &nbsp;
-                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                    </span>
-                                </a>
+                                <ExternalLink
+                                    href="https://webaim.org/resources/contrastchecker/bookmarklet" 
+                                    visibleText="add the contrast checker to your Bookmarks bar"
+                                />
                                 <span> </span>in one easy step!
                             </p>
                             </div>
@@ -390,14 +346,10 @@ export default function MakeItAccessible() {
                           
                         <p style={{ marginTop: "30px"}}>
                             And to help you, WebAIM has a special contrast checker for links! <span> </span>
-                            <a href="https://webaim.org/resources/linkcontrastchecker/" target="_blank" rel="noreferrer">
-                                WebAIM's link contrast checker
-                                <span className="sr-only"> opens in a new tab</span>
-                                <span className="external-linksvg-wrap">
-                                    &nbsp;
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                </span>
-                            </a>
+                            <ExternalLink
+                                href="https://webaim.org/resources/linkcontrastchecker/" 
+                                visibleText="WebAIM's link contrast checker"
+                            />
                         </p>        
                     </div>
                 </div>

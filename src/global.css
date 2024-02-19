@@ -59,6 +59,7 @@ a:focus-visible {
     font-weight: 500;
     width: 39rem;
     max-width: 100%;
+    /* overflow-x: hidden; */
     /* margin-left: var(--main-margin); */
 }
 
@@ -190,6 +191,19 @@ a:focus-visible {
     background-color: var(--code-bg-color);
     color: var(--cream-color);
     margin-bottom: 30px;
+}
+
+.code-no-overflow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 30px;
+    background-color: var(--code-bg-color);
+    color: var(--cream-color);
+    /* margin-bottom: 30px; */
 }
 
 .continue-to-article {
@@ -574,6 +588,10 @@ p {
 
 .padding-left-60 {
     padding-left: 60px;
+}
+
+.padding-left-80 {
+    padding-left: 80px;
 }
 
 .padding-left-90 {

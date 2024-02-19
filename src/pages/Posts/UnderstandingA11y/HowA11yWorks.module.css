@@ -1,1 +1,24 @@
 
+.a11yTree {
+    width: 100%;
+}
+
+.a11yTree h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.a11yTree h2 span {
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+.dom-at-section {
+    width: 100%;
+}
+.dom-at {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;    
+}

@@ -110,7 +110,7 @@ export default function MostCommonBugs() {
 
 
                 {/* *************2. A11Y TREE********************** */}
-                <div className="section a11yTree scroll-target" id="the-accessibility-tree">
+                <div className={`section ${styles.a11yTree} scroll-target`} id="the-accessibility-tree">
                     <h2>The Acccessibility Tree <span aria-hidden="true"> 🌳</span></h2>           
                     <div>
                         <p>
@@ -164,67 +164,65 @@ export default function MostCommonBugs() {
                     </div>
 
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
-                    <div className="section scroll-target" id="DOM-tree-vs-accessibility-tree">
+                    <div className={`section scroll-target ${styles['dom-at-section']}`} id="DOM-tree-vs-accessibility-tree">
                         <h3>
                             DOM Tree vs. Accessibility Tree
                         </h3>
                         <p> 
-                            Let's take the navbar component of this website and compare its representation in the DOM 
+                            Here we take the navbar component of this website and compare its representation in the DOM 
                             and the accessibility trees.
                         </p>
 
-                        <div className="highlight">
-                            <h4 className="margin-top-10">Navbar: DOM tree representation</h4>
-                            <div className="code">
+                        <div className={styles['dom-at']}>
+                            <div className="code-no-overflow">
+                                <code><span className="code-gray-color">// DOM tree</span></code>
                                 <code><span className="code-blue-color">&lt;nav&gt;</span></code>
-                                <code><span className="code-yellow-color padding-left-30">&lt;ul&gt;</span></code>
-                                <code className="padding-left-60">
+                                <code><span className="code-yellow-color padding-left-20">&lt;ul&gt;</span></code>
+                                <code className="padding-left-40 margin-top-20">
                                     &lt;li&gt;
                                 </code>
-                                <code className="padding-left-90">
+                                <code className="padding-left-60">
                                     <span className="code-pink-color">&lt;a&gt;</span>Home<span className="code-pink-color">&lt;/a&gt;</span>
                                 </code>
-                                <code className="padding-left-60">
+                                <code className="padding-left-40">
                                     &lt;/li&gt;
                                 </code>
-                                <code className="padding-left-60 margin-top-10">
+                                <code className="padding-left-40 margin-top-30">
                                     &lt;li&gt;
                                 </code>
-                                <code className="padding-left-90">
+                                <code className="padding-left-60">
                                     <span className="code-pink-color">&lt;a&gt;</span>Your Users<span className="code-pink-color">&lt;/a&gt;</span>
                                 </code>
-                                <code className="padding-left-60">
+                                <code className="padding-left-40">
                                     &lt;/li&gt;
                                 </code>
-                                <code className="padding-left-60">// other list items</code>
-                                <code><span className="code-yellow-color padding-left-30">&lt;/ul&gt;</span></code>
+                                <code className="padding-left-40 margin-top-30">// other list items</code>
+                                <code className="margin-top-20"><span className="code-yellow-color padding-left-20 ">&lt;/ul&gt;</span></code>
                                 <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
                             </div>
-                        </div>
-
-                        <div className="highlight">
-                            <h4 className="margin-top-10">Navbar: Accessibility tree representation</h4>
                         
-                            <div className="code a11ytree-code">
+                            <div className="code-no-overflow">
+                                <code><span className="code-gray-color">// Accessibility tree</span></code>
                                 <code><span className="code-blue-color">navigation</span></code>
-                                <code className="padding-left-30"><span className="code-yellow-color">list</span></code>
-                                <code className="padding-left-60">listitem</code>
-                                <code className="padding-left-90">
+                                <code className="padding-left-20"><span className="code-yellow-color">list</span></code>
+                                <code className="padding-left-40 margin-top-20">listitem</code>
+                                <code className="padding-left-60">
                                     <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
                                     <span> </span>
                                     <span className="code-purple-color">focusable</span>: true <span className="code-purple-color">focused</span>: true
                                 </code>
-                                <code className="padding-left-120">StaticText "Home"</code>
+                                <code className="padding-left-80">StaticText "Home"</code>
 
-                                <code className="padding-left-60">listitem</code>
-                                <code className="padding-left-90">
+                                <code className="padding-left-40 margin-top-30">listitem</code>
+                                <code className="padding-left-60">
                                     <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
                                     <span> </span>
                                     <span className="code-purple-color">focusable</span>: true
                                 </code>
-                                <code className="padding-left-120">StaticText "Your Users"</code>
-                                <code className="padding-left-60">// other list items</code>
+                                <code className="padding-left-80">StaticText "Your Users"</code>
+                                <code className="padding-left-40 margin-top-30">// other list items</code>
                             </div>
+                        {/* </div> */}
                         </div>
                        
                         <p className="margin-top-20">
