@@ -10,12 +10,18 @@ footer {
 }
 
 .footer-top {
+    color: var(--cream-color);
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
 }
 
 footer .logo-link {
+    color: var(--cream-color);
+    font-weight: 500;
+}
+
+footer .logo-link span {
     color: var(--cream-color);
     font-weight: 500;
 }
@@ -42,8 +48,8 @@ footer .logo-link {
 .footer-bottom {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
-    font-family: Roboto;
+    font-size: 0.8rem;
+    font-family: inherit;
     font-weight: 300;
     letter-spacing: 0.5px;
     padding-top: 20px;

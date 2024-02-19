@@ -47,7 +47,7 @@
 }
 
 .we-can-help h2 {
-    color: inherit;
+    color: var(--cream-color);
     font-size: 1.5rem;
     font-weight: 500;
     display: flex;
