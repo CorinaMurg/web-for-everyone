@@ -14,7 +14,7 @@ export default function Footer() {
                         <div className="logo-container">
                             <img src="/assets/faviconDull.png" alt="" />
                         </div> 
-                        <span>Web for Everyone</span>
+                        <span>Web for</span> <span>Everyone</span>
                     </Link>
                 </div>
                 <div className="footer-right">
