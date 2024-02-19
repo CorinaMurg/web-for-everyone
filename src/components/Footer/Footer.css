@@ -20,15 +20,6 @@ footer .logo-link {
     color: var(--cream-color);
     font-weight: 500;
 }
-footer .logo-link span:nth-of-type(1) {
-    color: white;
-    font-weight: 500;
-}
-
-footer .logo-link span:nth-of-type(2) {
-    color: var(--cream-color);
-    font-weight: 500;
-}
 
 .footer-right {
     display: flex;
