@@ -420,7 +420,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code">
-                        <code>// do not remove the outline unless you add another visual clue</code>
+                        <code><span className="code-gray-color">// do not remove the outline unless you add another visual clue</span></code>
                         <code className="margin-top-10"><span className="code-blue-color">button</span>:focus &#123;</code>
                         <code className="padding-left-30"><span className="code-yellow-color">outline</span>: none;</code>
                         <code>&#125;</code>   
@@ -439,7 +439,7 @@ export default function MakeItAccessible() {
                         {/* For that, pay attention to the contrast ratio between the focus style and the background color of the element, as well as the background of the page. */}
                     </p>
                     <p>
-                        If you choose to override the default outline, here are two options
+                        If you choose to override the default outline, here are two options:
                     </p>
                     <div className="padding-left-20">
                         <p className="bullet-point-line">

@@ -22,3 +22,7 @@
     overflow-x: auto;
     white-space: nowrap;    
 }
+
+.dom-at div:nth-of-type(2){
+    padding-left: 60px; 
+}

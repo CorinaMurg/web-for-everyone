@@ -310,22 +310,6 @@ a:focus-visible {
     overflow-y: auto;
     padding-right: 20px;
 }
-
-.details-content::-webkit-scrollbar {
-    width: 10px;
-}
-
-.details-content::-webkit-scrollbar-track {
-    background: var(--cream-color);
-}
-
-.details-content::-webkit-scrollbar-thumb {
-    background: var(--yellowFaded-color);
-}
-
-.details-content::-webkit-scrollbar-thumb:hover {
-background: var(--pinkBright-color); 
-}
   
 .exclamation {
     color: var(--pinkBright-color);
@@ -528,6 +512,11 @@ h4 {
     margin-top: 10px;
 }
 
+.margin-top--10 {
+    margin-top: -10px;
+}
+
+
 .margin-top-20 {
     margin-top: 20px;
 }
@@ -612,7 +601,7 @@ p {
 .pink-bg-white-text {
     background-color: var(--pinkBright-color);
     color: var(--text-light-color);
-    padding: 1px 3px;
+    padding: 1px 4px;
     border-radius: 2px;
 }
 
@@ -623,16 +612,25 @@ p {
     font-weight: 700;
 }
 
-.read-next {
-    font-weight: 600;
-    font-size: 0.9rem;
-    /* to match the padding for links */
-    /* padding-block: 2px; */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--yellowFaded-color) var(--cream-color);
 }
 
-/* * {
-    scrollbar-width: thin;
-    scrollbar-color: blue red;
+/* .details-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.details-content::-webkit-scrollbar-track {
+    background: var(--cream-color);
+}
+
+.details-content::-webkit-scrollbar-thumb {
+    background: var(--yellowFaded-color);
+}
+
+.details-content::-webkit-scrollbar-thumb:hover {
+background: var(--pinkBright-color); 
 } */
 
 .scroll-target::before {

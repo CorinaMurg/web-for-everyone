@@ -1,5 +1,4 @@
 import React from "react"
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
@@ -26,7 +25,8 @@ const contents = [
         href: "#DOM-tree-vs-accessibility-tree",
         text: "DOM Tree vs. Accessibility Tree",
         ariaLabel: "DOM Tree versus Accessibility Tree",
-        listClassName: "padding-left-20",
+        className1: "padding-left-20",
+        className2: "margin-top--10",
     },
     {
         href: "#implicit-vs-explicit-accessibility-roles",
@@ -37,13 +37,15 @@ const contents = [
         href: "#implicit-roles",
         text: "Implicit Roles",
         ariaLabel: "Implicit Accessibility Roles",  
-        listClassName: "padding-left-20", 
+        className1: "padding-left-20", 
+        className2: "margin-top--10",
     },
     {
         href: "#explicit-roles",
         text: "Explicit Roles",
         ariaLabel: "Explicit Accessibility Roles", 
-        listClassName: "padding-left-20",  
+        className1: "padding-left-20",  
+        className2: "margin-top--10",
     },
     {
         href: "#the-accessible-name",
@@ -52,12 +54,14 @@ const contents = [
     {
         href: "#the-accessible-name-computation-algorithm",
         text: "The Accessible Name Algorithm",
-        listClassName: "padding-left-20",
+        className1: "padding-left-20",
+        className2: "margin-top--10",
     },
     {
         href: "#example-button-no-visible-text",
         text: "Example: Button with no Visible Text",
-        listClassName: "padding-left-20",
+        className1: "padding-left-20",
+        className2: "margin-top--10",
     },
     {
         href: "#conclusion",
@@ -182,7 +186,8 @@ export default function MostCommonBugs() {
                                     &lt;li&gt;
                                 </code>
                                 <code className="padding-left-60">
-                                    <span className="code-pink-color">&lt;a&gt;</span>Home<span className="code-pink-color">&lt;/a&gt;</span>
+                                    <span className="code-pink-color">&lt;a&gt;
+                                    </span>Home<span className="code-pink-color">&lt;/a&gt;</span>&
                                 </code>
                                 <code className="padding-left-40">
                                     &lt;/li&gt;
@@ -488,7 +493,7 @@ export default function MostCommonBugs() {
                             </p>
                             <p className="padding-left-20 white-bg">
                                 It takes a string value 
-                                that becomes the (accessible) name of the element. For example, <span> </span>
+                                that becomes the name of the element. For example, <span> </span>
                                 <code>aria-label="Web for Everyone's LinkedIn"</code> could be used to provide the name
                                 for a LinkedIn icon.
                                 
@@ -497,7 +502,7 @@ export default function MostCommonBugs() {
                                 Read more about <span> </span>
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
                                     the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
-                                </Link>
+                                </Link>.
                             </p>
                             
                             <p className="bullet-point-line margin-top-20">
@@ -524,14 +529,11 @@ export default function MostCommonBugs() {
                         </div>
 
                         <p className="white-bg">
-                            If none of these attributes are available, the algorithm relies on the 
-                            existing visible text or label (or, if these can't be used for design reasons,
-                            text with a <code>visually-hidden</code> class).
-                        </p>                        
-                        <p>
-                            Otherwise, the content of these attributes is 
-                            given priority. The idea being that they were added either because there's no 
-                            visible text, or to offer a more descriptive or tailored name for the element.
+                            If there's no visible text or label (or at least text with a <code>visually-hidden</code> class), 
+                            the algorithm relies on the content of these attributes.
+                            In fact, the content of these attributes is 
+                            given priority even when the element has visible text or a label.
+                            The idea being that they were added to offer a more descriptive or tailored name for the element.
                         </p>
                         <p>
                             <b>Recommended reading: </b>

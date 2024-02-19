@@ -3,16 +3,16 @@ import React from 'react';
 import styles from './TableOfContents.module.css';
 import "../../global.css"
 
-interface ContentItem {
+interface TableOfContentsLine {
   href: string;
   text: string;
   ariaLabel?: string;
-  className?: string;
-  listClassName?: string;
+  className1?: string;
+  className2?: string;
 }
 
 interface TableOfContentsProps {
-  contents: ContentItem[];
+  contents: TableOfContentsLine[];
   activeId: string; 
 }
 
@@ -25,9 +25,9 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId })
             <nav aria-labelledby='table-contents'>
                 <ul>
                     {contents.map((item, index) => (
-                    <li key={index} className={item.listClassName}>
+                    <li key={index} className={`${item.className1} ${item.className2}`}>
                         <a href={item.href} 
-                            className={`hover-pink ${item.className} ${item.href.substring(1) === activeId ? styles.active : ''}`}
+                            className={`hover-pink ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                         >
                             {item.text}
