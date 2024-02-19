@@ -54,7 +54,7 @@
 }
 
 .we-can-help h3 {
-    color: inherit;
+    color: var(--cream-color);
     font-size: 1rem;
     font-weight: 600;
     margin-top: 25px;
