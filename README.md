@@ -7,6 +7,7 @@ LinkedIn
 GitHub
 Resume
 Typescript
+READMe for WE
 
 
 About: a11y chat

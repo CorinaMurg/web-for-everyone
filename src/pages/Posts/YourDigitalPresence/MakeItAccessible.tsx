@@ -258,15 +258,15 @@ export default function MakeItAccessible() {
                         enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
                     </p>
                     <p className="bullet-point-line">
-                        the tool will calculate the <strong>contrast ratio</strong> for you
+                        the tool calculates the <strong>contrast ratio</strong> 
                     </p>
                     <p className="bullet-point-line">
-                        you will get a <strong>pass</strong> or <strong>fail</strong> result for 
+                        you get a <strong>pass</strong> or <strong>fail</strong> result for 
                         the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
                     </p>   
                             
                     {/* Example: Using WebAIM's contrast checker */}
-                    <div className="highlight highlight-one-line margin-top-30">
+                    {/* <div className="highlight highlight-one-line margin-top-30">
                         <details>
                             <summary>
                                 <span className="details-title">
@@ -295,26 +295,25 @@ export default function MakeItAccessible() {
                                 <img src="/assets/images/colorContrastAnswers.jpg" 
                                     alt="WebAIM's color contrast checker results."/>
                             </div>
-                            {/* Normal Text fails both 
-                                    standards WCAG AA and AAA, Large Text passes WCAG AA but fails WCAG AAA, and Graphical Objects 
-                                    and User Interface Components passes WCAG AA. */}
 
                             <p className="white-bg">
                                 Notice how a ratio of <span className="pink-bg-white-text">3.14:1</span> fails 
                                 WCAG AA for normal text, but passes for large text.
                             </p>
                             
-                            <p style={{ marginTop: '30px' }}>
-                                For quick access, you can <span> </span>
-                                <ExternalLink
-                                    href="https://webaim.org/resources/contrastchecker/bookmarklet" 
-                                    visibleText="add the contrast checker to your Bookmarks bar"
-                                />
-                                <span> </span>in one easy step!
-                            </p>
                             </div>
                         </details>
-                    </div>
+                    </div> */}
+
+                    <p >
+                        The contrast checker is a great tool to have at your disposal.
+                        For quick access, you can <span> </span>
+                        <ExternalLink
+                            href="https://webaim.org/resources/contrastchecker/bookmarklet" 
+                            visibleText="add the contrast checker to your Bookmarks bar"
+                        />
+                        <span> </span>in one easy step!
+                    </p>
                     {/* *****COLOR CONTRAST FOR LINKS***** */}
                     <div className="highlight">
                         <h4 className="two-line-heading">
