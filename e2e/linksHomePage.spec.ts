@@ -20,7 +20,7 @@ test('test', async ({ page }) => {
 
     // FOOTER
     const linkedInPromise = page.waitForEvent('popup');
-    await page.getByRole('navigation').getByRole('link', { name: 'LinkedIn' }).click();
+    await page.getByRole('contentinfo').getByRole('link', { name: 'LinkedIn' }).click();
     const linkedIn = await linkedInPromise;
     await linkedIn.waitForLoadState();
     await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
