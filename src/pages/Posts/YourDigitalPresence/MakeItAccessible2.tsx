@@ -45,7 +45,7 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {
-    useDocTitle("Let's Make It Accessible Part 2 | Web for Everyone");
+    useDocTitle("Let's Make It Accessible Part Two | Web for Everyone");
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     return (
