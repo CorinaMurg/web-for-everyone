@@ -1,33 +1,40 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-    await page.goto('https://web-for-everyone.netlify.app/');
+    await page.goto('https://webforeveryone.us/');
 
-    await page.getByText('WE | Web for Everyone').click();
+    await page.getByText('Web for Everyone').click();
 
-    await page.getByRole('link', { name: 'Your Users' }).click();
-    await page.getByRole('link', { name: 'Resources' }).click();
+    // NAVIGATION
+    await page.getByRole('navigation').getByRole('link', { name: 'Resources' }).click();
     await page.getByRole('navigation').getByRole('link', { name: 'About' }).click();
 
-    await page.getByRole('link', { name: 'Read more →' }).click();
-    await expect(page).toHaveURL('https://web-for-everyone.netlify.app/resources/make-it-accessible');
-    await expect(page.getByRole('heading', { name: `Let's Make It Accessible!` })).toBeVisible();
+    // MAIN
+    await page.getByRole('link', { name: 'Bug squashing' }).click();
+    await expect(page).toHaveURL('https://webforeveryone.us/resources/make-it-accessible-part1');
+    await expect(page.getByRole('heading', { name:`Your Portfolio Site: Let's Make It Accessible!`})).toBeVisible();
     
+    // ASIDE
+
+    // MINI-ARTICLES
+
+    // FOOTER
     const linkedInPromise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: 'LinkedIn' }).click();
+    await page.getByRole('navigation').getByRole('link', { name: 'LinkedIn' }).click();
     const linkedIn = await linkedInPromise;
     await linkedIn.waitForLoadState();
-    await expect(linkedIn).toHaveURL('https://www.linkedin.com/in/corinamurg/');
-
-    const githubPromise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: 'GitHub', exact: true }).click();
-    const github = await githubPromise;
-    await github.waitForLoadState();
-    await expect(github).toHaveURL('https://github.com/CorinaMurg');
-
-    const twitterPromise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: 'Twitter' }).click();
-    const twitter = await twitterPromise;
-    await twitter.waitForLoadState();
-    await expect(twitter).toHaveURL('https://twitter.com/CorinaMurg');  
+    await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
+ 
 });
+
+// 1) <a href="/" class="logo-link">…</a> 
+// aka getByRole('banner').getByRole('link', { name: 'Web for Everyone' })
+
+//  2) <span class="sr-only"> Web for Everyone's </span> 
+// aka getByRole('link', { name: 'Web for Everyone\'s LinkedIn' })
+
+//  3) <a href="/" class="logo-link">…</a> 
+// aka getByRole('contentinfo').getByRole('link', { name: 'Web for Everyone' })
+
+//  4) <span>Web for Everyone 2024</span> 
+// aka getByText('Web for Everyone 2024')

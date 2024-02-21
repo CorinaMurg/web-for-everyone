@@ -2,15 +2,20 @@
 Dark Mode
 back button scroll
 Nav modal
+BACK TO TOP BUTTON
 
 LinkedIn
 GitHub
 Resume
+Code to share
+
 Typescript
 READMe for WE
+QUESTIONS
+eXPLAIN a11Y AT THE END OF WHAT'S a11Y.
+uSE A11Y IN BACKLINKS
 
-
-About: a11y chat
+bUTTON ON About: a11y chat
 
 Publish blog
 
@@ -90,8 +95,7 @@ TABLE OF CONTENTS
 SCREEN READER 
 - pronounces "read" incorrectly as in Recommended read
 
-MINI ARTICLES, POSTS IN RESOURCES
-- should the link wrap the entire article
+
 
 HOW A11Y WORKS
 - add explanation with a11y panel in dev tools re: accessible name computation

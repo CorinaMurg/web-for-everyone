@@ -430,9 +430,9 @@ export default function MakeItAccessible() {
                         If they are coded like the example above, they are not accessible.
                     </p>
                     <p>
-                        In the example above, the link to the LinkedIn profile
-                        contains an icon and no visible text. Here are just a couple of examples
-                        of how it would impact users relying on assitive tech:
+                        The link to the LinkedIn profile
+                        contains an icon and no visible text. Here are just a couple of ways
+                        in which it would impact users relying on assitive tech:
                     </p>
                     <p className="bullet-point-line">
                         A screen reader will announce part of the url 
