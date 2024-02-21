@@ -64,7 +64,7 @@ export default function About() {
                     
                     <div>
                         <p>
-                            As web developers, we have the power to create an inclusive web, and to ensure 
+                            As web developers, we have the power to create an accessible web and to ensure 
                             that every user feels seen and valued. 
                         </p>
                         <p>

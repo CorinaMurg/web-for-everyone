@@ -31,8 +31,8 @@
 
 .about--subtitle {
     text-align: center;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: inherit;
+    font-weight: inherit;
     width: 70%;
     margin-inline: auto;
     margin-top: 16px;
@@ -154,8 +154,8 @@
 }
 
 .about--me--text p {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: inherit;
+    font-weight: inherit;
     line-height: 2;
 }
 
