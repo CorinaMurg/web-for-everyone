@@ -3,11 +3,11 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
     await page.goto('https://webforeveryone.us/');
 
-    await page.getByText('Web for Everyone').click();
+    await page.getByRole('banner').getByRole('link', { name: 'Web for Everyone' }).click();
 
     // NAVIGATION
-    await page.getByRole('navigation').getByRole('link', { name: 'Resources' }).click();
-    await page.getByRole('navigation').getByRole('link', { name: 'About' }).click();
+    await page.getByRole('banner').getByRole('link', { name: 'Resources' }).click();
+    await page.getByRole('banner').getByRole('link', { name: 'About' }).click();
 
     // MAIN
     await page.getByRole('link', { name: 'Bug squashing' }).click();
@@ -27,14 +27,3 @@ test('test', async ({ page }) => {
  
 });
 
-// 1) <a href="/" class="logo-link">…</a> 
-// aka getByRole('banner').getByRole('link', { name: 'Web for Everyone' })
-
-//  2) <span class="sr-only"> Web for Everyone's </span> 
-// aka getByRole('link', { name: 'Web for Everyone\'s LinkedIn' })
-
-//  3) <a href="/" class="logo-link">…</a> 
-// aka getByRole('contentinfo').getByRole('link', { name: 'Web for Everyone' })
-
-//  4) <span>Web for Everyone 2024</span> 
-// aka getByText('Web for Everyone 2024')
