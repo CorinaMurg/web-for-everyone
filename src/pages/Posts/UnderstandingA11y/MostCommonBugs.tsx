@@ -419,13 +419,12 @@ export default function MostCommonBugs() {
                         This bug was found on <span className="stats">18.6%</span> of the home pages audited.
                     </p>
                     <p className="white-bg">
-                        When setting up their screen reader, users choose a default language. 
-                        If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to the user's 
-                        chosen language. This can be problematic for multilingual users accessing content in 
+                        If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to 
+                        the operating system's language. This can be problematic for multilingual users accessing content in 
                         various languages.
                     </p>
                     <p className="white-bg">
-                        For example, let's say a user with a screen reader set to English wants to read a webpage
+                        For example, let's say a screen reader user with a device set to English wants to read a webpage
                         in French. If the page's <code>lang</code> attribute is missing, the screen reader will
                         read the French text in English!
                     </p>
