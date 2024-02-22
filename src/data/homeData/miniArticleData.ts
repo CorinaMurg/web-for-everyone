@@ -34,7 +34,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "The Most Common Bugs",
-        description: `The bad news: for several years in a row, a handful of bugs has been responsible for 
+        description: `The bad news: a handful of bugs is responsible for 
             the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
         link: "/resources/most-common-bugs",
