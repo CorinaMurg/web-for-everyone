@@ -292,9 +292,6 @@ export default function MostCommonBugs() {
                             it assigns the role, and all related properties and states, to the corresponding 
                             accessible object.
                         </p>
-                        <p>
-                            <strong>This is one of the reasons why using semantic HTML is so important!</strong>
-                        </p>
                     </div>
                         
                     {/* ************Zooming in on an accessible object***************** */}
@@ -411,6 +408,17 @@ export default function MostCommonBugs() {
                         <p>
                             The first rule of ARIA is: <strong>don't use ARIA</strong>!
                         </p>
+                        <p>
+                            Throughout this website, we will discuss scenarios where ARIA attributes could be used
+                            to improve accessibility, but also consider their drawbacks especially when HTML 
+                            alternatives are available.
+                        </p>
+                        <p>
+                            For right now, it's important to rememeber that assistive technologies have a better
+                            relationship with semantic HTML than with ARIA, and using ARIA can sometimes lead to
+                            unexpected behavior or bugs.
+
+                        </p>
                         
                     </div>
                 </div>
@@ -433,8 +441,8 @@ export default function MostCommonBugs() {
                     </div>
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 
-                        accessibility tree example has a name? 
-                        It is the name that assistive technologies will use to announce the link to the user
+                        accessibility tree example has a name? It's call the <strong>accessible name</strong>, and 
+                        assistive technologies use it to announce the link to the user
                         (or, for speech recognition software, the name that will be used to activate 
                         the link). 
                     </p>
@@ -451,7 +459,7 @@ export default function MostCommonBugs() {
                         </h3>
                         <p>
                             During the construction of the accessibility tree, the browser evaluates each element
-                            in the DOM to create its name, also called <strong>the accessible name</strong>. 
+                            in the DOM to create its accessible name. 
                             If the content of a web page changes dynamically, 
                             it updates the accessibility tree accordingly, and the accessible names are recomputed 
                             as necessary.
@@ -494,8 +502,8 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 white-bg">
                                 It takes a string value 
                                 that becomes the name of the element. For example, <span> </span>
-                                <code>aria-label="Web for Everyone's LinkedIn"</code> could be used to provide the name
-                                for a LinkedIn icon.
+                                <code>aria-label="Close survey"</code> could be used to provide the name
+                                for a button.
                                 
                             </p>
                             <p className="padding-left-20 margin-top-20">
@@ -605,19 +613,19 @@ export default function MostCommonBugs() {
                         A few key takeaways:
                     </p>
                     <p className="bullet-point-line">
-                        The goal of the accessibility tree is to represent the structure of a webpage in a way 
+                        The accessibility tree represents the structure of a webpage in a way 
                         that is meaningful for users of assistive technologies.
                     </p>
                     <p className="bullet-point-line">
                         Certain objects in the accessibility tree must have a name, and it has to be descriptive
-                        in order to convey the element's purpose or content.
+                        in order to convey the element's function or content.
                     </p>
                     <p className="bullet-point-line">
                         Semantic HTML tags should always be your first choice when building a website. They provide
                         the best accessibility out of the box.
                     </p>
                     <p className="margin-top-30">
-                        Next, let's look at the most common accessibility issues.   
+                        Now, let's have a look at the most common accessibility issues!   
                     </p>
                     
                     <p className="margin-top-30">
@@ -626,7 +634,7 @@ export default function MostCommonBugs() {
                             to="/resources/most-common-bugs" 
                             onClick={scrollToTop}
                         >
-                            Most Common Acessibility Bugs
+                            The Most Common Acessibility Bugs
                         </Link>
                     </p>
                     

@@ -160,12 +160,12 @@ export default function MostCommonBugs() {
                             </a>
                             <span> </span>
                         report makes for an interesting and informative read, do check it out!
-                        In the meantime, let's go over the list of the 6 most common bugs found in the 2023 study.
                     </p>
-                    
                     <p>
-                        What do we know about the <strong>6 most common accessibility bugs</strong>?
+                        In the meantime, let's go over the list with the <strong>6 most common bugs</strong> found 
+                        in the 2023 study. What do we know about them?
                     </p>
+
                     <ul className="bullet-point-list padding-left-20">
                         <li>
                             They accounted for 96% of all bugs found!
@@ -443,8 +443,6 @@ export default function MostCommonBugs() {
                 <div>
                     <p className="margin-top-30">
                         Done with the 6 most common accessibility bugs! 
-                    </p>
-                    <p>
                         Do you have time for a <strong>bonus bug</strong>? Too important to leave it out!
                     </p>
                 </div>
@@ -465,9 +463,15 @@ export default function MostCommonBugs() {
                     <div className="highlight">
                         <h3>Why headings are important</h3>
                         <p>
-                            When trying to find information on a page, most screen reader users rely on headings.
-                            Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit each 
-                            heading to get an idea about the structure and the content of the page.  
+                            Headings help break down a webpage into sections, kind of like chapters in a book. 
+                            If you're looking at the screen, you can quickly glance over the headings to find 
+                            the part you're interested in. 
+                        </p>
+                        <p>
+                            For someone using a screen reader, it's a bit different. 
+                            They can't see the headings, but they can press 
+                            the <span className="pink-bg-white-text">H</span> key to jump from one heading 
+                            to another. This way, they can get a sense of what's on the page and decide what to read.
                         </p>
                         <br />
                         <p className="fake-heading-p">

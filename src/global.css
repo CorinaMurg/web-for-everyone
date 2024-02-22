@@ -424,7 +424,7 @@ h4 {
 .highlight-dl {
     overflow-x: auto;
     white-space: nowrap;
-    max-width: 560px;
+    /* max-width: 560px; */
 }
 
 .highlight-one-line {
