@@ -190,6 +190,15 @@ export default function MostCommonBugs() {
                         </Link>
                         .
                     </p>
+                    <p> 
+                        <strong>Recommended</strong>: To understand the impact of these bugs on users with disabilities,
+                        make sure to review <span> </span>
+                        <Link to="/resources/how-accessibility-works"
+                            onClick={() => { scrollToTop() }}
+                        >
+                            How Accessibility Works
+                        </Link>, especially the section on the <strong>accessible name</strong>.
+                    </p>
                 </div>
 
                 {/* 1. LOW CONTRAST */}
@@ -264,12 +273,13 @@ export default function MostCommonBugs() {
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without a name.
                         This is a problem because screen reader users rely on a descriptive name
-                        to understand the purpose and the destination of a link.
+                        to understand the purpose and the destination of a link. Voice users would not be able to
+                        activate the link without a name.
                     </p>
                     <p>
                         Follow this link to <span> </span>        
                         <Link to="/resources/how-accessibility-works#the-accessible-name">
-                            review how the name of a link is determined
+                            review how the name of an interactive element is determined
                         </Link> 
                         .
                     </p>
@@ -474,8 +484,10 @@ export default function MostCommonBugs() {
                             to another. This way, they can get a sense of what's on the page and decide what to read.
                         </p>
                         <br />
-                        <p className="fake-heading-p">
-                            Recommended read <span aria-hidden="true">💡</span>
+                        <p>
+                            <strong>
+                                Recommended read <span aria-hidden="true">💡</span>
+                            </strong>
                         </p>
                         <p>
                             Learn about the range of options screen reader users have to navigate the web and to
