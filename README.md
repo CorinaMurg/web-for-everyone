@@ -4,10 +4,9 @@ back button scroll
 Nav modal
 BACK TO TOP BUTTON
 
-LinkedIn
-GitHub
-Resume
-Code to share
+Small things to fix:
+- 03 Empty Links: more specific about name vs accessible name
+
 
 Typescript
 READMe for WE

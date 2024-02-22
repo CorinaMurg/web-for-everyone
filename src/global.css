@@ -424,7 +424,6 @@ h4 {
 .highlight-dl {
     overflow-x: auto;
     white-space: nowrap;
-    /* max-width: 560px; */
 }
 
 .highlight-one-line {
@@ -617,21 +616,20 @@ p {
     scrollbar-color: var(--yellowFaded-color) var(--cream-color);
 }
 
-/* .details-content::-webkit-scrollbar {
-    width: 10px;
+
+::-webkit-scrollbar {
+    width: 10px; 
 }
 
-.details-content::-webkit-scrollbar-track {
-    background: var(--cream-color);
+::-webkit-scrollbar-track {
+    background: var(--cream-color); 
 }
 
-.details-content::-webkit-scrollbar-thumb {
-    background: var(--yellowFaded-color);
+::-webkit-scrollbar-thumb {
+    background-color: var(--yellowFaded-color); 
+    border-radius: 6px; 
+    border: 3px solid var(--cream-color); 
 }
-
-.details-content::-webkit-scrollbar-thumb:hover {
-background: var(--pinkBright-color); 
-} */
 
 .scroll-target::before {
     content: '';
