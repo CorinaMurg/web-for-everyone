@@ -106,7 +106,7 @@ export default function MakeItAccessible() {
                     <div className="highlight highlight-one-line">
                         <details>
                             <summary>
-                                <span className="details-title">
+                                <span className="summary-title">
                                     Automated testing tools: optional, but recommended!
                                 </span>
                             </summary>

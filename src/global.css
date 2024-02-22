@@ -303,6 +303,8 @@ a:focus-visible {
     padding: 1px 3px;
     border-radius: 2px;
     font-size: 0.8rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 .details-content:not(:has(.code)) {
@@ -354,7 +356,8 @@ a:focus-visible {
     background-color: #adb5bd;
     color: var(--text-dark-color);
     padding: 2px 3px;
-    border-radius: 3px;
+    border-radius: 3px;box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 
@@ -536,24 +539,6 @@ h4 {
     margin-top: 50px;
 }
 
-.next-article {
-    /* width: 100%; */
-    display: flex;
-    
-    gap: 3px;
-}
-
-.next-article a {
-    font-size: 0.9rem;
-    font-family: inherit;
-}
-
-.note {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 p {
     font-size: 1rem;
     font-weight: 400;
@@ -595,6 +580,8 @@ p {
     color: var(--text-light-color);
     font-weight: 600;
     padding: 5px 10px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 .pink-bg-white-text {
@@ -602,6 +589,8 @@ p {
     color: var(--text-light-color);
     padding: 1px 4px;
     border-radius: 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 
@@ -667,15 +656,15 @@ p {
 }
 
 .sr-only {
-    position: absolute; 
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
     width: 1px;
     height: 1px;
-    padding: 0;
-    margin: -1px; 
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
     white-space: nowrap;
-    border: 0;
 }
 
 .stats {
@@ -699,7 +688,6 @@ b {
 
 summary {
     cursor: pointer;
-    /* padding-left: 10px; */
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -711,6 +699,11 @@ summary::marker {
     font-weight: 700;
 }
 
+.summary-title {
+    margin-left: 10px;
+    line-height: 1.5;
+    /* padding-left: 20px; */
+}
 .two-line-heading {
     display: flex;
     flex-direction: column;
