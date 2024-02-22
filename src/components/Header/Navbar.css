@@ -33,7 +33,7 @@
     width: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
     .primary-navigation {
         display: none; 
     }

@@ -292,15 +292,16 @@ export default function MostCommonBugs() {
                             <span> </span><span className="pink-bg-white-text">read more</span> is not very 
                             helpful either.
                         </p>
-                        <p>
-                            <strong>A good example:</strong> "Click here to learn more about our services"
-                        </p>
+                        
                         <p className="margin-top-20">
                             Instead of reading through an entire page, some screen reader users prefer to
                             navigate through the various links provided on the page.</p>
                         <p className="margin-top-20">
                             As a result, the links are announced separately from their surrounding text and
                             users can struggle to understand their purpose if the text is vague.
+                        </p>
+                        <p>
+                            <strong>A good example:</strong> "Click here to learn more about our services"
                         </p>
                         
                     </div>

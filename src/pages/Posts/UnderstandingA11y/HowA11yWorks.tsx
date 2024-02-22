@@ -377,7 +377,8 @@ export default function MostCommonBugs() {
                         <p className="white-bg">
                             The element will be treated as a button by assistive technologies.
                             The <code>role</code> and <code>aria-label</code> are <strong>ARIA</strong> tools
-                            that allow us to modify the default behavior of the div.
+                            that allow us to modify the default behavior of the div and give it an accessible name (more about
+                            the accessible name in the next section).
                         </p>
                         
                         <p>
@@ -414,7 +415,7 @@ export default function MostCommonBugs() {
                             alternatives are available.
                         </p>
                         <p>
-                            For right now, it's important to rememeber that assistive technologies have a better
+                            For right now, it's important to remember that assistive technologies have a better
                             relationship with semantic HTML than with ARIA, and using ARIA can sometimes lead to
                             unexpected behavior or bugs.
 
@@ -441,13 +442,14 @@ export default function MostCommonBugs() {
                     </div>
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 
-                        accessibility tree example has a name? It's call the <strong>accessible name</strong>, and 
+                        accessibility tree example has a name? It's called the <strong>accessible name</strong>, and 
                         assistive technologies use it to announce the link to the user
                         (or, for speech recognition software, the name that will be used to activate 
                         the link). 
                     </p>
                     <p>
-                        <strong>Certain elements must have a name</strong> (or a label), and it has to be descriptive enough to convey the
+                        <strong>Certain elements must have a name</strong> (or a label), and it has to be 
+                        descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
                     </p>
@@ -541,7 +543,8 @@ export default function MostCommonBugs() {
                             the algorithm relies on the content of these attributes.
                             In fact, the content of these attributes is 
                             given priority even when the element has visible text or a label.
-                            The idea being that they were added to offer a more descriptive or tailored name for the element.
+                            The idea being that they were added to offer a more descriptive or tailored name 
+                            for the element.
                         </p>
                         <p>
                             <b>Recommended reading: </b>
@@ -551,8 +554,7 @@ export default function MostCommonBugs() {
                                 rel="noopener noreferrer"
                             >
                                 visible text is the best choice for the accessible name
-                            </a>.
-                            
+                            </a>.           
                         </p>
                     </div>
                                      
