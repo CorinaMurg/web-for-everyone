@@ -78,12 +78,12 @@ export default function MakeItAccessible() {
             <div className="article-content makeItOne">
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction</h2>
-                    <p>
+                    {/* <p>
                         Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
                         challenging as the functionality of a website increases. However, in a few 
                         steps you can make sure that your site is free of the most common,
                         easy-to-fix accessibility issues. 
-                    </p>
+                    </p> */}
                     <p>
                         The <span> </span>
                         <ExternalLink 
@@ -95,12 +95,12 @@ export default function MakeItAccessible() {
                         that were present on 96% of the pages.
                         Let's make sure your portfolio site is not one of them!
                     </p>
-                    <p>
+                    {/* <p>
                         In this article, we will look at each bug in detail and learn how to fix it. 
                         The article is designed to be a quick reference guide, but it provides sufficient 
                         information, as well as links to additional resources, to help you understand the 
                         underlying concepts.
-                    </p>
+                    </p> */}
 
                     {/* **************Automated testing tools****************** */}
                     <div className="highlight highlight-one-line">
@@ -594,8 +594,9 @@ export default function MakeItAccessible() {
                         Speech command users rely on the label to select the input or any other form field.
                     </p>
                     <p className="bullet-point-line">
-                        Sighted users can click on the label to bring focus to the input. This is actually a way for a
-                        developer to test if a label is properly associated with an input.
+                        Sighted users can click on the label to bring focus to the input. This is actually 
+                        an easy way if you are a sighted developer to test if a label is properly associated 
+                        with an input.
                     </p>
 
                     <p>
@@ -605,7 +606,7 @@ export default function MakeItAccessible() {
                         Both are valid, but the explicit method (label wraping the input) will cause 
                         problems for users relying on speech commands, specifically those using the 
                         Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
-                        software, it's best to use the implicit method (with the <code>for</code> attribute) until this issue is resolved.
+                        software, it's best to <strong>use the implicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
                     </p>
                     
                 </div>
@@ -643,7 +644,7 @@ export default function MakeItAccessible() {
                         <h4>
                             Do you know what else the lang attribute can do?! <span aria-hidden="true"> 💡</span>
                         </h4>
-                        <p style={{ marginTop: '30px' }}>Use a specific dialect:</p>
+                        <p style={{ marginTop: '30px' }}>Take a specific dialect:</p>
                         <div className="code">
                             <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
                         </div>
@@ -672,7 +673,7 @@ export default function MakeItAccessible() {
                     <h2>Conclusion</h2>
                     <p>
                         Congratulations! You are now familiar with the 6 most common 
-                        accessibility issues, and techniques to avoid them in your portfolio site.
+                        accessibility issues and how to avoid them in your portfolio site.
                     </p>
                     <p>
                         Ready to continue your accessibility bug hunt?
