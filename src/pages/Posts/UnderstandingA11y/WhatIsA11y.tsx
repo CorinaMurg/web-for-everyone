@@ -107,9 +107,11 @@ export default function WhatIsA11y() {
                         <li><p className="bullet-point-line margin-top-20">CSS</p></li>
                         <li><p className="bullet-point-line margin-top-20">JavaScript</p></li>
                     </ul>
-                    <strong className=" margin-top-20 white-bg">
+                    <p>
+                        <strong className=" margin-top-20 white-bg">
                         Should your HTML file be a soup of <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags?
-                    </strong>
+                        </strong>
+                    </p>
                     <p className="white-bg">
                         Of course not! We are lucky to be developers at a time when <code>HTML5</code> is the 
                         standard, and it comes with a whole set of semantic tags. These are tags that share the 
@@ -176,20 +178,23 @@ export default function WhatIsA11y() {
                         </details>
                     </div>
 
-                    <strong className="margin-top-30">
-                        Our job as developers is threefold:
-                    </strong>
+                    <p>
+                        <strong className="margin-top-30">
+                            Our job as developers is threefold:
+                        </strong>   
+                    </p>  
                     <ul>
                         <li>
                             <p className="bullet-point-line">
-                                Set accessibility as a goal. Learn about the ways in which 
-                                users of all abilities interact with the web and the functionality
-                                we need to provide for each group. 
+                                Set accessibility as a goal. 
                             </p>
                         </li>
                         <li>
                             <p className="bullet-point-line margin-top-20">
                                 Ask questions. Reach out for help and guidance.
+                                Learn about the ways in which 
+                                users of all abilities interact with the web and the functionality
+                                we need to provide for each group. 
                             </p>
                         </li>
                         <li>
@@ -207,7 +212,7 @@ export default function WhatIsA11y() {
                         <h3>How semantic HTML improves accessibility</h3>
                         <p className="white-bg">
                             You’ve probably used HTML tags like <code>&lt;nav&gt;</code>,
-                            <span> </span><code>&lt;button&gt;</code>, or <code>&lt;h1&gt;</code>.
+                            <span> </span><code>&lt;button&gt;</code>, <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>.
                             
                             They provide your codebase with a structure that is easy to recognize and maintain. 
                         </p>
@@ -217,9 +222,10 @@ export default function WhatIsA11y() {
                             of a page you would choose the <code>&lt;h1&gt;</code> tags.
                         </p>
                         <p className="white-bg">
-                            Did you know that these tags are more than just markers for your code? True! 
-                            They convey information about their content to assistive tech users as well. 
-                            That’s why we call them <span className="pink-bg-white-text" >semantic</span> HTML tags. 
+                            We call these tags <span className="pink-bg-white-text" >semantic</span> because they let us 
+                            know what type of content they hold. But the really neat quality of many semantic 
+                            tags (not all though!) is that they convey information about their content to 
+                            assistive technologies as well.
                         </p>
                         <p className="white-bg">
                             When a screen reader encounters the navigation section of your site, it 
@@ -232,9 +238,9 @@ export default function WhatIsA11y() {
                             no semantic meaning. It is just a container intended for styling purposes or for layout, 
                             and requires additional code to make it accessible.
                         </p>
-                        <br/>
-                        <strong>Always rely on semantic HTML!</strong>
-                        <br/>  
+                        <p>
+                            <strong>Always rely on semantic HTML!</strong>
+                        </p>
                         <p>
                             Think about the content and the functionality 
                             you want to create, and choose the appropriate HTML tags. While JavaScript can help with more 
@@ -286,14 +292,14 @@ export default function WhatIsA11y() {
                             those with disabilities. 
                         </p>
                     </div>
-                    
-                        
-                    <strong>BUT, above all . . .</strong>
+                    <p>
+                        <strong>BUT, above all . . .</strong>
+                    </p>
                 </div>
 
                 {/* *************Web Access is Everyone's Right******************** */}
                 <div className="section scroll-target" id="web-access-is-everyone's-right">
-                    <h2>Web Access is Everyone's Right</h2>
+                    <h2>Web Access is Everyone's Right!</h2>
                     <p>
                         In our world, digital connectivity is key, and your finished product should allow everyone 
                         the ability to easily engage with it.  The web is not just a form of entertainment; it's a
@@ -307,10 +313,11 @@ export default function WhatIsA11y() {
                         This shift to digital has been transformative for people with disabilities as well. 
                         For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
-                    </p>                  
-                    <p>
-                        <strong>Your code can help!</strong> It can allow:
-                    </p>
+                    </p>    
+                    <p> 
+                        <span className="yellow-bg">Everyone</span> deserves a high level of freedom and functionality when interacting with
+                        the web. And <strong>your code can help!</strong> It can allow:
+                    </p>              
                     <p className="padding-left-20">
                         <span className="pink-text bold">&#x2714; </span>a blind student to access their online course materials,
                     </p>
@@ -319,14 +326,7 @@ export default function WhatIsA11y() {
                     </p>
                     <p className="padding-left-20">
                         <span className="pink-text bold">&#x2714; </span>a person with dyslexia to read the news.
-                    </p>
-                        
-                    
-                    <p> 
-                        <span className="yellow-bg">Everyone</span> deserves a high level of freedom and functionality when interacting with
-                        the web.
-                    </p>
-                      
+                    </p>                  
                 </div>
 
                 {/* *********NEXT***************** */}
