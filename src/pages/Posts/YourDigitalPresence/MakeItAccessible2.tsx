@@ -77,7 +77,7 @@ export default function MakeItAccessible() {
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction</h2>
                     <p>
-                        This article continues our exploration of accessibility issues that can affect your 
+                        We continue our hunt for accessibility issues that can affect your 
                         portfolio site. We started with <span> </span>
                         <Link to="/resources/make-it-accessible-part1" 
                                 onClick={() => { scrollToTop() }}
@@ -87,10 +87,9 @@ export default function MakeItAccessible() {
                         , and will now cover another set of six. 
                     </p>
                     <p>
-                        The first six bugs we studied can be kept in check with just semantic 
-                        HTML, or in some cases, with a little bit of CSS or ARIA attributes.
-                        This second group is no different. (Well,
-                        there is just one exception, depending on which JavaScript library you use.)
+                        Just like the first group, these bugs can also be kept in check with just semantic 
+                        HTML, and in some cases, with a little bit of CSS or ARIA attributes.
+                        (Well, there is just one exception, depending on which JavaScript library you use.)
                     </p>
                     
                 </div>
@@ -133,8 +132,8 @@ export default function MakeItAccessible() {
                     </p>
                     <p>For that purpose:</p>
                     <p className="bullet-point-line white-bg">
-                        Make sure not to include the <code>user-scalable=no</code> attribute
-                        in the <code>viewport</code> meta tag.
+                        Make sure not to include <code>user-scalable=no</code> in
+                        the <code>viewport</code> meta tag.
                     </p>
                     <p className="bullet-point-line white-bg">
                         set the <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines 
@@ -185,7 +184,7 @@ export default function MakeItAccessible() {
                     <div className="highlight">
                         <details>
                             <summary>
-                                <span className="details-title">
+                                <span className="summary-title">
                                     Example: React Custom Hook to Update the Title
                                 </span>
                             </summary>
@@ -254,7 +253,8 @@ export default function MakeItAccessible() {
                         You can improve the experience of your keyboard-only visitors by including
                         a <span className="pink-bg-white-text">Skip to main content</span> link at the beginning 
                         of the page. 
-                        This can make a big difference for users with limited mobility. Instead of tabbing through a lot of 
+                        This can make a big difference for users with limited mobility. Instead of tabbing through 
+                        a long list of 
                         links they could bypass navigation and jump directly to the main content. 
                     </p>
                    
@@ -316,7 +316,7 @@ export default function MakeItAccessible() {
                     <div className="highlight">
                         <details>
                             <summary>
-                                <span className="details-title">
+                                <span className="summary-title">
                                     Example: Code for a Skip Link
                                 </span>
                             </summary>
@@ -415,7 +415,7 @@ export default function MakeItAccessible() {
                 {/* ****************VISIBLE FOCUS************************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">11</span>
+                        <span aria-hidden="true" className="section-number">1 1</span>
                         <h2>Visible Focus</h2>
                     </div>
 
@@ -435,11 +435,12 @@ export default function MakeItAccessible() {
                     <p>
                         Most browsers have a default focus style, the <strong>focus ring</strong>. 
                         For example, the default focus style in Chrome is a double, black and white outline.
-                        You can style it to match your design, but it's important to keep it visible. 
-                        {/* For that, pay attention to the contrast ratio between the focus style and the background color of the element, as well as the background of the page. */}
+                        You can choose to override it and create one that matches your design, 
+                        but it's important to keep it visible. 
+                        
                     </p>
                     <p>
-                        If you choose to override the default outline, here are two options:
+                        Here are a couple of options you have:
                     </p>
                     <div className="padding-left-20">
                         <p className="bullet-point-line">
@@ -452,7 +453,7 @@ export default function MakeItAccessible() {
                     
                     {/* ***Example: Creating a custom focus outline*** */}
                     <div className="highlight">
-                        <h4>Example: Creating a custom focus outline</h4>
+                        <h4>Example <span className="pink-text"> One</span>: Create a custom focus outline</h4>
                         <div className="code">
                             <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
@@ -460,7 +461,7 @@ export default function MakeItAccessible() {
                             <code>&#125;</code>   
                         </div>
                         <p className="bold bullet-point-line white-bg">
-                            Here we define an <code>outline</code> that is 3 pixels thick, dashed, and black. 
+                            We define an <code>outline</code> that is 3 pixels thick, dashed, and black. 
                         </p>
                         <p className="padding-left-20">
                             Change the color and the style to match your design, but make sure you have a contrast ratio of at 
@@ -469,7 +470,7 @@ export default function MakeItAccessible() {
                             the page.
                         </p>
                         <p className="bold bullet-point-line white-bg">
-                            Use <code>outline-offset</code> to 
+                            We use <code>outline-offset</code> to 
                             set the space between the outline and the edge of the element.
                         </p>
                         <p className="padding-left-20">
@@ -478,7 +479,7 @@ export default function MakeItAccessible() {
                             background of the page.
                         </p>
                         
-                        <div className="margin-top-30 margin-bottom-20" aria-hidden="true">
+                        <div className="margin-top-30 margin-bottom-20">
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
@@ -511,7 +512,7 @@ export default function MakeItAccessible() {
                     
 
                     <div className="highlight margin-top-30">
-                        <h4>Example: Change in brightness to indicate focus</h4>
+                        <h4>Example <span className="pink-text"> Two</span>: Change the brightness to show focus</h4>
                         <p>
                             One of the most important accessibility guidelines is to ensure that <span> </span>
                             <strong>color alone is not used to convey information</strong>. 
@@ -531,7 +532,7 @@ export default function MakeItAccessible() {
                             These are great 
                             options when you have a family of interactive elements nested together.
                         </p>
-                        <div aria-hidden="true" className={styles['brightness--container']}>
+                        <div className={styles['brightness--container']}>
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate through the 
@@ -539,11 +540,11 @@ export default function MakeItAccessible() {
                                 such that pressing them on a touch screen, or hovering over them with a mouse, 
                                 will also trigger a change in brightness.
                             </p>                     
-                            <ul className={`${styles['brightness--buttons']}`}>
+                            <div className={styles['brightness--buttons']}>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Do</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Re</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Mi</button>           
-                            </ul>   
+                            </div>   
                             <br></br>           
                         </div> 
                         <br/>     
@@ -563,7 +564,8 @@ export default function MakeItAccessible() {
                                     <p className="bullet-point-line">Scroll to the bottom and select <strong>Emulate vision deficiencies</strong></p>
                                 </li>
                                 <li>
-                                    <p className="bullet-point-line">Choose the deficiency you want to emulate and see how your site looks!</p>
+                                    <p className="bullet-point-line">Choose the deficiency you want to emulate (like the type of 
+                                    color blindness) and see how your site looks!</p>
                                 </li>
 
                             </ul>
@@ -617,7 +619,11 @@ export default function MakeItAccessible() {
                         Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
                         each heading and get an idea about the structure and the content of the page.  
                     </p>
-                    <p className="fake-heading-p">A few rules to follow with headings:</p>
+                    <p>
+                        <strong>
+                            A few rules to follow with headings:
+                        </strong>
+                    </p>
                     <div>
                         <p className="bullet-point-line white-bg">
                             Choose meaningful headings that describe the content of a section.
