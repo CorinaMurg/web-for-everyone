@@ -150,7 +150,6 @@ a:focus-visible {
 .checkmark-line p {
     display: flex;
     gap: 10px;
-    /* font-size: 0.9rem; */
     line-height: 2;
     letter-spacing: 0.5px;
     margin-block: 10px;

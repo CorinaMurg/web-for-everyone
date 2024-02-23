@@ -459,15 +459,15 @@ export default function MostCommonBugs() {
                         <p>These elements must have a <span className="bold">
                             descriptive accessible name</span>:
                         </p>          
-                        <ul className="bullet-point-list">
+                        <ul>
                             <li>
-                                <span className="bold">links&nbsp;</span> and&nbsp; <span className="bold"> buttons</span>
+                                <p className="bullet-point-line"><span className="bold">links</span> and <span className="bold"> buttons</span></p>
                             </li>  
                             <li>
-                                <span className="bold">all form elements</span>, like inputs or radio buttons
+                                <p className="bullet-point-line"><span className="bold">all form elements</span>, like inputs or radio buttons</p>
                             </li>
                             <li>
-                                <span className="bold">headings</span>
+                                <p className="bullet-point-line"><span className="bold">headings</span></p>
                             </li> 
                         </ul>    
                     </div>    
@@ -497,15 +497,13 @@ export default function MostCommonBugs() {
                             as well:
                         </p>
                        
-                        <div className="padding-left-20">
-                            
-                            <p>
-                            </p>
+                        <div className="padding-left-20" style={{width: "100%"}}>
                             <p className="bullet-point-line">
                                 <strong>text defined by a visually-hidden class</strong>  
                             </p>
                             <p className="padding-left-20">
-                                Be careful though! If the CSS is not done correctly the screen reader will announce the text letter by letter. 
+                                Be careful though! If the CSS is not done correctly the screen reader 
+                                will announce the text letter by letter. 
                             </p>
                             
                             <p className="bullet-point-line margin-top-20">
@@ -518,8 +516,10 @@ export default function MostCommonBugs() {
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
                                 Note that this is slightly more verbose. So, a link wrapping an imge with <span> </span>
-                                <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside graphic link". <span> </span>
-                                (An image is announced either as <strong>graphic</strong> or <strong>image</strong> depending on the screen reader.)
+                                <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside 
+                                graphic link". <span> </span>
+                                (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
+                                depending on the screen reader.)
                             </p>  
                             <p className="bullet-point-line margin-top-20">
                                 <strong>desc</strong>
@@ -527,7 +527,7 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 white-bg">
                                 Similar to <code>alt</code> but for a <code>svg</code>. 
                             </p> 
-                            <div className="code padding-left-20 margin-left-20 margin-top-20">             
+                            <div className="code margin-left-20 margin-top-20">             
                                 <code><span className="code-blue-color">&lt;svg</span> width="34" height="34" viewBox="0 0 34 34"<span className="code-blue-color">&gt;</span></code>
                                 <code className="padding-left-30"><span className="code-pink-color">&lt;desc&gt;</span>Bug<span className="code-pink-color">&lt;/desc&gt;</span></code>
                                 <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
@@ -585,8 +585,7 @@ export default function MostCommonBugs() {
                                     href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
                                     visibleText="we should avoid aria-label"
                                 />
-                            </p>
-                            
+                            </p> 
                         </div>
                         <div className="checkmark-line white-bg">
                             <p>
@@ -613,7 +612,7 @@ export default function MostCommonBugs() {
                     </div>
                                      
                     {/* Example: <code>button</code> with no visible text */}
-                    <div id="example-button-no-visible-text" className="scroll-target">
+                    <div id="example-button-no-visible-text" className="scroll-target" style={{width: "100%"}}>
                         <div className="highlight">  
                             <h3 className="white-bg">
                                     Example: <code>button</code> with visually-hidden text
@@ -652,7 +651,7 @@ export default function MostCommonBugs() {
                         </div>
                     </div>       
                     <iframe 
-                        height="300" style={{width: "100%", border: "0", margin: "20px 0"}}
+                        height="330" style={{width: "100%", border: "0", margin: "20px 0"}}
                         title="code pen visually hidden"
                         src="https://codepen.io/Cor-Ina/embed/oNmoYeR?default-tab=html" 
                         frameBorder={0} loading="lazy" allowFullScreen={true}>
