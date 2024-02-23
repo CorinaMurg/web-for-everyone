@@ -497,7 +497,7 @@ export default function MostCommonBugs() {
                             as well:
                         </p>
                        
-                        <div className="padding-left-20" style={{width: "100%"}}>
+                        <div style={{width: "100%"}}>
                             <p className="bullet-point-line">
                                 <strong>text defined by a visually-hidden class</strong>  
                             </p>
@@ -511,7 +511,7 @@ export default function MostCommonBugs() {
                             </p>  
                             <p className="padding-left-20 white-bg">
                                 You can use it for interactive images. With a link that contains an image and no 
-                                visible text or ARIA attributes, the browser will use the <code>alt</code> attribute 
+                                visible text or ARIA attributes, the browser will take the <code>alt</code> attribute 
                                 to compute the accessible name.
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
@@ -527,13 +527,13 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 white-bg">
                                 Similar to <code>alt</code> but for a <code>svg</code>. 
                             </p> 
-                            <div className="code margin-left-20 margin-top-20">             
+                            {/* <div className="code margin-left-20 margin-top-20">             
                                 <code><span className="code-blue-color">&lt;svg</span> width="34" height="34" viewBox="0 0 34 34"<span className="code-blue-color">&gt;</span></code>
                                 <code className="padding-left-30"><span className="code-pink-color">&lt;desc&gt;</span>Bug<span className="code-pink-color">&lt;/desc&gt;</span></code>
                                 <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
                                 <code className="padding-left-30"><span className="code-yellow-color">&lt;path</span> d="..."<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/path&gt;</span></code>
                                 <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
-                            </div>
+                            </div> */}
                             <p className="bullet-point-line margin-top-20">
                                 <strong>title</strong>
                             </p>
