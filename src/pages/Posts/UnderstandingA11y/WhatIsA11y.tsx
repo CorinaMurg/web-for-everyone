@@ -229,7 +229,7 @@ export default function WhatIsA11y() {
                         </p>
                         <p className="white-bg">
                             When a screen reader encounters the navigation section of your site, it 
-                            will announce it to the user as such. And that's because you chose
+                            will announce it to the user as <strong>"navigation landmark"</strong>. And that's because you chose
                             to wrap your navigation links in <code>&lt;nav&gt;</code> tags. 
                         </p>
                         <p className="white-bg">
