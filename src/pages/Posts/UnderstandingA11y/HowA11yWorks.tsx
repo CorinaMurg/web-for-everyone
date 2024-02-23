@@ -7,6 +7,7 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
 import scrollToTop from "../../../utils/scrollToTop"
+import ExternalLink from "../../../components/ExternalLink/ExternalLink"
 import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
 
@@ -128,10 +129,10 @@ export default function MostCommonBugs() {
                             an element that  provides information about the page content and structure,
                             like a <code>navbar</code> or a <code>heading</code>.
                         </p>
-                        <p className="bullet-point-line margin-top-20 white-bg">
+                        {/* <p className="bullet-point-line margin-top-20 white-bg">
                             an element that holds text content, usually wrapped 
                             in tags like <code>&lt;p&gt;</code> or <code>&lt;code&gt;</code>.
-                        </p>
+                        </p> */}
                     </div>
                     
                     <p className="white-bg">
@@ -453,6 +454,23 @@ export default function MostCommonBugs() {
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
                     </p>
+                    <div className="warning">
+                        <WarningTriangle/>
+                        <p>These elements must have a <span className="bold">
+                            descriptive accessible name</span>:
+                        </p>          
+                        <ul className="bullet-point-list">
+                            <li>
+                                <span className="bold">links&nbsp;</span> and&nbsp; <span className="bold"> buttons</span>
+                            </li>  
+                            <li>
+                                <span className="bold">all form elements</span>, like inputs or radio buttons
+                            </li>
+                            <li>
+                                <span className="bold">headings</span>
+                            </li> 
+                        </ul>    
+                    </div>    
                     
                     {/* *****Accessible Name Computation Algorithm***** */}
                     <div className="section scroll-target" id="the-accessible-name-computation-algorithm">
@@ -469,17 +487,10 @@ export default function MostCommonBugs() {
                         <p className="white-bg">
                             To create the accessible name, the browser uses the 
                             <span> </span>
-                            <a href="https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                accessible name and description computation algorithm
-                                <span className="sr-only"> opens in a new tab</span>
-                                <span className="external-linksvg-wrap">
-                                    &nbsp;
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                </span>
-                            </a>
+                            <ExternalLink
+                                href="https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te"
+                                visibleText="accessible name and description computation algorithm"
+                            />
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. This algorithm takes into account
                             the <strong>visible text</strong> or <strong> label</strong> of the element, but several other attributes are considered
@@ -487,7 +498,56 @@ export default function MostCommonBugs() {
                         </p>
                        
                         <div className="padding-left-20">
+                            
+                            <p>
+                            </p>
                             <p className="bullet-point-line">
+                                <strong>text defined by a visually-hidden class</strong>  
+                            </p>
+                            <p className="padding-left-20">
+                                Be careful though! If the CSS is not done correctly the screen reader will announce the text letter by letter. 
+                            </p>
+                            
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>alt</strong>
+                            </p>  
+                            <p className="padding-left-20 white-bg">
+                                You can use it for interactive images. With a link that contains an image and no 
+                                visible text or ARIA attributes, the browser will use the <code>alt</code> attribute 
+                                to compute the accessible name.
+                            </p>  
+                            <p className="padding-left-20 white-bg margin-top-20">
+                                Note that this is slightly more verbose. So, a link wrapping an imge with <span> </span>
+                                <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside graphic link". <span> </span>
+                                (An image is announced either as <strong>graphic</strong> or <strong>image</strong> depending on the screen reader.)
+                            </p>  
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>desc</strong>
+                            </p>  
+                            <p className="padding-left-20 white-bg">
+                                Similar to <code>alt</code> but for a <code>svg</code>. 
+                            </p> 
+                            <div className="code padding-left-20 margin-left-20 margin-top-20">             
+                                <code><span className="code-blue-color">&lt;svg</span> width="34" height="34" viewBox="0 0 34 34"<span className="code-blue-color">&gt;</span></code>
+                                <code className="padding-left-30"><span className="code-pink-color">&lt;desc&gt;</span>Bug<span className="code-pink-color">&lt;/desc&gt;</span></code>
+                                <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
+                                <code className="padding-left-30"><span className="code-yellow-color">&lt;path</span> d="..."<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/path&gt;</span></code>
+                                <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
+                            </div>
+                            <p className="bullet-point-line margin-top-20">
+                                <strong>title</strong>
+                            </p>
+                            <p className="padding-left-20">
+                                Avoid it! It's tricky to make it accessible to screen reader users.
+                                You can still use it to provide a visual tooltip on mouseover, but don't rely on it for
+                                the accessible name.
+                            </p>
+                            <p className="margin-top-20 padding-left-20 white-bg">
+                                Please note this is an attribute that is added to the opening HTML tag of an element.
+                                Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
+                                a title for a web page.
+                            </p>
+                            <p className="bullet-point-line margin-top-20">
                                     <strong>aria-labelledby</strong>
                             </p>
                             <p className="padding-left-20">
@@ -506,105 +566,101 @@ export default function MostCommonBugs() {
                                 that becomes the name of the element. For example, <span> </span>
                                 <code>aria-label="Close survey"</code> could be used to provide the name
                                 for a button.
-                                
                             </p>
                             <p className="padding-left-20 margin-top-20">
-                                Read more about <span> </span>
+                                Its main difference with <strong>aria-labelledby</strong>? It's not visible, and it's only announced
+                                to the screen reader user. Read more about <span> </span>
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
                                     the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
                                 </Link>.
+                            </p> 
+                            <p className="padding-left-20 white-bg margin-top-20">
+                                Use it if nothing else is available! The biggest issue with <code>aria-label</code>?
+                                It does not take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers.
+                            </p>
+                            <p className="padding-left-20 margin-top-20">
+                                <b>More on this topic</b>: <span> </span>
+                                A post by Adrian Roselli, an accessibility expert, on why <span> </span>
+                                <ExternalLink 
+                                    href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
+                                    visibleText="we should avoid aria-label"
+                                />
                             </p>
                             
-                            <p className="bullet-point-line margin-top-20">
-                                <strong>title</strong>
-                            </p>
-                            <p className="padding-left-20">
-                                Avoid it! It's tricky to make it accessible to screen reader users.
-                                You can still use it to provide a visual tooltip on mouseover, but don't rely on it for
-                                the accessible name.
-                            </p>
-                            <p className="margin-top-20 padding-left-20 white-bg">
-                                Please note this is an attribute that is added to the opening HTML tag of an element.
-                                Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
-                                a title for a web page.
-                            </p>
-                            <p className="bullet-point-line margin-top-20">
-                                <strong>alt</strong>
-                            </p>  
-                            <p className="padding-left-20 white-bg">
-                                Use it for interactive images. For example, given a link that contains an image and no 
-                                visible text or ARIA attributes, the browser will use the <code>alt</code> attribute 
-                                to compute the accessible name.
-                            </p>    
                         </div>
-
-                        <p className="white-bg">
-                            If there's no visible text or label (or at least text with a <code>visually-hidden</code> class), 
-                            the algorithm relies on the content of these attributes.
-                            In fact, the content of these attributes is 
-                            given priority even when the element has visible text or a label.
-                            The idea being that they were added to offer a more descriptive or tailored name 
-                            for the element.
-                        </p>
-                        <p>
-                            <b>Recommended reading: </b>
-                            A post by Adrian Roselli, an accessibility expert, on why the <span> </span>
-                            <a href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                visible text is the best choice for the accessible name
-                            </a>.           
-                        </p>
+                        <div className="checkmark-line white-bg">
+                            <p>
+                                <strong>
+                                    To summarize
+                                </strong>:
+                            </p>
+                            <p >
+                                <span className="pink-text bold">&#x2714; </span> 
+                                <span>
+                                    If there's no visible text (or label), or at least text with a <code>visually-hidden</code> class, 
+                                    the algorithm relies on the content of certain HTML and ARIA attributes.
+                                </span>
+                            </p>
+                            <p>
+                                <span className="pink-text bold">&#x2714; </span>
+                                <span>
+                                    The ARIA attributes are given priority even when the element has visible text or a label.
+                                    The idea being that they were added to offer a more descriptive or tailored name 
+                                    for the element.
+                                </span>
+                            </p>
+                        </div>        
                     </div>
                                      
                     {/* Example: <code>button</code> with no visible text */}
                     <div id="example-button-no-visible-text" className="scroll-target">
                         <div className="highlight">  
                             <h3 className="white-bg">
-                                    Example: <code>button</code> with no visible text
+                                    Example: <code>button</code> with visually-hidden text
                             </h3>
-                            <div className="code margin-top-50 margin-bottom-30">
+                            <div className="code margin-top-30 margin-bottom-30">
                                 <code>
-                                    <span className="code-blue-color">&lt;button</span> aria-label="Close modal" id="closeModal"
+                                    <span className="code-blue-color">&lt;button</span> id="closeModal"
                                     <span className="code-blue-color">&gt;</span>
                                 </code>
                                 <code className="padding-left-30">
                                     <span className="code-yellow-color">&lt;img</span> src="x-mark.svg"
-                                    <span className="code-yellow-color">/&gt;</span>
+                                    <span className="code-yellow-color">/&gt;</span> 
                                 </code>
+                                <code className="padding-left-30">
+                                    <span className="code-yellow-color">&lt;span</span> class="<span className="code-pink-coor">visually-hidden</span>"
+                                    <span className="code-yellow-color">&gt;</span>
+                                    Close modal
+                                    <span className="code-yellow-color">&lt;/span&gt;</span> 
+                                </code>
+                                
                                 <code><span className="code-blue-color">&lt;/button&gt;</span></code>
                             </div>
                             <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
-                                The browser will use the <code>aria-label</code> attribute to compute 
+                                The browser will use the text from the <code>visually-hidden</code> span to compute 
                                 the accessible name "Close modal".
                             </p>
                             <p className="white-bg">
                                 For the sighted user, it will be obvious that the purpose of the button is to close 
                                 the modal. But for a screen reader user, it would be a mystery
-                                without the <code>aria-label</code> attribute. 
-                            </p>                      
+                                without the <code>visually-hidden</code> text.  
+                            </p>    
+                            <p>
+                                See the Pen below for an example of how to hide text visually.
+                            </p>                  
                         </div>
-                    </div>           
-                        
-                    <div className="warning">
-                        <WarningTriangle/>
-                        <p>These elements must have a <span className="bold">
-                            descriptive accessible name</span>:
-                        </p>          
-                        <ul className="bullet-point-list">
-                            <li>
-                                <span className="bold">links&nbsp;</span> and&nbsp; <span className="bold"> buttons</span>
-                            </li>  
-                            <li>
-                                <span className="bold">all form elements</span>, like inputs or radio buttons
-                            </li>
-                            <li>
-                                <span className="bold">headings</span>
-                            </li> 
-                        </ul>    
-                    </div>           
+                    </div>       
+                    <iframe 
+                        height="300" style={{width: "100%", border: "0", margin: "20px 0"}}
+                        title="code pen visually hidden"
+                        src="https://codepen.io/Cor-Ina/embed/oNmoYeR?default-tab=html" 
+                        frameBorder={0} loading="lazy" allowFullScreen={true}>
+                        See the Pen <a href="https://codepen.io/Cor-Ina/pen/oNmoYeR">
+                        Visually Hidden</a> by Corina (<a href="https://codepen.io/Cor-Ina">@Cor-Ina</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>    
+                               
                 </div>
 
                 {/* CONCLUSION */}
