@@ -521,19 +521,24 @@ export default function MostCommonBugs() {
                                 (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
                                 depending on the screen reader.)
                             </p>  
+                            <p className="padding-left-20 white-bg margin-top-20">
+                                You could also use an empty <code>alt</code> attribute to hide the image from the screen reader,
+                                and add a <code>visually-hidden</code> span with the accessible name.
+                            </p>
                             <p className="bullet-point-line margin-top-20">
                                 <strong>desc</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
                                 Similar to <code>alt</code> but for a <code>svg</code>. 
                             </p> 
-                            {/* <div className="code margin-left-20 margin-top-20">             
-                                <code><span className="code-blue-color">&lt;svg</span> width="34" height="34" viewBox="0 0 34 34"<span className="code-blue-color">&gt;</span></code>
-                                <code className="padding-left-30"><span className="code-pink-color">&lt;desc&gt;</span>Bug<span className="code-pink-color">&lt;/desc&gt;</span></code>
-                                <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
-                                <code className="padding-left-30"><span className="code-yellow-color">&lt;path</span> d="..."<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/path&gt;</span></code>
-                                <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
-                            </div> */}
+                            <div className="padding-left-20">
+                                <div className="code margin-top-20">             
+                                    <code><span className="code-blue-color">&lt;svg</span> width="34" height="34" viewBox="0 0 34 34"<span className="code-blue-color">&gt;</span></code>
+                                    <code className="padding-left-30"><span className="code-pink-color">&lt;desc&gt;</span>Bug<span className="code-pink-color">&lt;/desc&gt;</span></code>
+                                    <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
+                                    <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
+                                </div>
+                            </div>
                             <p className="bullet-point-line margin-top-20">
                                 <strong>title</strong>
                             </p>
@@ -580,10 +585,10 @@ export default function MostCommonBugs() {
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
-                                A post by Adrian Roselli, an accessibility expert, on why <span> </span>
+                                A post by Adrian Roselli, an accessibility expert, on <span> </span>
                                 <ExternalLink 
                                     href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
-                                    visibleText="we should avoid aria-label"
+                                    visibleText="why we should avoid aria-label"
                                 />
                             </p> 
                         </div>
@@ -596,7 +601,8 @@ export default function MostCommonBugs() {
                             <p >
                                 <span className="pink-text bold">&#x2714; </span> 
                                 <span>
-                                    If there's no visible text (or label), or at least text with a <code>visually-hidden</code> class, 
+                                    If there's no visible text (or label), or at least text with 
+                                    a <code>visually-hidden</code> class, 
                                     the algorithm relies on the content of certain HTML and ARIA attributes.
                                 </span>
                             </p>
@@ -652,7 +658,7 @@ export default function MostCommonBugs() {
                     </div>       
                     <iframe 
                         height="330" style={{width: "100%", border: "0", margin: "20px 0"}}
-                        title="code pen visually hidden"
+                        title="code pen: example of visually hidden class"
                         src="https://codepen.io/Cor-Ina/embed/oNmoYeR?default-tab=html" 
                         frameBorder={0} loading="lazy" allowFullScreen={true}>
                         See the Pen <a href="https://codepen.io/Cor-Ina/pen/oNmoYeR">

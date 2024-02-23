@@ -202,7 +202,6 @@ a:focus-visible {
     padding: 30px;
     background-color: var(--code-bg-color);
     color: var(--cream-color);
-    /* margin-bottom: 30px; */
 }
 
 .continue-to-article {
@@ -663,7 +662,7 @@ p {
     height: 1px;
     overflow: hidden;
     clip-path: inset(50%);
-    /* white-space: nowrap; */
+    white-space: nowrap;
 }
 
 .stats {
