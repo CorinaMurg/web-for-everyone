@@ -4,16 +4,15 @@ Nav modal
 BACK TO TOP BUTTON
 Accessibility statement
 Like hearts
-Dsign
+Design
 Explain A11y
 ReadMe
 Picture Corina
 More resources for components
 
 
-Typescript
-READMe for WE
-QUESTIONS
+Typescript + Playwright
+
 
 uSE A11Y IN BACKLINKS
 
