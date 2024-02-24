@@ -556,7 +556,7 @@ export default function MostCommonBugs() {
                                     <strong>aria-labelledby</strong>
                             </p>
                             <p className="padding-left-20">
-                                It has the highest priority among all the other attributes.
+                                It has the highest priority among all the other options, including the visible text.
                             </p>
                             <p className="margin-top-20 padding-left-20">
                                 It references the ID of another element that has visual text. The text of that 
@@ -576,12 +576,17 @@ export default function MostCommonBugs() {
                                 Its main difference with <strong>aria-labelledby</strong>? It's not visible, and it's only announced
                                 to the screen reader user. Read more about <span> </span>
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
-                                    the difference between <strong>aria-label</strong> and <strong>aria-labelledby</strong>
+                                    the difference between aria-label and aria-labelledby
                                 </Link>.
                             </p> 
                             <p className="padding-left-20 white-bg margin-top-20">
                                 Use it if nothing else is available! The biggest issue with <code>aria-label</code>?
-                                It does not take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers.
+                                It does not take a <code>lang</code> attribute (read 
+                                    <span> </span>
+                                <Link to="/resources/make-it-accessible-part1#the-language-attribute">
+                                    why the lang attribute is important
+                                </Link>),
+                                nor it's guaranteed to be translated by all browsers.
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
@@ -595,8 +600,8 @@ export default function MostCommonBugs() {
                         <div className="checkmark-line white-bg">
                             <p>
                                 <strong>
-                                    To summarize
-                                </strong>:
+                                    To summarize:
+                                </strong>
                             </p>
                             <p >
                                 <span className="pink-text bold">&#x2714; </span> 
@@ -681,10 +686,10 @@ export default function MostCommonBugs() {
                     </p>
                     <p className="bullet-point-line">
                         Certain objects in the accessibility tree must have a name, and it has to be descriptive
-                        in order to convey the element's function or content.
+                        in order to convey their purpose.
                     </p>
                     <p className="bullet-point-line">
-                        Semantic HTML tags should always be your first choice when building a website. They provide
+                        Semantic HTML tags should always be your first choice. They provide
                         the best accessibility out of the box.
                     </p>
                     <p className="margin-top-30">
