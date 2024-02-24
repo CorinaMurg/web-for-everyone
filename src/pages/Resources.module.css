@@ -108,6 +108,10 @@
     border-left: none;
 }
 
+.article:focus-within .article--link {
+    outline: none;
+}
+
 .article:focus-visible {
     outline: none;
 }

@@ -1,20 +1,20 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
-back button scroll
 Nav modal
 BACK TO TOP BUTTON
-Accessibility statement + form
+Accessibility statement
 Like hearts
-
-
-Small things to fix:
-- 03 Empty Links: more specific about name vs accessible name
+Dsign
+Explain A11y
+ReadMe
+Picture Corina
+More resources for components
 
 
 Typescript
 READMe for WE
 QUESTIONS
-eXPLAIN a11Y AT THE END OF WHAT'S a11Y.
+
 uSE A11Y IN BACKLINKS
 
 bUTTON ON About: a11y chat
@@ -65,9 +65,6 @@ FRIDAY
 3. when using the back button in the browser, it should scroll to the same section as before
 7. what is A11y: display:none are also ignored
 
-
-Small parts:
-1. visually-hidden code: link to code pen
 
 Extra Articles
 12. Your Users
