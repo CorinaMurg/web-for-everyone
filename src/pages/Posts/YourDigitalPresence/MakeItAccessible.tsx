@@ -234,12 +234,8 @@ export default function MakeItAccessible() {
 
                     <h3>How to check the color contrast ratio</h3>
                     <p>
-                        When you run an accessibility report with automated tools like <span> </span>
-                        <ExternalLink
-                            href="https://developer.chrome.com/docs/lighthouse/overview/" 
-                            visibleText="Google's Lighthouse"
-                        />
-                        , if any elements failed the contrast ratio guidelines, you will know right away.
+                        When you run an accessibility report with automated tools like Google's Lighthouse
+                        or axe DevTools, if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
                     <p>
                         If you'd like to be more proactive and test your colors as you're building, 
@@ -249,6 +245,14 @@ export default function MakeItAccessible() {
                             visibleText="WebAIM's contrast checker"
                         />
                         .  
+                    </p>
+                    <p >
+                        For quick access, you can also <span> </span>
+                        <ExternalLink
+                            href="https://webaim.org/resources/contrastchecker/bookmarklet" 
+                            visibleText="add the contrast checker to your Bookmarks bar"
+                        />
+                        <span> </span>in one easy step!
                     </p>
 
                     <p className="margin-top-20">
@@ -305,15 +309,7 @@ export default function MakeItAccessible() {
                         </details>
                     </div> */}
 
-                    <p >
-                        The contrast checker is a great tool to have at your disposal.
-                        For quick access, you can <span> </span>
-                        <ExternalLink
-                            href="https://webaim.org/resources/contrastchecker/bookmarklet" 
-                            visibleText="add the contrast checker to your Bookmarks bar"
-                        />
-                        <span> </span>in one easy step!
-                    </p>
+                    
                     {/* *****COLOR CONTRAST FOR LINKS***** */}
                     <div className="highlight">
                         <h4 className="two-line-heading">

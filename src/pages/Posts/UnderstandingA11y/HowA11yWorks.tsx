@@ -266,9 +266,9 @@ export default function MostCommonBugs() {
                         Implicit vs. Explicit Roles
                     </h2>
                     <p>
-                        Some roles are implicit and assigned by default, based on the HTML tag used to create the element.
-                         
-                        Developers can also explicitly assign a role to an element
+                        Some roles are implicit and assigned by default, based on the HTML tag used to create 
+                        the element.
+                        As developers, we can also explicitly assign a role to an element
                         using a set of special roles and attributes called <span> </span>
                         <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
                             Accessible Rich Internet Applications
@@ -349,7 +349,7 @@ export default function MostCommonBugs() {
                             Explicit Roles
                         </h3>
                         <p>
-                            Developers can also explicitly assign a role to an HTML element using <b>ARIA</b> roles                          
+                            We can also explicitly assign a role to an HTML element using <b>ARIA</b> roles                          
                             and attributes. These are added to HTML tags in order to modify or improve the default behavior 
                             of an element and make it accessible.
                         </p>
