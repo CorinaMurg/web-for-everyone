@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
-import scrollToTop from "../../../utils/scrollToTop"
+
 import ExternalLink from "../../../components/ExternalLink/ExternalLink"
 import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
@@ -71,6 +72,7 @@ const contents = [
 ]
 
 export default function MostCommonBugs() {
+    useScrollToTop();
     useDocTitle("How Accessibility Works | Web for Everyone");  
     useScrollToSection();  
     const { activeId } = useHighlightTOC();
@@ -700,7 +702,6 @@ export default function MostCommonBugs() {
                         <b>Read next: </b>
                         <Link 
                             to="/resources/most-common-bugs" 
-                            onClick={scrollToTop}
                         >
                             The Most Common Acessibility Bugs
                         </Link>

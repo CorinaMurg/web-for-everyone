@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import scrollToTop from "../../../utils/scrollToTop"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
@@ -24,6 +24,7 @@ const contents = [
 ];
 
 export default function MostCommonBugs() {
+    useScrollToTop();
     useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
     useScrollToSection();
     const { activeId} = useHighlightTOC();
@@ -183,9 +184,7 @@ export default function MostCommonBugs() {
                         <strong>Note</strong>: This article focuses on statistics from the study and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
-                        <Link to="/resources/make-it-accessible-part1" 
-                                onClick={() => { scrollToTop() }}
-                        >
+                        <Link to="/resources/make-it-accessible-part1">
                             Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
                         </Link>
                         .
@@ -193,9 +192,7 @@ export default function MostCommonBugs() {
                     <p> 
                         <strong>Recommended</strong>: To understand the impact of these bugs on users with disabilities,
                         make sure to review <span> </span>
-                        <Link to="/resources/how-accessibility-works"
-                            onClick={() => { scrollToTop() }}
-                        >
+                        <Link to="/resources/how-accessibility-works">
                             How Accessibility Works
                         </Link>, especially the section on the <strong>accessible name</strong>.
                     </p>
@@ -522,9 +519,7 @@ export default function MostCommonBugs() {
                     
                     <p>
                         <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part1" 
-                                onClick={() => { scrollToTop() }}
-                        >
+                        <Link to="/resources/make-it-accessible-part1">
                             Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
                         </Link>
                     </p>                 

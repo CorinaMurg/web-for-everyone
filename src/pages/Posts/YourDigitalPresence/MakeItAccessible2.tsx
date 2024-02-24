@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import scrollToTop from "../../../utils/scrollToTop"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
@@ -45,6 +45,7 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {
+    useScrollToTop();
     useDocTitle("Let's Make It Accessible Part Two | Web for Everyone");
     useScrollToSection();
     const { activeId } = useHighlightTOC();
@@ -80,7 +81,6 @@ export default function MakeItAccessible() {
                         We continue our hunt for accessibility issues that can affect your 
                         portfolio site. We started with <span> </span>
                         <Link to="/resources/make-it-accessible-part1" 
-                                onClick={() => { scrollToTop() }}
                         >
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
@@ -676,9 +676,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         <b>Read next: </b>
-                        <Link to="/resources" 
-                                onClick={() => { scrollToTop() }}
-                        >
+                        <Link to="/resources">
                             Resources
                         </Link>
                     </p>

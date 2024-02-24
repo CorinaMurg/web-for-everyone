@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
-import scrollToTop from "../../../utils/scrollToTop";
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 
@@ -353,9 +353,7 @@ export default function WhatIsA11y() {
 
                     <p className="margin-top-30">
                         <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part1" 
-                                onClick = { () => { scrollToTop() } }
-                        >
+                        <Link to="/resources/make-it-accessible-part1">
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
                         </Link>
                     </p>
@@ -367,9 +365,7 @@ export default function WhatIsA11y() {
                          
                     <p className="margin-top-30">
                         <b>Read next: </b>
-                        <Link to="/resources/how-accessibility-works" 
-                                onClick = { () => { scrollToTop() } }
-                        >
+                        <Link to="/resources/how-accessibility-works">
                             How Accessibility Works
                         </Link>
                     </p>

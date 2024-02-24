@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import scrollToTop from "../../../utils/scrollToTop"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
@@ -47,6 +47,7 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {
+    useScrollToTop();
     useDocTitle("Let's Make It Accessible Part One | Web for Everyone");
     useScrollToSection();
     const { activeId } = useHighlightTOC();
@@ -680,9 +681,7 @@ export default function MakeItAccessible() {
                     
                     <p className="margin-top-30">
                         <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part2" 
-                                onClick={() => { scrollToTop() }}
-                        >
+                        <Link to="/resources/make-it-accessible-part2">
                             Let's Make It Accessible! Part 2: On the Hunt for 6 More Bugs
                         </Link>
                     </p>

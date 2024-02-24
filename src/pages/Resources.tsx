@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import useScrollToTop from "../hooks/useScrollToTop"
 import useScrollToSection from "../hooks/useScrollToSection"
 import useDocTitle from "../hooks/useDocTitle"
 import useHighlightTOC from "../hooks/useHighlightTOC"
@@ -9,6 +10,7 @@ import styles from './Resources.module.css'
 import "../global.css"
 
 export default function Accessibility() {  
+    useScrollToTop();
     useDocTitle("Resources | Web for Everyone");
     useScrollToSection();
     const { activeId } = useHighlightTOC();
@@ -77,7 +79,6 @@ export default function Accessibility() {
                                                 <Link 
                                                     to={post.to} 
                                                     className={styles['article--link']}
-                                                    onClick={scrollToTop}
                                                 >
                                                     {post.title}
                                                 </Link>
