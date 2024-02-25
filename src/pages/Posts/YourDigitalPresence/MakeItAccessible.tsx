@@ -506,7 +506,11 @@ export default function MakeItAccessible() {
                         <li>
                             <p className="white-bg">
                                 <span className="pink-text bold">&#x2714; </span>
-                                <span>Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).</span>
+                                <span>
+                                    Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
+                                    A quick reminder that this is not a great choice because it does not
+                                    take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers!
+                                </span>
                             </p>
                         </li>
                     </ol>

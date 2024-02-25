@@ -171,17 +171,19 @@ export default function MakeItAccessible() {
                         It helps screen reader users understand which page they are on. As they navigate from page 
                         to page, the title is the first element announced by the screen reader. 
                     </p>
-                    <h4>
-                        Do make sure each page has a unique title!
-                    </h4>
+                    <div>
+                        <h4>
+                            Do make sure each page has a unique title!
+                        </h4>
+                        
+                        <p className="white-bg">
+                            It gets more complicated with a Single Page Application (SPA), but each framework has specific 
+                            features or libraries that allow for updating the <code>title</code> for each page.
+                            Research, choose a method, and implement it. (This is the one case where you might need to use JavaScript!)
+                        </p>
+                    </div>
                     
-                    <p className="white-bg">
-                        It gets more complicated with a Single Page Application (SPA), but each framework has specific 
-                        features or libraries that allow for updating the <code>title</code> for each page.
-                        Research, choose a method, and implement it. (This is the one case where you might need to use JavaScript!)
-                    </p>
-
-                    <div className="highlight">
+                    <div className="highlight highlight-one-line">
                         <details>
                             <summary>
                                 <span className="summary-title">
@@ -313,7 +315,7 @@ export default function MakeItAccessible() {
                         </p>
                     </div>
                     
-                    <div className="highlight">
+                    <div className="highlight highlight-one-line">
                         <details>
                             <summary>
                                 <span className="summary-title">
@@ -385,7 +387,7 @@ export default function MakeItAccessible() {
                         Make sure all interactive elements on your site are reachable and usable with a keyboard.
                     </p>
                     <p><strong>How to test:</strong></p>
-                    <p className="bullet-point-line white-bg">
+                    <p className="bullet-point-line white-bg" style={{marginTop: "0"}}>
                         Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
                         (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
                         through the interactive elements on the page. Each element should receive focus 
