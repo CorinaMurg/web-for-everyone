@@ -592,7 +592,7 @@ p {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: gray var(--yellowFaded-color);
+    scrollbar-color: var(--grayTOC-color) var(--yellowFaded-color);
 }
 
 

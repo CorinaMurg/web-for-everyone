@@ -32,13 +32,12 @@
 .table-contents ul {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 28px;
     padding-inline-start: 0;
     background-color: white;
     border-radius: 5px;
-    padding: 15px;
-    border: 1.7px solid gray;
-    
+    padding: 15px 15px 20px 15px;
+    border: 1.7px solid var(--yellow-color);
 }
 
 .table-contents ul li a {
