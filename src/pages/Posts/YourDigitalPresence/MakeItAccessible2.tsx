@@ -44,9 +44,9 @@ const contents = [
     },
 ]
 
-export default function MakeItAccessible() {
-    useScrollToTop();
+export default function MakeItAccessible() {  
     useDocTitle("Let's Make It Accessible Part Two | Web for Everyone");
+    useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     return (
@@ -59,7 +59,7 @@ export default function MakeItAccessible() {
                 current="Let's Make It Accessible - Part Two"
             />
             
-            <h1 className="article-heading-desktop">
+            <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>Your Portfolio Site:</span>
                 <span className="yellow-bg">Let's Make It Accessible!</span>
             </h1>
@@ -68,7 +68,7 @@ export default function MakeItAccessible() {
                 <span>Let's Make It</span>
                 <span className="yellow-bg">Accessible!</span>
             </h1>
-            <p className="subtitle">Part 2: On the Hunt for 6 More Bugs</p>
+            <p id="subtitle" className="subtitle">Part 2: On the Hunt for 6 More Bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>

@@ -4,6 +4,7 @@ Accessibility statement
 Nav modal
 BACK TO TOP BUTTON
 Like hearts
+Change <a> to <Link> and add empty <a> to headings
 
 
 Explain A11y

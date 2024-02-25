@@ -35,6 +35,7 @@ const contents = [
 
 export default function WhatIsA11y() {
     useDocTitle("What is Accessiility | Web for Everyone"); 
+    useScrollToTop();
     useScrollToSection();   
     const { activeId } = useHighlightTOC();
     return (
@@ -45,7 +46,7 @@ export default function WhatIsA11y() {
                 current="What is Accessibility?"
             />
             
-            <h1 className="article-heading-desktop">
+            <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>What is <span className="yellow-bg">Accessibility?</span></span>
                 
             </h1>
@@ -53,7 +54,7 @@ export default function WhatIsA11y() {
                 <span>What is</span>
                 <span className="yellow-bg">Accessibility?</span>
             </h1>
-            <p className="subtitle">And why does it matter?</p>
+            <p id="subtitle" className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}
             <TableOfContents contents={contents} activeId={activeId}/>

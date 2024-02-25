@@ -24,8 +24,8 @@ const contents = [
 ];
 
 export default function MostCommonBugs() {
-    useScrollToTop();
-    useDocTitle("Most Common Accessibility Bugs | Web for Everyone");    
+    useDocTitle("Most Common Accessibility Bugs | Web for Everyone");   
+    useScrollToTop(); 
     useScrollToSection();
     const { activeId} = useHighlightTOC();
     const [textColor, setTextColor] = useState('initial')
@@ -42,7 +42,7 @@ export default function MostCommonBugs() {
                 current="The Most Common Accessibility Bugs"
             />
             
-            <h1 className="article-heading-desktop">
+            <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>The Most Common</span>
                 <span className="yellow-bg">Accessibility Bugs</span>
             </h1>
@@ -51,7 +51,7 @@ export default function MostCommonBugs() {
                 <span><span className="yellow-bg">Accessibility</span> Bugs</span>
                 
             </h1>
-            <p className="subtitle">Findings from the 2023 WebAIM Million Study</p>
+            <p id="subtitle" className="subtitle">Findings from the 2023 WebAIM Million Study</p>
 
             <TableOfContents contents={contents} activeId={activeId} />
             

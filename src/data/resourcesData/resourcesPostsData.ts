@@ -48,6 +48,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "id": "importance-of-semantic-html",
         "title": "The Importance of Semantic HTML",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
@@ -59,6 +60,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "id": "html-buttons-or-links",
         "title": "HTML: Buttons or Links? How to Choose",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
@@ -70,6 +72,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "id": "how-to-design-great-alt-text",
         "title": "How to Design Great Alt Text",
         "subtitle": "",
         "author": "By Caitlin Geier on deque.com/blog",
@@ -81,6 +84,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "id": "similar-but-different",
         "title": "Similar, but Different: HTML and ARIA terms",
         "subtitle": "",
         "author": "By Web for Everyone",
@@ -92,6 +96,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "html-for-accessibility",
+        "id": "html-tag-vs-element",
         "title": "HTML: Tag vs. Element",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
@@ -102,6 +107,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "css-for-accessibility",
+        "id": "is-rem-always-the-best-choice",
         "title": "Is \"rem\" Always the Best Choice?",
         "subtitle": "",
         "author": "By Ashlee M Boyer on ashleemboyer.com",
@@ -115,6 +121,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
    
     {
         "label": "example-accessible-components",
+        "id": "building-main-navigation",
         "title": "Building the Main Navigation for a Website",
         "subtitle": "",
         "author": "By Manuel Matuzović on web.dev",
@@ -127,6 +134,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     
     {
         "label": "your-digital-presence",
+        "id": "make-it-accessible-part1",
         "title": "Your Portfolio Site: Let's Make It Accessible",
         "subtitle": "Part One: Fixing the 6 Most Common Bugs",
         "author": "By Web for Everyone",
@@ -137,6 +145,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "your-digital-presence",
+        "id": "make-it-accessible-part2",
         "title": "Your Portfolio Site: Let's Make It Accessible",
         "subtitle": "Part 2: On the hunt for 6 more bugs",
         "author": "By Web for Everyone",
@@ -147,6 +156,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "your-digital-presence",
+        "id": "tips-for-accessible-github-profile",
         "title": "Tips for an Accessible GitHub Profile",
         "subtitle": "",
         "author": "By Annie Streater on github.blog",

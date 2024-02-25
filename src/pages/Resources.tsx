@@ -10,8 +10,8 @@ import styles from './Resources.module.css'
 import "../global.css"
 
 export default function Accessibility() {  
-    useScrollToTop();
     useDocTitle("Resources | Web for Everyone");
+    useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     const sectionTitles = {
@@ -44,7 +44,7 @@ export default function Accessibility() {
                         {Object.entries(sectionTitles).map(([label, heading], index) => (
                             <li key={index}>
                                 <a href={`#${label}`} 
-                                    className={`hover-pink ${label === activeId ? styles.active : ''}`}
+                                    className={`${label === activeId ? styles.active : ''}`}
                                 >
                                     {heading}
                                 </a>
@@ -68,7 +68,7 @@ export default function Accessibility() {
                                             {post.href ? (
                                                 <a  
                                                     href={post.href} 
-                                                    aria-describedby={post.subtitle ? `${post.subtitle} ${post.author}` : post.author} 
+                                                    aria-describedby={post.subtitle ? `${post.id}-subtitle ${post.id}-author` : `${post.id}-author`} 
                                                     target="_blank" rel="noopener noreferrer"
                                                     className={styles['article--link']}
                                                 >
@@ -78,18 +78,18 @@ export default function Accessibility() {
                                             ) : post.to ? (
                                                 <Link 
                                                     to={post.to} 
-                                                    aria-describedby={post.subtitle ? `${post.subtitle} ${post.author}` : post.author} 
+                                                    aria-describedby={post.subtitle ? `${post.id}-subtitle ${post.id}-author` : `${post.id}-author`}
                                                     className={styles['article--link']}
                                                 >
                                                     {post.title}
                                                 </Link>
                                             ) : null}
                                         </h3>
-                                        <p id={post.subtitle} className={styles['article--subtitle']}>{post.subtitle}</p>
+                                        <p id={`${post.id}-subtitle`} className={styles['article--subtitle']}>{post.subtitle}</p>
                                     </div>
                                     <div className={styles['article--description']}>
                                         <p>{post.description}</p>          
-                                        <p id={post.author} className={`${styles['article--author']}`}>         
+                                        <p id={`${post.id}-author`} className={`${styles['article--author']}`}>         
                                             {post.author}
                                             <svg aria-hidden="true" id="arrow" width="26" height="26" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="17" cy="17" r="17" fill="currentColor"></circle>
