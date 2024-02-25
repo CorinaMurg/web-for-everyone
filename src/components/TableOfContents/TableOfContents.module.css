@@ -25,6 +25,10 @@
     font-weight: 600;
 }
 
+.table-contents nav {
+    width: 18rem;
+}
+
 .table-contents ul {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,7 @@
     background-color: white;
     border-radius: 5px;
     padding: 15px;
+    
 }
 
 .table-contents ul li a {

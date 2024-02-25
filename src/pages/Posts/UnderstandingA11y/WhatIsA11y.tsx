@@ -351,7 +351,7 @@ export default function WhatIsA11y() {
                         most common issues:
                     </p>
 
-                    <p className="margin-top-30">
+                    <p>
                         <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part1">
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
@@ -363,14 +363,14 @@ export default function WhatIsA11y() {
                         in the "Understanding Accessibility" series:
                     </p>
                          
-                    <p className="margin-top-30">
+                    <p>
                         <b>Read next: </b>
                         <Link to="/resources/how-accessibility-works">
                             How Accessibility Works
                         </Link>
                     </p>
 
-                    <p className="margin-top-30">
+                    <p>
                         When we actively embrace accessibility and make it essential
                         to our web development learning and work, we can make a difference.
                         Let's build a web that's open to <span className="yellow-bg">everyone</span>!

@@ -1,10 +1,11 @@
 <span className="pink-text bold">&#x2714; </span> 
 Dark Mode
+Accessibility statement
 Nav modal
 BACK TO TOP BUTTON
-Accessibility statement
 Like hearts
-Design
+
+
 Explain A11y
 ReadMe
 Picture Corina
