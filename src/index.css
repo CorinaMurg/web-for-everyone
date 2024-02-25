@@ -1,45 +1,33 @@
 
 :root {
+    /* Text */
     --text-light-color: #fff;
+    --cream-color: #fbf6ea;
     --text-dark-color: #151f28;
     --blue-color: #1a73c6;
-    --darkBlue-color: #1a73e9;
-    --orange-color: #fb8500;
-    --yellow-color: #ffb703;
-    --yellowFaded-color: rgba(255, 183, 3, 0.5);
-    --burntYellow-color: #feb662;
-    --pink-color: #f38ba3;
     --pinkBright-color: #de0265;
     --pink-for-dark-bg-color: #fc2083;
-    --red-color: #ae2012;
-    --green-color: #0ba95b;
-    --purpleLight-color: hsl(274, 100%, 81%);
-    --lightPink-color: #ffe9ed;
-    --purple-color: #7b5ea7;
-    --lightGray-color: #f6f6f6;
-    --gray-color:#808080;
-    --heading-bg-color: #1a73e8;
+    /* --darkBlue-color: #1a73e9; */
+    /* --pink-color: #f38ba3; */
+    
+    /* Margins */
     --main-margin: 50px;
-    --max-margin: 120px; 
     --navbar-margin: 32px; 
-    --yellow-border: 3px;
 
-    --cream-color: #fbf6ea;
+    /* Border */
+    --yellow-border: 3px;
+    --gray-color:#808080;
+
+    /* Table of Contents */
     --grayTOC-color: #757575;
 
-    --soft-orange: hsl(35, 77%, 62%);
-    --soft-red: hsl(5, 85%, 63%);
-    --off-white: hsl(36, 100%, 99%);
+    /* Highlight colors */
     --grayishBlue-color: hsl(233, 12%, 87%);
-    --dark-grayish-blue: hsl(236, 13%, 42%);
-    --darkBlue-color: hsl(240, 100%, 5%);
-  
+    --yellow-color: #ffb703;
+    --yellowFaded-color: rgba(255, 183, 3, 0.5);
+    --lightGray-color: #f6f6f6;
 
-    --code-bg-color: #151f28;
-    --logo-bg-color: #1a73e8;
-    --logo-w-color: #e60067; 
-    --logo-e-color: #1a73e8;
-
+    /* Code colors */
     --code-bg-color:  #151f28; 
     --code-purple-color: #617bff;
     --code-pink-color: #ef6c9a;
@@ -54,9 +42,6 @@
     --hero-orange: #f97c28;
     --hero-darkGreen: #377984;
     --hero-pink: #f08eb1;
-
-    /* lightPink-color */
-    --hover-bg-color: #ffe9ed;
 }
 
 
@@ -102,10 +87,6 @@ body {
     scrollbar-width: none;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-} */
 
 @media screen and (min-width: 1440px) {
     body {

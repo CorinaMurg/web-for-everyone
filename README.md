@@ -1,10 +1,13 @@
 <span className="pink-text bold">&#x2714; </span> 
-Dark Mode
+
 Accessibility statement
 Nav modal
+Dark Mode
+
 BACK TO TOP BUTTON
 Like hearts
 Change <a> to <Link> and add empty <a> to headings
+import fonts
 
 
 Explain A11y
