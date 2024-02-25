@@ -8,6 +8,7 @@ BACK TO TOP BUTTON
 Like hearts
 Change <a> to <Link> and add empty <a> to headings
 import fonts
+Change layout to include aside for most pages
 
 
 Explain A11y

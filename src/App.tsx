@@ -15,6 +15,7 @@ import MakeItAccessible from "./pages/Posts/YourDigitalPresence/MakeItAccessible
 import MakeItAccessible2 from "./pages/Posts/YourDigitalPresence/MakeItAccessible2"
 import SimilarButDifferent from "./pages/Posts/HTMLForAccessibility/SimilarButDifferent"
 import About from "./pages/About"
+import Feedback from "./pages/Feedback/Feedback"
 import NotFound from "./pages/NotFound"
 import React from "react"
 
@@ -25,7 +26,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
-                        <Route path="your-users" element={<YourUsers />} />
+                        {/* <Route path="your-users" element={<YourUsers />} /> */}
                         <Route path="resources" element={<ResourcesLayout />}>
                             <Route index={true} element={<Resources />} />
                             <Route path="what-is-accessibility" element={<WhatIsA11y />} />
@@ -40,6 +41,7 @@ export default function App() {
                                 
                         </Route>
                         <Route path="about" element={<About />} />
+                        <Route path="feedback" element={<Feedback />} />
                         <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
