@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
@@ -52,12 +53,6 @@ export default function SimilarButDifferent() {
             <TableOfContents contents={contents} activeId={activeId}/>
             
             <div className={`article-content ${styles['similar-but-different']}`}>
-                 {/* *************0. INTRO********************** */}
-                {/* <div className="section intro" id="intro">
-                    <p>
-                        In this article, we will compare similar terms from HTML and ARIA to see how they differ.
-                    </p>
-                </div> */}
 
                 {/* *** ARIA-LABEL VS ARIA-LABELLEDBY */}
                 <div className="section scroll-target" id="aria-label-aria-labelledby">
@@ -134,16 +129,22 @@ export default function SimilarButDifferent() {
                         But, if you need a second navigation landmark, like in our example, 
                         then you must assign to each a unique name, either 
                         with <strong>aria-labelledby</strong> or <strong>aria-label</strong>. 
-                        For a custom landmark, use the <code>&lt;section&gt;</code> tag.
+                        {/* For a custom landmark, use the <code>&lt;section&gt;</code> tag. */}
                     </p>
                     
                     <h3>Key Differences</h3>      
                     <p>
                         <strong className="yellow-bg-dark-text">Direct vs. Indirect Labeling</strong>  
                     </p>
-                    <p className="bullet-point-line">
+                    <p className="bullet-point-line white-bg">
                         <strong>aria-label</strong> provides a direct label to an element using a 
-                        string value.
+                        string value. Unfortunately, It does not take a <code>lang</code> attribute (read 
+                        <span> </span>
+                        <Link to="/resources/make-it-accessible-part1#the-language-attribute">
+                            how to use the lang attribute
+                        </Link>),
+                        nor it's guaranteed to be translated by all browsers. This unfortunately prevents 
+                        your content from being accessible to a global audience (a process called "internationalization"). 
                     </p>
                     <p className="bullet-point-line">
                         <strong>aria-labelledby</strong> provides an indirect label by referencing content

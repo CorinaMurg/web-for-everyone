@@ -581,13 +581,16 @@ export default function MostCommonBugs() {
                                 </Link>.
                             </p> 
                             <p className="padding-left-20 white-bg margin-top-20">
-                                Use it if nothing else is available! The biggest issue with <code>aria-label</code>?
+                                <strong>Use it if nothing else is available</strong>
+                                ! The biggest issue with <code>aria-label</code>?
                                 It does not take a <code>lang</code> attribute (read 
                                     <span> </span>
                                 <Link to="/resources/make-it-accessible-part1#the-language-attribute">
-                                    why the lang attribute is important
+                                    how to use the lang attribute
                                 </Link>),
-                                nor it's guaranteed to be translated by all browsers.
+                                nor it's guaranteed to be translated by all browsers. This unfortunately prevents 
+                                your content from being accessible to a global audience (a process called "internationalization").
+
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
