@@ -37,7 +37,7 @@ export default function Accessibility() {
             </h1>
             <div className={styles['resources--table-contents']}>
                 <h2 id="table-of-contents">
-                    <code>Table of Contents</code>
+                    Table of Contents
                 </h2>
                 <nav aria-labelledby="table-of-contents">
                     <ul className={styles['resources--table-contents']}>
@@ -46,7 +46,7 @@ export default function Accessibility() {
                                 <a href={`#${label}`} 
                                     className={`hover-pink ${label === activeId ? styles.active : ''}`}
                                 >
-                                    <code>{heading}</code>
+                                    {heading}
                                 </a>
                             </li>
                         ))}

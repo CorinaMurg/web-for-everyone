@@ -30,65 +30,26 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "title": "How Accessibility Works",
         "subtitle": "",
         "author": "By Web for Everyone",
-        "description": `Have you met the DOM' powerful sibling, the accessibility tree? 
+        "description": `Have you met the accessibility tree, the DOM's powerful sibling? 
             It's a node structure made up of accessible objects and a key player in making
             acessibility happen.`,
         "to": `/resources/how-accessibility-works`,
         "ariaLabel": "What is Accessibility article by Web for Everyone.",
         "readMoreAriaLabel": "",
     },
-    
-    // {
-    //     "label": "understanding-accessibility",
-    //     "id": "accessibility-guidelines",
-    //     "title": "Accessibility Guidelines",
-    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
-    //     "author": "Web for Everyone",
-    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
-    //         likely to be the first and most common piece of advice. My post looks at the role it 
-    //         plays in accessibility and beyond.`,
-    //     "to": `/resources/accessibility-guidelines`,
-    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-    //     "readMoreAriaLabel": "",
-    // },
-    // {
-    //     "label": "understanding-accessibility",
-    //     "id": "does-inaccessible-equal-illegal",
-    //     "title": "Does Inaccessible Equal Illegal?",
-    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
-    //     "author": "Web for Everyone",
-    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
-    //         likely to be the first and most common piece of advice. My post looks at the role it 
-    //         plays in accessibility and beyond.`,
-    //     "to": `/resources/does-inaccessible-equal-illegal`,
-    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-    //     "readMoreAriaLabel": "",
-    // },
     {
         "label": "understanding-accessibility",
         "id": "most-common-bugs",
         "title": "The Most Common Accessibility Bugs",
         "subtitle": "Findings from the 2023 WebAIM Million Study",
         "author": "By Web for Everyone",
-        "description": `The bad news: for five years in a row, a handful of bugs has been responsible for the 
-            majority of accessibility issues. The good news: they are quite easy to avoid or fix!`,
+        "description": 
+            `The bad news: a handful of bugs is responsible for the majority of 
+            accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
         "to": `/resources/most-common-bugs`,
         "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
         "readMoreAriaLabel": "",
     },
-    // {
-    //     "label": "understanding-accessibility",
-    //     "id": "testing-for-accessibility",
-    //     "title": "Testing for Accessibility",
-    //     "subtitle": "Findings from the 2023 WebAIM Million Study",
-    //     "author": "Web for Everyone",
-    //     "description": `In most conversations about accessibility, the use of semantic HTML is most 
-    //         likely to be the first and most common piece of advice. My post looks at the role it 
-    //         plays in accessibility and beyond.`,
-    //     "to": `/resources/testing-for-accessibility`,
-    //     "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-    //     "readMoreAriaLabel": "",
-    // },
     {
         "label": "html-for-accessibility",
         "title": "The Importance of Semantic HTML",

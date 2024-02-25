@@ -23,48 +23,48 @@ const contents = [
         href: "#the-accessibility-tree",
         text: "The Accessibility Tree",
     },
-    {
-        href: "#DOM-tree-vs-accessibility-tree",
-        text: "DOM Tree vs. Accessibility Tree",
-        ariaLabel: "DOM Tree versus Accessibility Tree",
-        className1: "padding-left-20",
-        className2: "margin-top--10",
-    },
+    // {
+    //     href: "#DOM-tree-vs-accessibility-tree",
+    //     text: "DOM Tree vs. Accessibility Tree",
+    //     ariaLabel: "DOM Tree versus Accessibility Tree",
+    //     className1: "padding-left-20",
+    //     className2: "margin-top--10",
+    // },
     {
         href: "#implicit-vs-explicit-accessibility-roles",
         text: "Implicit vs. Explicit Roles",
         ariaLabel: "Implicit versus Explicit Accessibility Roles",   
     },
-    {
-        href: "#implicit-roles",
-        text: "Implicit Roles",
-        ariaLabel: "Implicit Accessibility Roles",  
-        className1: "padding-left-20", 
-        className2: "margin-top--10",
-    },
-    {
-        href: "#explicit-roles",
-        text: "Explicit Roles",
-        ariaLabel: "Explicit Accessibility Roles", 
-        className1: "padding-left-20",  
-        className2: "margin-top--10",
-    },
+    // {
+    //     href: "#implicit-roles",
+    //     text: "Implicit Roles",
+    //     ariaLabel: "Implicit Accessibility Roles",  
+    //     className1: "padding-left-20", 
+    //     className2: "margin-top--10",
+    // },
+    // {
+    //     href: "#explicit-roles",
+    //     text: "Explicit Roles",
+    //     ariaLabel: "Explicit Accessibility Roles", 
+    //     className1: "padding-left-20",  
+    //     className2: "margin-top--10",
+    // },
     {
         href: "#the-accessible-name",
         text: "The Accessible Name",
     },
-    {
-        href: "#the-accessible-name-computation-algorithm",
-        text: "The Accessible Name Algorithm",
-        className1: "padding-left-20",
-        className2: "margin-top--10",
-    },
-    {
-        href: "#example-button-no-visible-text",
-        text: "Example: Button with no Visible Text",
-        className1: "padding-left-20",
-        className2: "margin-top--10",
-    },
+    // {
+    //     href: "#the-accessible-name-computation-algorithm",
+    //     text: "The Accessible Name Algorithm",
+    //     className1: "padding-left-20",
+    //     className2: "margin-top--10",
+    // },
+    // {
+    //     href: "#visually-hidden-text",
+    //     text: "Example: Using visually hidden text",
+    //     className1: "padding-left-20",
+    //     className2: "margin-top--10",
+    // },
     {
         href: "#conclusion",
         text: "Conclusion",
@@ -171,7 +171,7 @@ export default function MostCommonBugs() {
                     </div>
 
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
-                    <div className={`section scroll-target ${styles['dom-at-section']}`} id="DOM-tree-vs-accessibility-tree">
+                    <div className={`section ${styles['dom-at-section']}`} id="DOM-tree-vs-accessibility-tree">
                         <h3>
                             DOM Tree vs. Accessibility Tree
                         </h3>
@@ -230,7 +230,6 @@ export default function MostCommonBugs() {
                                 <code className="padding-left-80">StaticText "Your Users"</code>
                                 <code className="padding-left-40 margin-top-30">// other list items</code>
                             </div>
-                        {/* </div> */}
                         </div>
                        
                         <p className="margin-top-20">
@@ -285,7 +284,7 @@ export default function MostCommonBugs() {
                     </p>
                     
                     {/* ************Implicit roles***************** */}
-                    <div className="section scroll-target" id="implicit-roles">
+                    <div className="section" id="implicit-roles">
                         <h3 className="margin-top-20">
                             Implicit Roles
                         </h3>
@@ -346,7 +345,7 @@ export default function MostCommonBugs() {
                     </div>
 
                     {/* ************Explicit roles***************** */}
-                    <div className="section scroll-target" id="explicit-roles">
+                    <div className="section" id="explicit-roles">
                         <h3>
                             Explicit Roles
                         </h3>
@@ -475,7 +474,7 @@ export default function MostCommonBugs() {
                     </div>    
                     
                     {/* *****Accessible Name Computation Algorithm***** */}
-                    <div className="section scroll-target" id="the-accessible-name-computation-algorithm">
+                    <div className="section" id="the-accessible-name-computation-algorithm">
                         <h3>
                             Accessible Name Computation Algorithm
                         </h3>
@@ -624,11 +623,11 @@ export default function MostCommonBugs() {
                         </div>        
                     </div>
                                      
-                    {/* Example: <code>button</code> with no visible text */}
-                    <div id="example-button-no-visible-text" className="scroll-target" style={{width: "100%"}}>
+                    {/* Example: <code>button</code> with no text */}
+                    <div id="visually-hidden-text" style={{width: "100%"}}>
                         <div className="highlight">  
                             <h3 className="white-bg">
-                                    Example: <code>button</code> with visually-hidden text
+                                    Example: Using visually-hidden text
                             </h3>
                             <div className="code margin-top-30 margin-bottom-30">
                                 <code>

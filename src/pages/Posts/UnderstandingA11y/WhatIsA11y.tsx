@@ -20,8 +20,8 @@ const contents = [
         text: "The DNA of the Web is Accessible"
     },
     {
-        href: "#the-practical-reasons-for-accessibility",
-        text: "The Practical Reasons for Accessibility"
+        href: "#why-accessibility",
+        text: "Why Accessibility?"
     },
     {
         href: "#web-access-is-everyone's-right",
@@ -249,9 +249,9 @@ export default function WhatIsA11y() {
                     </div>
                 </div>
 
-                {/* ***************The Practical Reasons for Accessibility***************** */}
-                <div className="section scroll-target" id="the-practical-reasons-for-accessibility">
-                    <h2>The Practical Reasons for Accessibility</h2>
+                {/* ***************WHY Accessibility***************** */}
+                <div className="section scroll-target" id="why-accessibility">
+                    <h2>Why Accessibility?</h2>
                     <p>
                         From a business side, there are certainly a few practical reasons that can motivate 
                         a company to prioritize accessibility:

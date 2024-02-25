@@ -9,7 +9,7 @@ Explain A11y
 ReadMe
 Picture Corina
 More resources for components
-
+check toc on mdn if hidden
 
 Typescript + Playwright
 

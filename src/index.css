@@ -25,6 +25,7 @@
     --yellow-border: 3px;
 
     --cream-color: #fbf6ea;
+    --grayTOC-color: #757575;
 
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
@@ -47,6 +48,9 @@
 
     /* Hero Design */
     --hero-lightBlue: #66c2cd;
+    --hero-darkBlue: rgb(4, 134, 148);
+    --bg-blue: rgba(4, 134, 148, 0.2);
+    --bg-blue: rgba(102, 194, 205, 0.4);
     --hero-orange: #f97c28;
     --hero-darkGreen: #377984;
     --hero-pink: #f08eb1;
@@ -68,13 +72,12 @@
     color: var(--pinkBright-color);
 }
 
-.yellow-bg {
-    background-color: var(--yellow-color);
+/* .yellow-bg {
+    background-color: var(--yellowFaded-color);
     padding: 0 5px;
     border-radius: 10px;
     font-size: inherit;
-    /* display: inline-block; */
-}
+} */
 
 
 @font-face {

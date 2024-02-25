@@ -8,17 +8,17 @@ export default function BackLinks ({secondLink, href, current}: {secondLink: str
             <ol>
                 <li>
                     <Link to="/resources" className={`${styles['back-link']} hover-pink`}>
-                        <code>Resources</code>
+                        Resources
                     </Link>
                 </li>
                 <li>
                     <Link to={href} className={`${styles['back-link']} hover-pink`}>
-                        <code>{secondLink}</code>
+                        {secondLink}
                     </Link>
                 </li>
                 <li>
                     <a aria-current="page" tabIndex={0}>
-                        <code>{current}</code>
+                        {current}
                     </a>
                 </li>
             </ol>        

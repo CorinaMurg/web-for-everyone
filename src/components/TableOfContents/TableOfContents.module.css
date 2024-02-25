@@ -2,9 +2,9 @@
 .table-contents {
     grid-row: 1 / 5;
     grid-column: 2 / 3;
-    font-family: monospace;
+    font-family: inherit;
     font-size: 0.9rem;
-    font-weight: 450;
+    font-weight: 400;
     letter-spacing: 2px;
     position: sticky;
     top: 130px; 
@@ -12,32 +12,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* max-height: 300px;  */
     width: 300px;
     white-space: normal;
-    /* overflow-y: auto; */
-    padding-left: 5px;
 }
-/* 
-.table-contents::-webkit-scrollbar {
-    width: 5px;
-}
-
-.table-contents::-webkit-scrollbar-track {
-    background: var(--cream-color);
-}
-
-.table-contents::-webkit-scrollbar-thumb {
-    background: var(--gray-color);
-}
-
-.table-contents::-webkit-scrollbar-thumb:hover {
-background: var(--pinkBright-color); 
-} */
 
 .table-contents h2 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     font-size: 0.9rem;
@@ -47,32 +28,35 @@ background: var(--pinkBright-color);
 .table-contents ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 22px;
     padding-inline-start: 0;
-    /* height: 15rem;
-    overflow-y: auto; */
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .table-contents ul li a {
     align-self: flex-start;
-    color: inherit;
-    opacity: 0.9;
+    color: var(--grayTOC-color);
     font-size: 0.9rem;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--grayTOC-color);
     letter-spacing: 0.2px;
 }
 
 .table-contents ul li a:hover {
-    color: var(--pinkBright-color);
-    font-weight: 550; 
-    opacity: 1;
+    color: black;
+    font-weight: 500; 
 }
 
 .table-contents ul li a.active {
-    color: var(--pinkBright-color);
+    color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+    border-radius: 5px;
+    padding: 1px;
     font-weight: 600; 
-    text-decoration: underline;
-    opacity: 1;
+    text-decoration: none;
 }
 
 

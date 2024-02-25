@@ -83,13 +83,13 @@ export default function MakeItAccessible() {
                         <Link to="/resources/make-it-accessible-part1" 
                         >
                             Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
-                        </Link>
-                        , and will now cover another set of six. 
+                        </Link>.
+                        We noticed that they can be kept in check with just semantic 
+                        HTML, and at times a bit of CSS or ARIA attributes.
                     </p>
                     <p>
-                        Just like the first group, these bugs can also be kept in check with just semantic 
-                        HTML, and in some cases, with a little bit of CSS or ARIA attributes.
-                        (Well, there is just one exception, depending on which JavaScript library you use.)
+                        Are the next 6 bugs as easy to fix? Yes, with one exception that might 
+                        require a bit of JavaScript.
                     </p>
                     
                 </div>
