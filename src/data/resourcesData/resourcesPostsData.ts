@@ -20,7 +20,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
         "to": `/resources/what-is-accessibility`,
-        "ariaLabel": "What is Accessibility post by Web for Everyone.",
+        "ariaLabel": "",
     },
     {
         "label": "understanding-accessibility",
@@ -32,7 +32,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             It's a node structure made up of accessible objects and a key player in making
             acessibility happen.`,
         "to": `/resources/how-accessibility-works`,
-        "ariaLabel": "How Accessibility Works post by Web for Everyone.",
+        "ariaLabel": "",
     },
     {
         "label": "understanding-accessibility",
