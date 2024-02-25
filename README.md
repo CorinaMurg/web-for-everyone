@@ -21,10 +21,6 @@ bUTTON ON About: a11y chat
 
 Publish blog
 
-
-Check on mobile
-With screen reader check modal
-apply for allyTO Camp deadline Feb 19
 Plag
 
 

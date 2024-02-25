@@ -1,7 +1,7 @@
 
 .resources {
     display: grid;
-    grid-template-columns: 2fr 0.8fr; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: repeat(2, auto); 
     gap: 10px; 
     margin-block: 64px;
@@ -161,6 +161,10 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.resources--table-contents nav {
+    width: 20rem;
 }
 
 .resources--table-contents ul {
