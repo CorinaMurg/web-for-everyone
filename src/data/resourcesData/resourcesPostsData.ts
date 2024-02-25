@@ -8,7 +8,6 @@ export type ResourcesPostDataTypes = {
     to?: string;
     href?: string;
     ariaLabel: string;
-    readMoreAriaLabel: string;
 };
 
 export const resourcesPostsData: ResourcesPostDataTypes[] = [
@@ -21,8 +20,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
         "to": `/resources/what-is-accessibility`,
-        "ariaLabel": "What is Accessibility article by Web for Everyone.",
-        "readMoreAriaLabel": "",
+        "ariaLabel": "What is Accessibility post by Web for Everyone.",
     },
     {
         "label": "understanding-accessibility",
@@ -34,8 +32,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             It's a node structure made up of accessible objects and a key player in making
             acessibility happen.`,
         "to": `/resources/how-accessibility-works`,
-        "ariaLabel": "What is Accessibility article by Web for Everyone.",
-        "readMoreAriaLabel": "",
+        "ariaLabel": "How Accessibility Works post by Web for Everyone.",
     },
     {
         "label": "understanding-accessibility",
@@ -47,20 +44,18 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             `The bad news: a handful of bugs is responsible for the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
         "to": `/resources/most-common-bugs`,
-        "ariaLabel": "The Most Common Accessibility Bugs article by Web for Everyone.",
-        "readMoreAriaLabel": "",
+        "ariaLabel": "The Most Common Accessibility Bugs post by Web for Everyone.",
     },
     {
         "label": "html-for-accessibility",
         "title": "The Importance of Semantic HTML",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
-        "description": `In most conversations about accessibility, the use of semantic HTML is most 
+        "description": `In conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. This post looks at the role it 
             plays in accessibility and beyond.`,
         "href": `https://dev.to/corinamurg/use-semantic-html-4b97`,
-        "ariaLabel": "The importance of semantic HTML blog post.",
-        "readMoreAriaLabel": "read more link to The importance of semantic HTML blog post.",
+        "ariaLabel": "",
     },
     {
         "label": "html-for-accessibility",
@@ -71,9 +66,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
         "href": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
-        "ariaLabel": "HTML: buttons or links? How to choose blog post.",
-        "readMoreAriaLabel": "read more link to HTML: buttons or links? How to choose blog post.",
-
+        "ariaLabel": "",
     },
     {
         "label": "html-for-accessibility",
@@ -84,8 +77,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             Learn to distinguish between decorative and informative images, 
             and how the context of an image determines the need for alt text, which is also a ranking factor for SEO.`,
         "href": `https://www.deque.com/blog/great-alt-text-introduction/`,
-        "ariaLabel": "How to Design Great Alt Text: An Introduction by Caitlin Geier on deque.com/blog.",
-        "readMoreAriaLabel": "read more link to How to Design Great Alt Text blog post.",
+        "ariaLabel": "",
     },
     {
         "label": "html-for-accessibility",
@@ -96,8 +88,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
             Let's match these terms agaist each other to see how they differ.`,
         "to": `/resources/similar-but-different`,
-        "ariaLabel": "How to Design Great Alt Text: An Introduction by Caitlin Geier on deque.com/blog.",
-        "readMoreAriaLabel": "read more link to How to Design Great Alt Text blog post.",
+        "ariaLabel": "",
     },
     {
         "label": "html-for-accessibility",
@@ -107,8 +98,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
         "href": `https://dev.to/corinamurg/html-tag-vs-element-3dc5`,
-        "ariaLabel": "HTML tag vs element blog post published by Corina.",
-        "readMoreAriaLabel": "read more link to HTML tag vs element blog post.",
+        "ariaLabel": "",
     },
     {
         "label": "css-for-accessibility",
@@ -120,8 +110,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             and spacing. Read Ashlee M Boyer's post on how using px units in these cases can 
             lead to a more predictable and user-friendly layout.`,
         "href": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques#after-updating-to-px-units",
-        "ariaLabel": "Is rem Always the Best Choice for Accessibility blog post by Ashlee M Boyer.",
-        "readMoreAriaLabel": "read more link to Is rem Always the Best Choice for Accessibility, a blog post by Ashlee M Boyer.",
+        "ariaLabel": "",
     },
    
     {
@@ -129,12 +118,11 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "title": "Building the Main Navigation for a Website",
         "subtitle": "",
         "author": "By Manuel Matuzović on web.dev",
-        "description": `This is an article published on Google's web.dev site. It's a thorough guide that 
-        covers best practices for designing a navigation system that's user-friendly and accessible. 
-        A (very long) must-read!`,
+        "description": `This post 
+            covers best practices for designing a navigation system that's user-friendly and accessible. 
+            A (very long) must-read!`,
         "href": "https://web.dev/articles/website-navigation",
-        "ariaLabel": "The web.dev article on building the main navigation for a website.",
-        "readMoreAriaLabel": "read more link to The web.dev article on building the main navigation for a website.",
+        "ariaLabel": "",
     },
     
     {
@@ -146,7 +134,6 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,
         "to": `/resources/make-it-accessible-part1`,
         "ariaLabel": "",
-        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
     {
         "label": "your-digital-presence",
@@ -157,7 +144,6 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             as easy to fix? Let's learn where to look and how to avoid them.`,
         "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
-        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
     },
     {
         "label": "your-digital-presence",
@@ -168,7 +154,6 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
             all users, including those with disabilities, can navigate and understand your GitHub profile. You'll find tips
             on link context, alt text for images, heading structure, plain language, and use of emojis. A treat!`,
         "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
-        "ariaLabel": "5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
-        "readMoreAriaLabel": "read more link to 5 Tips for Making Your GitHub Profile Page Accessible, GitHub blog post.",
+        "ariaLabel": "",
     },
 ];
