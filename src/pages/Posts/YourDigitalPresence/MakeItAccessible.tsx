@@ -92,8 +92,8 @@ export default function MakeItAccessible() {
                             visibleText="2023 WebAIM Million Study"
                         />      
                         <span> </span>
-                        of 1,000,000 home pages found a specific group of 6 bugs 
-                        that were present on 96% of the pages.
+                        of 1,000,000 home pages revealed a group of 6 bugs 
+                        present on 96% of the pages.
                         Let's make sure your portfolio site is not one of them!
                     </p>
                     {/* <p>
@@ -116,7 +116,7 @@ export default function MakeItAccessible() {
                             <p>
                                 These are browser extensions that can help
                                 you evaluate the accessibility of your site. 
-                                These tools are designed to scan web pages and identify potential accessibility 
+                                They scan a page and identify accessibility 
                                 issues based on best practices and standards established by
                                 the <span> </span>
                                 <ExternalLink 
@@ -127,7 +127,7 @@ export default function MakeItAccessible() {
                             </p> 
             
                             <p>
-                                These tools are a great first step when checking for accessibility issues. 
+                                These automated tools are a great first step when checking for accessibility issues. 
                                 Moreover, as we are now looking at how to avoid the most common 
                                 accessibility bugs, these tools do a great job at spotting them.
                             </p>
@@ -139,6 +139,8 @@ export default function MakeItAccessible() {
                                     href=" https://wave.webaim.org/extension/" 
                                     visibleText="WebAIM's WAVE"
                                 />
+                                <span> </span>
+                                is considered the most beginner-friendly as it highlights any issues directly on the page.
                             </p>
                             <p className="bullet-point-line">
                                 <ExternalLink
@@ -148,8 +150,8 @@ export default function MakeItAccessible() {
                             </p>
                             <p className="bullet-point-line">
                                 <ExternalLink
-                                    href="https://developer.chrome.com/docs/devtools/accessibility/reference/" 
-                                    visibleText="Chrome's Accessibility Reference"
+                                    href="https://developer.chrome.com/docs/lighthouse/overview/" 
+                                    visibleText="Google's Lighthouse"
                                 />
                             </p>
                             <p>
@@ -216,17 +218,24 @@ export default function MakeItAccessible() {
                     </div>
        
                     <h3>Mind the color contrast ratio to help users with low vision</h3>
+                    
                     <p>
-                        Users with low vision can struggle with perceiving contrast, and
-                        reading can be challenging when the text color doesn't stand out much from the 
-                        background.
-                    </p>            
+                        For users with low vision reading can be challenging when the text color doesn't stand out much from the 
+                        background. Noticing interactive elements like buttons or form inputs is also difficult
+                        if the background or border does not contrast enough with the surrounding content.
+                    </p>     
+                    <p>
+                        To avoid these problems, we rely on <strong>color contrast ratio</strong> tools to compare the 
+                        difference in <strong>luminance</strong> (brightness) between any two colors.
+                    </p>       
                     <p>
                         The <span className="dark-bg-white-text">4.5:1</span> (for smaller text) and <span> </span>
-                        <span className="dark-bg-white-text">3.0:1</span> (for larger text) ratios are for the <strong>AA</strong> level of compliance. 
+                        <span className="dark-bg-white-text">3.0:1</span> (for larger text) ratios are 
+                        minimum values expected in order for  your content to be accessible to users with low vision.
+                        In terms of accessibility guidelines, we call this the <strong>AA</strong> level.
                     </p>
                     <p>
-                        The <strong>AAA</strong> level requires
+                        The desirable <strong>AAA</strong> level requires
                         a <span className="dark-bg-white-text">7.0:1</span> contrast ratio for smaller text, 
                         and <span className="dark-bg-white-text">4.5:1</span> for larger text.
                         Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience 
@@ -254,21 +263,42 @@ export default function MakeItAccessible() {
                             visibleText="add the contrast checker to your Bookmarks bar"
                         />
                         <span> </span>in one easy step!
-                    </p>
-
-                    <p className="margin-top-20">
+                    </p>     
+                    <p >
                         <strong>Checking the color contrast is straightforward</strong>: 
                     </p>
-                    <p className="bullet-point-line">
-                        enter the <strong>foreground</strong> and <strong>background colors</strong> for a given element
+                    <div className="checkmark-line padding-left-20">
+                        <p style={{marginTop: "0"}}>
+                            <span className="pink-text bold">&#x2714; </span>
+                            <span>enter the foreground and background colors for a given element</span>
+                        </p>
+                        <p>
+                            <span className="pink-text bold">&#x2714; </span>
+                            <span>the tool calculates the contrast ratio</span>
+                        </p>
+                        <p>
+                            <span className="pink-text bold">&#x2714; </span>
+                            <span>you receive a <strong>pass</strong> or <strong>fail</strong> result for 
+                            the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance</span>
+                        </p>
+                    </div>
+                            {/* <p></p>
+                    <p className="margin-top-20 padding-left-20">
+                        <strong className="pink-text"> 1. </strong>enter the foreground and background colors for a given element
                     </p>
-                    <p className="bullet-point-line">
-                        the tool calculates the <strong>contrast ratio</strong> 
+                    <p className="margin-top-10 padding-left-20">
+                        <strong className="pink-text">2. </strong>the tool calculates the contrast ratio
                     </p>
-                    <p className="bullet-point-line">
-                        you get a <strong>pass</strong> or <strong>fail</strong> result for 
+                    <p className="margin-top-10 padding-left-20">
+                        <strong className="pink-text">3. </strong>you receive a <strong>pass</strong> or <strong>fail</strong> result for 
                         the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
-                    </p>   
+                    </p> 
+                    </div> */}
+                    
+                    <p>
+                        <strong>A neat feature of the tool</strong>: it provides <strong>luminance sliders</strong> that allow you to adjust 
+                        the levels and see how the contrast ratio changes. <span aria-hidden="true"> 😎</span>
+                    </p>  
                             
                     {/* Example: Using WebAIM's contrast checker */}
                     {/* <div className="highlight highlight-one-line margin-top-30">
