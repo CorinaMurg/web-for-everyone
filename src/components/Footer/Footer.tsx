@@ -33,9 +33,12 @@ export default function Footer() {
                             <li>
                                 <a href="https://www.linkedin.com/company/webforeveryone/" target="_blank" rel="noopener noreferrer">
                                     <span className="footer-nav-link">LinkedIn</span>
+                                    <span className="sr-only"> (opens in new tab)</span>
                                 </a>
                             </li>
-                            <li><Link to="/feedback"><span className="footer-nav-link">Feedback</span></Link></li>
+                            <li>
+                                <Link to="/feedback"><span className="footer-nav-link">Feedback</span></Link>
+                            </li>
                         </ul>
                         
                     </div>
