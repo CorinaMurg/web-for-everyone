@@ -175,6 +175,7 @@
     padding-inline-start: 0;
     background-color: white;
     border-radius: 5px;
+    border: 1.7px solid gray;
     padding: 15px;
     height: 13.5rem;
 }
@@ -242,6 +243,9 @@
     }
     .article--link {
         padding-bottom: 20px;
+    }
+    .resources--table-contents nav {
+        width: 100%;
     }
 }
 

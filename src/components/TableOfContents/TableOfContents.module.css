@@ -37,6 +37,7 @@
     background-color: white;
     border-radius: 5px;
     padding: 15px;
+    border: 1.7px solid gray;
     
 }
 
@@ -80,5 +81,14 @@
         font-weight: 700;
         margin-bottom: 20px;
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table-contents {
+        width: 100%;
+    }
+    .table-contents nav {
+        width: 100%;
     }
 }
