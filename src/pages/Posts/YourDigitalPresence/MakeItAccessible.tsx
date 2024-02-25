@@ -125,12 +125,6 @@ export default function MakeItAccessible() {
                                 />
                                 , bettwer known as <span className="bold">WCAG</span>. 
                             </p> 
-            
-                            <p>
-                                These automated tools are a great first step when checking for accessibility issues. 
-                                Moreover, as we are now looking at how to avoid the most common 
-                                accessibility bugs, these tools do a great job at spotting them.
-                            </p>
                             <p>
                                 Here are a few of the most popular browser extensions:
                             </p>
@@ -160,18 +154,16 @@ export default function MakeItAccessible() {
                                 as well as links to documentation and examples on how to fix them.
                             </p>
                             <p>
-                                Please note that these tools might detect accessibility issues that are not 
-                                discussed in this article. You are welcome to contact Web for Everyone via LinkedIn
-                                if you have any questions.
+                                As we are now looking at how to avoid the most common 
+                                accessibility bugs, these tools do a great job at spotting them.
+                            </p>
+                            <p>
+                                But keep in mind that automated tools are imperfect!
+                                They can't test all aspects of accessibility, and will catch only about 30% of
+                                issues (maybe up to 50% on a less complex site).
                             </p>
                             <div className="warning">
                                 <WarningTriangle />
-                                <p>
-                                    While extremely useful for quickly 
-                                    spotting common problems, automated tools are imperfect.
-                                    They can't test all aspects of accessibility, and will catch only about 30% of
-                                    issues (maybe up to 50% on a less complex site).
-                                </p>
                                 <p>  
                                     When building a more complex website, a comprehensive accessibility 
                                     audit will have to include:
