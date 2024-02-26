@@ -432,6 +432,7 @@ h4 {
     padding: 10px 20px;
     margin-top: 20px;
     margin-left: 20px;
+    max-width: fit-content;
 }
 
 .highlight-small .fake-heading-p,
