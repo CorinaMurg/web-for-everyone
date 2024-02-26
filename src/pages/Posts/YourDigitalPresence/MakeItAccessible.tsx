@@ -165,7 +165,7 @@ export default function MakeItAccessible() {
                             <div className="warning">
                                 <WarningTriangle />
                                 <p>  
-                                    When building a more complex website, a comprehensive accessibility 
+                                    When building a complex website, your ccessibility 
                                     audit will have to include:
                                 </p>
                                 <p className="bullet-point-line">
