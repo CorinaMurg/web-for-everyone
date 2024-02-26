@@ -32,7 +32,7 @@ TABLE OF CONTENTS
 - add a skip-table-contents link?
 SCREEN READER 
 - pronounces "read" incorrectly as in Recommended read
-
+https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html
 
 
 Extra Articles
@@ -46,7 +46,15 @@ New Bugs:
 
 
 JOB
-Typescript + Playwright
+1. Typescript + Playwright
+2. Playwright.config
+3. Axe devTools Linter
+
+QUESTIONS
+svg: use desc or title
+arial-label for soc media icons OR visually-hiddden class
+when one element is not accessible, provide an accessible version
+when to create a thread
 
 
 

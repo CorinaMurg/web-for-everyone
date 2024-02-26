@@ -450,7 +450,7 @@ export default function MostCommonBugs() {
                         the link). 
                     </p>
                     <p>
-                        <strong>Certain elements must have a name</strong> (or a label), and it has to be 
+                        <strong>Certain elements must have a name</strong> (or, for input fields, a <strong>label</strong>), and it has to be 
                         descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
@@ -493,7 +493,7 @@ export default function MostCommonBugs() {
                                 visibleText="accessible name and description computation algorithm"
                             />
                             <span> </span> 
-                            that follows a set of (quite headache-inducing) rules. This algorithm takes into account
+                            that follows a set of (quite headache-inducing) rules. The algorithm takes into account
                             the <strong>visible text</strong> or <strong> label</strong> of the element, but several other attributes are considered
                             as well:
                         </p>
@@ -503,9 +503,22 @@ export default function MostCommonBugs() {
                                 <strong>text defined by a visually-hidden class</strong>  
                             </p>
                             <p className="padding-left-20">
-                                Be careful though! If the CSS is not done correctly the screen reader 
-                                will announce the text letter by letter. 
+                                This is a CSS class that hides text visually, but makes it available to screen readers.
                             </p>
+                            <p className="padding-left-20 margin-top-20">
+                                Be careful though! It won't work with speech commands unless the user can
+                                tell what the name of the element is. So, use it with an icon linking to your
+                                LinkedIn profile, but not with an icon that is less recognizable.
+                                Also, if the CSS class is not implemented correctly, the spaces between words might be
+                                ignored and screen readers could announce the text as a single continuous string.
+                            </p>
+                            {/* <p className="padding-left-20 margin-top-20">
+                                Here's a <span> </span>
+                                <ExternalLink
+                                    href="https://codepen.io/Cor-Ina/pen/oNmoYeR"
+                                    visibleText="CodePen with an example of a visually-hidden class."
+                                />
+                            </p> */}
                             
                             <p className="bullet-point-line margin-top-20">
                                 <strong>alt</strong>
@@ -520,7 +533,7 @@ export default function MostCommonBugs() {
                                 <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside 
                                 graphic link". <span> </span>
                                 (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
-                                depending on the screen reader.)
+                                , depending on the screen reader.)
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
                                 You could also use an empty <code>alt</code> attribute to hide the image from the screen reader,

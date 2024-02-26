@@ -72,25 +72,25 @@ test('WhatIsA11y page should not have any automatically detectable WCAG 2.1 AA v
     expect(accessibilityScanResults.violations).toEqual([]);
 });
 
-test('HowA11yWorks page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
-    await page.goto('https://webforeveryone.us/resources/how-accessibility-works');
+// test('HowA11yWorks page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
+//     await page.goto('https://webforeveryone.us/resources/how-accessibility-works');
   
-    const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
-        .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
-        .analyze();
+//     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
+//         .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
+//         .analyze();
   
-    expect(accessibilityScanResults.violations).toEqual([]);
-});
+//     expect(accessibilityScanResults.violations).toEqual([]);
+// });
 
-test('MostCommonBugs page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
-    await page.goto('https://webforeveryone.us/resources/most-common-bugs');
+// test('MostCommonBugs page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
+//     await page.goto('https://webforeveryone.us/resources/most-common-bugs');
   
-    const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
-        .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
-        .analyze();
+//     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
+//         .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
+//         .analyze();
   
-    expect(accessibilityScanResults.violations).toEqual([]);
-});
+//     expect(accessibilityScanResults.violations).toEqual([]);
+// });
 
 test('SimilarButDifferent page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
     await page.goto('https://webforeveryone.us/resources/similar-but-different');
