@@ -3,6 +3,7 @@ ScrollToTop for Similar
 Accessibility statement
 Nav modal
 Dark Mode
+Plag
 
 BACK TO TOP BUTTON
 Site Map
@@ -14,61 +15,24 @@ Should TOC be nav or aside
 Use <nav> for footer and header links?
 Navigation on Small screens: add COntact, make font larger
 
-
 Explain A11y
 ReadMe
 Picture Corina
 More resources for components
 check toc on mdn if hidden
-
-Typescript + Playwright
-
-
-uSE A11Y IN BACKLINKS
-
 bUTTON ON About: a11y chat
-
-Publish blog
-
-Plag
-
-
-replace pink bullet points to list-style
-color contrast algorithm
-
-
-related articles
-Picture Corina
-
 Background LinkedIn
-12. LinkedIn page Corina (Revere bullet points), GitHub, Add link to dev.to
-13. A11y statement https://dequeuniversity.com/accessibility-statement
-Tagged project, add to LinkedIn
-
 https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
+Add WeCanHelp to tablet mode
+ABOUT EACH ARTICLE: article should be div or article: 
+https://www.smashingmagazine.com/2020/01/html5-article-section/
+https://tink.uk/the-difference-between-aria-label-and-aria-labelledby/
+TABLE OF CONTENTS
+- is "out of list" important
+- add a skip-table-contents link?
+SCREEN READER 
+- pronounces "read" incorrectly as in Recommended read
 
-
-
-1. test: icon with and w/out aria-hidden
-2. description or alt to images re: color contrast / Explain: aria-hidden for icon
-
-7. Add # for headings
-8. Download fonts
-4. Add LIKE buttons
-
-11. Add scroll to top???
-12. Langauge: website vs app????
-
-5. Add WeCanHelp to tablet mode
-10. More links to Resources
-9. Similar but Different
-
-FRIDAY
-
-
-6. TypeScript
-3. when using the back button in the browser, it should scroll to the same section as before
-7. what is A11y: display:none are also ignored
 
 
 Extra Articles
@@ -76,32 +40,19 @@ Extra Articles
 13. Is inaccessible ilegal?
 14. WCAG
 15. Forms (ask Adam?)
-RESOURCES: make each artice a link
 New Bugs:
 - dark mode
 - rem not px
 
-BONUS TO-DO:
-- allow users to enter style info for button in Focus Visible
-- link to a differen page with a cute cat
 
-
-ABOUT EACH ARTICLE
-- article should be div or article
-- sections with labelledby in each article
-
-TABLE OF CONTENTS
-- is "out of list" important
-- <a> vs <Link>
-- add a skip-table-contents link?
-
-
-SCREEN READER 
-- pronounces "read" incorrectly as in Recommended read
+JOB
+Typescript + Playwright
 
 
 
-HOW A11Y WORKS
-- add explanation with a11y panel in dev tools re: accessible name computation
+
+
+
+
 
 

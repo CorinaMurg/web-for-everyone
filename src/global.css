@@ -407,11 +407,15 @@ h4 {
 .highlight {
     background-color: white;
     font-weight: 500;
-    padding: 0px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;
     width: 100%;
     border: 1.7px solid gray;
     margin-top: 10px;
     border-radius: 5px;
+}
+
+.highlight-no-heading {
+    padding: 15px;
 }
 
 .highlight-dl {
