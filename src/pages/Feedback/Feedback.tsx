@@ -53,6 +53,9 @@ export default function Feedback() {
                 <strong>Contact</strong>:
                 <span className={styles['contact--email']}> info@webforeveryone.us</span>
             </p>
+            <p>
+                ❤️ Thank you for helping us make the web accessible for everyone.
+            </p>
         </div>
     )
 }
