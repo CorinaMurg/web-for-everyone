@@ -510,6 +510,55 @@ export default function MostCommonBugs() {
                                 tell what the name of the element is. So, use it with an icon linking to your
                                 LinkedIn profile, but avoid it with an icon that is less recognizable.
                             </p>
+                            <div className="highlight highlight-small">
+                                <details>
+                                    <summary>
+                                        Using speech recognition software: an example
+                                    </summary>
+                                    <p>
+                                        Dragon NaturallySpeaking is the most popular speech recognition software, 
+                                        and it’s used by people with mobility issues or by those who prefer using 
+                                        voice commands over a traditional mouse and keyboard. 
+                                    </p>
+                                    <p>    
+                                        The tool has a <strong>Mouse Grid</strong> feature to help users select 
+                                        and interact with elements on their screen using voice commands. 
+                                    </p>
+                                    <p>
+                                        Ideally, the user can rely on visible text to learn the name of an 
+                                        interactive element, and then activate it with "Click (name of element)".
+                                        If the name is not available or obvious, they can use the Mouse grid
+                                        feature.
+                                    </p>
+                                    <p>
+                                        Here are the steps they would follow:
+                                    </p>
+                                    <p>
+                                        <strong>1. Activating Mouse Grid</strong>:
+                                        The command "Mouse Grid" activates the feature. 
+                                        This will overlay a grid with numbered areas across their entire screen.
+                                    </p>
+                                    <p>
+                                        <strong>2. Using Mouse Grid</strong>:
+                                        Once the grid is visible, they can move the pointer to a specific area 
+                                        by saying the number associated with that area. For example, if they want 
+                                        to move the pointer to the area labeled '3', they just say "Three."
+                                        After they say a number, the grid will zoom into the selected area and redraw a smaller, more detailed grid. This allows for more precise selection.
+                                    </p>
+                                    <p>
+                                        <strong>3. Repeat</strong>:
+                                        They continue to dictate the numbers of the smaller areas until the pointer is positioned over the element they wish to select or interact with.
+                                    </p>
+                                    <p>
+                                        <strong>4. Clicking and Interacting</strong>:
+                                        Once the pointer is over the desired element, they can say commands like “Click,” “Double Click,” “Right Click,” etc., to interact with that element as they would with a mouse.
+                                    </p>
+                                    <p>
+                                        <strong>5. Closing Mouse Grid</strong>:
+                                        If they wish to exit the Mouse Grid, they simply say "Cancel," and the Mouse Grid will close.
+                                    </p>
+                                </details>
+                            </div>
                             <p className="padding-left-20 margin-top-20">
                                 Also, if the CSS class is not implemented correctly, the spaces between words might be
                                 ignored and screen readers could announce the text as a single continuous string.

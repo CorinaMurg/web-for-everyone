@@ -43,6 +43,7 @@ Extra Articles
 New Bugs:
 - dark mode
 - rem not px
+- size of clikable area (head pointers)
 
 
 JOB
