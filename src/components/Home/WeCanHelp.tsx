@@ -9,7 +9,6 @@ export default function WeCanHelp() {
     return (
         <aside aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
             <h2 id="how-can-we-help"
-                aria-label="How can web for everyone help?"
             >
                 What can&nbsp; <WELogo size="1.5rem"/> &nbsp;help with?
             </h2>
