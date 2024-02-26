@@ -10,7 +10,7 @@ import "../../global.css";
 import ExternalLink from "../../components/ExternalLink/ExternalLink";
 
 export default function Feedback() {
-    useDocTitle("Accessibility Statement | Web for Everyone");
+    useDocTitle("Feedback | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
     return (

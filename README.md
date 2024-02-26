@@ -9,6 +9,7 @@ Like hearts
 Change <a> to <Link> and add empty <a> to headings
 import fonts
 Change layout to include aside for most pages
+Nav on Small screens: add COntact, make font larger
 
 
 Explain A11y
