@@ -11,7 +11,7 @@ export default function WeCanHelp() {
         <aside aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
             <h2 id="how-can-we-help"
             >
-                What can&nbsp; <WELogo size="1.5rem"/> &nbsp;help with?
+                What can <WELogo size="1.5rem"/> help with?
             </h2>
             <ul>
                 {weCanHelpData.map((article, index) => (

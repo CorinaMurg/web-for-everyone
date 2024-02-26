@@ -1,8 +1,7 @@
 
-/* .logo-we {
-    background-color: var(--logo-bg-color);
-    padding: 2px;
-} */
+.logo-we {
+    display: inline;
+}
 
 .logo-w {
     /* color: var(--logo-w-color) */
