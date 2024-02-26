@@ -11,6 +11,7 @@ Change <a> to <Link> and add empty <a> to headings
 import fonts
 Change layout to include aside for most pages
 Should TOC be nav or aside
+Use <nav> for footer and header links?
 Navigation on Small screens: add COntact, make font larger
 
 

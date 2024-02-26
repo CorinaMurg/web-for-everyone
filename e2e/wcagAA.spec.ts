@@ -6,7 +6,7 @@ test('home page should not have any automatically detectable WCAG 2.1 AA violati
     await page.goto('https://webforeveryone.us/');
   
     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
-        .withTags(['wcag21aa', 'wcag21a'])
+        .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
         .analyze();
   
     expect(accessibilityScanResults.violations).toEqual([]);

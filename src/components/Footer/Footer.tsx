@@ -18,7 +18,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className="footer-right">
-                    <nav aria-label="site links" className="footer-right--navigation">
+                    <nav aria-label="footer site links" className="footer-right--navigation">
                         <h3 className="footer-heading">Site Links</h3>
                         <ul>
                             <li><Link to="/"><span className="footer-nav-link">Home</span></Link></li>
