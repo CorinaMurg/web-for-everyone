@@ -62,7 +62,6 @@ export default function Home() {
                             // aria-label="Continue to article let's make it accessible"
                             to="/resources/make-it-accessible-part1" 
                             className={styles['continue-to-article']}
-                            onClick={() => { scrollToTop() }}  
                         >   
                             Bug Squashing
                             <svg aria-hidden="true" id="arrow" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">

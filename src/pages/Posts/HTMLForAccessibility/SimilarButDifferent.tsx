@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import useDocTitle from "../../../hooks/useDocTitle"
+import useScrollToTop from "../../../hooks/useScrollToTop"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import styles from "./SimilarButDifferent.module.css"
@@ -27,7 +28,8 @@ const contents = [
 ]
 
 export default function SimilarButDifferent() {
-    useDocTitle("Similar but Different | Web for Everyone");    
+    useDocTitle("Similar but Different | Web for Everyone");  
+    useScrollToTop();  
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     
