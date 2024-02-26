@@ -506,9 +506,11 @@ export default function MostCommonBugs() {
                                 This is a CSS class that hides text visually, but makes it available to screen readers.
                             </p>
                             <p className="padding-left-20 margin-top-20">
-                                Be careful though! It won't work with speech commands unless the user can
+                                Be careful though! It won't work easily with speech commands unless the user can
                                 tell what the name of the element is. So, use it with an icon linking to your
-                                LinkedIn profile, but not with an icon that is less recognizable.
+                                LinkedIn profile, but avoid it with an icon that is less recognizable.
+                            </p>
+                            <p className="padding-left-20 margin-top-20">
                                 Also, if the CSS class is not implemented correctly, the spaces between words might be
                                 ignored and screen readers could announce the text as a single continuous string.
                             </p>
@@ -529,7 +531,7 @@ export default function MostCommonBugs() {
                                 to compute the accessible name.
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
-                                Note that this is slightly more verbose. So, a link wrapping an imge with <span> </span>
+                                Note that this is slightly more verbose. So, a link wrapping an image with <span> </span>
                                 <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside 
                                 graphic link". <span> </span>
                                 (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
@@ -603,7 +605,12 @@ export default function MostCommonBugs() {
                                 </Link>),
                                 nor it's guaranteed to be translated by all browsers. This unfortunately prevents 
                                 your content from being accessible to a global audience (a process called "internationalization").
-
+                            </p>
+                            <p className="padding-left-20 margin-top-20 white-bg">
+                                Plus, it creates a problem for speech users, just like the <code>visually-hidden</code> text does:
+                                they will have to 
+                                guess the name of the element since it's not visible, or go through a series of other commands
+                                until they can select the element.
                             </p>
                             <p className="padding-left-20 margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
