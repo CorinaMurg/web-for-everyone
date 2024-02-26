@@ -11,7 +11,7 @@ export default function WeCanHelp() {
             <h2 id="how-can-we-help"
                 aria-label="How can web for everyone help?"
             >
-                How can&nbsp; <WELogo size="1.5rem"/> &nbsp;help
+                What can&nbsp; <WELogo size="1.5rem"/> &nbsp;help with?
             </h2>
             <ul>
                 {weCanHelpData.map((article, index) => (
