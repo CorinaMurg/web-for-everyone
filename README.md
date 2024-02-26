@@ -1,15 +1,17 @@
 <span className="pink-text bold">&#x2714; </span> 
-
+ScrollToTop for Similar
 Accessibility statement
 Nav modal
 Dark Mode
 
 BACK TO TOP BUTTON
+Site Map
 Like hearts
 Change <a> to <Link> and add empty <a> to headings
 import fonts
 Change layout to include aside for most pages
-Nav on Small screens: add COntact, make font larger
+Should TOC be nav or aside
+Navigation on Small screens: add COntact, make font larger
 
 
 Explain A11y
