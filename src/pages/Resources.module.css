@@ -155,7 +155,7 @@
 }
 
 .resources--table-contents h2 {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -168,39 +168,51 @@
 }
 
 .resources--table-contents ul {
+    font-family: monospace;
     display: flex;
     flex-direction: column;
     gap: 28px;
     padding-inline-start: 0;
-    background-color: white;
+    background-color: var(--text-dark-color);  
     border-radius: 5px;
     padding: 15px 15px 20px 15px;
-    border: 1.7px solid var(--yellow-color);
     height: 15rem;
 }
 
 .resources--table-contents ul li a {
     align-self: flex-start;
-    color: var(--grayTOC-color);
+    color: var(--cream-color);
+    font-weight: 300;
     font-size: 0.9rem;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: var(--grayTOC-color);
-    letter-spacing: 0.2px;
+    text-decoration-thickness: 0.5px;
+    letter-spacing: 0.1px;
 }
 
 .resources--table-contents ul li a:hover {
-    color: black;
-    font-weight: 500; 
+    color: var(--code-blue-color);
+    border: 1.7px solid var(--code-blue-color);
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 400; 
+    text-decoration: none;
 }
 
 .resources--table-contents ul li a.active {
-    color: var(--blue-color);
-    border: 1.7px solid var(--blue-color);
+    color: var(--code-blue-color);
+    border: 1.7px solid var(--code-blue-color);
     border-radius: 5px;
-    padding: 1px;
-    font-weight: 600; 
+    padding: 2px;
+    font-weight: 400; 
     text-decoration: none;
+}
+
+.resources--table-contents ul li a:focus-visible {
+    text-decoration: none;
+    outline: 3px dashed var(--cream-color);
+    outline-offset: 2px;
+    border: none;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 1050px) {

@@ -9,7 +9,7 @@
 }
 
 .svg-wrap svg {
-    fill: var(--blue-color);
+    fill: var(--code-blueDark-color);
     height: 1rem;
     line-height: 1;
 }

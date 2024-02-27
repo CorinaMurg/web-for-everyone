@@ -1,10 +1,14 @@
 
 .back-links {
-    font-family: inherit;
+    font-family: monospace;
     font-size: 0.9rem;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin-top: 50px;
+    background-color: var(--text-dark-color);  
+    padding: 15px;
+    max-width: fit-content;
+    border-radius: 5px;
 
 }
 
@@ -28,29 +32,41 @@
 
 .back-links ol li + li::before {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
     transform: rotate(15deg);
-    border-right: 0.13em solid gray;
+    border-right: 0.13em solid var(--code-blue-color);
     height: 0.8em;
     content: "";
 }
 
 .back-links a {
-    color: inherit;
+    color: var(--cream-color);
+    font-weight: 300;
     text-decoration: none;
     letter-spacing: -0.2px;
 }
 
+.back-links a:focus-visible {
+    text-decoration: none;
+    outline: 3px dashed var(--cream-color);
+    outline-offset: 3px;
+}
+
 .back-links ol li:nth-of-type(1) a,
 .back-links ol li:nth-of-type(2) a{
-    color: var(--blue-color);
+    color: var(--code-blue-color);
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: var(--blue-color);
+    /* text-decoration-thickness: 0.5px; */
 }
 
 .back-links ol li:nth-of-type(1) a:hover,
 .back-links ol li:nth-of-type(2) a:hover {
-    color: black;
-    text-decoration-style: wavy;
+    text-decoration-style:wavy;
+}
+
+.back-links ol li:nth-of-type(1) a:focus-visible,
+.back-links ol li:nth-of-type(2) a:focus-visible {
+    text-decoration: none;
+    outline: 3px dashed var(--cream-color);
+    outline-offset: 3px;
 }

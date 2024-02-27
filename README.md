@@ -33,6 +33,7 @@ TABLE OF CONTENTS
 SCREEN READER 
 - pronounces "read" incorrectly as in Recommended read
 https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html
+VPAT https://accessibility.deque.com/hubfs/Sample-VPAT.pdf
 
 
 Extra Articles
