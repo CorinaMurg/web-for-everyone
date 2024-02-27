@@ -21,12 +21,12 @@
 }
 
 .contact--email {
-    color: var(--blue-color);
+    color: var( --code-blueDark-color);
     font-weight: 500;
 }
 
 .feedback--svg {
-    background-color: var(--hero-lightBlue);
+    background-color: var( --code-blueDark-color);
     border-bottom: 3px solid var(--text-dark-color);
     width: 100%;
     /* margin-inline: auto; */

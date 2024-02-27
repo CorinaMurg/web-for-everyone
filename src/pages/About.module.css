@@ -52,7 +52,7 @@
 }
 
 .rectangle-1 svg {
-    fill: var(--cream-color);
+    fill: var(--text-dark-color);
 }
 
 .rectangle-2 {
@@ -64,7 +64,7 @@
 }
 
 .rectangle-2 svg {
-    fill: var(--hero-darkGreen);
+    fill: var(--text-dark-color);
 }
 
 .rectangle-3 {
@@ -76,7 +76,7 @@
 }
 
 .rectangle-3 svg {
-    fill: var(--hero-darkGreen);
+    fill: var(--text-dark-color);
 }
 
 .rectangle-4 {
@@ -88,7 +88,7 @@
 }
 
 .rectangle-4 svg {
-    fill: var(--hero-pink);
+    fill: var(--text-dark-color);
 }
 
 .rectangle-5 {
@@ -100,7 +100,7 @@
 }
 
 .rectangle-5 svg {
-    fill: white;
+    fill: var(--text-dark-color);
 }
 
 .about--me {

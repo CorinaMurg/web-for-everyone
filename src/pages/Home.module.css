@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    background-color: var(--yellow-color);
+    border: 16px solid var(--yellow-color);
     margin-bottom: 30px;
     position: relative;
 }
@@ -114,10 +114,12 @@
 }
 
 .hero--design img {
-    width: 100%;
+    /* width: 100%; */
     height: 220px;
-    aspect-ratio: 3.5 / 1;
+    /* aspect-ratio: 3.5 / 1; */
     object-fit: contain;
+    margin-block: 5px;
+    overflow: hidden;
 }
 
 /* .hero--design--svg-grid {
@@ -505,33 +507,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.mini-article--image .svg-wrap {
-    width: 130px;
+/* .mini-article--image .svg-wrap {
+    width: 100px;
     height: 100px;
     display: flex;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-color: var(--cream-color);
-}
+} */
 
 .mini-article--image-1 {
-    background-color: var(--yellow-color);
+    border: 16px solid var(--yellow-color);
 }
 .mini-article--image-1 .svg-wrap svg{
     fill: var(--hero-lightBlue);
 }
 
 .mini-article--image-2 {
-    background-color: var(--hero-lightBlue);
+    border: 16px solid  var(--hero-lightBlue);
 }
 .mini-article-image-2 .svg-wrap svg{
     fill: var(--hero-orange);
 }
 
 .mini-article--image-3 {
-    background-color: var(--hero-pink);
+    border: 16px solid var(--hero-pink);
 }
 .mini-article--image-3 .svg-wrap svg{
     fill: var(--hero-darkGreen);
