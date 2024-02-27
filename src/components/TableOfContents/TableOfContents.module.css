@@ -101,5 +101,7 @@
     }
     .table-contents nav {
         width: 100%;
+        max-width: none;
+        min-width: none;
     }
 }

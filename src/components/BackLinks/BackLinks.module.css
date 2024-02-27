@@ -44,7 +44,7 @@
     color: var(--cream-color);
     font-weight: 300;
     text-decoration: none;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.1px;
 }
 
 .back-links a:focus-visible {

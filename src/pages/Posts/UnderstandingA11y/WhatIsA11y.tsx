@@ -121,7 +121,7 @@ export default function WhatIsA11y() {
                     </p>
 
                     {/* *********WHAT ARE ASSISTIVE TECH************* */}
-                    <div className="highlight margin-top-20">
+                    <div className="highlight highlight-one-line">
                         <details>
                             <summary>What are assistive technologies?</summary>
                             <div className="details-content">
@@ -178,37 +178,7 @@ export default function WhatIsA11y() {
                             </div>
                         </details>
                     </div>
-
-                    <p>
-                        <strong className="margin-top-30">
-                            Our job as developers is threefold:
-                        </strong>   
-                    </p>  
-                    <ul>
-                        <li>
-                            <p className="bullet-point-line">
-                                Set accessibility as a goal. 
-                            </p>
-                        </li>
-                        <li>
-                            <p className="bullet-point-line margin-top-20">
-                                Ask questions. Reach out for help and guidance.
-                                Learn about the ways in which 
-                                users of all abilities interact with the web and the functionality
-                                we need to provide for each group. 
-                            </p>
-                        </li>
-                        <li>
-                            <p className="bullet-point-line margin-top-20">
-                                Follow good coding practices.
-                            </p>
-                        </li>
-                    </ul>
-                    <p>
-                        <strong className="margin-top-20">
-                            If we do our part, then the browser and the assistive technologies can do theirs!
-                        </strong>
-                    </p>
+                    
                     <div className="highlight margin-top-20">
                         <h3>How semantic HTML improves accessibility</h3>
                         <p className="white-bg">
@@ -248,6 +218,36 @@ export default function WhatIsA11y() {
                             complex acccessibility issues, semantic HTML is the foundation of accessibility.
                         </p>
                     </div>
+                    <p>
+                        <strong className="margin-top-0">
+                            Our job as developers is threefold:
+                        </strong>   
+                    </p>  
+                    <ul>
+                        <li>
+                            <p className="bullet-point-line">
+                                Set accessibility as a goal. 
+                            </p>
+                        </li>
+                        <li>
+                            <p className="bullet-point-line margin-top-20">
+                                Ask questions. Reach out for help and guidance.
+                                Learn about the ways in which 
+                                users of all abilities interact with the web and the functionality
+                                we need to provide for each group. 
+                            </p>
+                        </li>
+                        <li>
+                            <p className="bullet-point-line margin-top-20">
+                                Follow good coding practices.
+                            </p>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong className="margin-top-20">
+                            If we do our part, then the browser and the assistive technologies can do theirs!
+                        </strong>
+                    </p>
                 </div>
 
                 {/* ***************WHY Accessibility***************** */}
