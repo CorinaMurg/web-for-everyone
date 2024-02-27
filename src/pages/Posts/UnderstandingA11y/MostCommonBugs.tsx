@@ -39,7 +39,7 @@ export default function MostCommonBugs() {
             <BackLinks 
                 secondLink="Understanding Accessibility"
                 href="/resources#understanding-accessibility" 
-                current="The Most Common Accessibility Bugs"
+                current="The Most Common A11y Bugs"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
