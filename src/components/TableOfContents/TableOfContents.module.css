@@ -5,20 +5,17 @@
     font-family: inherit;
     font-size: 0.9rem;
     font-weight: 400;
-    letter-spacing: 2px;
     position: sticky;
     top: 125px; 
     height: 100vh; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 300px;
-    white-space: normal;
 }
+
 
 .table-contents h2 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     font-size: 0.9rem;
@@ -49,6 +46,7 @@
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
     letter-spacing: 0.1px;
+    white-space: nowrap;
 }
 
 .table-contents ul li a:hover {
@@ -94,7 +92,7 @@
         margin-top: 50px;
     }
     .table-contents nav {
-        width: 50%;
+        width: 28rem;
         max-width: none;
         min-width: none;
     }

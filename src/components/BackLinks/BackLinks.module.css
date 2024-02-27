@@ -20,7 +20,7 @@
     border-radius: 5px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .back-links {
         margin-top: 0;
         display: none;
