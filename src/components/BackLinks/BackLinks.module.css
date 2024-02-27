@@ -5,10 +5,7 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin-top: 50px;
-    background-color: var(--text-dark-color);  
-    padding: 15px;
-    max-width: fit-content;
-    border-radius: 5px;
+    
 
 }
 
@@ -17,10 +14,14 @@
     padding-inline-start: 0;
     display: flex;
     align-items: center;
+    background-color: var(--text-dark-color);  
+    padding: 15px;
+    max-width: fit-content;
+    border-radius: 5px;
 }
 
 @media (max-width: 650px) {
-    .back-links ol {
+    .back-links {
         margin-top: 0;
         display: none;
     }
