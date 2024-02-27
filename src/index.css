@@ -11,6 +11,9 @@
     /* --darkBlue-color: #1a73e9; */
     /* --pink-color: #f38ba3; */
     
+    --brightBlue-dark-color: #0074c7;
+    --brightBlue-light-color: #3888FF;
+
     /* Margins */
     --main-margin: 50px;
     --navbar-margin: 32px; 
@@ -35,7 +38,8 @@
     --code-pink-color: #ef6c9a;
     --code-yellow-color: rgb(255, 214, 0);
     --code-blue-color: #00beff;
-    --code-blue-color: hsla(195, 100%, 50%, 0.7);
+    /* --code-blue-color: hsla(195, 100%, 50%, 0.7); */
+    /* --code-blue-color: #3888FF; */
 
     /* Hero Design */
     --hero-lightBlue: #66c2cd;

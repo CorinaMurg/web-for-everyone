@@ -13,18 +13,16 @@ export default function About() {
     useScrollToSection();
     return (
         <div className={styles.about}>
-            <hgroup>
-                <h1>Let's Make It Accessible!</h1>
-                <p className={styles['about--subtitle']}>
-                    Can a screen reader user navigate your site? Can a person with low vision read your content?
-                    With care and accessibility knowledge, we can make the web a better place for everyone. 
-                    Let's start with your portfolio site!
-                </p>
-            </hgroup>
-            
+           
+            <h1>Let's Make It Accessible!</h1>
+            {/* <p className={styles['about--subtitle']}>
+                Can a screen reader user navigate your site? Can a person with low vision read your content?
+                With care and accessibility knowledge, we can make the web a better place for everyone. 
+                Let's start with your portfolio site!
+            </p> */} 
             <div className={styles['about--design']}>
                 <div className={`${styles['rectangle']} ${styles['rectangle-1']}`}>         
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512" >
                         <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm161.5-86.1c-12.2-5.2-26.3 .4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1c-1.4-4.1-2.1-8.3-2.1-12.6V235.5c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6L338.7 175c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
                     </svg>             
                 </div>
@@ -48,8 +46,7 @@ export default function About() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" viewBox="0 0 448 512">
                         <path d="M320 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM204.5 121.3c-5.4-2.5-11.7-1.9-16.4 1.7l-40.9 30.7c-14.1 10.6-34.2 7.7-44.8-6.4s-7.7-34.2 6.4-44.8l40.9-30.7c23.7-17.8 55.3-21 82.1-8.4l90.4 42.5c29.1 13.7 36.8 51.6 15.2 75.5L299.1 224h97.4c30.3 0 53 27.7 47.1 57.4L415.4 422.3c-3.5 17.3-20.3 28.6-37.7 25.1s-28.6-20.3-25.1-37.7L377 288H306.7c8.6 19.6 13.3 41.2 13.3 64c0 88.4-71.6 160-160 160S0 440.4 0 352s71.6-160 160-160c11.1 0 22 1.1 32.4 3.3l54.2-54.2-42.1-19.8zM160 448a96 96 0 1 0 0-192 96 96 0 1 0 0 192z"/>
                     </svg>
-                </div>
-               
+                </div>    
             </div>
             <section className={styles['about--me']}>
                 <div className={styles['about--me--image']}>

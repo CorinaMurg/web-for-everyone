@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 40px;
-    margin-block: 50px;
+    gap: 30px;
+    margin-block: 20px;
     margin-inline: var(--main-margin);
     padding-inline: 70px;
 }
@@ -12,6 +12,14 @@
     text-underline-offset: 5px;
     text-decoration-style: wavy;
     text-decoration-color: var(--blue-color);
+}
+
+/* hgroup {
+    border: 16px solid var(--hero-lightBlue);
+} */
+
+hgroup p { 
+    margin-top: 10px;
 }
 
 .about h1 {
@@ -26,7 +34,7 @@
     font-weight: inherit;
     width: 70%;
     margin-inline: auto;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .about--design {
@@ -36,12 +44,13 @@
     gap: 30px;
 }
 
-.about p {
+.about p:not(:nth-of-type(1)) {
     margin-block: 20px;
 }
 
 .rectangle {
-    padding: 15px;
+    padding: 10px;
+    height: 60px;
     display: flex;
 }
 .rectangle-1 {
@@ -106,13 +115,13 @@
 .about--me {
     display: flex;
     gap: 50px;
-    margin-block: 50px;
+    margin-block: 20px;
 }
 
 
 .about--me--image {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     aspect-ratio: 1/1;  
 }
 

@@ -84,15 +84,16 @@
     z-index: 1;
 }
 
-.article .article--author svg circle {
-    fill: var(--hero-lightBlue);
-}
-/* .article .article--author svg {
+.article .article--author svg {
     display: none;
-} */
+}
+.article:hover .article--author svg,
+.article:focus-within .article--author svg {
+    display: block;
+}
 .article:hover .article--author svg circle,
 .article:focus-within .article--author svg circle {
-    fill: var(--text-dark-color);
+    fill: var(--pinkBright-color);
 }
 
 .article:hover .article--author svg path,

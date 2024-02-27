@@ -89,7 +89,7 @@
     font-weight: 400;
     text-underline-offset: 5px !important;
     text-decoration-style: wavy;
-    text-decoration-color: #fc2083;
+    text-decoration-color: var(--yellow-color);
     /* padding: 2px; */
     /* text-decoration-thickness: 6px; */
 }
@@ -101,7 +101,7 @@
 }
 
 .we-can-help svg path {
-    fill: #fc2083;
+    fill: var(--yellow-color);
 }
 
 /* .we-can-help li:nth-of-type(3) a span:nth-of-type(2) {
