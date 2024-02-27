@@ -199,7 +199,7 @@ a:focus-visible {
     color: var(--cream-color);
 }
 
-.continue-to-article {
+/* .continue-to-article {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -209,9 +209,9 @@ a:focus-visible {
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-}
+} */
 
-.continue-to-article svg[id="arrow"] circle {
+/* .continue-to-article svg[id="arrow"] circle {
     fill: var(--hero-lightBlue)
 }
 .continue-to-article svg[id="bug"] {
@@ -234,7 +234,7 @@ a:focus-visible {
 .continue-to-article:focus-visible svg[id="bug"] {
     display: block; 
     fill: var(--pinkBright-color);
-}
+} */
 
 .continue-to-article-container {
     display: flex;

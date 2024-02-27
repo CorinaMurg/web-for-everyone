@@ -87,21 +87,22 @@
 .article .article--author svg circle {
     fill: var(--hero-lightBlue);
 }
-.article .article--author svg {
+/* .article .article--author svg {
     display: none;
-}
-.article:hover .article--author svg {
-    display: inline-block;
+} */
+.article:hover .article--author svg circle,
+.article:focus-within .article--author svg circle {
+    fill: var(--text-dark-color);
 }
 
+.article:hover .article--author svg path,
+.article:focus-within .article--author svg path  {
+    fill: var(--text-light-color);
+}
 
 .article:focus-within:not(:active) {
     outline: 3px dashed var(--text-dark-color);
     outline-offset: 4px;
-}
-
-.article:focus-within .article--author svg {
-    display: inline-block;
 }
 
 .article:focus-within:not(:active) .article--description{
