@@ -1,0 +1,116 @@
+
+.a11y-banner {
+    /* grid-row: 2 / 3; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+
+
+.rectangle {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+}
+.rectangle-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: var(--hero-lightBlue);
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-1 svg {
+    fill: var(--text-dark-color);
+}
+
+.rectangle-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-2 svg {
+    fill: var(--text-dark-color);
+}
+
+.rectangle-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: var(--yellow-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-3 svg {
+    fill: var(--text-dark-color);
+}
+
+.rectangle-4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    background-color: var(--hero-darkGreen);
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-4 svg {
+    fill: var(--text-dark-color);
+}
+
+.rectangle-5 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    background-color: var(--hero-orange);
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-5 svg {
+    fill: var(--text-dark-color);
+}
+
+@media screen and (max-width: 600px) {
+    .a11y-banner {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .a11y-banner {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+    }
+    .rectangle {
+        padding: 5px;
+    }
+
+    .rectangle-1 {
+        grid-column: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle-1 svg {
+        width: 37px;
+        height: 37px;
+        align-self: center;
+    }
+
+    .rectangle-2 {
+        grid-column: 2 / 3;
+    }
+    .rectangle-3 {
+        grid-column: 3 / 4;
+    }
+    .rectangle-4 {
+        grid-column: 4 / 5;
+    }
+    .rectangle-5 {
+        grid-column: 5 / 6;
+    }
+}

@@ -8,15 +8,15 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     /* text-decoration-color: var(--code-blueDark-color); */
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
 }
 
 a:hover {
     color: var(--text-dark-color);
 }
 
-.article-content a:hover {
-    text-underline-offset: 5px;
+.article-content a:hover,
+.about a:hover {
     text-decoration-style: wavy;
     text-decoration-color: var(--brightBlue-dark-color);
 }
