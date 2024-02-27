@@ -846,14 +846,14 @@ ul[class^="checkmark-list"] li {
     }
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
     .resources .article-heading-desktop,
     .article-heading-desktop {
         font-size: 2.6rem; 
     }
-}
+} */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
     .article-container {
         display: flex;
         flex-direction: column;

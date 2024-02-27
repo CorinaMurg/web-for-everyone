@@ -228,13 +228,14 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
     .resources {
         display: flex;
         flex-direction: column;
     }
 
     .resources--table-contents {
+        width: 100%;
         position: relative;
         height: auto;
         top: 0;
@@ -243,8 +244,19 @@
         font-size: 1.1rem;
         font-weight: 700;
     }
+
+    .resources--table-contents nav {
+        width: 50%;
+        max-width: none;
+        min-width: none;
+    }
+
+    .resources--table-contents ul {
+        padding: 25px;
+    }
+
     .section-content {
-        width: 90%;
+        width: 75%;
     }
 }
 

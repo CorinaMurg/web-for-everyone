@@ -77,14 +77,14 @@
     border-radius: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
     .table-contents {
         position: relative;
         height: auto;
         top: 0;
         margin-bottom: 0;
         width: 100%;
-        max-height: 600px;
+        /* max-height: 600px; */
     }
 
     .table-contents h2 {
@@ -92,6 +92,14 @@
         font-weight: 700;
         margin-bottom: 20px;
         margin-top: 50px;
+    }
+    .table-contents nav {
+        width: 50%;
+        max-width: none;
+        min-width: none;
+    }
+    .table-contents ul {
+        padding: 25px;
     }
 }
 
