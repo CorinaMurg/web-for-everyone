@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
+    
 }
 
 
@@ -71,6 +72,12 @@
 
 .rectangle-5 svg {
     fill: var(--text-dark-color);
+}
+@media screen and (max-width: 930px){
+    .a11y-banner {
+        max-width: calc(100% - var(--main-margin));
+    }
+   
 }
 
 @media screen and (max-width: 600px) {

@@ -312,7 +312,8 @@ export default function WhatIsA11y() {
                     </p>
                     <p> 
                         This shift to digital has been transformative for people with disabilities as well. 
-                        For them, <strong>the web opens doors to autonomy and ease</strong>, and can remove many of the challenges
+                        For them as well, <strong>access to the web is about quality of life. For them especially, it's also about privacy.
+                        It opens doors to autonomy and ease</strong>, and can remove many of the challenges
                         associated with their impairments.
                     </p>    
                     <p> 

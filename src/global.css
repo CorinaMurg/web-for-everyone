@@ -6,6 +6,7 @@ a {
     letter-spacing: 0.3px;
     font-weight: 500;
     text-decoration: underline;
+    text-decoration-color: var(--code-blueDark-color);
     text-decoration-thickness: 2px;
     /* text-decoration-color: var(--code-blueDark-color); */
     text-underline-offset: 5px;
@@ -16,9 +17,11 @@ a:hover {
 }
 
 .article-content a:hover,
-.about a:hover {
+.about a:hover,
+.feedback a:hover {
     text-decoration-style: wavy;
-    text-decoration-color: var(--brightBlue-dark-color);
+    text-decoration-color: var(--code-blueDark-color);
+    /* text-decoration-color: var(--hero-darkBlue); */
 }
 
 a:focus-visible {

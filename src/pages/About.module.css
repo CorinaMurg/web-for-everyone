@@ -4,8 +4,8 @@
     grid-template-rows: auto auto auto;
     gap: 30px;
     margin-block: 20px;
-    margin-inline: var(--main-margin);
-    padding-inline: 70px;
+    margin-inline: auto;
+    width: 55rem;
 }
 
 .about h1 {
@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 40px;
-    margin-left: 80px;
+    margin-left: 40px;
     width: 65%;
 }
 
@@ -86,11 +86,15 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .about--me {
-        gap: 10px;
+@media screen and (max-width: 930px) {
+    .about {
+        width: 100%;
+        margin-inline: var(--main-margin);
     }
     
+    .about--me {
+        width: calc(100% - var(--main-margin));
+    }
     .about--me--text {
         margin-left: 20px;
     }
