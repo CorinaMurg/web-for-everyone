@@ -5,7 +5,7 @@
     --cream-color: #fbf6ea;
     --text-dark-color: #151f28;
     --blue-color: #1a73c6;
-    --code-blueDark-color: #00779E;
+    --code-blueDark-color: #3497A2;
     --pinkBright-color: #de0265;
     --pink-for-dark-bg-color: #fc2083;
     /* --darkBlue-color: #1a73e9; */
@@ -38,6 +38,8 @@
     --code-pink-color: #ef6c9a;
     --code-yellow-color: rgb(255, 214, 0);
     --code-blue-color: #00beff;
+    --code-blue-color: #5dd4e1;
+    /* --code-blue-color: #66c2cd; */
     /* --code-blue-color: hsla(195, 100%, 50%, 0.7); */
     /* --code-blue-color: #3888FF; */
 

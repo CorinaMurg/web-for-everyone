@@ -320,7 +320,7 @@ a:focus-visible {
 }
 
 .external-linksvg-wrap svg {
-    fill: var(--brightBlue-dark-color);
+    fill: var(--code-blueDark-color);
     height: 1rem;
     line-height: 1;
 }
