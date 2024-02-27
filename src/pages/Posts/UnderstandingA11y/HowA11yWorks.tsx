@@ -457,18 +457,19 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="warning">
                         <WarningTriangle/>
-                        <p>These elements must have a <span className="bold">
-                            descriptive accessible name</span>:
+                        <p>
+                            These elements must have a 
+                            <strong> descriptive accessible name</strong>:
                         </p>          
                         <ul>
                             <li>
-                                <p className="bullet-point-line"><span className="bold">links</span> and <span className="bold"> buttons</span></p>
+                                <p className="bullet-point-line"><strong>links</strong> and <strong> buttons</strong></p>
                             </li>  
                             <li>
-                                <p className="bullet-point-line"><span className="bold">all form elements</span>, like inputs or radio buttons</p>
+                                <p className="bullet-point-line"><strong>all form elements</strong>, like inputs or radio buttons</p>
                             </li>
                             <li>
-                                <p className="bullet-point-line"><span className="bold">headings</span></p>
+                                <p className="bullet-point-line"><strong>headings</strong></p>
                             </li> 
                         </ul>    
                     </div>    
@@ -522,24 +523,24 @@ export default function MostCommonBugs() {
                                     </p>
                                     <p>    
                                         The tool has a <strong>Mouse Grid</strong> feature to help users select 
-                                        and interact with elements on their screen using voice commands. 
+                                        and interact with elements on the page. 
                                     </p>
                                     <p>
                                         Ideally, the user can rely on visible text to learn the name of an 
                                         interactive element, and then activate it with "Click (name of element)".
-                                        If the name is not available or obvious, they can use the Mouse grid
+                                        If the name is not visible or obvious, they can use the Mouse grid
                                         feature.
                                     </p>
                                     <p>
                                         Here are the steps they would follow:
                                     </p>
                                     <p>
-                                        <strong>1. Activating Mouse Grid</strong>:
+                                        <strong>1. Activate the Mouse Grid</strong>:
                                         The command "Mouse Grid" activates the feature. 
                                         This will overlay a grid with numbered areas across their entire screen.
                                     </p>
                                     <p>
-                                        <strong>2. Using Mouse Grid</strong>:
+                                        <strong>2. Use the Mouse Grid</strong>:
                                         Once the grid is visible, they can move the pointer to a specific area 
                                         by saying the number associated with that area. For example, if they want 
                                         to move the pointer to the area labeled '3', they just say "Three."
@@ -550,11 +551,11 @@ export default function MostCommonBugs() {
                                         They continue to dictate the numbers of the smaller areas until the pointer is positioned over the element they wish to select or interact with.
                                     </p>
                                     <p>
-                                        <strong>4. Clicking and Interacting</strong>:
+                                        <strong>4. Click and Interact</strong>:
                                         Once the pointer is over the desired element, they can say commands like “Click,” “Double Click,” “Right Click,” etc., to interact with that element as they would with a mouse.
                                     </p>
                                     <p>
-                                        <strong>5. Closing Mouse Grid</strong>:
+                                        <strong>5. Close Mouse Grid</strong>:
                                         If they wish to exit the Mouse Grid, they simply say "Cancel," and the Mouse Grid will close.
                                     </p>
                                 </details>
@@ -626,6 +627,11 @@ export default function MostCommonBugs() {
                             <p className="margin-top-20 padding-left-20">
                                 It references the ID of another element that has visual text. The text of that 
                                 element then becomes the name of the current element. 
+                            </p>
+                            <p className="margin-top-20 padding-left-20 white-bg">
+                                For example, when using a button with an icon and no text, but there is a heading
+                                nearby that describes the purpose of the button, you could use <span> </span>
+                                <code>aria-labelledby="id of the heading"</code> to provide the name for the button.
                             </p>
 
                             <p className="bullet-point-line margin-top-20">

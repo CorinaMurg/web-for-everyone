@@ -165,7 +165,7 @@ export default function MakeItAccessible() {
                             <div className="warning">
                                 <WarningTriangle />
                                 <p>  
-                                    When building a complex website, your ccessibility 
+                                    When building a complex website, your accessibility 
                                     audit will have to include:
                                 </p>
                                 <p className="bullet-point-line">
@@ -204,7 +204,7 @@ export default function MakeItAccessible() {
                         </dl>
                       
                         <dl className={`${styles['numbers']} margin-top-20`}>
-                            <dt><code><span className="code-purple-color">Text 24px or larger:</span></code></dt>
+                            <dt><code><span className="code-pink-color">Text 24px or larger:</span></code></dt>
                             <dd><code>min. contrast ratio of <span className="white-bg-dark-text">3.0:1</span></code></dd>
                         </dl>
                     </div>
