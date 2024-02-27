@@ -164,7 +164,9 @@
 }
 
 .resources--table-contents nav {
-    width: 20rem;
+    /* width: 20rem; */
+    max-width: fit-content;
+    min-width: 18.5rem;
 }
 
 .resources--table-contents ul {
