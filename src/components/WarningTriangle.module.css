@@ -22,11 +22,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 670px) {
+    
     .warning-triangle {
-        left: 15px;
-        top: 15px;
+        left: var(--main-margin);
+        top: 30px;
     }
+    
+}
+@media screen and (max-width: 510px) {
     .warning-triangle::after {
         left: -2.5px;
     }

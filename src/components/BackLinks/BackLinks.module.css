@@ -17,7 +17,7 @@
     background-color: var(--text-dark-color);  
     padding: 15px;
     max-width: fit-content;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 @media (max-width: 700px) {

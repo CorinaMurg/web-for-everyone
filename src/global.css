@@ -187,7 +187,7 @@ a:focus-visible {
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: var(--cream-color);
     margin-bottom: 30px;
 }
@@ -204,6 +204,8 @@ a:focus-visible {
     /* border-radius: 5px; */
     color: var(--cream-color);
 }
+
+
 
 /* .continue-to-article {
     display: flex;
@@ -415,7 +417,7 @@ h4 {
     width: 100%;
     border: 1.7px solid gray;
     margin-top: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .highlight-no-heading {
@@ -433,6 +435,13 @@ h4 {
 }
 
 .highlight-small {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: fit-content;
+}
+
+.highlight-inline {
     padding: 10px 20px;
     margin-top: 20px;
     margin-left: 20px;
@@ -771,7 +780,6 @@ ul[class^="checkmark-list"] li {
     padding: 10px 30px 10px 60px;
     width: 100%;
     border: 1.7px solid var(--pinkBright-color);
-    border-radius: 5px;
     position: relative;
     margin-block: 30px;
 }
@@ -878,7 +886,25 @@ ul[class^="checkmark-list"] li {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .highlight > .code, .code, .code-small, .highlight:not(.highlight-inline), .highlight-small, .warning {
+        width: calc(100% + 2*var(--main-margin));
+        margin-inline: calc((-1)*var(--main-margin));
+        padding-inline: var(--main-margin);
+    }
+
+    .highlight:not(.highlight-inline), .highlight-small, .warning {
+        border-inline: none;
+    }
+
+    .warning {
+        padding-top: 60px;
+    }
   
+    iframe {
+        width: calc(100% + 2*var(--main-margin));
+        margin-inline: calc((-1)*var(--main-margin));
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -921,18 +947,6 @@ ul[class^="checkmark-list"] li {
 @media screen and (max-width: 530px) {
     .article-container .subtitle {
         line-height: 1.3;
-    }
-
-    .code, .code-small {
-        padding-left: 10px;
-    }
-
-    .highlight, .highlight-small {
-        padding: 10px;
-    }
-
-    .warning {
-        padding: 30px 10px 10px 15px;
     }
 }
 

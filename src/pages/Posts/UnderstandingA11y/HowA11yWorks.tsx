@@ -511,10 +511,10 @@ export default function MostCommonBugs() {
                                 tell what the name of the element is. So, use it with an icon linking to your
                                 LinkedIn profile, but avoid it with an icon that is less recognizable.
                             </p>
-                            <div className="highlight highlight-small">
+                            <div className="highlight highlight-inline">
                                 <details>
                                     <summary>
-                                        Select an element using speech recognition software: an example
+                                        Selecting an element using speech recognition software: an example
                                     </summary>
                                     <p>
                                         Dragon NaturallySpeaking is the most popular speech recognition software, 

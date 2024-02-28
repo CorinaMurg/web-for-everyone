@@ -86,19 +86,23 @@
     }
 }
 
+
+
 @media screen and (max-width: 930px) {
     .about {
-        width: 100%;
+        width: calc(100% - var(--main-margin));
         margin-inline: var(--main-margin);
     }
-    
-    .about--me {
+
+    .about-me {
         width: calc(100% - var(--main-margin));
     }
-    .about--me--text {
-        margin-left: 20px;
+    .about-me h2,
+    .about-me p {
+        width: calc(100% - var(--main-margin));
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .about--me {
