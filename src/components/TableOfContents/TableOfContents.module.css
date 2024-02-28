@@ -117,5 +117,8 @@
     .table-contents ul {
         margin-inline: 0;
         padding-inline: var(--main-margin);
+        gap: 30px;
+        height: auto;
+        padding-block: 25px;
     }
 }
