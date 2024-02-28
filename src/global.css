@@ -201,7 +201,7 @@ a:focus-visible {
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: var(--cream-color);
 }
 

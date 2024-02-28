@@ -69,7 +69,8 @@ export default function WhatIsA11y() {
                         Becoming a web developer comes with a cool superpower: to create sites and apps
                         that <span className="yellow-bg">everyone</span>,
                         including people with disabilities, can easily navigate. 
-                        
+                    </p>
+                    <p>
                         When you put this superpower to use, you make accessibility happen.
                         All visitors, regardless of how they access your finished product, will be able to navigate 
                         it and understand it.
@@ -304,7 +305,7 @@ export default function WhatIsA11y() {
                     <p>
                         In our world, digital connectivity is key, and your finished product should allow everyone 
                         the ability to easily engage with it.  The web is not just a form of entertainment; it's a
-                        source of information and services that are integral to our daily life.
+                        source of information and services that are part of our daily life.
                     </p>
                     <p>
                         When was the last time you booked a flight with a travel agency? Or mailed a check to pay 
@@ -312,8 +313,7 @@ export default function WhatIsA11y() {
                     </p>
                     <p> 
                         This shift to digital has been transformative for people with disabilities as well. 
-                        For them as well, <strong>access to the web is about quality of life. For them especially, it's also about privacy.
-                        It opens doors to autonomy and ease</strong>, and can remove many of the challenges
+                        For them, access to the web opens doors to autonomy and ease, and can remove many of the challenges
                         associated with their impairments.
                     </p>    
                     <p> 
@@ -372,11 +372,11 @@ export default function WhatIsA11y() {
                         </Link>
                     </p>
 
-                    <p>
+                    {/* <p>
                         When we actively embrace accessibility and make it essential
                         to our web development learning and work, we can make a difference.
                         Let's build a web that's open to <span className="yellow-bg">everyone</span>!
-                    </p>
+                    </p> */}
                     
                 </div>
             </div>
