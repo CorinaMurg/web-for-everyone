@@ -27,7 +27,7 @@
 
 .hero--design {
     width: 100%;
-    height: 13.75rem;
+    height: 220px;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     display: flex;
@@ -116,8 +116,8 @@
 }
 
 .hero--design img {
-    /* width: 100%; */
-    height: 13.75rem;
+    width: 528px;
+    height: 220px;
     aspect-ratio: 2.4 / 1;
     object-fit: contain;
     margin-block: 5px;
