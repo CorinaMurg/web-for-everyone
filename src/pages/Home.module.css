@@ -360,7 +360,9 @@
 
 @media screen and (max-width: 600px) { 
     .mini-articles ul {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
@@ -506,6 +508,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+@media screen and (max-width: 600px) { 
+    .mini-article--image {
+        width: calc(100% + 2*var(--main-margin));
+        margin-inline: calc((-1)*var(--main-margin));
+        padding-inline: var(--main-margin);
+    }
+    
 }
 
 .mini-article--image-1 {
