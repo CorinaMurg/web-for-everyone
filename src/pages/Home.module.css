@@ -42,7 +42,7 @@
 .beta {
     position: absolute;
     width: 30rem;
-    top: 5px;
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--text-dark-color);
@@ -55,6 +55,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
 }
 
 @media screen and (max-width: 550px) {
@@ -73,6 +74,7 @@
     font-size: 1rem;
     font-weight: 400;
     text-underline-offset: 5px;
+    text-decoration-color: var(--pinkBright-color);
 }
 
 .beta a:hover {
