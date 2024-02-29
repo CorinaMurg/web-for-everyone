@@ -1,64 +1,41 @@
 
-The goal os this 
-<span className="pink-text bold">&#x2714; </span> 
-ScrollToTop for Similar
-Accessibility statement
-Nav modal
-Dark Mode
-Plag
+The goal of this project is to teach junior developers about accessibility, 
 
-BACK TO TOP BUTTON
-Site Map
-Like hearts
-Change <a> to <Link> and add empty <a> to headings
-import fonts
-Change layout to include aside for most pages
-Should TOC be nav or aside
-Use <nav> for footer and header links?
-Navigation on Small screens: add COntact, make font larger
+Tech Stack: React, Typescript, Playwright, CSS, HTML5
 
-Explain A11y
-ReadMe
-Picture Corina
-More resources for components
-check toc on mdn if hidden
-bUTTON ON About: a11y chat
-Background LinkedIn
-https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
-Add WeCanHelp to tablet mode
-ABOUT EACH ARTICLE: article should be div or article: 
-https://www.smashingmagazine.com/2020/01/html5-article-section/
-https://tink.uk/the-difference-between-aria-label-and-aria-labelledby/
-TABLE OF CONTENTS
-- is "out of list" important
-- add a skip-table-contents link?
-SCREEN READER 
-- pronounces "read" incorrectly as in Recommended read
-https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html
-VPAT https://accessibility.deque.com/hubfs/Sample-VPAT.pdf
+Aceessibility goals: WCAG 2.1
+
+1. Features to add:
+Dark mode
+
+2. Content to add
+
+UNDERSTANDING A11Y series:
+Legal aspect of inaccessibility
+Intro to WCAG
+Testing for A11y
+Your users
+
+YOUR DIGITAL PRESENCE series:
+Accessible contact form
+Pixels or rem?
+Size of clickable area
+
+SITE MAP
+
+BUG REPORT 
+button in Footer
+
+BACK TO TOP
+button for all screen sizes
+
+LIKE icon
+
+ACCESSIBLE COMPONENTS
+add more examples
 
 
-Extra Articles
-12. Your Users
-13. Is inaccessible ilegal?
-14. WCAG
-15. Forms (ask Adam?)
-New Bugs:
-- dark mode
-- rem not px
-- size of clikable area (head pointers)
 
-
-JOB
-1. Typescript + Playwright
-2. Playwright.config
-3. Axe devTools Linter
-
-QUESTIONS
-svg: use desc or title
-arial-label for soc media icons OR visually-hiddden class
-when one element is not accessible, provide an accessible version
-when to create a thread
 
 
 
