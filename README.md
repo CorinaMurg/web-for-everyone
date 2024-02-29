@@ -1,3 +1,5 @@
+
+The goal os this 
 <span className="pink-text bold">&#x2714; </span> 
 ScrollToTop for Similar
 Accessibility statement

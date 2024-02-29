@@ -145,7 +145,7 @@ export default function MakeItAccessible() {
                 <div className={`section ${styles['title']} scroll-target`} id="title-element">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">08</span>
-                        <h2>Title Element</h2>
+                        <h2>The Title Element</h2>
                     </div>
 
                     <div className="code">
@@ -634,7 +634,7 @@ export default function MakeItAccessible() {
                             Use <code>&lt;h1&gt;</code> at the start of your content.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
-                            Don't skip heading levels. Use <code>&lt;h1&gt;</code> to 
+                            Don't skip heading levels. Use <code>&lt;h1&gt;</code> to <span> </span>
                             <code>&lt;h6&gt;</code> in descending order.
                         </p>
                         <p className="bullet-point-line white-bg margin-top-20">
