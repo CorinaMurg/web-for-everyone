@@ -99,8 +99,7 @@ export default function Home() {
                                     to={article.link} className={styles['mini-article--link']} 
                                     onClick={() => { scrollToTop() }}
                                 >   
-                                    <h3>
-                                        
+                                    <h3>            
                                         {article.title}
                                     </h3>
                                 </Link>

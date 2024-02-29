@@ -123,7 +123,7 @@
 
 .we-can-help a:focus-visible {
     text-decoration: none;
-    outline: 3px dashed var(--yellow-color);
+    outline: 2px dashed var(--yellow-color);
     outline-offset: 2.5px;
 }
 

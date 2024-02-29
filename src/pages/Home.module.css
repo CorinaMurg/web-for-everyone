@@ -444,6 +444,10 @@
     outline: 3px dashed var(--text-dark-color);
 }
 
+.mini-article:focus-within .mini-article--link {
+    outline: none;
+}
+
 .mini-article:active {
     outline: none;
 }
