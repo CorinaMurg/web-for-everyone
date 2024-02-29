@@ -246,7 +246,7 @@
     }
 
     .resources--table-contents nav {
-        width: 50%;
+        width: 28rem;
         max-width: none;
         min-width: none;
     }
@@ -261,9 +261,17 @@
 }
 
 @media screen and (max-width: 670px) {
+    .resources {
+        margin-inline: 0;
+    }
+
+    .resources h1,
+    .resources-content{
+        margin-inline: var(--main-margin);
+    }
+    
     .resources--table-contents {
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
+        width: 100%;
     }
     .resources--table-contents nav {
         width: 100%;

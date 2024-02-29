@@ -129,7 +129,7 @@ footer li {
 
 @media (max-width: 650px) {
     footer {
-        padding: 2rem calc(var(--main-margin));
+        padding: 32px calc(var(--main-margin));
     }
     .footer-top {
         flex-direction: column;
