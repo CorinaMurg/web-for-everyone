@@ -121,4 +121,8 @@
         height: auto;
         padding-block: 25px;
     }
+
+    /* .table-contents ul li a {
+        letter-spacing: -0.1px;
+    } */
 }

@@ -83,6 +83,8 @@ export default function WhatIsA11y() {
                     <p>
                         If you have good sight and hand mobility, you can rely on them to navigate
                         to a webpage and check out its content (probably with the help of a mouse or a keyboard). 
+                    </p>
+                    <p>
                         For the same purpose, a person who is blind may use a screen reader and a keyboard, while a 
                         person with good sight but limited or no hand mobility might use speech recognition software.
                     </p>    
