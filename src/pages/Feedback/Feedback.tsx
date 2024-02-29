@@ -51,7 +51,7 @@ export default function Feedback() {
             </p>
             <p className={styles.contact}>
                 <span><strong>Contact</strong>:</span>
-                <span className={styles['contact--email']}> info@webforeveryone.us</span>
+                <span className={styles['contact--email']}> corina.murg@gmail.com</span>
             </p>
             <p>
                 ❤️ Thank you for helping us make the web accessible for everyone.

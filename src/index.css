@@ -67,6 +67,11 @@
     color: var(--pinkBright-color);
 }
 
+.yellow-text {
+    color: var(--yellow-color);
+
+}
+
 /* .yellow-bg {
     background-color: var(--yellowFaded-color);
     padding: 0 5px;

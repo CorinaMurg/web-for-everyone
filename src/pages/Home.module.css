@@ -47,9 +47,8 @@
     transform: translateX(-50%);
     background-color: var(--text-dark-color);
     color: var(--text-light-color);
-    padding: 3px 10px;
+    padding: 10px;
     border: 3px solid var(--text-dark-color);
-    border-radius: 5px;
     z-index: 1;
     display: flex;
     gap: 10px;
@@ -97,8 +96,8 @@
     background-color: var(--cream-color);
     border: none;
     margin: 0;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-image: url(/assets/xmark-solid.svg);
     background-repeat: no-repeat; 
     background-position: center;
