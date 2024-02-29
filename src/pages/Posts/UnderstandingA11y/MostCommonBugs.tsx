@@ -169,10 +169,10 @@ export default function MostCommonBugs() {
 
                     <ul className="bullet-point-list padding-left-20">
                         <li>
-                            They accounted for 96% of all bugs found!
+                            <p>They accounted for 96% of all bugs found!</p>
                         </li>
                         <li>
-                            They've been the "most common bugs" for the last 5 years!
+                            <p>They've been the "most common bugs" for the last 5 years!</p>
                         </li>
 
                     </ul>
@@ -351,16 +351,15 @@ export default function MostCommonBugs() {
                             visible text, <code>aria-label</code>, <code>aria-labelledby</code>, or <code>alt</code>.
                         </p>
                         <p className="fake-heading-p">Consequences of empty buttons</p>
-                        <ul className="bullet-point-list">
-                            <li>
-                                A screen reader will announce this button as ... "button", and no other 
-                                information attached. Users would not be aware of its purpose.
-                            </li>
-                            <li>
-                                Users relying on speech commands would not be able to trigger the action 
-                                on the button.
-                            </li>
-                        </ul>
+                        <p className="bullet-point-line">
+                            A screen reader will announce it simply as "button", and no other 
+                            information attached. Users would not know what is the purpose of the button.
+                        </p>
+                        <p className="bullet-point-line">
+                            Users relying on speech commands would have to go throught extra steps 
+                            to trigger the action on the button.
+                        </p>
+                        
                         <br/>
                     </div>
                 </div>
@@ -396,24 +395,10 @@ export default function MostCommonBugs() {
                             </code>
                         </div>
                     
-                        <p className="fake-heading-p margin-top-30">
-                            Issue <span aria-hidden="true"> 🛠️</span>
-                        </p>
                         <p className="white-bg">
-                            The input is wrapped in label tags without inner text. Attributes 
-                            like <code>aria-label</code> or <code>aria-labelledby</code> <span> </span>
-                            that could be used to provide an accessible name are not present.
+                            The input is wrapped in label tags without inner text. There's no
+                            <code>visually-hidden</code> text or any ARIA attribute to provide an accessible name.
                         </p>
-                        <p className="fake-heading-p">Consequences of missing input labels</p>
-                        <ul className="bullet-point-list">
-                            <li>
-                                Screen reader users will not understand the purpose of the input
-                            </li>
-                            <li>
-                                Users relying on speech commands do not have a way to select the input.
-                            </li>
-                        </ul>
-                        <br/>
                     </div>
                 </div>
 

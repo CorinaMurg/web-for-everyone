@@ -499,6 +499,9 @@ h4 {
     width: 100%; 
 } */
 
+li {
+    font-weight: 500;
+}
 .margin-block-0 {
     margin-block: 0;
 }
@@ -826,12 +829,12 @@ ul[class^="checkmark-list"] li {
     border-radius: 2px;
 }
 
-/* .yellow-bg-dark-text {
+.yellow-bg-dark-text {
     background-color: var(--yellowFaded-color);
     color: var(--text-dark-color);
     padding: 1px 3px;
     border-radius: 4px;
-} */
+}
 
 
 @media screen and (max-width: 1050px) {

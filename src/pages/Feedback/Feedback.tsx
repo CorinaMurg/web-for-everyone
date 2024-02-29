@@ -44,7 +44,7 @@ export default function Feedback() {
             </h2>
             <p>
                 If you experience accessibility barriers or notice any bugs while using our website, 
-                please let us know. Your feedback is valuable in helping us improve our site's accessibility. 
+                please let us know. 
             </p>
             <p>
                 Please include a description of the issue, the page URL, or any relevant details. 
@@ -54,7 +54,7 @@ export default function Feedback() {
                 <span className={styles['contact--email']}> corina.murg@gmail.com</span>
             </p>
             <p>
-                ❤️ Thank you for helping us make the web accessible for everyone.
+                ❤️ Thank you ❤️
             </p>
         </div>
     )

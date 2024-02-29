@@ -393,7 +393,8 @@ export default function MakeItAccessible() {
                     </p>
                     <p className="bullet-point-line white-bg">
                         Does your image contain <strong>essential information</strong> that is not available in the text? 
-                        Then add a short description in the <code>alt</code> attribute.
+                        Then add a short description in the <code>alt</code> attribute. No need to add the word "image"
+                        or "picture" in the description, as screen readers announce it as an image by default.
                     </p> 
                     <p className="white-bg">
                         Either way, it's important to <strong>add the <code>alt</code> attribute to all images</strong>. 
@@ -451,24 +452,15 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         The link to the LinkedIn profile
-                        contains an icon and no visible text. Here are just a couple of ways
-                        in which it would impact users relying on assitive tech:
-                    </p>
-                    <p className="bullet-point-line">
-                        A screen reader will announce part of the url 
+                        contains an icon and no visible text. A screen reader will announce part of the url 
                         (usually starting with the path segment)
                         and provide no information about the destination of the link. 
-                    </p>
-                        
-                    <p className="bullet-point-line">
-                        Users relying on speech commands will not be able to activate the link. The command
-                        <strong> "click LinkedIn"</strong> would fail because the software would 
-                        not recognize the name "LinkedIn". 
                     </p>
                     <p>
                         The problem: <strong>the link has no accessible name</strong>!
                         Assitive technologies recognize an interactive element by its accessible name, but
-                        the browser can not compute it here since none of the attributes that could provide one is present.
+                        the browser can not compute it here since none of the attributes that could provide one 
+                        is present.
                     </p>
                     <p>
                         Follow this link to <span> </span>
@@ -622,12 +614,11 @@ export default function MakeItAccessible() {
                         an easy way if you are a sighted developer to test if a label is properly associated 
                         with an input.
                     </p>
-
                     <p>
                         <strong>Which method should you use?</strong>
                     </p>
                     <p className="white-bg">
-                        Both are valid, but the explicit method (label wraping the input) will cause 
+                        Both are valid, but the explicit method (label wrapping the input) will cause 
                         problems for users relying on speech commands, specifically those using the 
                         Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
                         software, it's best to <strong>use the implicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
@@ -648,7 +639,7 @@ export default function MakeItAccessible() {
               
                     <h3 className="white-bg">Use a valid language in the <code>lang</code> attribute</h3>
                     <p>
-                        It enables screen readers to correctly identify the language of a webpage's content, so 
+                        It enables screen readers to correctly identify the language of a webpage, so 
                         it can use the correct pronunciation.
                     </p>
                     

@@ -517,9 +517,8 @@ export default function MostCommonBugs() {
                                         Selecting an element using speech recognition software: an example
                                     </summary>
                                     <p>
-                                        Dragon NaturallySpeaking is the most popular speech recognition software, 
-                                        and it’s used by people with mobility issues or by those who prefer using 
-                                        voice commands over a traditional mouse and keyboard. 
+                                        Dragon NaturallySpeaking is the most popular speech recognition software. 
+                                        People with mobility issues can rely on it to navigate the web using voice commands.
                                     </p>
                                     <p>    
                                         The tool has a <strong>Mouse Grid</strong> feature to help users select 
@@ -544,15 +543,18 @@ export default function MostCommonBugs() {
                                         Once the grid is visible, they can move the pointer to a specific area 
                                         by saying the number associated with that area. For example, if they want 
                                         to move the pointer to the area labeled '3', they just say "Three."
-                                        After they say a number, the grid will zoom into the selected area and redraw a smaller, more detailed grid. This allows for more precise selection.
+                                        After they say a number, the grid will zoom into the selected area and 
+                                        redraw a smaller, more detailed grid. This allows for more precise selection.
                                     </p>
                                     <p>
                                         <strong>3. Repeat</strong>:
-                                        They continue to dictate the numbers of the smaller areas until the pointer is positioned over the element they wish to select or interact with.
+                                        They continue to dictate numbers of smaller areas until the 
+                                        element they wish to select is isolated in a single area.
                                     </p>
                                     <p>
                                         <strong>4. Click and Interact</strong>:
-                                        Once the pointer is over the desired element, they can say commands like “Click,” “Double Click,” “Right Click,” etc., to interact with that element as they would with a mouse.
+                                        They can say commands like “Click,” “Double Click,” “Right Click,” etc., to interact with 
+                                        that element as they would with a mouse.
                                     </p>
                                     <p>
                                         <strong>5. Close Mouse Grid</strong>:

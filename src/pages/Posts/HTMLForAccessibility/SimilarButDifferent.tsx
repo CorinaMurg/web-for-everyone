@@ -247,22 +247,25 @@ export default function SimilarButDifferent() {
                         but there is no added value from it when clicking on a link.
                     </p>
                     <p>
-                        This behavior is designed to aid accessibility for keyboard 
-                        users and improve user experience for all visitors, without cluttering the interface 
+                        This behavior improves everyone's experience, without cluttering the interface 
                         for mouse users.
                     </p>
 
                     <p>
                         When you override the default focus styles using 
-                        the <code className="pink-bg-white-text">:focus</code> pseudo-class, your custom styles will apply to all 
+                        the <code className="pink-bg-white-text">:focus</code> pseudo-class, your custom styles 
+                        will apply to all 
                         focus events, regardless of how they were triggered (mouse click or keyboard 
                         navigation). 
                     </p>
+                    <p>
+                        It's not the end of the world, of course, but we can do better!
+                    </p>
 
                     <p>
-                        <code className="pink-bg-white-text">:focus-visible</code> mimics the default browser behavior 
-                        when it comes to applying focus styles. It applies to all elements reached via keyboard
-                        and to certain elements reached via mouse click. So smart!
+                        <code className="pink-bg-white-text">:focus-visible</code> is the better choice. It mimics 
+                        the default behavior of the browser: it applies to all elements reached via keyboard
+                        and only to certain elements reached via mouse click. Quite smart, right?
                     </p>          
                 </div>
                     
