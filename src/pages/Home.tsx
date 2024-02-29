@@ -34,7 +34,7 @@ export default function Home() {
                             <p className={styles['beta-message']}>
                                 <span>This site is in Beta. </span>
                                 We welcome&nbsp;
-                                <Link to="/feedback#report-a11y-issues">your feedback</Link>
+                                <Link to="/feedback#report-a11y-issues">your feedback</Link>.
                             </p>
                             <button className={styles['beta-button']} onClick={() => closeBeta()}>
                                 <span className='sr-only'>Close Beta message</span>
