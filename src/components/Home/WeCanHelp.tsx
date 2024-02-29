@@ -10,7 +10,7 @@ export default function WeCanHelp() {
         <aside aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
             <h2 id="how-can-we-help"
             >
-                <span className='code-blue-color'>W</span>eb for <span className='code-blue-color'>E</span>veryone's Offer
+                <span className='code-blue-color'>Web for Everyone</span>'s Offer
             </h2>
             <ul>
                 <li>
