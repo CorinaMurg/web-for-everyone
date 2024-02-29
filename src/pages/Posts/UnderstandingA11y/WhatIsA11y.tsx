@@ -297,7 +297,7 @@ export default function WhatIsA11y() {
                         </p>
                     </div>
                     <p>
-                        <strong>BUT, above all . . .</strong>
+                        BUT, above all the legal and market incentives, web access is everyone's right.
                     </p>
                 </div>
 
