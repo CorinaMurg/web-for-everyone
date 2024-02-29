@@ -7,6 +7,7 @@ import scrollToTop from "../utils/scrollToTop"
 import { svgIconsData } from "../data/homeData/svgIconsData"
 import SvgCard from "../components/SvgCard/SvgCard"
 import styles from './Home.module.css'
+import "../global.css"
 
 export default function Home() {
     
@@ -33,7 +34,7 @@ export default function Home() {
                             <p className={styles['beta-message']}>
                                 <span>This site is in Beta. </span>
                                 We welcome&nbsp;
-                                <Link to="/feedback">your feedback</Link>
+                                <Link to="/feedback#report-a11y-issues">your feedback</Link>
                             </p>
                             <button className={styles['beta-button']} onClick={() => closeBeta()}>
                                 <span className='sr-only'>Close Beta message</span>

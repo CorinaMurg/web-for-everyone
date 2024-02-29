@@ -17,7 +17,7 @@
 .feedback h2 {
     font-size: 2rem;
     font-weight: 500;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .contact--email {

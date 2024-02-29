@@ -37,9 +37,8 @@ export default function Feedback() {
                     visibleText="Web Content Accessibility Guidelines (WCAG) 2.1"
                 /> <span> </span>
                 to make sure every visitor feels welcome.
-
             </p>
-            <h2>
+            <h2 id="report-a11y-issues" className="scroll-target section">
                 Reporting Accessibility Issues
             </h2>
             <p>
