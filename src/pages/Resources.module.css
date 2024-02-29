@@ -197,7 +197,6 @@
 .resources--table-contents ul li a:hover {
     color: var(--code-blue-color);
     border: 1.7px solid var(--code-blue-color);
-    border-radius: 5px;
     padding: 2px;
     font-weight: 400; 
     text-decoration: none;
@@ -206,7 +205,6 @@
 .resources--table-contents ul li a.active {
     color: var(--code-blue-color);
     border: 1.7px solid var(--code-blue-color);
-    border-radius: 5px;
     padding: 2px;
     font-weight: 400; 
     text-decoration: none;
