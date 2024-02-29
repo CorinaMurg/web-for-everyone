@@ -159,24 +159,21 @@ export default function WhatIsA11y() {
                                 Dictation. Windows has integrated Cortana for voice commands.
                             </p>
                             <p>
-                                <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts written text into 
+                                <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts 
+                                written text into 
                                 spoken words using synthetic voices. It benefits users with reading 
-                                difficulties, such as dyslexia, or those who prefer auditory learning.
+                                difficulties, such as dyslexia.
                             </p>
                             
                             <p>
                                 <strong className="pink-text">6.</strong><strong> Alternate Input Technologies</strong> simulate the functionality of 
-                                the keyboard for people with more severe physical disabilities. Examples include 
-                                head pointers that allow users to perform mouse movements, clicks, and typing tasks 
-                                using head movements, and sip&puff devices controlled 
-                                by inhaling or exhaling. 
+                                the keyboard for people with more severe physical disabilities. For example, a sip&puff device
+                                allows a person to send signals to the computer by inhaling or exhaling into a wand. 
                             </p>
                             <p>
                                 <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
                                 a traditional mouse. 
-                                Examples include trackballs, which can be easier to manipulate than a standard 
-                                mouse; joystick mice, for people with limited hand dexterity; 
-                                and eye-tracking systems, which allow mouse control through eye movements.
+                                For example, an eye-tracking system allows mouse control through eye movements.
                             </p>   
                             </div>
                         </details>
@@ -264,15 +261,12 @@ export default function WhatIsA11y() {
                     <div>
                         <p className="bullet-point-line"><strong>legal compliance</strong></p>
                         <p className="padding-left-20">
-                            Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                            lawsuit with the National Federation for the Blind for $6 million? 
-                        </p>
-                        <p className="margin-top-20 padding-left-20">
-                            The legal implications of inaccessible sites are real!
-                        </p>
-                        <p className="margin-top-20 padding-left-20">
                             While the accessibility guidelines established by the W3C (the World Wide Web Consortium)
                             are not legally binding, many countries have adopted legislation founded on them.
+                        </p>
+                        <p className="margin-top-20 padding-left-20">
+                            Did you know that in 2008, Target (a US-based retail chain) settled a class action 
+                            lawsuit with the National Federation for the Blind for $6 million? 
                         </p>
                         
                         <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
@@ -314,22 +308,13 @@ export default function WhatIsA11y() {
                         your bills? We regularly bypass traditional methods for online convenience. 
                     </p>
                     <p> 
-                        This shift to digital has been transformative for people with disabilities as well. 
-                        For them, access to the web opens doors to autonomy and ease, and can remove many of the challenges
-                        associated with their impairments.
-                    </p>    
-                    <p> 
-                        <span className="yellow-bg">Everyone</span> deserves a high level of freedom and functionality when interacting with
-                        the web. And <strong>your code can help!</strong> It can allow:
-                    </p>              
-                    <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a blind student to access their online course materials,
-                    </p>
-                    <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a person with limited mobility to order their groceries,
-                    </p>
-                    <p className="padding-left-20">
-                        <span className="pink-text bold">&#x2714; </span>a person with dyslexia to read the news.
+                        This shift to digital has benefited people with disabilities as well. 
+                        An accessible web allows a blind student to access their online course materials 
+                        or a person with limited mobility to order their groceries.
+                        An accessible web opens the door to freedom and privacy, 
+                        and can remove many of the challenges
+                        associated with certain impairments. 
+                        
                     </p>                  
                 </div>
 
@@ -338,8 +323,7 @@ export default function WhatIsA11y() {
                     <h2>Next Steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 
-                        accessible. 
-                        A staggering 97% of them have some accessibility bugs!
+                        accessible. 97% of them have some accessibility bugs!
                     </p>
 
                     <p>
