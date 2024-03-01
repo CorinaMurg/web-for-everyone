@@ -905,9 +905,14 @@ ul[class^="checkmark-list"] li {
         padding-inline: var(--main-margin);
     }
 
+    .article-container h2 {
+        padding-inline: var(--main-margin);
+    }
+
     summary h3 {
         padding-inline: 0;
     }
+
     .highlight summary,
     .two-line-heading {
         padding-inline: var(--main-margin);
@@ -917,6 +922,10 @@ ul[class^="checkmark-list"] li {
         flex-direction: column;
         align-items: flex-start;
         padding-inline: var(--main-margin);
+    }
+
+    .section-heading h2 {
+        padding-inline: 0;
     }
 
     /* .article-container .subtitle {
