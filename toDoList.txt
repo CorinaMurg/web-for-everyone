@@ -1,0 +1,59 @@
+JOB
+1. Typescript + Playwright
+2. Playwright.config
+3. Axe devTools Linter
+4. blog
+5. A11y Slack
+6. Ally Jobs
+7. Rachael, CJ
+8. ASL
+
+GRIDIRON
+1. Tailwind
+2. NextJS
+3. Rich re: NextJS
+
+
+TO DO TO DO TO DO TO DO TO DO TO DO 
+Accessible GitHub
+Accessible RESUME
+Plag
+Nav modal
+Dark mode
+Images: do not include the word
+Check for language about speech commands
+Import fonts
+Explain A11y
+Change <a> to <Link> and add empty <a> to headings
+Check underline in apple
+
+<span className="pink-text bold">&#x2714; </span> 
+TABLE OF CONTENTS
+- add a skip-table-contents link?
+
+QUESTIONS
+Should TOC be nav or aside
+Use <nav> for footer nav links and Table of Contents?
+svg: use desc or title
+arial-label for soc media icons OR visually-hiddden class
+when one element is not accessible, provide an accessible version
+when to create a thread
+ABOUT EACH ARTICLE: article should be div or article: 
+https://www.smashingmagazine.com/2020/01/html5-article-section/
+
+Picture Corina
+
+bUTTON ON About: a11y chat
+
+Background LinkedIn
+https://page-speed.dev/ and https://web.dev/articles/code-splitting-suspense
+
+
+
+https://tink.uk/the-difference-between-aria-label-and-aria-labelledby/
+
+SCREEN READER 
+- pronounces "read" incorrectly as in Recommended read
+https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html
+
+
