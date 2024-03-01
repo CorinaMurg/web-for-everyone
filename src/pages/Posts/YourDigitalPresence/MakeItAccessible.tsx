@@ -634,7 +634,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--lang">
-                        <p><code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code></p>
+                        <code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code>
                     </div>
               
                     <h3 className="white-bg">Use a valid language in the <code>lang</code> attribute</h3>

@@ -102,10 +102,6 @@
 }
 
 @media screen and (max-width: 670px) {
-    .table-contents {
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
-    }
     .table-contents nav {
         width: 100%;
         max-width: none;
@@ -121,8 +117,4 @@
         height: auto;
         padding-block: 25px;
     }
-
-    /* .table-contents ul li a {
-        letter-spacing: -0.1px;
-    } */
 }

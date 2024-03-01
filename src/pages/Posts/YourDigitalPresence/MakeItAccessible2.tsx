@@ -365,7 +365,7 @@ export default function MakeItAccessible() {
                         <h2>Keyboard Navigation</h2>
                     </div>
 
-                    <div className={styles['code-keyboard']}>
+                    <div className={`${styles['code-keyboard']} code-keyboard`}>
                         <div className={styles['code-keyboard--div']}>
                             <code>Home</code>
                         </div>

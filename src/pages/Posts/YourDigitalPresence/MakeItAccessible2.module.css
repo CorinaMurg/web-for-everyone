@@ -117,6 +117,11 @@
     color: var(--cream-color);
 }
 
+@media screen and (max-width: 670px){
+    .code-keyboard {
+        padding-left: var(--main-margin);
+    }
+}
 @media screen and (max-width: 600px) {
     .code-keyboard {
         gap: 15px;
