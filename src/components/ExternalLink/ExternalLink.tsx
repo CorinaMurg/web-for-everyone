@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './ExternalLink.module.css';
 
-export default function ExternalLink( { href, visibleText }: { href: string, visibleText: string } ) {
+export interface ExternalLinkTypes {
+    href: string;
+    visibleText: string;
+}
+
+export default function ExternalLink( { href, visibleText }: ExternalLinkTypes) {
     return (
         <a href={href} target="_blank" rel="noreferrer">
             {visibleText}

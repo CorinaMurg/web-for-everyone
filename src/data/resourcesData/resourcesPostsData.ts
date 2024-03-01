@@ -1,4 +1,4 @@
-export type ResourcesPostDataTypes = {
+export interface ResourcesPostDataTypes {
     label: string;
     id?: string;
     title: string;
@@ -9,6 +9,7 @@ export type ResourcesPostDataTypes = {
     href?: string;
     ariaLabel: string;
 };
+
 
 export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {

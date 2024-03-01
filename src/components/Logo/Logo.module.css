@@ -1,0 +1,37 @@
+
+.logo-link {
+    /* color: var(--text-dark-color); */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+    align-self: start;
+}
+
+.logo-link span {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 340px) {
+    .logo-link {
+        font-size: 1.5rem;
+    }  
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.58rem;
+    /* height: 1.5rem; */
+}
+
+.logo-container img {
+    width: 1.58rem;
+    height: 100%;
+    aspect-ratio: 1.06 / 1;
+    margin-left: -4px;
+}

@@ -3,7 +3,8 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
-import "./Header.css"
+import Logo from "../Logo/Logo";
+import styles from "./Header.module.css"
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,26 +12,20 @@ export default function Header() {
     function toggleModal() {
         setIsMenuOpen(!isMenuOpen);
     }
-
+    
     return (
         <header>
-            <a className="skip-to-content" href="#main">Skip to Content</a>
-            <div className="header-left">
-                <Link className="logo-link" to="/">
-                    <div className="logo-container">
-                        <img src="/assets/faviconDull.png" alt="" />
-                    </div>
-                    Web for Everyone
-                </Link>
+            <a className={styles['skip-to-content']} href="#main">Skip to Content</a>
+            <div className={styles['header--left']}>
+                <Logo color = "var(--text-dark-color)" fontWeight={600}/>
             </div>
-            
             <button 
-                className="mobile-nav-toggle" 
+                className={styles['mobile-nav-toggle']} 
                 aria-controls="primary-navigation"
                 aria-expanded={isMenuOpen}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-                <span className="menu-icon sr-only">
+                <span className="sr-only">
                     Navigation Menu
                 </span>
             </button>

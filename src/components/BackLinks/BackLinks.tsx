@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './BackLinks.module.css';
 
-export default function BackLinks ({secondLink, href, current}: {secondLink: string; href: string; current: string;}) {
+export interface BackLinksTypes {
+    secondLink: string;
+    href: string;
+    current: string;
+}
+
+export default function BackLinks ({secondLink, href, current}: BackLinksTypes) {
     return (
         <nav aria-label="Breadcrumb" className={`${styles['back-links']}`} id="back-links">
             <ol>
