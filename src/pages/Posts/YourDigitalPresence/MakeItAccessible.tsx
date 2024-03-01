@@ -96,12 +96,6 @@ export default function MakeItAccessible() {
                         present on 96% of the pages.
                         Let's make sure your portfolio site is not one of them!
                     </p>
-                    {/* <p>
-                        In this article, we will look at each bug in detail and learn how to fix it. 
-                        The article is designed to be a quick reference guide, but it provides sufficient 
-                        information, as well as links to additional resources, to help you understand the 
-                        underlying concepts.
-                    </p> */}
 
                     {/* **************Automated testing tools****************** */}
                     <div className="highlight highlight-one-line">
@@ -159,8 +153,8 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 But keep in mind that automated tools are imperfect!
-                                They can't test all aspects of accessibility, and will catch only about 30% of
-                                issues (maybe up to 50% on a less complex site).
+                                They can't test all aspects of accessibility, and will catch at
+                                most 50% of all the issues.
                             </p>
                             <div className="warning">
                                 <WarningTriangle />
