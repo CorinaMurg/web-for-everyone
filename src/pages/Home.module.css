@@ -47,14 +47,14 @@
     transform: translateX(-50%);
     background-color: var(--text-dark-color);
     color: var(--text-light-color);
-    padding: 10px;
+    padding: 8px 10px;
     border: 3px solid var(--text-dark-color);
     z-index: 1;
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 50;
 }
 
 @media screen and (max-width: 550px) {

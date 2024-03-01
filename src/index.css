@@ -93,8 +93,8 @@
 }
 
 body {
-    background-color: var(--cream-color);
-    color: var(--text-dark-color);
+    /* background-color: var(--cream-color);
+    color: var(--text-dark-color); */
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     -ms-overflow-style: none;
@@ -103,13 +103,13 @@ body {
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
     body {
-      max-width: 1440px;
+      max-width: 1280px;
       margin: 0 auto;
     }
     header {
-        max-width: 1441px;
+        max-width: 1280px;
     } 
 }
 

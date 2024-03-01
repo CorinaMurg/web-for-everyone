@@ -65,10 +65,9 @@ footer a:focus-visible {
     outline-offset: 4px;
 }
 
-footer .logo-link:hover {
+footer .logo-link {
     font-weight: 500;
-    outline: 2px dashed var(--cream-color);
-    outline-offset: 4px;
+    color: var(--cream-color) !important;
 }
 
 footer a:hover {

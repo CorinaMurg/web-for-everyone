@@ -1,11 +1,12 @@
 import React from "react"
+import { useContext } from "react"
 import { Link } from "react-router-dom"
 import useScrollToTop from "../hooks/useScrollToTop"
 import useScrollToSection from "../hooks/useScrollToSection"
 import useDocTitle from "../hooks/useDocTitle"
 import useHighlightTOC from "../hooks/useHighlightTOC"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
-import scrollToTop from "../utils/scrollToTop"
+import { ThemeContext } from "../App"
 import styles from './Resources.module.css'
 import "../global.css"
 
@@ -14,6 +15,7 @@ export default function Accessibility() {
     useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
+    const { theme } = useContext(ThemeContext);
     const sectionTitles = {
         "understanding-accessibility": "Understanding Accessibility",
         "your-digital-presence": "Your Digital Presence",
@@ -24,7 +26,7 @@ export default function Accessibility() {
     };
   
     return (
-        <div className={`${styles.resources} resources no-back-links-container`}>
+        <div className={`${styles.resources} ${theme}-theme resources no-back-links-container`}>
 
             <h1 className="article-heading-desktop">
                 <span>Resources to grow</span>

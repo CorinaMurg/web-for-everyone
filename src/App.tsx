@@ -18,34 +18,52 @@ import About from "./pages/About"
 import Feedback from "./pages/Feedback/Feedback"
 import NotFound from "./pages/NotFound"
 import React from "react"
+import { useState } from "react"
+import { createContext } from "react"
+import './App.css'
+
+export interface ThemeContextTypes {
+    theme: string;
+    toggleTheme: () => void;
+}
+
+export const ThemeContext = createContext({} as ThemeContextTypes);
 
 export default function App() {
 
+    const [theme, setTheme] = useState('light');
+
+    function toggleTheme() {
+        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    }
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        {/* <Route path="your-users" element={<YourUsers />} /> */}
-                        <Route path="resources" element={<ResourcesLayout />}>
-                            <Route index={true} element={<Resources />} />
-                            <Route path="what-is-accessibility" element={<WhatIsA11y />} />
-                            <Route path="how-accessibility-works" element={<HowA11yWorks />} />
-                            <Route path="most-common-bugs" element={<MostCommonBugs />} />
-                            {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
-                            <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
-                            {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
-                            <Route path="make-it-accessible-part1" element={<MakeItAccessible />} />
-                            <Route path="make-it-accessible-part2" element={<MakeItAccessible2 />} />
-                            <Route path="similar-but-different" element={<SimilarButDifferent />} />
-                                
-                        </Route>
-                        <Route path="about" element={<About />} />
-                        <Route path="feedback" element={<Feedback />} />
-                        <Route path="*" element={<NotFound />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                            <Route index element={<Home />} />
+                            {/* <Route path="your-users" element={<YourUsers />} /> */}
+                            <Route path="resources" element={<ResourcesLayout />}>
+                                <Route index={true} element={<Resources />} />
+                                <Route path="what-is-accessibility" element={<WhatIsA11y />} />
+                                <Route path="how-accessibility-works" element={<HowA11yWorks />} />
+                                <Route path="most-common-bugs" element={<MostCommonBugs />} />
+                                {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
+                                <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
+                                {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
+                                <Route path="make-it-accessible-part1" element={<MakeItAccessible />} />
+                                <Route path="make-it-accessible-part2" element={<MakeItAccessible2 />} />
+                                <Route path="similar-but-different" element={<SimilarButDifferent />} />
+                                    
+                            </Route>
+                            <Route path="about" element={<About />} />
+                            <Route path="feedback" element={<Feedback />} />
+                            <Route path="*" element={<NotFound />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </ThemeContext.Provider>
     );
 }
 

@@ -1,15 +1,17 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../data/homeData/miniArticleData"
 import WeCanHelp from "../components/Home/WeCanHelp"
 import scrollToTop from "../utils/scrollToTop"
 import { svgIconsData } from "../data/homeData/svgIconsData"
 import SvgCard from "../components/SvgCard/SvgCard"
+import { ThemeContext } from "../App"
 import styles from './Home.module.css'
 import "../global.css"
 
 export default function Home() {
+    const { theme } = useContext(ThemeContext);
     
     const [isBetaOpen, setIsBetaOpen] = useState(true);
 
@@ -18,7 +20,7 @@ export default function Home() {
     }
 
     return (
-        <div className={styles.home}>
+        <div className={`${styles.home} ${theme}-theme`}>
             <section className={styles['hero']}> 
                 <div className={styles['hero--design']}>
                     {/* <div className={styles['hero--design--svg-grid']}>

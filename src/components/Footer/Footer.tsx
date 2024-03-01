@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import scrollToTop from "../../utils/scrollToTop"
-import WELogo from "../WELogo/WELogo"
+import Logo from "../Logo/Logo"
 import "./Footer.css"
+import '../../global.css'
 
 export default function Footer() {
     return (
@@ -10,12 +11,7 @@ export default function Footer() {
             <div className="footer-top">
                 <h2 className="sr-only">Footer</h2>
                 <div className="footer-left">
-                    <Link className="logo-link" to="/" onClick={() => { scrollToTop()}}>
-                        <div className="logo-container">
-                            <img src="/assets/faviconDull.png" alt="" />
-                        </div> 
-                        Web for Everyone
-                    </Link>
+                    <Logo color="var(--text-light-color)" fontWeight={500}/>
                 </div>
                 <div className="footer-right">
                     <nav aria-label="footer site links" className="footer-right--navigation">
