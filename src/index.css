@@ -144,10 +144,6 @@ main {
     width: 100%;
 }
 
-
-
-
-
 @media (prefers-reduced-motion: reduce) {  
     *,
     *::before,

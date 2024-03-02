@@ -11,12 +11,12 @@ interface TableOfContentsLine {
   className2?: string;
 }
 
-interface TableOfContentsProps {
+interface TableOfContentsTypes {
   contents: TableOfContentsLine[];
   activeId: string; 
 }
 
-const TableOfContents: React.FC<TableOfContentsProps> = ({ contents, activeId }) => {
+const TableOfContents: React.FC<TableOfContentsTypes> = ({ contents, activeId }) => {
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']} id="table-contents">

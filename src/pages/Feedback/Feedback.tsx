@@ -1,7 +1,4 @@
-
-
 import React from "react";
-import { Link } from "react-router-dom";
 import useDocTitle from "../../hooks/useDocTitle";
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useScrollToTop from "../../hooks/useScrollToTop";

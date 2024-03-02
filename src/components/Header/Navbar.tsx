@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import scrollToTop from "../../utils/scrollToTop";
 import "./Navbar.css";
 
-type NavbarProps = {
+interface NavbarTypes {
     closeModal?: () => void;
 };
 
-export default function Navbar({ closeModal }: NavbarProps) {
+export default function Navbar({ closeModal }: NavbarTypes) {
 
     return (
         <nav aria-label="site links" className="navbar">

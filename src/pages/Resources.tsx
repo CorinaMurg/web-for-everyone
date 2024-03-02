@@ -5,7 +5,6 @@ import useScrollToSection from "../hooks/useScrollToSection"
 import useDocTitle from "../hooks/useDocTitle"
 import useHighlightTOC from "../hooks/useHighlightTOC"
 import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
-import scrollToTop from "../utils/scrollToTop"
 import styles from './Resources.module.css'
 import "../global.css"
 

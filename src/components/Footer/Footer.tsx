@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import scrollToTop from "../../utils/scrollToTop"
 import Logo from "../Logo/Logo"
 import styles from "./Footer.module.css"
 import '../../index.css'

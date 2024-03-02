@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Logo.module.css';
 
+interface LogoTypes {
+    color: string,
+    fontWeight: number,
+}
 
-export default function Logo( { color, fontWeight }: { color: string, fontWeight: number }) {
+export default function Logo( { color, fontWeight }: LogoTypes ) {
 
     const logoColor = {
         color: color,

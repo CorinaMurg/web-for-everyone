@@ -1,8 +1,8 @@
-// to be used with table of contents to dynamically generate a list of headings from the page
+// use with table of contents to dynamically generate a list of headings from the page
 
 import { useState, useEffect } from 'react';
 
-interface Heading {
+interface HeadingTypes {
     href: string;
     text: string;
     level: number;
@@ -10,7 +10,7 @@ interface Heading {
 
 
 export default function useHeadings (tags: string[]) {
-    const [headings, setHeadings] = useState<Heading[]>([]);
+    const [headings, setHeadings] = useState<HeadingTypes[]>([]);
 
     useEffect(() => {
         const tagsList = tags.join(', ');

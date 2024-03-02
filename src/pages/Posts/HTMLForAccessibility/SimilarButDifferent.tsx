@@ -269,26 +269,6 @@ export default function SimilarButDifferent() {
                     </p>          
                 </div>
                     
-                {/* CONCLUSION */}
-                {/* <div className="section conclusion scroll-target" id="conclusion">
-                    <h2>Conclusion</h2>
-                    <p>
-                        We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
-                        Fortunately, these are also the easiest to fix!
-                    </p>
-                    <p>
-                        Next, let's look at how to avoid or fix these bugs when building your portfolio site.
-                    </p>
-                    
-                    <div className="next-article">
-                        <span className="read-next">Read next:</span>
-                        <Link to="/resources/make-it-accessible-part1" 
-                                onClick={() => { scrollToTop() }}
-                        >
-                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
-                        </Link>
-                    </div>                 
-                </div> */}
             </div>          
         </div>
     )

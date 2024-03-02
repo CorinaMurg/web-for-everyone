@@ -1,6 +1,5 @@
 import React from "react"
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import Navbar from "./Navbar";
 import MenuModal from "./MenuModal";
 import Logo from "../Logo/Logo";
@@ -23,7 +22,7 @@ export default function Header() {
                 className={styles['mobile-nav-toggle']} 
                 aria-controls="primary-navigation"
                 aria-expanded={isMenuOpen}
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => toggleModal()}
             >
                 <span className="sr-only">
                     Navigation Menu

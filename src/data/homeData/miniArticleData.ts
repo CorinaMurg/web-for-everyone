@@ -1,5 +1,5 @@
 
-type MiniArticleDataTypes = {
+interface MiniArticleDataTypes {
     title: string;
     description: string;
     link: string;
