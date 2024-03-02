@@ -3,7 +3,7 @@ import useDocTitle from "../../hooks/useDocTitle";
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useScrollToTop from "../../hooks/useScrollToTop";
 import A11yBanner from "../../components/A11yBanner/A11yBanner";
-import styles from "./Feedback.module.css";
+import styles from "./A11yStatement.module.css";
 import "../../global.css";
 import ExternalLink from "../../components/ExternalLink/ExternalLink";
 

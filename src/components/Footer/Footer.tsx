@@ -32,7 +32,7 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <Link to="/feedback"><span className={styles['footer--nav-link']}>Accessibility Statement</span></Link>
+                                <Link to="/accessibility-statement"><span className={styles['footer--nav-link']}>Accessibility Statement</span></Link>
                             </li>
                         </ul>
                         
