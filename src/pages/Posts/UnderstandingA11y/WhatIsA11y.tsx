@@ -334,21 +334,8 @@ export default function WhatIsA11y() {
                     
                     <p>
                         Your portfolio site and personal projects are a great place to start implementing 
-                        accessibility practices.
-                        If you're ready to audit them, jump to the next article for a list of solutions to the 
-                        most common issues:
-                    </p>
-
-                    <p>
-                        <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part1">
-                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
-                        </Link>
-                    </p>
-                    
-                    <p>
-                        Interested in learning about how accessibility works? Visit the next article 
-                        in the "Understanding Accessibility" series:
+                        accessibility practices. But, before jumping into reviewing your code, let's understand 
+                        how accessibility works.
                     </p>
                          
                     <p>

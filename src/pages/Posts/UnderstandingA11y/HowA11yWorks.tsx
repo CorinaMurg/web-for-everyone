@@ -323,7 +323,7 @@ export default function MostCommonBugs() {
                             ready to be activated. 
                         </p>
                         <br/>
-                        <p><strong>Assitive tech behavior</strong></p>
+                        <p><strong>Assistive tech behavior</strong></p>
                         <p>
                             Each assistive technology will use the information from the accessibility tree to present the 
                             object to the user in the most appropriate way.
@@ -367,7 +367,7 @@ export default function MostCommonBugs() {
                                 <span className="code-blue-color">&lt;div</span> 
                                 <span className="code-yellow-color"> role</span>="button" 
                                 <span className="code-yellow-color"> aria-label</span>="Close modal" 
-                                <span className="code-purple-color"> tabindex</span>="0"              
+                                {/* <span className="code-purple-color"> tabindex</span>="0"               */}
                                 <span className="code-blue-color">&gt;</span>
                             </code>
                             <code><span className="code-blue-color">&lt;/div&gt;</span></code>
@@ -378,8 +378,8 @@ export default function MostCommonBugs() {
                         </p>
                         <p className="white-bg">
                             The element will be treated as a button by assistive technologies.
-                            The <code>role</code> and <code>aria-label</code> are <strong>ARIA</strong> tools
-                            that allow us to modify the default behavior of the div and give it an accessible name (more about
+                            It also has an accessible name assigned with <code>aria-label</code>. (Note that this is not the
+                            best way to assign a name to an interactive element. More about
                             the accessible name in the next section).
                         </p>
                         
@@ -388,8 +388,12 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            While the <code>tabindex</code> attribute makes it focusable, the button will not be
+                            The button will not be
                             fully functional until we add other attributes and events:
+                        </p>
+                        <p className="bullet-point-line white-bg">
+                            the <code>tabindex</code> attribute makes it focusable, otherwise keyboard users 
+                            won't be able to reach it: <code>tabindex="0"</code>
                         </p>
                         
                         <p className="bullet-point-line white-bg">
@@ -398,9 +402,9 @@ export default function MostCommonBugs() {
                             or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
                             <code>&lt;button&gt;</code> tag; important for screen reader users!)
                         </p>
-                        <p className="bullet-point-line white-bg">
+                        {/* <p className="bullet-point-line white-bg">
                             depending on the desired functionality, <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
-                        </p>
+                        </p> */}
                     </div>
                     <div className="warning">
                         <WarningTriangle/>
