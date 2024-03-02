@@ -270,8 +270,7 @@ export default function MostCommonBugs() {
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without a name.
                         This is a problem because screen reader users rely on a descriptive name
-                        to understand the purpose and the destination of a link. Voice users would not be able to
-                        activate the link without a name.
+                        to understand the purpose and the destination of a link.
                     </p>
                     <p>
                         Follow this link to <span> </span>        
@@ -396,7 +395,7 @@ export default function MostCommonBugs() {
                         </div>
                     
                         <p className="white-bg">
-                            The input is wrapped in label tags without inner text. There's no
+                            The input is wrapped in label tags without inner text. There's no <span> </span>
                             <code>visually-hidden</code> text or any ARIA attribute to provide an accessible name.
                         </p>
                     </div>
@@ -413,7 +412,7 @@ export default function MostCommonBugs() {
                     </p>
                     <p className="white-bg">
                         If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to 
-                        the operating system's language. This can be problematic for multilingual users accessing content in 
+                        the operating system's language. This can be a problem for multilingual users accessing content in 
                         various languages.
                     </p>
                     <p className="white-bg">
@@ -461,9 +460,9 @@ export default function MostCommonBugs() {
                             the part you're interested in. 
                         </p>
                         <p>
-                            For someone using a screen reader, it's a bit different. 
-                            They can't see the headings, but they can press 
-                            the <span className="pink-bg-white-text">H</span> key to jump from one heading 
+                            Someone using a screen reader relies on headings as well.
+                            Pressing 
+                            the <span className="pink-bg-white-text">H</span> key allows them to jump from one heading 
                             to another. This way, they can get a sense of what's on the page and decide what to read.
                         </p>
                         <br />
@@ -473,7 +472,7 @@ export default function MostCommonBugs() {
                             </strong>
                         </p>
                         <p>
-                            Learn about the range of options screen reader users have to navigate the web and to
+                            Learn how screen reader users navigate the web to
                             find information on a page from the <span> </span>
                             <a href="https://webaim.org/projects/screenreadersurvey9/#finding"
                                 target="_blank" 
@@ -496,10 +495,10 @@ export default function MostCommonBugs() {
                     <h2>Conclusion</h2>
                     <p>
                         We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
-                        Fortunately, these are also the easiest to fix!
+                        Fortunately, these are also the easiest to avoid!
                     </p>
                     <p>
-                        Next, let's look at how to avoid or fix these bugs when building your portfolio site.
+                        Time to look at your portfolio site to see if any of these bugs are present!
                     </p>
                     
                     <p>
