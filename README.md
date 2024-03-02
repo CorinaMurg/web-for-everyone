@@ -3,12 +3,25 @@ The goal of this project is to teach junior developers about accessibility,
 
 Tech Stack: React, Typescript, Playwright, CSS, HTML5
 
-Aceessibility goals: WCAG 2.1
+Aceessibility goals: WCAG 2.2
 
-1. Features to add:
-Dark mode
+## Bugs to fix
+1. Nav toggle
 
-2. Content to add
+## Features to add:
+1. Dark mode
+
+2. SITE MAP
+
+3. BUG REPORT 
+button in Footer
+
+4. BACK TO TOP
+button for all screen sizes
+
+5. LIKE icon
+
+## Content to add
 
 UNDERSTANDING A11Y series:
 Legal aspect of inaccessibility
@@ -20,16 +33,6 @@ YOUR DIGITAL PRESENCE series:
 Accessible contact form
 Pixels or rem?
 Size of clickable area
-
-SITE MAP
-
-BUG REPORT 
-button in Footer
-
-BACK TO TOP
-button for all screen sizes
-
-LIKE icon
 
 ACCESSIBLE COMPONENTS
 add more examples

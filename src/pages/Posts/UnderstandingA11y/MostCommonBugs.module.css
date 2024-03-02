@@ -17,6 +17,13 @@
     text-align: right;
 }
 
+@media screen and (max-width: 670px) {
+    .numbers {
+        margin-left: var(--main-margin);
+    }   
+    
+}
+
 @media screen and (max-width: 560px) {
     .numbers dt {
         text-align: left;
@@ -41,6 +48,12 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 670px) {
+    .low-contrast--button {
+        margin-left: var(--main-margin);
+    }   
+    
+}
 
 
 

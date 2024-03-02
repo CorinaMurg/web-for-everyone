@@ -121,6 +121,14 @@
     .code-keyboard {
         padding-left: var(--main-margin);
     }
+    .custom-outline--button {
+        margin-left: var(--main-margin);
+    }
+    .brightness--buttons {
+        width: 100%;
+        padding-inline: var(--main-margin);
+    }
+
 }
 @media screen and (max-width: 600px) {
     .code-keyboard {
