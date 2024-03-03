@@ -146,7 +146,7 @@ a:focus-visible {
     padding-left: 20px;
 }
 
-.checkmark-line p {
+.checkmark-lines p {
     display: flex;
     gap: 10px;
     line-height: 2;

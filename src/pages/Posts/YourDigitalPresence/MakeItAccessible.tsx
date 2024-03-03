@@ -253,7 +253,7 @@ export default function MakeItAccessible() {
                     <p >
                         <strong>Checking the color contrast is straightforward</strong>: 
                     </p>
-                    <div className="checkmark-line">
+                    <div className="checkmark-lines">
                         <p style={{marginTop: "0"}}>
                             <span className="pink-text bold">&#x2714; </span>
                             <span>enter the foreground and background colors for a given element</span>
@@ -465,7 +465,7 @@ export default function MakeItAccessible() {
                     </p>
 
                     <h3>Ways to fix the links to social media profiles</h3>
-                    <ol className="checkmark-line">
+                    <ol className="checkmark-lines">
                         <li>
                             <p>
                                 <span className="pink-text bold">&#x2714; </span>

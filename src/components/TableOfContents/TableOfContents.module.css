@@ -3,8 +3,6 @@
     grid-row: 1 / 5;
     grid-column: 2 / 3;
     font-family: inherit;
-    font-size: 0.9rem;
-    font-weight: 400;
     position: sticky;
     top: 125px; 
     height: 100vh; 

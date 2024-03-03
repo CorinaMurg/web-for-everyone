@@ -39,3 +39,7 @@
 .links ol li {
     margin-block: 20px;
 }
+
+.links ol li:first-of-type {
+    margin-top: 0;
+}

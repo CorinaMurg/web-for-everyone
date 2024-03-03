@@ -671,7 +671,7 @@ export default function MakeItAccessible() {
                         </p>
                         <p>
                             For the first rule, you will need to rely on your own judgement, but the tools can 
-                            easily catch if any of the other rules are not followed. 
+                            easily catch if you missed any of the other rules. 
                         </p>
                     </div>
                 </div>
