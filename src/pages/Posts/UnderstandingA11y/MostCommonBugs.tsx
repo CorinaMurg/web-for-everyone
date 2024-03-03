@@ -347,7 +347,8 @@ export default function MostCommonBugs() {
                             </Link>. 
                             This button is missing any of the attributes that could be used by the browser 
                             to compute an accessible name: 
-                            visible text, <code>aria-label</code>, <code>aria-labelledby</code>, or <code>alt</code>.
+                            visible text, <code>aria-labelledby</code>, or <code>alt</code>, to 
+                            name a few.
                         </p>
                         <p className="fake-heading-p">Consequences of empty buttons</p>
                         <p className="bullet-point-line">
@@ -355,7 +356,7 @@ export default function MostCommonBugs() {
                             information attached. Users would not know what is the purpose of the button.
                         </p>
                         <p className="bullet-point-line">
-                            Users relying on speech commands would have to go throught extra steps 
+                            Users relying on speech commands would have to go through extra steps 
                             to trigger the action on the button.
                         </p>
                         
@@ -395,8 +396,8 @@ export default function MostCommonBugs() {
                         </div>
                     
                         <p className="white-bg">
-                            The input is wrapped in label tags without inner text. There's no <span> </span>
-                            <code>visually-hidden</code> text or any ARIA attribute to provide an accessible name.
+                            The input is wrapped in label tags without inner text. There's no visible or <span> </span>
+                            <code>visually-hidden</code> text, and no ARIA attribute to provide an accessible name.
                         </p>
                     </div>
                 </div>
