@@ -1,5 +1,5 @@
 
-.feedback {
+.a11y-statement {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -8,13 +8,13 @@
     margin-inline: auto;
 }
 
-.feedback h1 {
+.a11y-statement h1 {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.feedback h2 {
+.a11y-statement h2 {
     font-size: 2rem;
     font-weight: 500;
     /* margin-top: 50px; */
@@ -38,36 +38,25 @@
     }
     
 }
-.feedback--svg {
-    background-color: var( --code-blueDark-color);
-    border-bottom: 3px solid var(--text-dark-color);
-    width: 100%;
-}
-
-.feedback--svg svg {
-    fill: var(--cream-color);
-    margin: 10px;
-    vertical-align: middle;
-}
 
 @media screen and (max-width: 800px) {
-    .feedback {
+    .a11y-statement {
         width: calc(100% - var(--main-margin));
         margin-inline: var(--main-margin);
     }
 
-    .feedback h1 {
+    .a11y-statement h1 {
         font-size: 2.3rem;
         width: calc(100% - var(--main-margin));
     }
-    .feedback h2,
-    .feedback p {
+    .a11y-statement h2,
+    .a11y-statement p {
         width: calc(100% - var(--main-margin));
     }
 }
 
 @media screen and (max-width: 340px) {
-    .feedback h1 {
+    .a11y-statement h1 {
         font-size: 2rem;
     }
     

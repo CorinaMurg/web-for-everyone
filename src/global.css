@@ -1,5 +1,7 @@
 
-a {
+.article-container a,
+.about a,
+.a11y-statement a {
     /* color: var(--code-blueDark-color);
     color: var(--brightBlue-dark-color); */
     color: var(--text-dark-color);
@@ -12,19 +14,23 @@ a {
     text-underline-offset: 3px;
 }
 
-a:hover {
+.article-container a:hover,
+.about a:hover,
+.a11y-statement a:hover {
     color: var(--text-dark-color);
 }
 
 .article-content a:hover,
 .about a:hover,
-.feedback a:hover {
+.a11y-statement a:hover {
     text-decoration-style: wavy;
     text-decoration-color: var(--code-blueDark-color);
     /* text-decoration-color: var(--hero-darkBlue); */
 }
 
-a:focus-visible {
+.article-container a:focus-visible,
+.about a:focus-visible,
+.a11y-statement a:focus-visible {
     text-decoration: none;
 }
 
