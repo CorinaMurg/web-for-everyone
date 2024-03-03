@@ -43,6 +43,7 @@
     font-size: 0.8rem;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     letter-spacing: 0.3px;
     white-space: nowrap;
 }
