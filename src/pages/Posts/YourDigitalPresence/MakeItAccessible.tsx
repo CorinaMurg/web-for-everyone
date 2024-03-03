@@ -132,15 +132,18 @@ export default function MakeItAccessible() {
                             </p>
                             <p className="bullet-point-line">
                                 <ExternalLink
-                                    href="https://www.deque.com/axe/devtools/" 
-                                    visibleText="Deque's axe DevTools"
+                                    href="https://developer.chrome.com/docs/lighthouse/overview/" 
+                                    visibleText="Google's Lighthouse"
                                 />
                             </p>
                             <p className="bullet-point-line">
                                 <ExternalLink
-                                    href="https://developer.chrome.com/docs/lighthouse/overview/" 
-                                    visibleText="Google's Lighthouse"
+                                    href="https://www.deque.com/axe/devtools/" 
+                                    visibleText="Deque's axe DevTools"
                                 />
+                                <span> </span>
+                                is probably the most comprehensive tool, with over 70 tests for accessibility issues.
+                                Note that Lighthouse also uses Deque's axe-core library, but with a smaller set of tests.
                             </p>
                             <p>
                                 Each tool has its own strengths. Best if you pick one and get 
