@@ -130,15 +130,23 @@ export default function MakeItAccessible() {
                         in to read the content. In fact, any user would benefit from the "pinch and zoom" feature 
                         on a mobile device!
                     </p>
-                    <p>For that purpose:</p>
-                    <p className="bullet-point-line white-bg">
-                        Make sure not to include <code>user-scalable=no</code> in
-                        the <code>viewport</code> meta tag.
-                    </p>
-                    <p className="bullet-point-line white-bg">
-                        set the <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines 
-                        that require a minimum zoom level of 200%.
-                    </p>
+                    <div>
+                        <p>Remember to:</p>
+                        <ul role="list" className="bullet-point-list">
+                            <li>
+                                <p className="white-bg">
+                                    not to include <code>user-scalable=no</code> in
+                                    the <code>viewport</code> meta tag.
+                                </p>
+                            </li>
+                            <li>
+                                <p className="white-bg">
+                                    set the <code>maximum-scale</code> to at least 2.0, in line with accessibility guidelines 
+                                    that require a minimum zoom level of 200%.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* ****************TITLE ELEMENT************************* */}
@@ -386,32 +394,33 @@ export default function MakeItAccessible() {
                     <p>
                         Make sure all interactive elements on your site are reachable and usable with a keyboard.
                     </p>
-                    <p><strong>How to test:</strong></p>
-                    <p className="bullet-point-line white-bg" style={{marginTop: "0"}}>
-                        Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
-                        (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
-                        through the interactive elements on the page. Each element should receive focus 
-                        and you should see an outline around it. (More about how to style the outline in the next section.)
-                    </p>
-                    <p className="padding-left-20 white-bg">
-                        If you used semanic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
-                        this will happen automatically. 
-                    </p>
-                    <p className="padding-left-20 white-bg">
-                        If you used <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>,
-                        and forgot the <code>tabindex</code> attribute, the element will be skipped.
+                    <div>
+                        <h4>How to test:</h4>
+                        <p className="bullet-point-line white-bg">
+                            Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
+                            (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
+                            through the interactive elements on the page. Each element should receive focus 
+                            and you should see an outline around it. (More about how to style the outline in the next section.)
+                        </p>
+                        <p className="margin-top-20 padding-left-20 white-bg">
+                            If you used semanic HTML tags like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code>,
+                            this will happen automatically. 
+                        </p>
+                        <p className="margin-top-20 padding-left-20 white-bg">
+                            If you used <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>,
+                            and forgot the <code>tabindex</code> attribute, the element will be skipped.
 
-                    </p>
-                    <p className="bullet-point-line white-bg margin-top-20">
-                        Press <span className="yellow-bg-dark-text">Enter</span> to activate the element 
-                        (for a button the <span className="yellow-bg-dark-text">Space</span> bar will also work).
-                        It should trigger the expected action.
-                    </p>
-                    <p className="padding-left-20 white-bg">
-                        Again, if you used semantic HTML tags, this will happen automatically.
-                        With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
-                    </p>
-
+                        </p>
+                        <p className="bullet-point-line white-bg margin-top-30">
+                            Press <span className="yellow-bg-dark-text">Enter</span> to activate the element 
+                            (for a button the <span className="yellow-bg-dark-text">Space</span> bar will also work).
+                            It should trigger the expected action.
+                        </p>
+                        <p className="margin-top-20 padding-left-20 white-bg">
+                            Again, if you used semantic HTML tags, this will happen automatically.
+                            With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
+                        </p>
+                    </div>       
                 </div>
 
                 {/* ****************VISIBLE FOCUS************************* */}

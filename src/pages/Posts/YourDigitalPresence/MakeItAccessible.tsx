@@ -452,7 +452,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         The problem: <strong>the link doesn't have an accessible name</strong>!
-                        Assitive technologies recognize an interactive element by its accessible name, but
+                        Assistive technologies recognize an interactive element by its accessible name, but
                         the browser can not compute it here since none of the attributes that could provide one 
                         is present.
                     </p>
