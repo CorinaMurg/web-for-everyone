@@ -451,7 +451,7 @@ export default function MakeItAccessible() {
                         and provide no information about the destination of the link. 
                     </p>
                     <p>
-                        The problem: <strong>the link has no accessible name</strong>!
+                        The problem: <strong>the link doesn't have an accessible name</strong>!
                         Assitive technologies recognize an interactive element by its accessible name, but
                         the browser can not compute it here since none of the attributes that could provide one 
                         is present.
@@ -487,8 +487,8 @@ export default function MakeItAccessible() {
                                 <span className="pink-text bold">&#x2714; </span>
                                 <span>
                                     Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
-                                    A quick reminder that this is not a great choice because it does not
-                                    take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers!
+                                    A quick reminder that, in general, this is not a great choice because it does not
+                                    take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers.
                                 </span>
                             </p>
                         </li>
@@ -540,11 +540,10 @@ export default function MakeItAccessible() {
                     </p>
                     <p className="white-bg">
                         Notice the <strong>"graphic"</strong> part? Since the image has 
-                        an <code>alt</code> text, the screen reader has to announce there is an image present. 
+                        an <code>alt</code> attribute that is not empty, the screen reader has to announce there is an image present. 
                         It is up to you if this information is useful to the user or not (most likely not?!). If not, 
-                        use one of the techniques discussed in the <strong>Links</strong> section (like adding <span> </span>
-                        <code>aria-label</code> or visible text) and remember to include the <code>alt</code> attrinute but leave
-                        it empty.
+                        use one of the techniques discussed in the <strong>Links</strong> section, and remember to include the <code>alt</code> attribute but leave
+                        it empty: <code>alt=""</code>.
                     </p>
                     
                 </div>
@@ -594,30 +593,31 @@ export default function MakeItAccessible() {
                         We will look at ways to make your contact form accessible in a separate article,
                         but now let's focus on the <code>label</code> and <code>input</code> elements.
                     </p>
-                    <p>
-                        <strong>Why are labels important?</strong>
-                    </p>
-                    <p className="bullet-point-line"> 
-                        For screen reader users, the label is the only way to understand the purpose of the input.
-                    </p>
-                    <p className="bullet-point-line">
-                        Speech command users rely on the label to select the input or any other form field.
-                    </p>
-                    <p className="bullet-point-line">
-                        Sighted users can click on the label to bring focus to the input. This is actually 
-                        an easy way if you are a sighted developer to test if a label is properly associated 
-                        with an input.
-                    </p>
-                    <p>
-                        <strong>Which method should you use?</strong>
-                    </p>
-                    <p className="white-bg">
-                        Both are valid, but the explicit method (label wrapping the input) will cause 
-                        problems for users relying on speech commands, specifically those using the 
-                        Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
-                        software, it's best to <strong>use the implicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
-                    </p>
                     
+                    <div>
+                        <h4>Why are labels important?</h4>
+                        <p className="bullet-point-line"> 
+                            For screen reader users, the label is the only way to understand the purpose of the input.
+                        </p>
+                        <p className="bullet-point-line">
+                            Speech command users rely on the label to select the input or any other form field.
+                        </p>
+                        <p className="bullet-point-line">
+                            Sighted users can click on the label to bring focus to the input. This is actually 
+                            an easy way if you are a sighted developer to test if a label is properly associated 
+                            with an input.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Which method should you use: implicit or explicit?</h4>
+                        <p className="white-bg">
+                            Both are valid, but the explicit method (label wrapping the input) will cause 
+                            problems for users relying on speech commands, specifically those using the 
+                            Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
+                            software, it's best to <strong>use the implicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
+                        </p>
+                    </div>
                 </div>
 
                 {/* ****************LANG************************* */}
