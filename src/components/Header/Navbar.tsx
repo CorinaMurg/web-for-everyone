@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import scrollToTop from "../../utils/scrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import "./Navbar.css";
 
 interface NavbarTypes {
@@ -16,7 +16,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                     <NavLink
                         to="/"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                        onClick={() => { scrollToTop(); if (closeModal) {closeModal();}}}
+                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         Home
                     </NavLink>
@@ -25,7 +25,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                     <NavLink
                         to="/your-users"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                        onClick={() => { scrollToTop(); if (closeModal) {closeModal();}}}
+                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         Your Users
                     </NavLink>
@@ -35,7 +35,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                     <NavLink
                         to="/resources"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                        onClick={() => { scrollToTop(); if (closeModal) {closeModal();}}}
+                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         Resources
                     </NavLink>
@@ -44,7 +44,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                     <NavLink
                         to="/about"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                        onClick={() => { scrollToTop(); if (closeModal) {closeModal();}}}
+                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         About
                     </NavLink>
