@@ -162,7 +162,7 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .resources--table-contents ul {
-    font-family: monospace;
+    font-family: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,11 +187,11 @@
 .resources--table-contents ul li a {
     align-self: flex-start;
     color: var(--cream-color);
-    font-weight: 300;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 0.8rem;
     text-decoration: underline;
-    text-decoration-thickness: 0.5px;
-    letter-spacing: 0.1px;
+    text-decoration-thickness: 1px;
+    letter-spacing: 0.3px;
 }
 
 .resources--table-contents ul li a:hover {

@@ -92,9 +92,9 @@ export default function WhatIsA11y() {
                         As a developer, the tools you need to allow for these kinds of interactions (and many others!) 
                         are the same tools you use to build your websites or apps:
                     </p>
-                    <ul>
+                    <ul role="list" className="bullet-point-list">
                         <li>
-                            <p className="bullet-point-line">
+                            <p>
                                 HTML (with a little help 
                                 from <span> </span>
                                 <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" rel="noopener noreferrer">
@@ -108,8 +108,8 @@ export default function WhatIsA11y() {
                                 <span> </span> attributes)
                             </p>
                         </li>
-                        <li><p className="bullet-point-line margin-top-20">CSS</p></li>
-                        <li><p className="bullet-point-line margin-top-20">JavaScript</p></li>
+                        <li><p>CSS</p></li>
+                        <li><p>JavaScript</p></li>
                     </ul>
                     <p>
                         <strong className=" margin-top-20 white-bg">
@@ -218,35 +218,35 @@ export default function WhatIsA11y() {
                             complex acccessibility issues, semantic HTML is the foundation of accessibility.
                         </p>
                     </div>
-                    <p>
-                        <strong className="margin-top-0">
+                    
+                    <div>
+                        <h4 style={{marginBlock: "0"}}>
                             Our job as developers is threefold:
-                        </strong>   
-                    </p>  
-                    <ul>
-                        <li>
-                            <p className="bullet-point-line">
-                                Set accessibility as a goal. 
-                            </p>
-                        </li>
-                        <li>
-                            <p className="bullet-point-line margin-top-20">
-                                Ask questions. Reach out for help and guidance.
-                                Learn about the ways in which 
-                                users of all abilities interact with the web and the functionality
-                                we need to provide for each group. 
-                            </p>
-                        </li>
-                        <li>
-                            <p className="bullet-point-line margin-top-20">
-                                Follow good coding practices.
-                            </p>
-                        </li>
-                    </ul>
+                        </h4>   
+                        <ul role="list" className="bullet-point-list margin-top-0">
+                            <li>
+                                <p>
+                                    Set accessibility as a goal. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Ask questions. Reach out for help and guidance.
+                                    Learn about the ways in which 
+                                    users of all abilities interact with the web and the functionality
+                                    we need to provide for each group. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Follow good coding practices.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    
                     <p>
-                        <strong className="margin-top-20">
-                            If we do our part, then the browser and the assistive technologies can do theirs!
-                        </strong>
+                        If we do our part, then the browser and the assistive technologies can do theirs!
                     </p>
                 </div>
 
@@ -309,12 +309,10 @@ export default function WhatIsA11y() {
                     </p>
                     <p> 
                         This shift to digital has benefited people with disabilities as well. 
-                        An accessible web allows a blind student to access their online course materials 
+                        An accessible web allows a blind student to access online courses, 
                         or a person with limited mobility to order their groceries.
-                        An accessible web opens the door to freedom and privacy, 
-                        and can remove many of the challenges
-                        associated with certain impairments. 
-                        
+                        For people with disabilities, an accessible web opens the door to freedom and privacy, 
+                        and can remove many of the challenges associated with their impairments.  
                     </p>                  
                 </div>
 

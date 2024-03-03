@@ -1,12 +1,10 @@
 
 .back-links {
-    font-family: monospace;
+    font-family: inherit;
     font-size: 0.9rem;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin-top: 50px;
-    /* width: 39rem;
-    max-width: 100%; */
 }
 
 .back-links ol {
@@ -14,10 +12,7 @@
     padding-inline-start: 0;
     display: flex;
     align-items: center;
-    background-color: var(--text-dark-color);  
-    padding: 15px;
     max-width: fit-content;
-    /* border-radius: 5px; */
 }
 
 @media (max-width: 700px) {
@@ -35,39 +30,38 @@
     display: inline-block;
     margin: 0 15px;
     transform: rotate(15deg);
-    border-right: 0.13em solid var(--code-blue-color);
+    border-right: 0.13em solid gray;
     height: 0.8em;
     content: "";
 }
 
 .back-links a {
-    color: var(--cream-color);
-    font-weight: 300;
+    color: inherit;
+    font-weight: 500;
     text-decoration: none;
     letter-spacing: 0.1px;
 }
 
 .back-links a:focus-visible {
     text-decoration: none;
-    outline: 3px dashed var(--cream-color);
+    outline: 3px dashed var(--text-dark-color);
     outline-offset: 3px;
 }
 
 .back-links ol li:nth-of-type(1) a,
 .back-links ol li:nth-of-type(2) a{
-    color: var(--code-blue-color);
     text-decoration: underline;
-    /* text-decoration-thickness: 0.5px; */
+    text-decoration-thickness: 1px;
 }
 
 .back-links ol li:nth-of-type(1) a:hover,
 .back-links ol li:nth-of-type(2) a:hover {
-    text-decoration-style:wavy;
+    color: var(--text-dark-color);
 }
 
 .back-links ol li:nth-of-type(1) a:focus-visible,
 .back-links ol li:nth-of-type(2) a:focus-visible {
     text-decoration: none;
-    outline: 3px dashed var(--cream-color);
+    outline: 3px dashed var(--text-dark-color);
     outline-offset: 3px;
 }
