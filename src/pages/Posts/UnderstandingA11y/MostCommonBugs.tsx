@@ -99,12 +99,12 @@ export default function MostCommonBugs() {
                     <div className="highlight-one-line highlight margin-top-20">
                         <details>
                             <summary>
-                                How do we decide what constitutes an accessibility bug?
+                                How do we know what's an accessibility bug?
                             </summary>
                             <br />
                             <div className="details-content">
                             <p>
-                                <strong>Standards</strong> and <strong>best practices</strong> informed by user experience!
+                                From <strong>standards</strong> and <strong>best practices</strong> informed by user experience!
                             </p>
                             <p>
                                 The Web Content Accessibility Guidelines (WCAG) 
@@ -167,14 +167,13 @@ export default function MostCommonBugs() {
                         in the 2023 study. What do we know about them?
                     </p>
 
-                    <ul className="bullet-point-list padding-left-20">
+                    <ul role="list" className="bullet-point-list">
                         <li>
                             <p>They accounted for 96% of all bugs found!</p>
                         </li>
                         <li>
                             <p>They've been the "most common bugs" for the last 5 years!</p>
                         </li>
-
                     </ul>
                     <p>
                         <strong>The good news? </strong>

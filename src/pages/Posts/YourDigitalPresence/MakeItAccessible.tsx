@@ -253,7 +253,7 @@ export default function MakeItAccessible() {
                     <p >
                         <strong>Checking the color contrast is straightforward</strong>: 
                     </p>
-                    <div className="checkmark-line padding-left-20">
+                    <div className="checkmark-line">
                         <p style={{marginTop: "0"}}>
                             <span className="pink-text bold">&#x2714; </span>
                             <span>enter the foreground and background colors for a given element</span>
@@ -336,7 +336,7 @@ export default function MakeItAccessible() {
                         <p>
                             Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
                         </p>
-                        <div style={{ marginTop: "30px"}} className="checkmark-line padding-left-20">
+                        <div style={{ marginTop: "30px"}} className="checkmark-line">
                             <p>
                                 <span className="pink-text bold">&#x2714; </span> 
                                 <span>Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 

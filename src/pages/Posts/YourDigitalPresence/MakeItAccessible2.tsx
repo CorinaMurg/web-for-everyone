@@ -441,17 +441,20 @@ export default function MakeItAccessible() {
                         but it's important to keep it visible. 
                         
                     </p>
-                    <p>
-                        Here are a couple of options you have:
-                    </p>
-                    <div className="padding-left-20">
-                        <p className="bullet-point-line">
-                            Create a custom focus outline
+                    <div>
+                        <p>
+                            Here are a couple of options you have:
                         </p>
-                        <p className="bullet-point-line margin-top-20">
-                            Change the brightness (shade) of the element's background color
-                        </p>
+                        <ul role="list" className="bullet-point-list">
+                            <li>
+                                <p> Create a custom focus outline</p>
+                            </li>
+                            <li>
+                                <p>Change the brightness (shade) of the element's background color</p>
+                            </li>
+                        </ul>
                     </div>
+                    
                     
                     {/* ***Example: Creating a custom focus outline*** */}
                     <div className="highlight">
@@ -620,29 +623,34 @@ export default function MakeItAccessible() {
                         When trying to find information on a page, most screen reader users rely on headings.
                         Pressing the <span className="pink-bg-white-text">H</span> key allows them to visit 
                         each heading and get an idea about the structure and the content of the page.  
-                    </p>
-                    <p>
-                        <strong>
-                            A few rules to follow with headings:
-                        </strong>
-                    </p>
+                    </p>         
                     <div>
-                        <p className="bullet-point-line white-bg">
-                            Choose meaningful headings that describe the content of a section.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Use <code>&lt;h1&gt;</code> at the start of your content.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Don't skip heading levels. Use <code>&lt;h1&gt;</code> to <span> </span>
-                            <code>&lt;h6&gt;</code> in descending order.
-                        </p>
-                        <p className="bullet-point-line white-bg margin-top-20">
-                            Don't use headings for decorative purposes. 
-                            If you need a word or a phrase to look bigger or bolder on page, use
-                            CSS. Do not use heading tags if a heading is not needed.
-                        </p>
-                        
+                        <h4> A few rules to follow with headings:</h4>
+                        <ul className="bullet-point-list">
+                            <li>
+                                <p className="white-bg">
+                                    Choose meaningful headings that describe the content of a section.
+                                </p>
+                            </li>
+                            <li>
+                                <p className="white-bg">
+                                    Use <code>&lt;h1&gt;</code> at the start of your content.
+                                </p>
+                            </li>
+                            <li>
+                                <p className="white-bg">
+                                    Don't skip heading levels. Use <code>&lt;h1&gt;</code> to <span> </span>
+                                    <code>&lt;h6&gt;</code> in descending order.
+                                </p>
+                            </li>
+                            <li>
+                                <p className="white-bg">
+                                    Don't use headings for decorative purposes. 
+                                    If you need a word or a phrase to look bigger or bolder on page, use
+                                    CSS. Do not use heading tags if a heading is not needed.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                     
                     <div className="highlight">

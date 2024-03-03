@@ -755,6 +755,7 @@ ul[class^="bullet-point-list"] li::before {
     padding-left: 20px;
 } 
 
+
 ul[class^="checkmark-list"] li {
     display: flex;
     gap: 10px;
@@ -763,7 +764,11 @@ ul[class^="checkmark-list"] li {
     font-weight: 400;
     line-height: 2;
     letter-spacing: 0.5px;
-    margin-block: 10px;
+    /* margin-block: 10px; */
+} 
+
+ul[class^="checkmark-list"] li p {
+    margin-block: 0;
 } 
 
 .visually-hidden {
@@ -784,11 +789,14 @@ ul[class^="checkmark-list"] li {
     width: 100%;
     border: 1.7px solid var(--pinkBright-color);
     position: relative;
-    margin-block: 30px;
 }
 
-.warning p {
+.warning>p {
     margin-block: 20px;
+}
+
+.warning li>p {
+    margin-block: 0;
 }
 
 .warning a {
@@ -970,8 +978,11 @@ ul[class^="checkmark-list"] li {
         margin-inline: var(--main-margin);
     }
 
-     p {
-        margin-left: 0;
+    .bullet-point-list {
+        padding-inline: var(--main-margin);
+    }
+    .article-content ul li p {
+        margin-inline: 0;
     }
   
     /* iframe {

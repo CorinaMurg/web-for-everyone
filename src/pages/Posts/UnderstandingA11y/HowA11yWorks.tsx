@@ -238,26 +238,22 @@ export default function MostCommonBugs() {
                             For each object in the accessibility tree, its role matches the function of its 
                             corresponding HTML element.
                         </p>
-                                
-                        <p>
-                            For example:
-                        </p>
                         <div>
-                            <p className="bullet-point-line white-bg margin-bottom-20">
-                                the <code>navigation</code> role goes with the <code>&lt;nav&gt;</code> tag
+                            <p>
+                                For example:
                             </p>
-                        
-                            <p className="bullet-point-line white-bg margin-bottom-20">
-                                the <code>list</code> role goes with the <code>&lt;ul&gt;</code> tag
-                            </p>
-                            <p className="bullet-point-line white-bg margin-bottom-20">
-                                the <code>link</code> role goes with the <code>&lt;a&gt;</code> tag
-                            </p>
-                            <p className="margin-top-40">
-                                <strong>But how does the browser know what role to assign to a given element?</strong>
-                            </p>
-                        </div>
-
+                            <ul role="list" className="bullet-point-list">
+                                <li>
+                                    <p className="white-bg">the <code>navigation</code> role goes with the <code>&lt;nav&gt;</code> tag</p>
+                                </li>
+                                <li>
+                                    <p className="white-bg">the <code>list</code> role goes with the <code>&lt;ul&gt;</code> tag</p>
+                                </li>
+                                <li>
+                                    <p className="white-bg">the <code>link</code> role goes with the <code>&lt;a&gt;</code> tag</p>
+                                </li>
+                            </ul>
+                        </div> 
                     </div>
                 </div>
                     
@@ -305,13 +301,16 @@ export default function MostCommonBugs() {
                             Let's look at the first link object to understand why using semantic HTML helps 
                             accessibility. 
                         </p>
-                        <p><strong>Details available</strong></p>
-                        <ul className="checkmark-list padding-left-20">
-                            <li><span className="pink-text bold">&#x2714; </span><span>Name: Home</span></li>
-                            <li><span className="pink-text bold">&#x2714; </span>Role: link</li>
-                            <li><span className="pink-text bold">&#x2714; </span>Property: focusable</li>
-                            <li><span className="pink-text bold">&#x2714; </span>State: focused</li>
-                        </ul>
+                        <div>
+                            <p><strong>Details available</strong></p>
+                            <ul className="checkmark-list padding-left-20">
+                                <li><span className="pink-text bold">&#x2714; </span><p>Name: Home</p></li>
+                                <li><span className="pink-text bold">&#x2714; </span><p>Role: link</p></li>
+                                <li><span className="pink-text bold">&#x2714; </span><p>Property: focusable</p></li>
+                                <li><span className="pink-text bold">&#x2714; </span><p>State: focused</p></li>
+                            </ul>
+                        </div>
+                        
                         <p className="white-bg">
                             We have a <strong>link</strong> with the <strong>name</strong> "Home".
                             It's a <strong>focusable</strong> (i.e. actionable) element.
@@ -392,7 +391,7 @@ export default function MostCommonBugs() {
                             fully functional until we add other attributes and events:
                         </p>
                         <p className="bullet-point-line white-bg">
-                            the <code>tabindex</code> attribute makes it focusable, otherwise keyboard users 
+                            the <code>tabindex</code> attribute to make it focusable, otherwise keyboard users 
                             won't be able to reach it: <code>tabindex="0"</code>
                         </p>
                         
@@ -464,18 +463,20 @@ export default function MostCommonBugs() {
                         <p>
                             These elements must have a 
                             <strong> descriptive accessible name</strong>:
-                        </p>          
-                        <ul>
-                            <li>
-                                <p className="bullet-point-line"><strong>links</strong> and <strong> buttons</strong></p>
-                            </li>  
-                            <li>
-                                <p className="bullet-point-line"><strong>all form elements</strong>, like inputs or radio buttons</p>
-                            </li>
-                            <li>
-                                <p className="bullet-point-line"><strong>headings</strong></p>
-                            </li> 
-                        </ul>    
+                        </p>     
+                        <div>
+                            <ul role="list" className="bullet-point-list">
+                                <li>
+                                    <p>links and buttons</p>
+                                </li>  
+                                <li>
+                                    <p>all form elements, like input fields and checkboxes</p>
+                                </li>
+                                <li>
+                                    <p>headings</p>
+                                </li> 
+                            </ul> 
+                        </div>                 
                     </div>    
                     
                     {/* *****Accessible Name Computation Algorithm***** */}
