@@ -1,0 +1,10 @@
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 20px;
+    width: 45rem;
+    margin-inline: auto;
+    height: 100vh;
+}

@@ -1,7 +1,8 @@
 
 .article-container a,
 .about a,
-.a11y-statement a {
+.a11y-statement a,
+.not-found-container a {
     /* color: var(--code-blueDark-color);
     color: var(--brightBlue-dark-color); */
     color: var(--text-dark-color);
@@ -16,7 +17,8 @@
 
 .article-container a:hover,
 .about a:hover,
-.a11y-statement a:hover {
+.a11y-statement a:hover,
+.not-found-container a:hover {
     color: var(--text-dark-color);
 }
 
