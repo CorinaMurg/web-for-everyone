@@ -21,16 +21,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                         Home
                     </NavLink>
                 </li>
-                {/* <li>
-                    <NavLink
-                        to="/your-users"
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
-                    >
-                        Your Users
-                    </NavLink>
-                </li> */}
-                
+
                 <li>
                     <NavLink
                         to="/resources"

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Logo from "../Logo/Logo"
 import useScrollToTop from "../../hooks/useScrollToTop"
 import styles from "./Footer.module.css"
@@ -17,21 +17,33 @@ export default function Footer() {
                     <nav aria-label="footer site links" className={styles['footer--right--navigation']}>
                         <h3 className={styles['footer--heading']}>Site Links</h3>
                         <ul>
+                            
                             <li>
-                                <Link to="/" onClick={() => { useScrollToTop() }}>
-                                    <span className="footer--nav-link">Home</span>
-                                </Link>
+                                <NavLink
+                                    to="/"
+                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                >
+                                    Home
+                                </NavLink>
                             </li>
-                            {/* <li><Link to="/projects" onClick={scrollToTop}><span className="footer-nav-link">Your Users</span></Link></li> */}
+                            
                             <li>
-                                <Link to="/resources" onClick={() => { useScrollToTop() }}>
+                                <NavLink
+                                    to="/resources"
+                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    onClick={() => { useScrollToTop()}}
+                                >
                                     <span className="footer--nav-link">Resources</span>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/about" onClick={() => { useScrollToTop() }}>
+                                <NavLink
+                                    to="/about"
+                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    onClick={() => { useScrollToTop()}}
+                                >
                                     <span className="footer--nav-link">About</span>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -45,9 +57,13 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <Link to="/accessibility-statement" onClick={() => { useScrollToTop() }}>
+                                <NavLink 
+                                    to="/accessibility-statement" 
+                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    onClick={() => { useScrollToTop() }}
+                                >
                                     <span className={styles['footer--nav-link']}>Accessibility Statement</span>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                         

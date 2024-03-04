@@ -65,11 +65,11 @@ footer a:focus-visible {
     outline-offset: 4px;
 }
 
-footer .logo-link:hover {
+/* footer .logo-link:hover {
     font-weight: 500;
     outline: 2px dashed var(--cream-color);
     outline-offset: 4px;
-}
+} */
 
 footer a:hover {
     color: var(--cream-color);
@@ -82,25 +82,6 @@ footer ul {
 
 footer li {
     margin-bottom: 25px;
-}
-
-.footer--nav-link {
-    position: relative;
-}
-
-.footer--nav-link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: var(--cream-color);
-    transition: width 0.8s;
-}
-
-.footer--nav-link:hover::before {
-    width: 100%;
 }
 
 .footer--heading {
