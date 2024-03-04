@@ -111,7 +111,7 @@ export default function MakeItAccessible() {
                                     href="https://www.w3.org/WAI/standards-guidelines/wcag/" 
                                     visibleText="Web Content Accessibility Guidelines"
                                 />
-                                , bettwer known as <span className="bold">WCAG</span>. 
+                                , better known as <span className="bold">WCAG</span>. 
                             </p> 
                             <p>
                                 Here are a few of the most popular browser extensions:
@@ -247,22 +247,23 @@ export default function MakeItAccessible() {
                         />
                         <span> </span>in one easy step!
                     </p>     
-                    <p >
-                        <strong>Checking the color contrast is straightforward</strong>: 
-                    </p>
+                    
                     <div className="checkmark-lines">
-                        <p style={{marginTop: "0"}}>
-                            <span className="pink-text bold">&#x2714; </span>
+                        <p >
+                            <strong>Checking the color contrast is straightforward:</strong>
+                        </p>
+                        <p>
+                            <span className="pink-text bold">&#x2714;</span>
                             <span>enter the foreground and background colors for a given element</span>
                         </p>
                         <p>
-                            <span className="pink-text bold">&#x2714; </span>
+                            <span className="pink-text bold">&#x2714;</span>
                             <span>the tool calculates the contrast ratio</span>
                         </p>
                         <p>
-                            <span className="pink-text bold">&#x2714; </span>
+                            <span className="pink-text bold">&#x2714;</span>
                             <span>you receive a <strong>pass</strong> or <strong>fail</strong> result for 
-                            the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance</span>
+                            the <strong>AA</strong> and <strong>AAA</strong> levels of compliance</span>
                         </p>
                     </div>
                             {/* <p></p>
@@ -333,22 +334,22 @@ export default function MakeItAccessible() {
                         <p>
                             Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
                         </p>
-                        <div style={{ marginTop: "30px"}} className="checkmark-line">
+                        <div style={{ marginTop: "30px"}} className="checkmark-lines">
                             <p>
-                                <span className="pink-text bold">&#x2714; </span> 
+                                <span className="pink-text bold">&#x2714;</span>
                                 <span>Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 
                                 text, and <span className="dark-bg-white-text"><code>3.0:1</code></span> for larger text</span>
                             </p>
                             <p>
-                                <span className="pink-text bold">&#x2714; </span>
+                                <span className="pink-text bold">&#x2714;</span>
                                 <span>Links are underlined, <strong>OR</strong> the next two conditions are met:</span>
                             </p>
                             <p>
-                                <span className="pink-text bold">&#x2714; </span>
+                                <span className="pink-text bold">&#x2714;</span>
                                 <span>Contrast with surrounding text is at least <span className="dark-bg-white-text"><code>3.0:1</code></span></span>
                             </p>
                             <p>
-                                <span className="pink-text bold">&#x2714; </span>
+                                <span className="pink-text bold">&#x2714;</span>
                                 <span>Non-color visual clues (like underline or a focus ring) are available on mouse hover and keyboard focus</span>
                             </p>   
                         </div>

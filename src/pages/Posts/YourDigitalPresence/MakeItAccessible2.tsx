@@ -88,7 +88,7 @@ export default function MakeItAccessible() {
                         HTML, and at times a bit of CSS or ARIA attributes.
                     </p>
                     <p>
-                        Are the next 6 bugs as easy to fix? Yes, with one exception that might 
+                        Are the next 6 bugs as easy to avoid? Yes, with one exception that might 
                         require a bit of JavaScript.
                     </p>
                     
