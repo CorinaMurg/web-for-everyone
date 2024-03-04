@@ -38,7 +38,7 @@ export default function WeCanHelp() {
                             visibleText='LinkedIn'
                         />
                         <span> </span>
-                        to seek advice and become an accessibility supporter.
+                        to seek advice and share suggestions.
                     </p>
                 </li>
             </ul>

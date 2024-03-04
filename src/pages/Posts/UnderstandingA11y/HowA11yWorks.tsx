@@ -525,14 +525,10 @@ export default function MostCommonBugs() {
                                         Dragon NaturallySpeaking is the most popular speech recognition software. 
                                         People with mobility issues can rely on it to navigate the web using voice commands.
                                     </p>
-                                    <p>    
-                                        The tool has a <strong>Mouse Grid</strong> feature to help users select 
-                                        and interact with elements on the page. 
-                                    </p>
                                     <p>
-                                        Ideally, the user can rely on visible text to learn the name of an 
+                                        Ideally, a user can rely on visible text to learn the name of an 
                                         interactive element, and then activate it with "Click (name of element)".
-                                        If the name is not visible or obvious, they can use the Mouse grid
+                                        If the name is not visible or obvious, they can use the <strong>Mouse Grid</strong>
                                         feature.
                                     </p>
                                     <p>
@@ -547,9 +543,9 @@ export default function MostCommonBugs() {
                                         <strong>2. Use the Mouse Grid</strong>:
                                         Once the grid is visible, they can move the pointer to a specific area 
                                         by saying the number associated with that area. For example, if they want 
-                                        to move the pointer to the area labeled '3', they just say "Three."
-                                        After they say a number, the grid will zoom into the selected area and 
-                                        redraw a smaller, more detailed grid. This allows for more precise selection.
+                                        to move the pointer to the area labeled '3', they just say "Three"
+                                        and the grid will zoom into the selected area and 
+                                        redraw a smaller, more detailed grid.
                                     </p>
                                     <p>
                                         <strong>3. Repeat</strong>:
@@ -583,14 +579,14 @@ export default function MostCommonBugs() {
                                 <strong>alt</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
-                                You can use it for interactive images. With a link that contains an image and no 
+                                You can use it for interactive images. With buttons or links that contain an image and no 
                                 visible text or ARIA attributes, the browser will take the <code>alt</code> attribute 
                                 to compute the accessible name.
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
-                                Note that this is slightly more verbose. So, a link wrapping an image with <span> </span>
-                                <code>alt="Snowy countryside"</code> will be announced as "Snowy countryside 
-                                graphic link". <span> </span>
+                                Note that this is slightly more verbose. So, a button wrapping an image of <strong>x</strong> can
+                                have an <code>alt="Close modal"</code> and it will be announced as "Close modal 
+                                graphic button". <span> </span>
                                 (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
                                 , depending on the screen reader.)
                             </p>  
@@ -680,7 +676,7 @@ export default function MostCommonBugs() {
                                 <ExternalLink 
                                     href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
                                     visibleText="why we should avoid aria-label"
-                                />
+                                />.
                             </p> 
                         </div>
                         <div className="checkmark-line white-bg">
@@ -689,15 +685,17 @@ export default function MostCommonBugs() {
                                     To summarize:
                                 </strong>
                             </p>
-                            <p >
+                            <p  className="margin-top-10">
                                 <span className="pink-text bold">&#x2714; </span> 
                                 <span>
                                     If there's no visible text (or label), or at least text with 
                                     a <code>visually-hidden</code> class, 
-                                    the algorithm relies on the content of certain HTML and ARIA attributes.
+                                    the algorithm relies on the content of certain 
+                                    HTML (<code>alt</code>, <code>title</code>) and 
+                                    ARIA (<code>aria-labelledby</code>, <code>aria-label</code>) attributes.
                                 </span>
                             </p>
-                            <p>
+                            <p className="margin-top-20">
                                 <span className="pink-text bold">&#x2714; </span>
                                 <span>
                                     The ARIA attributes are given priority even when the element has visible text or a label.

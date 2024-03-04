@@ -79,9 +79,9 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1190px) {
     .we-can-help h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -97,10 +97,20 @@
     color: var(--cream-color);
     font-size: 0.9rem;
     font-weight: 300;
-    line-height: 1.7;
-    letter-spacing: 0.5px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .we-can-help p {
+        font-size: 0.8rem;
+    }
+
+    .we-can-help {
+        padding: 20px;
+    }
+    
+}
 .we-can-help a {
     color: var(--yellow-color);
     text-decoration: underline;

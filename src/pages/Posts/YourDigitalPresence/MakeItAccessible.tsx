@@ -79,12 +79,6 @@ export default function MakeItAccessible() {
             <div className="article-content makeItOne">
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction</h2>
-                    {/* <p>
-                        Guaranteeing 100% accessibility is a complex task, and it becomes ever more 
-                        challenging as the functionality of a website increases. However, in a few 
-                        steps you can make sure that your site is free of the most common,
-                        easy-to-fix accessibility issues. 
-                    </p> */}
                     <p>
                         The <span> </span>
                         <ExternalLink 
@@ -489,7 +483,7 @@ export default function MakeItAccessible() {
                             <p className="white-bg">
                                 <span className="pink-text bold">&#x2714; </span>
                                 <span>
-                                    Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn Profile"</code>).
+                                    Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn"</code>).
                                     A quick reminder that, in general, this is not a great choice because it does not
                                     take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers.
                                 </span>

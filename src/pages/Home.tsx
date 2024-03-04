@@ -26,7 +26,7 @@ export default function Home() {
                             <SvgCard key={index} svg={icon.svg}/>
                         ))}                 
                     </div> */}
-                    <img className="hero-img-desktop" src="/assets/images/people.jpg" alt=""/>
+                    <img className="hero-img-desktop" src="/assets/images/heroYellowImage-mobile.jpg" alt=""/>
                     {/* <img className="hero-img-mobile" src="/assets/images/heroYellowImage-mobile.jpg" alt=""/> */}
                     
                     {isBetaOpen &&
