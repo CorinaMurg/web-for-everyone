@@ -217,15 +217,16 @@ export default function MakeItAccessible() {
                                 <p>Then import the hook and use it in your component:</p>
                                 <div className="code">
                                     <code>
-                                        import <span className="code-blue-color">useDocTitle</span> from './useDocTitle';
+                                        import <span className="code-blue-color">useDocTitle</span> from '../hooks/useDocTitle';
                                     </code>
                                     <br/>
                                     <code>
-                                        function <span className="code-yellow-color">MyPage</span>() &#123;
+                                        function <span className="code-yellow-color">About</span>() &#123;
                                     </code>
                                     <code className="padding-left-30">
-                                        <span className="code-blue-color">useDocTitle</span>("Web for Everyone");
+                                        <span className="code-blue-color">useDocTitle</span>("About | Web for Everyone");
                                     </code>
+                                    <code className="padding-left-30">// rest of the component</code>
                                     <code>&#125;</code>
                                 </div>
                             </div>

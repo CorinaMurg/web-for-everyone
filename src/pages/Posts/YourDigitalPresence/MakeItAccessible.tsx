@@ -266,65 +266,11 @@ export default function MakeItAccessible() {
                             the <strong>AA</strong> and <strong>AAA</strong> levels of compliance</span>
                         </p>
                     </div>
-                            {/* <p></p>
-                    <p className="margin-top-20 padding-left-20">
-                        <strong className="pink-text"> 1. </strong>enter the foreground and background colors for a given element
-                    </p>
-                    <p className="margin-top-10 padding-left-20">
-                        <strong className="pink-text">2. </strong>the tool calculates the contrast ratio
-                    </p>
-                    <p className="margin-top-10 padding-left-20">
-                        <strong className="pink-text">3. </strong>you receive a <strong>pass</strong> or <strong>fail</strong> result for 
-                        the <strong>AA</strong> and <strong>AAA</strong> levels of accessibility compliance
-                    </p> 
-                    </div> */}
-                    
                     <p>
                         <strong>A neat feature of the tool</strong>: it provides <strong>luminance sliders</strong> that allow you to adjust 
                         the levels and see how the contrast ratio changes. <span aria-hidden="true"> 😎</span>
                     </p>  
                             
-                    {/* Example: Using WebAIM's contrast checker */}
-                    {/* <div className="highlight highlight-one-line margin-top-30">
-                        <details>
-                            <summary>
-                                <span className="details-title">
-                                    Example: Using WebAIM's contrast checker
-                                </span>
-                            </summary>
-                            <br></br>
-                            <div className="details-content">
-                            <p className="margin-top-30">
-                                <span className="pink-num">1. </span>Enter the foreground and background colors:
-                            </p>
-                            <div className="section-image">
-                                <img src="/assets/images/colorContrastInput.jpg" 
-                                    alt="WebAIM's color contrast checker.  
-                                    The contrast ratio displayed is 3.02:1."/>
-                            </div>
-                            <p>
-                                Notice the <strong>lightness sliders</strong> that allow you to adjust the colors and see how 
-                                the contrast ratio changes.
-                            </p>
-                           
-                            <p style={{ marginTop: '50px' }}>
-                                <span className="pink-num">2. </span>View the contrast ratio and the pass/fail results for each standard:
-                            </p>
-                            <div className="section-image">
-                                <img src="/assets/images/colorContrastAnswers.jpg" 
-                                    alt="WebAIM's color contrast checker results."/>
-                            </div>
-
-                            <p className="white-bg">
-                                Notice how a ratio of <span className="pink-bg-white-text">3.14:1</span> fails 
-                                WCAG AA for normal text, but passes for large text.
-                            </p>
-                            
-                            </div>
-                        </details>
-                    </div> */}
-
-                    
                     {/* *****COLOR CONTRAST FOR LINKS***** */}
                     <div className="highlight">
                         <h4 className="two-line-heading">

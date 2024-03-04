@@ -514,8 +514,10 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 margin-top-20">
                                 Be careful though! It won't work easily with speech commands unless the user can
                                 tell what the name of the element is. So, use it with an icon linking to your
-                                LinkedIn profile, but avoid it with an icon that is less recognizable.
+                                LinkedIn profile (and stick with just "LinkedIn" and no other text that a user will have to guess), 
+                                but avoid it with an icon that is less recognizable.
                             </p>
+
                             <div className="highlight highlight-inline">
                                 <details>
                                     <summary>
@@ -563,6 +565,7 @@ export default function MostCommonBugs() {
                                     </p>
                                 </details>
                             </div>
+
                             <p className="padding-left-20 margin-top-20">
                                 Also, if the CSS class is not implemented correctly, the spaces between words might be
                                 ignored and screen readers could announce the text as a single continuous string.
@@ -579,7 +582,7 @@ export default function MostCommonBugs() {
                                 <strong>alt</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
-                                You can use it for interactive images. With buttons or links that contain an image and no 
+                                You can use it with interactive images. With buttons or links that contain an image and no 
                                 visible text or ARIA attributes, the browser will take the <code>alt</code> attribute 
                                 to compute the accessible name.
                             </p>  
@@ -590,6 +593,12 @@ export default function MostCommonBugs() {
                                 (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
                                 , depending on the screen reader.)
                             </p>  
+                            <p className="padding-left-20 white-bg margin-top-20">
+                                Again, a common concern with accessible names not computed from visible text: 
+                                in order to activate the element, voice users should be able to tell its name.
+                                Choose the <code>alt</code> text thoughtfully!
+                                
+                            </p>
                             <p className="padding-left-20 white-bg margin-top-20">
                                 You could also use an empty <code>alt</code> attribute to hide the image from the screen reader,
                                 and add a <code>visually-hidden</code> span with the accessible name.
@@ -654,8 +663,8 @@ export default function MostCommonBugs() {
                                 </Link>.
                             </p> 
                             <p className="padding-left-20 white-bg margin-top-20">
-                                <strong>Use it if nothing else is available</strong>
-                                ! The biggest issue with <code>aria-label</code>?
+                                <strong>Use it if nothing else is available</strong>!
+                                The biggest issue with <code>aria-label</code>?
                                 It does not take a <code>lang</code> attribute (read 
                                     <span> </span>
                                 <Link to="/resources/make-it-accessible-part1#the-language-attribute">
@@ -670,12 +679,12 @@ export default function MostCommonBugs() {
                                 guess the name of the element since it's not visible, or go through a series of other commands
                                 until they can select the element.
                             </p>
-                            <p className="padding-left-20 margin-top-20">
+                            <p className="margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
-                                A post by Adrian Roselli, an accessibility expert, on <span> </span>
+                                A post by Adrian Roselli, an accessibility expert, <span> </span>
                                 <ExternalLink 
                                     href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
-                                    visibleText="why we should avoid aria-label"
+                                    visibleText="ranking methods for labeling a control"
                                 />.
                             </p> 
                         </div>
@@ -700,7 +709,8 @@ export default function MostCommonBugs() {
                                 <span>
                                     The ARIA attributes are given priority even when the element has visible text or a label.
                                     The idea being that they were added to offer a more descriptive or tailored name 
-                                    for the element.
+                                    for the element. So, if the element has descriptive visible text or label, do not add <span> </span>
+                                    <code>aria-labelledby</code> or <code>aria-label</code>!
                                 </span>
                             </p>
                         </div>        
@@ -714,7 +724,7 @@ export default function MostCommonBugs() {
                             </h3>
                             <div className="code margin-top-30 margin-bottom-30">
                                 <code>
-                                    <span className="code-blue-color">&lt;button</span> id="closeModal"
+                                    <span className="code-blue-color">&lt;button</span> id="close-menu"
                                     <span className="code-blue-color">&gt;</span>
                                 </code>
                                 <code className="padding-left-30">
@@ -724,7 +734,7 @@ export default function MostCommonBugs() {
                                 <code className="padding-left-30">
                                     <span className="code-yellow-color">&lt;span</span> class="<span className="code-pink-coor">visually-hidden</span>"
                                     <span className="code-yellow-color">&gt;</span>
-                                    Close modal
+                                    Close menu
                                     <span className="code-yellow-color">&lt;/span&gt;</span> 
                                 </code>
                                 
@@ -733,7 +743,7 @@ export default function MostCommonBugs() {
                             <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
                                 The browser will use the text from the <code>visually-hidden</code> span to compute 
-                                the accessible name "Close modal".
+                                the accessible name "Close menu".
                             </p>
                             <p className="white-bg">
                                 For the sighted user, it will be obvious that the purpose of the button is to close 
