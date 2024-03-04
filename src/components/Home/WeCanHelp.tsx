@@ -17,7 +17,7 @@ export default function WeCanHelp() {
                     <h3>Checklist for common bugs</h3>
                     <p>
                         Use <span> </span>
-                        <Link to="/resources/your-digital-presence">
+                        <Link to="/resources#your-digital-presence">
                             Your Digital Presence
                         </Link> <span> </span>
                         guide to find and fix common accessibility issues.
