@@ -236,8 +236,7 @@ export default function MakeItAccessible() {
                         <ExternalLink
                             href="https://webaim.org/resources/contrastchecker/" 
                             visibleText="WebAIM's contrast checker"
-                        />
-                        .  
+                        />. 
                     </p>
                     <p >
                         For quick access, you can also <span> </span>
@@ -305,7 +304,7 @@ export default function MakeItAccessible() {
                             <ExternalLink
                                 href="https://webaim.org/resources/linkcontrastchecker/" 
                                 visibleText="WebAIM's link contrast checker"
-                            />
+                            />.
                         </p>        
                     </div>
                 </div>

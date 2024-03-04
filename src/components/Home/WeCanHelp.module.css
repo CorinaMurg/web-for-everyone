@@ -149,7 +149,7 @@
     color: var(--yellow-color);
     text-decoration: underline;
     font-weight: 500;
-    /* text-underline-offset: 5px !important; */
+    text-underline-offset: 3px;
     padding: 2px;
     letter-spacing: 0.7px !important;
 }
@@ -158,11 +158,8 @@
     color: inherit;
     text-decoration: underline;
     font-weight: 500;
-    /* text-underline-offset: 5px !important; */
     text-decoration-style: wavy;
     text-decoration-color: var(--yellow-color);
-    /* padding: 2px; */
-    /* text-decoration-thickness: 6px; */
 }
 
 .we-can-help a:focus-visible {
