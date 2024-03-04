@@ -135,10 +135,10 @@ footer li {
         flex-direction: column;
         gap: 40px;
     }
-
+/* 
     .footer--right {
         gap: 80px;
-    }
+    } */
 
     /* .footer--left span {
         margin-bottom: 30px;
@@ -166,6 +166,7 @@ footer li {
     .footer--right {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 }
 

@@ -85,6 +85,30 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .we-can-help h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .we-can-help h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .we-can-help h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .we-can-help h2 {
+        font-size: 1.6rem;
+    }
+}
+
 .we-can-help h3 {
     color: var(--cream-color);
     font-size: 1rem;
@@ -110,6 +134,16 @@
         padding: 20px;
     }
     
+}
+
+@media screen and (max-width: 600px) {
+    .we-can-help {
+        padding-block: 30px;
+    }
+    .we-can-help p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
 }
 .we-can-help a {
     color: var(--yellow-color);
