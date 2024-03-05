@@ -101,7 +101,7 @@
 
 .hero--design {
     width: 100%;
-   height: 180px;
+    height: fit-content;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     display: flex;
@@ -110,7 +110,7 @@
     align-items: center;
     background-color: var(--yellow-color);
     text-align: center;
-    margin-bottom: 5px;
+    /* padding-block: 5px; */
     position: relative;
     border-bottom: 2px solid var(--text-dark-color);
 }
@@ -118,7 +118,7 @@
 .hero--design h1 {
     font-size: 3.4rem;
     font-weight: 600;
-    line-height: 1.1;
+    line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,9 +129,9 @@
 .hero--subtitle {
     font-size: 1.1rem;
     font-weight: 500;
-    width: 37rem;
-    width: 95%;
-    margin-inline: auto;
+    width: 100%;
+    /* margin-inline: auto; */
+    margin-bottom: 20px;
     background-color: var(--cream-color);
     padding: 10px;
     text-align: center;
@@ -183,9 +183,9 @@
     .hero--design h1 {
         font-size: 3.2rem;
     }  
-    .hero--subtitle {
+    /* .hero--subtitle {
         width: 85%;
-    }
+    } */
     .hero--text {
         gap: 70px;
     }
@@ -203,9 +203,9 @@
     .hero--design h1 {
         font-size: 2.8rem;
     }  
-    .hero--subtitle {
+    /* .hero--subtitle {
         width: 95%;
-    }
+    } */
 }
 
 .continue-to-article {
@@ -262,14 +262,14 @@
     .hero--design {
         width: calc(100% + 2* var(--main-margin));
         margin-inline: calc((-1)* var(--main-margin));
-        height: 180px;
+        /* height: 180px; */
         display: flex;
         flex-direction: column;
         justify-content:center;
     }
 
     .hero--subtitle {
-        width: calc(100% - 2* var(--main-margin));
+        padding-inline: var(--main-margin);
     }
 
     .hero--text {
@@ -292,9 +292,9 @@
 }
 
 @media screen and (max-width: 590px) { 
-    .hero--design {
+    /* .hero--design {
         height: 300px;
-    }
+    } */
     .hero--design h1 {
         flex-direction: column;
         font-size: 3.5rem;
@@ -303,11 +303,11 @@
 }
 
 @media screen and (max-width: 450px) { 
-    .hero--design {
+    /* .hero--design {
         height: 320px;
-    }
+    } */
     .hero--design h1 {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         font-size: 3.3rem;
     }
 }
@@ -319,9 +319,9 @@
 }
 
 @media screen and (max-width: 315px) { 
-    .hero--design {
+    /* .hero--design {
         height: 360px;
-    }
+    } */
     .hero--design h1 {
         font-size: 2.6rem;
     }
