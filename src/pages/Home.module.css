@@ -136,8 +136,11 @@
     font-weight: 500;
     width: 100%;
     /* margin-inline: auto; */
-    /* margin-bottom: 20px; */
-    background-color: var(--hero-lightBlue);
+    margin-bottom: 15px;
+    
+    /* background-color: var(--hero-lightBlue); */
+    /* background-color: rgb(230, 224, 224); */
+    background-color: var(--cream-color); 
     padding-block: 10px;
     padding-inline: 30px;
     text-align: center;
