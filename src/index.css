@@ -28,6 +28,7 @@
     /* Highlight colors */
     --grayishBlue-color: hsl(233, 12%, 87%);
     --yellow-color: #ffb703;
+    /* --yellow-color: #ffd60a; */
     --yellowFaded-color: rgba(255, 183, 3, 0.5);
     --lightGray-color: #f6f6f6;
     --lightPink-color: #ffe9ed;
