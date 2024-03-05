@@ -14,7 +14,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    /* gap: 10px; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -113,6 +112,7 @@
     text-align: center;
     margin-bottom: 5px;
     position: relative;
+    border-bottom: 2px solid var(--text-dark-color);
 }
 
 .hero--design h1 {
@@ -123,7 +123,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px; 
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .hero--subtitle {
@@ -133,10 +133,9 @@
     width: 95%;
     margin-inline: auto;
     background-color: var(--cream-color);
-    padding: 3px 10px;
+    padding: 8px 10px;
     text-align: center;
 }
-
 
 .all-highlight {
     background-color: var(--pinkBright-color);
@@ -253,6 +252,10 @@
 }
 
 @media screen and (max-width: 625px) { 
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
     .hero {
         order: 1;
     }
@@ -279,24 +282,7 @@
         width: 100%;
     }
 
-    /* .hero--text--heading {
-        width: calc(100% + 2* var(--main-margin));
-        margin-inline: calc((-1)* var(--main-margin));
-        flex-direction: row;
-        gap: 10px;
-        font-size: 2.5rem;
-    }
-
-    .hero--text--body {
-        width: 100%;
-    }
-
-    .hero--text--body p:nth-of-type(2) {
-        margin-top: 20px;
-    } */
-
     .home .continue-to-article {
-        /* margin-top: 40px; */
         font-size: 1.3rem;
     }
 }
@@ -313,7 +299,6 @@
     .hero--subtitle {
         width: 90%;
     }
-
 }
 
 @media screen and (max-width: 450px) { 
@@ -390,22 +375,13 @@
 } */
 
 
-
 /* /////////////////////////////////////////////////// */
 .mini-articles {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
-    margin-top: 110px;
-    
-}
-
-@media screen and (max-width: 600px) { 
-    .mini-articles {
-        margin-top: 40px;
-        order: 3;
-    }
+    margin-top: 110px; 
 }
 
 .mini-articles h2 {
@@ -427,26 +403,6 @@
     gap: 48px;
     padding-inline-start: 0;
     
-}
-
-@media screen and (max-width: 1100px) { 
-    .mini-articles ul {
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width: 750px) { 
-    .mini-articles ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 625px) { 
-    .mini-articles ul {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
 }
 
 .mini-article {
@@ -476,7 +432,6 @@
     top: 0;
     z-index: 1;
 }
-
 
 .mini-article--text {
     color: var(--text-dark-color);
@@ -536,27 +491,6 @@
     outline: none;
 }
 
-/* .mini-article-link::before {
-    content: "";
-    height: 4px;
-    background: var(--text-dark-color);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transition: height 1s;
-    -moz-transition: height 1s; 
-    -ms-transition: height 1s; 
-    -o-transition: height 1s;
-    transition: height 1.5s;
-    overflow: hidden;
-    z-index: -1;
-} */
-
-/* .mini-article-link:hover::before {
-    height: 100%;
-} */
-
 .mini-article-1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -597,15 +531,6 @@
     padding: 15px;
 }
 
-@media screen and (max-width: 600px) { 
-    .mini-article--image {
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
-        padding-inline: var(--main-margin);
-    }
-    
-}
-
 .mini-article--image-1 {
     background-color: var(--hero-lightBlue);
 }
@@ -627,3 +552,41 @@
 
 
 
+@media screen and (max-width: 1100px) { 
+    .mini-articles ul {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) { 
+    .mini-articles ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 625px) { 
+    .mini-articles {
+        margin-top: 40px;
+        order: 3;
+    }
+
+    .mini-articles ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .mini-article--image {
+        width: calc(100% + 2*var(--main-margin));
+        margin-inline: calc((-1)*var(--main-margin));
+        padding-inline: var(--main-margin);
+    } 
+}
+
+@media screen and (max-width: 450px) { 
+    .mini-articles {
+        margin-top: 20px;
+    }
+}
