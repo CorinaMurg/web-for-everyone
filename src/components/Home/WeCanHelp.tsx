@@ -14,7 +14,7 @@ export default function WeCanHelp() {
             </h2>
             <ul>
                 <li>
-                    <h3>Checklist for common bugs</h3>
+                    <h3><span>Checklist </span> <span>for bugs</span></h3>
                     <p>
                         Use <span> </span>
                         <Link to="/resources#your-digital-presence">
@@ -24,13 +24,13 @@ export default function WeCanHelp() {
                     </p>
                 </li>
                 <li>
-                    <h3>Portfolio review</h3>
+                    <h3><span>Portfolio</span> <span>review</span></h3>
                     <p>
                         Share your site and receive feedback on how to improve its accessibility.
                     </p>
                 </li>
                 <li>   
-                    <h3>Connect</h3>
+                    <h3><span>Connect </span></h3>
                     <p>
                         Join our community on <span> </span>
                         <ExternalLink

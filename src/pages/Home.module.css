@@ -118,7 +118,7 @@
 .hero--design h1 {
     font-size: 3.4rem;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@
     width: 95%;
     margin-inline: auto;
     background-color: var(--cream-color);
-    padding: 8px 10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -266,11 +266,15 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
-        
+    }
+
+    .hero--subtitle {
+        width: calc(100% - 2* var(--main-margin));
     }
 
     .hero--text {
         flex-direction: column;
+        gap: 90px;
     }
 
     .hero--text h2 {
@@ -296,16 +300,14 @@
         font-size: 3.5rem;
         gap: 5px;
     }
-    .hero--subtitle {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 450px) { 
     .hero--design {
-        height: 330px;
+        height: 320px;
     }
     .hero--design h1 {
+        margin-bottom: 10px;
         font-size: 3.3rem;
     }
 }
@@ -555,6 +557,16 @@
 @media screen and (max-width: 1100px) { 
     .mini-articles ul {
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .mini-articles {
+        margin-top: 0;
     }
 }
 
