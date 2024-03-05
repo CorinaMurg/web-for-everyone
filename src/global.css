@@ -643,6 +643,10 @@ p {
     pointer-events: none;
 }
 
+.home .scroll-target {
+    border-top: 2px solid var(--pinkBright-color);
+}
+
 .section {
     display: flex;
     flex-direction: column;
