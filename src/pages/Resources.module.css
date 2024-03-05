@@ -262,8 +262,13 @@
 @media screen and (max-width: 670px) {
     .resources {
         margin-inline: 0;
+        margin-top: 0;
     }
 
+    .resources h1 {
+        margin-top: 0;
+        line-height: 1.2;
+    }
     .resources h1,
     .resources-content{
         margin-inline: var(--main-margin);
