@@ -117,7 +117,7 @@
     text-align: center;
     /* padding-block: 5px; */
     position: relative;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid var(--text-dark-color);
 }
 
 .hero--design h1 {
