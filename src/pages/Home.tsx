@@ -34,7 +34,8 @@ export default function Home() {
                     </h1>
                     <p className={styles['hero--subtitle']}>
                         You're building your portfolio site. Will it be ready to welcome <span> </span>
-                        <span className={styles['all-highlight']}>all</span> visitors, including those with disabilities? 
+                        <span className={styles['all-highlight']}>all</span> visitors, including those with 
+                        disabilities? Time to check!
                     </p>
 
                     
