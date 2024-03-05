@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; 
+    gap: 15px; 
     padding: 10px;
 }
 
@@ -116,6 +116,7 @@
 
 .beta a:focus-visible {
     outline: 3px dashed var(--cream-color);
+    text-decoration: none;
 }
 
 .beta svg path {

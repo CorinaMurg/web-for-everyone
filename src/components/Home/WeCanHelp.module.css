@@ -164,7 +164,7 @@
 
 .we-can-help a:focus-visible {
     text-decoration: none;
-    outline: 2px dashed var(--yellow-color);
+    outline: 2px dashed var(--cream-color);
     outline-offset: 2.5px;
 }
 
