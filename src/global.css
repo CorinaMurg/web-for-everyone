@@ -48,8 +48,6 @@
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.3px;
-    /* margin-left: var(--main-margin); */
-    /* margin-bottom: 50px; */
 }
 
 .article-content {
@@ -62,12 +60,9 @@
     font-weight: 500;
     width: 39rem;
     max-width: 100%;
-    /* overflow-x: hidden; */
-    /* margin-left: var(--main-margin); */
 }
 
 .article-content h3 {
-    /* margin-bottom: 10px; */
     margin-top: 20px;
     color: inherit;
 }
@@ -133,7 +128,6 @@
 .bullet-point-line {
     position: relative;
     padding-left: 20px;
-    /* margin-top: 20px; */
 }
 
 .bullet-list-item {
@@ -191,7 +185,6 @@
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    /* border-radius: 5px; */
     color: var(--cream-color);
     margin-bottom: 30px;
 }
@@ -205,48 +198,9 @@
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    /* border-radius: 5px; */
     color: var(--cream-color);
 }
 
-
-
-/* .continue-to-article {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 1;
-    align-self: flex-start;
-    text-decoration: none;
-    color: var(--text-dark-color);
-} */
-
-/* .continue-to-article svg[id="arrow"] circle {
-    fill: var(--hero-lightBlue)
-}
-.continue-to-article svg[id="bug"] {
-    display: none; 
-  }
-  
-.continue-to-article:hover svg[id="arrow"] {
-    display: none; 
-}
-
-.continue-to-article:focus-visible svg[id="arrow"] {
-    display: none; 
-}
-
-.continue-to-article:hover svg[id="bug"] {
-    display: block; 
-    fill: var(--pinkBright-color);
-}
-
-.continue-to-article:focus-visible svg[id="bug"] {
-    display: block; 
-    fill: var(--pinkBright-color);
-} */
 
 .continue-to-article-container {
     display: flex;
@@ -325,7 +279,6 @@
     align-items: center;
     justify-content: center;
     line-height: 1;
-    /* margin-right: 5px; */
 }
 
 .external-linksvg-wrap svg {
@@ -333,10 +286,6 @@
     height: 1rem;
     line-height: 1;
 }
-
-/* .external-linksvg-wrap svg path {
-    fill: red;
-} */
 
 .fake-heading-p {
     font-weight: 700;
@@ -381,13 +330,8 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    /* line-height: 1.5; */
     margin-bottom: 0;
 }
-
-/* h2, h3 {
-    scroll-margin-top: 40px;
-} */
 
 h4 {
     font-size: 1.2rem;
@@ -399,21 +343,6 @@ h4 {
     margin-top: 48px;
 }
 
-/* .heading-link {
-    position: absolute;
-    left: -30px;
-    top: 2px;
-}
-
-.heading-link svg {
-    opacity: 0; 
-    transition: opacity 0.3s; 
-}
-
-.heading-link:focus svg, .heading-link:hover svg {
-    opacity: 1; 
-} */
-
 .highlight {
     background-color: white;
     font-weight: 500;
@@ -421,7 +350,6 @@ h4 {
     width: 100%;
     border: 1.7px solid gray;
     margin-top: 10px;
-    /* border-radius: 5px; */
 }
 
 .highlight-no-heading {
@@ -559,7 +487,6 @@ p {
     font-weight: 500;
     line-height: 2;
     letter-spacing: -0.1px;
-    /* margin-block: 20px; */
 }
 
 .padding-left-20 {
@@ -721,7 +648,6 @@ summary::marker {
 .summary-title {
     margin-left: 10px;
     line-height: 1.5;
-    /* padding-left: 20px; */
 }
 .two-line-heading {
     display: flex;
@@ -834,7 +760,6 @@ ul[class^="checkmark-list"] li p {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.1px;
-    /* margin: 1px -1px; */
 }
 
 .white-bg-dark-text {
@@ -940,10 +865,6 @@ ul[class^="checkmark-list"] li p {
         padding-inline: 0;
     }
 
-    /* .article-container .subtitle {
-        padding-inline: var(--main-margin);
-    } */
-
     details {
         width: 100%;
     }
@@ -996,20 +917,9 @@ ul[class^="checkmark-list"] li p {
     .article-content ul li p {
         margin-inline: 0;
     }
-  
-    /* iframe {
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
-    } */
 }
 
 @media screen and (max-width: 620px) {
-    /* .article-container {
-        margin-left: 0;
-        padding-inline: var(--main-margin);
-        width: 100%;
-    } */
-
     .resources .article-heading-desktop,
     .article-heading-desktop {
         display: none;
@@ -1020,7 +930,6 @@ ul[class^="checkmark-list"] li p {
         display: flex;
         flex-direction: column;
         font-size: 3rem;
-        /* margin-top: 30px; */
         font-weight: 600;
     }
 
