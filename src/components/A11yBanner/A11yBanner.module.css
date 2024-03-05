@@ -29,7 +29,7 @@
 .rectangle-2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: pink;
+    background-color: var(--hero-pink);
     align-items: center;
     justify-content: center;
 }

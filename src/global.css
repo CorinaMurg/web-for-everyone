@@ -839,13 +839,16 @@ ul[class^="checkmark-list"] li p {
     font-weight: 600;
     padding: 1px 3px;
     border-radius: 2px;
+    position: relative;
+    z-index: 1;
 }
 
-.yellow-bg-dark-text {
-    background-color: var(--yellowFaded-color);
-    color: var(--text-dark-color);
-    padding: 1px 3px;
-    border-radius: 4px;
+.pink-bg-white-text-round {
+    background-color: var(--pinkBright-color);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-weight: 400;
 }
 
 
