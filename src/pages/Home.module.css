@@ -113,34 +113,38 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--yellow-color);
+    /* background-color: var(--yellow-color); */
     text-align: center;
     /* padding-block: 5px; */
     position: relative;
-    border-bottom: 2px solid var(--text-dark-color);
+    /* border-bottom: 2px solid var(--text-dark-color); */
 }
 
 .hero--design h1 {
     font-size: 3.4rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px; 
     padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 .hero--subtitle {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 400;
     width: 100%;
     /* margin-inline: auto; */
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     
     /* background-color: var(--hero-lightBlue); */
-    /* background-color: rgb(230, 224, 224); */
+    
     background-color: var(--cream-color); 
+    background-color: rgb(230, 224, 224);
+    border-top: 10px solid var(--yellow-color);
+    border-bottom: 10px solid var(--yellow-color);
     padding-block: 10px;
     padding-inline: 30px;
     text-align: center;
@@ -161,9 +165,16 @@
     grid-row: 2 / 3;
 }
 
+.hero--text p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
 .hero--text h2 {
     font-size: 1.4rem;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .hero--text--right,
@@ -179,8 +190,8 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
@@ -246,6 +257,7 @@
 
     .hero--text p {
         margin-bottom: 30px;
+       
     }
 }
 

@@ -544,7 +544,7 @@ p {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--text-dark-color) var(--yellowFaded-color);
+    scrollbar-color: var(--text-dark-color) var(--cream-color);
 }
 
 
@@ -553,13 +553,13 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--yellowFaded-color); 
+    background: var(--cream-color); 
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--text-dark-color);
     border-radius: 6px; 
-    border: 3px solid var(--yellowFaded-color);
+    border: 3px solid var(--cream-color);
 }
 
 .scroll-target::before {
