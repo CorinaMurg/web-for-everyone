@@ -37,7 +37,6 @@ export default function Home() {
                         <span className={styles['all-highlight']}>all</span> visitors, including those with 
                         disabilities? Time to check!
                     </p>
-
                     
                     {isBetaOpen &&
                         <div className={styles.beta}>
@@ -80,7 +79,7 @@ export default function Home() {
                     <div className={styles['hero--text--right']}>
                         <div>
                             <h2>
-                                Familiar with accessibility? 
+                                Know Accessibility? 
                                 
                             </h2>
                             <p>

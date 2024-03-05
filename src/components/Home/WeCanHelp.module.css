@@ -10,46 +10,6 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
-    .we-can-help {
-        display: none;
-    }
-}
-
-/* @media screen and (max-width: 670px) {
-    .table-contents {
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
-    }
-    .table-contents nav {
-        width: 100%;
-        max-width: none;
-    }
-
-    .table-contents h2 {
-        padding-inline: var(--main-margin);
-    }
-    .table-contents ul {
-        margin-inline: 0;
-        padding-inline: var(--main-margin);
-        gap: 30px;
-        height: auto;
-        padding-block: 25px;
-    }
-} */
-
-@media screen and (max-width: 600px) {
-    .we-can-help {
-        display: block;
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
-        gap: 40px;
-        width: calc(100% + 2*var(--main-margin));
-        margin-inline: calc((-1)*var(--main-margin));
-        margin-top: 40px;
-        padding-inline: var(--main-margin);
-    }
-}
 
 .we-can-help ul {
     padding-inline-start: 0;
@@ -59,9 +19,6 @@
     border-bottom: 0.3px solid var(--cream-color);
 }
 
-/* .we-can-help--link:focus-visible {
-    outline: 3px dashed red !important;
-} */
 
 .we-can-help ul li:last-of-type {
     border-bottom: none;
@@ -77,36 +34,6 @@
     color: var(--cream-color);
     font-size: 1.5rem;
     font-weight: 500;
-}
-
-@media screen and (max-width: 1190px) {
-    .we-can-help h2 {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .we-can-help h2 {
-        font-size: 2.2rem;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .we-can-help h2 {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 435px) {
-    .we-can-help h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .we-can-help h2 {
-        font-size: 1.6rem;
-    }
 }
 
 .we-can-help h3 {
@@ -125,26 +52,6 @@
     letter-spacing: 0.4px;
 }
 
-@media (min-width: 1000px) and (max-width: 1200px) {
-    .we-can-help p {
-        font-size: 0.8rem;
-    }
-
-    .we-can-help {
-        padding: 20px;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .we-can-help {
-        padding-block: 30px;
-    }
-    .we-can-help p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
 .we-can-help a {
     color: var(--yellow-color);
     text-decoration: underline;
@@ -172,11 +79,68 @@
     fill: var(--yellow-color);
 }
 
-/* .we-can-help li:nth-of-type(3) a span:nth-of-type(2) {
-    background-color: white;
-    height: 0.8rem;
-    width: 0.95rem;
-   font-size: 0;
-    border-radius: 5px;
-    padding: 0;
-} */
+@media screen and (max-width: 1190px) {
+    .we-can-help h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .we-can-help {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .we-can-help {
+        display: block;
+        order: 2;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        gap: 40px;
+        width: calc(100% + 2*var(--main-margin));
+        margin-inline: calc((-1)*var(--main-margin));
+        margin-top: 40px;
+        padding-inline: var(--main-margin);
+        padding-block: 30px;
+    }
+    .we-can-help h2 {
+        font-size: 2.2rem;
+    }
+
+    .we-can-help h3 {
+        font-size: 1.5rem;
+    }
+
+    .we-can-help p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .we-can-help h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .we-can-help h2 {
+        font-size: 1.8rem;
+    }
+    .we-can-help h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .we-can-help h2 {
+        font-size: 1.6rem;
+    }
+    .we-can-help h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+
