@@ -89,7 +89,7 @@ export default function Home() {
                         </div>
                         
                         <Link 
-                            to="/" 
+                            to="/resources/make-it-accessible-part1" 
                             className={styles['continue-to-article']}
                             onClick={scrollToSection}
                         >   
