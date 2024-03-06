@@ -57,7 +57,7 @@ export default function Home() {
                         <div>
                             <h2>New to accessibility?</h2>
                             <p>
-                                Scroll down to learn why accessibility matters and how it works.
+                                Learn why accessibility matters and how it works behind the scene.
                                 Plus, you'll meet some of the most common accessibility bugs. Don't befriend them!
                             </p>
                         </div>

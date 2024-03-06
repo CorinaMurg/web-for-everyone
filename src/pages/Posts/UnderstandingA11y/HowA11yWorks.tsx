@@ -199,7 +199,7 @@ export default function MostCommonBugs() {
                                     &lt;li&gt;
                                 </code>
                                 <code className="padding-left-60">
-                                    <span className="code-pink-color">&lt;a&gt;</span>Your Users<span className="code-pink-color">&lt;/a&gt;</span>
+                                    <span className="code-pink-color">&lt;a&gt;</span>Resources<span className="code-pink-color">&lt;/a&gt;</span>
                                 </code>
                                 <code className="padding-left-40">
                                     &lt;/li&gt;
@@ -223,11 +223,11 @@ export default function MostCommonBugs() {
 
                                 <code className="padding-left-40 margin-top-30">listitem</code>
                                 <code className="padding-left-60">
-                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
+                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Resources</span>"
                                     <span> </span>
                                     <span className="code-purple-color">focusable</span>: true
                                 </code>
-                                <code className="padding-left-80">StaticText "Your Users"</code>
+                                <code className="padding-left-80">StaticText "Resources"</code>
                                 <code className="padding-left-40 margin-top-30">// other list items</code>
                             </div>
                         </div>
