@@ -17,6 +17,12 @@
     text-align: right;
 }
 
+.numbers dd {
+    font-size: 1rem;
+    color: var(--text-dark-color);
+    font-weight: 500;
+}
+
 @media screen and (max-width: 670px) {
     .numbers {
         margin-left: var(--main-margin);

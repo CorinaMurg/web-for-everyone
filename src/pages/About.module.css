@@ -61,12 +61,6 @@
     margin-bottom: 30px;
 }
 
-.about--me--text p {
-    font-size: inherit;
-    font-weight: 500;
-    line-height: 2;
-}
-
 .we-container {
     background-color: var(--text-dark-color);
     display: inline;
