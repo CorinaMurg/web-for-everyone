@@ -555,10 +555,10 @@ export default function MakeItAccessible() {
                     <div>
                         <h4>Which method should you use: implicit or explicit?</h4>
                         <p className="white-bg">
-                            Both are valid, but the explicit method (label wrapping the input) will cause 
+                            Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
                             Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
-                            software, it's best to <strong>use the implicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
+                            software, it's best to <strong>use the explicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
                         </p>
                     </div>
                 </div>

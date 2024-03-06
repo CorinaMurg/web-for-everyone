@@ -201,7 +201,6 @@
     color: var(--cream-color);
 }
 
-
 .continue-to-article-container {
     display: flex;
 }
@@ -250,7 +249,6 @@
     color: var(--code-purple-color);
 }
 
-
 .conclusion {
     margin-top: 40px;
 }
@@ -271,7 +269,6 @@
     overflow-y: auto;
     padding-right: 20px;
 }
-
 
 .external-linksvg-wrap {
     white-space: nowrap;
@@ -309,7 +306,6 @@
     -webkit-box-decoration-break: clone;
 }
 
-
 h1,
 h2,
 h3,
@@ -326,17 +322,20 @@ h2, h3, h4 {
 
 h2 {
     font-size: 2.2rem;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.5rem;
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 h4 {
     font-size: 1.2rem;
     margin-block: 20px;
     line-height: 2;
+    font-weight: 600;
 }
 
 .heading {
