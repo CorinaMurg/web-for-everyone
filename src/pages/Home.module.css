@@ -217,7 +217,7 @@
 
 
 @media screen and (max-width: 1100px) {
-    .hero--design h1 {
+    .hero h1 {
         font-size: 3.1rem;
     }  
     .hero--text h2 {
@@ -226,10 +226,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .hero--design {
-        margin-bottom: 30px;
-    }
-    .hero--design h1 {
+
+    .hero h1 {
         font-size: 3.2rem;
     }  
 
@@ -248,30 +246,22 @@
 }
 
 @media screen and (max-width: 720px) {
-    .hero--design h1 {
+    .hero h1 {
         font-size: 2.8rem;
     }  
-    /* .hero--subtitle {
+    .hero--subtitle {
         width: 95%;
-    } */
+    }
 }
 
 @media screen and (max-width: 625px) { 
-
-    .hero {
-        order: 1;
-    }
-    .hero--design {
-        width: calc(100% + 2* var(--main-margin));
-        margin-inline: calc((-1)* var(--main-margin));
-        /* height: 180px; */
-        display: flex;
+    .hero h1 {
         flex-direction: column;
-        justify-content:center;
-    }
-
+        font-size: 3.5rem;
+    }  
     .hero--subtitle {
         padding-inline: var(--main-margin);
+        width: 100%;
     }
 
     .hero--text {
@@ -294,38 +284,25 @@
 }
 
 @media screen and (max-width: 590px) { 
-    /* .hero--design {
-        height: 300px;
-    } */
-    .hero--design h1 {
+    .hero h1 {
         flex-direction: column;
         font-size: 3.5rem;
         gap: 5px;
     }
 }
 
-@media screen and (max-width: 450px) { 
-    /* .hero--design {
-        height: 320px;
-    } */
-    .hero--design h1 {
-        /* margin-bottom: 10px; */
-        font-size: 3.3rem;
-    }
-}
 
-@media screen and (max-width: 350px) { 
-    .hero--design h1 {
-        font-size: 3.1rem;
+
+@media screen and (max-width: 380px) { 
+    .hero h1 {
+        font-size: 3.2rem;
     }
 }
 
 @media screen and (max-width: 315px) { 
-    /* .hero--design {
-        height: 360px;
-    } */
-    .hero--design h1 {
-        font-size: 2.6rem;
+  
+    .hero h1 {
+        font-size: 2.8rem;
     }
 }
 
@@ -586,11 +563,12 @@
     }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 625px) { 
     .mini-article--image {
         width: calc(100% + 2*var(--main-margin));
         margin-inline: calc((-1)*var(--main-margin));
         padding-inline: var(--main-margin);
+        border-radius: 0;
     } 
 }
 
