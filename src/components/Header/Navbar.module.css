@@ -11,20 +11,28 @@
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: -0.2px;
-    border: 2px solid transparent;
-    border-radius: 10px;
     padding: 4px 3px;
     margin-left: 40px;
 }
 
 .nav-link:hover {
-    border-radius: 10px;
-    border: 2px solid var(--text-dark-color);
+    text-decoration: underline;
+    color: var(--text-nav-color);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
 }
 
 .nav-link.active-link {
-    border-radius: 10px;
-    border: 2px solid var(--text-dark-color);
+    text-decoration: underline;
+    color: var(--text-nav-color);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--text-nav-color);
+    outline-offset: 3px;
+    text-decoration: none;
 }
 
 @media (max-width: 700px) {

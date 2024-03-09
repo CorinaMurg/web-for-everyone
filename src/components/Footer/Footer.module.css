@@ -61,19 +61,24 @@ footer a {
 }
 
 footer a:focus-visible {
-    outline: 2px dashed var(--cream-color);
-    outline-offset: 4px;
+    outline: 2px solid var(--cream-color);
+    outline-offset: 3px;
 }
 
-/* footer .logo-link:hover {
-    font-weight: 500;
-    outline: 2px dashed var(--cream-color);
-    outline-offset: 4px;
-} */
 
 footer a:hover {
+    text-decoration: underline;
     color: var(--cream-color);
-    font-weight: 300;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+
+footer a.active-link {
+    text-decoration: underline;
+    color: var(--cream-color);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 }
 
 footer ul {

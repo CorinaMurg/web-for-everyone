@@ -26,12 +26,18 @@
     text-decoration-color: var(--code-blueDark-color);
 }
 
-.article-container a:focus-visible,
+/* .article-content a:focus-visible,
 .about a:focus-visible,
 .a11y-statement a:focus-visible {
     text-decoration: none;
     outline: 2px solid var(--text-dark-color);
     outline-offset: 2px;
+} */
+
+.article-content a:focus,
+.about a:focus,
+.a11y-statement a:focus {
+    text-decoration: none;
 }
 
 .article-container {
@@ -112,7 +118,7 @@
     display: inline-block;
     line-height: 1.1;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -287,9 +293,8 @@
 }
 
 *:focus-visible {
-    border: 2px solid var(--text-dark-color);
-    outline: none; 
-    box-shadow: 0 0 0 2px var(--text-light-color);
+    outline: 2px solid var(--text-dark-color);
+    outline-offset: 2px;
 }
 
 .font-size-1 {
