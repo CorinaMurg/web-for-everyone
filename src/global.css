@@ -80,6 +80,13 @@
     flex-direction: column;
 }
 
+.article-container h1,
+.article-container h2,
+.article-container h3,
+.article-container h4 {
+    font-weight: 700;
+}
+
 .article-heading span:nth-of-type(2) {
     align-self: flex-start;
 }
@@ -118,7 +125,7 @@
     display: inline-block;
     line-height: 1.1;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -319,26 +326,23 @@ h6 {
     margin: 0;
 }
 
-h2, h3, h4 {
+/* h2, h3, h4 {
     letter-spacing: 0.5px;
-}
+} */
 
 h2 {
     font-size: 2.2rem;
-    font-weight: 600;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 0;
-    font-weight: 600;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-block: 20px;
     line-height: 2;
-    font-weight: 600;
 }
 
 .heading {
@@ -636,8 +640,8 @@ b {
 
 summary {
     cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.5px;
 }
 

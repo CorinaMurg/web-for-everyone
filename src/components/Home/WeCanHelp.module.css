@@ -72,8 +72,8 @@
 
 .we-can-help a:focus-visible {
     text-decoration: none;
-    outline: 2px dashed var(--cream-color);
-    outline-offset: 2.5px;
+    outline: 2px solid var(--cream-color);
+    outline-offset: 2px;
 }
 
 .we-can-help svg path {

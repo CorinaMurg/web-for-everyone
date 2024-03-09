@@ -303,6 +303,9 @@
         max-width: none;
         min-width: none;
     }
+    .resources--table-contents ul {
+        border-radius: 0;
+    }
 }
 
 

@@ -55,7 +55,7 @@
 }
 
 .beta a:focus-visible {
-    outline: 3px dashed var(--cream-color);
+    outline: 3px solid var(--cream-color);
     text-decoration: none;
 }
 
@@ -77,12 +77,12 @@
 }
 
 .beta-button:hover {
-    outline: 3px dashed var(--cream-color);
+    outline: 3px solid var(--cream-color);
     outline-offset: 5px;
 }
 
 .beta-button:focus-visible {
-    outline: 3px dashed var(--cream-color);
+    outline: 2px solid var(--cream-color);
     outline-offset: 3px;
 }
 /* ******************END OF BETA BANNER************************ */
@@ -468,11 +468,11 @@
 
 
 .mini-article:focus-within {
-    outline: 3px dashed var(--text-dark-color);
+    outline: 3px solid var(--text-dark-color);
 }
 
 .mini-article:focus-within {
-    outline: 3px dashed var(--text-dark-color);
+    outline: 3px solid var(--text-dark-color);
 }
 
 .mini-article:focus-within .mini-article--link {
