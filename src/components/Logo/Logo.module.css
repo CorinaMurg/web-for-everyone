@@ -11,8 +11,9 @@
 }
 
 .logo-link span {
-    font-size: 1.7rem;
-    letter-spacing: -0.5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -1px;
 }
 
 @media screen and (max-width: 340px) {

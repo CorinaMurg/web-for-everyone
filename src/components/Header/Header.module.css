@@ -27,6 +27,8 @@ header .logo-link:hover {
     top: 30%;
     z-index: 100;
     background-color: var(--yellow-color);
+    border-radius: 10px;
+    border: 2px solid var(--text-dark-color);
     color: black;
     font-size: 1rem;
     font-weight: 600;
@@ -62,11 +64,11 @@ header .logo-link:hover {
     background-color: var(--yellow-color) !important;
 }
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 .mobile-nav-toggle {
     display: none;

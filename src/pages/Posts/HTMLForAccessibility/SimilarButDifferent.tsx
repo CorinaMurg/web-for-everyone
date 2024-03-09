@@ -74,7 +74,7 @@ export default function SimilarButDifferent() {
                     </p>
                     <div className="code">
                         <code>
-                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="closeModal"
+                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="Close registration"
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">

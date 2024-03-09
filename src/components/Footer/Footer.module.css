@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--text-dark-color);
+    background-color: var(--bg-dark-color);
     color: var(--cream-color);
     display: flex;
     flex-direction: column;
@@ -43,9 +43,9 @@ footer .logo-link {
 .footer--bottom {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: inherit;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.5px;
     padding-top: 20px;
     border-top: 1px solid var(--gray-color);
@@ -56,7 +56,7 @@ footer .logo-link {
 footer a {
     text-decoration: none;
     color: inherit;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -87,7 +87,7 @@ footer li {
 .footer--heading {
     font-size: 1rem;
     color: #fc2083;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     padding-top: 3px;
 }

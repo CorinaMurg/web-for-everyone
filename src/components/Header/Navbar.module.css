@@ -1,0 +1,34 @@
+
+
+.primary-navigation {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-nav-color);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 4px 3px;
+    margin-left: 40px;
+}
+
+.nav-link:hover {
+    border-radius: 10px;
+    border: 2px solid var(--text-dark-color);
+}
+
+.nav-link.active-link {
+    border-radius: 10px;
+    border: 2px solid var(--text-dark-color);
+}
+
+@media (max-width: 700px) {
+    .primary-navigation {
+        display: none; 
+    }
+}

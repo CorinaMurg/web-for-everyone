@@ -4,6 +4,7 @@
     --text-light-color: #fff;
     --cream-color: #fbf6ea;
     --text-dark-color: #000;
+    --text-nav-color: #38393a;
     --blue-color: #1a73c6;
     --code-blueDark-color: #3497A2;
     --pinkBright-color: #de0265;
@@ -26,6 +27,7 @@
     --grayTOC-color: #757575;
 
     /* Highlight colors */
+    --bg-dark-color: #151f28;
     --grayishBlue-color: hsl(233, 12%, 87%);
     --yellow-color: #ffb703;
     --yellow-color: #fcbe22;
@@ -96,7 +98,7 @@
 body {
     background-color: var(--cream-color);
     color: var(--text-dark-color);
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
     min-height: 100vh;
     -ms-overflow-style: none;
     position: relative;

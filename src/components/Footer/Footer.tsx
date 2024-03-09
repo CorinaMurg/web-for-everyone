@@ -7,17 +7,16 @@ import '../../index.css'
 
 export default function Footer() {
     return (
-        <footer>
+        <footer role="contentinfo">
             <div className={styles['footer--top']}>
                 <h2 className="sr-only">Footer</h2>
                 <div className={styles['footer--left']}>
                     <Logo color="var(--text-light-color)" fontWeight={500}/>
                 </div>
                 <div className={styles['footer--right']}>
-                    <nav aria-label="footer site links" className={styles['footer--right--navigation']}>
+                    <div className={styles['footer--right--navigation']}>
                         <h3 className={styles['footer--heading']}>Site Links</h3>
-                        <ul>
-                            
+                        <ul>         
                             <li>
                                 <NavLink
                                     to="/"
@@ -46,7 +45,7 @@ export default function Footer() {
                                 </NavLink>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                     <div className={styles['footer--right--contact']}>
                         <h3 className={styles['footer--heading']}>Contact</h3>
                         <ul>

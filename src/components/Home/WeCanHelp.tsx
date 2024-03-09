@@ -7,10 +7,10 @@ import '../../global.css';
 export default function WeCanHelp() {
 
     return (
-        <aside aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
+        <aside role="complementary" aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
             <h2 id="how-can-we-help"
             >
-                <span className='code-blue-color'>Web for Everyone</span>'s Offer
+                How can <span className='code-blue-color'>Web for Everyone</span> help
             </h2>
             <ul>
                 <li>

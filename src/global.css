@@ -30,6 +30,8 @@
 .about a:focus-visible,
 .a11y-statement a:focus-visible {
     text-decoration: none;
+    outline: 2px solid var(--text-dark-color);
+    outline-offset: 2px;
 }
 
 .article-container {
@@ -284,14 +286,10 @@
     line-height: 1;
 }
 
-.fake-heading-p {
-    font-weight: 700;
-    font-size: 1rem;
-}
-
 *:focus-visible {
-    outline: 3px dashed var(--text-dark-color);
-    outline-offset: 2px;
+    border: 2px solid var(--text-dark-color);
+    outline: none; 
+    box-shadow: 0 0 0 2px var(--text-light-color);
 }
 
 .font-size-1 {
@@ -482,8 +480,9 @@ li {
 }
 
 p {
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2;
 }
 

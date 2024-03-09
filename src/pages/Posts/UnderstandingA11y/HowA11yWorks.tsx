@@ -190,7 +190,7 @@ export default function MostCommonBugs() {
                                 </code>
                                 <code className="padding-left-60">
                                     <span className="code-pink-color">&lt;a&gt;
-                                    </span>Home<span className="code-pink-color">&lt;/a&gt;</span>&
+                                    </span>Home<span className="code-pink-color">&lt;/a&gt;</span>
                                 </code>
                                 <code className="padding-left-40">
                                     &lt;/li&gt;
