@@ -42,9 +42,6 @@
     --code-yellow-color: rgb(255, 214, 0);
     --code-blue-color: #00beff;
     --code-blue-color: #5dd4e1;
-    /* --code-blue-color: #66c2cd; */
-    /* --code-blue-color: hsla(195, 100%, 50%, 0.7); */
-    /* --code-blue-color: #3888FF; */
 
     /* Hero Design */
     --hero-lightBlue: #66c2cd;
@@ -88,6 +85,44 @@
     src: url('fonts/static/Inter-VariableFont_slnt,wght.ttf') format('truetype');
     font-weight: 100 900; 
     font-style: oblique 0deg 10deg;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bold-text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 * {
