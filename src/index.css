@@ -9,9 +9,6 @@
     --code-blueDark-color: #3497A2;
     --pinkBright-color: #de0265;
     --pink-for-dark-bg-color: #fc2083;
-    /* --darkBlue-color: #1a73e9; */
-    /* --pink-color: #f38ba3; */
-    
     --brightBlue-dark-color: #0074c7;
     --brightBlue-light-color: #3888FF;
 
@@ -22,9 +19,6 @@
     /* Border */
     --yellow-border: 3px;
     --gray-color:#808080;
-
-    /* Table of Contents */
-    --grayTOC-color: #757575;
 
     /* Highlight colors */
     --bg-dark-color: #151f28;
@@ -44,6 +38,7 @@
     --code-blue-color: #5dd4e1;
 
     /* Hero Design */
+    --hero-lightBlue-faded: rgba(102, 194, 205, 0.8);
     --hero-lightBlue: #66c2cd;
     --hero-darkBlue: #048694;
     --bg-blue: rgba(4, 134, 148, 0.2);

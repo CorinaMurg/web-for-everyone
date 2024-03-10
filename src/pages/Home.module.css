@@ -177,16 +177,19 @@
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    background-color: var(--yellow-color);
     padding: 10px 15px;
     border-radius: 10px;
-    border: 3px solid var(--text-nav-color);
+    border: 2px solid var(--text-nav-color);
     width: 100%;
     /* margin-top: 10px; */
 }
 
 .hero--text--left .continue-to-article {
-    background-color: var(--hero-lightBlue);
+    background-color: var(--hero-lightBlue-faded);
+}
+
+.hero--text--right .continue-to-article {
+    background-color: var(--yellow-color);
 }
 
 .continue-to-article svg[id="arrow"] circle {
@@ -525,7 +528,7 @@
 }
 
 .mini-article--image-1 {
-    background-color: var(--hero-lightBlue);
+    background-color: var(--hero-lightBlue-faded);
 }
 
 .mini-article--image svg {
