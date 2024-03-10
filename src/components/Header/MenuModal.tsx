@@ -3,7 +3,7 @@ import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './MenuModal.css';
 import Navbar from './Navbar';
-
+import Logo from '../Logo/Logo';
 
 export interface MenuModalTypes {
     isMenuOpen: boolean;
@@ -21,7 +21,7 @@ export default function MenuModal ({
             onRequestClose={closeModal}
             style={{
                 overlay: {
-                zIndex: 1000,
+                zIndex: 2000,
                 position: 'fixed',
                 top: 0,
                 left: 0,
@@ -44,10 +44,15 @@ export default function MenuModal ({
                 },
             }}   
         >
+            <div className='modal-header'>
+                <Logo color = "var(--text-dark-color)" fontWeight={700}/>
+                <button className='modal-close-button' onClick={closeModal}>
+                    <span className='sr-only'>Close Navigation Menu</span>
+                </button>
+            </div>
+            
             <Navbar closeModal={closeModal} />
-            <button className='modal-close-button' onClick={closeModal}>
-                <span className='sr-only'>Close Navigation Menu</span>
-            </button>
+            
         </ReactModal>
     );
 }

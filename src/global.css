@@ -26,19 +26,11 @@
     text-decoration-color: var(--code-blueDark-color);
 }
 
-/* .article-content a:focus-visible,
-.about a:focus-visible,
-.a11y-statement a:focus-visible {
-    text-decoration: none;
-    outline: 2px solid var(--text-dark-color);
-    outline-offset: 2px;
-} */
-
-.article-content a:focus,
+/* .article-content a:focus,
 .about a:focus,
 .a11y-statement a:focus {
     text-decoration: none;
-}
+} */
 
 .article-container {
     display: grid;
@@ -72,7 +64,6 @@
 
 .article-content h3 {
     margin-top: 20px;
-    color: inherit;
 }
 
 .article-heading {
@@ -202,6 +193,7 @@
     background-color: var(--code-bg-color);
     color: var(--cream-color);
     margin-bottom: 30px;
+    border-radius: var(--border-radius);
 }
 
 .code-no-overflow {
@@ -316,6 +308,14 @@
     -webkit-box-decoration-break: clone;
 }
 
+h1 {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-nav-color);
+}
+
 h1,
 h2,
 h3,
@@ -326,9 +326,6 @@ h6 {
     margin: 0;
 }
 
-/* h2, h3, h4 {
-    letter-spacing: 0.5px;
-} */
 
 h2 {
     font-size: 2.2rem;
@@ -356,6 +353,7 @@ h4 {
     width: 100%;
     border: 1.7px solid gray;
     margin-top: 10px;
+    border-radius: var(--border-radius);
 }
 
 .highlight-no-heading {
@@ -729,6 +727,7 @@ ul[class^="checkmark-list"] li p {
     width: 100%;
     border: 1.7px solid var(--pinkBright-color);
     position: relative;
+    border-radius: var(--border-radius);
 }
 
 .warning>p {
@@ -932,10 +931,11 @@ ul[class^="checkmark-list"] li p {
     }
 
     .resources .article-heading-mobile,
-    .article-container .article-heading-mobile {
+    .article-container .article-heading-mobile,
+    .a11y-statement .article-heading-mobile {
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
+        /* font-size: 3rem; */
         font-weight: 600;
     }
 

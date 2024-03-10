@@ -121,9 +121,7 @@ export default function MakeItAccessible() {
                     </div>
        
                     <h3>Allow zooming of at least 200%</h3>
-                    <p>
-                        <strong>Do not disable scaling and zooming!</strong>
-                    </p>
+
                     <p className="white-bg">
                         Either one of <code>user-scalable=no</code> or <code>maximum-scale=1.0</code> can
                         prevent users from zooming in on a page. Those with low vision need the ability to zoom

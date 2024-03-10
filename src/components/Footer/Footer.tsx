@@ -20,7 +20,9 @@ export default function Footer() {
                             <li>
                                 <NavLink
                                     to="/"
-                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    onClick={() => { useScrollToTop()}}
+
+                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                 >
                                     Home
                                 </NavLink>
@@ -29,7 +31,7 @@ export default function Footer() {
                             <li>
                                 <NavLink
                                     to="/resources"
-                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                     onClick={() => { useScrollToTop()}}
                                 >
                                     <span className="footer--nav-link">Resources</span>
@@ -38,7 +40,7 @@ export default function Footer() {
                             <li>
                                 <NavLink
                                     to="/about"
-                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                     onClick={() => { useScrollToTop()}}
                                 >
                                     <span className="footer--nav-link">About</span>
@@ -58,7 +60,7 @@ export default function Footer() {
                             <li>
                                 <NavLink 
                                     to="/accessibility-statement" 
-                                    className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                     onClick={() => { useScrollToTop() }}
                                 >
                                     <span className={styles['footer--nav-link']}>Accessibility Statement</span>

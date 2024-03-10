@@ -1,4 +1,8 @@
-
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .menu-modal .modal-close-button {
     background-color: transparent;
     padding: 0;
@@ -10,9 +14,9 @@
     background-repeat: no-repeat; 
     background-position: center;
     background-size: 30px 30px;
-    position: absolute;
+    /* position: absolute;
     top: 20px;
-    right: var(--navbar-margin);
+    right: var(--navbar-margin); */
 }
 
 @media screen and (max-width: 450px) {
@@ -27,4 +31,8 @@
     gap: 40px;
     font-size: 1.2rem;
     align-items: start;
+}
+
+.mobile-only-link {
+    display: block;
 }

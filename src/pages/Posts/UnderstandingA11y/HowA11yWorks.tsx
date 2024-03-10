@@ -521,7 +521,7 @@ export default function MostCommonBugs() {
                             <div className="highlight highlight-inline">
                                 <details>
                                     <summary>
-                                        Selecting an element using speech recognition software: an example
+                                        Selecting an element using speech recognition software
                                     </summary>
                                     <p>
                                         Dragon NaturallySpeaking is the most popular speech recognition software. 

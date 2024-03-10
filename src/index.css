@@ -22,7 +22,7 @@
 
     /* Body Bg */
     --body-bg-color: #e8e9ec;
-    --body-bg-color: #dad8d2;
+    --body-bg-color: #e8e7e3;
 
     /* Highlight colors */
     --bg-dark-color: #151f28;
@@ -51,6 +51,9 @@
     --hero-darkGreen: #377984;
     --hero-pink: #f08eb1;
     --hero-pink: #f5b5a9;
+
+    /* Border radius */
+    --border-radius: 5px;
 }
 
 

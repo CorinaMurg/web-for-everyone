@@ -16,6 +16,7 @@
     display: flex;
     overflow-x: auto;
     white-space: nowrap;    
+    border-radius: var(--border-radius);
 }
 
 .dom-at div:nth-of-type(1) {

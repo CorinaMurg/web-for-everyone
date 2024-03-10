@@ -65,7 +65,7 @@ export default function About() {
                             <Link to="/resources#your-digital-presence"> 
                                 Your Digital Presence
                             </Link> series to evaluate your portfolio site and eliminate, if present, 
-                            the 6 most common bugs (plus another 6 bonus bugs!)
+                            some of the most common bugs.
                         </p>
                         &nbsp;
                         <p>
