@@ -113,9 +113,9 @@ export default function WhatIsA11y() {
                     </ul>
                     <div>
                         <h3 className="white-bg">
-                            Should your HTML file be a soup of <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags?
+                            Should your HTML be a soup of <code>&lt;div&gt;</code> tags?
                         </h3>
-                        <p className="white-bg">
+                        <p className="white-bg margin-top-20">
                             Of course not! We are lucky to be developers at a time when <code>HTML5</code> is the 
                             standard, and it comes with a whole set of semantic tags. These are tags that share the 
                             purpose of their content with the browser and the assistive technologies that 
