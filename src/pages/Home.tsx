@@ -26,16 +26,28 @@ export default function Home() {
 
     return (
         <div className={styles.home}>
-            <section className={styles['hero']}>   
-                <h1>
-                    <span>Let's make it</span>
-                    <span className="pink-text">accessible!</span>
-                </h1>
+            <section className={styles['hero']}> 
+                <div className={styles['hero--heading']}>   
+                    <h1>
+                        <span>Let's make it</span>
+                        <span className="pink-text">accessible!</span>
+                    </h1>
+                    {/* <div className={styles['hero--heading--svg']}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" >
+                                <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm161.5-86.1c-12.2-5.2-26.3 .4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1c-1.4-4.1-2.1-8.3-2.1-12.6V235.5c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6L338.7 175c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+                            </svg>  
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512" >
+                            <path d="M176 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8.4 32c-36.4 0-69.6 20.5-85.9 53.1L35.4 273.7c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3L128 231.6v43.2c0 17 6.7 33.3 18.7 45.3L224 397.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V390.6c0-12.7-5.1-24.9-14.1-33.9L224 306.7V213.3l70.4 93.9c10.6 14.1 30.7 17 44.8 6.4s17-30.7 6.4-44.8L268.8 166.4C250.7 142.2 222.2 128 192 128H167.6zM128.3 346.8L97 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l22-88.2-52.8-52.8zM450.8 505.1c5 7.3 15 9.1 22.3 4s9.1-15 4-22.3L358.9 316.1c-2.8 3.8-6.1 7.3-10.1 10.3c-5 3.8-10.5 6.4-16.2 7.9L450.8 505.1z"/>
+                        </svg> 
+                    </div> */}
+                    
+                </div>
+                
+
                 <p className={styles['hero--subtitle']}>
                     You're building your portfolio site. Will it be ready to welcome <span> </span>
                     all visitors, including those with disabilities? Time to check!
-                </p>
-                
+                </p>      
                 {isBetaOpen &&
                     <div className={styles.beta}>
                         <p className={styles['beta-message']}>
@@ -52,9 +64,6 @@ export default function Home() {
             <section className={styles['hero--text']}>
                 <div className={styles['hero--text--left']}> 
                     <h2>New to accessibility?</h2>
-                    {/* <p>
-                        Learn why it matters and how it works behind the scene.          
-                    </p>            */}
                     <Link 
                         to="/#understanding-accessibility" 
                         className={styles['continue-to-article']}
@@ -74,9 +83,6 @@ export default function Home() {
                         <h2>
                             Know accessibility?        
                         </h2>
-                        {/* <p>
-                            Accessibility bugs hiding in your portfolio? Let's squash them!
-                        </p> */}
                     </div>
                         
                     <Link 
@@ -95,7 +101,10 @@ export default function Home() {
                     </Link>
                 </div> 
             </section>
-            <WeCanHelp/>
+
+            <div className={styles['gray-bg']}>
+                <WeCanHelp/>
+            </div>
             
             <section 
                 aria-labelledby="understanding-accessibility" 

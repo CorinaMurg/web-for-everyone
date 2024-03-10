@@ -20,6 +20,10 @@
     --yellow-border: 3px;
     --gray-color:#808080;
 
+    /* Body Bg */
+    --body-bg-color: #e8e9ec;
+    --body-bg-color: #dad8d2;
+
     /* Highlight colors */
     --bg-dark-color: #151f28;
     --grayishBlue-color: hsl(233, 12%, 87%);

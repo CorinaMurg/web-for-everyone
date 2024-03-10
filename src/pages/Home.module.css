@@ -1,7 +1,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    margin-inline: var(--main-margin);
+    /* margin-inline: var(--main-margin); */
     margin-top: 20px;
     color: var(--text-dark-color);
 }
@@ -90,6 +90,26 @@
 
 /* ******************HERO DESIGN************************ */
 
+.hero {
+    margin-inline: var(--main-margin);
+}
+
+.hero--heading {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+}
+/* .hero--heading--svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero--heading--svg svg {
+    fill: gray;
+} */
+
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -98,10 +118,9 @@
     justify-content: center;
     align-items: center;
     gap: 15px; 
-    padding-top: 5px;
-    margin-bottom: 20px;
-    margin-top: 40px;
     color: var(--text-nav-color);
+    padding-top: 5px;
+    margin-top: 40px;
 }
 
 .hero--subtitle {
@@ -110,6 +129,7 @@
     font-weight: 600;
     width: 40rem;
     margin-inline: auto;
+    margin-top: 10px;
     text-align: center;
     color: var(--text-nav-color);
 }
@@ -129,6 +149,7 @@
     justify-content: center;
     gap: 200px;
     margin-top: 50px;
+    margin-inline: var(--main-margin);
 }
 
 .hero--text--right,
@@ -322,6 +343,15 @@
     }
 }
 
+.gray-bg {
+    background: linear-gradient(to bottom, transparent 50%, var(--body-bg-color) 50%);
+    padding-bottom: 90px;
+    padding-inline: var(--main-margin);
+    width: 100%;
+    /* border-bottom: 1.5px solid gray; */
+}
+
+
 /* LINK ARROWS
 <i className={styles['link-arrow']}></i>
                                 <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
@@ -376,18 +406,19 @@
 .mini-articles {
     display: flex;
     flex-direction: column;
-    margin-top: 110px; 
+    /* margin-top: 110px;  */
+    padding-inline: var(--main-margin);
+    background-color: var(--body-bg-color);
+    padding-bottom: 70px;
 }
 
 .mini-articles h2 {
     align-self: self-start;
     font-size: 2rem;
     font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     width: 100%;
-    padding-top: 30px;
-    border-top: 1.5px solid gray;
+    padding-top: 20px;
     color: var(--text-nav-color);
 }
 
@@ -519,7 +550,7 @@
 
 .mini-article--image {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;

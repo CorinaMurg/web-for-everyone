@@ -80,6 +80,7 @@
     fill: var(--yellow-color);
 }
 
+
 @media screen and (max-width: 1190px) {
     .we-can-help h2 {
         font-size: 1.2rem;
@@ -128,23 +129,6 @@
         margin-bottom: 20px;
         margin-top: 0;
     }
-
-    /* .we-can-help ul li p {
-       
-        border-right: 0.3px solid var(--cream-color);
-        
-    }
-     */
-    
-    /* .we-can-help ul li:last-of-type p {
-        border-right: none;
-       
-    } */
-    
-    /* .we-can-help article:last-child {
-        padding-bottom: 0;
-        border-bottom: none;
-    } */
 }
 
 @media screen and (max-width: 625px) {
