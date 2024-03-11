@@ -616,6 +616,11 @@ export default function MakeItAccessible() {
                             </code>
                             <code><span className="code-blue-color">&lt;/p&gt;</span></code>
                         </div>
+                        <div className="code"> 
+                            <code> <span className="code-blue-color">&lt;p <span className="code-yellow-color">lang="fr"</span>&gt;</span></code>
+                                <code className="padding-left-30">Bonjour</code>
+                            <code><span className="code-blue-color">&lt;/p&gt;</span></code>
+                        </div>
                     </div>
                 </div>
 

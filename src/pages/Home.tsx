@@ -51,7 +51,7 @@ export default function Home() {
                 {isBetaOpen &&
                     <div className={styles.beta}>
                         <p className={styles['beta-message']}>
-                            <span>This site is in Beta. </span>
+                            <span>This site is in beta. </span>
                             We welcome&nbsp;
                             <Link to="/accessibility-statement#report-a11y-issues">your feedback</Link>.
                         </p>

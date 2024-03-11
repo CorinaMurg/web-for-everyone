@@ -31,7 +31,7 @@
     }
 }
 .beta p {
-    font-weight: 500;
+    font-weight: 400;
     font-family: "Quicksand", sans-serif;
     font-size: 1.1rem;
 }
@@ -500,9 +500,8 @@
     fill: var(--text-light-color);
 }
 
-
-.mini-article:focus-within:not(:active) {
-    outline: 3px solid var(--text-dark-color);
+.mini-article:focus-within {
+    outline: 2px solid var(--text-dark-color);
     outline-offset: 4px;
 }
 
@@ -510,7 +509,13 @@
     outline: none;
 }
 
-.mini-article--link:active {
+
+
+/* .mini-article:focus-visible:not(:focus-within) {
+    outline: none;
+} */
+
+/* .mini-article--link:active {
     outline: none;
 }
 
@@ -520,7 +525,7 @@
 
 .mini-article:focus {
     outline: none;
-}
+} */
 
 .mini-article-1 {
     grid-column: 1 / 2;
