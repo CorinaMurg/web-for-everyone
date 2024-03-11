@@ -501,19 +501,24 @@
 }
 
 
-.mini-article:focus-within {
+.mini-article:focus-within:not(:active) {
     outline: 3px solid var(--text-dark-color);
-}
-
-.mini-article:focus-within {
-    outline: 3px solid var(--text-dark-color);
+    outline-offset: 4px;
 }
 
 .mini-article:focus-within .mini-article--link {
     outline: none;
 }
 
-.mini-article:active {
+.mini-article--link:active {
+    outline: none;
+}
+
+.mini-article:focus-visible {
+    outline: none;
+}
+
+.mini-article:focus {
     outline: none;
 }
 
