@@ -724,15 +724,15 @@ export default function MostCommonBugs() {
                             </h3>
                             <div className="code margin-top-30 margin-bottom-30">
                                 <code>
-                                    <span className="code-blue-color">&lt;button</span> id="close-menu"
+                                    <span className="code-blue-color">&lt;button</span>
                                     <span className="code-blue-color">&gt;</span>
                                 </code>
                                 <code className="padding-left-30">
-                                    <span className="code-yellow-color">&lt;img</span> src="x-mark.svg"
+                                    <span className="code-yellow-color">&lt;img</span> <span className="code-pink-color">alt=""</span> src="x-mark.svg"
                                     <span className="code-yellow-color">/&gt;</span> 
                                 </code>
                                 <code className="padding-left-30">
-                                    <span className="code-yellow-color">&lt;span</span> class="<span className="code-pink-coor">visually-hidden</span>"
+                                    <span className="code-yellow-color">&lt;span</span> class="<span className="code-pink-color">visually-hidden</span>"
                                     <span className="code-yellow-color">&gt;</span>
                                     Close menu
                                     <span className="code-yellow-color">&lt;/span&gt;</span> 
