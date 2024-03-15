@@ -198,13 +198,14 @@ export default function WhatIsA11y() {
                             assistive technologies as well.
                         </p>
                         <p className="white-bg">
-                            When a screen reader encounters the navigation section of your site, it 
-                            will announce it to the user as <strong>"navigation landmark"</strong>. And that's because you chose
-                            to wrap your navigation links in <code>&lt;nav&gt;</code> tags. 
+                            When a screen reader encounters main heading of this page, it 
+                            will announce it to the user as <strong>"What is accessibility heading level 1"</strong>. 
+                            And that's because we wrapped the main heading in <code>&lt;h1&gt;</code> tags. The visitor
+                            then knows that this is the main heading of the page and can rely on it to learn about the content.
                         </p>
                         <p className="white-bg">
-                            Had you chosen a <code>&lt;div&gt;</code> instead, 
-                            the user would not be immediately aware of its purpose. A <code>&lt;div&gt;</code> has
+                            Had we chosen a <code>&lt;div&gt;</code> instead and styled it to look like a heading,
+                            the user would not be immediately aware of its role. A <code>&lt;div&gt;</code> has
                             no semantic meaning. It is just a container intended for styling purposes or for layout, 
                             and requires additional code to make it accessible.
                         </p>
