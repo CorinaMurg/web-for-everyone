@@ -183,7 +183,7 @@ export default function MostCommonBugs() {
                         <div className={styles['dom-at']}>
                             <div className="code-no-overflow">
                                 <code><span className="code-gray-color">// DOM tree</span></code>
-                                <code><span className="code-blue-color">&lt;nav&gt;</span></code>
+                                <code><span className="code-blue-color">&lt;nav</span> role="navigation"<span className="code-blue-color">&gt;</span></code>
                                 <code><span className="code-yellow-color padding-left-20">&lt;ul&gt;</span></code>
                                 <code className="padding-left-40 margin-top-20">
                                     &lt;li&gt;
@@ -294,15 +294,15 @@ export default function MostCommonBugs() {
                         
                     {/* ************Zooming in on an accessible object***************** */}
                     <div className="highlight">
-                        <h4 className="margin-top-10">
+                        <h3 className="margin-top-10">
                             Zooming in on an accessible object <span aria-hidden="true">🔍</span>
-                        </h4>
+                        </h3>
                         <p> 
                             Let's look at the first link object to understand why using semantic HTML helps 
                             accessibility. 
                         </p>
                         <div>
-                            <p><strong>Details available</strong></p>
+                            <h4>Details available</h4>
                             <ul className="checkmark-list padding-left-20">
                                 <li><span className="pink-text bold">&#x2714; </span><p>Name: Home</p></li>
                                 <li><span className="pink-text bold">&#x2714; </span><p>Role: link</p></li>
@@ -322,7 +322,7 @@ export default function MostCommonBugs() {
                             ready to be activated. 
                         </p>
                         <br/>
-                        <p><strong>Assistive tech behavior</strong></p>
+                        <h4>Assistive tech behavior</h4>
                         <p>
                             Each assistive technology will use the information from the accessibility tree to present the 
                             object to the user in the most appropriate way.
@@ -336,11 +336,27 @@ export default function MostCommonBugs() {
                             with the command <strong>"click Home"</strong>.
                         </p>
                         <br/>
-                        <p><strong>Isn't semantic HTML cool?</strong><span aria-hidden="true"> 😎</span></p>
+                        <h4>Isn't semantic HTML cool?<span aria-hidden="true"> 😎</span></h4>
                         <p className="white-bg">
                             By relying on the semantic <code>&lt;a&gt;</code> tag we get all 
                             the functionality expected from a link for free. With only HTML!
                         </p>
+                        <br/>
+                        <h4>Are all the browsers cool with semantic HTML?<span className="visually-hidden">No</span><span aria-hidden="true"> 😓</span></h4>
+                    
+                        <p className="white-bg">
+                            Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag in the DOM tree.
+                            Some browsers are struggling to properly announce landmarks even when using semantic tags. 
+                            Therefore it's a good idea to explicitly
+                            add the <code>role</code> attribute to the landmark tags until the issue is resolved.
+                        </p>
+                        <div className="code">
+                            <code><span className="code-blue-color">&lt;header</span> role="banner"<span className="code-blue-color">&gt;</span></code>
+                            <code><span className="code-blue-color">&lt;nav</span> role="navigation"<span className="code-blue-color">&gt;</span></code>
+                            <code><span className="code-blue-color">&lt;main</span> role="main"<span className="code-blue-color">&gt;</span></code>
+                            <code><span className="code-blue-color">&lt;aside</span> role="complementary"<span className="code-blue-color">&gt;</span></code>
+                            <code><span className="code-blue-color">&lt;footer</span> role="contentinfo"<span className="code-blue-color">&gt;</span></code>
+                        </div>
                     </div>
 
                     {/* ************Explicit roles***************** */}
@@ -366,7 +382,6 @@ export default function MostCommonBugs() {
                                 <span className="code-blue-color">&lt;div</span> 
                                 <span className="code-yellow-color"> role</span>="button" 
                                 <span className="code-yellow-color"> aria-label</span>="Close modal" 
-                                {/* <span className="code-purple-color"> tabindex</span>="0"               */}
                                 <span className="code-blue-color">&gt;</span>
                             </code>
                             <code><span className="code-blue-color">&lt;/div&gt;</span></code>
@@ -401,10 +416,52 @@ export default function MostCommonBugs() {
                             or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
                             <code>&lt;button&gt;</code> tag; important for screen reader users!)
                         </p>
-                        {/* <p className="bullet-point-line white-bg">
-                            depending on the desired functionality, <code>aria-pressed</code> or <code>aria-expended</code> to indicate the button's state
-                        </p> */}
                     </div>
+                   
+                    {/* ************Example: create a drop down****************** */}
+                    {/* <div className="highlight">
+                        <h4 className="white-bg margin-top-10" id="create-button-from-div">
+                            Example: create a button with HTML, ARIA and JavaScript
+                        </h4>
+                        <div className="code margin-top-30">
+                            <code>
+                                <span className="code-blue-color">&lt;div</span> 
+                                <span className="code-yellow-color"> role</span>="button" 
+                                <span className="code-yellow-color"> aria-label</span>="Close modal" 
+                                <span className="code-blue-color">&gt;</span>
+                            </code>
+                            <code><span className="code-blue-color">&lt;/div&gt;</span></code>
+                        </div>
+                        <p className="white-bg">
+                            Here, we have a <code>div</code>, a non-semantic element, with an assigned role 
+                            of <code>button</code>. 
+                        </p>
+                        <p className="white-bg">
+                            The element will be treated as a button by assistive technologies.
+                            It also has an accessible name assigned with <code>aria-label</code>. (Note that this is not the
+                            best way to assign a name to an interactive element. More about
+                            the accessible name in the next section).
+                        </p>
+                        
+                        <p>
+                            <strong>Is this button accessible yet? Absolutely not!</strong>
+                        </p>
+                        
+                        <p className="white-bg">
+                            The button will not be fully functional until we add other attributes and events:
+                        </p>
+                        <p className="bullet-point-line white-bg">
+                            the <code>tabindex</code> attribute to make it focusable, otherwise keyboard users 
+                            won't be able to reach it: <code>tabindex="0"</code>
+                        </p>
+                        
+                        <p className="bullet-point-line white-bg">
+                            event handlers to allow the button to be activated with 
+                            the <span className="yellow-bg-dark-text">Enter</span> <span> </span>
+                            or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
+                            <code>&lt;button&gt;</code> tag; important for screen reader users!)
+                        </p>
+                    </div> */}
                     <div className="warning">
                         <WarningTriangle/>
                         <p>
@@ -422,7 +479,9 @@ export default function MostCommonBugs() {
                         <p>
                             For right now, it's important to remember that assistive technologies have a better
                             relationship with semantic HTML than with ARIA, and using ARIA can sometimes lead to
-                            unexpected behavior or bugs.
+                            unexpected behavior.
+                        </p>
+                        <p>
 
                         </p>
                         
@@ -570,6 +629,11 @@ export default function MostCommonBugs() {
                                 Also, if the CSS class is not implemented correctly, the spaces between words might be
                                 ignored and screen readers could announce the text as a single continuous string.
                             </p>
+                            <p className="padding-left-20 margin-top-20">
+                                You'll find a CodePen with an example of a visually-hidden class
+                                at the end of this section.
+
+                            </p>
                             {/* <p className="padding-left-20 margin-top-20">
                                 Here's a <span> </span>
                                 <ExternalLink
@@ -596,11 +660,9 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 white-bg margin-top-20">
                                 Again, a common concern with accessible names not computed from visible text: 
                                 in order to activate the element, voice users should be able to tell its name.
-                                Choose the <code>alt</code> text thoughtfully!
-                                
                             </p>
                             <p className="padding-left-20 white-bg margin-top-20">
-                                You could also use an empty <code>alt</code> attribute to hide the image from the screen reader,
+                                A better choice is to use an empty <code>alt</code> attribute to hide the image from the screen reader,
                                 and add a <code>visually-hidden</code> span with the accessible name.
                             </p>
                             <p className="bullet-point-line margin-top-20">
@@ -663,8 +725,11 @@ export default function MostCommonBugs() {
                                 </Link>.
                             </p> 
                             <p className="padding-left-20 white-bg margin-top-20">
-                                <strong>Use it if nothing else is available</strong>!
-                                The biggest issue with <code>aria-label</code>?
+                                <strong>Use it if nothing else is available</strong>! (But then you could always
+                                add a <code>visually-hidden</code> span with the accessible name!)
+                                {/* The biggest issue with <code>aria-label</code>? */}
+                            </p>
+                            <p className="padding-left-20 white-bg margin-top-20">
                                 It does not take a <code>lang</code> attribute (read 
                                     <span> </span>
                                 <Link to="/resources/make-it-accessible-part1#the-language-attribute">
@@ -674,10 +739,7 @@ export default function MostCommonBugs() {
                                 your content from being accessible to a global audience (a process called "internationalization").
                             </p>
                             <p className="padding-left-20 margin-top-20 white-bg">
-                                Plus, it creates a problem for speech users, just like the <code>visually-hidden</code> text does:
-                                they will have to 
-                                guess the name of the element since it's not visible, or go through a series of other commands
-                                until they can select the element.
+                                And once again, the problem for voice users: they need to know the name of the element.
                             </p>
                             <p className="margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
@@ -740,6 +802,21 @@ export default function MostCommonBugs() {
                                 
                                 <code><span className="code-blue-color">&lt;/button&gt;</span></code>
                             </div>
+                            <div className="code margin-top-30 margin-bottom-30">
+                                <code>
+                                    <span className="code-blue-color">&lt;a</span> href="..." <span className="code-yellow-color">lang="es"</span>
+                                    <span className="code-blue-color">&gt;</span>
+                                </code>
+                                <code className="padding-left-30">
+                                <span className="code-yellow-color">Español</span>
+                                    
+                                </code>
+                                
+                                
+                                <code><span className="code-blue-color">&lt;/a&gt;</span></code> 
+                            </div>
+                           
+                            
                             <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
                                 The browser will use the text from the <code>visually-hidden</code> span to compute 
@@ -752,7 +829,8 @@ export default function MostCommonBugs() {
                             </p>    
                             <p>
                                 See the Pen below for an example of how to hide text visually.
-                            </p>                  
+                            </p>      
+                            
                         </div>
                     </div>       
                     <iframe 

@@ -418,7 +418,7 @@ export default function MostCommonBugs() {
                     <p className="white-bg">
                         For example, let's say a screen reader user with a device set to English wants to read a webpage
                         in French. If the page's <code>lang</code> attribute is missing, the screen reader will
-                        read the French text in English!
+                        read the French text as if it were English.
                     </p>
                     <div className="highlight">
                         <h3 className="white-bg">

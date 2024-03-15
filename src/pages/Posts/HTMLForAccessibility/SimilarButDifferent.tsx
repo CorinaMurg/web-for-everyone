@@ -74,12 +74,12 @@ export default function SimilarButDifferent() {
                     </p>
                     <div className="code">
                         <code>
-                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="Close registration"
+                            <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="Close menu"
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">
                             <span className="code-blue-color">&lt;img </span> 
-                            src="x-mark.svg"
+                            alt="" src="x-mark.svg"
                             <span className="code-blue-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/button&gt;</span></code>
@@ -97,12 +97,13 @@ export default function SimilarButDifferent() {
                     <div className="code">
                         <code>
                             <span className="code-blue-color">&lt;h2</span> 
-                            <span className="code-yellow-color"> id</span>="table-contents"&gt;Table of Contents
+                            <span className="code-yellow-color"> id</span>="table-contents"<span className="code-blue-color">&gt;</span>Table of Contents
                             <span className="code-blue-color">&lt;h2&gt;</span>
                         </code>
                         <br/>
                         <code>
-                            <span className="code-blue-color">&lt;nav</span> 
+                            <span className="code-blue-color">&lt;nav </span> 
+                            role="navigation"
                             <span className="code-yellow-color"> aria-labelledby</span>="table-of-contents"
                             <span className="code-blue-color">&gt;</span>
                         </code>

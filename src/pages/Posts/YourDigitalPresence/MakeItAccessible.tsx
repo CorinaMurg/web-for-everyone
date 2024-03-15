@@ -430,8 +430,9 @@ export default function MakeItAccessible() {
                                 <span className="pink-text bold">&#x2714; </span>
                                 <span>
                                     Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn"</code>).
-                                    A quick reminder that, in general, this is not a great choice because it does not
-                                    take a <code>lang</code> attribute, nor it's guaranteed to be translated by all browsers.
+                                    A quick reminder that, in general, <code>aria-label</code>is not a great choice for internationalization
+                                    (for example, the text is not guaranteed to be translated by all browsers), but it's not a concern here since
+                                    we are dealing with an internationally recognized brand name.
                                 </span>
                             </p>
                         </li>
