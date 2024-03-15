@@ -198,10 +198,10 @@ export default function WhatIsA11y() {
                             assistive technologies as well.
                         </p>
                         <p className="white-bg">
-                            When a screen reader encounters main heading of this page, it 
-                            will announce it to the user as <strong>"What is accessibility heading level 1"</strong>. 
+                            For example, when a screen reader encounters the main heading of this page, it 
+                            will announce it to the user as <em>"What is accessibility heading level 1"</em>. 
                             And that's because we wrapped the main heading in <code>&lt;h1&gt;</code> tags. The visitor
-                            then knows that this is the main heading of the page and can rely on it to learn about the content.
+                            then knows that this is the main heading and can rely on it to learn about the content of the page.
                         </p>
                         <p className="white-bg">
                             Had we chosen a <code>&lt;div&gt;</code> instead and styled it to look like a heading,
@@ -214,7 +214,7 @@ export default function WhatIsA11y() {
                         </p>
                         <p>
                             Think about the content and the functionality 
-                            you want to create, and choose the appropriate HTML tags. While JavaScript can help with more 
+                            you want to create, and choose the appropriate HTML tags. While JavaScript and ARIA can help with more 
                             complex acccessibility issues, semantic HTML is the foundation of accessibility.
                         </p>
                     </div>
