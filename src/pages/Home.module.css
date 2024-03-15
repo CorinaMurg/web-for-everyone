@@ -323,6 +323,14 @@
     }
 }
 
+@media screen and (max-width: 500px) { 
+    .hero h1 {
+        align-items: flex-start;
+    }
+    .hero--subtitle {
+        text-align: left;
+    }
+}
 
 @media screen and (max-width: 380px) { 
     .hero h1 {

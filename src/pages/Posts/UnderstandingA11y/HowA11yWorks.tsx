@@ -346,7 +346,7 @@ export default function MostCommonBugs() {
                     
                         <p className="white-bg">
                             Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag in the DOM tree.
-                            Some browsers are struggling to properly announce landmarks even when using semantic tags. 
+                            When used with certain browsers, screen readers might fail to properly announce landmarks even when they are created with semantic tags. 
                             Therefore it's a good idea to explicitly
                             add the <code>role</code> attribute to the landmark tags until the issue is resolved.
                         </p>
@@ -371,6 +371,7 @@ export default function MostCommonBugs() {
                         </p>
                     </div>
                     
+                    {/* modify the role of a div or imporve the the role of a button */}
 
                     {/* ************Example: create a button from a div****************** */}
                     <div className="highlight">
@@ -414,7 +415,7 @@ export default function MostCommonBugs() {
                             event handlers to allow the button to be activated with 
                             the <span className="yellow-bg-dark-text">Enter</span> <span> </span>
                             or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
-                            <code>&lt;button&gt;</code> tag; important for screen reader users!)
+                            <code>&lt;button&gt;</code> tag; important for keyboard and screen reader users!)
                         </p>
                     </div>
                    
@@ -500,9 +501,9 @@ export default function MostCommonBugs() {
 
                         <code>listitem</code>
                         <code className="padding-left-30">
-                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Your Users</span>"
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Resources</span>"
                         </code>
-                        <code className="padding-left-60">StaticText "Your Users"</code>
+                        <code className="padding-left-60">StaticText "Resources"</code>
                     </div>
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 

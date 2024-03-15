@@ -30,7 +30,7 @@ export default function Home() {
                 <div className={styles['hero--heading']}>   
                     <h1>
                         <span>Let's make it</span>
-                        <span className="pink-text">accessible!</span>
+                        <span className="pink-text">accessible.</span>
                     </h1>
                     {/* <div className={styles['hero--heading--svg']}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" >
