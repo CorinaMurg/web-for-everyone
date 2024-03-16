@@ -18,27 +18,27 @@ const contents = [
     },
     {
         href: "#color-contrast",
-        text: "Color Contrast",
+        text: "Color contrast",
     },
     {
         href: "#the-alt-attribute-for-images",
-        text: "The 'alt' Attribute for Images",
+        text: "The 'alt' attribute for images",
     },
     {
         href: "#links-with-discernable-text",
-        text: "Links with Discernable Text",
+        text: "Links with discernable text",
     },
     {
         href: "#buttons-with-discernable-text",
-        text: "Buttons with Discernable Text",
+        text: "Buttons with discernable text",
     },
     {
         href: "#labels-for-inputs",
-        text: "Labels for Inputs",
+        text: "Labels for inputs",
     },
     {
         href: "#the-language-attribute",
-        text: "The Language Attribute",
+        text: "The language attribute",
     },
     {
         href: "#conclusion",
@@ -56,9 +56,9 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your Digital Presence"
+                secondLink="Your digital presence"
                 href="/resources#your-digital-presence" 
-                current="Let's Make It Accessible - Part One"
+                current="Let's make it accessible: Part one"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
@@ -179,7 +179,7 @@ export default function MakeItAccessible() {
                     <div className="section-heading" >
                         <span aria-hidden="true" className="section-number">01</span>
                         <h2>
-                            Color Contrast
+                            Color contrast
                         </h2>
                     </div>
                     
@@ -313,7 +313,7 @@ export default function MakeItAccessible() {
                 <div className="section alt scroll-target" id="the-alt-attribute-for-images">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">02</span>
-                        <h2>The "alt" Attribute for Images</h2>
+                        <h2>The "alt" attribute for images</h2>
                     </div>
 
                     <div className="code code--alt">
@@ -367,7 +367,7 @@ export default function MakeItAccessible() {
                 <div className={`${styles.links} section scroll-target`} id="links-with-discernable-text">
                     <div aria-hidden="true" className="section-heading">
                         <span className="section-number">03</span>
-                        <h2>Links with Discernable Text</h2>
+                        <h2>Links with discernable text</h2>
                     </div>
 
                     <div className="code code--links">
@@ -454,7 +454,7 @@ export default function MakeItAccessible() {
                 <div className="section buttons scroll-target" id="buttons-with-discernable-text">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">04</span>
-                        <h2>Buttons with Discernable Text</h2>
+                        <h2>Buttons with discernable text</h2>
                     </div>
 
                     <div className="code code--buttons">
@@ -496,7 +496,7 @@ export default function MakeItAccessible() {
                 <div className="section labels scroll-target" id="labels-for-inputs">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">05</span>
-                        <h2>Labels for Inputs</h2>
+                        <h2>Labels for inputs</h2>
                     </div>
 
                     <div className="code code--labels">
@@ -568,7 +568,7 @@ export default function MakeItAccessible() {
                 <div className="section lang scroll-target" id="the-language-attribute">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">06</span>
-                        <h2>The Language Attribute</h2>
+                        <h2>The language attribute</h2>
                     </div>
 
                     <div className="code code--lang">
@@ -643,7 +643,7 @@ export default function MakeItAccessible() {
                     <p className="margin-top-30">
                         <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part2">
-                            Let's Make It Accessible! Part 2: On the Hunt for 6 More Bugs
+                            Let's make it accessible! Part two: on the hunt for 6 more bugs
                         </Link>
                     </p>
                 </div>

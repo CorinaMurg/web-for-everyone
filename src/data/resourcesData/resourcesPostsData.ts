@@ -15,7 +15,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessibility-101",
         "id": "what-is-accessibility",
-        "title": "What is Accessibility?",
+        "title": "What is accessibility?",
         "subtitle": "",
         "author": "By Web for Everyone",
         "description": `When you create websites and apps that everyone, including people with disabilities, 
@@ -26,7 +26,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessibility-101",
         "id": "how-accessibility-works",
-        "title": "How Accessibility Works",
+        "title": "How accessibility works",
         "subtitle": "",
         "author": "By Web for Everyone",
         "description": `Have you met the accessibility tree, the DOM's powerful sibling? 
@@ -38,7 +38,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "accessibility-101",
         "id": "most-common-bugs",
-        "title": "The Most Common Accessibility Bugs",
+        "title": "The most common accessibility bugs",
         "subtitle": "Findings from the 2023 WebAIM Million Study",
         "author": "By Web for Everyone",
         "description": 
@@ -50,7 +50,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "id": "importance-of-semantic-html",
-        "title": "The Importance of Semantic HTML",
+        "title": "The importance of semantic HTML",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
         "description": `In conversations about accessibility, the use of semantic HTML is most 
@@ -62,7 +62,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "id": "html-buttons-or-links",
-        "title": "HTML: Buttons or Links? How to Choose",
+        "title": "HTML: buttons or links? How to choose",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
@@ -74,7 +74,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "id": "how-to-design-great-alt-text",
-        "title": "How to Design Great Alt Text",
+        "title": "How to design great alt text",
         "subtitle": "",
         "author": "By Caitlin Geier on deque.com/blog",
         "description": `Alt text is essential for users relying on screen readers or slow internet connections. 
@@ -86,7 +86,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "id": "similar-but-different",
-        "title": "Similar, but Different: HTML and ARIA terms",
+        "title": "Similar, but different: HTML and ARIA terms",
         "subtitle": "",
         "author": "By Web for Everyone",
         "description": `If you need to hide an element from view, do you use "display: none", "visibility: hidden", or "aria-hidden"?
@@ -98,7 +98,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "html-for-accessibility",
         "id": "html-tag-vs-element",
-        "title": "HTML: Tag vs. Element",
+        "title": "HTML: tag vs. element",
         "subtitle": "",
         "author": "By Corina Murg on dev.to",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
@@ -109,7 +109,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "css-for-accessibility",
         "id": "is-rem-always-the-best-choice",
-        "title": "Is \"rem\" Always the Best Choice?",
+        "title": "Is \"rem\" always the best choice?",
         "subtitle": "",
         "author": "By Ashlee M Boyer on ashleemboyer.com",
         "description": `While rem units are great for 
@@ -123,7 +123,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "example-accessible-components",
         "id": "building-main-navigation",
-        "title": "Building the Main Navigation for a Website",
+        "title": "Building the main navigation for a website",
         "subtitle": "",
         "author": "By Manuel Matuzović on web.dev",
         "description": `This post 
@@ -136,8 +136,8 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "your-digital-presence",
         "id": "make-it-accessible-part1",
-        "title": "Your Portfolio Site: Let's Make It Accessible",
-        "subtitle": "Part One: Fixing the 6 Most Common Bugs",
+        "title": "Your portfolio site: Let's make it accessible",
+        "subtitle": "Part one: fixing the 6 most common bugs",
         "author": "By Web for Everyone",
         "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,
@@ -147,8 +147,8 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "your-digital-presence",
         "id": "make-it-accessible-part2",
-        "title": "Your Portfolio Site: Let's Make It Accessible",
-        "subtitle": "Part 2: On the hunt for 6 more bugs",
+        "title": "Your portfolio site: Let's make it accessible",
+        "subtitle": "Part two: on the hunt for 6 more bugs",
         "author": "By Web for Everyone",
         "description": `We've caught the 6 most common accessibility bugs. Can we find 6 more? Will they be
             as easy to fix? Let's learn where to look and how to avoid them.`,
@@ -158,7 +158,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
         "label": "your-digital-presence",
         "id": "tips-for-accessible-github-profile",
-        "title": "Tips for an Accessible GitHub Profile",
+        "title": "Tips for an accessible GitHub profile",
         "subtitle": "",
         "author": "By Annie Streater on github.blog",
         "description": `A post with practical advice on how to ensure  

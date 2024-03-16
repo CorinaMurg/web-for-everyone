@@ -17,19 +17,19 @@ const contents = [
     },
     {
         href: "#the-DNA-of-the-web-is-accessible",
-        text: "The DNA of the Web is Accessible"
+        text: "The DNA of the web is accessible"
     },
     {
         href: "#why-accessibility",
-        text: "Why Accessibility?"
+        text: "Why accessibility?"
     },
     {
         href: "#web-access-is-everyone's-right",
-        text: "Web Access is Everyone's Right"
+        text: "Web access is everyone's right"
     },
     {
         href: "#next-steps",
-        text: "Next Steps"
+        text: "Next steps"
     },
 ]
 
@@ -41,9 +41,9 @@ export default function WhatIsA11y() {
     return (
         <div className="article-container whatisa11y-container">
             <BackLinks 
-                secondLink="Understanding Accessibility"
-                href="/resources#understanding-accessibility" 
-                current="What is Accessibility?"
+                secondLink="Accessibility 101"
+                href="/resources#accessibility-101" 
+                current="What is accessibility?"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
@@ -79,7 +79,7 @@ export default function WhatIsA11y() {
                     
                 {/* ****************The DNA of the Web is Accessible****************** */}
                 <div className="section scroll-target" id="the-DNA-of-the-web-is-accessible">
-                    <h2>The DNA of the Web is Accessible</h2>
+                    <h2>The DNA of the web is accessible</h2>
                     <p>
                         If you have good sight and hand mobility, you can rely on them to navigate
                         to a webpage and check out its content (probably with the help of a mouse or a keyboard). 
@@ -251,7 +251,7 @@ export default function WhatIsA11y() {
 
                 {/* ***************WHY Accessibility***************** */}
                 <div className="section scroll-target" id="why-accessibility">
-                    <h2>Why Accessibility?</h2>
+                    <h2>Why accessibility?</h2>
                     <p>
                         From a business side, there are certainly a few practical reasons that can motivate 
                         a company to prioritize accessibility:
@@ -296,7 +296,7 @@ export default function WhatIsA11y() {
 
                 {/* *************Web Access is Everyone's Right******************** */}
                 <div className="section scroll-target" id="web-access-is-everyone's-right">
-                    <h2>Web Access is Everyone's Right!</h2>
+                    <h2>Web access is everyone's right!</h2>
                     <p>
                         In our world, digital connectivity is key, and your finished product should allow everyone 
                         the ability to easily engage with it.  The web is not just a form of entertainment; it's a
@@ -318,7 +318,7 @@ export default function WhatIsA11y() {
 
                 {/* *********NEXT***************** */}
                 <div className="section scroll-target" id="next-steps">
-                    <h2>Next Steps</h2>
+                    <h2>Next steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 
                         accessible. 97% of them have some accessibility bugs!
@@ -339,7 +339,7 @@ export default function WhatIsA11y() {
                     <p>
                         <b>Read next: </b>
                         <Link to="/resources/how-accessibility-works">
-                            How Accessibility Works
+                            How accessibility works
                         </Link>
                     </p>
 

@@ -16,27 +16,27 @@ const contents = [
     },
     {
         href: "#zooming-scaling",
-        text: "Zooming and Scaling",
+        text: "Zooming and scaling",
     },
     {
         href: "#title-element",
-        text: "The Title Element",
+        text: "The title element",
     },
     {
         href: "#skip-link",
-        text: "Skip Link",
+        text: "Skip link",
     },
     {
         href: "#keyboard-navigation",
-        text: "Keyboard Navigation",
+        text: "Keyboard navigation",
     },
     {
         href: "#visible-focus",
-        text: "Visible Focus",
+        text: "Visible focus",
     },
     {
         href: "#headings-in-logical-order",
-        text: "Headings in Logical Order",
+        text: "Headings in logical order",
     },
     {
         href: "#conclusion",
@@ -54,9 +54,9 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your Digital Presence" 
+                secondLink="Your digital presence" 
                 href="/resources#your-digital-presence" 
-                current="Let's Make It Accessible - Part Two"
+                current="Let's make it accessible: Part two"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
@@ -82,7 +82,7 @@ export default function MakeItAccessible() {
                         portfolio site. We started with <span> </span>
                         <Link to="/resources/make-it-accessible-part1" 
                         >
-                            Let's Make It Accessible! Part One: Finding the 6 Most Common Bugs
+                            Let's make it accessible! Part one: finding the 6 most common bugs
                         </Link>.
                         We noticed that they can be kept in check with just semantic 
                         HTML, and at times a bit of CSS or ARIA attributes.
@@ -98,7 +98,7 @@ export default function MakeItAccessible() {
                 <div className={`section ${styles['pinch']} scroll-target`} id="zooming-scaling">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">07</span>
-                        <h2>Zooming and Scaling</h2>
+                        <h2>Zooming and scaling</h2>
                     </div>
 
                     <div className={`code ${styles['code--title']}`}>
@@ -151,7 +151,7 @@ export default function MakeItAccessible() {
                 <div className={`section ${styles['title']} scroll-target`} id="title-element">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">08</span>
-                        <h2>The Title Element</h2>
+                        <h2>The title element</h2>
                     </div>
 
                     <div className="code">
@@ -193,7 +193,7 @@ export default function MakeItAccessible() {
                         <details>
                             <summary>
                                 <span className="summary-title">
-                                    Example: React Custom Hook to Update the Title
+                                    Example: React custom hook to update the title
                                 </span>
                             </summary>
                             <div className="details-content">
@@ -236,7 +236,7 @@ export default function MakeItAccessible() {
                 <div className="section skip scroll-target" id="skip-link">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">09</span>
-                        <h2>Skip Link</h2>
+                        <h2>The skip link</h2>
                     </div>
 
                     <div className="code code--skip">
@@ -274,7 +274,7 @@ export default function MakeItAccessible() {
                     </p>
 
                     <div className="highlight">
-                        <h4>Example: A Skip Link in Action</h4>
+                        <h4>Example: A skip link in action</h4>
                         <p>
                             Check out how the <span> </span>
                             <a href="https://www.nytimes.com/" target="_blank" rel="noreferrer"> 
@@ -326,7 +326,7 @@ export default function MakeItAccessible() {
                         <details>
                             <summary>
                                 <span className="summary-title">
-                                    Example: Code for a Skip Link
+                                    Example: code for a skip link
                                 </span>
                             </summary>
                             <div className="details-content">
@@ -369,7 +369,7 @@ export default function MakeItAccessible() {
                 <div className="section keyboard scroll-target" id="keyboard-navigation">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">10</span>
-                        <h2>Keyboard Navigation</h2>
+                        <h2>Keyboard navigation</h2>
                     </div>
 
                     <div className={`${styles['code-keyboard']} code-keyboard`}>
@@ -426,7 +426,7 @@ export default function MakeItAccessible() {
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">1 1</span>
-                        <h2>Visible Focus</h2>
+                        <h2>Visible focus</h2>
                     </div>
 
                     <div className="code">
@@ -466,7 +466,7 @@ export default function MakeItAccessible() {
                     
                     {/* ***Example: Creating a custom focus outline*** */}
                     <div className="highlight">
-                        <h4>Example <span className="pink-text"> One</span>: Create a custom focus outline</h4>
+                        <h4>Example <span className="pink-text"> one</span>: Create a custom focus outline</h4>
                         <div className="code">
                             <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
@@ -525,7 +525,7 @@ export default function MakeItAccessible() {
                     
 
                     <div className="highlight margin-top-30">
-                        <h4>Example <span className="pink-text"> Two</span>: Change the brightness to show focus</h4>
+                        <h4>Example <span className="pink-text"> two</span>: Change the brightness to show focus</h4>
                         <p>
                             One of the most important accessibility guidelines is to ensure that <span> </span>
                             <strong>color alone is not used to convey information</strong>. 
@@ -591,7 +591,7 @@ export default function MakeItAccessible() {
                 <div className="section headings scroll-target" id="headings-in-logical-order">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">12</span>
-                        <h2>Headings in Logical Order</h2>
+                        <h2>Headings in logical order</h2>
                     </div>
 
                     <div className="code code--headings">

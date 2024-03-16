@@ -15,13 +15,13 @@ import "../../../global.css"
 const contents = [
     {
         href: "#intro",
-        text: "In a Nutshell",
+        text: "In a nutshell",
         ariaLabel: "In a Nutshell: How Accessibility works",
         
     },
     {
         href: "#the-accessibility-tree",
-        text: "The Accessibility Tree",
+        text: "The accessibility tree",
     },
     // {
     //     href: "#DOM-tree-vs-accessibility-tree",
@@ -32,8 +32,8 @@ const contents = [
     // },
     {
         href: "#implicit-vs-explicit-accessibility-roles",
-        text: "Implicit vs. Explicit Roles",
-        ariaLabel: "Implicit versus Explicit Accessibility Roles",   
+        text: "Implicit vs. explicit roles",
+        ariaLabel: "Implicit versus explicit accessibility roles",   
     },
     // {
     //     href: "#implicit-roles",
@@ -51,7 +51,7 @@ const contents = [
     // },
     {
         href: "#the-accessible-name",
-        text: "The Accessible Name",
+        text: "The accessible name",
     },
     // {
     //     href: "#the-accessible-name-computation-algorithm",
@@ -72,7 +72,7 @@ const contents = [
 ]
 
 export default function MostCommonBugs() {
-    useDocTitle("How Accessibility Works | Web for Everyone");  
+    useDocTitle("How accessibility works | Web for Everyone");  
     useScrollToTop();
     useScrollToSection();  
     const { activeId } = useHighlightTOC();
@@ -81,9 +81,9 @@ export default function MostCommonBugs() {
         <div className="article-container howA11yWorks-container">
             
             <BackLinks 
-                secondLink="Understanding Accessibility" 
-                href="/resources#understanding-accessibility" 
-                current="How Accessibility Works"
+                secondLink="Accessibility 101" 
+                href="/resources#accessibility-101" 
+                current="How accessibility works"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
@@ -93,7 +93,7 @@ export default function MostCommonBugs() {
                 <span>How</span>
                 <span>accessibility works</span>
             </h1>
-            <p id="subtitle" className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
+            <p id="subtitle" className="subtitle">DOM's powerful sibling: the accessibility tree</p>
 
             <TableOfContents contents={contents} activeId={activeId}/>
             
@@ -101,7 +101,7 @@ export default function MostCommonBugs() {
                 {/* *************1. INTRO********************** */}
                 <div id="intro" className="section intro scroll-target" >
                     <h2 aria-label="In a Nutshell: How Accessibility works">
-                        In a Nutshell
+                        In a nutshell
                     </h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
@@ -118,7 +118,7 @@ export default function MostCommonBugs() {
 
                 {/* *************2. A11Y TREE********************** */}
                 <div className={`section ${styles.a11yTree} scroll-target`} id="the-accessibility-tree">
-                    <h2>The Acccessibility Tree <span aria-hidden="true"> 🌳</span></h2>           
+                    <h2>The acccessibility tree <span aria-hidden="true"> 🌳</span></h2>           
                     <div>
                         <p>
                             Each node in the tree is an <strong>accessible object</strong>. 
@@ -173,7 +173,7 @@ export default function MostCommonBugs() {
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
                     <div className={`section ${styles['dom-at-section']}`} id="DOM-tree-vs-accessibility-tree">
                         <h3>
-                            DOM Tree vs. Accessibility Tree
+                            DOM tree vs. accessibility tree
                         </h3>
                         <p> 
                             Here we take the navbar component of this website and compare its representation in the DOM 
@@ -260,7 +260,7 @@ export default function MostCommonBugs() {
                 {/* *************2.2 Implicit vs. Explicit Accessibility Roles********** */}
                 <div className="section scroll-target" id="implicit-vs-explicit-accessibility-roles">   
                     <h2 aria-label="Implicit versus Explicit Accessibility Roles">
-                        Implicit vs. Explicit Roles
+                        Implicit vs. explicit roles
                     </h2>
                     <p>
                         Some roles are implicit and assigned by default, based on the HTML tag used to create 
@@ -282,7 +282,7 @@ export default function MostCommonBugs() {
                     {/* ************Implicit roles***************** */}
                     <div className="section" id="implicit-roles">
                         <h3 className="margin-top-20">
-                            Implicit Roles
+                            Implicit roles
                         </h3>
                         <p>
                             Each role in the example above is <strong>implicit</strong>. It's built in the definition of the
@@ -362,7 +362,7 @@ export default function MostCommonBugs() {
                     {/* ************Explicit roles***************** */}
                     <div className="section" id="explicit-roles">
                         <h3>
-                            Explicit Roles
+                            Explicit roles
                         </h3>
                         <p>
                             We can also explicitly assign a role to an HTML element using <b>ARIA</b> roles                          
@@ -491,7 +491,7 @@ export default function MostCommonBugs() {
 
                 {/* **************Accessible Name***************** */}
                 <div className="section scroll-target a11yName" id="the-accessible-name">
-                    <h2>The Accessible Name</h2>
+                    <h2>The accessible name</h2>
                     <div className="code">             
                         <code>listitem</code>
                         <code className="padding-left-30">
@@ -542,7 +542,7 @@ export default function MostCommonBugs() {
                     {/* *****Accessible Name Computation Algorithm***** */}
                     <div className="section" id="the-accessible-name-computation-algorithm">
                         <h3>
-                            Accessible Name Computation Algorithm
+                            The accessible name computation algorithm
                         </h3>
                         <p>
                             During the construction of the accessibility tree, the browser evaluates each element
@@ -684,7 +684,8 @@ export default function MostCommonBugs() {
                                 <strong>title</strong>
                             </p>
                             <p className="padding-left-20">
-                                Avoid it! It's tricky to make it accessible to screen reader users.
+                                Accessibility experts suggest we avoid it because it's tricky to make it accessible to 
+                                keyboard users.
                                 You can still use it to provide a visual tooltip on mouseover, but don't rely on it for
                                 the accessible name.
                             </p>
@@ -731,16 +732,12 @@ export default function MostCommonBugs() {
                                 {/* The biggest issue with <code>aria-label</code>? */}
                             </p>
                             <p className="padding-left-20 white-bg margin-top-20">
-                                It does not take a <code>lang</code> attribute (read 
-                                    <span> </span>
-                                <Link to="/resources/make-it-accessible-part1#the-language-attribute">
-                                    how to use the lang attribute
-                                </Link>),
-                                nor it's guaranteed to be translated by all browsers. This unfortunately prevents 
+                                It's not guaranteed to be translated by all browsers. This unfortunately prevents 
                                 your content from being accessible to a global audience (a process called "internationalization").
                             </p>
                             <p className="padding-left-20 margin-top-20 white-bg">
-                                And once again, the problem for voice users: they need to know the name of the element.
+                                And once again, the problem for voice users: they need to know the name of the element,
+                                but the value of <code>aria-label</code> is not visible to them.
                             </p>
                             <p className="margin-top-20">
                                 <b>More on this topic</b>: <span> </span>
@@ -874,7 +871,7 @@ export default function MostCommonBugs() {
                         <Link 
                             to="/resources/most-common-bugs" 
                         >
-                            The Most Common Acessibility Bugs
+                            The most common acessibility bugs
                         </Link>
                     </p>
                     

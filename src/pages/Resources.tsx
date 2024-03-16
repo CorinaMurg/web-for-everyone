@@ -15,10 +15,10 @@ export default function Accessibility() {
     const { activeId } = useHighlightTOC();
     const sectionTitles = {
         "accessibility-101": "Accessibility 101",
-        "your-digital-presence": "Your Digital Presence",
-        "html-for-accessibility": "HTML for Accessibility",
-        "css-for-accessibility": "CSS for Accessibility",
-        "example-accessible-components": "Examples of Accessible Components",
+        "your-digital-presence": "Your digital presence",
+        "html-for-accessibility": "HTML for accessibility",
+        "css-for-accessibility": "CSS for accessibility",
+        "example-accessible-components": "Examples of accessible components",
         // "learning-resources": "Learning Resources",
     };
   

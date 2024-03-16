@@ -12,14 +12,14 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 import BackLinks from "../../../components/BackLinks/BackLinks"
 
 const contents = [
-    { href: "#intro", text: "WebAIM Million Study" },
-    { href: "#low-contrast-text", text: "Low Contrast Text" },
-    { href: "#missing-alt-text-for-images", text: "Missing Alt Text for Images" },
-    { href: "#empty-links", text: "Empty Links" },
-    { href: "#empty-buttons", text: "Empty Buttons" },
-    { href: "#missing-input-labels", text: "Missing Input Labels" },
-    { href: "#missing-document-language", text: "Missing Document Language" },
-    { href: "#misused-headings", text: "Misused Headings" },
+    { href: "#intro", text: "WebAIM Million study" },
+    { href: "#low-contrast-text", text: "Low contrast text" },
+    { href: "#missing-alt-text-for-images", text: "Missing alt text for images" },
+    { href: "#empty-links", text: "Empty links" },
+    { href: "#empty-buttons", text: "Empty buttons" },
+    { href: "#missing-input-labels", text: "Missing input labels" },
+    { href: "#missing-document-language", text: "Missing document language" },
+    { href: "#misused-headings", text: "Misused headings" },
     { href: "#conclusion", text: "Conclusion" },
 ];
 
@@ -37,9 +37,9 @@ export default function MostCommonBugs() {
     return (
         <div className={`article-container ${styles['commonbugs-container']}`}>
             <BackLinks 
-                secondLink="Understanding Accessibility"
-                href="/resources#understanding-accessibility" 
-                current="The Most Common Bugs"
+                secondLink="Accessibility 101"
+                href="/resources#accessibility-101" 
+                current="The most common bugs"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
@@ -51,7 +51,7 @@ export default function MostCommonBugs() {
                 <span>accessibility bugs</span>
                 
             </h1>
-            <p id="subtitle" className="subtitle">Findings from the 2023 WebAIM Million Study</p>
+            <p id="subtitle" className="subtitle">Findings from the 2023 WebAIM Million study</p>
 
             <TableOfContents contents={contents} activeId={activeId} />
             
@@ -96,6 +96,7 @@ export default function MostCommonBugs() {
                         accessibility barriers and guidelines violations.
                         As a result, the actual number of bugs is likely to be higher.
                     </p>
+                    {/* How do we know what's an accessibility bug? */}
                     <div className="highlight-one-line highlight margin-top-20">
                         <details>
                             <summary>
@@ -112,17 +113,24 @@ export default function MostCommonBugs() {
                                 They are not an easy read, but they become one with practice.
                             </p>
                             <p>
-                                The guidelines have three levels of conformance: A, AA, and AAA.
-                                Level A provides only the most basic level of accessibility, and the 
-                                recommended level for most websites is AA (which requires that level A has also been met).
+                                The structure is a bit different then the name suggests.
+                                There are four principles: perceivable, operable, understandable, and robust.
+                                Each principle has a set of guidelines, and each guideline has a set of success criteria.
+                                The success criteria are in fact the specific rules we use to determine if a website is accessible.
                             </p>
                             <p>
-                                Some guidelines are staggered across all three levels, while others are specific 
-                                to just one level or two.
-                                For example, the requirement that every web page has a title is a level A, 
-                                while the target size for clickable areas has both level AA and AAA requirements. 
-                                For the AA level, any clickable area (for example, the size of a button) must be of minimum 24 by 24 pixels. 
-                                For the AAA level, the minimum size must be 44 by 44 pixels. 
+                                Each success criterion has one of the three levels of conformance: A, AA, and AAA.
+                                Level A criteria provide only the most basic level of accessibility, and the 
+                                recommended level for most websites is AA (which requires that level A criteria have also been met).
+                            </p>
+                            <p>
+                                Usually, a specific accessibility goal is addressed by a success criterion with a given level of 
+                                conformance. For example, the requirement that every web page has a title is a level A criterion.
+                            </p>
+                            <p>
+                                We can also have two criteria, each at a different level, addressing the same goal.
+                                For example, when it comes to the size of clickable areas, we have a level AA criterion 
+                                that requires a minimum of 24 by 24 pixels. We also have a AAA level criterion that sets the minimum size to 44 by 44 pixels. 
                             </p>
                             <p>
                                 In this way, the guidelines establish a minimum level of accessibility,
@@ -131,7 +139,7 @@ export default function MostCommonBugs() {
                             <p>   
                                 In this article, we will review the 6 most common accessibility bugs by referencing the negative
                                 impact they have on users with disabilities, without mentioning the specific WCAG
-                                guidelines that they violate or the level of conformance they fail to meet.
+                                success criteria that they violate.
                             </p>
 
                             <p>For an overview of the WCAG guidelines, the article <span> </span>
@@ -184,7 +192,7 @@ export default function MostCommonBugs() {
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
                         <Link to="/resources/make-it-accessible-part1">
-                            Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
+                            Let's make it accessible! Part one: fixing the 6 most common bugs
                         </Link>
                         .
                     </p>
@@ -192,7 +200,7 @@ export default function MostCommonBugs() {
                         <strong>Recommended</strong>: To understand the impact of these bugs on users with disabilities,
                         make sure to review <span> </span>
                         <Link to="/resources/how-accessibility-works">
-                            How Accessibility Works
+                            How accessibility works
                         </Link>, especially the section on the <strong>accessible name</strong>.
                     </p>
                 </div>
@@ -201,7 +209,7 @@ export default function MostCommonBugs() {
                 <div className="section low-contrast scroll-target" id="low-contrast-text">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">01</span>
-                        <h2>Low Contrast Text</h2>
+                        <h2>Low contrast text</h2>
                     </div>
                     <p className="white-bg">
                         Found on <span className="stats">83.6%</span> of pages, this bug involves text without enough 
@@ -230,7 +238,7 @@ export default function MostCommonBugs() {
                 <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">02</span>
-                        <h2 className="white-bg">Missing <code>alt</code> Text for Images</h2>
+                        <h2 className="white-bg">Missing <code>alt</code> text for images</h2>
                     </div>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
@@ -264,7 +272,7 @@ export default function MostCommonBugs() {
                 <div className="section empty-links scroll-target" id="empty-links">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">03</span>
-                        <h2>Empty Links</h2>
+                        <h2>Empty links</h2>
                     </div>
                     <p>
                         <span className="stats">Half</span> of the home pages tested had links without a name.
@@ -306,7 +314,7 @@ export default function MostCommonBugs() {
                 <div className="section empty-buttons scroll-target" id="empty-buttons">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">04</span>
-                        <h2>Empty Buttons</h2>
+                        <h2>Empty buttons</h2>
                     </div>
                     <p>
                         <span className="stats">More than a quarter</span> of the home pages tested had buttons 
@@ -367,7 +375,7 @@ export default function MostCommonBugs() {
                 <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">05</span>
-                        <h2>Missing Input Labels</h2>
+                        <h2>Missing input labels</h2>
                     </div>
                     <p>
                         <span className="stats">More than a third</span> of
@@ -405,7 +413,7 @@ export default function MostCommonBugs() {
                 <div className="section missing-lang scroll-target" id="missing-document-language">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">06</span>
-                        <h2>Missing Document Language</h2>
+                        <h2>Missing document language</h2>
                     </div>
                     <p>
                         This bug was found on <span className="stats">18.6%</span> of the home pages audited.
@@ -442,8 +450,8 @@ export default function MostCommonBugs() {
                 {/* 7. HEADINGS */}
                 <div className="section misused-headings scroll-target" id="misused-headings">
                     <div className="section-heading">
-                        <span className="section-number">Bonus Bug:</span>
-                        <h2>Misused Headings</h2>
+                        <span className="section-number">Bonus bug:</span>
+                        <h2>Misused headings</h2>
                     </div>
                    
                     <p className="white-bg">
@@ -504,7 +512,7 @@ export default function MostCommonBugs() {
                     <p>
                         <b>Read next: </b>
                         <Link to="/resources/make-it-accessible-part1">
-                            Let's Make It Accessible! Part One: Fixing the 6 Most Common Bugs
+                            Let's make it accessible! Part one: fixing the 6 most common bugs
                         </Link>
                     </p>                 
                 </div>
