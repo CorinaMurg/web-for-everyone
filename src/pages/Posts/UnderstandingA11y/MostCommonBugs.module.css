@@ -6,26 +6,26 @@
     gap: 20px;
     align-items: center;
     width: 100%;
-    font-family: "Popins", sans-serif;
+    font-family: "Poppins", sans-serif;
     /* max-width: 560px; */
     padding-block: 10px;
     letter-spacing: 0.5px;
 }
 
 .numbers dt {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--pinkBright-color);
-    font-family: "Popins", sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 4.5rem;
     text-align: right;
     letter-spacing: 0.5px;
 }
 
 .numbers dd {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-dark-color);
-    font-family: "Popins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 

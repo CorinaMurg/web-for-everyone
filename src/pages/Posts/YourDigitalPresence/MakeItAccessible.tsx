@@ -60,7 +60,7 @@ export default function MakeItAccessible() {
                 href="/resources#your-digital-presence" 
                 current="Let's make it accessible: Part one"
             />
-            
+           
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>Your portfolio site:</span>
                 <span>Let's make it accessible!</span>
@@ -71,7 +71,7 @@ export default function MakeItAccessible() {
                 <span>accessible!</span>
             </h1>
             <p id="subtitle" className="subtitle">Part one: fixing the 6 most common bugs</p>
-
+        
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>
 

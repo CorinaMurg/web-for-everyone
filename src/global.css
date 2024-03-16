@@ -69,6 +69,8 @@
 .article-heading {
     display: flex;
     flex-direction: column;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
 }
 
 .article-container h1,
@@ -83,13 +85,12 @@
 }
 
 .article-heading-desktop {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
     font-size: 3rem;
     margin-top: 30px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .resources .article-heading-desktop {
