@@ -9,7 +9,6 @@
     border-radius: 0;
 }
 
-
 .we-can-help ul {
     padding-inline-start: 0;
 }
@@ -81,12 +80,6 @@
 }
 
 
-@media screen and (max-width: 1190px) {
-    .we-can-help h2 {
-        font-size: 1.2rem;
-    }
-}
-
 @media screen and (min-width: 626px) {
     .we-can-help {
         margin-top: 85px;
@@ -140,9 +133,6 @@
         padding-inline: var(--main-margin);
         padding-block: 30px;
     }
-    .we-can-help h2 {
-        font-size: 2.2rem;
-    }
 
     .we-can-help h3 {
         font-size: 1.5rem;
@@ -163,9 +153,6 @@
 @media screen and (max-width: 435px) {
     .we-can-help {
         gap: 20px;
-    }
-    .we-can-help h2 {
-        font-size: 1.8rem;
     }
     .we-can-help h3 {
         font-size: 1.4rem;

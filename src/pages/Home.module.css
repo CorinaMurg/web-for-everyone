@@ -97,18 +97,7 @@
 .hero--heading {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    
 }
-/* .hero--heading--svg {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero--heading--svg svg {
-    fill: gray;
-} */
 
 .hero h1 {
     font-size: 3rem;
@@ -136,11 +125,7 @@
 
 .all-highlight {
     font-family: "Quicksand", sans-serif;
-    /* background-color: var(--yellow-color); */
     color: var(--text-dark-color);
-    /* padding: 4px 6px;
-    border-radius: 50%;
-    border: 2px solid var(--text-dark-color); */
     font-weight: 700;
 }
 
@@ -202,7 +187,6 @@
     border-radius: 10px;
     border: 2px solid var(--text-nav-color);
     width: 100%;
-    /* margin-top: 10px; */
 }
 
 .hero--text--left .continue-to-article {
@@ -288,7 +272,6 @@
         font-size: 3.5rem;
     }  
     .hero--subtitle {
-        /* padding-inline: var(--main-margin); */
         width: 90%;
     }
 
@@ -318,7 +301,6 @@
         gap: 5px;
     }
     .hero--subtitle {
-        /* padding-inline: var(--main-margin); */
         width: 100%;
     }
 }
@@ -358,57 +340,6 @@
     width: 100%;
     /* border-bottom: 1.5px solid gray; */
 }
-
-
-/* LINK ARROWS
-<i className={styles['link-arrow']}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i>
-                                <i className={`${styles['link-arrow']} ${styles['additional-arrow']}`}></i> 
-.link-arrow {
-    border: solid var(--cream-color);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-left: 8px;
-    transform: rotate(-45deg);
-    transition: transform 0.5s ease; 
-}
-
-.additional-arrow {
-    opacity: 0;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    margin-left: 4px;
-    transition-delay: 0s; 
-}
-
-.hero--link {
-    align-self: flex-start;
-    text-decoration: none;
-    width: 100%;
-}
-
-.hero--link:hover .link-arrow {
-    border-color: var(--pinkBright-color); 
-    transform: translateX(5px) rotate(-45deg); 
-}
-
-.hero--link:hover .additional-arrow:nth-child(2) {
-    opacity: 0.8;
-    transition-delay: 0.1s; 
-}
-
-.hero--link:hover .additional-arrow:nth-child(3) {
-    opacity: 0.6;
-    transition-delay: 0.2s; 
-}
-
-.hero--link:hover .additional-arrow:nth-child(4) {
-    opacity: 0.4;
-    transition-delay: 0.3s; 
-} */
-
 
 /* /////////////////////////////////////////////////// */
 .mini-articles {
