@@ -17,7 +17,6 @@
     border-bottom: 0.3px solid var(--cream-color);
 }
 
-
 .we-can-help ul li:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
@@ -28,7 +27,7 @@
     border-bottom: none;
 }
 
-.we-can-help--heading {
+.we-can-help h2 {
     color: var(--cream-color);
     /* font-size: 1.3rem;
     font-weight: 400;
@@ -134,8 +133,15 @@
         padding-block: 30px;
     }
 
+    .we-can-help h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+
+    }
+
     .we-can-help h3 {
         font-size: 1.5rem;
+        margin-bottom: 20px;
     }
 
     .we-can-help p {
@@ -144,11 +150,11 @@
     }
 }
 
-@media screen and (max-width: 470px) {
+/* @media screen and (max-width: 470px) {
     .we-can-help h2 {
         font-size: 2rem;
     }
-}
+} */
 
 @media screen and (max-width: 435px) {
     .we-can-help {

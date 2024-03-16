@@ -109,7 +109,8 @@
     gap: 15px; 
     color: var(--text-nav-color);
     padding-top: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .hero--subtitle {
@@ -118,7 +119,7 @@
     font-weight: 600;
     width: 40rem;
     margin-inline: auto;
-    margin-top: 10px;
+    margin-top: 0;
     text-align: center;
     color: rgb(71, 70, 70);
 }
@@ -270,6 +271,7 @@
     .hero h1 {
         flex-direction: column;
         font-size: 3.5rem;
+        gap: 0;
     }  
     .hero--subtitle {
         width: 90%;
@@ -298,7 +300,6 @@
     .hero h1 {
         flex-direction: column;
         font-size: 3.5rem;
-        gap: 5px;
     }
     .hero--subtitle {
         width: 100%;
@@ -353,7 +354,8 @@
 
 .mini-articles h2 {
     align-self: self-start;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
     font-weight: 700;
     margin-bottom: 20px; 
     width: 100%;
@@ -409,6 +411,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-nav-color);
+    letter-spacing: 0.3px;
 }
 
 .mini-article--image span {
