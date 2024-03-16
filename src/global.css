@@ -89,7 +89,7 @@
     flex-direction: column;
     font-size: 3rem;
     margin-top: 30px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .resources .article-heading-desktop {
@@ -97,7 +97,7 @@
     flex-direction: column;
     font-size: 3rem;
     margin-top: 30px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .resources .article-heading-desktop span,
@@ -936,8 +936,8 @@ ul[class^="checkmark-list"] li p {
     .a11y-statement .article-heading-mobile {
         display: flex;
         flex-direction: column;
-        /* font-size: 3rem; */
-        font-weight: 600;
+        font-size: 3rem;
+        font-weight: 700;
     }
 
     .resources .article-heading-mobile span,
@@ -954,6 +954,13 @@ ul[class^="checkmark-list"] li p {
     .highlight-dl {
         padding: 10px;
     }
+    .highlight, .warning,
+    .highlight-small, .code  {
+        border-radius: 0;
+    }
+    .warning p {
+        margin-inline: 0;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -968,7 +975,12 @@ ul[class^="checkmark-list"] li p {
     }  
 }
 @media screen and (max-width: 365px) {
-    .article-heading-mobile {
-        font-size: 2.8rem;
-    }  
+    .resources .article-heading-mobile,
+    .article-container .article-heading-mobile,
+    .a11y-statement .article-heading-mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
 }

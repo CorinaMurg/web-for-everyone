@@ -52,7 +52,7 @@ export default function WhatIsA11y() {
             </h1>
             <h1 className="article-heading-mobile">
                 <span>What is</span>
-                <span className="yellow-bg">accessibility?</span>
+                <span>accessibility?</span>
             </h1>
             <p id="subtitle" className="subtitle">And why does it matter?</p>
 

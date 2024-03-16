@@ -32,7 +32,7 @@ export default function Accessibility() {
             <h1 className="article-heading-mobile">
                 <span>Resources</span>
                 <span>to grow your</span>
-                <span><span className="yellow-bg">accessibility</span> skills</span>
+                <span>accessibility skills</span>
             </h1>
             <div className={styles['resources--table-contents']}>
                 <h2 id="table-of-contents">
