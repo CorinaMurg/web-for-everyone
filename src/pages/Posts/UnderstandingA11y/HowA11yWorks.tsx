@@ -800,20 +800,6 @@ export default function MostCommonBugs() {
                                 
                                 <code><span className="code-blue-color">&lt;/button&gt;</span></code>
                             </div>
-                            <div className="code margin-top-30 margin-bottom-30">
-                                <code>
-                                    <span className="code-blue-color">&lt;a</span> href="..." <span className="code-yellow-color">lang="es"</span>
-                                    <span className="code-blue-color">&gt;</span>
-                                </code>
-                                <code className="padding-left-30">
-                                <span className="code-yellow-color">Español</span>
-                                    
-                                </code>
-                                
-                                
-                                <code><span className="code-blue-color">&lt;/a&gt;</span></code> 
-                            </div>
-                           
                             
                             <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
