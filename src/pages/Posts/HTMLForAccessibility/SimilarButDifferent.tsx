@@ -42,13 +42,13 @@ export default function SimilarButDifferent() {
             />
             
             <h1 className="article-heading-desktop">
-                <span>Similar but Different:</span>
-                <span><span className="yellow-bg">HTML and ARIA</span> terms</span>
+                <span>Similar but different:</span>
+                <span>HTML and ARIA terms</span>
             </h1>
             <h1 className="article-heading-mobile">
                 <span>Similar but</span>    
-                <span>Different:</span>
-                <span><span className="yellow-bg">HTML</span> and <span className="yellow-bg">ARIA</span> terms</span> 
+                <span>different:</span>
+                <span>HTML and ARIA terms</span> 
             </h1>
             <p className="subtitle">Matching terms against each other</p>
 

@@ -6,20 +6,26 @@
     gap: 20px;
     align-items: center;
     width: 100%;
+    font-family: "Popins", sans-serif;
     /* max-width: 560px; */
     padding-block: 10px;
+    letter-spacing: 0.5px;
 }
 
 .numbers dt {
     font-size: 1.1rem;
+    font-weight: 600;
     color: var(--pinkBright-color);
+    font-family: "Popins", sans-serif;
     width: 4.5rem;
     text-align: right;
+    letter-spacing: 0.5px;
 }
 
 .numbers dd {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-dark-color);
+    font-family: "Popins", sans-serif;
     font-weight: 500;
 }
 
@@ -43,7 +49,9 @@
     border: none;
     color: var(--text-light-color);
     font-size: 1rem;
-    font-weight: 500;
+    font-family: "Popins", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 600;
     padding: 10px 15px;
     align-self:auto;
     margin-bottom: 20px;

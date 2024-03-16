@@ -27,7 +27,7 @@ export default function Accessibility() {
 
             <h1 className="article-heading-desktop">
                 <span>Resources to grow</span>
-                <span>your <span className="yellow-bg">accessibility skills</span></span>
+                <span>your accessibility skills</span>
             </h1>
             <h1 className="article-heading-mobile">
                 <span>Resources</span>

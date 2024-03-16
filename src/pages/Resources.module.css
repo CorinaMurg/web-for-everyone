@@ -11,7 +11,7 @@
 
 .resources a {
     text-decoration: none;
-    color: var(--text-dark-color);
+    color: var(--text-nav-color);
     cursor: pointer;
 }
 
@@ -26,6 +26,7 @@
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     font-size: 3rem;
+    font-weight: 700;
     line-height: 1.4;
     margin-top: 35px;
     display: flex;
@@ -34,7 +35,9 @@
 
 .resources h1 span {
     align-self: flex-start;
+    font-weight: 700;
 }
+
 .resources-content {
     grid-row: 2 / 3;
     grid-column: 1 / 2;

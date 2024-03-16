@@ -43,12 +43,12 @@ export default function MostCommonBugs() {
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>The Most Common</span>
-                <span className="yellow-bg">Accessibility Bugs</span>
+                <span>The most common</span>
+                <span>accessibility bugs</span>
             </h1>
             <h1 aria-describedby="subtitle" className="article-heading-mobile">
-                <span>The Most Common</span>
-                <span><span className="yellow-bg">Accessibility</span> Bugs</span>
+                <span>The most common</span>
+                <span>accessibility bugs</span>
                 
             </h1>
             <p id="subtitle" className="subtitle">Findings from the 2023 WebAIM Million Study</p>
@@ -230,7 +230,7 @@ export default function MostCommonBugs() {
                 <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">02</span>
-                        <h2>Missing <code>alt</code> Text for Images</h2>
+                        <h2 className="white-bg">Missing <code>alt</code> Text for Images</h2>
                     </div>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
@@ -329,15 +329,15 @@ export default function MostCommonBugs() {
                             </code>
                         </div>
                         
-                        <p className="fake-heading-p margin-top-30">
-                            Issue <span aria-hidden="true"> 🛠️</span>
+                        <p className=" margin-top-30">
+                            <strong>Issue </strong> <span aria-hidden="true"> 🛠️</span>
                         </p>
                         <p className="white-bg">
                             Text is replaced by an image with no <code>alt</code> text. 
                             Within the accessibility tree, this button object does not have an accessible name.
                         </p>
-                        <p className="fake-heading-p">
-                            Remember <span aria-hidden="true">💡</span>
+                        <p >
+                            <strong>Remember </strong> <span aria-hidden="true">💡</span>
                         </p>
                         <p className="white-bg">
                             An interactive element like a button must have a descriptive <span> </span>
@@ -349,7 +349,7 @@ export default function MostCommonBugs() {
                             visible text, <code>aria-labelledby</code>, or <code>alt</code>, to 
                             name a few.
                         </p>
-                        <p className="fake-heading-p">Consequences of empty buttons</p>
+                        <p><strong>Consequences of empty buttons</strong></p>
                         <p className="bullet-point-line">
                             A screen reader will announce it simply as "button", and no other 
                             information attached. Users would not know what is the purpose of the button.

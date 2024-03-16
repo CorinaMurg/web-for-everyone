@@ -47,12 +47,12 @@ export default function WhatIsA11y() {
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>What is <span className="yellow-bg">Accessibility?</span></span>
+                <span>What is accessibility?</span>
                 
             </h1>
             <h1 className="article-heading-mobile">
                 <span>What is</span>
-                <span className="yellow-bg">Accessibility?</span>
+                <span className="yellow-bg">accessibility?</span>
             </h1>
             <p id="subtitle" className="subtitle">And why does it matter?</p>
 
@@ -67,7 +67,7 @@ export default function WhatIsA11y() {
                     <h2 className="sr-only">Introduction: The Definition of Accessibility</h2>
                     <p>
                         Becoming a web developer comes with a cool superpower: to create sites and apps
-                        that <span className="yellow-bg">everyone</span>,
+                        that everyone,
                         including people with disabilities, can easily navigate. 
                     </p>
                     <p>

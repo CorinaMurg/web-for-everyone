@@ -100,7 +100,7 @@
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
     font-weight: 700;
     line-height: 1.2;
     display: flex;
@@ -118,7 +118,7 @@
     font-weight: 600;
     width: 40rem;
     margin-inline: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     color: rgb(71, 70, 70);
 }

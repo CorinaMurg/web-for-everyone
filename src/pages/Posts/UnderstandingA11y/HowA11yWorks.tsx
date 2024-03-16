@@ -87,11 +87,11 @@ export default function MostCommonBugs() {
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>How <span className="yellow-bg">Accessibility</span> works</span> 
+                <span>How accessibility works</span> 
             </h1>
             <h1 className="article-heading-mobile">
                 <span>How</span>
-                <span><span className="yellow-bg">Accessibility</span> works</span>
+                <span>accessibility works</span>
             </h1>
             <p id="subtitle" className="subtitle">DOM's Powerful Sibling: the Accessibility Tree</p>
 
@@ -315,7 +315,7 @@ export default function MostCommonBugs() {
                             We have a <strong>link</strong> with the <strong>name</strong> "Home".
                             It's a <strong>focusable</strong> (i.e. actionable) element.
                             For a keyboard user, this means that they can navigate to it by pressing 
-                            the <code>Tab</code> key, and activate it by pressing <code>Enter</code>. 
+                            the <span className="yellow-bg">Tab</span> key, and activate it by pressing <span className="yellow-bg">Enter</span>. 
                         </p>
                         <p>
                             At the time of this snapshot, the link was <strong>in focus</strong>, i.e. selected and
@@ -413,8 +413,8 @@ export default function MostCommonBugs() {
                         
                         <p className="bullet-point-line white-bg">
                             event handlers to allow the button to be activated with 
-                            the <span className="yellow-bg-dark-text">Enter</span> <span> </span>
-                            or <span className="yellow-bg-dark-text">Space</span> keys (available by default with the <span> </span>
+                            the <span className="yellow-bg">Enter</span> <span> </span>
+                            or <span className="yellow-bg">Space</span> keys (available by default with the <span> </span>
                             <code>&lt;button&gt;</code> tag; important for keyboard and screen reader users!)
                         </p>
                     </div>

@@ -74,12 +74,12 @@
 
 }
 
-/* .yellow-bg {
+.yellow-bg {
     background-color: var(--yellowFaded-color);
     padding: 0 5px;
     border-radius: 10px;
     font-size: inherit;
-} */
+}
 
 
 @font-face {

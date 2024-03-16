@@ -15,7 +15,7 @@ export default function About() {
     return (
         <div className={`${styles.about} about`}>
            
-            <h1>Let's Make It Accessible!</h1>
+            <h1>Let's make it accessible.</h1>
             <A11yBanner/>
             <section className={styles['about--me']}>
                 <div className={styles['about--me--image']}>

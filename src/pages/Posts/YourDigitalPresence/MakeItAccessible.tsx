@@ -62,15 +62,15 @@ export default function MakeItAccessible() {
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>Your Portfolio Site:</span>
-                <span className="yellow-bg">Let's Make It Accessible!</span>
+                <span>Your portfolio site:</span>
+                <span>Let's make it accessible!</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Your Portfolio:</span>
-                <span>Let's Make It</span>
-                <span className="yellow-bg">Accessible!</span>
+                <span>Your portfolio:</span>
+                <span>Let's make it</span>
+                <span>accessible!</span>
             </h1>
-            <p id="subtitle" className="subtitle">Part One: Fixing the 6 Most Common Bugs</p>
+            <p id="subtitle" className="subtitle">Part one: fixing the 6 most common bugs</p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>

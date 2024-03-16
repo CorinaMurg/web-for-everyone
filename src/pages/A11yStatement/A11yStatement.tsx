@@ -16,12 +16,12 @@ export default function Feedback() {
            
             <h1 className="article-heading-desktop">
                 <span>Web for Everyone's</span>
-                <span className="yellow-bg">Commitment to Accessibility</span>
+                <span>commitment to accessibility</span>
             </h1>
             <h1 className="article-heading-mobile">
                 <span>Web for Everyone's</span>
-                <span>Commitment to </span>
-                <span className="yellow-bg">Accessibility</span>
+                <span>commitment to </span>
+                <span>accessibility</span>
             </h1>
             <br />
             <A11yBanner />
@@ -36,7 +36,7 @@ export default function Feedback() {
                 to make sure every visitor feels welcome.
             </p>
             <h2 id="report-a11y-issues" className="scroll-target section">
-                Reporting Accessibility Issues
+                Reporting accessibility issues
             </h2>
             <p>
                 If you experience accessibility barriers or notice any bugs while using our website, 
