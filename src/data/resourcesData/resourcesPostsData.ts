@@ -13,7 +13,7 @@ export interface ResourcesPostDataTypes {
 
 export const resourcesPostsData: ResourcesPostDataTypes[] = [
     {
-        "label": "understanding-accessibility",
+        "label": "accessibility-101",
         "id": "what-is-accessibility",
         "title": "What is Accessibility?",
         "subtitle": "",
@@ -24,7 +24,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "",
     },
     {
-        "label": "understanding-accessibility",
+        "label": "accessibility-101",
         "id": "how-accessibility-works",
         "title": "How Accessibility Works",
         "subtitle": "",
@@ -36,7 +36,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "ariaLabel": "",
     },
     {
-        "label": "understanding-accessibility",
+        "label": "accessibility-101",
         "id": "most-common-bugs",
         "title": "The Most Common Accessibility Bugs",
         "subtitle": "Findings from the 2023 WebAIM Million Study",

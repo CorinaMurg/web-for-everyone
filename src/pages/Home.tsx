@@ -111,7 +111,7 @@ export default function Home() {
                 className={` ${styles['mini-articles']} scroll-target `}
                 id="understanding-accessibility"
             >
-                <h2 >Understanding accessibility</h2>
+                <h2 >Accessibility 101</h2>
                 <ul>
                     {miniArticleData.slice(0, 3).map((article, index) => (
                         <li key={index}> 

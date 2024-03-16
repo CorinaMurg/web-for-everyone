@@ -29,12 +29,12 @@
     border-bottom: none;
 }
 
-.we-can-help h2 {
+.we-can-help--heading {
     color: var(--cream-color);
-    font-size: 1.3rem;
+    /* font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: -0.5px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 
 .we-can-help h3 {
@@ -96,7 +96,7 @@
 
     .we-can-help h2 {
         font-size: 1.7rem;
-        font-weight: 700;
+        font-weight: 600;
         margin-bottom: 40px;
     }
 

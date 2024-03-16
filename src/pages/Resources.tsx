@@ -14,7 +14,7 @@ export default function Accessibility() {
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     const sectionTitles = {
-        "understanding-accessibility": "Understanding Accessibility",
+        "accessibility-101": "Accessibility 101",
         "your-digital-presence": "Your Digital Presence",
         "html-for-accessibility": "HTML for Accessibility",
         "css-for-accessibility": "CSS for Accessibility",

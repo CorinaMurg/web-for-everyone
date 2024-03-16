@@ -422,7 +422,7 @@
 
 .mini-articles h2 {
     align-self: self-start;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 20px; 
     width: 100%;
@@ -475,7 +475,7 @@
 }
 
 .mini-article--link h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-nav-color);
 }

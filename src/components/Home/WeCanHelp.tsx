@@ -8,7 +8,7 @@ export default function WeCanHelp() {
 
     return (
         <aside role="complementary" aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
-            <h2 id="how-can-we-help"
+            <h2 id="how-can-we-help" className={styles['we-can-help--heading']}
             >
                 How can <span className='code-blue-color'>Web for Everyone</span> help
             </h2>

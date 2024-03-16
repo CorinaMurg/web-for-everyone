@@ -199,9 +199,8 @@ export default function WhatIsA11y() {
                         </p>
                         <p className="white-bg">
                             For example, when a screen reader encounters the main heading of this page, it 
-                            will announce it to the user as <em>"What is accessibility heading level 1"</em>. 
-                            And that's because we wrapped the main heading in <code>&lt;h1&gt;</code> tags. The visitor
-                            then knows that this is the main heading and can rely on it to learn about the content of the page.
+                            will announce it to the user as <em>"What is accessibility; heading level 1"</em>. 
+                            And that's because we wrapped the main heading in <code>&lt;h1&gt;</code> tags. 
                         </p>
                         <p className="white-bg">
                             Had we chosen a <code>&lt;div&gt;</code> instead and styled it to look like a heading,
