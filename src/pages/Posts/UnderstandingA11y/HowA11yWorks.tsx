@@ -845,8 +845,8 @@ export default function MostCommonBugs() {
                         in order to convey their purpose.
                     </p>
                     <p className="bullet-point-line">
-                        Semantic HTML tags should always be your first choice. They provide
-                        the best accessibility out of the box.
+                        Semantic HTML tags should always be your first choice. They have built-in
+                        roles and properties that make your content accessible.
                     </p>
                     <p className="margin-top-30">
                         Now, let's have a look at the most common accessibility issues!   

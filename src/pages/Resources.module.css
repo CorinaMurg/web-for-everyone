@@ -149,8 +149,9 @@
     margin-top: 40px;
     margin-bottom: 30px;
     display: flex;
+    font-family: "Quicksand", sans-serif;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
