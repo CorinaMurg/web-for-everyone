@@ -115,7 +115,7 @@
 
 .hero--subtitle {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     width: 40rem;
     margin-inline: auto;
@@ -133,8 +133,8 @@
 .hero--text {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    margin-top: 30px;
+    gap: 150px;
+    margin-top: 50px;
     margin-inline: var(--main-margin);
 }
 
@@ -145,7 +145,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    width: 16rem;
+    width: 14rem;
 }
 
 .hero--text--left a::after,
@@ -160,31 +160,31 @@
 }
 
 .hero--text h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-nav-color);
 }
 
-.hero--text p {
+/* .hero--text p {
     font-size: 1rem;
     line-height: 1.7;
     font-weight: 400;
     width: 100%;
-}
+} */
 
 .continue-to-article {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 10px 15px;
+    padding: 7px 15px;
     border-radius: 10px;
     border: 2px solid var(--text-nav-color);
     width: 100%;

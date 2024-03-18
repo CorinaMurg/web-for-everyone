@@ -8,6 +8,9 @@ Aceessibility goals: WCAG 2.2
 ## Bugs to fix
 1. Nav toggle
 
+2. Add role=text to article h1 spans
+https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
+
 ## Features to add:
 1. Dark mode
 
