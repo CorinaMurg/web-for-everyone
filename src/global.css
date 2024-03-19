@@ -851,10 +851,14 @@ ul[class^="checkmark-list"] li p {
         padding-inline: var(--main-margin);
     }
 
-    .article-container h1 {
+    .article-container h1,
+    .about h1,
+    .a11y-statement h1,
+    .not-found-container h1 {
         margin-top: 0;
         padding-inline: var(--main-margin);
         line-height: 1.2;
+        padding-inline: 0;
     }
 
     .article-container h3 {

@@ -20,14 +20,14 @@ header {
 .beta {
     position: absolute;
     bottom: -23px;
-    left: 95px;
+    left: 30px;
     background-color: var(--hero-pink);
     color: var(--text-dark-color);
     padding: 2px;
     border: 2px solid gray;
     padding: 2px 5px;
     border-radius: 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 0.8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
