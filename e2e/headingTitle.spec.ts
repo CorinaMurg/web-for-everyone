@@ -11,7 +11,7 @@ test('has title', async ({ page }) => {
 test('has heading', async ({ page }) => {
     await page.goto('https://webforeveryone.us/')
 
-    await expect(page.getByRole('heading', { name: 'Let\'s Make It Accessible!' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Let\'s Make It Accessible.' })).toBeVisible();
 });
 
 

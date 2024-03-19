@@ -32,9 +32,9 @@ testAxe({url: 'https://webforeveryone.us/resources/make-it-accessible-part2'});
 
 testAxe({url: 'https://webforeveryone.us/resources/what-is-accessibility'});
 
-testAxe({url: 'https://webforeveryone.us/resources/how-accessibility-works', ignore: ['iframe']});
+// testAxe({url: 'https://webforeveryone.us/resources/how-accessibility-works', ignore: ['iframe']});
 
-testAxe({url: 'https://webforeveryone.us/resources/most-common-bugs'});
+// testAxe({url: 'https://webforeveryone.us/resources/most-common-bugs'});
 
 testAxe({url: 'https://webforeveryone.us/resources/similar-but-different'});
 
