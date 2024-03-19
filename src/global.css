@@ -266,13 +266,21 @@
 .dark-bg-white-text {
     background-color: var(--text-dark-color);
     color: var(--cream-color);
-    font-weight: 600;
-    padding: 2px 3px;
+    font-weight: 500;
+    padding: 1px 4px;
     border-radius: 2px;
-    font-size: 0.8rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
+
+/* .pink-bg-white-text {
+    background-color: var(--pinkBright-color);
+    color: var(--text-light-color);
+    padding: 1px 4px;
+    border-radius: 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+} */
 
 .details-content:not(:has(.code)) {
     max-height: 25rem; 

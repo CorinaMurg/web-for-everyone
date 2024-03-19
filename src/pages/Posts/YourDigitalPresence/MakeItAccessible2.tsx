@@ -290,7 +290,7 @@ export default function MakeItAccessible() {
                         </p>
                         <p>
                             <strong>How to activate the link</strong>: open the page, 
-                            press the <span className="yellow-bg-dark-text">Tab</span> key.
+                            press the <span className="yellow-bg">Tab</span> key.
                             The skip link is the first element to receive focus. Pressing enter will take you 
                             to their main content.
 
@@ -440,7 +440,7 @@ export default function MakeItAccessible() {
                     <p>
                         It is important that the element that receives focus changes its appearance. 
                         This way the user knows exactly where the focus is and which element will be activated
-                        if they press the <span className="yellow-bg-dark-text">Enter</span> or <span className="yellow-bg-dark-text">Space</span> key.
+                        if they press the <span className="yellow-bg">Enter</span> or <span className="yellow-bg">Space</span> key.
                     </p>
                     <p>
                         Most browsers have a default focus style, the <strong>focus ring</strong>. 
@@ -474,7 +474,7 @@ export default function MakeItAccessible() {
                             <code>&#125;</code>   
                         </div>
                         <p className="bold bullet-point-line white-bg">
-                            We define an <code>outline</code> that is 3 pixels thick, dashed, and black. 
+                            We define an <code>outline</code> that is 2 pixels thick, solid, and black. 
                         </p>
                         <p className="padding-left-20">
                             Change the color and the style to match your design, but make sure you have a contrast ratio of at 
@@ -495,11 +495,10 @@ export default function MakeItAccessible() {
                         <div className="margin-top-30 margin-bottom-20">
                             <p>
                                 <strong>For you to test: </strong>
-                                Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate to the 
+                                Use the <span className="yellow-bg">Tab</span> key to navigate to the 
                                 button below and see the custom focus outline in action. 
-                                The button is coded 
-                                such that pressing it on a touch screen, or hovering over it with a mouse, 
-                                will also trigger the focus outline.
+                                The button is coded such that pressing it on a touch screen, or hovering 
+                                over it with a mouse, will also trigger the focus outline.
                             </p>
                             <button aria-label="Used for teaching purposes, it triggers no action" className={styles['custom-outline--button']}
                             >
@@ -548,7 +547,7 @@ export default function MakeItAccessible() {
                         <div className={styles['brightness--container']}>
                             <p>
                                 <strong>For you to test: </strong>
-                                Use the <span className="yellow-bg-dark-text">Tab</span> key to navigate through the 
+                                Use the <span className="yellow-bg">Tab</span> key to navigate through the 
                                 buttons below and notice the change in the background's shade. The button are coded 
                                 such that pressing them on a touch screen, or hovering over them with a mouse, 
                                 will also trigger a change in brightness.
@@ -679,7 +678,7 @@ export default function MakeItAccessible() {
                 <div className="section conclusion scroll-target" id="conclusion">
                     <h2>Conclusion</h2>
                     <p>
-                        Wow, you did it! You now know how to avoid 12 accessibility issues. 
+                        You did it! You now know how to avoid 12 accessibility issues. 
                         Congratulations!  <span aria-hidden="true"> 🎉 😎</span>
                     </p>
                     <p>

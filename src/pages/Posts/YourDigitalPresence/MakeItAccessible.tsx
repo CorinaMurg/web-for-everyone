@@ -212,15 +212,15 @@ export default function MakeItAccessible() {
                         difference in <strong>luminance</strong> (brightness) between any two colors.
                     </p>       
                     <p>
-                        The <span className="dark-bg-white-text">4.5:1</span> (for smaller text) and <span> </span>
-                        <span className="dark-bg-white-text">3.0:1</span> (for larger text) ratios are 
+                        The <span className="dark-bg-white-text"><code>4.5:1</code></span> (for smaller text) and <span> </span>
+                        <span className="dark-bg-white-text"><code>3.0:1</code></span> (for larger text) ratios are 
                         minimum values expected in order for  your content to be accessible to users with low vision.
                         In terms of accessibility guidelines, we call this the <strong>AA</strong> level.
                     </p>
                     <p>
                         The desirable <strong>AAA</strong> level requires
-                        a <span className="dark-bg-white-text">7.0:1</span> contrast ratio for smaller text, 
-                        and <span className="dark-bg-white-text">4.5:1</span> for larger text.
+                        a <span className="dark-bg-white-text"><code>7.0:1</code></span> contrast ratio for smaller text, 
+                        and <span className="dark-bg-white-text"><code>4.5:1</code></span> for larger text.
                         Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience 
                         for users with low vision.
                     </p>  
