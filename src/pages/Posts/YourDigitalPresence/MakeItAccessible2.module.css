@@ -11,9 +11,9 @@
     border: none;
     color: white;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: inherit;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     padding: 8px 20px;
     align-self:auto;
     padding-left: 20px;
@@ -21,11 +21,12 @@
 }
 
 .custom-outline--button:focus-visible {
-    outline: 3px dashed var(--text-dark-color);
+    outline: 2px solid var(--text-dark-color);
+    outline-offset: 4px;
 }
 
 .custom-outline--button:hover {
-    outline: 3px dashed var(--text-dark-color);
+    outline: 2px solid var(--text-dark-color);
     outline-offset: 4px;
 }
 

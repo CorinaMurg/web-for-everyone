@@ -1,4 +1,5 @@
 
+
 .article-container a,
 .about a,
 .a11y-statement a,
@@ -26,11 +27,11 @@
     text-decoration-color: var(--code-blueDark-color);
 }
 
-/* .article-content a:focus,
+.article-content a:focus,
 .about a:focus,
 .a11y-statement a:focus {
     text-decoration: none;
-} */
+}
 
 .article-container {
     display: grid;

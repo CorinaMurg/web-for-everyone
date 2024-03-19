@@ -361,6 +361,7 @@
     width: 100%;
     padding-top: 20px;
     color: var(--text-nav-color);
+    border-top: 1.5px solid var(--text-nav-color);
 }
 
 .mini-articles ul {

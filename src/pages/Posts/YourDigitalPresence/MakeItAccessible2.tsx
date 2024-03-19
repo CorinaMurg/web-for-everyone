@@ -396,8 +396,8 @@ export default function MakeItAccessible() {
                     <div>
                         <h4>How to test:</h4>
                         <p className="bullet-point-line white-bg">
-                            Press the <span className="yellow-bg-dark-text">Tab</span> key to move forward 
-                            (<span className="yellow-bg-dark-text">Shift + Tab</span> to move backward)
+                            Press the <span className="yellow-bg">Tab</span> key to move forward 
+                            (<span className="yellow-bg">Shift + Tab</span> to move backward)
                             through the interactive elements on the page. Each element should receive focus 
                             and you should see an outline around it. (More about how to style the outline in the next section.)
                         </p>
@@ -411,8 +411,8 @@ export default function MakeItAccessible() {
 
                         </p>
                         <p className="bullet-point-line white-bg margin-top-30">
-                            Press <span className="yellow-bg-dark-text">Enter</span> to activate the element 
-                            (for a button the <span className="yellow-bg-dark-text">Space</span> bar will also work).
+                            Press <span className="yellow-bg">Enter</span> to activate the element 
+                            (for a button the <span className="yellow-bg">Space</span> bar will also work).
                             It should trigger the expected action.
                         </p>
                         <p className="margin-top-20 padding-left-20 white-bg">
@@ -469,7 +469,7 @@ export default function MakeItAccessible() {
                         <h4>Example <span className="pink-text"> one</span>: Create a custom focus outline</h4>
                         <div className="code">
                             <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
-                            <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
+                            <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 2px solid black;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
                             <code>&#125;</code>   
                         </div>
