@@ -17,7 +17,9 @@ export default function Header() {
             <a className={styles['skip-to-content']} href="#main">Skip to Content</a>
             <div className={styles['header--left']}>
                 <Logo color = "var(--text-nav-color)" fontWeight={700}/>
+                <span className={styles.beta}>Beta</span>
             </div>
+            
             <button 
                 className={styles['mobile-nav-toggle']} 
                 aria-controls="primary-navigation"

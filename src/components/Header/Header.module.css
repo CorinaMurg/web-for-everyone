@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--text-dark-color);
-    padding: 20px var(--main-margin);
+    padding: 10px var(--main-margin) 28px var(--main-margin);
     width: 100%;
     z-index: 100;
 }
@@ -15,6 +15,22 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.beta {
+    position: absolute;
+    bottom: -23px;
+    left: 95px;
+    background-color: var(--hero-pink);
+    color: var(--text-dark-color);
+    padding: 2px;
+    border: 2px solid gray;
+    padding: 2px 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 header .logo-link:hover {

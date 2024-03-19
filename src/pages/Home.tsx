@@ -10,12 +10,6 @@ import "../global.css"
 
 export default function Home() {
     useScrollToSection();
-    const [isBetaOpen, setIsBetaOpen] = useState(true);
-
-    const closeBeta = () => {
-        setIsBetaOpen(false);
-    }
-
     const sectionRef = useRef<HTMLDivElement>(null);
 
     const scrollToSection = () => {
@@ -37,18 +31,7 @@ export default function Home() {
                     You're building your portfolio site. Will it be ready to welcome <span> </span>
                     all visitors, including those with disabilities? Time to check!
                 </p>      
-                {isBetaOpen &&
-                    <div className={styles.beta}>
-                        <p className={styles['beta-message']}>
-                            <span>This site is in beta. </span>
-                            We welcome&nbsp;
-                            <Link to="/accessibility-statement#report-a11y-issues">your feedback</Link>.
-                        </p>
-                        <button className={styles['beta-button']} onClick={() => closeBeta()}>
-                            <span className='sr-only'>Close Beta message</span>
-                        </button>
-                    </div>
-                }
+
             </section>
             <section className={styles['hero--text']}>
                 <div className={styles['hero--text--left']}> 
@@ -97,6 +80,7 @@ export default function Home() {
             
             <section 
                 aria-labelledby="understanding-accessibility" 
+                role="region"
                 className={` ${styles['mini-articles']} scroll-target `}
                 id="understanding-accessibility"
             >
