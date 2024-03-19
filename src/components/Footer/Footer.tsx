@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
             <div className={styles['footer--bottom']}>
                 <div className={styles.copyright}>
-                    <span>&#169;</span><span>Web for Everyone 2024</span>
+                    <span>&#169;</span><span>Web for Everyone {new Date().getFullYear()}</span>
                 </div>
                 
                 <span className={styles['vertical-bar']} style={{ fontWeight: "500"}}> · </span> 

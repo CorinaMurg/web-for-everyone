@@ -184,7 +184,7 @@
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 7px 15px;
+    padding: 4px 15px;
     border-radius: 10px;
     border: 2px solid var(--text-nav-color);
     width: 100%;
