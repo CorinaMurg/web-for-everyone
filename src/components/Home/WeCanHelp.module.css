@@ -54,7 +54,7 @@
 .we-can-help a {
     color: var(--yellow-color);
     text-decoration: underline;
-    font-weight: 500;
+    font-weight: 400;
     text-underline-offset: 3px;
     padding: 2px;
     letter-spacing: 0.7px !important;
@@ -63,7 +63,7 @@
 .we-can-help a:hover {
     color: inherit;
     text-decoration: underline;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-decoration-style: wavy;
     text-decoration-color: var(--yellow-color);
 }

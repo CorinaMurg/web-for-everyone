@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--text-dark-color);
-    padding: 10px var(--main-margin) 28px var(--main-margin);
+    padding: 15px var(--main-margin) 28px var(--main-margin);
     width: 100%;
     z-index: 100;
 }

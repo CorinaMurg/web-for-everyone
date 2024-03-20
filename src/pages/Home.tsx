@@ -95,24 +95,30 @@ export default function Home() {
                                         <div dangerouslySetInnerHTML={{ __html: article.svg }} />
                                     </div>                    
                                 </div>
-                                <Link 
-                                    to={article.link} className={styles['mini-article--link']} 
-                                    onClick={() => { useScrollToTop() }}
-                                >   
-                                    <h3>            
-                                        {article.title}
-                                    </h3>
-                                </Link>
-                                <div className={styles['mini-article--text']}>       
-                                    <p>{article.description}</p>
-                                    <div className="continue-to-article margin-top-30">
-                                        <svg aria-hidden="true" className="mini-article-svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                
+                                <div className={styles['mini-article--content']}>  
+                                    <div className={styles['mini-article--text']}>  
+                                        <Link 
+                                            to={article.link} className={styles['mini-article--link']} 
+                                            onClick={() => { useScrollToTop() }}
+                                        >   
+                                            <h3>            
+                                                {article.title}
+                                            </h3>
+                                        </Link>     
+                                        <p>{article.description}</p>
+                                    </div>
+                                    
+                                    {/* <div className={`${styles['mini-article--svg-container']} margin-top-30`}> */}
+                                        <svg aria-hidden="true" className={styles['mini-article--svg']} width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17" cy="17" r="17" fill="currentColor"></circle>
                                             <path d="M25.6563 18.2071C26.0469 17.8166 26.0469 17.1834 25.6563 16.7929L19.2924 10.4289C18.9018 10.0384 18.2687 10.0384 17.8782 10.4289C17.4876 10.8195 17.4876 11.4526 17.8782 11.8431L23.535 17.5L17.8782 23.1569C17.4876 23.5474 17.4876 24.1805 17.8782 24.5711C18.2687 24.9616 18.9018 24.9616 19.2924 24.5711L25.6563 18.2071ZM9.94922 18.5L24.9492 18.5L24.9492 16.5L9.94922 16.5L9.94922 18.5Z" fill="currentColor"></path>
                                         </svg>
-                                    </div>
+                                    {/* </div> */}
+                                   
                                     
                                 </div>
+                                
                             </article>
                         </li>
                     ))}

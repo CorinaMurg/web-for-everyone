@@ -23,7 +23,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     },
     {
         title: "How accessibility works",
-        description: `Take a peek behind the scenes! Learn about the DOM's powerful sibling, the accessibility tree, 
+        description: `Take a peek behind the scenes! Learn about the DOM's smaller but powerful sibling, the accessibility tree, 
             and how assistive technologies use it for accessibility.`,
         
         link: "/resources/how-accessibility-works",
@@ -35,7 +35,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
     {
         title: "The most common bugs",
         description: `The bad news: a handful of bugs is responsible for most
-            accessibility bugs detected via automated tools. The good news: they are quite easy to avoid or fix!`,
+            accessibility bugs detected via automated tools. The good news: they are quite easy to avoid or fix.`,
         link: "/resources/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/istockSmall1.jpg",
