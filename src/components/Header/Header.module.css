@@ -19,8 +19,8 @@ header {
 
 .beta {
     position: absolute;
-    bottom: -23px;
-    left: 30px;
+    bottom: 2px;
+    right: -55px;
     background-color: var(--hero-pink);
     color: var(--text-dark-color);
     padding: 2px;

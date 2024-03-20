@@ -184,7 +184,7 @@ main {
     width: 100%;
 }
 
-@media (prefers-reduced-motion: reduce) {  
+/* @media (prefers-reduced-motion: reduce) {  
     *,
     *::before,
     *::after {
@@ -193,7 +193,7 @@ main {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
-}
+} */
 
 /* @media (prefers-color-scheme: light) {
   :root {

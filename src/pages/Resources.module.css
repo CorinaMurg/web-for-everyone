@@ -244,8 +244,8 @@
 
     .resources--table-contents ul {
         padding: 25px;
+        border-radius: 0;
     }
-
     .section-content {
         width: 75%;
     }
@@ -296,9 +296,7 @@
         max-width: none;
         min-width: none;
     }
-    .resources--table-contents ul {
-        border-radius: 0;
-    }
+
 }
 
 

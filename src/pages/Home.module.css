@@ -64,7 +64,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    width: 14rem;
+    width: 17rem;
 }
 
 .hero--text--left a::after,
@@ -79,7 +79,7 @@
 }
 
 .hero--text h2 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
     font-weight: 600;
     color: var(--text-nav-color);
@@ -96,7 +96,7 @@
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 4px 15px;
+    padding: 5px 15px;
     border-radius: 10px;
     border: 2px solid var(--text-nav-color);
     width: 100%;
@@ -187,16 +187,20 @@
         gap: 0;
     }  
     .hero--subtitle {
+        margin-top: 20px;
+        margin-bottom: 0;
         width: 90%;
     }
 
     .hero--text {
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
+        margin-top: 50px;
     }
 
     .hero--text h2 {
         font-size: 1.8rem;
+        margin-bottom: 10px;
     }
 
     .hero--text--right,
@@ -274,7 +278,7 @@
     width: 100%;
     padding-top: 20px;
     color: var(--text-nav-color);
-    border-top: 1.5px solid var(--text-nav-color);
+    border-top: 1.5px solid gray;
 }
 
 .mini-articles ul {
@@ -356,7 +360,7 @@
 }
 
 .mini-article--link h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-nav-color);
     letter-spacing: 0.3px;
@@ -460,6 +464,11 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+    }
+
+    .mini-article {
+        padding-bottom: 30px;
+        border-bottom: 1.5px solid gray;
     }
     .mini-article--image {
         width: calc(100% + 2*var(--main-margin));
