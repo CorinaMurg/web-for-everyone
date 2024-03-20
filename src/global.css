@@ -74,7 +74,13 @@
     grid-column: 1 / 2;
 }
 
-.article-container h1,
+.resources h1,
+.article-container h1 {
+    font-weight: 600;
+    font-size: 3.8rem;
+    letter-spacing: -0.5px;
+}
+
 .article-container h2,
 .article-container h3,
 .article-container h4 {
@@ -88,18 +94,18 @@
 .article-heading-desktop {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin-top: 30px;
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-bottom: 0;
 }
 
 .resources .article-heading-desktop {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin-top: 30px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .resources .article-heading-desktop span,
@@ -346,14 +352,14 @@ h2 {
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 0;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-block: 20px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .heading {
@@ -652,7 +658,7 @@ b {
 
 summary {
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -808,6 +814,11 @@ ul[class^="checkmark-list"] li p {
     .section {
         width: 95%;
     }
+    .resources h1,
+    .article-container h1,
+    .article-heading-desktop {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -820,7 +831,6 @@ ul[class^="checkmark-list"] li p {
     .resources .article-heading-desktop,
     .article-heading-desktop {
         font-size: 3rem;
-        margin-top: 20px;
         grid-column: 1 / 3;
     }
 
@@ -830,9 +840,9 @@ ul[class^="checkmark-list"] li p {
 }
 
 @media screen and (max-width: 670px) {
-    header {
+    /* header {
         padding-bottom: 10px;
-    }
+    } */
 
     .article-container {
        margin-inline: 0;
@@ -847,18 +857,12 @@ ul[class^="checkmark-list"] li p {
         margin-inline: var(--main-margin);
     }
 
-    summary {
-        padding-inline: var(--main-margin);
-    }
-
     .article-container h1,
-    .about h1,
-    .a11y-statement h1,
     .not-found-container h1 {
-        margin-top: 0;
+        /* margin-top: 0; */
         padding-inline: var(--main-margin);
         line-height: 1.2;
-        padding-inline: 0;
+        /* padding-inline: 0; */
     }
 
     .article-container h3 {
@@ -871,6 +875,10 @@ ul[class^="checkmark-list"] li p {
 
     summary h3 {
         padding-inline: 0;
+    }
+
+    summary {
+        padding-inline: var(--main-margin);
     }
 
     .highlight summary,
@@ -954,7 +962,7 @@ ul[class^="checkmark-list"] li p {
         display: flex;
         flex-direction: column;
         font-size: 3rem;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
 
     .resources .article-heading-mobile span,

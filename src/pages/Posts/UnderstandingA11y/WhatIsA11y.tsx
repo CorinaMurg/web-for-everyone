@@ -209,19 +209,20 @@ export default function WhatIsA11y() {
                             and requires additional code to make it accessible.
                         </p>
                         <p>
-                            <strong>Always rely on semantic HTML!</strong>
+                            <strong>Always start with semantic HTML!</strong>
                         </p>
                         <p>
                             Think about the content and the functionality 
-                            you want to create, and choose the appropriate HTML tags. While JavaScript and ARIA can help with more 
+                            you want to create, and choose the appropriate HTML tags. While JavaScript 
+                            and ARIA can help with more 
                             complex acccessibility issues, semantic HTML is the foundation of accessibility.
                         </p>
                     </div>
                     
                     <div>
-                        <h4 style={{marginBlock: "0"}}>
+                        <h3>
                             Our job as developers is threefold:
-                        </h4>   
+                        </h3>   
                         <ul role="list" className="bullet-point-list margin-top-0">
                             <li>
                                 <p>
@@ -342,12 +343,6 @@ export default function WhatIsA11y() {
                             How accessibility works
                         </Link>
                     </p>
-
-                    {/* <p>
-                        When we actively embrace accessibility and make it essential
-                        to our web development learning and work, we can make a difference.
-                        Let's build a web that's open to <span className="yellow-bg">everyone</span>!
-                    </p> */}
                     
                 </div>
             </div>

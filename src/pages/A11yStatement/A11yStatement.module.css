@@ -10,9 +10,9 @@
 }
 
 .a11y-statement h1 {
-    font-size: 2.5rem;
-    /* font-weight: 500; */
-    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: 600;
+    /* line-height: 1.5; */
 }
 
 .a11y-statement h2 {

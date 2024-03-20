@@ -137,7 +137,7 @@ export default function SimilarButDifferent() {
                     
                     <h3>Key Differences</h3>      
                     <p>
-                        <strong className="yellow-bg-dark-text">Direct vs. Indirect Labeling</strong>  
+                        <strong className="yellow-bg">Direct vs. Indirect Labeling</strong>  
                     </p>
                     <p className="bullet-point-line white-bg">
                         <strong>aria-label</strong> provides a direct label to an element using a 
@@ -154,7 +154,7 @@ export default function SimilarButDifferent() {
                         available on the page.
                     </p>
                     <p >
-                        <strong className="yellow-bg-dark-text">Visibility</strong>
+                        <strong className="yellow-bg">Visibility</strong>
                     </p>
                     <p className="bullet-point-line white-bg">
                         <strong>aria-label</strong> is not visually displayed; 
@@ -165,7 +165,7 @@ export default function SimilarButDifferent() {
                         the page. It is also announced by screen readers. 
                     </p>
                     <p>
-                        <strong className="yellow-bg-dark-text">Concatenation</strong>
+                        <strong className="yellow-bg">Concatenation</strong>
                     </p>
                     <p className="bullet-point-line">
                         While <strong>aria-label</strong> takes a single string, 

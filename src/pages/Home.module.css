@@ -53,7 +53,7 @@
     justify-content: center;
     gap: 150px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-inline: var(--main-margin);
 }
 
@@ -84,13 +84,6 @@
     font-weight: 600;
     color: var(--text-nav-color);
 }
-
-/* .hero--text p {
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 400;
-    width: 100%;
-} */
 
 .continue-to-article {
     display: flex;
@@ -183,6 +176,7 @@
     }  
     .hero--subtitle {
         width: 95%;
+        line-height: 1.5;
     }
 }
 
@@ -198,7 +192,7 @@
 
     .hero--text {
         flex-direction: column;
-        gap: 90px;
+        gap: 50px;
     }
 
     .hero--text h2 {

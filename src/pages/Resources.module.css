@@ -25,8 +25,8 @@
 .resources h1 {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
-    font-size: 3rem;
-    font-weight: 700;
+    /* font-size: 3rem;
+    font-weight: 600; */
     margin-top: 35px;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 .resources h1 span {
     align-self: flex-start;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .resources-content {
@@ -257,11 +257,10 @@
 @media screen and (max-width: 670px) {
     .resources {
         margin-inline: 0;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .resources h1 {
-        margin-top: 0;
         line-height: 1.2;
     }
     .resources h1,

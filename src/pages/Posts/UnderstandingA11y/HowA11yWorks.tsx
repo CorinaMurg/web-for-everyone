@@ -345,17 +345,25 @@ export default function MostCommonBugs() {
                         <h4>Are all the browsers cool with semantic HTML?<span className="visually-hidden">No</span><span aria-hidden="true"> 😓</span></h4>
                     
                         <p className="white-bg">
-                            Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag in the DOM tree.
-                            When used with certain browsers, screen readers might fail to properly announce landmarks even when they are created with semantic tags. 
-                            Therefore it's a good idea to explicitly
-                            add the <code>role</code> attribute to the landmark tags until the issue is resolved.
+                            Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag 
+                            in the DOM tree.
+                            When used with certain operating systems and browsers, screen readers might fail to properly announce 
+                            landmarks even when they are created with semantic tags. 
                         </p>
-                        <div className="code">
-                            <code><span className="code-blue-color">&lt;header</span> role="banner"<span className="code-blue-color">&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;nav</span> role="navigation"<span className="code-blue-color">&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;main</span> role="main"<span className="code-blue-color">&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;aside</span> role="complementary"<span className="code-blue-color">&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;footer</span> role="contentinfo"<span className="code-blue-color">&gt;</span></code>
+                        <p className="white-bg">
+                            Just to be on the safe side, we should 
+                            add the <code>role</code> attribute to the landmark tags
+                            until this issue is resolved.
+                        </p>
+                        &nbsp;
+                        <div className="code margin-top-20">
+                            <code><span className="code-blue-color">&lt;body&gt;</span></code>
+                            <code className="padding-left-30"><span className="code-yellow-color">&lt;header</span> role="banner"<span className="code-yellow-color">&gt;</span></code>
+                            <code className="padding-left-30"><span className="code-yellow-color">&lt;nav</span> role="navigation"<span className="code-yellow-color">&gt;</span></code>
+                            <code className="padding-left-30"><span className="code-yellow-color">&lt;main</span> role="main"<span className="code-yellow-color">&gt;</span></code>
+                            <code className="padding-left-30"><span className="code-yellow-color">&lt;aside</span> role="complementary"<span className="code-yellow-color">&gt;</span></code>
+                            <code className="padding-left-30"><span className="code-yellow-color">&lt;footer</span> role="contentinfo"<span className="code-yellow-color">&gt;</span></code>
+                            <code><span className="code-blue-color">&lt;/body&gt;</span></code>
                         </div>
                     </div>
 
@@ -643,7 +651,7 @@ export default function MostCommonBugs() {
                                 />
                             </p> */}
                             
-                            <p className="bullet-point-line margin-top-20">
+                            <p className="bullet-point-line margin-top-30">
                                 <strong>alt</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
@@ -666,7 +674,7 @@ export default function MostCommonBugs() {
                                 A better choice is to use an empty <code>alt</code> attribute to hide the image from the screen reader,
                                 and add a <code>visually-hidden</code> span with the accessible name.
                             </p>
-                            <p className="bullet-point-line margin-top-20">
+                            <p className="bullet-point-line margin-top-30">
                                 <strong>desc</strong>
                             </p>  
                             <p className="padding-left-20 white-bg">
@@ -680,7 +688,7 @@ export default function MostCommonBugs() {
                                     <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
                                 </div>
                             </div>
-                            <p className="bullet-point-line margin-top-20">
+                            <p className="bullet-point-line margin-top-30">
                                 <strong>title</strong>
                             </p>
                             <p className="padding-left-20">
@@ -694,7 +702,7 @@ export default function MostCommonBugs() {
                                 Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
                                 a title for a web page.
                             </p>
-                            <p className="bullet-point-line margin-top-20">
+                            <p className="bullet-point-line margin-top-30">
                                     <strong>aria-labelledby</strong>
                             </p>
                             <p className="padding-left-20">
@@ -710,7 +718,7 @@ export default function MostCommonBugs() {
                                 <code>aria-labelledby="id of the heading"</code> to provide the name for the button.
                             </p>
 
-                            <p className="bullet-point-line margin-top-20">
+                            <p className="bullet-point-line margin-top-30">
                                 <strong>aria-label</strong>
                             </p>
                             <p className="padding-left-20 white-bg">
