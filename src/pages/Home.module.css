@@ -461,13 +461,14 @@
         flex-direction: column;
         gap: 40px;
     }
-}
-
-@media screen and (max-width: 625px) { 
     .mini-article--image {
         width: calc(100% + 2*var(--main-margin));
         margin-inline: calc((-1)*var(--main-margin));
         padding-inline: var(--main-margin);
         border-radius: 0;
     } 
+    .mini-article--svg {
+        margin-top: 40px;
+    }
 }
+
