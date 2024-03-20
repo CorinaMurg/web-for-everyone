@@ -356,7 +356,7 @@
     fill: var(--text-light-color);
 }
 
-.mini-article:focus-within {
+.mini-article:focus-within:not(:active) {
     outline: 2px solid var(--text-dark-color);
     outline-offset: 4px;
 }

@@ -938,6 +938,7 @@ ul[class^="checkmark-list"] li p {
         padding-inline: var(--main-margin);
     }
 
+    .highlight .warning p,
     .warning p {
         margin-inline: var(--main-margin);
     }

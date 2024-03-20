@@ -254,6 +254,9 @@ export default function MostCommonBugs() {
                                 </li>
                             </ul>
                         </div> 
+                        <p>
+                            But how does the browser know which role to assign to each element? <span aria-hidden="true">🤔</span>
+                        </p>
                     </div>
                 </div>
                     
@@ -816,11 +819,12 @@ export default function MostCommonBugs() {
                             </p>
                             <p className="white-bg">
                                 For the sighted user, it will be obvious that the purpose of the button is to close 
-                                the modal. But for a screen reader user, it would be a mystery
-                                without the <code>visually-hidden</code> text.  
+                                the menu. But for a screen reader user, it would be a mystery
+                                without the <code>visually-hidden</code> text. Unfortunately, it's not a perfect choice
+                                for voice users, who need to know the name of the element in order to activate it.
                             </p>    
                             <p>
-                                See the Pen below for an example of how to hide text visually.
+                                See the CodePen below for an example of how to hide text visually.
                             </p>      
                             
                         </div>

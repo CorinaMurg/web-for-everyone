@@ -126,54 +126,54 @@ export default function WhatIsA11y() {
                     <div className="highlight highlight-one-line">
                         <details>
                             <summary>What are assistive technologies?</summary>
-                            <div className="details-content">
-                            <p>
-                                Assistive technologies are software or hardware that help people with disabilities 
-                                interact with the web.  
-                            </p>
-                            <p>
-                                Here's an overview of some of the most common assistive technologies:
-                            </p>
-                            <p>
-                                <strong className="pink-text">1.</strong><strong> Screen Readers</strong> are typically used by people who are blind 
-                                or have vision impairments. Users navigate through the UI elements with the 
-                                keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
-                            </p>
-                            <p>
-                                <strong className="pink-text">2.</strong><strong> Screen Readers with Braille Displays</strong> for users with both 
-                                vision and hearing impairments. The screen reader 
-                                translates the content on the screen into a format that can be read on a 
-                                braille display. These displays are fitted with braille cells that change dynamically.
-                            </p>
-                            <p>
-                                <strong className="pink-text">3.</strong><strong> Screen Magnifiers</strong> are designed to enlarge the content on 
-                                screen, making it more readable for users with low vision. These tools often 
-                                include additional features to enhance contrast and reduce glare.
-                            </p>
-                            <p>
-                                <strong className="pink-text">4.</strong><strong> Speech Recognition Software</strong> allows users to interact with 
-                                their devices using voice commands. This technology helps people 
-                                with mobility issues or those who need a hands-free interraction with the web. 
-                                Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
-                                Dictation. Windows has integrated Cortana for voice commands.
-                            </p>
-                            <p>
-                                <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts 
-                                written text into 
-                                spoken words using synthetic voices. It benefits users with reading 
-                                difficulties, such as dyslexia.
-                            </p>
-                            
-                            <p>
-                                <strong className="pink-text">6.</strong><strong> Alternate Input Technologies</strong> simulate the functionality of 
-                                the keyboard for people with more severe physical disabilities. For example, a sip&puff device
-                                allows a person to send signals to the computer by inhaling or exhaling into a wand. 
-                            </p>
-                            <p>
-                                <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
-                                a traditional mouse. 
-                                For example, an eye-tracking system allows mouse control through eye movements.
-                            </p>   
+                            <div className="details-content margin-top-20">
+                                <p>
+                                    Assistive technologies are software or hardware that help people with disabilities 
+                                    interact with the web.  
+                                </p>
+                                <p>
+                                    Here's an overview of some of the most common assistive technologies:
+                                </p>
+                                <p>
+                                    <strong className="pink-text">1.</strong><strong> Screen Readers</strong> are typically used by people who are blind 
+                                    or have vision impairments. Users navigate through the UI elements with the 
+                                    keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
+                                </p>
+                                <p>
+                                    <strong className="pink-text">2.</strong><strong> Screen Readers with Braille Displays</strong> for users with both 
+                                    vision and hearing impairments. The screen reader 
+                                    translates the content on the screen into a format that can be read on a 
+                                    braille display. These displays are fitted with braille cells that change dynamically.
+                                </p>
+                                <p>
+                                    <strong className="pink-text">3.</strong><strong> Screen Magnifiers</strong> are designed to enlarge the content on 
+                                    screen, making it more readable for users with low vision. These tools often 
+                                    include additional features to enhance contrast and reduce glare.
+                                </p>
+                                <p>
+                                    <strong className="pink-text">4.</strong><strong> Speech Recognition Software</strong> allows users to interact with 
+                                    their devices using voice commands. This technology helps people 
+                                    with mobility issues or those who need a hands-free interraction with the web. 
+                                    Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
+                                    Dictation. Windows has integrated Cortana for voice commands.
+                                </p>
+                                <p>
+                                    <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts 
+                                    written text into 
+                                    spoken words using synthetic voices. It benefits users with reading 
+                                    difficulties, such as dyslexia.
+                                </p>
+                                
+                                <p>
+                                    <strong className="pink-text">6.</strong><strong> Alternate Input Technologies</strong> simulate the functionality of 
+                                    the keyboard for people with more severe physical disabilities. For example, a sip&puff device
+                                    allows a person to send signals to the computer by inhaling or exhaling into a wand. 
+                                </p>
+                                <p>
+                                    <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
+                                    a traditional mouse. 
+                                    For example, an eye-tracking system allows mouse control through eye movements.
+                                </p>   
                             </div>
                         </details>
                     </div>
@@ -223,6 +223,7 @@ export default function WhatIsA11y() {
                         <h3>
                             Our job as developers is threefold:
                         </h3>   
+                        &nbsp;
                         <ul role="list" className="bullet-point-list margin-top-0">
                             <li>
                                 <p>
