@@ -58,6 +58,9 @@
     margin-top: 50px;
 }
 
+.about--how-to-start p {
+    margin-block: 0 !important;
+}
 .we-container {
     background-color: var(--text-dark-color);
     display: inline;

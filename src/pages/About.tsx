@@ -39,9 +39,9 @@ export default function About() {
                         embrace accessibility at the start of their careers. 
                     </p>
                    
-                    </div>
+                </div>
                    
-                   <div>
+                <div className={styles['about--how-to-start']}>
 
                    <h2>How to get started</h2>
                      
@@ -57,7 +57,7 @@ export default function About() {
                          </Link> series for an overview of accessibility concepts and to learn about the
                          most common accessibility bugs.
                      </p>
-                  
+                    &nbsp;
                      <p>
                          <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
@@ -70,7 +70,7 @@ export default function About() {
                          </Link> series to evaluate your portfolio site and eliminate, if present, 
                          some of the most common bugs.
                      </p>
-                  
+                    &nbsp;
                      <p>
                          <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
@@ -92,19 +92,7 @@ export default function About() {
                          <span> </span> to share the link to your portfolio site, and 
                          any accessibility help you are looking for.
                      </p>
-                     {/* <p>
-                     <span className="pink-text bold">&#x2714; </span>
-                         &nbsp;
-                            <strong>Let's build a web for everyone!</strong>
-                        </p> */}
-                   
                    </div>
-                    
-                   
-                        
-                        
-                  
-                    
                 </div>
             </section>
         </div>
