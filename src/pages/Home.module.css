@@ -176,7 +176,10 @@
     }  
     .hero--subtitle {
         width: 95%;
-        line-height: 1.5;
+        line-height: 1.7;
+    }
+    .continue-to-article {
+        padding: 7px 15px;
     }
 }
 
@@ -185,9 +188,10 @@
         flex-direction: column;
         font-size: 3.5rem;
         gap: 0;
+        margin-top: 10px;
     }  
     .hero--subtitle {
-        margin-top: 20px;
+        margin-top: 5px;
         margin-bottom: 0;
         width: 90%;
     }

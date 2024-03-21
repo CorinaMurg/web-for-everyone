@@ -28,10 +28,7 @@ export default function useScrollToSection () {
         if (sectionId) {
             const section = document.getElementById(sectionId);
             if (section) {
-                // section.scrollIntoView();
-               
                 section.scrollIntoView({ behavior: 'smooth' });
-                
             }
         }
     }, [location]); 

@@ -92,11 +92,11 @@ export default function About() {
                          <span> </span> to share the link to your portfolio site, and 
                          any accessibility help you are looking for.
                      </p>
-                     <p>
+                     {/* <p>
                      <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
                             <strong>Let's build a web for everyone!</strong>
-                        </p>
+                        </p> */}
                    
                    </div>
                     

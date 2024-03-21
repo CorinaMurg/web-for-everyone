@@ -6,28 +6,26 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--text-dark-color);
-    padding: 15px var(--main-margin) 28px var(--main-margin);
+    padding: 20px var(--main-margin);
     width: 100%;
     z-index: 100;
 }
 
 .header--left {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    gap: 10px;
+    align-items: center;
 }
 
 .beta {
-    position: absolute;
-    bottom: 2px;
-    right: -55px;
     background-color: var(--hero-pink);
     color: var(--text-dark-color);
-    padding: 2px;
     border: 2px solid gray;
-    padding: 2px 5px;
+    padding: 2px 4px;
     border-radius: 10px;
-    /* text-transform: uppercase; */
+    vertical-align: middle;
+    margin-top: 5px;
+    display: inline;
     font-size: 0.8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -80,12 +78,6 @@ header .logo-link:hover {
     background-color: var(--yellow-color) !important;
 }
 
-/* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-} */
-
 .mobile-nav-toggle {
     display: none;
 }
@@ -114,6 +106,9 @@ header .logo-link:hover {
 @media (max-width: 450px) {
     .mobile-nav-toggle {
         right: calc(0.5*var(--navbar-margin));
+    }
+    .beta {
+        margin-top: 3px;
     }
 
 }

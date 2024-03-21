@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 30px;
+    /* gap: 30px; */
     margin-top: 20px;
     margin-bottom: 50px;
     margin-inline: auto;
@@ -22,7 +22,7 @@
 .about--me {
     display: flex;
     gap: 50px;
-    margin-block: 40px;
+    margin-block: 80px;
 }
 
 

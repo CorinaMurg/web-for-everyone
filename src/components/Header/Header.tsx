@@ -16,7 +16,7 @@ export default function Header() {
         <header role="banner">
             <a className={styles['skip-to-content']} href="#main">Skip to Content</a>
             <div className={styles['header--left']}>
-                <Logo color = "var(--text-nav-color)" fontWeight={700}/>
+                <Logo color = "var(--text-nav-color)" fontWeight={600}/>
                 <span className={styles.beta}>Beta</span>
             </div>
             

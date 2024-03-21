@@ -48,6 +48,8 @@
     text-underline-offset: 3px;
     letter-spacing: 0.3px;
     white-space: nowrap;
+    padding: 2px;
+    border: 1.7px solid var(--bg-dark-color);  
 }
 
 .table-contents ul li a:hover {
@@ -77,8 +79,8 @@
 .table-contents ul li a:focus-visible {
     text-decoration: none;
     outline: 2px solid var(--cream-color);
-    outline-offset: 3px;
-    border: none;
+    outline-offset: 2px;
+    padding: 2px;
     border-radius: 0;
 }
 

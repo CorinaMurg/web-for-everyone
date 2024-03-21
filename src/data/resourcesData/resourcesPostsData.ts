@@ -111,7 +111,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "id": "is-rem-always-the-best-choice",
         "title": "Is \"rem\" always the best choice?",
         "subtitle": "",
-        "author": "By Ashlee M Boyer on ashleemboyer.com",
+        "author": "By Ashlee Boyer on ashleemboyer.com",
         "description": `While rem units are great for 
             text to aid with zoom and accessibility, they may not be the best choice for margins, padding, 
             and spacing. Read Ashlee M Boyer's post on how using px units in these cases can 

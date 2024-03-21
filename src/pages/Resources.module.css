@@ -74,25 +74,28 @@
     z-index: 1;
 }
 
-.article .article--author svg {
-    display: none;
+.article .article--author--container svg path {
+    fill: var(--text-light-color);
 }
-.article:hover .article--author svg,
+.article .article--author--container svg circle {
+    fill: var(--bg-dark-color);
+}
+.article:hover .article--author--container svg,
 .article:focus-within .article--author svg {
     display: block;
 }
-.article:hover .article--author svg circle,
+.article:hover .article--author--container svg circle,
 .article:focus-within .article--author svg circle {
     fill: var(--pinkBright-color);
 }
 
-.article:hover .article--author svg path,
+.article:hover .article--author--container svg path,
 .article:focus-within .article--author svg path  {
     fill: var(--text-light-color);
 }
 
 .article:focus-within:not(:active) {
-    outline: 3px solid var(--text-dark-color);
+    outline: 3px solid var(--bg-dark-color);
     outline-offset: 4px;
 }
 
@@ -119,16 +122,23 @@
     border-left: var(--yellow-border) solid var(--yellow-color);
     padding-left: 20px;
 }
+.article--author--container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 32px;
+}
+.article--author--container svg {
+    vertical-align: middle;
+}
 
 .article--author {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     line-height: 2;
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+   
 }
 
 /* *****TABLE OF CONTENTS***** */
@@ -163,7 +173,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 28px;
+    gap: 24px;
     padding-inline-start: 0;
     background-color: var(--bg-dark-color);  
     border-radius: 10px;
@@ -181,6 +191,8 @@
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
     letter-spacing: 0.3px;
+    padding: 2px;
+    border: 1.7px solid var(--bg-dark-color);  
 }
 
 .resources--table-contents ul li a:hover {
@@ -204,8 +216,8 @@
 .resources--table-contents ul li a:focus-visible {
     text-decoration: none;
     outline: 2px solid var(--cream-color);
-    outline-offset: 3px;
-    border: none;
+    outline-offset: 2px;
+    padding: 2px;
     border-radius: 0;
 }
 
@@ -296,7 +308,11 @@
         max-width: none;
         min-width: none;
     }
-
+    .article--author--container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 
