@@ -992,12 +992,10 @@ ul[class^="checkmark-list"] li p {
     }  
 }
 @media screen and (max-width: 365px) {
-    .resources h1,
-    .article-container h1,
-    .a11y-statement h1,
+    .resources .article-heading-mobile,
+    .article-container .article-heading-mobile,
+    .a11y-statement .article-heading-mobile,
     .about h1 {
-        display: flex;
-        flex-direction: column;
         font-size: 2.4rem;
     }
 }
