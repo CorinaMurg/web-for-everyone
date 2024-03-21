@@ -2,7 +2,7 @@
 .a11y-statement {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
     margin-bottom: 150px;
     width: 45rem;
@@ -12,7 +12,7 @@
 .a11y-statement h1 {
     font-size: 3rem;
     font-weight: 600;
-    /* line-height: 1.5; */
+    margin-bottom: 32px;
 }
 
 .a11y-statement h2 {
@@ -42,17 +42,23 @@
 
 @media screen and (max-width: 800px) {
     .a11y-statement {
-        width: calc(100% - var(--main-margin));
+        width: calc(100% - 2*var(--main-margin));
         margin-inline: var(--main-margin);
     }
 
     .a11y-statement h1 {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         width: calc(100% - var(--main-margin));
     }
     .a11y-statement h2,
     .a11y-statement p {
         width: calc(100% - var(--main-margin));
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .a11y-statement h1 {
+        line-height: 1.2;
     }
 }
 

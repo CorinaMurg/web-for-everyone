@@ -23,10 +23,8 @@ export default function Feedback() {
                 <span>commitment to </span>
                 <span>accessibility</span>
             </h1>
-            <br />
             <A11yBanner />
-            <br/>
-            <p>
+            <p className="margin-top-30">
                 We value accessibility. We are building this website with everyone in mind,
                 and follow the <span> </span>
                 <ExternalLink

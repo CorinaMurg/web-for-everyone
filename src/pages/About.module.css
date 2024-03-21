@@ -111,19 +111,15 @@
     .about--me--image {
         margin-inline: auto;
     }
-
-    /* .about--me--text h2 {
-        margin-top: 50px;
-    } */
-
     .about--design {
         gap: 10px;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
     .about h1 {
         text-align: left;
+        line-height: 1.2;
     }
 }
 

@@ -824,8 +824,7 @@ ul[class^="checkmark-list"] li p {
 @media screen and (max-width: 970px) {
     .article-container {
         display: flex;
-        flex-direction: column;
-       
+        flex-direction: column;    
     }
 
     .resources .article-heading-desktop,
@@ -840,10 +839,6 @@ ul[class^="checkmark-list"] li p {
 }
 
 @media screen and (max-width: 670px) {
-    /* header {
-        padding-bottom: 10px;
-    } */
-
     .article-container {
        margin-inline: 0;
     }
@@ -859,10 +854,8 @@ ul[class^="checkmark-list"] li p {
 
     .article-container h1,
     .not-found-container h1 {
-        /* margin-top: 0; */
         padding-inline: var(--main-margin);
         line-height: 1.2;
-        /* padding-inline: 0; */
     }
 
     .article-container h3 {
@@ -962,8 +955,6 @@ ul[class^="checkmark-list"] li p {
     .a11y-statement .article-heading-mobile {
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
-        /* font-weight: 700; */
     }
 
     .resources .article-heading-mobile span,
@@ -1001,12 +992,12 @@ ul[class^="checkmark-list"] li p {
     }  
 }
 @media screen and (max-width: 365px) {
-    .resources .article-heading-mobile,
-    .article-container .article-heading-mobile,
-    .a11y-statement .article-heading-mobile {
+    .resources h1,
+    .article-container h1,
+    .a11y-statement h1,
+    .about h1 {
         display: flex;
         flex-direction: column;
         font-size: 2.4rem;
-        font-weight: 700;
     }
 }

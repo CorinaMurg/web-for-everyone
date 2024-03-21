@@ -73,12 +73,12 @@
 .rectangle-5 svg {
     fill: var(--text-dark-color);
 }
-@media screen and (max-width: 930px){
+/* @media screen and (max-width: 800px){
     .a11y-banner {
-        max-width: calc(100% - var(--main-margin));
+        width: calc(100% - var(--main-margin));
     }
    
-}
+} */
 
 @media screen and (max-width: 600px) {
     .a11y-banner {
