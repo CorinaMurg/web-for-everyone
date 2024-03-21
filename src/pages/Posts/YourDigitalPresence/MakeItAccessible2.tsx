@@ -548,7 +548,7 @@ export default function MakeItAccessible() {
                             <p>
                                 <strong>For you to test: </strong>
                                 Use the <span className="yellow-bg">Tab</span> key to navigate through the 
-                                buttons below and notice the change in the background's shade. The button are coded 
+                                buttons below and notice the change in the background's shade. The buttons are coded 
                                 such that pressing them on a touch screen, or hovering over them with a mouse, 
                                 will also trigger a change in brightness.
                             </p>                     
@@ -682,7 +682,17 @@ export default function MakeItAccessible() {
                         Congratulations!  <span aria-hidden="true"> 🎉 😎</span>
                     </p>
                     <p>
-                        Continue to practice and make accessibility a habit. And equally important, 
+                        Continue to practice and make accessibility a habit. As your coding skills expand,
+                        so will the complexity of the sites you build. That means that the accessibility 
+                        issues you encounter will become more complex too. But you don't have to be alone
+                        in this journey. There are many resources available to help you, and the accessibility 
+                        community is always ready to answer your questions. Plus, in a larger company, you might
+                        have a dedicated accessibility team to support you or a designer who has already
+                        considered accessibility in the design phase.
+                    </p>
+                    <p>
+                        Equally important, 
+                        with every improvement you make,
                         spread the word and share your knowledge with others. Because together we can build 
                         a <span className="yellow-bg">web for everyone</span>.
 

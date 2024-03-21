@@ -482,7 +482,7 @@ export default function MostCommonBugs() {
                         <p>
                             Learn how screen reader users navigate the web to
                             find information on a page from the <span> </span>
-                            <a href="https://webaim.org/projects/screenreadersurvey9/#finding"
+                            <a href="https://webaim.org/projects/screenreadersurvey10/#finding"
                                 target="_blank" 
                                 rel="noreferrer"
                             >
