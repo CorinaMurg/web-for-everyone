@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './MenuModal.css';
@@ -10,10 +11,15 @@ export interface MenuModalTypes {
     closeModal: () => void;
 }
 
-export default function MenuModal ({
-    isMenuOpen, 
-    closeModal, 
-} : MenuModalTypes) {
+export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) {
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
     return (
         <ReactModal
             className="menu-modal"
