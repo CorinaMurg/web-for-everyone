@@ -62,6 +62,11 @@
     cursor: pointer;
 }
 
+.low-contrast--button:focus-visible {
+    outline: 2px solid var(--text-dark-color);
+    outline-offset: 4px;
+}
+
 @media screen and (max-width: 670px) {
     .low-contrast--button {
         margin-left: var(--main-margin);

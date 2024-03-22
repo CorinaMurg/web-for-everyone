@@ -21,8 +21,7 @@ export default function About() {
                 <div className={styles['about--me--image']}>
                     <img  
                         src="/assets/CorinaMurg.jpg"
-                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret 
-                        and a light gray top"
+                        alt=""
                     />
                 </div>
                 <div className={styles['about--me--text']}>

@@ -225,10 +225,7 @@ export default function MostCommonBugs() {
                         <p>
                             Press the button to test it.
                         </p>
-                        <button aria-label="Change text color from black to light blue."
-                                className={styles['low-contrast--button']}
-                                onClick={() => toggleColor()}
-                        >
+                        <button className={styles['low-contrast--button']} onClick={() => toggleColor()}>
                             Change text color
                         </button>
                     </div>

@@ -16,6 +16,12 @@
     background-size: 30px 30px;
 }
 
+.menu-modal .modal-close-button:focus-visible,
+.menu-modal .modal-close-button:hover {
+    outline: 2px solid var(--text-dark-color);
+    outline-offset: 3px;
+}
+
 @media screen and (max-width: 450px) {
     .menu-modal .close-button {
         right: calc(0.5*var(--navbar-margin));
