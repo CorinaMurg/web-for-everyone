@@ -80,11 +80,9 @@ export default function Home() {
             
             <section 
                 aria-labelledby="understanding-accessibility" 
-                role="region"
-                className={` ${styles['mini-articles']} scroll-target `}
-                id="understanding-accessibility"
+                className={` ${styles['mini-articles']} scroll-target `}      
             >
-                <h2 >Accessibility 101</h2>
+                <h2 id="understanding-accessibility">Accessibility 101</h2>
                 <ul>
                     {miniArticleData.slice(0, 3).map((article, index) => (
                         <li key={index}> 
