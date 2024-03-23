@@ -22,7 +22,7 @@ header {
     color: var(--text-dark-color);
     /* border: 2px solid gray; */
     padding: 2px 6px;
-    border-radius: 10px;
+    border-radius: 7px;
     vertical-align: middle;
     margin-top: 5px;
     display: inline;

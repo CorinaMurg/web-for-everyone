@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Link from 'react-router-dom';
 import styles from './TableOfContents.module.css';
 import "../../global.css"
 
@@ -17,6 +17,15 @@ interface TableOfContentsTypes {
 }
 
 const TableOfContents: React.FC<TableOfContentsTypes> = ({ contents, activeId }) => {
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        event.preventDefault(); 
+
+        const element = document.getElementById(href.substring(1)); 
+
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' }); 
+        }
+    };
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']} id="table-contents">
@@ -27,6 +36,7 @@ const TableOfContents: React.FC<TableOfContentsTypes> = ({ contents, activeId })
                     {contents.map((item, index) => (
                     <li key={index} className={`${item.className1} ${item.className2}`}>
                         <a href={item.href} 
+                            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, item.href)}
                             className={`hover-pink ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                         >
@@ -53,7 +63,7 @@ export default TableOfContents;
 //                 <ul className={styles['table-contents--list']}>
 //                     {contents.map((item: any, index: number) => (
 //                     <li key={index} className={styles['table-contents--list--item']}>
-//                         <a  href={item.href} 
+//                        <a  href={item.href} 
 //                             className={`hover-pink ${item.className}`}
 //                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
 //                         >
