@@ -96,9 +96,9 @@
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 5px 15px;
+    padding: 6px 15px;
     border-radius: 10px;
-    border: 2px solid var(--text-nav-color);
+    /* border: 2px solid var(--text-nav-color); */
     width: 100%;
 }
 

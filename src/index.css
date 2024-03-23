@@ -132,6 +132,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--cream-color);
     color: var(--text-dark-color);
