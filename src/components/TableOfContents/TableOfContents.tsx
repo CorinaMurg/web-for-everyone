@@ -17,15 +17,15 @@ interface TableOfContentsTypes {
 }
 
 const TableOfContents: React.FC<TableOfContentsTypes> = ({ contents, activeId }) => {
-    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-        event.preventDefault(); 
+    // const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    //     event.preventDefault(); 
 
-        const element = document.getElementById(href.substring(1)); 
+    //     const element = document.getElementById(href.substring(1)); 
 
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' }); 
-        }
-    };
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' }); 
+    //     }
+    // };
     return (
         <div className={styles['table-contents']}>
             <h2 className={styles['table-contents--heading']} id="table-contents">
@@ -36,7 +36,7 @@ const TableOfContents: React.FC<TableOfContentsTypes> = ({ contents, activeId })
                     {contents.map((item, index) => (
                     <li key={index} className={`${item.className1} ${item.className2}`}>
                         <a href={item.href} 
-                            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, item.href)}
+                            // onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, item.href)}
                             className={`hover-pink ${item.href.substring(1) === activeId ? styles.active : ''}`}
                             {...(item.ariaLabel ? { 'aria-label': item.ariaLabel } : {})}
                         >

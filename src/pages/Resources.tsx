@@ -22,15 +22,15 @@ export default function Accessibility() {
         // "learning-resources": "Learning Resources",
     };
 
-    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-        event.preventDefault(); 
+    // const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    //     event.preventDefault(); 
 
-        const element = document.getElementById(href.substring(1)); 
+    //     const element = document.getElementById(href.substring(1)); 
 
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' }); 
-        }
-    };
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' }); 
+    //     }
+    // };
   
     return (
         <div className={`${styles.resources} resources no-back-links-container`}>
@@ -54,7 +54,7 @@ export default function Accessibility() {
                             <li key={index}>
                                 <a href={`#${label}`} 
                                     className={`${label === activeId ? styles.active : ''}`}
-                                    onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, `#${label}`)}
+                                    // onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, `#${label}`)}
                                 >
                                     {heading}
                                 </a>
