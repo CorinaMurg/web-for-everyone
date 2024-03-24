@@ -367,7 +367,7 @@ h4 {
 }
 
 .highlight {
-    background-color: white;
+    background-color: var(--lightGray-color);
     font-weight: 500;
     padding: 10px 20px 15px 20px;
     width: 100%;
@@ -386,7 +386,7 @@ h4 {
 }
 
 .highlight-one-line {
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-top: 10px;
 }
 
