@@ -400,6 +400,7 @@
 
 .mini-article:focus-within:not(:active) {
     outline: 2px solid var(--text-dark-color);
+    border-radius: 10px;
     outline-offset: 4px;
 }
 
