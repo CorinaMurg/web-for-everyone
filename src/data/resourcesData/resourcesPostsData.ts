@@ -115,7 +115,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `CSS can play an active role in improving the accessibility of your website. 
             Creating a skip link
             or adding a media query to account for reduced motion preferences are
-            both ways in which you can improve the experience for all users.`,
+            ways in which you can improve the experience for all users.`,
         "href": "https://codepen.io/collection/kNqjVV",
         "ariaLabel": "",
     },
