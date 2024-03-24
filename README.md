@@ -11,6 +11,8 @@ Aceessibility goals: WCAG 2.2
 2. Add role=text to article h1 spans
 https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
 
+3. Make aside a direct child of the body
+
 ## Features to add:
 1. Dark mode
 

@@ -160,11 +160,11 @@ export default function MakeItAccessible() {
                                     audit will have to include:
                                 </p>
                                 <p className="bullet-point-line">
-                                    <strong>manual testing</strong>: navigating with only the 
+                                    <span className="bold">manual testing</span>: navigating with only the 
                                     keyboard, using different assistive technologies, to name a few
                                 </p>
                                 <p className="bullet-point-line">
-                                    <strong>user testing</strong>: involving people with disabilities in the process
+                                    <span className="bold">user testing</span>: involving people with disabilities in the process
                                     of evaluating the site
 
                                 </p>
@@ -208,20 +208,20 @@ export default function MakeItAccessible() {
                         if the background or border does not contrast enough with the surrounding content.
                     </p>     
                     <p>
-                        To avoid these problems, we rely on <strong>color contrast ratio</strong> tools to compare the 
-                        difference in <strong>luminance</strong> (brightness) between any two colors.
+                        To avoid these problems, we rely on <span className="bold">color contrast ratio</span> tools to compare the 
+                        difference in <span className="bold">luminance</span> (brightness) between any two colors.
                     </p>       
                     <p>
                         The <span className="dark-bg-white-text"><code>4.5:1</code></span> (for smaller text) and <span> </span>
                         <span className="dark-bg-white-text"><code>3.0:1</code></span> (for larger text) ratios are 
                         minimum values expected in order for  your content to be accessible to users with low vision.
-                        In terms of accessibility guidelines, we call this the <strong>AA</strong> level.
+                        In terms of accessibility guidelines, we call this the <span className="bold">AA</span> level.
                     </p>
                     <p>
-                        The desirable <strong>AAA</strong> level requires
+                        The desirable <span className="bold">AAA</span> level requires
                         a <span className="dark-bg-white-text"><code>7.0:1</code></span> contrast ratio for smaller text, 
                         and <span className="dark-bg-white-text"><code>4.5:1</code></span> for larger text.
-                        Whenever possible, aim for the <strong>AAA</strong> level as it provides the best experience 
+                        Whenever possible, aim for the <span className="bold">AAA</span> level as it provides the best experience 
                         for users with low vision.
                     </p>  
 
@@ -248,8 +248,8 @@ export default function MakeItAccessible() {
                     </p>     
                     
                     <div className="checkmark-lines">
-                        <p >
-                            <strong>Checking the color contrast is straightforward:</strong>
+                        <p className="bold">
+                            Checking the color contrast is straightforward:
                         </p>
                         <p>
                             <span className="pink-text bold">&#x2714;</span>
@@ -261,12 +261,12 @@ export default function MakeItAccessible() {
                         </p>
                         <p>
                             <span className="pink-text bold">&#x2714;</span>
-                            <span>you receive a <strong>pass</strong> or <strong>fail</strong> result for 
-                            the <strong>AA</strong> and <strong>AAA</strong> levels of compliance</span>
+                            <span>you receive a <span className="bold">pass</span> or <span className="bold">fail</span> result for 
+                            the <span className="bold">AA</span> and <span className="bold">AAA levels of compliance</span></span>
                         </p>
                     </div>
                     <p>
-                        <strong>A neat feature of the tool</strong>: it provides <strong>luminance sliders</strong> that allow you to adjust 
+                        <span className="bold">A neat feature of the tool</span>: it provides <span className="bold">luminance sliders</span> that allow you to adjust 
                         the levels and see how the contrast ratio changes. <span aria-hidden="true"> 😎</span>
                     </p>  
                             
@@ -287,7 +287,7 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
-                                <span>Links are underlined, <strong>OR</strong> the next two conditions are met:</span>
+                                <span>Links are underlined, <span className="bold">OR</span> the next two conditions are met:</span>
                             </p>
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
@@ -325,38 +325,38 @@ export default function MakeItAccessible() {
            
                     <h3>Help screen readers decide whether to announce an image or not</h3>
                     <p className="bullet-point-line white-bg">
-                        Is your image <strong>purely decorative</strong>? Or, is the information presented in the image 
+                        Is your image <span className="bold">purely decorative</span>? Or, is the information presented in the image 
                         conveyed by the adjacent text as well? Then it's best to leave the <code>alt</code> attribute empty.
                     </p>
                     <p className="bullet-point-line white-bg">
-                        Does your image contain <strong>essential information</strong> that is not available in the text? 
+                        Does your image contain <span className="bold">essential information</span> that is not available in the text? 
                         Then add a short description in the <code>alt</code> attribute. No need to add the word "image"
                         or "picture" in the description, as screen readers announce it as an image by default.
                     </p> 
                     <p className="white-bg">
-                        Either way, it's important to <strong>add the <code>alt</code> attribute to all images</strong>. 
+                        Either way, it's important to <span className="bold">add the <code>alt</code> attribute to all images</span>. 
                     </p>
                     
                     <div className="highlight">
-                        <h4><span className="yellow-bg-dark-text">Missing</span>, <span> </span>
-                            <span className="yellow-bg-dark-text">empty</span>, or <span className="yellow-bg-dark-text">descriptive</span>?
+                        <h4>
+                            Missing, empty, or descriptive?
                             <span className="sr-only"> alt attribute</span>
                             <span aria-hidden="true"> 🤔</span>
                         </h4>
                         <p className="white-bg">
-                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers might 
+                            <span className="bold"><span className="pink-text">Missing</span> alt</span>: screen readers might 
                             read the source file name. When you have an image, the <code>alt</code> attribute is required!
                         </p>
                         <p>
-                            <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
+                            <span className="bold"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                         <p className="white-bg">
-                            <strong><span className="pink-text">Descriptive</span> alt</strong>: add informative text if the image
+                            <span className="bold"><span className="pink-text">Descriptive</span> alt</span>: add informative text if the image
                             is important for understanding your content.
                         </p> 
                         <p className="white-bg">
-                            <strong>Remember</strong>:
+                            <span className="bold">Remember</span>:
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
@@ -394,7 +394,7 @@ export default function MakeItAccessible() {
                         and provide no information about the destination of the link. 
                     </p>
                     <p>
-                        The problem: <strong>the link doesn't have an accessible name</strong>!
+                        The problem: <span className="bold">the link doesn't have an accessible name</span>!
                         Assistive technologies recognize an interactive element by its accessible name, but
                         the browser can not compute it here since none of the attributes that could provide one 
                         is present.
@@ -439,7 +439,7 @@ export default function MakeItAccessible() {
                     </ol>
                     
                     <p className="white-bg">
-                        <strong>What about the <code>alt</code> attribute?</strong> An icon displayed with an
+                        <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
                         <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
                         like an <code>&lt;img&gt;</code> tag would. 
                     </p>
@@ -480,13 +480,13 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         In the example above, the button has no visible text, but contains an image with 
-                        an <code>alt</code> attribute. A screen reader will announce it as <strong>"Close modal graphic button"</strong>.
+                        an <code>alt</code> attribute. A screen reader will announce it as <span className="bold">"Close modal graphic button"</span>.
                     </p>
                     <p className="white-bg">
-                        Notice the <strong>"graphic"</strong> part? Since the image has 
+                        Notice the <span className="bold">"graphic"</span> part? Since the image has 
                         an <code>alt</code> attribute that is not empty, the screen reader has to announce there is an image present. 
                         It is up to you if this information is useful to the user or not (most likely not?!). If not, 
-                        use one of the techniques discussed in the <strong>Links</strong> section, and remember to include the <code>alt</code> attribute but leave
+                        use one of the techniques discussed in the <span className="bold">Links</span> section, and remember to include the <code>alt</code> attribute but leave
                         it empty: <code>alt=""</code>.
                     </p>
                     
@@ -559,7 +559,7 @@ export default function MakeItAccessible() {
                             Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
                             Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
-                            software, it's best to <strong>use the explicit method</strong> (with the <code>for</code> attribute) until this issue is resolved.
+                            software, it's best to <span className="bold">use the explicit method</span> (with the <code>for</code> attribute) until this issue is resolved.
                         </p>
                     </div>
                 </div>

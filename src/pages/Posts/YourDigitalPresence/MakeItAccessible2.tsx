@@ -289,7 +289,7 @@ export default function MakeItAccessible() {
                             has implemented the skip link. 
                         </p>
                         <p>
-                            <strong>How to activate the link</strong>: open the page, 
+                            <span className="bold">How to activate the link</span>: open the page, 
                             press the <span className="yellow-bg">Tab</span> key.
                             The skip link is the first element to receive focus. Pressing enter will take you 
                             to their main content.
@@ -387,7 +387,7 @@ export default function MakeItAccessible() {
         
                     <h3>Allow keyboard-only users to navigate a page</h3>
                     <p>
-                        <strong>Not everyone can use a mouse!</strong> People who are blind or have low vision, 
+                        <span className="bold">Not everyone can use a mouse!</span> People who are blind or have low vision, 
                         as well as those without fine motor skills, rely on a keyboard to navigate the web. 
                     </p>
                     <p>
@@ -417,7 +417,8 @@ export default function MakeItAccessible() {
                         </p>
                         <p className="margin-top-20 padding-left-20 white-bg">
                             Again, if you used semantic HTML tags, this will happen automatically.
-                            With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be added.
+                            With <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, these event listeners have to be 
+                            added explicitly.
                         </p>
                     </div>       
                 </div>
@@ -443,11 +444,10 @@ export default function MakeItAccessible() {
                         if they press the <span className="yellow-bg">Enter</span> or <span className="yellow-bg">Space</span> key.
                     </p>
                     <p>
-                        Most browsers have a default focus style, the <strong>focus ring</strong>. 
+                        Most browsers have a default focus style, the <span className="bold">focus ring</span>. 
                         For example, the default focus style in Chrome is a double, black and white outline.
                         You can choose to override it and create one that matches your design, 
-                        but it's important to keep it visible. 
-                        
+                        but it's important to keep it visible.    
                     </p>
                     <div>
                         <p>
@@ -494,7 +494,7 @@ export default function MakeItAccessible() {
                         
                         <div className="margin-top-30 margin-bottom-20">
                             <p>
-                                <strong>For you to test: </strong>
+                                <span className="bold">For you to test: </span>
                                 Use the <span className="yellow-bg">Tab</span> key to navigate to the 
                                 button below and see the custom focus outline in action. 
                                 The button is coded such that pressing it on a touch screen, or hovering 
@@ -507,27 +507,27 @@ export default function MakeItAccessible() {
                         </div>
                         <div className="border-top">
                             <p>
-                                <b>Question</b>: why <span className="pink-bg-white-text"><code>:focus-visible</code></span> and 
+                                <span className="bold">Question</span>: why <span className="pink-bg-white-text"><code>:focus-visible</code></span> and 
                                 not <span className="pink-bg-white-text"><code>:focus</code></span>?
                             </p>
                             <p> 
-                                <b>:focus-visible</b> is smarter. It applies the style to all keyboard interractions, 
+                                <span className="bold">:focus-visible</span> is smarter. It applies the style to all keyboard interractions, 
                                 and only to specific mouse interractions (when beneficial to the user!)</p>
                             <p>
                                 Follow this link to read more about <span> </span>
                                 <Link to="/resources/similar-but-different#focus-focus-visible">
-                                    how <b>:focus-visible</b> and <b>:focus</b> match against each other.
+                                    how <span className="bold">:focus-visible</span> and <span className="bold">:focus</span> match against each other.
                                 </Link>
                             </p>
                         </div>
                     </div>
                     
-
+                    {/* ***Example: Changing the brightness of the background color*** */}
                     <div className="highlight margin-top-30">
                         <h4>Example <span className="pink-text"> two</span>: Change the brightness to show focus</h4>
                         <p>
                             One of the most important accessibility guidelines is to ensure that <span> </span>
-                            <strong>color alone is not used to convey information</strong>. 
+                            <span className="bold">color alone is not used to convey information</span>. 
                             This applies to the focus state as well.
                         </p>
                         <p>
@@ -536,7 +536,7 @@ export default function MakeItAccessible() {
                             is not recommended. Users who are color blind would not be able to tell the difference.
                         </p>
                         <p>
-                            <strong>Instead, rely on a change in brightness to indicate focus.</strong> 
+                            <span className="bold">Instead, rely on a change in brightness to indicate focus.</span> 
                         </p>
                         <p>
                             It could be with that same color, like a change from a light blue to a darker blue. 
@@ -546,7 +546,7 @@ export default function MakeItAccessible() {
                         </p>
                         <div className={styles['brightness--container']}>
                             <p>
-                                <strong>For you to test: </strong>
+                                <span className="bold">For you to test: </span>
                                 Use the <span className="yellow-bg">Tab</span> key to navigate through the 
                                 buttons below and notice the change in the background's shade. The buttons are coded 
                                 such that pressing them on a touch screen, or hovering over them with a mouse, 
@@ -556,10 +556,26 @@ export default function MakeItAccessible() {
                                 <button aria-label="Used for teaching purposes, it triggers no action">Do</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Re</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Mi</button>           
-                            </div>   
-                            <br></br>           
-                        </div> 
-                        <br/>     
+                            </div>  
+                            <div className="margin-top-20">
+                                <p className="bold">Two things to rememeber:</p>
+                                <div className="checkmark-list padding-left-20">
+                                    <p>
+                                        <span className="pink-text bold">&#x2714; </span>
+                                        &nbsp;
+                                        When comparing the default state and the focused state, the contrast ratio
+                                        between the background colors should be at least <span> </span> 
+                                        <code><span className="dark-bg-white-text">3.0:1</span></code>.
+                                    </p>
+                                    <p>
+                                        <span className="pink-text bold">&#x2714; </span>
+                                        &nbsp;
+                                        In each state, the contrast ratio between the background color and the text
+                                        should be at least <code><span className="dark-bg-white-text">4.5:1</span></code>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
                         <div className={`${styles['brightness--did-you-know']} border-top`}>
                             <h4>
                                 <span>Did you know? <span aria-hidden="true"> 💡</span></span>
@@ -567,13 +583,13 @@ export default function MakeItAccessible() {
                             </h4>
                             <ul>
                                 <li>
-                                    <p className="bullet-point-line">Open <strong> Dev tools </strong> and click on the <strong>three dots</strong> in the top right corner</p>
+                                    <p className="bullet-point-line">Open <span className="bold"> Dev tools </span> and click on the <span className="bold">three dots</span> in the top right corner</p>
                                 </li>
                                 <li>
-                                    <p className="bullet-point-line">Go to <strong>More tools</strong> and then <strong>Rendering</strong></p>
+                                    <p className="bullet-point-line">Go to <span className="bold">More tools</span> and then <span className="bold">Rendering</span></p>
                                 </li>
                                 <li>
-                                    <p className="bullet-point-line">Scroll to the bottom and select <strong>Emulate vision deficiencies</strong></p>
+                                    <p className="bullet-point-line">Scroll to the bottom and select <span className="bold">Emulate vision deficiencies</span></p>
                                 </li>
                                 <li>
                                     <p className="bullet-point-line">Choose the deficiency you want to emulate (like the type of 
@@ -679,26 +695,29 @@ export default function MakeItAccessible() {
                     <h2>Conclusion</h2>
                     <p>
                         You did it! You now know how to avoid 12 accessibility issues. 
-                        Congratulations!  <span aria-hidden="true"> 🎉 😎</span>
+                        {/* Congratulations!   */}
+                        <span aria-hidden="true"> 🎉 😎</span>
                     </p>
                     <p>
                         Continue to practice and make accessibility a habit. As your coding skills expand,
                         so will the complexity of the sites you build. That means that the accessibility 
                         issues you encounter will become more complex too. But you don't have to be alone
-                        in this journey. There are many resources available to help you, and the accessibility 
+                        in this journey. 
+                    </p>
+                    <p>
+                        There are many resources available to help you, and the accessibility 
                         community is always ready to answer your questions. Plus, in a larger company, you might
-                        have a dedicated accessibility team to support you or a designer who has already
+                        have a dedicated accessibility team to support you, or a designer who has already
                         considered accessibility in the design phase.
                     </p>
                     <p>
                         Equally important, 
-                        with every improvement you make,
                         spread the word and share your knowledge with others. Because together we can build 
                         a <span className="yellow-bg">web for everyone</span>.
 
                     </p>
                     <br/>
-                    <p>
+                    {/* <p>
                         Ready to learn more about accessibility?
                     </p>
                     <p>
@@ -706,7 +725,7 @@ export default function MakeItAccessible() {
                         <Link to="/resources">
                             Resources
                         </Link>
-                    </p>
+                    </p> */}
                 </div>
 
             </div>
