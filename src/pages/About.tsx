@@ -34,7 +34,7 @@ export default function About() {
                         that every user feels seen and valued. 
                     </p>
                     <p>
-                        I created <b>Web for Everyone</b> to help entry-level developers 
+                        I created <span className="bold">Web for Everyone</span> to help entry-level developers 
                         embrace accessibility at the start of their careers. 
                     </p>
                    
@@ -60,7 +60,7 @@ export default function About() {
                      <p>
                          <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
-                         <span>Familiar with the basics of accessibility?</span>
+                         <span className="bold">Familiar with the basics of accessibility?</span>
                      </p>
                      <p>
                          Start with the <span> </span>
