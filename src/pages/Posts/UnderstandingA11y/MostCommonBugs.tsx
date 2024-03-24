@@ -62,7 +62,7 @@ export default function MostCommonBugs() {
                     <p>
                         Here's one cool thing that happens every year: 
                         <span> </span>
-                        <strong>Web Accessibility in Mind</strong>, best known as <span> </span>
+                        <span className="bold">Web Accessibility in Mind</span>, best known as <span> </span>
                         <a href="https://webaim.org/" target="_blank" rel="noreferrer">
                             WebAIM
                             <span className="sr-only"> opens in a new tab</span>
@@ -105,7 +105,7 @@ export default function MostCommonBugs() {
                             <br />
                             <div className="details-content">
                             <p>
-                                From <strong>standards</strong> and <strong>best practices</strong> informed by user experience!
+                                From <span className="bold">standards</span> and <span>best practices</span> informed by user experience!
                             </p>
                             <p>
                                 The Web Content Accessibility Guidelines (WCAG) 
@@ -171,7 +171,7 @@ export default function MostCommonBugs() {
                         report makes for an interesting and informative read, do check it out!
                     </p>
                     <p>
-                        In the meantime, let's go over the list with the <strong>6 most common bugs</strong> found 
+                        In the meantime, let's go over the list with the <span className="bold">6 most common bugs</span> found 
                         in the 2023 study. What do we know about them?
                     </p>
 
@@ -184,11 +184,11 @@ export default function MostCommonBugs() {
                         </li>
                     </ul>
                     <p>
-                        <strong>The good news? </strong>
+                        <span className="bold">The good news? </span>
                         These are some of the easiest bugs to avoid or fix!
                     </p>
                     <p>
-                        <strong>Note</strong>: This article focuses on statistics from the study and why these bugs are problematic 
+                        <span className="bold">Note</span>: This article focuses on statistics from the study and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
                         <Link to="/resources/make-it-accessible-part1">
@@ -197,11 +197,11 @@ export default function MostCommonBugs() {
                         .
                     </p>
                     <p> 
-                        <strong>Recommended</strong>: To understand the impact of these bugs on users with disabilities,
+                        <span className="bold">Recommended</span>: To understand the impact of these bugs on users with disabilities,
                         make sure to review <span> </span>
                         <Link to="/resources/how-accessibility-works">
                             How accessibility works
-                        </Link>, especially the section on the <strong>accessible name</strong>.
+                        </Link>, especially the section on the <span className="bold">accessible name</span>.
                     </p>
                 </div>
 
@@ -253,12 +253,12 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            <strong><span className="pink-text">Missing</span> alt</strong>: screen readers 
+                            <span className="bold"><span className="pink-text">Missing</span> alt</span>: screen readers 
                             read the source file name. When you have an image, the <code>alt</code> attribute 
                             is required!
                         </p>
                         <p>
-                            <strong><span className="pink-text">Empty</span> alt</strong>: screen readers ignore the image.
+                            <span className="bold"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                     
@@ -301,7 +301,7 @@ export default function MostCommonBugs() {
                             users can struggle to understand their purpose if the text is vague.
                         </p>
                         <p>
-                            <strong>A good example:</strong> "Click here to learn more about our services"
+                            <span className="bold">A good example:</span> "Click here to learn more about our services"
                         </p>
                         
                     </div>
@@ -335,14 +335,14 @@ export default function MostCommonBugs() {
                         </div>
                         
                         <p className=" margin-top-30">
-                            <strong>Issue </strong> <span aria-hidden="true"> 🛠️</span>
+                            <span className="bold">Issue </span> <span aria-hidden="true"> 🛠️</span>
                         </p>
                         <p className="white-bg">
                             Text is replaced by an image with no <code>alt</code> text. 
                             Within the accessibility tree, this button object does not have an accessible name.
                         </p>
                         <p >
-                            <strong>Remember </strong> <span aria-hidden="true">💡</span>
+                            <span className="bold">Remember </span> <span aria-hidden="true">💡</span>
                         </p>
                         <p className="white-bg">
                             An interactive element like a button must have a descriptive <span> </span>
@@ -354,7 +354,7 @@ export default function MostCommonBugs() {
                             visible text, <code>aria-labelledby</code>, or <code>alt</code>, to 
                             name a few.
                         </p>
-                        <p><strong>Consequences of empty buttons</strong></p>
+                        <p className="bold">Consequences of empty buttons</p>
                         <p className="bullet-point-line">
                             A screen reader will announce it simply as "button", and no other 
                             information attached. Users would not know what is the purpose of the button.
@@ -440,7 +440,7 @@ export default function MostCommonBugs() {
                 <div>
                     <p className="margin-top-30">
                         Done with the 6 most common accessibility bugs! 
-                        Do you have time for a <strong>bonus bug</strong>? Too important to leave it out!
+                        Do you have time for a <span className="bold">bonus bug</span>? Too important to leave it out!
                     </p>
                 </div>
 
@@ -471,10 +471,8 @@ export default function MostCommonBugs() {
                             to another. This way, they can get a sense of what's on the page and decide what to read.
                         </p>
                         <br />
-                        <p>
-                            <strong>
-                                Recommended read <span aria-hidden="true">💡</span>
-                            </strong>
+                        <p className="bold">
+                            Recommended read <span aria-hidden="true">💡</span>
                         </p>
                         <p>
                             Learn how screen reader users navigate the web to

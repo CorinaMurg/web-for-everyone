@@ -47,7 +47,7 @@ export default function About() {
                      <p>
                          <span className="pink-text bold">&#x2714; </span> 
                          &nbsp;
-                         <strong>New to accessibility?</strong>
+                         <span className="bold">New to accessibility?</span>
                      </p>
                      <p>       
                          Jump to the <span> </span>
@@ -60,7 +60,7 @@ export default function About() {
                      <p>
                          <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
-                         <strong>Familiar with the basics of accessibility?</strong>
+                         <span>Familiar with the basics of accessibility?</span>
                      </p>
                      <p>
                          Start with the <span> </span>
@@ -73,7 +73,7 @@ export default function About() {
                      <p>
                          <span className="pink-text bold">&#x2714; </span>
                          &nbsp;
-                         <strong>Looking for guidance?</strong>
+                         <span className="bold">Looking for guidance?</span>
                      </p>
                      <p>
                          Get in touch via&nbsp;

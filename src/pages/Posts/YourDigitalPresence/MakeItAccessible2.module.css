@@ -130,6 +130,10 @@
         padding-inline: var(--main-margin);
     }
 
+    .brightness--did-you-know ul {
+        padding-inline: var(--main-margin);
+    }
+
 }
 @media screen and (max-width: 600px) {
     .code-keyboard {

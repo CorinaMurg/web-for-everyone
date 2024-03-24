@@ -426,7 +426,7 @@ export default function MakeItAccessible() {
                 {/* ****************VISIBLE FOCUS************************* */}
                 <div className="section focus scroll-target" id="visible-focus">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">1 1</span>
+                        <span aria-hidden="true" className="section-number">11</span>
                         <h2>Visible focus</h2>
                     </div>
 
@@ -535,8 +535,8 @@ export default function MakeItAccessible() {
                             a button from blue to green when it receives focus (assuming the outline was removed) 
                             is not recommended. Users who are color blind would not be able to tell the difference.
                         </p>
-                        <p>
-                            <span className="bold">Instead, rely on a change in brightness to indicate focus.</span> 
+                        <p className="bold">
+                            Instead, rely on a change in brightness to indicate focus.
                         </p>
                         <p>
                             It could be with that same color, like a change from a light blue to a darker blue. 
@@ -559,7 +559,7 @@ export default function MakeItAccessible() {
                             </div>  
                             <div className="margin-top-20">
                                 <p className="bold">Two things to rememeber:</p>
-                                <div className="checkmark-list padding-left-20">
+                                <div className="checkmark-list">
                                     <p>
                                         <span className="pink-text bold">&#x2714; </span>
                                         &nbsp;

@@ -105,8 +105,8 @@ export default function MostCommonBugs() {
                     </h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree. The accessibility tree contains only <strong>elements that 
-                        need to be exposed to assistive technologies</strong>, 
+                        version of the DOM tree. The accessibility tree contains only <span className="bold">elements that 
+                        need to be exposed to assistive technologies</span>, 
                         like links or headings. 
                     </p>
                     <p className="fake-list-item">
@@ -121,7 +121,7 @@ export default function MostCommonBugs() {
                     <h2>The acccessibility tree <span aria-hidden="true"> 🌳</span></h2>           
                     <div>
                         <p>
-                            Each node in the tree is an <strong>accessible object</strong>. 
+                            Each node in the tree is an <span className="bold">accessible object</span>. 
                             It can represent one of the following:
                         </p>
                         <p className="bullet-point-line margin-top-20 white-bg">
@@ -233,8 +233,8 @@ export default function MostCommonBugs() {
                         </div>
                        
                         <p className="margin-top-20">
-                            While the DOM tree is structured by HTML tags/elements, <strong>the accessibility tree is 
-                            structured by roles</strong>.
+                            While the DOM tree is structured by HTML tags/elements, <span className="bold">the accessibility tree is 
+                            structured by roles</span>.
                             For each object in the accessibility tree, its role matches the function of its 
                             corresponding HTML element.
                         </p>
@@ -279,7 +279,7 @@ export default function MostCommonBugs() {
                             </span>
                         </a>
                         , often referred to
-                        by the acronym <strong>ARIA</strong>. 
+                        by the acronym <span className="bold">ARIA</span>. 
                     </p>
                     
                     {/* ************Implicit roles***************** */}
@@ -288,7 +288,7 @@ export default function MostCommonBugs() {
                             Implicit roles
                         </h3>
                         <p>
-                            Each role in the example above is <strong>implicit</strong>. It's built in the definition of the
+                            Each role in the example above is <span className="bold">implicit</span>. It's built in the definition of the
                             semantic HTML tag used to create the element. When the browser builds the accessibility tree, 
                             it assigns the role, and all related properties and states, to the corresponding 
                             accessible object.
@@ -315,13 +315,13 @@ export default function MostCommonBugs() {
                         </div>
                         
                         <p className="white-bg">
-                            We have a <strong>link</strong> with the <strong>name</strong> "Home".
-                            It's a <strong>focusable</strong> (i.e. actionable) element.
+                            We have a <span className="bold">link</span> with the <span className="bold">name</span> "Home".
+                            It's a <span className="bold">focusable</span> (i.e. actionable) element.
                             For a keyboard user, this means that they can navigate to it by pressing 
                             the <span className="yellow-bg">Tab</span> key, and activate it by pressing <span className="yellow-bg">Enter</span>. 
                         </p>
                         <p>
-                            At the time of this snapshot, the link was <strong>in focus</strong>, i.e. selected and
+                            At the time of this snapshot, the link was <span className="bold">in focus</span>, i.e. selected and
                             ready to be activated. 
                         </p>
                         <br/>
@@ -332,11 +332,11 @@ export default function MostCommonBugs() {
                         </p>
                     
                         <p className="bullet-point-line">
-                            A screen reader will announce it as <strong>"Home link"</strong>.
+                            A screen reader will announce it as <span className="bold">"Home link"</span>.
                         </p>
                         <p className="bullet-point-line">
                             A speech recognition software will recognize it as "Home" and allow the user to activate it 
-                            with the command <strong>"click Home"</strong>.
+                            with the command <span className="bold">"click Home"</span>.
                         </p>
                         <br/>
                         <h4>Isn't semantic HTML cool?<span aria-hidden="true"> 😎</span></h4>
@@ -409,8 +409,8 @@ export default function MostCommonBugs() {
                             the accessible name in the next section).
                         </p>
                         
-                        <p>
-                            <strong>Is this button accessible yet? Absolutely not!</strong>
+                        <p className="bold">
+                            Is this button accessible yet? Absolutely not!
                         </p>
                         
                         <p className="white-bg">
@@ -481,7 +481,7 @@ export default function MostCommonBugs() {
                             the HTML tag for it exists, use it! 
                         </p>
                         <p>
-                            The first rule of ARIA is: <strong>don't use ARIA</strong>!
+                            The first rule of ARIA is: <span className="bold">don't use ARIA</span>!
                         </p>
                         <p>
                             Throughout this website, we will discuss scenarios where ARIA attributes could be used
@@ -518,13 +518,13 @@ export default function MostCommonBugs() {
                     </div>
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 
-                        accessibility tree example has a name? It's called the <strong>accessible name</strong>, and 
+                        accessibility tree example has a name? It's called the <span className="bold">accessible name</span>, and 
                         assistive technologies use it to announce the link to the user
                         (or, for speech recognition software, the name that will be used to activate 
                         the link). 
                     </p>
                     <p>
-                        <strong>Certain elements must have a name</strong> (or, for input fields, a <strong>label</strong>), and it has to be 
+                        <span className="bold">Certain elements must have a name</span> (or, for input fields, a <span className="bold">label</span>), and it has to be 
                         descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
@@ -533,7 +533,7 @@ export default function MostCommonBugs() {
                         <WarningTriangle/>
                         <p>
                             These elements must have a 
-                            <strong> descriptive accessible name</strong>:
+                            <span className="bold"> descriptive accessible name</span>:
                         </p>     
                         <div>
                             <ul role="list" className="bullet-point-list">
@@ -571,13 +571,13 @@ export default function MostCommonBugs() {
                             />
                             <span> </span> 
                             that follows a set of (quite headache-inducing) rules. The algorithm takes into account
-                            the <strong>visible text</strong> or <strong> label</strong> of the element, but several other attributes are considered
+                            the <span className="bold">visible text</span> or <span className="bold"> label</span> of the element, but several other attributes are considered
                             as well:
                         </p>
                        
                         <div style={{width: "100%"}}>
-                            <p className="bullet-point-line">
-                                <strong>text defined by a visually-hidden class</strong>  
+                            <p className="bold bullet-point-line">
+                                text defined by a visually-hidden class
                             </p>
                             <p className="padding-left-20">
                                 This is a CSS class that hides text visually, but makes it available to screen readers.
@@ -601,19 +601,19 @@ export default function MostCommonBugs() {
                                     <p>
                                         Ideally, a user can rely on visible text to learn the name of an 
                                         interactive element, and then activate it with "Click (name of element)".
-                                        If the name is not visible or obvious, they can use the <strong>Mouse Grid</strong>
+                                        If the name is not visible or obvious, they can use the <span className="bold">Mouse Grid </span>
                                         feature.
                                     </p>
                                     <p>
                                         Here are the steps they would follow:
                                     </p>
                                     <p>
-                                        <strong>1. Activate the Mouse Grid</strong>:
+                                        <span className="bold">1. Activate the Mouse Grid</span>:
                                         The command "Mouse Grid" activates the feature. 
                                         This will overlay a grid with numbered areas across their entire screen.
                                     </p>
                                     <p>
-                                        <strong>2. Use the Mouse Grid</strong>:
+                                        <span className="bold">2. Use the Mouse Grid</span>:
                                         Once the grid is visible, they can move the pointer to a specific area 
                                         by saying the number associated with that area. For example, if they want 
                                         to move the pointer to the area labeled '3', they just say "Three"
@@ -621,17 +621,17 @@ export default function MostCommonBugs() {
                                         redraw a smaller, more detailed grid.
                                     </p>
                                     <p>
-                                        <strong>3. Repeat</strong>:
+                                        <span className="bold">3. Repeat</span>:
                                         They continue to dictate numbers of smaller areas until the 
                                         element they wish to select is isolated in a single area.
                                     </p>
                                     <p>
-                                        <strong>4. Click and Interact</strong>:
+                                        <span className="bold">4. Click and Interact</span>:
                                         They can say commands like “Click,” “Double Click,” “Right Click,” etc., to interact with 
                                         that element as they would with a mouse.
                                     </p>
                                     <p>
-                                        <strong>5. Close Mouse Grid</strong>:
+                                        <span className="bold">5. Close Mouse Grid</span>:
                                         If they wish to exit the Mouse Grid, they simply say "Cancel," and the Mouse Grid will close.
                                     </p>
                                 </details>
@@ -654,8 +654,8 @@ export default function MostCommonBugs() {
                                 />
                             </p> */}
                             
-                            <p className="bullet-point-line margin-top-30">
-                                <strong>alt</strong>
+                            <p className="bold bullet-point-line margin-top-30">
+                               alt
                             </p>  
                             <p className="padding-left-20 white-bg">
                                 You can use it with interactive images. With buttons or links that contain an image and no 
@@ -663,10 +663,10 @@ export default function MostCommonBugs() {
                                 to compute the accessible name.
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
-                                Note that this is slightly more verbose. So, a button wrapping an image of <strong>x</strong> can
+                                Note that this is slightly more verbose. So, a button wrapping an image of <span className="bold">x</span> can
                                 have an <code>alt="Close modal"</code> and it will be announced as "Close modal 
                                 graphic button". <span> </span>
-                                (An image is announced either as <strong>graphic</strong> or <strong>image</strong> 
+                                (An image is announced either as <span className="bold">graphic</span> or <span className="bold">image</span> 
                                 , depending on the screen reader.)
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
@@ -677,8 +677,8 @@ export default function MostCommonBugs() {
                                 A better choice is to use an empty <code>alt</code> attribute to hide the image from the screen reader,
                                 and add a <code>visually-hidden</code> span with the accessible name.
                             </p>
-                            <p className="bullet-point-line margin-top-30">
-                                <strong>desc</strong>
+                            <p className="bold bullet-point-line margin-top-30">
+                                desc
                             </p>  
                             <p className="padding-left-20 white-bg">
                                 Similar to <code>alt</code> but for a <code>svg</code>. 
@@ -691,11 +691,11 @@ export default function MostCommonBugs() {
                                     <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
                                 </div>
                             </div>
-                            <p className="bullet-point-line margin-top-30">
-                                <strong>title</strong>
+                            <p className="bold bullet-point-line margin-top-30">
+                                title
                             </p>
                             <p className="padding-left-20">
-                                Accessibility experts suggest we avoid it because it's tricky to make it accessible to 
+                                Accessibility experts suggest we avoid it. It's tricky to make it accessible to 
                                 keyboard users.
                                 You can still use it to provide a visual tooltip on mouseover, but don't rely on it for
                                 the accessible name.
@@ -705,8 +705,8 @@ export default function MostCommonBugs() {
                                 Do not confuse it with the <code>&lt;title&gt;</code> tag, which is used to provide 
                                 a title for a web page.
                             </p>
-                            <p className="bullet-point-line margin-top-30">
-                                    <strong>aria-labelledby</strong>
+                            <p className="bold bullet-point-line margin-top-30">
+                                aria-labelledby
                             </p>
                             <p className="padding-left-20">
                                 It has the highest priority among all the other options, including the visible text.
@@ -721,8 +721,8 @@ export default function MostCommonBugs() {
                                 <code>aria-labelledby="id of the heading"</code> to provide the name for the button.
                             </p>
 
-                            <p className="bullet-point-line margin-top-30">
-                                <strong>aria-label</strong>
+                            <p className="bold bullet-point-line margin-top-30">
+                                aria-label
                             </p>
                             <p className="padding-left-20 white-bg">
                                 It takes a string value 
@@ -731,14 +731,14 @@ export default function MostCommonBugs() {
                                 for a button.
                             </p>
                             <p className="padding-left-20 margin-top-20">
-                                Its main difference with <strong>aria-labelledby</strong>? It's not visible, and it's only announced
+                                Its main difference with <span className="bold">aria-labelledby</span>? It's not visible, and it's only announced
                                 to the screen reader user. Read more about <span> </span>
                                 <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
                                     the difference between aria-label and aria-labelledby
                                 </Link>.
                             </p> 
                             <p className="padding-left-20 white-bg margin-top-20">
-                                <strong>Use it if nothing else is available</strong>! (But then you could always
+                                <span className="bold">Use it if nothing else is available</span>! (But then you could always
                                 add a <code>visually-hidden</code> span with the accessible name!)
                                 {/* The biggest issue with <code>aria-label</code>? */}
                             </p>
@@ -760,10 +760,8 @@ export default function MostCommonBugs() {
                             </p> 
                         </div>
                         <div className="checkmark-line white-bg">
-                            <p>
-                                <strong>
-                                    To summarize:
-                                </strong>
+                            <p className="bold">
+                                To summarize:
                             </p>
                             <p  className="margin-top-10">
                                 <span className="pink-text bold">&#x2714; </span> 

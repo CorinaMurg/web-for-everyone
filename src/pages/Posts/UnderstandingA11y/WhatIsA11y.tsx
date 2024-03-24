@@ -135,42 +135,42 @@ export default function WhatIsA11y() {
                                     Here's an overview of some of the most common assistive technologies:
                                 </p>
                                 <p>
-                                    <strong className="pink-text">1.</strong><strong> Screen Readers</strong> are typically used by people who are blind 
+                                    <span className="bold"><span className="pink-text">1.</span> Screen Readers</span> are typically used by people who are blind 
                                     or have vision impairments. Users navigate through the UI elements with the 
                                     keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
                                 </p>
                                 <p>
-                                    <strong className="pink-text">2.</strong><strong> Screen Readers with Braille Displays</strong> for users with both 
+                                    <span className="bold"><span className="pink-text">2.</span> Screen Readers with Braille Displays</span> for users with both 
                                     vision and hearing impairments. The screen reader 
                                     translates the content on the screen into a format that can be read on a 
                                     braille display. These displays are fitted with braille cells that change dynamically.
                                 </p>
                                 <p>
-                                    <strong className="pink-text">3.</strong><strong> Screen Magnifiers</strong> are designed to enlarge the content on 
+                                    <span className="bold"><span className="pink-text">3.</span> Screen Magnifiers</span> are designed to enlarge the content on 
                                     screen, making it more readable for users with low vision. These tools often 
                                     include additional features to enhance contrast and reduce glare.
                                 </p>
                                 <p>
-                                    <strong className="pink-text">4.</strong><strong> Speech Recognition Software</strong> allows users to interact with 
+                                    <span className="bold"><span className="pink-text">4.</span> Speech Recognition Software</span> allows users to interact with 
                                     their devices using voice commands. This technology helps people 
                                     with mobility issues or those who need a hands-free interraction with the web. 
                                     Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
                                     Dictation. Windows has integrated Cortana for voice commands.
                                 </p>
                                 <p>
-                                    <strong className="pink-text">5.</strong><strong> Text-to-Speech Software (TTS)</strong> converts 
+                                    <span className="bold"><span className="pink-text">5.</span> Text-to-Speech Software (TTS)</span> converts 
                                     written text into 
                                     spoken words using synthetic voices. It benefits users with reading 
                                     difficulties, such as dyslexia.
                                 </p>
                                 
                                 <p>
-                                    <strong className="pink-text">6.</strong><strong> Alternate Input Technologies</strong> simulate the functionality of 
+                                    <span className="bold"><span className="pink-text">6.</span> Alternate Input Technologies</span> simulate the functionality of 
                                     the keyboard for people with more severe physical disabilities. For example, a sip&puff device
                                     allows a person to send signals to the computer by inhaling or exhaling into a wand. 
                                 </p>
                                 <p>
-                                    <strong className="pink-text">7.</strong><strong> Alternate Pointing Devices</strong> replicate the functionality of 
+                                    <span className="bold"><span className="pink-text">7.</span> Alternate Pointing Devices</span> replicate the functionality of 
                                     a traditional mouse. 
                                     For example, an eye-tracking system allows mouse control through eye movements.
                                 </p>   
@@ -208,8 +208,8 @@ export default function WhatIsA11y() {
                             no semantic meaning. It is just a container intended for styling purposes or for layout, 
                             and requires additional code to make it accessible.
                         </p>
-                        <p>
-                            <strong>Always start with semantic HTML!</strong>
+                        <p className="bold">
+                            Always start with semantic HTML!
                         </p>
                         <p>
                             Think about the content and the functionality 
@@ -260,30 +260,31 @@ export default function WhatIsA11y() {
                     </p>
                     
                     <div>
-                        <p className="bullet-point-line"><strong>legal compliance</strong></p>
+                        <p className="bullet-point-line bold">legal compliance</p>
                         <p className="padding-left-20">
                             While the accessibility guidelines established by the W3C (the World Wide Web Consortium)
                             are not legally binding, many countries have adopted legislation founded on them.
                         </p>
                         <p className="margin-top-20 padding-left-20">
                             Did you know that in 2008, Target (a US-based retail chain) settled a class action 
-                            lawsuit with the National Federation for the Blind for $6 million? 
+                            lawsuit with the National Federation for the Blind for $6 million? And that in 2023, 
+                            there were over 4,000 web accessibility lawsuits filed in the US alone?
                         </p>
                         
-                        <p className="bullet-point-line margin-top-20"><strong>increased market share</strong></p>
+                        <p className="bold bullet-point-line margin-top-20">increased market share</p>
                         <p className="padding-left-20">
                             A site can attract new visitors from the millions of users with disabilities 
                             who use the web.
                         </p>
                     
-                        <p className="bullet-point-line margin-top-20"><strong>improved SEO</strong></p>
+                        <p className="bold bullet-point-line margin-top-20">improved SEO</p>
                         <p className="white-bg padding-left-20">
                             Many accessibility practices align with good SEO practices. For example, 
                             providing <code>alt</code> text for images and ensuring a logical content structure with 
                             proper heading tags are beneficial for both accessibility and SEO. 
                         </p>
                         
-                        <p className="bullet-point-line margin-top-20"><strong>positive spillover</strong></p>
+                        <p className="bold bullet-point-line margin-top-20">positive spillover</p>
                         <p className="padding-left-20">
                             Many features designed for accessibility, 
                             such as clear navigation, easy-to-read fonts, and simple layouts, 

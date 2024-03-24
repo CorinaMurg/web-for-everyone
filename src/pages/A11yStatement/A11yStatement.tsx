@@ -26,12 +26,13 @@ export default function Feedback() {
             <A11yBanner />
             <p className="margin-top-30">
                 We value accessibility. We are building this website with everyone in mind,
-                and follow the <span> </span>
+                and aim to comply with the <span> </span>
                 <ExternalLink
                     href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-                    visibleText="Web Content Accessibility Guidelines (WCAG) 2.1"
-                /> <span> </span>
-                to make sure every visitor feels welcome.
+                    visibleText="Web Content Accessibility Guidelines (WCAG) 2.2 AA"
+                />. <span> </span>
+                Please note that this website is not a finished product, 
+                and certain accessibility aspects are still in development.
             </p>
             <h2 id="report-a11y-issues" className="scroll-target section">
                 Reporting accessibility issues
@@ -44,7 +45,7 @@ export default function Feedback() {
                 Please include a description of the issue, the page URL, or any relevant details. 
             </p>
             <p className={styles.contact}>
-                <span><strong>Contact</strong>:</span>
+                <span className="bold">Contact:</span>
                 <span className={styles['contact--email']}> corina.murg@gmail.com</span>
             </p>
             <p>
