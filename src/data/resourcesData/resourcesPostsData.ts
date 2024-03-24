@@ -71,25 +71,25 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "href": `https://dev.to/corinamurg/html-buttons-vs-links-5059`,
         "ariaLabel": "",
     },
-    {
-        "label": "html-for-accessibility",
-        "id": "how-to-design-great-alt-text",
-        "title": "How to design great alt text",
-        "subtitle": "",
-        "author": "By Caitlin Geier on deque.com/blog",
-        "description": `Alt text is essential for users relying on screen readers or slow internet connections. 
-            Learn to distinguish between decorative and informative images, 
-            and how the context of an image determines the need for alt text, which is also a ranking factor for SEO.`,
-        "href": `https://www.deque.com/blog/great-alt-text-introduction/`,
-        "ariaLabel": "",
-    },
+    // {
+    //     "label": "html-for-accessibility",
+    //     "id": "how-to-design-great-alt-text",
+    //     "title": "How to design great alt text",
+    //     "subtitle": "",
+    //     "author": "By Caitlin Geier on deque.com/blog",
+    //     "description": `Alt text is essential for users relying on screen readers or slow internet connections. 
+    //         Learn to distinguish between decorative and informative images, 
+    //         and how the context of an image determines the need for alt text, which is also a ranking factor for SEO.`,
+    //     "href": `https://www.deque.com/blog/great-alt-text-introduction/`,
+    //     "ariaLabel": "",
+    // },
     {
         "label": "html-for-accessibility",
         "id": "similar-but-different",
         "title": "Similar, but different: HTML and ARIA terms",
         "subtitle": "",
         "author": "By Web for Everyone",
-        "description": `If you need to hide an element from view, do you use "display: none", "visibility: hidden", or "aria-hidden"?
+        "description": `How do you bring focus to a link: with ":focus" or ":focus-visible"?
             For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
             Let's match these terms agaist each other to see how they differ.`,
         "to": `/resources/similar-but-different`,
@@ -108,28 +108,27 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     {
         "label": "css-for-accessibility",
-        "id": "is-rem-always-the-best-choice",
-        "title": "Is \"rem\" always the best choice?",
+        "id": "codepen-css",
+        "title": "A CSS-focused CodePen collection",
         "subtitle": "",
-        "author": "By Ashlee Boyer on ashleemboyer.com",
-        "description": `While rem units are great for 
-            text to aid with zoom and accessibility, they may not be the best choice for margins, padding, 
-            and spacing. Read Ashlee M Boyer's post on how using px units in these cases can 
-            lead to a more predictable and user-friendly layout.`,
-        "href": "https://ashleemboyer.com/blog/why-you-should-use-px-units-for-margin-padding-and-other-spacing-techniques#after-updating-to-px-units",
+        "author": "By Corina Murg  on codepen.io",
+        "description": `CSS can play an active role in improving the accessibility of your website. 
+            Creating a skip link
+            or adding a media query to account for reduced motion preferences are
+            both ways in which you can improve the experience for all users.`,
+        "href": "https://codepen.io/collection/kNqjVV",
         "ariaLabel": "",
     },
    
     {
         "label": "example-accessible-components",
-        "id": "building-main-navigation",
-        "title": "Building the main navigation for a website",
+        "id": "codepen-components",
+        "title": "CodePens of accessible components",
         "subtitle": "",
-        "author": "By Manuel Matuzović on web.dev",
-        "description": `This post 
-            covers best practices for designing a navigation system that's user-friendly and accessible. 
-            A (very long) must-read!`,
-        "href": "https://web.dev/articles/website-navigation",
+        "author": "By Corina Murg on codepen.io",
+        "description": `This is a collection of small accessible components that you can use in your projects.
+            Buttons, links or dropdown menus can be all easily built from HTML tags and CSS, with just a touch of JavaScript.`,
+        "href": "https://codepen.io/collection/zxbLrQ",
         "ariaLabel": "",
     },
     
@@ -155,16 +154,16 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "to": `/resources/make-it-accessible-part2`,
         "ariaLabel": "",
     },
-    {
-        "label": "your-digital-presence",
-        "id": "tips-for-accessible-github-profile",
-        "title": "Tips for an accessible GitHub profile",
-        "subtitle": "",
-        "author": "By Annie Streater on github.blog",
-        "description": `A post with practical advice on how to ensure  
-            all users, including those with disabilities, can navigate and understand your GitHub profile. You'll find tips
-            on link context, alt text for images, heading structure, plain language, and use of emojis. A treat!`,
-        "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
-        "ariaLabel": "",
-    },
+    // {
+    //     "label": "your-digital-presence",
+    //     "id": "tips-for-accessible-github-profile",
+    //     "title": "Tips for an accessible GitHub profile",
+    //     "subtitle": "",
+    //     "author": "By Annie Streater on github.blog",
+    //     "description": `A post with practical advice on how to ensure  
+    //         all users, including those with disabilities, can navigate and understand your GitHub profile. You'll find tips
+    //         on link context, alt text for images, heading structure, plain language, and use of emojis. A treat!`,
+    //     "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
+    //     "ariaLabel": "",
+    // },
 ];

@@ -435,25 +435,7 @@ h4 {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
-    /* position: relative;
-    align-self: start;
-    cursor: pointer; */
 }
-
-/* .hover-underline::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px; 
-    background-color: var(--text-dark-color);
-    transition: width 0.5s; 
-}
-
-.hover-underline:hover::before {
-    width: 100%; 
-} */
 
 li {
     font-weight: 500;
