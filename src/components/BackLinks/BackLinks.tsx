@@ -13,8 +13,8 @@ export default function BackLinks ({secondLink, href, current}: BackLinksTypes) 
         <nav aria-label="Breadcrumb" className={`${styles['back-links']}`} id="back-links">
             <ol>
                 <li>
-                    <Link to="/resources" className={`${styles['back-link']} hover-pink`}>
-                        Resources
+                    <Link to="/blog" className={`${styles['back-link']} hover-pink`}>
+                        Blog
                     </Link>
                 </li>
                 <li>

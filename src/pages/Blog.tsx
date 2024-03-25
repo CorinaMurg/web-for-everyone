@@ -4,18 +4,18 @@ import useScrollToTop from "../hooks/useScrollToTop"
 import useScrollToSection from "../hooks/useScrollToSection"
 import useDocTitle from "../hooks/useDocTitle"
 import useHighlightTOC from "../hooks/useHighlightTOC"
-import { resourcesPostsData } from "../data/resourcesData/resourcesPostsData"
-import styles from './Resources.module.css'
+import { blogPostsData } from "../data/blogData/blogPostsData"
+import styles from './Blog.module.css'
 import "../global.css"
 
 export default function Accessibility() {  
-    useDocTitle("Resources | Web for Everyone");
+    useDocTitle("Blog | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
     const sectionTitles = {
         "accessibility-101": "Accessibility 101",
-        "your-digital-presence": "Your digital presence",
+        "your-portfolio-site": "Your portfolio site",
         "html-for-accessibility": "HTML for accessibility",
         "css-for-accessibility": "CSS for accessibility",
         "example-accessible-components": "Examples of accessible components",
@@ -71,7 +71,7 @@ export default function Accessibility() {
                             {heading}
                         </h2>     
                         <div className={`${styles['section-content']}`}>
-                            {resourcesPostsData.filter(post => post.label === label).map((post, index) => (
+                            {blogPostsData.filter(post => post.label === label).map((post, index) => (
                                 <article key={index} className={styles.article}>
                                     <div>
                                         <h3 id={`${post.id}`}>

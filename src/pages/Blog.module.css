@@ -11,7 +11,9 @@
 }
 
 .resources a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     color: var(--text-nav-color);
     cursor: pointer;
 }
@@ -72,7 +74,7 @@
     left: 0;
     right: 0;
     top: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .article .article--author--container svg path {
@@ -95,13 +97,16 @@
     fill: var(--text-light-color);
 }
 
-.article:focus-within:not(:active) {
-    outline: 3px solid var(--bg-dark-color);
-    outline-offset: 4px;
+.article:hover,
+.article:focus-within {
+    outline: 1.7px solid var(--bg-dark-color);
+    outline-offset: 6px;
+    border-radius: 10px;
 }
 
-.article:focus-within:not(:active) .article--description{
-    border-left: none;
+.article:hover .article--description,
+.article:focus-within .article--description{
+    border-left: var(--yellow-border) solid var(--cream-color);
 }
 
 .article:focus-within .article--link {

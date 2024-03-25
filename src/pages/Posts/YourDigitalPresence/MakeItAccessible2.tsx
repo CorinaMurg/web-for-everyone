@@ -45,7 +45,7 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {  
-    useDocTitle("Let's Make It Accessible Part Two | Web for Everyone");
+    useDocTitle("Let's uncover six more bugs | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
@@ -54,21 +54,21 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your digital presence" 
-                href="/resources#your-digital-presence" 
-                current="Let's make it accessible: Part two"
+                secondLink="Your portfolio site" 
+                href="/blog#your-portfolio-site" 
+                current="Let's uncover six more bugs"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>Your portfolio site:</span>
-                <span>Let's make it accessible!</span>
+                <span>Let's uncover six more</span>
+                <span>bugs</span>
+                
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Your portfolio:</span>
-                <span>Let's make it</span>
-                <span>accessible!</span>
+                <span>Let's uncover</span>
+                <span>six more bugs</span>
             </h1>
-            <p id="subtitle" className="subtitle">Part two: on the hunt for 6 more bugs</p>
+            <p id="subtitle" className="subtitle">Accessibility with HTML, CSS, and a touch of JavaScript </p>
 
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>
@@ -80,9 +80,9 @@ export default function MakeItAccessible() {
                     <p>
                         We continue our hunt for accessibility issues that can affect your 
                         portfolio site. We started with <span> </span>
-                        <Link to="/resources/make-it-accessible-part1" 
+                        <Link to="/blog/finding-the-six-most-common-bugs" 
                         >
-                            Let's make it accessible! Part one: finding the 6 most common bugs
+                            Finding the 6 most common bugs
                         </Link>.
                         We noticed that they can be kept in check with just semantic 
                         HTML, and at times a bit of CSS or ARIA attributes.
@@ -717,15 +717,13 @@ export default function MakeItAccessible() {
 
                     </p>
                     <br/>
-                    {/* <p>
-                        Ready to learn more about accessibility?
-                    </p>
                     <p>
-                        <b>Read next: </b>
-                        <Link to="/resources">
-                            Resources
+                        Ready to learn more about accessibility?
+                        Explore  <span> </span>
+                        <Link to="/blog">
+                            Web for Everyone's Blog
                         </Link>
-                    </p> */}
+                    </p>
                 </div>
 
             </div>

@@ -24,11 +24,11 @@ export default function Navbar({ closeModal }: NavbarTypes) {
 
                 <li>
                     <NavLink
-                        to="/resources"
+                        to="/blog"
                         className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
-                        Resources
+                        Blog
                     </NavLink>
                 </li>
                 <li>

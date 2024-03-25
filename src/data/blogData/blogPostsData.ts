@@ -1,4 +1,4 @@
-export interface ResourcesPostDataTypes {
+export interface BlogPostDataTypes {
     label: string;
     id?: string;
     title: string;
@@ -11,7 +11,7 @@ export interface ResourcesPostDataTypes {
 };
 
 
-export const resourcesPostsData: ResourcesPostDataTypes[] = [
+export const blogPostsData: BlogPostDataTypes[] = [
     {
         "label": "accessibility-101",
         "id": "what-is-accessibility",
@@ -20,7 +20,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "author": "By Web for Everyone",
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
-        "to": `/resources/what-is-accessibility`,
+        "to": `/blog/what-is-accessibility`,
         "ariaLabel": "",
     },
     {
@@ -32,7 +32,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `Have you met the accessibility tree, the DOM's powerful sibling? 
             It's a node structure made up of accessible objects and it's a key player in making
             acessibility happen.`,
-        "to": `/resources/how-accessibility-works`,
+        "to": `/blog/how-accessibility-works`,
         "ariaLabel": "",
     },
     {
@@ -44,7 +44,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": 
             `The bad news: a handful of bugs is responsible for the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
-        "to": `/resources/most-common-bugs`,
+        "to": `/blog/most-common-bugs`,
         "ariaLabel": "The Most Common Accessibility Bugs post by Web for Everyone.",
     },
     {
@@ -92,7 +92,7 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
         "description": `How do you bring focus to a link: with ":focus" or ":focus-visible"?
             For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
             Let's match these terms agaist each other to see how they differ.`,
-        "to": `/resources/similar-but-different`,
+        "to": `/blog/similar-but-different`,
         "ariaLabel": "",
     },
     {
@@ -133,25 +133,25 @@ export const resourcesPostsData: ResourcesPostDataTypes[] = [
     },
     
     {
-        "label": "your-digital-presence",
-        "id": "make-it-accessible-part1",
-        "title": "Your portfolio site: Let's make it accessible",
-        "subtitle": "Part one: fixing the 6 most common bugs",
+        "label": "your-portfolio-site",
+        "id": "finding-the-six-most-common-bugs",
+        "title": "Finding the six most common bugs",
+        "subtitle": "",
         "author": "By Web for Everyone",
-        "description": `You're adding the finishing touches to your portfolio site. But will it be ready 
+        "description": `You're adding the finishing touches to your portfolio site. Will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,
-        "to": `/resources/make-it-accessible-part1`,
+        "to": `/blog/finding-the-six-most-common-bugs`,
         "ariaLabel": "",
     },
     {
-        "label": "your-digital-presence",
-        "id": "make-it-accessible-part2",
-        "title": "Your portfolio site: Let's make it accessible",
-        "subtitle": "Part two: on the hunt for 6 more bugs",
+        "label": "your-portfolio-site",
+        "id": "lets-uncover-six-more-bugs",
+        "title": "Let's uncover six more bugs",
+        "subtitle": "",
         "author": "By Web for Everyone",
-        "description": `We've caught the 6 most common accessibility bugs. Can we find 6 more? Will they be
+        "description": `We've uncovered the 6 most common accessibility bugs. Can we find 6 more? Will they be
             as easy to fix? Let's learn where to look and how to avoid them.`,
-        "to": `/resources/make-it-accessible-part2`,
+        "to": `/blog/lets-uncover-six-more-bugs`,
         "ariaLabel": "",
     },
     // {

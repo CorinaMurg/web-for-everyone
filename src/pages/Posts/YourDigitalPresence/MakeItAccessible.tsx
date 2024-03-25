@@ -47,7 +47,7 @@ const contents = [
 ]
 
 export default function MakeItAccessible() {
-    useDocTitle("Let's Make It Accessible Part One | Web for Everyone");
+    useDocTitle("Finding the six most common bugs | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
@@ -56,21 +56,21 @@ export default function MakeItAccessible() {
             
             {/* **************Back Links********************** */}
             <BackLinks 
-                secondLink="Your digital presence"
-                href="/resources#your-digital-presence" 
-                current="Let's make it accessible: Part one"
+                secondLink="Your portfolio site"
+                href="/blog#your-portfolio-site" 
+                current="Finding the six most common bugs"
             />
            
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>Your portfolio site:</span>
-                <span>Let's make it accessible!</span>
+                <span>Finding the six most</span>
+                <span>common bugs</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Your portfolio:</span>
-                <span>Let's make it</span>
-                <span>accessible!</span>
+                <span>Finding</span>
+                <span>the six most </span>
+                <span>common bugs</span>
             </h1>
-            <p id="subtitle" className="subtitle">Part one: fixing the 6 most common bugs</p>
+            <p id="subtitle" className="subtitle">Accessibility with just HTML and CSS</p>
         
             {/* **************Table of Contents********************** */}
             <TableOfContents contents={contents} activeId={activeId}/>
@@ -641,9 +641,9 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p className="margin-top-30">
-                        <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part2">
-                            Let's make it accessible! Part two: on the hunt for 6 more bugs
+                        <span className="bold">Read next: </span>
+                        <Link to="/blog/lets-uncover-six-more-bugs">
+                            Let's uncover six more bugs
                         </Link>
                     </p>
                 </div>

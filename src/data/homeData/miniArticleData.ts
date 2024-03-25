@@ -15,7 +15,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         description: `When you create 
             websites and apps that everyone, including people with disabilities, can easily navigate and understand, 
             you make accessibility happen. `,
-        link: "/resources/what-is-accessibility",
+        link: "/blog/what-is-accessibility",
         ariaLabel: "What is Accessibility? Why does it matter? article by Web for Everyone.",
         image: "assets/images/istockSmall2.jpg",
         imageAlt: "",
@@ -26,7 +26,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         description: `Take a peek behind the scenes! Learn about the DOM's smaller but powerful sibling, the accessibility tree, 
             and how assistive technologies use it for accessibility.`,
         
-        link: "/resources/how-accessibility-works",
+        link: "/blog/how-accessibility-works",
         ariaLabel: "Build with accessibility in mind blog post.",
         image: "assets/images/istockSmall3.jpg",
         imageAlt: "",
@@ -36,7 +36,7 @@ export const miniArticleData: MiniArticleDataTypes[] = [
         title: "The most common bugs",
         description: `The bad news: a handful of bugs is responsible for most
             accessibility bugs detected via automated tools. The good news: they are quite easy to avoid or fix.`,
-        link: "/resources/most-common-bugs",
+        link: "/blog/most-common-bugs",
         ariaLabel: "Most common accessibility bugs as revealed by the WebAIM Million analysis.",
         image: "assets/images/istockSmall1.jpg",
         imageAlt: "",
