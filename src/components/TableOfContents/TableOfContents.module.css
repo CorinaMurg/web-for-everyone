@@ -30,7 +30,7 @@
     font-family: inherit;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 22px;
     padding-inline-start: 0;
     background-color: var(--bg-dark-color);  
     border-radius: 5px;
