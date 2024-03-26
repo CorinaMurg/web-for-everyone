@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '../../hooks/useScrollToTop';
 import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './WeCanHelp.module.css';
 import '../../global.css';
@@ -17,7 +18,9 @@ export default function WeCanHelp() {
                     <h3><span>Checklist </span> <span>for bugs</span></h3>
                     <p>
                         Use <span> </span>
-                        <Link to="/resources#your-digital-presence">
+                        <Link to="/blog#your-portfolio-site"
+                            onClick = {() => { useScrollToTop(); }}
+                        >
                             Your Digital Presence
                         </Link> <span> </span>
                         guide to find and fix common accessibility issues.

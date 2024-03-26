@@ -64,7 +64,7 @@
 .table-contents ul li a.active {
     color: var(--code-blue-color);
     border: 1.7px solid var(--code-blue-color);
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 2px;
     font-weight: 400; 
     text-decoration: none;
@@ -81,7 +81,7 @@
     outline: 2px solid var(--cream-color);
     outline-offset: 2px;
     padding: 2px;
-    border-radius: 0;
+    border-radius: 7px;
 }
 
 @media screen and (max-width: 970px) {

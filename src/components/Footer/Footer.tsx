@@ -34,7 +34,7 @@ export default function Footer() {
                                     // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                     onClick={() => { useScrollToTop()}}
                                 >
-                                    <span className="footer--nav-link">Resources</span>
+                                    <span className="footer--nav-link">Blog</span>
                                 </NavLink>
                             </li>
                             <li>

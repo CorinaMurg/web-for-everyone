@@ -49,6 +49,15 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                         Accessibility Statement
                     </NavLink>
                 </li>
+                {/* <li className="mobile-only-link">
+                    <a href="https://www.linkedin.com/company/webforeveryone/" 
+                        target="_blank" rel="noopener noreferrer"
+                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                    >
+                        <span >LinkedIn</span>
+                        <span className="sr-only"> (opens in new tab)</span>
+                    </a>
+                </li> */}
             </ul> 
         </nav>
     )

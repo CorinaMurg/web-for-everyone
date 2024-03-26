@@ -51,7 +51,7 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
             }}   
         >
             <div className='modal-header'>
-                <Logo color = "var(--text-dark-color)" fontWeight={700}/>
+                <Logo color = "var(--text-dark-color)" fontWeight={600}/>
                 <button className='modal-close-button' onClick={closeModal}>
                     <span className='sr-only'>Close Navigation Menu</span>
                 </button>

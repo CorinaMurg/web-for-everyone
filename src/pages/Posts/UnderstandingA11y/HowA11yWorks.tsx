@@ -82,7 +82,7 @@ export default function MostCommonBugs() {
             
             <BackLinks 
                 secondLink="Accessibility 101" 
-                href="/resources#accessibility-101" 
+                href="/blog#accessibility-101" 
                 current="How accessibility works"
             />
             
@@ -865,7 +865,7 @@ export default function MostCommonBugs() {
                     <p className="margin-top-30">
                         <b>Read next: </b>
                         <Link 
-                            to="/resources/most-common-bugs" 
+                            to="/blog/most-common-bugs" 
                         >
                             The most common acessibility bugs
                         </Link>

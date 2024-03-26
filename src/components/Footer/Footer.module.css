@@ -63,9 +63,10 @@ footer a {
 }
 
 footer a:focus-visible {
-    outline: 2px solid var(--cream-color);
-    outline-offset: 3px;
+    outline: 1.7px solid var(--cream-color);
+    outline-offset: 5px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 
@@ -77,12 +78,12 @@ footer a:hover {
 }
 
 
-footer a.active-link {
+/* footer a.active-link {
     text-decoration: underline;
     color: var(--cream-color);
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
-}
+} */
 
 footer ul {
     padding-inline-start: 0;
@@ -98,6 +99,7 @@ footer li {
     font-weight: 400;
     text-transform: uppercase;
     padding-top: 3px;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {

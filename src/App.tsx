@@ -35,7 +35,7 @@ export default function App() {
                             {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
                             <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
                             {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
-                            <Route path="finding-the-six-most-common-bugs" element={<MakeItAccessible />} />
+                            <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
                             <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
                             <Route path="similar-but-different" element={<SimilarButDifferent />} />
                                 

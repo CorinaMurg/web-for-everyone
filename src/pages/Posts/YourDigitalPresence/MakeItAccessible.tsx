@@ -58,15 +58,15 @@ export default function MakeItAccessible() {
             <BackLinks 
                 secondLink="Your portfolio site"
                 href="/blog#your-portfolio-site" 
-                current="Finding the six most common bugs"
+                current="Fixing the six most common bugs"
             />
            
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>Finding the six most</span>
+                <span>Fixing the six most</span>
                 <span>common bugs</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Finding</span>
+                <span>Fixing</span>
                 <span>the six most </span>
                 <span>common bugs</span>
             </h1>

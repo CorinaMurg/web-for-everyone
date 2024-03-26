@@ -64,7 +64,7 @@ export default function About() {
                      </p>
                      <p>
                          Start with the <span> </span>
-                         <Link to="/resources#your-digital-presence"> 
+                         <Link to="/blog#your-portfolio-site"> 
                              Your Digital Presence
                          </Link> series to evaluate your portfolio site and eliminate, if present, 
                          some of the most common bugs.

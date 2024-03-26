@@ -79,6 +79,7 @@ export default function Home() {
             </div>
             
             <section 
+                role="group"
                 aria-labelledby="understanding-accessibility" 
                 className={` ${styles['mini-articles']} scroll-target `}      
             >

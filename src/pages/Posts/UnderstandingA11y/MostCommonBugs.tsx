@@ -38,7 +38,7 @@ export default function MostCommonBugs() {
         <div className={`article-container ${styles['commonbugs-container']}`}>
             <BackLinks 
                 secondLink="Accessibility 101"
-                href="/resources#accessibility-101" 
+                href="/blog#accessibility-101" 
                 current="The most common bugs"
             />
             
@@ -506,8 +506,8 @@ export default function MostCommonBugs() {
                     
                     <p>
                         <b>Read next: </b>
-                        <Link to="/resources/make-it-accessible-part1">
-                            Let's make it accessible! Part one: fixing the 6 most common bugs
+                        <Link to="/blog/fixing-the-six-most-common-bugs">
+                            Fixing the 6 most common bugs
                         </Link>
                     </p>                 
                 </div>

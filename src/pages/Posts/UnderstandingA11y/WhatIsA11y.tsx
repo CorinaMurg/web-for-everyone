@@ -42,7 +42,7 @@ export default function WhatIsA11y() {
         <div className="article-container whatisa11y-container">
             <BackLinks 
                 secondLink="Accessibility 101"
-                href="/resources#accessibility-101" 
+                href="/blog#accessibility-101" 
                 current="What is accessibility?"
             />
             
@@ -341,7 +341,7 @@ export default function WhatIsA11y() {
                          
                     <p>
                         <b>Read next: </b>
-                        <Link to="/resources/how-accessibility-works">
+                        <Link to="/blog/how-accessibility-works">
                             How accessibility works
                         </Link>
                     </p>

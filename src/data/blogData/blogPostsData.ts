@@ -17,7 +17,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "what-is-accessibility",
         "title": "What is accessibility?",
         "subtitle": "",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
         "to": `/blog/what-is-accessibility`,
@@ -28,7 +28,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "how-accessibility-works",
         "title": "How accessibility works",
         "subtitle": "",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": `Take a peek behind the scenes! Learn about the DOM's smaller but powerful sibling, 
             the accessibility tree, 
             and how assistive technologies use it for accessibility.`,
@@ -40,7 +40,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "most-common-bugs",
         "title": "The most common accessibility bugs",
         "subtitle": "Findings from the 2023 WebAIM Million Study",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": 
             `The bad news: a handful of bugs is responsible for the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
@@ -88,7 +88,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "similar-but-different",
         "title": "Similar, but different: HTML and ARIA terms",
         "subtitle": "",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": `How do you bring focus to a link: with ":focus" or ":focus-visible"?
             For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
             Let's match these terms agaist each other to see how they differ.`,
@@ -134,10 +134,10 @@ export const blogPostsData: BlogPostDataTypes[] = [
     
     {
         "label": "your-portfolio-site",
-        "id": "finding-the-six-most-common-bugs",
-        "title": "Finding the six most common bugs",
+        "id": "fixing-the-six-most-common-bugs",
+        "title": "Fixing the six most common bugs",
         "subtitle": "",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": `You're adding the finishing touches to your portfolio site. Will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,
         "to": `/blog/finding-the-six-most-common-bugs`,
@@ -148,7 +148,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "lets-uncover-six-more-bugs",
         "title": "Let's uncover six more bugs",
         "subtitle": "",
-        "author": "On webforeveryone.us",
+        "author": "",
         "description": `We've uncovered the 6 most common accessibility bugs. Can we find 6 more? Will they be
             as easy to fix? Let's learn where to look and how to avoid them.`,
         "to": `/blog/lets-uncover-six-more-bugs`,
