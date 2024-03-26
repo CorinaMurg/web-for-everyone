@@ -368,7 +368,7 @@ h4 {
 }
 
 .highlight {
-    background-color: var(--lightCream-color);
+    background-color: white;
     font-weight: 500;
     padding: 10px 20px 15px 20px;
     width: 100%;
@@ -644,6 +644,7 @@ summary {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+    color: var(--text-nav-color);
 }
 
 summary::marker {
