@@ -401,7 +401,7 @@ export default function MakeItAccessible() {
                     </p>
                     <p>
                         Follow this link to <span> </span>
-                        <Link to="/resources/how-accessibility-works#the-accessible-name">
+                        <Link to="/blog/how-accessibility-works#the-accessible-name">
                             review the accessible name
                         </Link>
                         , or continue reading for a list of solutions.

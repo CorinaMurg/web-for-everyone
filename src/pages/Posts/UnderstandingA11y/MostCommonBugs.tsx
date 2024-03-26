@@ -191,15 +191,15 @@ export default function MostCommonBugs() {
                         <span className="bold">Note</span>: This article focuses on statistics from the study and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
-                        <Link to="/resources/make-it-accessible-part1">
-                            Let's make it accessible! Part one: fixing the 6 most common bugs
+                        <Link to="/blog/fixing-the-six-most-common-bugs">
+                            Fixing the 6 most common bugs
                         </Link>
                         .
                     </p>
                     <p> 
                         <span className="bold">Recommended</span>: To understand the impact of these bugs on users with disabilities,
                         make sure to review <span> </span>
-                        <Link to="/resources/how-accessibility-works">
+                        <Link to="/blog/how-accessibility-works">
                             How accessibility works
                         </Link>, especially the section on the <span className="bold">accessible name</span>.
                     </p>
@@ -278,7 +278,7 @@ export default function MostCommonBugs() {
                     </p>
                     <p>
                         Follow this link to <span> </span>        
-                        <Link to="/resources/how-accessibility-works#the-accessible-name">
+                        <Link to="/blog/how-accessibility-works#the-accessible-name">
                             review how the name of an interactive element is determined
                         </Link> 
                         .
@@ -346,7 +346,7 @@ export default function MostCommonBugs() {
                         </p>
                         <p className="white-bg">
                             An interactive element like a button must have a descriptive <span> </span>
-                            <Link to="/resources/how-accessibility-works#the-accessible-name">
+                            <Link to="/blog/how-accessibility-works#the-accessible-name">
                                 accessible name
                             </Link>. 
                             This button is missing any of the attributes that could be used by the browser 

@@ -199,7 +199,7 @@ export default function MostCommonBugs() {
                                     &lt;li&gt;
                                 </code>
                                 <code className="padding-left-60">
-                                    <span className="code-pink-color">&lt;a&gt;</span>Resources<span className="code-pink-color">&lt;/a&gt;</span>
+                                    <span className="code-pink-color">&lt;a&gt;</span>Blog<span className="code-pink-color">&lt;/a&gt;</span>
                                 </code>
                                 <code className="padding-left-40">
                                     &lt;/li&gt;
@@ -223,11 +223,11 @@ export default function MostCommonBugs() {
 
                                 <code className="padding-left-40 margin-top-30">listitem</code>
                                 <code className="padding-left-60">
-                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Resources</span>"
+                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Blog</span>"
                                     <span> </span>
                                     <span className="code-purple-color">focusable</span>: true
                                 </code>
-                                <code className="padding-left-80">StaticText "Resources"</code>
+                                <code className="padding-left-80">StaticText "Blog"</code>
                                 <code className="padding-left-40 margin-top-30">// other list items</code>
                             </div>
                         </div>
@@ -512,9 +512,9 @@ export default function MostCommonBugs() {
 
                         <code>listitem</code>
                         <code className="padding-left-30">
-                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Resources</span>"
+                            <span className="code-pink-color">link</span> "<span className="code-purple-color">Blog</span>"
                         </code>
-                        <code className="padding-left-60">StaticText "Resources"</code>
+                        <code className="padding-left-60">StaticText "Blog"</code>
                     </div>
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 
@@ -733,7 +733,7 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 margin-top-20">
                                 Its main difference with <span className="bold">aria-labelledby</span>? It's not visible, and it's only announced
                                 to the screen reader user. Read more about <span> </span>
-                                <Link to="/resources/similar-but-different#aria-label-aria-labelledby">
+                                <Link to="/blog/similar-but-different#aria-label-aria-labelledby">
                                     the difference between aria-label and aria-labelledby
                                 </Link>.
                             </p> 
