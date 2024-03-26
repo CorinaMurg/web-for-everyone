@@ -54,7 +54,9 @@ footer .logo-link {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
     color: inherit;
     font-weight: 400;
     margin-bottom: 10px;
@@ -63,13 +65,14 @@ footer a {
 footer a:focus-visible {
     outline: 2px solid var(--cream-color);
     outline-offset: 3px;
+    text-decoration: none;
 }
 
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration-style: wavy;
     color: var(--cream-color);
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
 

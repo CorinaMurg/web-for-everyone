@@ -17,7 +17,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "what-is-accessibility",
         "title": "What is accessibility?",
         "subtitle": "",
-        "author": "By Web for Everyone",
+        "author": "On webforeveryone.us",
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
         "to": `/blog/what-is-accessibility`,
@@ -28,10 +28,10 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "how-accessibility-works",
         "title": "How accessibility works",
         "subtitle": "",
-        "author": "By Web for Everyone",
-        "description": `Have you met the accessibility tree, the DOM's powerful sibling? 
-            It's a node structure made up of accessible objects and it's a key player in making
-            acessibility happen.`,
+        "author": "On webforeveryone.us",
+        "description": `Take a peek behind the scenes! Learn about the DOM's smaller but powerful sibling, 
+            the accessibility tree, 
+            and how assistive technologies use it for accessibility.`,
         "to": `/blog/how-accessibility-works`,
         "ariaLabel": "",
     },
@@ -40,7 +40,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "most-common-bugs",
         "title": "The most common accessibility bugs",
         "subtitle": "Findings from the 2023 WebAIM Million Study",
-        "author": "By Web for Everyone",
+        "author": "On webforeveryone.us",
         "description": 
             `The bad news: a handful of bugs is responsible for the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
@@ -52,7 +52,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "importance-of-semantic-html",
         "title": "The importance of semantic HTML",
         "subtitle": "",
-        "author": "By Corina Murg on dev.to",
+        "author": "Blog post on dev.to",
         "description": `In conversations about accessibility, the use of semantic HTML is most 
             likely to be the first and most common piece of advice. This post looks at the role it 
             plays in accessibility and beyond.`,
@@ -64,7 +64,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "html-buttons-or-links",
         "title": "HTML: buttons or links? How to choose",
         "subtitle": "",
-        "author": "By Corina Murg on dev.to",
+        "author": "Blog post on dev.to",
         "description": `Buttons and links are fundamental elements in web design, each with distinct semantic 
             meanings and accessibility implications. For accessibility, it's essential to use the appropriate 
             element given the functionality you aim to implement. Let’s see how to use them!`,
@@ -88,7 +88,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "similar-but-different",
         "title": "Similar, but different: HTML and ARIA terms",
         "subtitle": "",
-        "author": "By Web for Everyone",
+        "author": "On webforeveryone.us",
         "description": `How do you bring focus to a link: with ":focus" or ":focus-visible"?
             For a button that lacks visible text, do you use "aria-label" or "aria-labelledby" to create an accessible name? 
             Let's match these terms agaist each other to see how they differ.`,
@@ -100,7 +100,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "html-tag-vs-element",
         "title": "HTML: tag vs. element",
         "subtitle": "",
-        "author": "By Corina Murg on dev.to",
+        "author": "Blog post on dev.to",
         "description": `It’s common for web developers to use HTML element and HTML tag interchangeably. 
             But are they really the same thing? Or is there more than meets the eye? Let's decode this lingo!`,
         "href": `https://dev.to/corinamurg/html-tag-vs-element-3dc5`,
@@ -111,7 +111,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "codepen-css",
         "title": "A CSS-focused CodePen collection",
         "subtitle": "",
-        "author": "By Corina Murg  on codepen.io",
+        "author": "On codepen.io",
         "description": `CSS can play an active role in improving the accessibility of your website. 
             Creating a skip link
             or adding a media query to account for reduced motion preferences are
@@ -125,7 +125,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "codepen-components",
         "title": "CodePens of accessible components",
         "subtitle": "",
-        "author": "By Corina Murg on codepen.io",
+        "author": "On codepen.io",
         "description": `This is a collection of small accessible components that you can use in your projects.
             Buttons, links or dropdown menus can be all easily built from HTML tags and CSS, with just a touch of JavaScript.`,
         "href": "https://codepen.io/collection/zxbLrQ",
@@ -137,7 +137,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "finding-the-six-most-common-bugs",
         "title": "Finding the six most common bugs",
         "subtitle": "",
-        "author": "By Web for Everyone",
+        "author": "On webforeveryone.us",
         "description": `You're adding the finishing touches to your portfolio site. Will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs.`,
         "to": `/blog/finding-the-six-most-common-bugs`,
@@ -148,7 +148,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "id": "lets-uncover-six-more-bugs",
         "title": "Let's uncover six more bugs",
         "subtitle": "",
-        "author": "By Web for Everyone",
+        "author": "On webforeveryone.us",
         "description": `We've uncovered the 6 most common accessibility bugs. Can we find 6 more? Will they be
             as easy to fix? Let's learn where to look and how to avoid them.`,
         "to": `/blog/lets-uncover-six-more-bugs`,

@@ -46,6 +46,15 @@ export default function Footer() {
                                     <span className="footer--nav-link">About</span>
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink 
+                                    to="/accessibility-statement" 
+                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                                    onClick={() => { useScrollToTop() }}
+                                >
+                                    <span className={styles['footer--nav-link']}>Accessibility Statement</span>
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                     <div className={styles['footer--right--contact']}>
@@ -57,15 +66,7 @@ export default function Footer() {
                                     <span className="sr-only"> (opens in new tab)</span>
                                 </a>
                             </li>
-                            <li>
-                                <NavLink 
-                                    to="/accessibility-statement" 
-                                    // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
-                                    onClick={() => { useScrollToTop() }}
-                                >
-                                    <span className={styles['footer--nav-link']}>Accessibility Statement</span>
-                                </NavLink>
-                            </li>
+                            
                         </ul>
                         
                     </div>

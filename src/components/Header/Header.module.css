@@ -20,7 +20,7 @@ header {
 .beta {
     background-color: var(--hero-pink);
     color: var(--text-dark-color);
-    /* border: 2px solid gray; */
+    border: 1.7px solid gray;
     padding: 2px 6px 2px 7px;
     border-radius: 10px;
     vertical-align: middle;
