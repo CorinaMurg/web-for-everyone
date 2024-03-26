@@ -51,7 +51,7 @@ export default function About() {
                      </p>
                      <p>       
                          Jump to the <span> </span>
-                         <Link to="/resources#understanding-accessibility"> 
+                         <Link to="/blog#understanding-accessibility"> 
                              Understanding Accessibility
                          </Link> series for an overview of accessibility concepts and to learn about the
                          most common accessibility bugs.

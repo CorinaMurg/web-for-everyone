@@ -268,7 +268,7 @@
 
     .resources--table-contents ul {
         padding: 25px;
-        border-radius: 0;
+        
     }
     .section-content {
         width: 75%;
@@ -306,6 +306,7 @@
         gap: 30px;
         height: auto;
         padding-block: 25px;
+        border-radius: 0;
     }
     .article:hover,
     .article:focus-within {

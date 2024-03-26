@@ -80,7 +80,7 @@ export default function MakeItAccessible() {
                     <p>
                         We continue our hunt for accessibility issues that can affect your 
                         portfolio site. We started with <span> </span>
-                        <Link to="/blog/finding-the-six-most-common-bugs" 
+                        <Link to="/blog/fixing-the-six-most-common-bugs" 
                         >
                             Finding the 6 most common bugs
                         </Link>.
