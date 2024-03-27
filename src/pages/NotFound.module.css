@@ -22,7 +22,7 @@
     border-radius: 7px;
     border: 1.8px solid var(--text-nav-color);
     background-color: var(--yellow-color);
-    width: 16rem;
+    width: 17rem;
     margin-top: 30px;
     margin-bottom: 100px;
 }
@@ -79,4 +79,33 @@
     font-weight: 700;
     font-style: italic;
     color: var(--text-dark-color);
+}
+
+@media screen and (max-width: 620px) {
+    .poet-question {
+        width: 100%;
+    }
+    .return-home-link {
+        width: 19rem;
+        padding: 8px 15px;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .quote {
+        margin-left: 0;
+        padding-left: 10px;
+    }
+    .quote p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .quote p {
+        font-size: 1.1rem;
+    }
+    
 }

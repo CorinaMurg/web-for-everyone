@@ -90,8 +90,8 @@ export default function MostCommonBugs() {
                 <span>How accessibility works</span> 
             </h1>
             <h1 className="article-heading-mobile">
-                <span>How</span>
-                <span>accessibility works</span>
+                <span>How accessibility</span>
+                <span>works</span>
             </h1>
             <p id="subtitle" className="subtitle">DOM's powerful sibling: the accessibility tree</p>
 
