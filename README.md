@@ -13,6 +13,8 @@ https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=
 
 3. Make aside a direct child of the body
 
+4. Remove as many accordions as possible
+
 ## Features to add:
 1. Dark mode
 
