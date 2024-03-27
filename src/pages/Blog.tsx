@@ -36,10 +36,11 @@ export default function Accessibility() {
         <div className={`${styles.resources} resources no-back-links-container`}>
 
             <h1 className="article-heading-desktop">
-                <span>Resources</span>
+                <span>Accessibility resources</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Resources</span>
+                <span>Accessibility</span>
+                <span>resources</span>
             </h1>
             <div className={styles['resources--table-contents']}>
                 <h2 id="table-of-contents">
