@@ -73,9 +73,9 @@ export default function Home() {
                     </Link>
                 </div> 
             </section>
-
+            <WeCanHelp/>
             <div className={styles['gray-bg']}>
-                <WeCanHelp/>
+                
             </div>
             
             <section 

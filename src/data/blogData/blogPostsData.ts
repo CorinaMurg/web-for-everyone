@@ -139,7 +139,8 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "subtitle": "",
         "author": "",
         "description": `You're adding the finishing touches to your portfolio site. Will it be ready 
-                to welcome all visitors? Let's check for the most common accessibility bugs.`,
+                to welcome all visitors? Let's check for the most common accessibility bugs. The only 
+                tools we'll need are HTML and CSS.`,
         "to": `/blog/finding-the-six-most-common-bugs`,
         "ariaLabel": "",
     },
@@ -149,8 +150,8 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "title": "Let's uncover six more bugs",
         "subtitle": "",
         "author": "",
-        "description": `We've uncovered the 6 most common accessibility bugs. Can we find 6 more? Will they be
-            as easy to fix? Let's learn where to look and how to avoid them.`,
+        "description": `We've learned about the 6 most common accessibility bugs. Can we find 6 more? Will JavaScript
+            be necessary this time? Let's learn where to look for them and how to avoid them.`,
         "to": `/blog/lets-uncover-six-more-bugs`,
         "ariaLabel": "",
     },
