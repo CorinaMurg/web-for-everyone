@@ -1,7 +1,6 @@
 
 
 .article-container a,
-.about a,
 .a11y-statement a,
 .not-found-container a {
     color: var(--text-dark-color);
@@ -124,7 +123,7 @@
     display: inline-block;
     line-height: 1.1;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;

@@ -37,7 +37,7 @@ export default function Home() {
                 <div className={styles['hero--text--left']}> 
                     <h2>New to accessibility?</h2>
                     <Link 
-                        to="/#understanding-accessibility" 
+                        to="/#accessibility-101" 
                         className={styles['continue-to-article']}
                     >   
                         Accessibility 101
@@ -73,17 +73,18 @@ export default function Home() {
                     </Link>
                 </div> 
             </section>
+
             <WeCanHelp/>
-            <div className={styles['gray-bg']}>
-                
+
+            <div className={styles['gray-bg']}>           
             </div>
             
             <section 
                 role="group"
-                aria-labelledby="understanding-accessibility" 
-                className={` ${styles['mini-articles']} scroll-target `}      
+                aria-labelledby="accessibility-101" 
+                className={` ${styles['mini-articles']} scroll-target`}      
             >
-                <h2 id="understanding-accessibility">Accessibility 101</h2>
+                <h2 id="accessibility-101">Accessibility 101</h2>
                 <ul>
                     {miniArticleData.slice(0, 3).map((article, index) => (
                         <li key={index}> 

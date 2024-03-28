@@ -48,19 +48,100 @@
 }
 
 .about--me--text h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .about--me--text h2:nth-of-type(2) {
     margin-top: 50px;
 }
 
-.about--how-to-start p {
-    margin-block: 0 !important;
+.about--me--text h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 30px;
+    margin-bottom: 10px;
+} 
+
+.about a {
+    text-decoration: none;
 }
+
+.about-cta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    align-self: flex-start;
+    text-decoration: none;
+    color: var(--text-dark-color);
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 1.8px solid var(--text-nav-color);
+    width: 17rem;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.about-cta--new {
+    background-color: var(--hero-lightBlue-faded);
+    letter-spacing: 0.5px;
+}
+
+.about-cta--know {
+    background-color: var(--yellow-color);
+}
+
+.about-cta--linkedin {
+    background-color: var(--yellow-color);
+}
+
+.about-cta svg[id="arrow"] circle {
+    fill: var(--text-dark-color);
+}
+
+.about-cta svg[id="arrow"] path {
+    fill: white;
+}
+
+.about-cta svg[id="bug"] {
+    display: none; 
+  }
+  
+.about-cta:hover svg[id="arrow"] {
+    display: none; 
+}
+
+.about-cta:focus-visible svg[id="arrow"] {
+    display: none; 
+}
+
+.about-cta:hover svg[id="bug"] {
+    display: block; 
+    fill: var(--text-dark-color);
+}
+
+.about-cta:focus-visible svg[id="bug"] {
+    display: block; 
+    fill: var(--text-dark-color);
+}
+
+/* .about--how-to-start {
+    background-color: var(--body-bg-color);
+} */
+/* .about--how-to-start--content {
+    padding-left: 20px;
+} */
+/* .about--how-to-start--content p {
+    margin-bottom: 10px !important;
+} */
+
 .we-container {
     background-color: var(--text-dark-color);
     display: inline;

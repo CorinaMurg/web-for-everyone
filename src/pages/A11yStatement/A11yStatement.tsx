@@ -31,7 +31,7 @@ export default function Feedback() {
                     href="https://www.w3.org/WAI/standards-guidelines/wcag/"
                     visibleText="Web Content Accessibility Guidelines (WCAG) 2.2 AA"
                 />. <span> </span>
-                Please note that this website is not a finished product, 
+                Please note that this is not a finished product, 
                 and certain accessibility aspects are still in development.
             </p>
             <h2 id="report-a11y-issues" className="scroll-target section">
