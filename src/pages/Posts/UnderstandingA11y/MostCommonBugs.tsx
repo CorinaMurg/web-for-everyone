@@ -100,7 +100,9 @@ export default function MostCommonBugs() {
                     <div className="highlight-one-line highlight margin-top-20">
                         <details>
                             <summary>
-                                How do we know what's an accessibility bug?
+                                <span className="summary-title">
+                                    How do we know what's an accessibility bug?
+                                </span>
                             </summary>
                             <br />
                             <div className="details-content">

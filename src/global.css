@@ -849,9 +849,9 @@ ul[class^="checkmark-list"] li p {
         padding-inline: var(--main-margin);
     }
 
-    summary h3 {
+    /* summary h3 {
         padding-inline: 0;
-    }
+    } */
 
     summary {
         padding-inline: var(--main-margin);

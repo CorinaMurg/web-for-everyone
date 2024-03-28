@@ -82,7 +82,7 @@ export default function MakeItAccessible() {
                         portfolio site. We started with <span> </span>
                         <Link to="/blog/fixing-the-six-most-common-bugs" 
                         >
-                            Finding the 6 most common bugs
+                            Fixing the 6 most common bugs
                         </Link>.
                         We noticed that they can be kept in check with just semantic 
                         HTML, and at times a bit of CSS or ARIA attributes.
@@ -133,8 +133,7 @@ export default function MakeItAccessible() {
                         <ul role="list" className="bullet-point-list">
                             <li>
                                 <p className="white-bg">
-                                    not to include <code>user-scalable=no</code> in
-                                    the <code>viewport</code> meta tag.
+                                    not include <code>user-scalable=no</code> in the <code>viewport</code> meta tag.
                                 </p>
                             </li>
                             <li>
@@ -182,6 +181,9 @@ export default function MakeItAccessible() {
                             Do make sure each page has a unique title!
                         </h4>
                         
+                        <p>
+                            If you're building with vanilla JavaScript, add a title to each HTML file.
+                        </p>
                         <p className="white-bg">
                             It gets more complicated with a Single Page Application (SPA), but each framework has specific 
                             features or libraries that allow for updating the <code>title</code> for each page.

@@ -125,7 +125,11 @@ export default function WhatIsA11y() {
                     {/* *********WHAT ARE ASSISTIVE TECH************* */}
                     <div className="highlight highlight-one-line">
                         <details>
-                            <summary>What are assistive technologies?</summary>
+                            <summary>
+                                <span className="summary-title">
+                                    What are assistive technologies?
+                                </span>
+                            </summary>
                             <div className="details-content margin-top-20">
                                 <p>
                                     Assistive technologies are software or hardware that help people with disabilities 
