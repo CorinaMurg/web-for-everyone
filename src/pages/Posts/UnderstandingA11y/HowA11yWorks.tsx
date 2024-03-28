@@ -666,8 +666,7 @@ export default function MostCommonBugs() {
                             </p>  
                             <p className="padding-left-20 white-bg margin-top-20">
                                 Note that this is slightly more verbose. So, a button wrapping an image of <span className="bold">x</span> can
-                                have an <code>alt="Close modal"</code> and it will be announced as "Close modal 
-                                graphic button". <span> </span>
+                                have an <code>alt="Close"</code> and it will be announced as "Close graphic button". <span> </span>
                                 (An image is announced either as <span className="bold">graphic</span> or <span className="bold">image</span> 
                                 , depending on the screen reader.)
                             </p>  
@@ -729,7 +728,7 @@ export default function MostCommonBugs() {
                             <p className="padding-left-20 white-bg">
                                 It takes a string value 
                                 that becomes the name of the element. For example, <span> </span>
-                                <code>aria-label="Close survey"</code> could be used to provide the name
+                                <code>aria-label="Close"</code> could be used to provide the name
                                 for a button.
                             </p>
                             <p className="padding-left-20 margin-top-20">
@@ -805,7 +804,7 @@ export default function MostCommonBugs() {
                                 <code className="padding-left-30">
                                     <span className="code-yellow-color">&lt;span</span> class="<span className="code-pink-color">visually-hidden</span>"
                                     <span className="code-yellow-color">&gt;</span>
-                                    Close menu
+                                    Close
                                     <span className="code-yellow-color">&lt;/span&gt;</span> 
                                 </code>
                                 
@@ -815,7 +814,7 @@ export default function MostCommonBugs() {
                             <p className="margin-top-50 white-bg">
                                 The button contains an image and no visible text. 
                                 The browser will use the text from the <code>visually-hidden</code> span to compute 
-                                the accessible name "Close menu".
+                                the accessible name "Close".
                             </p>
                             <p className="white-bg">
                                 For the sighted user, it will be obvious that the purpose of the button is to close 

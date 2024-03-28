@@ -459,12 +459,12 @@ export default function MakeItAccessible() {
 
                     <div className="code code--buttons">
                         <code>
-                            <span className="code-blue-color">&lt;button</span> id="closeModal"
+                            <span className="code-blue-color">&lt;button</span>
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">
                             <span className="code-pink-color">&lt;img</span> 
-                            <span className="code-yellow-color"> alt</span>="Close modal" src="x-mark.svg"
+                            <span className="code-yellow-color"> alt</span>="Close" src="x-mark.svg"
                             <span className="code-pink-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/button&gt;</span></code>
@@ -480,7 +480,7 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         In the example above, the button has no visible text, but contains an image with 
-                        an <code>alt</code> attribute. A screen reader will announce it as <span className="bold">"Close modal graphic button"</span>.
+                        an <code>alt</code> attribute. A screen reader will announce it as <span className="bold">"Close graphic button"</span>.
                     </p>
                     <p className="white-bg">
                         Notice the <span className="bold">"graphic"</span> part? Since the image has 
