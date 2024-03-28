@@ -271,6 +271,13 @@
     /* border-bottom: 1.5px solid gray; */
 }
 
+@media screen and (max-width: 620px) { 
+    .gray-bg {
+        margin-top: 0;
+    }
+    
+}
+
 /* /////////////////////////////////////////////////// */
 .mini-articles {
     display: flex;

@@ -34,7 +34,7 @@ export default function About() {
                             that every user feels seen and valued. 
                         </p>
                         <p>
-                            I created <span className="bold">Web for Everyone</span> to help entry-level developers 
+                            I created <span className={styles['web-for-everyone']}>Web for Everyone</span> to help entry-level developers 
                             embrace accessibility at the start of their careers. 
                         </p>
                     
@@ -74,7 +74,8 @@ export default function About() {
                         
 
                             {/* <h3>Have questions?</h3> */}
-                            <p>Connect. Share your portfolio site. Ask questions. Learn accessibility.</p>
+                            <p>Connect. Share your portfolio site. Ask questions.</p>
+                            <p>Let's learn accessibility together.</p>
                             <a href="https://www.linkedin.com/company/webforeveryone" 
                                 target='_blank' rel="noopener noreferrer"
                                 aria-label="Web for Everyone's LinkedIn page. Opens in a new tab."  

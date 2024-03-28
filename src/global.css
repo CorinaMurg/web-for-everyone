@@ -961,6 +961,7 @@ ul[class^="checkmark-list"] li p {
     .warning p {
         margin-inline: 0;
     }
+ 
 }
 
 @media screen and (max-width: 530px) {

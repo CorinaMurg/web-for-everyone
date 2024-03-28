@@ -333,11 +333,11 @@
         max-width: none;
         min-width: none;
     }
-    .article--author--container {
+    /* .article--author--container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
+    } */
 }
 
 
