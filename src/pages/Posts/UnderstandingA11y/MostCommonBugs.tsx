@@ -161,7 +161,7 @@ export default function MostCommonBugs() {
                     
                     <p className="margin-top-30">
                         The full <span> </span>
-                            <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
+                            <a href="https://webaim.org/projects/million/2023" target="_blank" rel="noreferrer">
                                 WebAIM Million
                                 <span className="sr-only"> opens in a new tab</span>
                                 <span className="external-linksvg-wrap">

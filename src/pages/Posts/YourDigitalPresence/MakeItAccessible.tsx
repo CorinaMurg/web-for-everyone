@@ -82,7 +82,7 @@ export default function MakeItAccessible() {
                     <p>
                         The <span> </span>
                         <ExternalLink 
-                            href="https://webaim.org/projects/million/" 
+                            href="https://webaim.org/projects/million/2023" 
                             visibleText="2023 WebAIM Million Study"
                         />      
                         <span> </span>
