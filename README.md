@@ -34,19 +34,19 @@ button for all screen sizes
 
 ## Content to add
 
-UNDERSTANDING A11Y series:
-Legal aspect of inaccessibility
-Intro to WCAG
-Testing for A11y
-Your users
+### Accessibility 101 series:
+- Legal aspect of inaccessibility
+- Intro to WCAG
+- Testing for A11y
+- Your users
 
-YOUR DIGITAL PRESENCE series:
-Accessible contact form
-Pixels or rem
-Size of clickable area
+### Your portfolio site series:
+- Accessible contact form
+- Pixels or rem
+- Size of clickable area
 
-ACCESSIBLE COMPONENTS
-add more examples
+### Accessible components
+- add more examples
 
 
 
