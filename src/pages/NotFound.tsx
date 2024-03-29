@@ -1,6 +1,7 @@
 
 import React from "react"
 import useDocTitle from "../hooks/useDocTitle"
+import useScrollToTop from "../hooks/useScrollToTop"
 import { Link } from "react-router-dom"
 import styles from './NotFound.module.css'
 import "../global.css"
@@ -27,6 +28,7 @@ export default function NotFound() {
             
             <Link to="/" 
                 className={styles['return-home-link']}
+                onClick={() => { useScrollToTop(); }}
             >
                 Return to Home
                 <svg aria-hidden="true" id="arrow" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
