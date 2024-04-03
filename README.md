@@ -19,6 +19,8 @@ https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=
 
 5. Remove max height on accordions (and check against 1.4.12)
 
+6. Add breadcrumb to mobile
+
 ## Features to add:
 1. Dark mode
 

@@ -1,21 +1,21 @@
-// import { test, expect } from '@playwright/test';
-// import AxeBuilder from '@axe-core/playwright';
-// import { Page } from 'playwright-core';
+import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import { Page } from 'playwright-core';
 
-// test('home page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }, testInfo) => {
-//     await page.goto('https://webforeveryone.us/');
+test('home page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }, testInfo) => {
+    await page.goto('http://localhost:5173/about');
   
-//     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
-//         .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
-//         .analyze();
+    const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
+        .withTags(['wcag253'])
+        .analyze();
 
-//     await testInfo.attach('accessibility-scan-results', {
-//         body: JSON.stringify(accessibilityScanResults, null, 2),
-//         contentType: 'application/json'
-//         });
+    await testInfo.attach('accessibility-scan-results', {
+        body: JSON.stringify(accessibilityScanResults, null, 2),
+        contentType: 'application/json'
+        });
     
-//     expect(accessibilityScanResults.violations).toEqual([]);
-// });
+    expect(accessibilityScanResults.violations).toEqual([]);
+});
 
 // test('resources page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }) => {
 //     await page.goto('https://webforeveryone.us/resources');
