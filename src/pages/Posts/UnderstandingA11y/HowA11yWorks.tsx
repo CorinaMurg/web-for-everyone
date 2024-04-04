@@ -148,7 +148,7 @@ export default function MostCommonBugs() {
                             Find the accessibility tree with Dev Tools <span aria-hidden="true">🔍</span>
                         </h3>
                         <p className="margin-top-50">
-                            <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q&t=9s" 
+                            <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q" 
                                 target="_blank" rel="noopener noreferrer" 
                             >
                                 Video: Debugging accessibility with Chrome DevTools
@@ -678,7 +678,7 @@ export default function MostCommonBugs() {
                                 A better choice is to use an empty <code>alt</code> attribute to hide the image from the screen reader,
                                 and add a <code>visually-hidden</code> span with the accessible name.
                             </p>
-                            <p className="bold bullet-point-line margin-top-30">
+                            {/* <p className="bold bullet-point-line margin-top-30">
                                 desc
                             </p>  
                             <p className="padding-left-20 white-bg">
@@ -691,7 +691,7 @@ export default function MostCommonBugs() {
                                     <code className="padding-left-30"><span className="code-yellow-color">&lt;circle</span> cx="17" cy="17" r="17" fill="currentColor"<span className="code-yellow-color">&gt;</span><span className="code-yellow-color">&lt;/circle&gt;</span></code>
                                     <code><span className="code-blue-color">&lt;/svg&gt;</span></code>
                                 </div>
-                            </div>
+                            </div> */}
                             <p className="bold bullet-point-line margin-top-30">
                                 title
                             </p>
