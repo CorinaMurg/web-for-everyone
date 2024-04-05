@@ -198,7 +198,8 @@ export default function MostCommonBugs() {
                         
                     </p>
                     <p>
-                        <span className="bold">Another note</span>: This article focuses on statistics from the study and why these bugs are problematic 
+                        <span className="bold">Another note</span>: This article focuses on statistics from the study 
+                        and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
                         <Link to="/blog/fixing-the-six-most-common-bugs">
@@ -222,7 +223,7 @@ export default function MostCommonBugs() {
                         <h2>Low contrast text</h2>
                     </div>
                     <p className="white-bg">
-                        Found on <span className="stats">83.6%</span> of pages, this bug involves text without enough 
+                        Found on <span className="stats">81%</span> of pages, this bug involves text without enough 
                         contrast against its background. This text is hard to read, especially for users with visual 
                         impairments.
                     </p>
@@ -282,7 +283,7 @@ export default function MostCommonBugs() {
                         <h2>Empty links</h2>
                     </div>
                     <p>
-                        <span className="stats">Half</span> of the home pages tested had links without a name.
+                        <span className="stats">Almost half</span> of the home pages tested had links without a name.
                         This is a problem because screen reader users rely on a descriptive name
                         to understand the purpose and the destination of a link.
                     </p>
@@ -385,14 +386,13 @@ export default function MostCommonBugs() {
                         <h2>Missing input labels</h2>
                     </div>
                     <p>
-                        <span className="stats">More than a third</span> of
-                        form inputs were not properly labeled.
+                        <span className="stats">Almost half</span> of the pages lacked input labels.
                         Without labels, assitive tech users struggle to understand or use the input.
                     </p>
-                    <p>
+                    {/* <p>
                         <span className="bold">The good news? </span>
                         This is an improvement from 2019 when the ratio was 59%.
-                    </p>
+                    </p> */}
                     <div className="highlight">
                         <h3>Example: an input without a label</h3>
                         
@@ -423,7 +423,7 @@ export default function MostCommonBugs() {
                         <h2>Missing document language</h2>
                     </div>
                     <p>
-                        This bug was found on <span className="stats">18.6%</span> of the home pages audited.
+                        This bug was found on <span className="stats">17%</span> of the home pages audited.
                     </p>
                     <p className="white-bg">
                         If a webpage doesn't have a <code>lang</code> attribute, the screen reader defaults to 
@@ -462,10 +462,10 @@ export default function MostCommonBugs() {
                     </div>
                    
                     <p className="white-bg">
-                        <span className="stats">One fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
+                        <span className="stats">Almost one fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
                         Skipped heading levels (e.g., jumping from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code>) 
-                        were found on more than <span className="stats">40%</span> of all pages.
-                        About <span className="stats">8%</span> of pages had no headings at all.
+                        were found on more than <span className="stats">38%</span> of all pages.
+                        About <span className="stats">11%</span> of pages had no headings at all.
                     </p>
                     <div className="highlight">
                         <h3>Why headings are important</h3>
