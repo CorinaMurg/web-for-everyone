@@ -201,6 +201,10 @@ export default function MostCommonBugs() {
                         whole number. The percentage 96 comes up in two places. As the percentage of home pages with 
                         detected failures, it was rounded up from 95.9%. As the percentage of all errors that these 6 bugs
                         account for, it was rounded down from 96.4%. 
+                    </p>
+                    <p>
+                        Apologies in advance for the many numbers in this article!
+                        Sometimes they are necessary to have a bird's eye view of the situation.
                         
                     </p>
                     <p>
