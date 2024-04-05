@@ -14,10 +14,12 @@ import BackLinks from "../../../components/BackLinks/BackLinks"
 const contents = [
     { href: "#intro", text: "WebAIM Million study" },
     { href: "#low-contrast-text", text: "Low contrast text" },
+    
     { href: "#missing-alt-text-for-images", text: "Missing alt text for images" },
+    { href: "#missing-input-labels", text: "Missing input labels" },
     { href: "#empty-links", text: "Empty links" },
     { href: "#empty-buttons", text: "Empty buttons" },
-    { href: "#missing-input-labels", text: "Missing input labels" },
+    
     { href: "#missing-document-language", text: "Missing document language" },
     { href: "#misused-headings", text: "Misused headings" },
     { href: "#conclusion", text: "Conclusion" },
@@ -82,11 +84,15 @@ export default function MostCommonBugs() {
                         </dl>
                         <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><span>57</span></dt>
-                            <dd>average bugs per page</dd>
+                            <dd>number of average accessibility bugs per page</dd>
                         </dl>
                         <dl className={` ${styles['numbers']} margin-top-20`}>
                             <dt><span>31</span></dt>
-                            <dd>percentage of pages with 10 or fewer errors</dd>
+                            <dd>percentage of home pages with 10 or fewer errors</dd>
+                        </dl>
+                        <dl className={` ${styles['numbers']} margin-top-20`}>
+                            <dt><span>1173</span></dt>
+                            <dd>average number of elements per home page</dd>
                         </dl>
                     </div>
  
@@ -191,9 +197,9 @@ export default function MostCommonBugs() {
                     </p>
                     <p>
                         <span className="bold">Note</span>: With readability in mind, all numbers from the report 
-                        are rounded to the nearest
+                        are rounded here to the nearest
                         whole number. The percentage 96 comes up in two places. As the percentage of home pages with 
-                        detected failures it was rounded up from 95.9%. As the percentage of all errors that these 6 bugs
+                        detected failures, it was rounded up from 95.9%. As the percentage of all errors that these 6 bugs
                         account for, it was rounded down from 96.4%. 
                         
                     </p>
@@ -276,10 +282,57 @@ export default function MostCommonBugs() {
                     </div>
                 </div>
 
-                {/* 3. LINKS */}
-                <div className="section empty-links scroll-target" id="empty-links">
+                {/* 3. INPUT LABELS */}
+                <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">03</span>
+                        <h2>Missing input labels</h2>
+                    </div>
+                    <p>
+                        <span className="stats">Almost half</span> of the pages lacked input labels.
+                        Without labels, assitive tech users struggle to understand or use the input.
+                    </p>
+                    {/* <p>
+                        <span className="bold">The good news? </span>
+                        This is an improvement from 2019 when the ratio was 59%.
+                    </p> */}
+                    <div className="highlight">
+                        <h3>Example: an input without a label</h3>
+                        
+                        <div className="code">
+                            <code>
+                                <span className="code-blue-color">&lt;label&gt;</span>
+                            </code>
+                            <code className="padding-left-30">
+                                <span className="code-yellow-color">&lt;input</span> type="text" id="email"
+                                <span className="code-yellow-color">&gt;</span>
+                            </code>
+                            <code>
+                                <span className="code-blue-color">&lt;/label&gt;</span>
+                            </code>
+                        </div>
+                    
+                        <p className="white-bg">
+                            The input is wrapped in label tags without inner text. There's no visible or <span> </span>
+                            <code>visually-hidden</code> text, and no ARIA attribute to provide an accessible name.
+                        </p>
+                        <p>
+                            The label tells the user what the input is for. 
+                            For a sighted user, there might be clues on the page, but for a screen reader user,
+                            the input is a mystery.
+                        </p>
+                        <p>
+                            True, a lot of inputs have placeholder text. One of the (many) problems with 
+                            placeholder text is that browsers can't be trusted to use it to compute the accessible name.
+                            So if placeholder text is the only text, not everyone will know what the input is for.
+                        </p>
+                    </div>
+                </div>
+
+                {/* 4. LINKS */}
+                <div className="section empty-links scroll-target" id="empty-links">
+                    <div className="section-heading">
+                        <span aria-hidden="true" className="section-number">04</span>
                         <h2>Empty links</h2>
                     </div>
                     <p>
@@ -318,10 +371,10 @@ export default function MostCommonBugs() {
                     </div>
                 </div>
 
-                {/* 4. BUTTONS */}
+                {/* 5. BUTTONS */}
                 <div className="section empty-buttons scroll-target" id="empty-buttons">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">04</span>
+                        <span aria-hidden="true" className="section-number">05</span>
                         <h2>Empty buttons</h2>
                     </div>
                     <p>
@@ -379,42 +432,7 @@ export default function MostCommonBugs() {
                     </div>
                 </div>
 
-                {/* 5. INPUT LABELS */}
-                <div className="section missing-inputLabels scroll-target" id="missing-input-labels">
-                    <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">05</span>
-                        <h2>Missing input labels</h2>
-                    </div>
-                    <p>
-                        <span className="stats">Almost half</span> of the pages lacked input labels.
-                        Without labels, assitive tech users struggle to understand or use the input.
-                    </p>
-                    {/* <p>
-                        <span className="bold">The good news? </span>
-                        This is an improvement from 2019 when the ratio was 59%.
-                    </p> */}
-                    <div className="highlight">
-                        <h3>Example: an input without a label</h3>
-                        
-                        <div className="code">
-                            <code>
-                                <span className="code-blue-color">&lt;label&gt;</span>
-                            </code>
-                            <code className="padding-left-30">
-                                <span className="code-yellow-color">&lt;input</span> type="text" id="email"
-                                <span className="code-yellow-color">&gt;</span>
-                            </code>
-                            <code>
-                                <span className="code-blue-color">&lt;/label&gt;</span>
-                            </code>
-                        </div>
-                    
-                        <p className="white-bg">
-                            The input is wrapped in label tags without inner text. There's no visible or <span> </span>
-                            <code>visually-hidden</code> text, and no ARIA attribute to provide an accessible name.
-                        </p>
-                    </div>
-                </div>
+                
 
                 {/* 6. LANG */}
                 <div className="section missing-lang scroll-target" id="missing-document-language">
@@ -462,7 +480,7 @@ export default function MostCommonBugs() {
                     </div>
                    
                     <p className="white-bg">
-                        <span className="stats">Almost one fifth</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
+                        <span className="stats">About 17%</span> of all home pages had more than one <code>&lt;h1&gt;</code>.
                         Skipped heading levels (e.g., jumping from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code>) 
                         were found on more than <span className="stats">38%</span> of all pages.
                         About <span className="stats">11%</span> of pages had no headings at all.
@@ -479,6 +497,12 @@ export default function MostCommonBugs() {
                             Pressing 
                             the <span className="pink-bg-white-text">H</span> key allows them to jump from one heading 
                             to another. This way, they can get a sense of what's on the page and decide what to read.
+                        </p>
+                        
+                        <p className="white-bg">
+                            As a good practice, we have to use <code>&lt;h1&gt;</code> at the start of the page.
+                            Also, we should not skip heading levels, and use <code>&lt;h1&gt;</code> to <span> </span>
+                            <code>&lt;h6&gt;</code> in descending order.
                         </p>
                         <br />
                         <p className="bold">
