@@ -72,21 +72,21 @@ export default function MostCommonBugs() {
                             </span>
                         </a>        
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
-                        The results have always been quite grim, and 2023 was no exception:
+                        The results have always been quite grim, and 2024 is no exception:
                     </p>
                     
                     <div className="highlight highlight-no-heading highlight-dl">
                         <dl className={styles['numbers']}>
-                            <dt><span>96.3</span></dt>
+                            <dt><span>96</span></dt>
                             <dd>percentage of home pages with accessibility bugs</dd>
                         </dl>
                         <dl className={` ${styles['numbers']} margin-top-20`}>
-                            <dt><span>50</span></dt>
+                            <dt><span>57</span></dt>
                             <dd>average bugs per page</dd>
                         </dl>
                         <dl className={` ${styles['numbers']} margin-top-20`}>
-                            <dt><span>106,245</span></dt>
-                            <dd>highest number of bugs found on a single home page</dd>
+                            <dt><span>31</span></dt>
+                            <dd>percentage of pages with 10 or fewer errors</dd>
                         </dl>
                     </div>
  
@@ -94,7 +94,7 @@ export default function MostCommonBugs() {
                         WebAIM audits these pages using an automated tool, the WAVE accessibility engine. 
                         Automated tools are not perfect and fail to detect all  
                         accessibility barriers and guidelines violations.
-                        As a result, the actual number of bugs is likely to be higher.
+                        As a result, the actual number of bugs is likely to be higher. <span aria-hidden="true">😢</span>
                     </p>
                     {/* How do we know what's an accessibility bug? */}
                     <div className="highlight-one-line highlight margin-top-20">
@@ -161,7 +161,7 @@ export default function MostCommonBugs() {
                     
                     <p className="margin-top-30">
                         The full <span> </span>
-                            <a href="https://webaim.org/projects/million/2023" target="_blank" rel="noreferrer">
+                            <a href="https://webaim.org/projects/million/" target="_blank" rel="noreferrer">
                                 WebAIM Million
                                 <span className="sr-only"> opens in a new tab</span>
                                 <span className="external-linksvg-wrap">
@@ -174,7 +174,7 @@ export default function MostCommonBugs() {
                     </p>
                     <p>
                         In the meantime, let's go over the list with the <span className="bold">6 most common bugs</span> found 
-                        in the 2023 study. What do we know about them?
+                        in the 2024 study. What do we know about them?
                     </p>
 
                     <ul role="list" className="bullet-point-list">
@@ -190,7 +190,15 @@ export default function MostCommonBugs() {
                         These are some of the easiest bugs to avoid or fix!
                     </p>
                     <p>
-                        <span className="bold">Note</span>: This article focuses on statistics from the study and why these bugs are problematic 
+                        <span className="bold">Note</span>: With readability in mind, all numbers from the report 
+                        are rounded to the nearest
+                        whole number. The percentage 96 comes up in two places. As the percentage of home pages with 
+                        detected failures it was rounded up from 95.9%. As the percentage of all errors that these 6 bugs
+                        account for, it was rounded down from 96.4%. 
+                        
+                    </p>
+                    <p>
+                        <span className="bold">Another note</span>: This article focuses on statistics from the study and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
                         <Link to="/blog/fixing-the-six-most-common-bugs">
