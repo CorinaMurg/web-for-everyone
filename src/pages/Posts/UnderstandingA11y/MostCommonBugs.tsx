@@ -74,7 +74,7 @@ export default function MostCommonBugs() {
                             </span>
                         </a>        
                         , analyzes the top 1,000,000 home pages to check for accessibility errors. 
-                        The results have always been quite grim, and 2024 is no exception:
+                        The stats are not great, but compared with previous years, they are (very slowly) improving.
                     </p>
                     
                     <div className="highlight highlight-no-heading highlight-dl">
