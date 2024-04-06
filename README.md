@@ -11,6 +11,10 @@ Aceessibility goals: WCAG 2.2 AA
 
 1. Nav toggle (screen reader announces the entire content of mobile menu, and then again with each tab)
 
+1.1 Bug report on GitHub
+
+1.2 anchor from TOC to section heading
+
 2. Add role=text to article h1 spans
    https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
 

@@ -867,6 +867,7 @@ export default function MostCommonBugs() {
                         <b>Read next: </b>
                         <Link 
                             to="/blog/most-common-bugs" 
+                            onClick={() => { useScrollToTop() }}
                         >
                             The most common acessibility bugs
                         </Link>

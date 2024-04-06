@@ -39,13 +39,13 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "label": "accessibility-101",
         "id": "most-common-bugs",
         "title": "The most common accessibility bugs",
-        "subtitle": "Findings from the 2023 WebAIM Million Study",
+        "subtitle": "Findings from the 2024 WebAIM Million Study",
         "author": "",
         "description": 
             `The bad news: a handful of bugs is responsible for the majority of 
             accessibility issues detected via automated tools. The good news: they are quite easy to avoid or fix!`,
         "to": `/blog/most-common-bugs`,
-        "ariaLabel": "The Most Common Accessibility Bugs post by Web for Everyone.",
+        "ariaLabel": "",
     },
     {
         "label": "html-for-accessibility",

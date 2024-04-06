@@ -642,7 +642,7 @@ export default function MakeItAccessible() {
                     
                     <p className="margin-top-30">
                         <span className="bold">Read next: </span>
-                        <Link to="/blog/lets-uncover-six-more-bugs">
+                        <Link to="/blog/lets-uncover-six-more-bugs" onClick={() => { useScrollToTop() }}>
                             Let's uncover six more bugs
                         </Link>
                     </p>

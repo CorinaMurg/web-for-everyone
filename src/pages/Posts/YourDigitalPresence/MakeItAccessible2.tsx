@@ -719,7 +719,7 @@ export default function MakeItAccessible() {
                     <p>
                         Ready to learn more about accessibility?
                         Explore  <span> </span>
-                        <Link to="/blog">
+                        <Link to="/blog" onClick={() => { useScrollToTop() }}>
                             Web for Everyone's Blog
                         </Link>
                     </p>
