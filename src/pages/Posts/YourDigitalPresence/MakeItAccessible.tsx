@@ -82,8 +82,8 @@ export default function MakeItAccessible() {
                     <p>
                         The <span> </span>
                         <ExternalLink 
-                            href="https://webaim.org/projects/million/2023" 
-                            visibleText="2023 WebAIM Million Study"
+                            href="https://webaim.org/projects/million/" 
+                            visibleText="2024 WebAIM Million Study"
                         />      
                         <span> </span>
                         of 1,000,000 home pages revealed a group of 6 bugs 

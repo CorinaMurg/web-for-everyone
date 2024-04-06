@@ -382,7 +382,7 @@ export default function MostCommonBugs() {
                         <h2>Empty buttons</h2>
                     </div>
                     <p>
-                        <span className="stats">More than a quarter</span> of the home pages tested had buttons 
+                        <span className="stats">Just under 30%</span> of the home pages tested had buttons 
                         with no name.
                         This issue is very similar to empty links: users struggle to understand the purpose of a 
                         button if its text is vague or missing.
