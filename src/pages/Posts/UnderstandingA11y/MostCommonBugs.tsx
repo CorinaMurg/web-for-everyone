@@ -53,7 +53,7 @@ export default function MostCommonBugs() {
                 <span>accessibility bugs</span>
                 
             </h1>
-            <p id="subtitle" className="subtitle">Findings from the 2023 WebAIM Million study</p>
+            <p id="subtitle" className="subtitle">Findings from the 2024 WebAIM Million study</p>
 
             <TableOfContents contents={contents} activeId={activeId} />
             
