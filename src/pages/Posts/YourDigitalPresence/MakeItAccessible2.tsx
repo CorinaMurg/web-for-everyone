@@ -359,12 +359,7 @@ export default function MakeItAccessible() {
                             </div>
                             </div>
                         </details>
-                    </div>
-                    
-
-                                        
-                                        
-                    
+                    </div>                      
                 </div>
 
                 {/* ****************KEYBOARD NAVIGATION******************* */}
@@ -594,8 +589,10 @@ export default function MakeItAccessible() {
                                     <p className="bullet-point-line">Scroll to the bottom and select <span className="bold">Emulate vision deficiencies</span></p>
                                 </li>
                                 <li>
-                                    <p className="bullet-point-line">Choose the deficiency you want to emulate (like the type of 
-                                    color blindness) and see how your site looks!</p>
+                                    <p className="bullet-point-line">
+                                        Choose the deficiency you want to emulate (like the type of 
+                                        color blindness) and see how your site looks to users with that deficiency.
+                                    </p>
                                 </li>
 
                             </ul>
