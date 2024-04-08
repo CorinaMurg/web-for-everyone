@@ -1,12 +1,12 @@
 import React from "react"
-import { useState, useRef } from "react"
+import { useRef } from "react"
 import { Link } from "react-router-dom"
-import { miniArticleData } from "../data/homeData/miniArticleData"
-import WeCanHelp from "../components/Home/WeCanHelp"
-import useScrollToTop from "../hooks/useScrollToTop"
-import useScrollToSection from "../hooks/useScrollToSection"
+import { miniArticleData } from "../../data/homeData/miniArticleData"
+import WeCanHelp from "../../components/Home/WeCanHelp"
+import useScrollToTop from "../../hooks/useScrollToTop"
+import useScrollToSection from "../../hooks/useScrollToSection"
 import styles from './Home.module.css'
-import "../global.css"
+import "../../global.css"
 
 export default function Home() {
     useScrollToSection();

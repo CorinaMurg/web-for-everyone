@@ -1,10 +1,10 @@
 
 import React from "react"
-import useDocTitle from "../hooks/useDocTitle"
-import useScrollToTop from "../hooks/useScrollToTop"
+import useDocTitle from "../../hooks/useDocTitle"
+import useScrollToTop from "../../hooks/useScrollToTop"
 import { Link } from "react-router-dom"
 import styles from './NotFound.module.css'
-import "../global.css"
+import "../../global.css"
 
 export default function NotFound() {
     useDocTitle("Not Found | Web for Everyone");

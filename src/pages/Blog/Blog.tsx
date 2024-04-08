@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import useScrollToTop from "../hooks/useScrollToTop"
-import useScrollToSection from "../hooks/useScrollToSection"
-import useDocTitle from "../hooks/useDocTitle"
-import useHighlightTOC from "../hooks/useHighlightTOC"
-import { blogPostsData } from "../data/blogData/blogPostsData"
+import useScrollToTop from "../../hooks/useScrollToTop"
+import useScrollToSection from "../../hooks/useScrollToSection"
+import useDocTitle from "../../hooks/useDocTitle"
+import useHighlightTOC from "../../hooks/useHighlightTOC"
+import { blogPostsData } from "../../data/blogData/blogPostsData"
 import styles from './Blog.module.css'
-import "../global.css"
+import "../../global.css"
 
 export default function Accessibility() {  
     useDocTitle("Blog | Web for Everyone");

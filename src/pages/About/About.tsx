@@ -1,12 +1,12 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import useDocTitle from "../hooks/useDocTitle";
-import useScrollToSection from "../hooks/useScrollToSection"
-import useScrollToTop from "../hooks/useScrollToTop";
-import A11yBanner from "../components/A11yBanner/A11yBanner";
+import useDocTitle from "../../hooks/useDocTitle";
+import useScrollToSection from "../../hooks/useScrollToSection"
+import useScrollToTop from "../../hooks/useScrollToTop";
+import A11yBanner from "../../components/A11yBanner/A11yBanner";
 import styles from "./About.module.css";
-import "../global.css";
+import "../../global.css";
 
 export default function About() {
     useDocTitle("About | Web for Everyone");
