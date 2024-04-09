@@ -21,7 +21,7 @@ export default function WeCanHelp() {
                         <Link to="/blog#your-portfolio-site"
                             onClick = {() => { useScrollToTop(); }}
                         >
-                            Your Digital Presence
+                            Your portfolio site
                         </Link> <span> </span>
                         guide to find and fix common accessibility issues.
                     </p>

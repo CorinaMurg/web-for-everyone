@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
-import Navbar from "./Navbar";
-import MenuModal from "./MenuModal";
+import Navbar from "../Navbar/Navbar";
+import MenuModal from "../MenuModal/MenuModal";
 import Logo from "../Logo/Logo";
 import styles from "./Header.module.css"
 

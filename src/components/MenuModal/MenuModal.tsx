@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './MenuModal.css';
-import Navbar from './Navbar';
+import Navbar from '../Navbar/Navbar';
 import Logo from '../Logo/Logo';
 
 export interface MenuModalTypes {

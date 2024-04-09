@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { Page } from 'playwright-core';
 
 test('home page should not have any automatically detectable WCAG 2.1 AA violations', async ({ page }, testInfo) => {
-    await page.goto('http://localhost:5173/about');
+    await page.goto('https://webforeveryone/about');
   
     const accessibilityScanResults = await new AxeBuilder({ page: page as Page })
         .withTags(['wcag253'])
