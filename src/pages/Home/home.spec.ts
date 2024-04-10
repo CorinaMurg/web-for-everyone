@@ -27,9 +27,9 @@ test.describe ('home', () => {
         await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
        
         const linkedInPromise = page.waitForEvent('popup');
-        await page.getByRole('complementary').getByRole('link', { name: 'LinkedIn opens in a new tab' }).click();
+        await page.getByRole('complementary').getByRole('link', { name: 'LinkedIn opens in a new tab ' }).click();
         const linkedIn = await linkedInPromise;
-        await linkedIn.waitForLoadState();await page.goto('https://webforeveryone.us/');
+        await linkedIn.waitForLoadState();
         await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');await page.getByLabel('site links').getByRole('link', { name: 'Home' }).click();
     });
 

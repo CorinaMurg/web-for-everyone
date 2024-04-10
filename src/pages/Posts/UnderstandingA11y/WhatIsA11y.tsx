@@ -13,7 +13,7 @@ const contents = [
     {
         href: "#intro",
         text: "Introduction",
-        "aria-label": "Introduction to what is accessibility"
+        "aria-label": ""
     },
     {
         href: "#the-DNA-of-the-web-is-accessible",
@@ -48,7 +48,6 @@ export default function WhatIsA11y() {
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>What is accessibility?</span>
-                
             </h1>
             <h1 className="article-heading-mobile">
                 <span>What is</span>
