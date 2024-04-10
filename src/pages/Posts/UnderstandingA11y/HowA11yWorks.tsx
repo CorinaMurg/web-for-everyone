@@ -16,7 +16,7 @@ const contents = [
     {
         href: "#intro",
         text: "In a nutshell",
-        ariaLabel: "In a Nutshell: How Accessibility works",
+        ariaLabel: "",
         
     },
     {
