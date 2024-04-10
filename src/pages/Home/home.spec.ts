@@ -4,7 +4,7 @@ test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-test.describe.only ('home', () => {
+test.describe ('home', () => {
     test('home should have title', async ({ page }) => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
@@ -24,6 +24,7 @@ test.describe.only ('home', () => {
 
     test('home we can help', async ({ page }) => {
         await page.getByRole('link', { name: 'Your portfolio site' }).click();
+        await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
        
         const linkedInPromise = page.waitForEvent('popup');
         await page.getByRole('complementary').getByRole('link', { name: 'LinkedIn opens in a new tab' }).click();
