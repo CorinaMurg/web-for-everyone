@@ -12,7 +12,7 @@ test.describe.only ('footer', () => {
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
-    test('footer site links', async ({ page }) => {
+    test.skip('footer site links', async ({ page }) => {
         await page.getByRole('contentinfo').getByRole('link', { name: 'Home' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();

@@ -24,11 +24,12 @@ test.describe.only ('home', () => {
 
     test('home we can help', async ({ page }) => {
         await page.getByRole('link', { name: 'Your portfolio site' }).click();
-        await page.getByRole('link', { name: 'Your portfolio site' }).click();
        
-        const page1Promise = page.waitForEvent('popup');
-        await page.getByRole('link', { name: 'LinkedIn opens in a new tab' }).click();
-        const page1 = await page1Promise;
+        const linkedInPromise = page.waitForEvent('popup');
+        await page.getByRole('complementary').getByRole('link', { name: 'LinkedIn (opens in new tab)' }).click();
+        const linkedIn = await linkedInPromise;
+        await linkedIn.waitForLoadState();
+        await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');await page.getByLabel('site links').getByRole('link', { name: 'Home' }).click();
     });
 
     test('home a11y 101', async ({ page }) => {

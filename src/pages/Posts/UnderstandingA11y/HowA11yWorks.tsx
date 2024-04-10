@@ -100,9 +100,7 @@ export default function MostCommonBugs() {
             <div className="article-content howA11yWorks">
                 {/* *************1. INTRO********************** */}
                 <div id="intro" className="section intro scroll-target" >
-                    <h2 aria-label="In a Nutshell: How Accessibility works">
-                        In a nutshell
-                    </h2>
+                    <h2>In a nutshell</h2>
                     <p className="fake-list-item"> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
                         version of the DOM tree. The accessibility tree contains only <span className="bold">elements that 
