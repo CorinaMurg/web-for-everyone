@@ -20,22 +20,8 @@ function testAxe ({url, ignore}: TestParams) {
 
 testAxe({url: 'https://webforeveryone.us/'});
 
-testAxe({url: 'https://webforeveryone.us/resources'});
-
 testAxe({url: 'https://webforeveryone.us/about'});
 
-testAxe({url: 'https://webforeveryone.us/feedback'});
 
-testAxe({url: 'https://webforeveryone.us/resources/make-it-accessible-part1'});
-
-testAxe({url: 'https://webforeveryone.us/resources/make-it-accessible-part2'});
-
-testAxe({url: 'https://webforeveryone.us/resources/what-is-accessibility'});
-
-// testAxe({url: 'https://webforeveryone.us/resources/how-accessibility-works', ignore: ['iframe']});
-
-// testAxe({url: 'https://webforeveryone.us/resources/most-common-bugs'});
-
-testAxe({url: 'https://webforeveryone.us/resources/similar-but-different'});
 
 

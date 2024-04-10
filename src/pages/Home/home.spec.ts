@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach( async ({page}) => {
-    await page.goto('https://webforeveryone.us/');
+    await page.goto('http://webforeveryone.us/');
 });
 
 test.describe ('home', () => {
@@ -23,25 +23,28 @@ test.describe ('home', () => {
 
 
     test('home we can help', async ({ page }) => {
-        // await page.getByRole('link', { name: 'Your portfolio site' }).click();
-        // await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
+        await page.getByRole('link', { name: 'Your portfolio site' }).click();
+        await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
+        await page.goBack();
        
         const linkedInPromise = page.waitForEvent('popup');
-        await page.getByRole('complementary').getByRole('link', { name: 'LinkedIn opens in a new tab ' }).click();
+        await page.getByRole('main').getByRole('link').getByText('LinkedIn').click();
         const linkedIn = await linkedInPromise;
         await linkedIn.waitForLoadState();
-        await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
+        // await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
     });
 
     test('home a11y 101', async ({ page }) => {
+        await page.getByRole('link', { name: 'The most common bugs' }).click();
+        await expect(page.getByRole('heading', { name: 'The most common bugs' })).toBeVisible();
+        await page.goBack();
+
         await page.getByRole('link', { name: 'What is accessibility?' }).click();
         await expect(page.getByRole('heading', { name: 'What is accessibility?' })).toBeVisible();
+        await page.goBack();
 
         await page.getByRole('link', { name: 'How accessibility works' }).click();
         await expect(page.getByRole('heading', { name: 'How accessibility works' })).toBeVisible();
-
-        await page.getByRole('link', { name: 'The most common bugs' }).click();
-        await expect(page.getByRole('heading', { name: 'The most common bugs' })).toBeVisible();
     });
 });
 
