@@ -46,11 +46,11 @@ export default function MostCommonBugs() {
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>The most common</span>
-                <span>accessibility bugs</span>
+                <span>bugs</span>
             </h1>
             <h1 aria-describedby="subtitle" className="article-heading-mobile">
                 <span>The most common</span>
-                <span>accessibility bugs</span>
+                <span>bugs</span>
                 
             </h1>
             <p id="subtitle" className="subtitle">Findings from the 2024 WebAIM Million study</p>
