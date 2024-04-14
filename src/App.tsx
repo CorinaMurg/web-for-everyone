@@ -24,24 +24,24 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        {/* <Route path="your-users" element={<YourUsers />} /> */}
-                        <Route path="blog" element={<BlogLayout />}>
-                            <Route index={true} element={<Blog />} />
-                            <Route path="what-is-accessibility" element={<WhatIsA11y />} />
-                            <Route path="how-accessibility-works" element={<HowA11yWorks />} />
-                            <Route path="most-common-bugs" element={<MostCommonBugs />} />
-                            {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
-                            <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
-                            {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
-                            <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
-                            <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
-                            <Route path="similar-but-different" element={<SimilarButDifferent />} />
-                                
-                        </Route>
-                        <Route path="about" element={<About />} />
-                        <Route path="accessibility-statement" element={<A11yStatement />} />
-                        <Route path="not-found" element={<NotFound />} />
+                    <Route index element={<Home />} />
+                    {/* <Route path="your-users" element={<YourUsers />} /> */}
+                    <Route path="blog" element={<BlogLayout />}>
+                        <Route index={true} element={<Blog />} />
+                        <Route path="what-is-accessibility" element={<WhatIsA11y />} />
+                        <Route path="how-accessibility-works" element={<HowA11yWorks />} />
+                        <Route path="most-common-bugs" element={<MostCommonBugs />} />
+                        {/* <Route path="accessibility-guidelines" element={<A11yGuidelines />} />
+                        <Route path="does-inaccessible-equal-illegal" element={<InaccessibleIllegal />} /> */}
+                        {/* <Route path="testing-for-accessibility" element={<TestingForA11y />} /> */}
+                        <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
+                        <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
+                        <Route path="similar-but-different" element={<SimilarButDifferent />} />
+                            
+                    </Route>
+                    <Route path="about" element={<About />} />
+                    <Route path="accessibility-statement" element={<A11yStatement />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>
