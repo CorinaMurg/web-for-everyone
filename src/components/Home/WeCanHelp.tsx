@@ -27,7 +27,7 @@ export default function WeCanHelp() {
                     </p>
                 </li>
                 <li>
-                    <h5><span>Portfolio</span> <span>review</span></h5>
+                    <h3><span>Portfolio</span> <span>review</span></h3>
                     <p>
                         Share your site and receive feedback on how to improve its accessibility.
                     </p>
