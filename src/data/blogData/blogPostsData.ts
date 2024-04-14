@@ -141,7 +141,7 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "description": `You're adding the finishing touches to your portfolio site. Will it be ready 
                 to welcome all visitors? Let's check for the most common accessibility bugs. The only 
                 tools we'll need are HTML and CSS.`,
-        "to": `/blog/finding-the-six-most-common-bugs`,
+        "to": `/blog/fixing-the-six-most-common-bugs`,
         "ariaLabel": "",
     },
     {

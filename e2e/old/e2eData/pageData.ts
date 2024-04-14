@@ -28,43 +28,49 @@ export const pageData: PageDataTypes[] = [
         url: 'https://webforeveryone.us/accessibility-statement',
         excludeElements: [],
         disableRules: [],
-        webPage: 'Accessibility Statement'
+        webPage: 'Accessibility statement'
     },
     {
-        url: 'https://webforeveryone.us/resources/make-it-accessible-part1',
+        url: 'https://webforeveryone.us/blog/finding-the-six-most-common-bugs',
         excludeElements: [],
         disableRules: [],
-        webPage: 'Make It Accessible Part 1'
+        webPage: 'Fixing the six most common bugs'
     },
     {
-        url: 'https://webforeveryone.us/resources/make-it-accessible-part2',
+        url: 'https://webforeveryone.us/blog/make-it-accessible-part2',
         excludeElements: [],
         disableRules: [],
-        webPage: 'Make It Accessible Part 2'
+        webPage: 'Let\'s uncover six more bugs'
     },
     {
-        url: 'https://webforeveryone.us/resources/what-is-accessibility',
+        url: 'https://webforeveryone.us/blog/what-is-accessibility',
         excludeElements: [],
         disableRules: [],
-        webPage: 'What is Accessibility'
+        webPage: 'What is accessibility'
     },
     {
-        url: 'https://webforeveryone.us/resources/how-accessibility-works',
+        url: 'https://webforeveryone.us/blog/how-accessibility-works',
         excludeElements: ['iframe'],
         disableRules: [],
-        webPage: 'How Accessibility Works'
+        webPage: 'How accessibility works'
     },
     {
-        url: 'https://webforeveryone.us/resources/most-common-bugs',
+        url: 'https://webforeveryone.us/blog/most-common-bugs',
         excludeElements: [],
         disableRules: [],
-        webPage: 'Most Common Bugs'
+        webPage: 'Most common bugs'
     },
     {
-        url: 'https://webforeveryone.us/resources/similar-but-different',
+        url: 'https://webforeveryone.us/blog/similar-but-different',
         excludeElements: [],
         disableRules: [],
-        webPage: 'Similar But Different'
+        webPage: 'Similar but different'
+    },
+    {
+        url: 'https://webforeveryone.us/*',
+        excludeElements: [],
+        disableRules: [],
+        webPage: 'Not found'
     }
 ];
 
