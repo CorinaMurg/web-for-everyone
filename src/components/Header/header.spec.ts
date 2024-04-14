@@ -11,6 +11,11 @@ test.describe('header', () => {
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
+    // CHECK
+    test.skip ('skip link is hidden', async ({ page }) => {
+        await expect(page.getByRole('link', { name: 'Skip to content' })).toBeVisible();
+    });
+
     test('skip link focus', async ({ page }) => {
         await page.keyboard.press('Tab');
         await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
@@ -18,10 +23,13 @@ test.describe('header', () => {
 
     test('skip link is working', async ({ page }) => {
         await page.keyboard.press('Tab');
-        await page.keyboard.press('Enter');
+        const skipLink = page.getByRole('link', { name: 'Skip to content' });
+        await expect(skipLink).toBeFocused();
+        await skipLink.press('Enter');
         await page.keyboard.press('Tab');
         await expect(page.getByRole('link', { name: 'Accessibility 101', exact: true })).toBeFocused();
     });
+
 
     test('header site links', async ({ page }) => {
         await page.getByLabel('site links').getByRole('link', { name: 'Home' }).click();

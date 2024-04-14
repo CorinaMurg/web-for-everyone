@@ -41,7 +41,7 @@ export default function App() {
                         </Route>
                         <Route path="about" element={<About />} />
                         <Route path="accessibility-statement" element={<A11yStatement />} />
-                        <Route path="*" element={<NotFound />} />
+                        <Route path="not-found" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>

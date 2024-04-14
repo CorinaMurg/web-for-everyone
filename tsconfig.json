@@ -7,5 +7,5 @@
       "esModuleInterop": true,
       "jsx": "react"
     },
-    "include": ["src", "declarations.d.ts"]
+    "include": ["src", "declarations.d.ts", "e2e/old/e2eData"]
 }
