@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { Page } from 'playwright-core';
-import { PageDataTypes, pageData} from './e2eData/pageData'
+import { PageDataTypes, pageData} from '../e2eData/pageData'
 
 const testPages = () => {
     pageData.forEach((webPage) => {

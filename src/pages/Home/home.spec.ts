@@ -1,10 +1,18 @@
-import { test, expect } from '@playwright/test';
+// import { test, expect } from '@playwright/test';
+import { test, expect } from '../../../e2e/fixtures/axeAA';
+
 
 test.beforeEach( async ({page}) => {
     await page.goto('http://webforeveryone.us/');
 });
 
 test.describe ('home', () => {
+    test('home conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+        const accessibilityScanResults = await makeAxeBuilder()
+            .analyze();
+        expect(accessibilityScanResults.violations).toEqual([]);
+    });
+
     test('home should have title', async ({ page }) => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
