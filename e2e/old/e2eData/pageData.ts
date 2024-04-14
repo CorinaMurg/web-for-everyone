@@ -7,7 +7,7 @@ export interface PageDataTypes {
 
 export const pageData: PageDataTypes[] = [
     {
-        url: 'https://webforeveryone.us/',
+        url: 'http://localhost:5173/',
         excludeElements: [],
         disableRules: [],
         webPage: 'Home'
@@ -31,13 +31,13 @@ export const pageData: PageDataTypes[] = [
         webPage: 'Accessibility statement'
     },
     {
-        url: 'https://webforeveryone.us/blog/finding-the-six-most-common-bugs',
+        url: 'https://webforeveryone.us/blog/fixing-the-six-most-common-bugs',
         excludeElements: [],
         disableRules: [],
         webPage: 'Fixing the six most common bugs'
     },
     {
-        url: 'https://webforeveryone.us/blog/make-it-accessible-part2',
+        url: 'https://webforeveryone.us/blog/lets-uncover-six-more-bugs',
         excludeElements: [],
         disableRules: [],
         webPage: 'Let\'s uncover six more bugs'

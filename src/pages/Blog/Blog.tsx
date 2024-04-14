@@ -88,6 +88,7 @@ export default function Accessibility() {
                                                     to={post.to} 
                                                     aria-describedby={post.subtitle ? `${post.id}-subtitle ${post.id}-author` : `${post.id}-author`}
                                                     className={styles['article--link']}
+                                                    onClick = {() => { useScrollToTop(); }}
                                                 >
                                                     {post.title}
                                                 </Link>
