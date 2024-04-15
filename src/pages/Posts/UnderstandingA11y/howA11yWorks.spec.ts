@@ -3,7 +3,7 @@ import { test, expect } from '../../../../e2e/fixtures/axeAll';
 import { checkFocus } from '../../../../e2e/fixtures/focused';
 
 test.beforeEach( async ({page}) => {
-    await page.goto('http://localhost:5173/blog/how-accessibility-works');
+    await page.goto('https://webforeveryone.us/blog/how-accessibility-works/');
 });
 
 test.describe('how-a11y-works', () => {
