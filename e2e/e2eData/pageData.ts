@@ -50,7 +50,7 @@ export const pageData: PageDataTypes[] = [
     },
     {
         url: 'https://webforeveryone.us/blog/how-accessibility-works',
-        excludeElements: ['iframe'],
+        excludeElements: ['iframe, details'],
         disableRules: [],
         webPage: 'How accessibility works'
     },

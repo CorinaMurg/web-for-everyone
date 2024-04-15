@@ -596,16 +596,17 @@ export default function MostCommonBugs() {
                                     </summary>
                                     <p>
                                         Dragon NaturallySpeaking is the most popular speech recognition software. 
-                                        People with mobility issues can rely on it to navigate the web using voice commands.
+                                        It allows people with mobility issues to navigate the web using voice commands.
                                     </p>
                                     <p>
-                                        Ideally, a user can rely on visible text to learn the name of an 
-                                        interactive element, and then activate it with "Click (name of element)".
-                                        If the name is not visible or obvious, they can use the <span className="bold">Mouse Grid </span>
-                                        feature.
+                                        Ideally, an interactive element has visible text to allow a voice user to
+                                        activate it with "Click (name of element)".
+                                        If the name is not visible or obvious, Dragon users have the option to use the <span className="bold">Mouse Grid </span>
+                                        feature. Please rememeber this is not an ideal solution, as it requires more steps, especially
+                                        when the element is small or there is a group of elements close together.
                                     </p>
                                     <p>
-                                        Here are the steps they would follow:
+                                        Steps to use the Mouse Grid:
                                     </p>
                                     <p>
                                         <span className="bold">1. Activate the Mouse Grid</span>:
@@ -614,7 +615,7 @@ export default function MostCommonBugs() {
                                     </p>
                                     <p>
                                         <span className="bold">2. Use the Mouse Grid</span>:
-                                        Once the grid is visible, they can move the pointer to a specific area 
+                                        Once the grid is visible, users can move the pointer to a specific area 
                                         by saying the number associated with that area. For example, if they want 
                                         to move the pointer to the area labeled '3', they just say "Three"
                                         and the grid will zoom into the selected area and 

@@ -12,7 +12,7 @@ const testPages = () => {
 testPages();
 
 function testAxe ({ url, excludeElements, disableRules, webPage }: PageDataTypes) {
-    test(`${webPage}: test WCAG 2.1 A, AA, best practices`, async ({page}, testInfo) => {
+    test(`${webPage}: test all WCAG`, async ({page}, testInfo) => {
         await page.goto(url);
         const axeScanResults = await new AxeBuilder({ page: page as Page })
         .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag2aaa', 'best-practice'])
