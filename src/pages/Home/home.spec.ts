@@ -1,31 +1,37 @@
 
-import { test, expect } from '../../../e2e/fixtures/axeAA';
+import { test, expect } from '../../../e2e/fixtures/axeAll';
 import { checkFocus } from '../../../e2e/fixtures/focused';
 
 test.beforeEach( async ({page}) => {
     await page.goto('http://localhost:5173/');
 });
 
-test.describe ('home', () => {
-    test('home conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+test.describe('home', () => {
+    test('home should have title', async ({ page }) => {
+        await expect(page).toHaveTitle(/Web for Everyone/);
+    });
+});
+
+test.describe ('home main', () => {
+    test.beforeEach( async ({page}) => {
+        page.locator('role=main')
+    });
+
+    test('home main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
         const accessibilityScanResults = await makeAxeBuilder()
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
-    test.only('home main controls should be focusable', async ({ page }) => {
+    test('home main controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
-
-    test('home should have title', async ({ page }) => {
-        await expect(page).toHaveTitle(/Web for Everyone/);
-    });
     
-    test('home should have heading', async ({ page }) => {
+    test('home main should have heading', async ({ page }) => {
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
-    test('home ctas should work', async ({ page }) => {
+    test('home main ctas should work', async ({ page }) => {
         await page.getByRole('link', { name: 'Accessibility 101' }).click();
         await expect(page.getByRole('heading', { name: 'Accessibility 101' })).toBeVisible();
 

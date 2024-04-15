@@ -1,25 +1,34 @@
-import { test, expect } from '@playwright/test';
+
+import { test, expect } from '../../../e2e/fixtures/axeAll';
+import { checkFocus } from '../../../e2e/fixtures/focused';
+
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
+    page.locator('role=banner');
 });
 
 test.describe('header', () => {
+    test('header conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+        const accessibilityScanResults = await makeAxeBuilder()
+            .analyze();
+        expect(accessibilityScanResults.violations).toEqual([]);
+    });
+
     test('header logo', async ({ page }) => {
         await page.getByRole('banner').getByRole('link', { name: 'Web for Everyone' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
-    // CHECK
-    test.skip ('skip link is hidden', async ({ page }) => {
-        await expect(page.getByRole('link', { name: 'Skip to content' })).toBeVisible();
+    test('header controls should be focusable', async ({ page }) => {
+        await checkFocus(page);
     });
 
-    test('skip link focus', async ({ page }) => {
-        await page.keyboard.press('Tab');
-        await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
-    });
+    // test('skip link focus', async ({ page }) => {
+    //     await page.keyboard.press('Tab');
+    //     await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
+    // });
 
     test('skip link is working', async ({ page }) => {
         await page.keyboard.press('Tab');

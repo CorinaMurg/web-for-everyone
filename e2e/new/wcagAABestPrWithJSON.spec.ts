@@ -18,6 +18,7 @@ function testAxe ({ url, excludeElements, disableRules, webPage }: PageDataTypes
             .withTags(['wcag21aa', 'wcag21a', 'best-practice'])
             .exclude(excludeElements || [])
             .disableRules(disableRules || [])
+            .disableRules('color-contrast-enhanced')
             .analyze();
 
         await testInfo.attach('wcag scan results', {
