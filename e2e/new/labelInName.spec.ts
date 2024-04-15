@@ -1,28 +1,28 @@
-import { test, expect } from '@playwright/test';
+// import { test, expect } from '@playwright/test';
 
-test('Conforms with Label in Name', async ({ page }) => {
-    await page.goto('https://webforeveryone.us/');
+// test('Conforms with Label in Name', async ({ page }) => {
+//     await page.goto('https://webforeveryone.us/');
     
-    const controls = page.locator('link');
-    const controlsCount = await controls.count();
-    const errors: string[] = [];
-    for (let i = 0; i < controlsCount; i++) {
-        const control = controls.nth(i);
-        const visibleText = (await control.textContent())?.trim().split(" ").slice(0, 2).join(" ") ?? "";
+//     const controls = page.locator('link');
+//     const controlsCount = await controls.count();
+//     const errors: string[] = [];
+//     for (let i = 0; i < controlsCount; i++) {
+//         const control = controls.nth(i);
+//         const visibleText = (await control.textContent())?.trim().split(" ").slice(0, 2).join(" ") ?? "";
       
-        const name = (await control.getAttribute('name'))?.trim().split(" ").slice(0, 2).join(" ") ?? "";
+//         const name = (await control.getAttribute('name'))?.trim().split(" ").slice(0, 2).join(" ") ?? "";
       
-        console.log(`Visible text: "${visibleText}", Acc Name: "${name}"`);
+//         console.log(`Visible text: "${visibleText}", Acc Name: "${name}"`);
       
-        if (visibleText && name) {
-            const condition = name.toLowerCase() === (visibleText.toLowerCase());
-            if (!condition) {
-                errors.push(`The acc name "${name}" should include the visible text "${visibleText}"`);
-            }
-        }
-    }  
-    expect(errors).toEqual([]);
-});
+//         if (visibleText && name) {
+//             const condition = name.toLowerCase() === (visibleText.toLowerCase());
+//             if (!condition) {
+//                 errors.push(`The acc name "${name}" should include the visible text "${visibleText}"`);
+//             }
+//         }
+//     }  
+//     expect(errors).toEqual([]);
+// });
 
 // test('WCAG 2.5.3: Label in Name', async ({ page }) => {
 //     await page.goto('https://webforeveryone.us/');

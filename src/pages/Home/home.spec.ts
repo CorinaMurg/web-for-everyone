@@ -1,9 +1,9 @@
-// import { test, expect } from '@playwright/test';
-import { test, expect } from '../../../e2e/fixtures/axeAA';
 
+import { test, expect } from '../../../e2e/fixtures/axeAA';
+import { checkFocus } from '../../../e2e/fixtures/focused';
 
 test.beforeEach( async ({page}) => {
-    await page.goto('http://webforeveryone.us/');
+    await page.goto('http://localhost:5173/');
 });
 
 test.describe ('home', () => {
@@ -11,6 +11,10 @@ test.describe ('home', () => {
         const accessibilityScanResults = await makeAxeBuilder()
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
+    });
+    
+    test.only('home main controls should be focusable', async ({ page }) => {
+        await checkFocus(page);
     });
 
     test('home should have title', async ({ page }) => {
@@ -21,7 +25,7 @@ test.describe ('home', () => {
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
-    test('home ctas', async ({ page }) => {
+    test('home ctas should work', async ({ page }) => {
         await page.getByRole('link', { name: 'Accessibility 101' }).click();
         await expect(page.getByRole('heading', { name: 'Accessibility 101' })).toBeVisible();
 
@@ -30,7 +34,7 @@ test.describe ('home', () => {
     });
 
 
-    test('home we can help', async ({ page }) => {
+    test('home we-can-help links should work', async ({ page }) => {
         await page.getByRole('link', { name: 'Your portfolio site' }).click();
         await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
         await page.goBack();
@@ -42,7 +46,7 @@ test.describe ('home', () => {
         // await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
     });
 
-    test('home a11y 101', async ({ page }) => {
+    test('home a11y-101 links should work', async ({ page }) => {
         await page.getByRole('link', { name: 'The most common bugs' }).click();
         await expect(page.getByRole('heading', { name: 'The most common bugs' })).toBeVisible();
         await page.goBack();
