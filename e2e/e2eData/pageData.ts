@@ -7,7 +7,7 @@ export interface PageDataTypes {
 
 export const pageData: PageDataTypes[] = [
     {
-        url: 'http://localhost:5173/',
+        url: 'https://webforeveryone.us/',
         excludeElements: [],
         disableRules: [],
         webPage: 'Home'

@@ -3,7 +3,7 @@ import { test, expect } from '../../../e2e/fixtures/axeAll';
 import { checkFocus } from '../../../e2e/fixtures/focused';
 
 test.beforeEach( async ({page}) => {
-    await page.goto('http://localhost:5173/');
+    await page.goto('https://webforeveryone.us/');
 });
 
 test.describe('home', () => {
