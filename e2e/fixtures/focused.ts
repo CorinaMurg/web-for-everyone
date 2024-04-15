@@ -2,7 +2,7 @@ import { Page , expect } from '@playwright/test';
 
 //PROBLEM: USING THE MAIN LANDMARK. CHANGE. RIGHT NOW NOT A PROBLEM BECAUSE ASIDE IS A CHILD OF MAIN
 export async function checkFocus(page: Page) {
-    const controls = page.locator('a[href], button, [role="button"], input');
+    const controls = page.locator('a[href], a[tabindex="0"], button, [role="button"], input');
     const linksCount = await controls.count();
 
     for (let i = 0; i < linksCount; i++) {

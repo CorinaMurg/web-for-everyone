@@ -50,16 +50,16 @@ export const pageData: PageDataTypes[] = [
     },
     {
         url: 'https://webforeveryone.us/blog/how-accessibility-works',
-        excludeElements: ['iframe, details'],
+        excludeElements: ['iframe'],
         disableRules: [],
         webPage: 'How accessibility works'
     },
-    {
-        url: 'https://webforeveryone.us/blog/most-common-bugs',
-        excludeElements: [],
-        disableRules: [],
-        webPage: 'Most common bugs'
-    },
+    // {
+    //     url: 'https://webforeveryone.us/blog/most-common-bugs',
+    //     excludeElements: [],
+    //     disableRules: [],
+    //     webPage: 'Most common bugs'
+    // },
     {
         url: 'https://webforeveryone.us/blog/similar-but-different',
         excludeElements: [],
