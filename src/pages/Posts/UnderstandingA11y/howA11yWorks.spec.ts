@@ -17,21 +17,19 @@ test.describe ('how-a11y-works main', () => {
         page.locator('role=main')
     });
 
-    test('how-a11y-works main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('how-a11y-works-main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
         const accessibilityScanResults = await makeAxeBuilder()
             .exclude('iframe')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
-    test('how-a11y-works main controls should be focusable', async ({ page }) => {
+    test('how-a11y-works-main controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
     
-    test('how-a11y-works main should have heading', async ({ page }) => {
+    test('how-a11y-works-main should have heading', async ({ page }) => {
         await expect(page.getByRole('heading', { name: 'How accessibility works' })).toBeVisible();
     });
-
-    
 });
 
