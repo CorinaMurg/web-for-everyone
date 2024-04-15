@@ -827,7 +827,7 @@ export default function MostCommonBugs() {
                             
                         </div>
                     </div>       
-                    <iframe 
+                    {/* <iframe 
                         height="330" style={{width: "100%", border: "0", margin: "20px 0"}}
                         title="code pen: example of visually hidden class"
                         src="https://codepen.io/Cor-Ina/embed/oNmoYeR?default-tab=html" 
@@ -835,7 +835,7 @@ export default function MostCommonBugs() {
                         See the Pen <a href="https://codepen.io/Cor-Ina/pen/oNmoYeR">
                         Visually Hidden</a> by Corina (<a href="https://codepen.io/Cor-Ina">@Cor-Ina</a>)
                         on <a href="https://codepen.io">CodePen</a>.
-                    </iframe>    
+                    </iframe>     */}
                                
                 </div>
 

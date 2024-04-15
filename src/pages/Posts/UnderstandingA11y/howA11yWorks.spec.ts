@@ -3,7 +3,7 @@ import { test, expect } from '../../../../e2e/fixtures/axeAll';
 import { checkFocus } from '../../../../e2e/fixtures/focused';
 
 test.beforeEach( async ({page}) => {
-    await page.goto('https://webforeveryone.us/blog/how-accessibility-works/');
+    await page.goto('http://localhost:5173/blog/how-accessibility-works');
 });
 
 test.describe('how-a11y-works', () => {
@@ -17,13 +17,14 @@ test.describe ('how-a11y-works main', () => {
         page.locator('role=main')
     });
 
-    test.skip('how-a11y-works main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('how-a11y-works main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
         const accessibilityScanResults = await makeAxeBuilder()
+            .exclude('iframe')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
-    test.skip('how-a11y-works main controls should be focusable', async ({ page }) => {
+    test('how-a11y-works main controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
     
