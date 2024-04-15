@@ -178,7 +178,7 @@ export default function MostCommonBugs() {
                             and the accessibility trees.
                         </p>
 
-                        <div className={styles['dom-at']}>
+                        <div className={styles['dom-at']} tabIndex={0}>
                             <div className="code-no-overflow">
                                 <code><span className="code-gray-color">// DOM tree</span></code>
                                 <code><span className="code-blue-color">&lt;nav</span> role="navigation"<span className="code-blue-color">&gt;</span></code>
