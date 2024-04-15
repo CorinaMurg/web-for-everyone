@@ -1,20 +1,21 @@
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/fixtures/focused';
+import { checkFocus } from '../../../e2e/utils/focused';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
-    page.locator('role=contentinfo');
 });
 
 test.describe ('footer', () => {
-    test('footer conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('footer conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
+        await page.locator('footer').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()
+            .include('footer')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
     test('footer controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
+        await checkFocus(page, 'footer');
     });
 
     test('footer logo', async ({ page }) => {

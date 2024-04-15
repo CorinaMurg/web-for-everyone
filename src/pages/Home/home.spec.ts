@@ -1,6 +1,6 @@
 
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/fixtures/focused';
+import { checkFocus } from '../../../e2e/utils/focused';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
@@ -13,18 +13,16 @@ test.describe('home', () => {
 });
 
 test.describe ('home main', () => {
-    test.beforeEach( async ({page}) => {
-        page.locator('role=main')
-    });
-
-    test('home main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('home main conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
+        await page.locator('main').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()
+            .include('main')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
     test('home main controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
+        await checkFocus(page, 'main');
     });
     
     test('home main should have heading', async ({ page }) => {
@@ -46,7 +44,7 @@ test.describe ('home main', () => {
         await page.goBack();
        
         const linkedInPromise = page.waitForEvent('popup');
-        await page.getByRole('main').getByRole('link').getByText('LinkedIn').click();
+        await page.getByRole('link').getByText('LinkedIn').click();
         const linkedIn = await linkedInPromise;
         await linkedIn.waitForLoadState();
         // await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');

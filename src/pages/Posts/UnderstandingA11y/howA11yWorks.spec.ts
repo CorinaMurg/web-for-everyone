@@ -1,6 +1,6 @@
 
 import { test, expect } from '../../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../../e2e/fixtures/focused';
+import { checkFocus } from '../../../../e2e/utils/focused';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/blog/how-accessibility-works/');
@@ -13,19 +13,17 @@ test.describe('how-a11y-works', () => {
 });
 
 test.describe ('how-a11y-works main', () => {
-    test.beforeEach( async ({page}) => {
-        page.locator('role=main')
-    });
-
-    test('how-a11y-works-main conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('how-a11y-works-main conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
+        await page.locator('main').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()
+            .include('main')
             .exclude('iframe')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
     
     test('how-a11y-works-main controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
+        await checkFocus(page, 'main');
     });
     
     test('how-a11y-works-main should have heading', async ({ page }) => {

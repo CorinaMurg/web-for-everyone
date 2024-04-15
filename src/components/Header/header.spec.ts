@@ -1,28 +1,30 @@
 
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/fixtures/focused';
+import { checkFocus } from '../../../e2e/utils/focused';
 
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
-    page.locator('role=banner');
+    await page.getByRole('banner').waitFor();
 });
 
 test.describe('header', () => {
-    test('header conforms to axe AA a11y rules', async ({ makeAxeBuilder }) => {
+    test('header conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
+        await page.locator('header').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()
+            .include('header')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
 
     test('header logo', async ({ page }) => {
-        await page.getByRole('banner').getByRole('link', { name: 'Web for Everyone' }).click();
+        await page.getByRole('link', { name: 'Web for Everyone' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
     test('header controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
+        await checkFocus(page, 'header');
     });
 
     // test('skip link focus', async ({ page }) => {
