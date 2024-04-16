@@ -1,6 +1,5 @@
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/utils/focusedFromClicks';
-import { locateAndStore } from '../../../e2e/utils/locateAndStore';
+import { checkFocus } from '../../../e2e/utils/focused';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
@@ -14,42 +13,41 @@ test.describe ('footer', () => {
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
+    
+    test('footer controls should be focusable', async ({ page }) => {
+        await checkFocus(page, 'footer');
+    });
 
     test('footer logo', async ({ page }) => {
-        await locateAndStore(page, 'footer', 'link', 'Web for Everyone');
+        await page.getByRole('contentinfo').getByRole('link', { name: 'Web for Everyone' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
     test('footer site links', async ({ page }) => {
-        await locateAndStore(page, 'footer', 'link', 'Home');
+        await page.getByRole('contentinfo').getByRole('link', { name: 'Home' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
 
-        // await locateAndStore(page, 'footer', 'link', 'Blog');
+        // await page.getByRole('contentinfo').getByRole('link', { name: 'Blog' }).click();
         // await expect(page).toHaveTitle(/Blog/);
         // await expect(page.getByRole('heading', { name: 'Accessibility resources' })).toBeVisible();
 
 
-        await locateAndStore(page, 'footer', 'link', 'About');
+        await page.getByRole('contentinfo').getByRole('link', { name: 'About' }).click();
         await expect(page).toHaveTitle(/About/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
 
-        await locateAndStore(page, 'footer', 'link', 'Accessibility Statement');
+        await page.getByRole('contentinfo').getByRole('link', { name: 'Accessibility Statement' }).click();
         await expect(page).toHaveTitle(/Accessibility Statement/);
         await expect(page.getByRole('heading', { name: 'Web for Everyone\'s commitment to accessibility' })).toBeVisible();
     });
 
     test('footer contact', async ({ page }) => {
         const linkedInPromise = page.waitForEvent('popup');
-        await locateAndStore(page, 'footer', 'link', 'LinkedIn (opens in new tab)');
+        await page.getByRole('contentinfo').getByRole('link', { name: 'LinkedIn (opens in new tab)' }).click();
         const linkedIn = await linkedInPromise;
         await linkedIn.waitForLoadState();
         await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
     });
-    
-    test('footer controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
-    });
-
 });
