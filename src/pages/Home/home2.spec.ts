@@ -6,13 +6,13 @@ test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-test.describe('home', () => {
+test.describe.skip('home', () => {
     test('home should have title', async ({ page }) => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
 });
 
-test.describe ('home main', () => {
+test.describe.skip ('home main', () => {
     test('home main conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
         await page.locator('main').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()

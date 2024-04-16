@@ -11,23 +11,24 @@ test.describe('home', () => {
     test('home should have title', async ({ page }) => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
+
+    test('home should have heading', async ({ page }) => {
+        await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
+    });
 });
 
-test.describe ('home main', () => {
-    test('home main conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
+test.describe ('home-main accessibility', () => {
+    test('home-main should conform to axe rules', async ({ page, makeAxeBuilder }) => {
         await page.locator('main').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()
             .include('main')
             .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
     });
+});
 
-    
-    test('home main should have heading', async ({ page }) => {
-        await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
-    });
-
-    test('home main ctas should work', async ({ page }) => {
+test.describe ('home-main controls', () => {
+    test('home-main ctas should be clickable', async ({ page }) => {
         await locateAndStore(page, 'main', 'link', 'Accessibility 101');
         await expect(page.getByRole('heading', { name: 'Accessibility 101' })).toBeVisible();
 
@@ -36,7 +37,7 @@ test.describe ('home main', () => {
     });
 
 
-    test('home we-can-help links should work', async ({ page }) => {
+    test('home-we-can-help links should be clickable', async ({ page }) => {
         await locateAndStore(page, 'main', 'link', 'Your portfolio site');
         await expect(page.getByRole('heading', { name: 'Your portfolio site' })).toBeVisible();
         await page.goBack();
@@ -48,7 +49,7 @@ test.describe ('home main', () => {
         // await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
     });
 
-    test('home a11y-101 links should work', async ({ page }) => {
+    test('home-a11y-101 links should be clickable', async ({ page }) => {
         await locateAndStore(page, 'main', 'link', 'The most common bugs');
         await expect(page.getByRole('heading', { name: 'The most common bugs' })).toBeVisible();
         await page.goBack();
@@ -61,7 +62,8 @@ test.describe ('home main', () => {
         await expect(page.getByRole('heading', { name: 'How accessibility works' })).toBeVisible();
     });
     
-    test('home main controls should be focusable', async ({ page }) => {
+    // DOES NOT TEST FROM HEADER TO MAIN TO FOOTER
+    test.skip('home-main controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
 });

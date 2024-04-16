@@ -7,7 +7,7 @@ test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-test.describe('header', () => {
+test.describe.skip('header', () => {
     test('header conforms to axe AA a11y rules', async ({ page, makeAxeBuilder }) => {
         await page.locator('header').waitFor();
         const accessibilityScanResults = await makeAxeBuilder()

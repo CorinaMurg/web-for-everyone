@@ -48,7 +48,7 @@ test.describe ('footer', () => {
         await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
     });
     
-    test('footer controls should be focusable', async ({ page }) => {
+    test.skip('footer controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
 

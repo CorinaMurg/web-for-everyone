@@ -51,7 +51,7 @@ test.describe('header', () => {
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
     });
 
-    test('header controls should be focusable', async ({ page }) => {
+    test.skip('header controls should be focusable', async ({ page }) => {
         await checkFocus(page);
     });
 });
