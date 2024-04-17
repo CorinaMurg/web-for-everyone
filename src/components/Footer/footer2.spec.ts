@@ -1,5 +1,5 @@
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/utils/focused';
+import { checkFocus } from '../../../e2e/utils/focusedfunction';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');

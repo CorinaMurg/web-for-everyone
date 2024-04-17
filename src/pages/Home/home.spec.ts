@@ -1,7 +1,7 @@
 
 import { test, expect } from '../../../e2e/fixtures/axeAll';
-import { checkFocus } from '../../../e2e/utils/focusedFromClicks';
-import { locateAndStore } from '../../../e2e/utils/locateAndStore';
+import { checkFocus } from '../../../e2e/utils/focusedFromClicksFunction';
+import { locateAndStore } from '../../../e2e/utils/locateAndStoreFunction';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/');
