@@ -25,7 +25,7 @@ const contents = [
 ];
 
 export default function MostCommonBugs() {
-    useDocTitle("Most Common Bugs | Web for Everyone");   
+    useDocTitle("Most common bugs | Web for Everyone");   
     useScrollToTop(); 
     useScrollToSection();
     const { activeId} = useHighlightTOC();
