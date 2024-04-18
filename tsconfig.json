@@ -7,5 +7,5 @@
       "esModuleInterop": true,
       "jsx": "react"
     },
-    "include": ["src", "declarations.d.ts", "e2e/e2eData"]
+    "include": ["src", "declarations.d.ts", "e2e/webForEveryone/e2eData"]
 }

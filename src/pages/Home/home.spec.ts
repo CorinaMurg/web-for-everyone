@@ -1,5 +1,5 @@
 
-import { test, expect } from '../../../e2e/fixtures/axeAll';
+import { test, expect } from '../../../e2e/fixtures/axeBuilderFixture';
 import { checkFocus } from '../../../e2e/utils/focusedFromClicksFunction';
 import { locateAndStore } from '../../../e2e/utils/locateAndStoreFunction';
 

@@ -1,4 +1,4 @@
-import { test, expect } from '../../../e2e/fixtures/axeAll';
+import { test, expect } from '../../../e2e/fixtures/axeBuilderFixture';
 import { checkFocus } from '../../../e2e/utils/focusedFromClicksFunction';
 import { locateAndStore } from '../../../e2e/utils/locateAndStoreFunction';
 
@@ -26,9 +26,9 @@ test.describe ('footer', () => {
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole('heading', { name: 'Let\'s make it accessible.' })).toBeVisible();
 
-        // await locateAndStore(page, 'footer', 'link', 'Blog');
-        // await expect(page).toHaveTitle(/Blog/);
-        // await expect(page.getByRole('heading', { name: 'Accessibility resources' })).toBeVisible();
+        await locateAndStore(page, 'footer', 'link', 'Blog');
+        await expect(page).toHaveTitle(/Blog/);
+        await expect(page.getByRole('heading', { name: 'Accessibility resources' })).toBeVisible();
 
 
         await locateAndStore(page, 'footer', 'link', 'About');

@@ -30,7 +30,7 @@ export default function Footer() {
                             
                             <li>
                                 <NavLink
-                                    to="/resources"
+                                    to="/blog"
                                     // className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                                     onClick={() => { useScrollToTop()}}
                                 >

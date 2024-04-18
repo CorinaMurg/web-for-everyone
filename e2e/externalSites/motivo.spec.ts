@@ -1,4 +1,4 @@
-import { test, expect } from '../../e2e/fixtures/axeAll';
+import { test, expect } from '../fixtures/axeBuilderFixture';
 import { Locator } from '@playwright/test';
 import { Page } from '@playwright/test';
 
