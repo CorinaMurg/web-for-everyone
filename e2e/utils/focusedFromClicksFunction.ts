@@ -1,6 +1,7 @@
 import { Page, expect } from '@playwright/test';
 import { clickedElements } from './locateAndStoreFunction';
 
+
 export async function checkFocus(page: Page): Promise<void> {
     for (const element of clickedElements) {
         await element.focus();

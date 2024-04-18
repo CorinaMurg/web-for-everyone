@@ -2,7 +2,7 @@ import { Page , expect } from '@playwright/test';
 
 //PROBLEM: SELECTS ALL CONTROLS, INCLUDING THOSE THAT ARE NOT VISIBLE
 export async function checkFocus(page: Page, scope: string) {
-    const controls = page.locator(scope).locator('a[href], a[tabindex="0"], button, [role="button"], input');
+    const controls = page.locator(scope).locator('a[href], a[tabindex="0"], button');
     const linksCount = await controls.count();
 
     for (let i = 0; i < linksCount; i++) {

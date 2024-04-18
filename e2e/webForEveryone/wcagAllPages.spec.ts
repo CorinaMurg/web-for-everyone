@@ -11,7 +11,9 @@ const testPages = () => {
 
 testPages();
 
-// SKIPPED
+// TO DO: change into a fixture???
+
+// SKIPPED SKIPPED SKIPPED
 function testAxe ({ url, excludeElements, disableRules, webPage }: PageDataTypes) {
     test.skip(`${webPage}: test all WCAG`, async ({page}, testInfo) => {
         await page.goto(url);
