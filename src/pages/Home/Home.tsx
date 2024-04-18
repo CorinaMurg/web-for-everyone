@@ -39,7 +39,6 @@ export default function Home() {
                     <Link 
                         to="/#accessibility-101" 
                         className={styles['continue-to-article']}
-                        aria-label="Learn about accessibility now"
                     >   
                         Accessibility 101
                         <svg aria-hidden="true" id="arrow" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +61,6 @@ export default function Home() {
                         to="/blog/fixing-the-six-most-common-bugs" 
                         className={styles['continue-to-article']}
                         onClick={scrollToSection}
-                        aria-label="Check for bugs now"
                     >   
                         Check for bugs
                         <svg aria-hidden="true" id="arrow" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">

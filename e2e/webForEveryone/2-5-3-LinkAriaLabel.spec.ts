@@ -4,13 +4,13 @@ test.beforeEach(async ({ page }) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-test('Conforms with Label in Name', async ({ page }) => {
+test('Links conform with Label in Name', async ({ page }) => {
     const controls = page.getByRole('link')
     const controlsCount = await controls.count();
     const errors: string[] = [];
     for (let i = 0; i < controlsCount; i++) {
         const control = controls.nth(i);
-        const visibleText = (await control.textContent())?.split(" ").slice(0, 2).join(" ") ?? "";
+        const visibleText = (await control.innerText())?.split(" ").slice(0, 2).join(" ") ?? "";
       
         const accName = (await control.getAttribute('aria-label'))?.split(" ").slice(0, 2).join(" ") ?? "";
       
