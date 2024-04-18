@@ -522,7 +522,7 @@ export default function MostCommonBugs() {
                         the link). 
                     </p>
                     <p>
-                        <span className="bold">Certain elements must have a name</span> (or, for input fields, a <span className="bold">label</span>), and it has to be 
+                        <span className="bold">Certain elements must have an accessible name</span>, and it has to be 
                         descriptive enough to convey the
                         element's purpose. In our example, the name associated with each link happens to be the 
                         visible text of the link, but other attributes can be used to compute the name.
@@ -530,7 +530,7 @@ export default function MostCommonBugs() {
                     <div className="warning">
                         <WarningTriangle/>
                         <p>
-                            These elements must have a 
+                            The following elements must have a 
                             <span className="bold"> descriptive accessible name</span>:
                         </p>     
                         <div>
