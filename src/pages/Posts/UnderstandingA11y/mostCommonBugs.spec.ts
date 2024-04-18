@@ -1,6 +1,6 @@
 
 import { test, expect } from '../../../../e2e/fixtures/axeBuilderFixture';
-import { Locator, Page } from '@playwright/test';
+import { Locator } from '@playwright/test';
 import { checkFocus } from '../../../../e2e/utils/focusedFromClicksFunction';
 
 
@@ -93,40 +93,82 @@ test.describe ('most-common-bugs navigation', () => {
         await tocEight.click();
         await expect(page.getByRole('heading', { name: 'Conclusion' })).toBeVisible(); 
     });
-
-    
-    // DOES NOT TEST FROM HEADER TO MAIN TO FOOTER
-    test.skip('home-main controls should be focusable', async ({ page }) => {
-        await checkFocus(page);
-    });
 });
 
 test.describe ('most-common-bugs post content', () => {
     test('most-common-bugs post content links should be clickable', async ({ page }) => {
-        await page.getByRole('link', { name: 'WebAIM Million study' }).click();
-        const page1Promise = page.waitForEvent('popup');
-        await page.getByRole('link', { name: 'WebAIM opens in a new tab' }).click();
-        const page1 = await page1Promise;
+        const webAIMLink = page.getByRole('link', { name: 'WebAIM opens in a new tab' })
+        clickedElements.push(webAIMLink);
+        const webAIMLinkPromise = page.waitForEvent('popup');
+        await webAIMLink.click();
+        const webAIMPage = await webAIMLinkPromise;
+        await webAIMPage.waitForLoadState();
+        await expect(webAIMPage).toHaveURL('https://webaim.org/');
+        await page.goBack();
 
-        await page.locator('summary').click();
+        const accordion = page.locator('summary');
+        clickedElements.push(accordion);
+        await accordion.click();
 
-        const page2Promise = page.waitForEvent('popup');
-        await page.getByRole('link', { name: 'WebAIM Million opens in a new' }).click();
-        const page2 = await page2Promise;
+        const webAIMMillionLink = page.getByRole('link', { name: 'WebAIM Million opens in a new tab' })
+        clickedElements.push(webAIMMillionLink);
+        const webAIMMillionLinkPromise = page.waitForEvent('popup');
+        await webAIMMillionLink.click();
+        const webAIMMillionPage = await webAIMMillionLinkPromise;
+        await webAIMMillionPage.waitForLoadState();
+        await expect(webAIMMillionPage).toHaveURL('https://webaim.org/projects/million/');
+        await page.goBack();
 
-        await page.locator('#intro').getByRole('link', { name: 'Fixing the 6 most common bugs' }).click();
+        const fixingThe6Link = page.locator('#intro').getByRole('link', { name: 'Fixing the 6 most common bugs' })
+        clickedElements.push(fixingThe6Link);
+        await fixingThe6Link.click();
+        await expect(page.getByRole('heading', { name: 'Fixing the six most common bugs' })).toBeVisible();
+        await page.goBack();
 
-        await page.getByRole('link', { name: 'How accessibility works' }).click();
-
-        await page.getByRole('button', { name: 'Change text color' }).click();
-
-        await page.getByRole('link', { name: 'review how the name of an' }).click();
         
-        await page.getByRole('link', { name: 'accessible name' }).click();
-        const page3Promise = page.waitForEvent('popup');
-        await page.getByRole('link', { name: 'WebAIM\'s Screen Reader User' }).click();
-        const page3 = await page3Promise;
-        await page.locator('#conclusion').getByRole('link', { name: 'Fixing the 6 most common bugs' }).click();
-        await page.locator('#conclusion').getByRole('link', { name: 'Fixing the 6 most common bugs' }).click();
-            });
+        const howA11yWorksLink = page.getByRole('link', { name: 'How accessibility works' })
+        clickedElements.push(howA11yWorksLink);
+        await howA11yWorksLink.click();
+        await expect(page.getByRole('heading', { name: 'How accessibility works' })).toBeVisible();
+        await page.goBack();
+
+        const changeTextColorButton = page.getByRole('button', { name: 'Change text color' })
+        clickedElements.push(changeTextColorButton);
+        await changeTextColorButton.click();
+        await expect(page.getByText('Users with vision problems')).toHaveAttribute('style', 'color: #169AC0;');
+
+        const accNameInLinksLink = page.locator('#empty-links').getByRole('link', { name: 'accessible name' })
+        clickedElements.push(accNameInLinksLink);
+        await accNameInLinksLink.click();
+        await expect(page.getByRole('heading', { name: 'The accessible name' })).toBeVisible();
+        await page.goBack();
+
+        const accNameInButtonsLink = page.locator('#empty-buttons').getByRole('link', { name: 'accessible name' })
+        clickedElements.push(accNameInButtonsLink);
+        await accNameInButtonsLink.click();
+        await expect(page.getByRole('heading', { name: 'The accessible name' })).toBeVisible();
+        await page.goBack();
+
+        const srSurveyPromise = page.waitForEvent('popup');
+        const srSurveyLink = page.getByRole('link', { name: 'WebAIM\'s Screen Reader User' })
+        clickedElements.push(srSurveyLink);
+        await srSurveyLink.click();
+        const srSurveyPage = await srSurveyPromise;
+        await srSurveyPage.waitForLoadState();
+        await expect(srSurveyPage.getByRole('heading', { name: 'Finding Information' })).toBeVisible();
+        await page.goBack();
+
+        const fixingThe6Link2 = page.locator('#conclusion').getByRole('link', { name: 'Fixing the 6 most common bugs' })
+        clickedElements.push(fixingThe6Link2);
+        await fixingThe6Link2.click();
+        await expect(page.getByRole('heading', { name: 'Fixing the six most common bugs' })).toBeVisible();
+        await page.goBack();
+    });
+});
+
+
+test.describe ('most-common-bugs focus', () => {
+    test('most-common-bugs should have focus set on all clickable elements', async ({ page }) => {
+        await checkFocus(page);
+    });
 });
