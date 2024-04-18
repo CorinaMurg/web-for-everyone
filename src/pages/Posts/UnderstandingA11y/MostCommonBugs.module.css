@@ -47,6 +47,7 @@
 .low-contrast--button {
     background-color: var(--pinkBright-color);
     border: none;
+    border-radius: 5px;
     color: var(--text-light-color);
     font-size: 1rem;
     font-family: "Popins", sans-serif;

@@ -5,7 +5,6 @@ import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
-import scrollToSection from "../../../utils/scrollToSection"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -345,10 +344,11 @@ export default function MostCommonBugs() {
                         to understand the purpose and the destination of a link.
                     </p>
                     <p>
-                        Follow this link to <span> </span>        
+                        Follow this link to review the <span> </span>        
                         <Link to="/blog/how-accessibility-works#the-accessible-name">
-                            review how the name of an interactive element is determined
+                            accessible name
                         </Link> 
+                        , the name by which an interactive element is known to assistive technologies.
                         .
                     </p>
                     <div className="highlight">

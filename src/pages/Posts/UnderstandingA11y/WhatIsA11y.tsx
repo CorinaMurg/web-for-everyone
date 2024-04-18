@@ -327,7 +327,7 @@ export default function WhatIsA11y() {
                     <h2>Next steps</h2>
                     <p> 
                         Whether it's inconvenience or lack of awareness, the majority of websites are not 
-                        accessible. 97% of them have some accessibility bugs!
+                        accessible. 96% of them have some accessibility bugs!
                     </p>
 
                     <p>
