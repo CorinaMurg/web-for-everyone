@@ -21,8 +21,6 @@ test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     for (let i = 0; i < elementsCount; i++) {
         const element = elements.nth(i);
         const headingText = (await element.textContent())?.trim().split(" ").slice(0, 3).join(" ") ?? "";
-        
-        // const ariaLabel = await element.evaluate(node => node.parentElement ? node.parentElement.getAttribute('aria-label') : null);
 
         const ariaLabel = await element.evaluate(node => {
             const closestAnchor = node.closest('a');
