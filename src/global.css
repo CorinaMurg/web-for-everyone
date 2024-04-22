@@ -390,6 +390,13 @@ h4 {
     margin-top: 10px;
 }
 
+.highlight-one-line-small {
+    padding: 5px 20px;
+    margin-block: 30px;
+    margin-left: 20px;
+    max-width: fit-content;
+}
+
 .highlight-small {
     padding: 10px 20px;
     margin-top: 20px;

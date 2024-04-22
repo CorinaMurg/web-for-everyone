@@ -587,7 +587,7 @@ export default function MostCommonBugs() {
                                 but avoid it with an icon that is less recognizable.
                             </p>
 
-                            <div className="highlight highlight-inline">
+                            <div className="highlight highlight-one-line-small">
                                 <details>
                                     <summary>
                                         <span className="summary-title">
@@ -639,12 +639,10 @@ export default function MostCommonBugs() {
                             </div>
 
                             <p className="padding-left-20 margin-top-20">
-                                Also, if the CSS class is not implemented correctly, the spaces between words might be
+                                One extra headache: if the CSS class is not implemented correctly, the spaces between words might be
                                 ignored and screen readers could announce the text as a single continuous string.
-                            </p>
-                            <p className="padding-left-20 margin-top-20">
-                                You'll find a CodePen with an example of a visually-hidden class
-                                at the end of this section.
+                                (A CodePen with an example of a visually-hidden class is available
+                                at the end of this section.)
 
                             </p>
                             {/* <p className="padding-left-20 margin-top-20">
