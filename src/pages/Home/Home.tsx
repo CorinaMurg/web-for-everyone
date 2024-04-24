@@ -51,12 +51,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className={styles['hero--text--right']}>
-                    <div>
-                        <h2>
-                            Know accessibility?        
-                        </h2>
-                    </div>
-                        
+                    <h2>Know accessibility?</h2>
                     <Link 
                         to="/blog/fixing-the-six-most-common-bugs" 
                         className={styles['continue-to-article']}
