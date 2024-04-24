@@ -547,9 +547,9 @@ export default function MakeItAccessible() {
                             Speech command users rely on the label to select the input or any other form field.
                         </p>
                         <p className="bullet-point-line margin-top-20">
-                            Sighted users can click on the label to bring focus to the input. This is actually 
-                            an easy way if you are a sighted developer to test if a label is properly associated 
-                            with an input.
+                            Sighted users can click on the label to bring focus to the input. If you are a 
+                            sighted developer, this is actually an easy way to test if a label is properly 
+                            associated with an input.
                         </p>
                     </div>
 
