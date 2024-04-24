@@ -11,7 +11,7 @@ export default function Footer() {
             <div className={styles['footer--top']}>
                 <h2 className="sr-only">Footer</h2>
                 <div className={styles['footer--left']}>
-                    <Logo color="var(--text-light-color)" fontWeight={500}/>
+                    <Logo color="var(--cream-color)" fontWeight={500}/>
                 </div>
                 <div className={styles['footer--right']}>
                     <div className={styles['footer--right--navigation']}>
