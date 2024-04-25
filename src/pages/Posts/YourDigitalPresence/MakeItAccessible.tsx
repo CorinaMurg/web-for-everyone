@@ -634,7 +634,7 @@ export default function MakeItAccessible() {
                         accessibility issues and how to avoid them in your portfolio site.
                     </p>
                     <p>
-                        Ready to continue your accessibility bug hunt? Let's find the other 6 easy-to-fix bugs!
+                        Ready to continue your accessibility bug hunt?
                     </p>
                     
                     <p className="margin-top-30">
