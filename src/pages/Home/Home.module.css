@@ -51,23 +51,23 @@
 .hero--text {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     margin-inline: var(--main-margin);
 }
 
 .hero--text--right,
 .hero--text--left {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
     width: 17rem;
 }
 
-.hero--text--left a::after,
+/* .hero--text--left a::after,
 .hero--text--right a::after {
     content: "";
     position: absolute;
@@ -76,22 +76,22 @@
     right: 0;
     top: 0;
     z-index: 1;
-}
+} */
 
-.hero--text h2 {
+/* .hero--text h2 {
     font-size: 1.7rem;
     margin-bottom: 10px;
     font-weight: 600;
     color: var(--text-nav-color);
-}
+} */
 
 .continue-to-article {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    font-weight: 600;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
@@ -99,7 +99,7 @@
     padding: 6px 15px;
     border-radius: 10px;
     border: 1.8px solid var(--text-nav-color);
-    width: 100%;
+    width: 15rem;
 }
 
 .hero--text--left .continue-to-article {
@@ -116,7 +116,7 @@
 }
 
 .continue-to-article svg[id="arrow"] path {
-    fill: white;
+    fill: var(--cream-color);
 }
 
 .continue-to-article svg[id="bug"] {
@@ -157,9 +157,9 @@
         font-size: 3.2rem;
     }  
 
-    .hero--text {
+    /* .hero--text {
         gap: 70px;
-    }
+    } */
 
     .hero--text h2 {
         margin-bottom: 20px;
@@ -209,17 +209,11 @@
         
         
     } */
-
+/* 
     .hero--text--right,
     .hero--text--left {
         width: auto;
-    }
-
-    .home .continue-to-article {
-        font-size: 1.3rem;
-        /* width: 24rem; */
-        /* margin-inline: auto; */
-    }
+    } */
 }
 
 @media screen and (max-width: 590px) { 
@@ -241,7 +235,7 @@
         text-align: left;
     } */
     .home .continue-to-article {
-        width: 19rem;
+        width: 17rem;
     }
 
     .hero--text {
@@ -265,9 +259,9 @@
         font-size: 2.8rem;
     }
 
-    .home .continue-to-article {
+    /* .home .continue-to-article {
         width: 17rem;
-    }
+    } */
 }
 @media screen and (max-width: 300px) { 
     .hero h1 {
