@@ -222,9 +222,8 @@
     .about--design {
         gap: 5px;
     }
-    .about--me--image {
-        width: 250px;
-        height: 250px;
+    .about--me--image img {
+        border: 5px solid var(--hero-lightBlue-faded);
     }
     .about--me--text h2 {
         margin-top: 0;
