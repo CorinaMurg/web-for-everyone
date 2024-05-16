@@ -2,7 +2,7 @@ import React from "react"
 import { useRef } from "react"
 import { Link } from "react-router-dom"
 import { miniArticleData } from "../../data/homeData/miniArticleData"
-import WeCanHelp from "../../components/Home/WeCanHelp"
+import WeCanHelp from "../../components/WeCanHelp/WeCanHelp"
 import useScrollToTop from "../../hooks/useScrollToTop"
 import useScrollToSection from "../../hooks/useScrollToSection"
 import styles from './Home.module.css'

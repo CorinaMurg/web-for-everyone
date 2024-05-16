@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import './MenuModal.css';
@@ -12,6 +12,12 @@ export interface MenuModalTypes {
 }
 
 export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) {
+    const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+    const afterOpenModal = () => {
+        closeButtonRef.current?.focus();
+    };
+    
     useEffect(() => {
         if (isMenuOpen) {
             document.body.style.overflow = 'hidden';
@@ -25,6 +31,7 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
             className="menu-modal"
             isOpen={isMenuOpen}
             onRequestClose={closeModal}
+            onAfterOpen={afterOpenModal}
             style={{
                 overlay: {
                 zIndex: 2000,
@@ -52,7 +59,7 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
         >
             <div className='modal-header'>
                 <Logo color = "var(--text-dark-color)" fontWeight={600}/>
-                <button className='modal-close-button' onClick={closeModal}>
+                <button className='modal-close-button' onClick={closeModal} ref={closeButtonRef}>
                     <span className='sr-only'>Close Navigation Menu</span>
                 </button>
             </div>

@@ -24,6 +24,8 @@ export default function Header() {
                 className={styles['mobile-nav-toggle']} 
                 aria-controls="primary-navigation"
                 aria-expanded={isMenuOpen}
+                // too verbose. "navigation menu menu button. collapsed. submenu"
+                // aria-haspopup="true"
                 onClick={() => toggleModal()}
             >
                 <span className="sr-only">
