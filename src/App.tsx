@@ -12,6 +12,7 @@ import MakeItAccessible2 from "./pages/Posts/YourDigitalPresence/MakeItAccessibl
 import SimilarButDifferent from "./pages/Posts/HTMLForAccessibility/SimilarButDifferent"
 import About from "./pages/About/About"
 import A11yStatement from "./pages/A11yStatement/A11yStatement"
+import Gaad from "./pages/Gaad/Gaad"
 import NotFound from "./pages/NotFound/NotFound"
 import React from "react"
 
@@ -31,7 +32,7 @@ export default function App() {
                         <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
                         <Route path="similar-but-different" element={<SimilarButDifferent />} />  
                     </Route>
-                    {/* <Route path="gaad2024" element={<GAAD 2024 />} /> */}
+                    <Route path="GAAD-2024" element={<Gaad/>} />
                     <Route path="about" element={<About />} />
                     <Route path="accessibility-statement" element={<A11yStatement />} />
                     <Route path="*" element={<NotFound />} />

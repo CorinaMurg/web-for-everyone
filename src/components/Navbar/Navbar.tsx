@@ -31,6 +31,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                         Blog
                     </NavLink>
                 </li>
+                
                 <li>
                     <NavLink
                         to="/about"
@@ -38,6 +39,15 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         About
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/GAAD-2024"
+                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
+                    >
+                        GAAD 2024
                     </NavLink>
                 </li>
                 <li className="mobile-only-link">

@@ -1,0 +1,49 @@
+
+.gaad {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    width: 40rem;
+    margin-inline: auto;
+}
+
+.gaad h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.gaad h2 {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 800px) {
+    .gaad {
+        width: calc(100% - 2*var(--main-margin));
+        margin-inline: var(--main-margin);
+    }
+
+    .gaad h1 {
+        font-size: 2.8rem;
+        width: calc(100% - var(--main-margin));
+    }
+    .gaad h2,
+    .gaad p {
+        width: calc(100% - var(--main-margin));
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .gaad h1 {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .gaad h1 {
+        font-size: 2rem;
+    }
+    
+}

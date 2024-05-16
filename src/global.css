@@ -2,6 +2,7 @@
 
 .article-container a,
 .a11y-statement a,
+.gaad a,
 .not-found-container a {
     color: var(--text-dark-color);
     letter-spacing: 0.3px;
@@ -15,20 +16,23 @@
 .article-container a:hover,
 .about a:hover,
 .a11y-statement a:hover,
+.gaad a:hover,
 .not-found-container a:hover {
     color: var(--text-dark-color);
 }
 
 .article-content a:hover,
 .about a:hover,
-.a11y-statement a:hover {
+.a11y-statement a:hover,
+.gaad a:hover {
     text-decoration-style: wavy;
     text-decoration-color: var(--code-blueDark-color);
 }
 
 .article-content a:focus,
 .about a:focus,
-.a11y-statement a:focus {
+.a11y-statement a:focus,
+.gaad a:focus {
     text-decoration: none;
 }
 
@@ -305,6 +309,11 @@
     fill: var(--code-blueDark-color);
     height: 1rem;
     line-height: 1;
+}
+
+.flex-gap-10 {
+    display: flex;
+    gap: 10px;
 }
 
 *:focus-visible {
