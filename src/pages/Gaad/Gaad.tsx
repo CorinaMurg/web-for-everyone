@@ -44,8 +44,8 @@ export default function Feedback() {
                 <h2 id="report-a11y-issues" className="white-bg">
                     1. Look for the <code>alt</code> attribute.
                 </h2>
-                <p>
-                    Check that every image on your site has the “alt” attribute.
+                <p className="white-bg">
+                    Check that every image on your site has the <code>alt</code> attribute.
                     When images lack the alt attribute, screen reader users do not know what the purpose 
                     of the image is. Usually, when this attribute is missing, the screen reader will read the 
                     source file name. Not very helpful, right?
