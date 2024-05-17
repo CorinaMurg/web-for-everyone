@@ -30,7 +30,7 @@ export default function Feedback() {
                         visibleText="Global Accessibility Awareness Day"
                     />
                     . 
-                    Learn something about accessibility today. 
+                    Let's learn something about accessibility today. 
                     Fix a bug. Learn a new skill. Teach someone. Consider the ways in which disabled users access your site.
                     Plan to build with accessibility in mind every day.
                 </p>
