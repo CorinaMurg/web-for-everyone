@@ -1,28 +1,32 @@
-import { Locator, Page } from '@playwright/test';
-
-export const clickedElements: Locator[] = []; 
-
 export async function checkLabelInName(element: any, accName: string) {
-    const visibleText = await element.innerHTML();
+    const visibleText = await element.innerText();
 
-    function getFirstTwoWords(text: string) {
-        return text.split(' ').slice(0, 2).join(' ');
+    if (!visibleText.trim() || !accName.trim()) {
+        return true;
     }
 
-    const firstTwoWordsAccName = getFirstTwoWords(accName).toLowerCase();
-    const firstTwoWordsVisible = getFirstTwoWords(visibleText).toLowerCase();
+    const normalizedVisibleText = normalizeText(visibleText);
+    const normalizedAccName = normalizeText(accName);
 
-    const labelMatchesName = firstTwoWordsAccName === firstTwoWordsVisible;
-    
-    return labelMatchesName;
+    const numWordsToCompare = Math.min(countWords(normalizedVisibleText), countWords(normalizedAccName), 2);
+
+    const textToCompareFromVisible = getWords(normalizedVisibleText, numWordsToCompare).toLowerCase();
+    const textToCompareFromAccName = getWords(normalizedAccName, numWordsToCompare).toLowerCase();
+
+    return textToCompareFromVisible === textToCompareFromAccName;
 }
 
+function normalizeText(text: string) {
+    return text
+        .replace(/[,.!?;:"'()]/g, '')  
+        .replace(/\s+/g, ' ')          
+        .trim();                       
+}
 
+function countWords(text: string) {
+    return text.split(' ').length;
+}
 
-
-// export async function locateClickStore(page: Page, scope: string, role: any, name: string): Promise<void> {
-//     const element = page.locator(scope).getByRole(role, { name });
-//     await expect(element).toBeVisible();
-//     await element.click();
-//     clickedElements.push(element);  
-// }
+function getWords(text: string, count: number) {
+    return text.split(' ').slice(0, count).join(' ');
+}
