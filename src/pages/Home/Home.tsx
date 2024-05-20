@@ -40,7 +40,7 @@ export default function Home() {
                         to="/#accessibility-101" 
                         className={styles['continue-to-article']}
                         // aria-label="Start to Learn accessibility"
-                        aria-labelledby="heading"
+                        // aria-labelledby="heading"
 
                     >   
                         {/* <span className="sr-only">Start to</span> */}

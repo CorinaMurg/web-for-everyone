@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:5173/');
 });
 
-test('All controls with aria-label conform with SC 2.5.3 Label in Name', async ({ page }) => {
+test('Controls conform with SC 2.5.3 Label in Name', async ({ page }) => {
     const elements = page.getByRole('main').locator('[aria-label] [aria-labelledby]');
     console.log(elements);
     const elementsCount = await elements.count();

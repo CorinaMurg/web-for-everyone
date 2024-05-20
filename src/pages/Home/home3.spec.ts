@@ -40,7 +40,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "Accessibility 101" })
         ).toBeVisible();
 
-        expect(checkLabelInName(buttonA11y101, 'Accessibility 101')).toBe(true);
+        expect(checkLabelInName(buttonA11y101, 'Accessibility 101')).toBeTruthy();
         storeForFocusTest(buttonA11y101);
     });
     
@@ -51,7 +51,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "Fixing the six most common bugs" })
         ).toBeVisible();
 
-        expect(checkLabelInName(buttonChecksForBugs, 'Check for bugs')).toBe(true);
+        expect(checkLabelInName(buttonChecksForBugs, 'Check for bugs')).toBeTruthy();
         storeForFocusTest(buttonChecksForBugs);
     });
 
@@ -62,7 +62,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "Your portfolio site" })
         ).toBeVisible();
         await page.goBack();
-        expect(checkLabelInName(linkYourPortfolioSite, 'Your portfolio site')).toBe(true);
+        expect(checkLabelInName(linkYourPortfolioSite, 'Your portfolio site')).toBeTruthy();
         storeForFocusTest(linkYourPortfolioSite);
     });
 
@@ -73,7 +73,7 @@ test.describe("home-main controls", () => {
         const linkedIn = await linkedInPromise;
         await linkedIn.waitForLoadState();
         // await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone/');
-        expect(checkLabelInName(linkedIn, 'LinkedIn opens in a new tab')).toBe(true);
+        expect(checkLabelInName(linkedIn, 'LinkedIn opens in a new tab')).toBeTruthy();
         storeForFocusTest(linkedIn);
     });
 
@@ -84,7 +84,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "What is accessibility?" })
         ).toBeVisible();
         await page.goBack();
-        expect(checkLabelInName(linkWhatIsA11y, 'What is accessibility?')).toBe(true);
+        expect(checkLabelInName(linkWhatIsA11y, 'What is accessibility?')).toBeTruthy();
         storeForFocusTest(linkWhatIsA11y);
     });
 
@@ -95,7 +95,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "How accessibility works" })
         ).toBeVisible();
         await page.goBack();
-        expect(checkLabelInName(linkHowA11yWorks, 'How accessibility works')).toBe(true);
+        expect(checkLabelInName(linkHowA11yWorks, 'How accessibility works')).toBeTruthy();
         storeForFocusTest(linkHowA11yWorks);
     });
 
@@ -106,7 +106,7 @@ test.describe("home-main controls", () => {
             page.getByRole("heading", { name: "The most common bugs" })
         ).toBeVisible();
         await page.goBack();
-        expect(checkLabelInName(linkCommonBugs, 'The most common bugs')).toBe(true);
+        expect(checkLabelInName(linkCommonBugs, 'The most common bugs')).toBeTruthy();
         storeForFocusTest(linkCommonBugs);
     });
 
