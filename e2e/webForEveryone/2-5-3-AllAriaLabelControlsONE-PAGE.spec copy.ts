@@ -1,26 +1,17 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://webforeveryone.us/');
+    await page.goto('http://localhost:5173/');
 });
 
-// SC 2.5.3: Label in Name (Level A)
-// For user interface components with labels that include text or images of text, the accessible name starts with the text that is presented visually. 
-// the text that is presented visually.
-
-//ISSUE: selects nav elements with aria-label
-
-//QUESTION: innerText() vs textContent()?
-
-test('All controls with aria-label conform with Label in Name', async ({ page }) => {
-    await page.goto('https://webforeveryone.us/');
-    
-    const elements = page.locator('[aria-label]');
+test('All controls with aria-label conform with SC 2.5.3 Label in Name', async ({ page }) => {
+    const elements = page.getByRole('main').locator('[aria-label] [aria-labelledby]');
+    console.log(elements);
     const elementsCount = await elements.count();
     const errors: string[] = [];
     for (let i = 0; i < elementsCount; i++) {
         const element = elements.nth(i);
-        const visibleText = (await element.textContent())?.split(" ").slice(0, 2).join(" ") ?? "";
+        const visibleText = (await element.innerText())?.split(" ").slice(0, 2).join(" ") ?? "";
       
         const accName = (await element.getAttribute('aria-label'))?.split(" ").slice(0, 2).join(" ") ?? "";
         
@@ -37,4 +28,5 @@ test('All controls with aria-label conform with Label in Name', async ({ page })
         throw new Error(`Label in Name test failed:\n${errors.join("\n")}`);
     }
 });
+
 

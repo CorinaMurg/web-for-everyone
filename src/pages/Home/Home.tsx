@@ -22,13 +22,13 @@ export default function Home() {
         <div className={styles.home}>
             <section className={styles['hero']}> 
                 <div className={styles['hero--heading']}>   
-                    <h1>
+                    <h1 id="heading">
                         <span>Let's make it</span>
                         <span className="pink-text">accessible.</span>
                     </h1>
                 </div>
                 <p className={styles['hero--subtitle']}>
-                    You're building your portfolio site. Will it be ready to welcome <span> </span>
+                    You're building your portfolio site. Will it be ready to welcome
                     all visitors, including those with disabilities? Time to check!
                 </p>      
 
@@ -39,7 +39,11 @@ export default function Home() {
                     <Link 
                         to="/#accessibility-101" 
                         className={styles['continue-to-article']}
+                        // aria-label="Start to Learn accessibility"
+                        aria-labelledby="heading"
+
                     >   
+                        {/* <span className="sr-only">Start to</span> */}
                         Learn accessibility
                         <svg aria-hidden="true" id="arrow" width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="17" cy="17" r="17" fill="currentColor"></circle>

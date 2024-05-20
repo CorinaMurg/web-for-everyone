@@ -4,11 +4,6 @@ test.beforeEach(async ({ page }) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-// SC 2.5.3: Label in Name (Level A)
-// For user interface components with labels that include text or images of text, the accessible name starts with the text that is presented visually. 
-// the text that is presented visually.
-
-
 
 test('WCAG 2.5.3: Label in Name', async ({ page }) => {
     await page.goto('https://webforeveryone.us/');

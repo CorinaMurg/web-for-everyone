@@ -3,6 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { Page } from 'playwright-core';
 import { PageDataTypes, pageData} from './e2eData/allPagesData'
 
+
 const testPages = () => {
     pageData.forEach((webPage) => {
         testAxe(webPage)
@@ -15,7 +16,7 @@ testPages();
 
 // SKIPPED SKIPPED SKIPPED
 function testAxe ({ url, excludeElements, disableRules, webPage }: PageDataTypes) {
-    test.skip(`${webPage}: test all WCAG`, async ({page}, testInfo) => {
+    test(`${webPage}: test all WCAG`, async ({page}, testInfo) => {
         await page.goto(url);
         const axeScanResults = await new AxeBuilder({ page: page as Page })
         .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag2aaa', 'best-practice'])

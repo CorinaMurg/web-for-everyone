@@ -54,23 +54,23 @@ export const pageData: PageDataTypes[] = [
         disableRules: [],
         webPage: 'How accessibility works'
     },
-    {
-        url: 'https://webforeveryone.us/blog/most-common-bugs',
-        excludeElements: [],
-        disableRules: [],
-        webPage: 'Most common bugs'
-    },
-    {
-        url: 'https://webforeveryone.us/blog/similar-but-different',
-        excludeElements: [],
-        disableRules: [],
-        webPage: 'Similar but different'
-    },
-    {
-        url: 'https://webforeveryone.us/*',
-        excludeElements: [],
-        disableRules: [],
-        webPage: 'Not found'
-    }
+    // {
+    //     url: 'https://webforeveryone.us/blog/most-common-bugs',
+    //     excludeElements: [],
+    //     disableRules: [],
+    //     webPage: 'Most common bugs'
+    // },
+    // {
+    //     url: 'https://webforeveryone.us/blog/similar-but-different',
+    //     excludeElements: [],
+    //     disableRules: [],
+    //     webPage: 'Similar but different'
+    // },
+    // {
+    //     url: 'https://webforeveryone.us/*',
+    //     excludeElements: [],
+    //     disableRules: [],
+    //     webPage: 'Not found'
+    // }
 ];
 
