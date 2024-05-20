@@ -30,11 +30,11 @@ function testLabelInName ({ url, webPage }: PageDataTypes) {
                 }
             }
         }  
-    // if (errors.length > 0) {
-    //     throw new Error(`Label in Name test failed:\n${errors.join("\n")}`);
-    // }
+    if (errors.length > 0) {
+        throw new Error(`Label in Name test failed:\n${errors.join("\n")}`);
+    }
 
-        expect(errors.length).toEqual(0);
+        // expect(errors.length).toEqual(0);
     });
 }
 

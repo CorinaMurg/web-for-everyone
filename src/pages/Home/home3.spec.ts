@@ -4,7 +4,7 @@ import { storeForFocusTest } from "../../../e2e/utils/storeForFocusTestFunction"
 import { checkLabelInName } from "../../../e2e/utils/checkLabelInName";
 
 test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173/");
+    await page.goto("https://webforeveryone.us/");
 });
 
 test.describe("home", () => {
@@ -121,6 +121,7 @@ test.describe("home-main controls are clickable", () => {
 test.describe("home-main controls conform to 2.5.3 Label in Name", () => {
     test("Learn accessibility BUTTON conforms to 2.5.3 Label in Name", async ({ page }) => {
         const buttonLearnA11y = page.getByRole('link', { name: 'Learn accessibility' })
+        // await page.getByRole('Learn accessibility').click();
         const labelCheck = await checkLabelInName(buttonLearnA11y, 'Learn accessibility');
         // if (typeof labelCheck === 'string') {
         //     expect(labelCheck).toBe("2.5.3 Label in Name does not apply.");
