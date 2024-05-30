@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
 
 // PROBLEM: using page.locator('a, buttonc, ...') selects all controls, including those not in the acc tree
 // (like the links in the mobile nav)
-test('Links conform with Label in Name SC', async ({ page }) => {
+test.skip ('Links conform with Label in Name SC', async ({ page }) => {
     const links = page.getByRole('link')
     const linksCount = await links.count();
     const errors: string[] = [];

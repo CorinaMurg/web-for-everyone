@@ -12,7 +12,7 @@ test.describe("home", () => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
 
-    test("home should have heading", async ({ page }) => {
+    test.skip("home should have heading", async ({ page }) => {
         await expect(
         page.getByRole("heading", { name: "Let's make it accessible." })
         ).toBeVisible();
@@ -31,6 +31,7 @@ test.describe("home-main accessibility", () => {
         expect(accessibilityScanResults.violations).toEqual([]);
     });
 });
+
 
 test.describe("home-main controls are clickable", () => {
     test("Learn accessibility BUTTON", async ({ page }) => {

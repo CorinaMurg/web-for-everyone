@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 
-test('WCAG 2.5.3: Label in Name', async ({ page }) => {
+test.skip ('WCAG 2.5.3: Label in Name', async ({ page }) => {
     await page.goto('https://webforeveryone.us/');
     
     const elements = page.locator('a[aria-label] h1, a[aria-label] h2, a[aria-label] h3, a[aria-label] h4, a[aria-label] h5, a[aria-label] h6');

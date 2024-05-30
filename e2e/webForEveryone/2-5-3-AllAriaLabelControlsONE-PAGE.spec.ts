@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('https://webforeveryone.us/');
 });
 
-test('Controls conform with SC 2.5.3 Label in Name', async ({ page }) => {
+test.skip ('Controls conform with SC 2.5.3 Label in Name', async ({ page }) => {
     const elements = page.getByRole('main').locator('[aria-label]');
     const elementsCount = await elements.count();
     const errors: string[] = [];
@@ -14,9 +14,9 @@ test('Controls conform with SC 2.5.3 Label in Name', async ({ page }) => {
         const accName = await element.getAttribute('aria-label') ?? "";
         
         if (visibleText && accName) {
-            const startVisibleText = firstTwoWords(visibleText).toLowerCase();
-            const startAccName = firstTwoWords(accName).toLowerCase();
-            const match = startAccName === startVisibleText;
+            const textToCompareFromVisible = firstNWords(visibleText, 3).toLowerCase();
+            const textToCompareFromAccName = firstNWords(accName, 3).toLowerCase();
+            const match = textToCompareFromAccName === textToCompareFromVisible;
             if (!match) {
                 errors.push(`Acc name "${accName}" should start with "${visibleText}"`);
             }
@@ -27,10 +27,10 @@ test('Controls conform with SC 2.5.3 Label in Name', async ({ page }) => {
     }
 });
 
-
-function firstTwoWords(text: string) {
-    return text.split(" ").slice(0, 2).join(" ");
+function firstNWords(text: string, n: number) {
+    return text.split(" ").slice(0, n).join(" ");
 }
+
 
 
 

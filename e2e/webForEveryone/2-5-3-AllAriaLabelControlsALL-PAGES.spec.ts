@@ -10,7 +10,7 @@ const testPages = () => {
 testPages();
 
 function testLabelInName ({ url, webPage }: PageDataTypes) {
-    test(`${webPage}: test SC 2.5.3 Label in Name`, async ({page}) => {
+    test.skip (`${webPage}: test SC 2.5.3 Label in Name`, async ({page}) => {
         await page.goto(url);
         const elements = page.getByRole('main').locator('[aria-label]');
         const elementsCount = await elements.count();

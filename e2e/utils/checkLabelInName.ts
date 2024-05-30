@@ -8,7 +8,7 @@ export async function checkLabelInName(element: any, accName: string) {
     const normalizedVisibleText = normalizeText(visibleText);
     const normalizedAccName = normalizeText(accName);
 
-    const numWordsToCompare = Math.min(countWords(normalizedVisibleText), countWords(normalizedAccName), 2);
+    const numWordsToCompare = Math.min(countWords(normalizedVisibleText), countWords(normalizedAccName));
 
     const textToCompareFromVisible = getWords(normalizedVisibleText, numWordsToCompare).toLowerCase();
     const textToCompareFromAccName = getWords(normalizedAccName, numWordsToCompare).toLowerCase();
