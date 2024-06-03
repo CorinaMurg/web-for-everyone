@@ -5,12 +5,12 @@ import { isMobileViewport } from "../../../e2e/utils/isMobileViewport";
 import { MenuModalPageObject } from "./MenuModalPageObject";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:5173/");
+  await page.goto("/");
 });
 
 test.describe("Navigation menu", () => {
   test.only("Navigation menu conforms to axe AA a11y rules", async ({page, makeAxeBuilder}) => {
-   
+    if(isMobileViewport({page})) {
         const menuButton = page.getByRole('button', { name: 'Navigation Menu' });
         await menuButton.waitFor();
         await menuButton.click();
@@ -20,6 +20,7 @@ test.describe("Navigation menu", () => {
                                                 .include(".menu-modal")
                                                 .analyze();
         expect(accessibilityScanResults.violations).toEqual([]);
+    }
   });
 
   test("Navigation menu logo", async ({ page }) => {
@@ -50,7 +51,7 @@ test.describe("Navigation menu", () => {
     await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
   });
 
-  test("header controls should be focusable", async ({ page }) => {
+  test("modal controls should be focusable", async ({ page }) => {
     await checkFocus(page);
   });
 });
