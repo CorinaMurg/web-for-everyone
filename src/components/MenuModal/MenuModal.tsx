@@ -29,6 +29,8 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
     return (
         <ReactModal
             className="menu-modal"
+            // https://reactcommunity.org/react-modal/accessibility/
+            contentLabel='Menu'
             isOpen={isMenuOpen}
             onRequestClose={closeModal}
             onAfterOpen={afterOpenModal}
@@ -60,7 +62,7 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
             <div className='modal-header'>
                 <Logo color = "var(--text-dark-color)" fontWeight={600}/>
                 <button className='modal-close-button' onClick={closeModal} ref={closeButtonRef}>
-                    <span className='sr-only'>Close Navigation Menu</span>
+                    <span className='sr-only'>Close Menu</span>
                 </button>
             </div>
             

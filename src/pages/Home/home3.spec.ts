@@ -4,7 +4,7 @@ import { storeForFocusTest } from "../../../e2e/utils/storeForFocusTestFunction"
 import { checkLabelInName } from "../../../e2e/utils/checkLabelInName";
 
 test.beforeEach(async ({ page }) => {
-    await page.goto("https://webforeveryone.us/");
+    await page.goto("/");
 });
 
 test.describe("home", () => {
@@ -12,10 +12,8 @@ test.describe("home", () => {
         await expect(page).toHaveTitle(/Web for Everyone/);
     });
 
-    test.skip("home should have heading", async ({ page }) => {
-        await expect(
-        page.getByRole("heading", { name: "Let's make it accessible." })
-        ).toBeVisible();
+    test("home should have heading", async ({ page }) => {
+        await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
     });
 });
 
@@ -58,7 +56,7 @@ test.describe("home-main controls are clickable", () => {
         ).toBeVisible();
     });
 
-    test("LinkedIn LINK", async ({ page }) => {
+    test("Home-main LinkedIn LINK", async ({ page }) => {
         const linkLinkedIn = page.getByRole('link', { name: 'LinkedIn opens in a new tab' });
         await linkLinkedIn.click();
 

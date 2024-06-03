@@ -9,7 +9,7 @@ test.beforeEach( async ({page}) => {
 });
 
 
-test.skip ('motivo header controls should be focusable', async ({ page }) => {
+test ('motivo header controls should be focusable', async ({ page }) => {
     const logo = page.getByRole('banner').getByRole('link').first();
     clickedElements.push(logo);
 
@@ -42,7 +42,7 @@ async function checkFocus(page: Page): Promise<void> {
             await expect(element).toBeFocused();
             await page.keyboard.press('Tab');
         } catch (error) {
-            console.error(`Focus not set on ${element}:`, error);
+            console.error(`Focus not set on ${element}`);
             continue;
         }
     }

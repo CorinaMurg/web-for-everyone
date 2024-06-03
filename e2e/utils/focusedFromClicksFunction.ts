@@ -8,7 +8,7 @@ export async function checkFocus(page: Page): Promise<void> {
       await expect(element).toBeFocused();
       await page.keyboard.press("Tab");
     } catch (error) {
-      console.error(`Focus not set on element:`, error);
+      console.error(`Focus cannot be set on ${element}`, error);
       continue;
     }
   }
