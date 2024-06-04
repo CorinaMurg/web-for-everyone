@@ -8,8 +8,8 @@ test.beforeEach(async ({ page }) => {
   await page.goto("/");
 });
 
-test.describe("Navigation menu", () => {
-  test.only("Navigation menu conforms to axe AA a11y rules", async ({page, makeAxeBuilder}) => {
+test.describe("Modal menu", () => {
+  test ("Modal menu conforms to axe AA a11y rules", async ({page, makeAxeBuilder}) => {
     if(isMobileViewport({page})) {
         const menu = new MenuModalPageObject(page);
         await menu.goToMenuButton();
