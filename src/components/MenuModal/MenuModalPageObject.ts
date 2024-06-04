@@ -1,4 +1,5 @@
-import { Locator, expect } from '@playwright/test';
+import { test, expect } from "../../../e2e/fixtures/axeBuilderFixture";
+import { Locator } from '@playwright/test';
 import { Page } from '@playwright/test';
 import { isMobileViewport } from '../../../e2e/utils/isMobileViewport';
 
@@ -8,19 +9,14 @@ export class MenuModalPageObject {
 
   constructor(page: Page) {
     this.page = page;
-    this.menuButton = this.page.getByRole('button', { name: 'Navigation Menu' });
-    
+    this.menuButton = this.page.getByRole('button', { name: 'Navigation Menu' }); 
   }
 
   async goToMenuButton() {
-    if (isMobileViewport({ page: this.page })) {
-        await this.menuButton.waitFor();
-        await this.menuButton.click();
-        
-        await expect(this.page.locator('#root')).toHaveAttribute('aria-hidden', 'true');
-        await expect(this.page.locator('.ReactModal_Overlay')).toHaveAttribute('display', 'flex');
-    }
+    const menuButton = this.page.getByRole('button', { name: 'Navigation Menu' });
+    await menuButton.waitFor();
+    await menuButton.click();
+    await expect(this.page.locator('#root')).toHaveAttribute('aria-hidden', 'true');
+    await this.page.locator('.menu-modal').waitFor();
   }
-
-
 }

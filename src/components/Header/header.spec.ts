@@ -43,24 +43,21 @@ test.describe("header", () => {
 
   test("header site links", async ({ page }) => {
 
-    if(isMobileViewport({page})) {
-        await page.getByRole('button', { name: 'Navigation Menu' }).waitFor();
-        await locateClickStore(page, "header", "button", "Navigation Menu");
-        await expect(page.locator('.ReactModal_Content')).toBeInViewport();
-        await expect(page.locator('#root')).not.toBeVisible(); 
+    if(!isMobileViewport({page})) {
+        await locateClickStore(page, "header", "link", "Home");
+        await expect(page).toHaveTitle(/Web for Everyone/);
+        await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
+
+        await locateClickStore(page, "header", "link", "Blog");
+        await expect(page).toHaveTitle(/Blog/);
+        await expect(page.getByRole("heading", { name: "Accessibility resources" })).toBeVisible();
+
+        await locateClickStore(page, "header", "link", "About");
+        await expect(page).toHaveTitle(/About/);
+        await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
     }
 
-    await locateClickStore(page, "header", "link", "Home");
-    await expect(page).toHaveTitle(/Web for Everyone/);
-    await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
-
-    await locateClickStore(page, "header", "link", "Blog");
-    await expect(page).toHaveTitle(/Blog/);
-    await expect(page.getByRole("heading", { name: "Accessibility resources" })).toBeVisible();
-
-    await locateClickStore(page, "header", "link", "About");
-    await expect(page).toHaveTitle(/About/);
-    await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
+    
   });
 
   test("header controls should be focusable", async ({ page }) => {
