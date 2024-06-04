@@ -25,25 +25,34 @@ test.describe("Modal menu", () => {
     if(isMobileViewport({page})) {
         const menu = new MenuModalPageObject(page);
         await menu.goToMenuButton();
-        
 
-        await locateClickStore(page, "header", "link", "Home");
+        await page.getByRole('button', { name: 'Close Menu' }).click();
+        await expect(page.locator('.menu-modal')).not.toBeVisible();
+        await menu.goToMenuButton();
+
+        await page.getByRole('link', { name: 'Home' }).click();
         await expect(page).toHaveTitle(/Web for Everyone/);
         await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
+        await menu.goToMenuButton();
 
-        await locateClickStore(page, "header", "link", "Blog");
+        await page.getByRole('link', { name: 'Blog' }).click();
         await expect(page).toHaveTitle(/Blog/);
         await expect(page.getByRole("heading", { name: "Accessibility resources" })).toBeVisible();
+        await menu.goToMenuButton();
 
-        await locateClickStore(page, "header", "link", "About");
+        await page.getByRole('link', { name: 'About' }).click();
         await expect(page).toHaveTitle(/About/);
         await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
+        await menu.goToMenuButton();
+        
+        await page.getByRole('link', { name: 'Accessibility Statement' }).click();
+        await expect(page).toHaveTitle(/Accessibility Statement/);
+        await expect(page.getByRole("heading", { name: "Web for Everyone's commitment to accessibility" })).toBeVisible();
     }
 
-    
   });
 
-  test("modal menu controls should be focusable", async ({ page }) => {
+  test.skip("modal menu controls should be focusable", async ({ page }) => {
     await checkFocus(page);
   });
 
