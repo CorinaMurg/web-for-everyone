@@ -8,6 +8,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto("/");
 });
 
+// FOCUS TEST IS SKIPPED
 test.describe("Modal menu", () => {
   test ("Modal menu conforms to axe AA a11y rules", async ({page, makeAxeBuilder}) => {
     if(isMobileViewport({page})) {
