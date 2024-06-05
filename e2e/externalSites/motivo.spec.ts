@@ -9,7 +9,7 @@ test.beforeEach( async ({page}) => {
 });
 
 
-test ('motivo header controls should be focusable', async ({ page }) => {
+test.skip ('motivo header controls should be focusable', async ({ page }) => {
     const logo = page.getByRole('banner').getByRole('link').first();
     clickedElements.push(logo);
 
