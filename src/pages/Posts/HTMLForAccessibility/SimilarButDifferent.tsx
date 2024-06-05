@@ -37,7 +37,7 @@ export default function SimilarButDifferent() {
         <div className="article-container similar-different">
             <BackLinks 
                 secondLink="HTML for Accessibility"
-                href="/resources#html-for-accessibility" 
+                href="/blog#html-for-accessibility" 
                 current="Similar but Different: HTML and ARIA terms"
             />
             
