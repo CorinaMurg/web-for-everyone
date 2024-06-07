@@ -61,11 +61,11 @@ export default function SimilarButDifferent() {
 
                 {/* *** ARIA-LABEL VS ARIA-LABELLEDBY */}
                 <div className="section scroll-target" id="aria-label-aria-labelledby">
-                    <h2 aria-label="aria-label vs aria-labelledby">
-                        <span>
+                    <h2 aria-label="aria-label versus aria-labelledby">
+                        <span role="text">
                             aria-label<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span>
                         </span>
-                        <span>aria-labelledby</span>
+                        aria-labelledby
                     </h2>       
                     <p>
                         The attributes serve similar purposes. They both provide accessible names 
@@ -223,8 +223,10 @@ export default function SimilarButDifferent() {
 
                 {/* **********FOCUS VS FOCUS-VISIBLE************* */}
                 <div className={`section scroll-target ${styles['focus-focus-visible']}`} id="focus-focus-visible">
-                    <h2 aria-label="focus vs focus-visible">
-                        <span>focus<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span></span> 
+                    <h2 aria-label="focus versus focus-visible">
+                        <span>
+                            focus<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span>
+                        </span> 
                         <span>focus-visible</span>
                     </h2>     
                     <div className="code" tabIndex={isMobile ? 0 : undefined}>

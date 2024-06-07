@@ -6,7 +6,7 @@ import { checkFocus } from "../../../../e2e/utils/focusedFromClicksFunction";
 
 
 test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173/blog/similar-but-different");
+    await page.goto("/blog/similar-but-different");
 });
 
 test.describe("Similar but different", () => {
@@ -64,16 +64,16 @@ test.describe("Similar-but-different accessibility", () => {
 });
 
 test.describe("Similar-but-different controls should be clickable", () => {
-    test.skip("Similar-but-different TOC controls should be clickable", async ({ page }) => {
+    test("Similar-but-different TOC controls should be clickable", async ({ page }) => {
         
         await page.getByRole('link', { name: 'aria-label vs. aria-labelledby' }).click();
-        await expect(page.getByLabel('aria-label versus aria-labelledby')).toBeVisible({ timeout: 20000});
+        await expect(page.locator('h2').nth(1)).toHaveText('aria-label⚔️aria-labelledby');
 
         
         await page.getByRole('link', { name: 'title vs. heading' }).click();
         await expect(page.getByRole('heading', { name: 'title versus heading' })).toBeVisible();
 
-        await page.getByRole('link', { name: 'ocus vs. focus-visible' }).click();
+        await page.getByRole('link', { name: 'focus vs. focus-visible' }).click();
         await expect(page.getByRole('heading', { name: 'focus versus focus-visible' })).toBeVisible();
     });
 });
