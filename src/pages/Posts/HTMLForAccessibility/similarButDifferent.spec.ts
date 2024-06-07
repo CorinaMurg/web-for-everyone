@@ -67,7 +67,7 @@ test.describe("Similar-but-different controls should be clickable", () => {
     test("Similar-but-different TOC controls should be clickable", async ({ page }) => {
         
         await page.getByRole('link', { name: 'aria-label vs. aria-labelledby' }).click();
-        await expect(page.locator('h2').nth(1)).toHaveText('aria-label⚔️aria-labelledby');
+        await expect(page.getByRole('heading', { name: 'aria-label versus aria-labelledby' })).toBeVisible();
 
         
         await page.getByRole('link', { name: 'title vs. heading' }).click();
