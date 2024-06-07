@@ -4,26 +4,28 @@ import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToTop from "../../../hooks/useScrollToTop"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
+import useTabindexOnMobile from "../../../hooks/useTabindexOnMobile"
 import styles from "./SimilarButDifferent.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 
+
 const contents = [
     {
         href: "#aria-label-aria-labelledby",
         text: "aria-label vs. aria-labelledby",
-        ariaLabel: "Compare aria-label and aria-labelledby",
+        // ariaLabel: "aria-label and aria-labelledby",
     },
     {
         href: "#title-heading",
         text: "title vs. heading",
-        ariaLabel: "Compare title and heading",
+        // ariaLabel: "Compare title and heading",
     },
     {
         href: "#focus-focus-visible",
         text: "focus vs. focus-visible",
-        ariaLabel: "Compare focus and focus-visible",
+        // ariaLabel: "Compare focus and focus-visible",
     },
 ]
 
@@ -32,6 +34,7 @@ export default function SimilarButDifferent() {
     useScrollToTop();  
     useScrollToSection();
     const { activeId } = useHighlightTOC();
+    const isMobile = useTabindexOnMobile(600);
     
     return (
         <div className="article-container similar-different">
@@ -58,9 +61,9 @@ export default function SimilarButDifferent() {
 
                 {/* *** ARIA-LABEL VS ARIA-LABELLEDBY */}
                 <div className="section scroll-target" id="aria-label-aria-labelledby">
-                    <h2 aria-label="Compare aria-label and aria-labelledby">
+                    <h2 aria-label="aria-label vs aria-labelledby">
                         <span>
-                            aria-label<span className={styles['versus-icon']}>⚔️</span>
+                            aria-label<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span>
                         </span>
                         <span>aria-labelledby</span>
                     </h2>       
@@ -72,6 +75,7 @@ export default function SimilarButDifferent() {
                         <span className="pink-bg-white-text"><code>aria-label</code></span> takes a string value that becomes the name of 
                         the element. It is added to the opening tag of the element.
                     </p>
+                    {/* tabindex not necessary for mobile since the x scroll never kicks in */}
                     <div className="code">
                         <code>
                             <span className="code-blue-color">&lt;button</span> <span className="code-yellow-color"> aria-label</span>="Close menu"
@@ -94,7 +98,7 @@ export default function SimilarButDifferent() {
                         names from different elements.
                     </p>
                     
-                    <div className="code">
+                    <div className="code" tabIndex={isMobile ? 0 : undefined}>
                         <code>
                             <span className="code-blue-color">&lt;h2</span> 
                             <span className="code-yellow-color"> id</span>="table-contents"<span className="code-blue-color">&gt;</span>Table of Contents
@@ -176,13 +180,13 @@ export default function SimilarButDifferent() {
 
                 {/* **********TITLE VS HEADING************* */}
                 <div className="section scroll-target" id="title-heading">
-                    <h2 aria-label="Compare title and heading">
+                    <h2 aria-label="title versus heading">
                         <span>
-                            title<span className={styles['versus-icon']}>⚔️</span> 
+                            title<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span> 
                         </span>
                         <span>heading</span>
                     </h2>       
-                    <div className="code">
+                    <div className="code" tabIndex={isMobile ? 0 : undefined}>
                         <code><span className="code-blue-color">&lt;head&gt;</span></code>
                         <code className="padding-left-30">
                             <span className="code-yellow-color">&lt;title&gt;</span>
@@ -219,11 +223,11 @@ export default function SimilarButDifferent() {
 
                 {/* **********FOCUS VS FOCUS-VISIBLE************* */}
                 <div className={`section scroll-target ${styles['focus-focus-visible']}`} id="focus-focus-visible">
-                    <h2 aria-label="Compare focus and focus-visible">
-                        <span>focus<span className={styles['versus-icon']}>⚔️</span></span> 
+                    <h2 aria-label="focus vs focus-visible">
+                        <span>focus<span aria-hidden="true" className={styles['versus-icon']}>⚔️</span></span> 
                         <span>focus-visible</span>
                     </h2>     
-                    <div className="code">
+                    <div className="code" tabIndex={isMobile ? 0 : undefined}>
                         <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
                         <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 3px dashed black;</code>
                         <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>

@@ -125,12 +125,6 @@
         gap: 30px;
         height: auto;
         padding-block: 25px;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .table-contents ul {
         border-radius: 0;
     }
-    
 }

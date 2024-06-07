@@ -1,7 +1,6 @@
-import { test, expect } from "../../../e2e/fixtures/axeBuilderFixture";
+import { expect } from '@playwright/test';
 import { Locator } from '@playwright/test';
 import { Page } from '@playwright/test';
-import { isMobileViewport } from '../../../e2e/utils/isMobileViewport';
 
 export class MenuModalPageObject {
   readonly page: Page;

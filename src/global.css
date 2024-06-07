@@ -903,6 +903,7 @@ ul[class^="checkmark-list"] li p {
 
     .code {
         padding-inline: var(--main-margin);
+        border-radius: 0;
     }
     .highlight:not(.highlight-inline), .highlight-small, .warning {
         border-inline: none;

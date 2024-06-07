@@ -32,17 +32,17 @@ test.describe("home-main accessibility", () => {
 
 
 test.describe("home-main controls are clickable", () => {
-    test("Learn accessibility BUTTON", async ({ page }) => {
-        const buttonLearnA11y = page.getByRole('link', { name: 'Learn accessibility' })
-        await buttonLearnA11y.click();
+    test("Learn accessibility LINK", async ({ page }) => {
+        const linkLearnA11y = page.getByRole('link', { name: 'Learn accessibility' })
+        await linkLearnA11y.click();
         await expect(
             page.getByRole("heading", { name: "Accessibility 101" })
         ).toBeVisible();
     });
     
-    test("Check for bugs BUTTON", async ({ page }) => {
-        const buttonCheckForBugs = page.getByRole('link', { name: 'Check for bugs' })
-        await buttonCheckForBugs.click();
+    test("Check for bugs LINK", async ({ page }) => {
+        const linkCheckForBugs = page.getByRole('link', { name: 'Check for bugs' })
+        await linkCheckForBugs.click();
         await expect(
             page.getByRole("heading", { name: "Fixing the six most common bugs" })
         ).toBeVisible();

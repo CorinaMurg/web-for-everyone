@@ -13,7 +13,7 @@ Aceessibility goals: WCAG 2.2 AA
 
 1.1 Bug report on GitHub
 
-1.2 anchor from TOC to section heading
+1.2 anchor from TOC to section heading (also test with Playwright)
 
 2. Add role=text to article h1 spans
    https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
