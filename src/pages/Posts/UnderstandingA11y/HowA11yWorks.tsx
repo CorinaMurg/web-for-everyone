@@ -181,7 +181,7 @@ export default function MostCommonBugs() {
                         <div className={styles['dom-at']} tabIndex={0}>
                             <div className="code-no-overflow">
                                 <code><span className="code-gray-color">// DOM tree</span></code>
-                                <code><span className="code-blue-color">&lt;nav</span> role="navigation"<span className="code-blue-color">&gt;</span></code>
+                                <code><span className="code-blue-color">&lt;nav</span><span className="code-blue-color">&gt;</span></code>
                                 <code><span className="code-yellow-color padding-left-20">&lt;ul&gt;</span></code>
                                 <code className="padding-left-40 margin-top-20">
                                     &lt;li&gt;
@@ -343,7 +343,7 @@ export default function MostCommonBugs() {
                             the functionality expected from a link for free. With only HTML!
                         </p>
                         <br/>
-                        <h4>Are all the browsers cool with semantic HTML?<span className="visually-hidden">No</span><span aria-hidden="true"> 😓</span></h4>
+                        {/* <h4>Are all the browsers cool with semantic HTML?<span className="visually-hidden">No</span><span aria-hidden="true"> 😓</span></h4>
                     
                         <p className="white-bg">
                             Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag 
@@ -365,7 +365,7 @@ export default function MostCommonBugs() {
                             <code className="padding-left-30"><span className="code-yellow-color">&lt;aside</span> role="complementary"<span className="code-yellow-color">&gt;</span></code>
                             <code className="padding-left-30"><span className="code-yellow-color">&lt;footer</span> role="contentinfo"<span className="code-yellow-color">&gt;</span></code>
                             <code><span className="code-blue-color">&lt;/body&gt;</span></code>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* ************Explicit roles***************** */}
