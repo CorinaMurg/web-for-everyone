@@ -343,29 +343,6 @@ export default function MostCommonBugs() {
                             the functionality expected from a link for free. With only HTML!
                         </p>
                         <br/>
-                        {/* <h4>Are all the browsers cool with semantic HTML?<span className="visually-hidden">No</span><span aria-hidden="true"> 😓</span></h4>
-                    
-                        <p className="white-bg">
-                            Notice the <code>role="navigation"</code> added to the <code>&lt;nav&gt;</code> tag 
-                            in the DOM tree.
-                            When used with certain operating systems and browsers, screen readers might fail to properly announce 
-                            landmarks even when they are created with semantic tags. 
-                        </p>
-                        <p className="white-bg">
-                            Just to be on the safe side, we should 
-                            add the <code>role</code> attribute to the landmark tags
-                            until this issue is resolved.
-                        </p>
-                        &nbsp;
-                        <div className="code margin-top-20">
-                            <code><span className="code-blue-color">&lt;body&gt;</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">&lt;header</span> role="banner"<span className="code-yellow-color">&gt;</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">&lt;nav</span> role="navigation"<span className="code-yellow-color">&gt;</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">&lt;main</span> role="main"<span className="code-yellow-color">&gt;</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">&lt;aside</span> role="complementary"<span className="code-yellow-color">&gt;</span></code>
-                            <code className="padding-left-30"><span className="code-yellow-color">&lt;footer</span> role="contentinfo"<span className="code-yellow-color">&gt;</span></code>
-                            <code><span className="code-blue-color">&lt;/body&gt;</span></code>
-                        </div> */}
                     </div>
 
                     {/* ************Explicit roles***************** */}
