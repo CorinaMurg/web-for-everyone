@@ -78,7 +78,8 @@ export default function Footer() {
                 </div>
                 
                 <span className={styles['vertical-bar']} style={{ fontWeight: "500"}}> · </span> 
-                <span className={styles['built-span']}><span> </span>Made with ❤️ and React by Corina Murg</span>
+                <span className={styles['built-span']}><span> </span>Made with ❤️ + React + Typescript + Playwright</span>
+                <span className={styles['built-span']}>by Corina Murg</span>
             </div>
         </footer>
     )

@@ -77,7 +77,7 @@ export default function About() {
                             {/* <h3>Have questions?</h3> */}
                             <p>Connect. Share your portfolio site. Ask questions.</p>
                             <p>Let's learn accessibility together.</p>
-                            <a href="https://www.linkedin.com/company/webforeveryone"
+                            <a href="https://www.linkedin.com/in/corinamurg/"
                                 target='_blank' rel="noopener noreferrer"
                                 className={` ${styles['about-cta']} ${styles['about-cta--linkedin']}`}
                             >
