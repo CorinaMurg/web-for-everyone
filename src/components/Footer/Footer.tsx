@@ -61,7 +61,7 @@ export default function Footer() {
                         <h3 className={styles['footer--heading']}>Contact</h3>
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/company/webforeveryone/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/corinamurg/" target="_blank" rel="noopener noreferrer">
                                     <span className={styles['footer--nav-link']}>LinkedIn</span>
                                     <span className="sr-only"> (opens in new tab)</span>
                                 </a>
