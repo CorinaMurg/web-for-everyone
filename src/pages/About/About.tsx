@@ -20,9 +20,8 @@ export default function About() {
             <section className={styles['about--me']}>
                 <div className={styles['about--me--image']}>
                     <img
-                        src="/assets/Corina.jpg"
-                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing a brown beret 
-                        and a light gray top"
+                        src="/assets/CorinaMurg.jpg"
+                        alt="Corina Murg smiling. Corina has brown hair and light skin. She is wearing her bad hair day beanie"
                     />
                 </div>
                 <div className={styles['about--me--text']}>
