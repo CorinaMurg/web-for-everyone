@@ -24,6 +24,11 @@ export default function Feedback() {
             
             <section className="section margin-top-30">
                 <p>
+                    NOTE: While GAAD 2024 has passed, there's no reason to wait until next year to 
+                    start learning about accessibility. Use the ideas below to get started today!
+                </p>
+
+                <p>
                     It's May 16, 2024, {' '}
                     <ExternalLink
                         href="https://accessibility.day/"
