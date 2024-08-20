@@ -332,12 +332,12 @@
 
 .mini-article--image {
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .mini-article--image-1 {
@@ -433,7 +433,7 @@
 .mini-article:hover,
 .mini-article:focus-within {
     outline: 1.7px solid var(--text-nav-color);
-    border-radius: 10px;
+    border-radius: 6px;
     outline-offset: 6px;
 }
 
