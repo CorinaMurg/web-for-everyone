@@ -314,9 +314,9 @@ export default function WhatIsA11y() {
                     </p>
                     <p> 
                        
-                        This shift to digital can benefit people with disabilities as well, but only
+                        This shift to digital can benefit disabled users as well, but only
                         if we build with accessibility in mind.
-                        For people with disabilities, an accessible web opens the door to freedom and privacy, 
+                        For disabled user, an accessible web opens the door to freedom and privacy, 
                         and can remove many of the challenges associated with their impairments: a blind student 
                         could access online courses or a person with limited mobility could order their groceries online.
                     </p>                  

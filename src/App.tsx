@@ -7,6 +7,7 @@ import BlogLayout from "./components/BlogLayout"
 import WhatIsA11y from "./pages/Posts/UnderstandingA11y/WhatIsA11y"
 import HowA11yWorks from "./pages/Posts/UnderstandingA11y/HowA11yWorks"
 import MostCommonBugs from "./pages/Posts/UnderstandingA11y/MostCommonBugs"
+import TestingWithPlaywright from "./pages/Posts/UnderstandingA11y/TestingWithPlaywright/TestingWithPlaywright"
 import MakeItAccessible from "./pages/Posts/YourDigitalPresence/MakeItAccessible"
 import MakeItAccessible2 from "./pages/Posts/YourDigitalPresence/MakeItAccessible2"
 import SimilarButDifferent from "./pages/Posts/HTMLForAccessibility/SimilarButDifferent"
@@ -28,6 +29,7 @@ export default function App() {
                         <Route path="what-is-accessibility" element={<WhatIsA11y />} />
                         <Route path="how-accessibility-works" element={<HowA11yWorks />} />
                         <Route path="most-common-bugs" element={<MostCommonBugs />} />
+                        <Route path="testing-with-playwright" element={<TestingWithPlaywright />} />
                         <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
                         <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
                         <Route path="similar-but-different" element={<SimilarButDifferent />} />  

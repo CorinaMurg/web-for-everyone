@@ -1,171 +1,116 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import useScrollToTop from "../../../hooks/useScrollToTop"
-import useDocTitle from "../../../hooks/useDocTitle"
-import useScrollToSection from "../../../hooks/useScrollToSection"
-import useHighlightTOC from "../../../hooks/useHighlightTOC"
-import TableOfContents from "../../../components/TableOfContents/TableOfContents"
-import BackLinks from "../../../components/BackLinks/BackLinks"
-import WarningTriangle from "../../../components/WarningTriangle"
+import useScrollToTop from "../../../../hooks/useScrollToTop"
+import useDocTitle from "../../../../hooks/useDocTitle"
+import useScrollToSection from "../../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../../hooks/useHighlightTOC"
+import TableOfContents from "../../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../../components/BackLinks/BackLinks"
+import WarningTriangle from "../../../../components/WarningTriangle"
 
-import ExternalLink from "../../../components/ExternalLink/ExternalLink"
-import styles from "./HowA11yWorks.module.css"
-import "../../../global.css"
+import ExternalLink from "../../../../components/ExternalLink/ExternalLink"
+import styles from "./testingWithPlaywright.module.css"
+import "../../../../global.css"
 
 const contents = [
     {
         href: "#intro",
-        text: "In a nutshell",
+        text: "Introduction",
         ariaLabel: "",
     },
     {
-        href: "#the-accessibility-tree",
-        text: "The accessibility tree",
+        href: "#what-is-playwright",
+        text: "What is Playwright?",
+        ariaLabel: "",
+        
     },
-    // {
-    //     href: "#DOM-tree-vs-accessibility-tree",
-    //     text: "DOM Tree vs. Accessibility Tree",
-    //     ariaLabel: "DOM Tree versus Accessibility Tree",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
     {
-        href: "#implicit-vs-explicit-accessibility-roles",
-        text: "Implicit vs. explicit roles",
-        ariaLabel: "Implicit versus explicit accessibility roles",   
+        href: "#what-is-axe-core",
+        text: "What is the axe-core library?",
     },
-    // {
-    //     href: "#implicit-roles",
-    //     text: "Implicit Roles",
-    //     ariaLabel: "Implicit Accessibility Roles",  
-    //     className1: "padding-left-20", 
-    //     className2: "margin-top--10",
-    // },
-    // {
-    //     href: "#explicit-roles",
-    //     text: "Explicit Roles",
-    //     ariaLabel: "Explicit Accessibility Roles", 
-    //     className1: "padding-left-20",  
-    //     className2: "margin-top--10",
-    // },
     {
-        href: "#the-accessible-name",
-        text: "The accessible name",
+        href: "#test-example",
+        text: "Test example",
+        ariaLabel: "",   
     },
-    // {
-    //     href: "#the-accessible-name-computation-algorithm",
-    //     text: "The Accessible Name Algorithm",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
-    // {
-    //     href: "#visually-hidden-text",
-    //     text: "Example: Using visually hidden text",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
+    {
+        href: "#playwright-axe-core-library",
+        text: "Playwright with the axe-core library",
+    },
     {
         href: "#conclusion",
         text: "Conclusion",
     },
 ]
 
-export default function MostCommonBugs() {
-    useDocTitle("How accessibility works | Web for Everyone");  
+export default function AutomatingWithPlaywright() {
+    useDocTitle("Testing with Playwright | Web for Everyone");  
     useScrollToTop();
     useScrollToSection();  
     const { activeId } = useHighlightTOC();
     
     return (
-        <div className="article-container howA11yWorks-container">
+        <div className="article-container testingWithPlaywright-container">
             
             <BackLinks 
                 secondLink="Accessibility 101" 
                 href="/blog#accessibility-101" 
-                current="How accessibility works"
+                current="Testing with Playwright"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>How accessibility works</span> 
+                <span>Testing with Playwright</span> 
             </h1>
             <h1 className="article-heading-mobile">
-                <span>How accessibility</span>
-                <span>works</span>
+                <span>Testing with</span>
+                <span>Playwright</span>
             </h1>
             <p id="subtitle" className="subtitle">DOM's powerful sibling: the accessibility tree</p>
 
             <TableOfContents contents={contents} activeId={activeId}/>
             
-            <div className="article-content howA11yWorks">
+            <div className="article-content testingWithPlaywright">
                 {/* *************1. INTRO********************** */}
                 <div id="intro" className="section intro scroll-target" >
-                    <h2>In a nutshell</h2>
-                    <p className="fake-list-item"> 
-                        As part of the rendering process, the browser builds the accessibility tree, a simplified 
-                        version of the DOM tree. The accessibility tree contains only <span className="bold">elements that 
-                        need to be exposed to assistive technologies</span>, 
-                        like links or headings. 
+                    <h2 className="sr-only">In a nutshell</h2>
+                    <div>
+                        <p> 
+                            Ideal scenario: all accessibility bugs are caught during development.
+                        </p>
+                        <p>
+                            Reality: many bugs will make their way to the final product.
+                        </p>
+                    </div>
+                    
+                    <p>
+                        It's not all bad news though! We can set up tests to catch some issues 
+                        before any new changes are pushed to production. These are the same tests that we can run
+                        using browser extensions like <span className="bold">Lighthouse</span> or <span className="bold">axe DevTools</span>, 
+                        with the added benefit that they can run automatically. As we push changes to our codebase,
+                        these tests run in the background, alerting us to any new issues. 
                     </p>
-                    <p className="fake-list-item">
-                        When triggered, assistive technologies use the browser's accessibility APIs to retrieve 
-                        information from the accessibility tree and present it to users. 
+                    <p>
+                        Playwright and the axe-core library are a very user-friendly combination for
+                        automating accessibility tests. Let's learn how to set them up and put them to use!
                     </p>
                 </div>
 
 
-                {/* *************2. A11Y TREE********************** */}
-                <div className={`section ${styles.a11yTree} scroll-target`} id="the-accessibility-tree">
-                    <h2>The acccessibility tree <span aria-hidden="true"> 🌳</span></h2>           
+                {/* *************2. Playwright ********************** */}
+                <div className={`section ${styles.a11yTree} scroll-target`} id="what-is-playwright">
+                    <h2>What is Playwright? <span aria-hidden="true"> 🎭</span></h2>           
                     <div>
                         <p>
-                            Each node in the tree is an <span className="bold">accessible object</span>. 
-                            It can represent one of the following:
+                            Playwright is a Node.js library that allows you to create end-to-end tests for web applications.
+                            An end-to-end test is a test that simulates a user interacting with your website. For example,
+                            it can click on buttons, fill out forms, and navigate between pages. If any of these actions fail,
+                            the test will fail as well and alert you to the issue.
+
                         </p>
-                        <p className="bullet-point-line margin-top-20 white-bg">
-                            an actionable element, like a <code>link</code> or <code>button</code>;
-                        </p>
-                        <p className="bullet-point-line margin-top-20 white-bg">
-                            an element that  provides information about the page content and structure,
-                            like a <code>navbar</code> or a <code>heading</code>.
-                        </p>
-                        {/* <p className="bullet-point-line margin-top-20 white-bg">
-                            an element that holds text content, usually wrapped 
-                            in tags like <code>&lt;p&gt;</code> or <code>&lt;code&gt;</code>.
-                        </p> */}
+                        
                     </div>
                     
-                    <p className="white-bg">
-                        Any <code>div</code> element with purely decorative or container role
-                        will be ignored. 
-                    </p>
 
-                    {/* How to view the accessibility tree with Dev Tools */}
-                    <div className="highlight"> 
-                        <h3>
-                            Find the accessibility tree with Dev Tools <span aria-hidden="true">🔍</span>
-                        </h3>
-                        <p className="margin-top-50">
-                            <a href="https://www.youtube.com/watch?v=Th-nv-SCj4Q" 
-                                target="_blank" rel="noopener noreferrer" 
-                            >
-                                Video: Debugging accessibility with Chrome DevTools
-                                <span className="sr-only"> opens in a new tab</span>
-                                <span className="external-linksvg-wrap">
-                                    &nbsp;
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"/></svg>    
-                                </span>
-                            </a>
-                        </p>
-                        <p>
-                            This is a great video on using Chrome's Dev Tools to look up
-                            the accessibility tree. The process is very similar in Edge.
-                        </p>
-                        <p>
-                            Please note that the video starts with an introduction
-                            to Google's Lighthouse. The part about the accessibility tree starts at 
-                            minute 6:00.
-                        </p>  
-                    </div>
 
                     {/* *************2.1. DOM tree vs A11y Tree********************** */}
                     <div className={`section ${styles['dom-at-section']}`} id="DOM-tree-vs-accessibility-tree">
@@ -175,82 +120,35 @@ export default function MostCommonBugs() {
                         <p> 
                             Here we take the navbar component of this website and compare its representation in the DOM 
                             and the accessibility trees.
-                        </p>
-
-                        <div className={styles['dom-at']} tabIndex={0}>
-                            <div className="code-no-overflow">
-                                <code><span className="code-gray-color">// DOM tree</span></code>
-                                <code><span className="code-blue-color">&lt;nav</span><span className="code-blue-color">&gt;</span></code>
-                                <code><span className="code-yellow-color padding-left-20">&lt;ul&gt;</span></code>
-                                <code className="padding-left-40 margin-top-20">
-                                    &lt;li&gt;
-                                </code>
-                                <code className="padding-left-60">
-                                    <span className="code-pink-color">&lt;a&gt;
-                                    </span>Home<span className="code-pink-color">&lt;/a&gt;</span>
-                                </code>
-                                <code className="padding-left-40">
-                                    &lt;/li&gt;
-                                </code>
-                                <code className="padding-left-40 margin-top-30">
-                                    &lt;li&gt;
-                                </code>
-                                <code className="padding-left-60">
-                                    <span className="code-pink-color">&lt;a&gt;</span>Blog<span className="code-pink-color">&lt;/a&gt;</span>
-                                </code>
-                                <code className="padding-left-40">
-                                    &lt;/li&gt;
-                                </code>
-                                <code className="padding-left-40 margin-top-30">// other list items</code>
-                                <code className="margin-top-20"><span className="code-yellow-color padding-left-20 ">&lt;/ul&gt;</span></code>
-                                <code><span className="code-blue-color">&lt;/nav&gt;</span></code>
-                            </div>
+                        </p>  
                         
-                            <div className="code-no-overflow">
-                                <code><span className="code-gray-color">// Accessibility tree</span></code>
-                                <code><span className="code-blue-color">navigation</span></code>
-                                <code className="padding-left-20"><span className="code-yellow-color">list</span></code>
-                                <code className="padding-left-40 margin-top-20">listitem</code>
-                                <code className="padding-left-60">
-                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Home</span>" 
-                                    <span> </span>
-                                    <span className="code-purple-color">focusable</span>: true <span className="code-purple-color">focused</span>: true
-                                </code>
-                                <code className="padding-left-80">StaticText "Home"</code>
+                        <div className="code-no-overflow">
+                            <code><span className="code-gray-color">// Test that the page has a button named "</span></code>
+                            <code><span className="code-blue-color">test</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'has title'</span><span className="code-gray-color">, </span><span className="code-gray-color">async </span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41; =&gt; &#123;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">goto</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'https://corinamurg.netlify.app/'</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">expect</span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41;.</span><span className="code-pink-color">toHaveTitle</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">/Corina's Portfolio/</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-40 margin-top-20">// end of test</code>
 
-                                <code className="padding-left-40 margin-top-30">listitem</code>
-                                <code className="padding-left-60">
-                                    <span className="code-pink-color">link</span> "<span className="code-purple-color">Blog</span>"
-                                    <span> </span>
-                                    <span className="code-purple-color">focusable</span>: true
-                                </code>
-                                <code className="padding-left-80">StaticText "Blog"</code>
-                                <code className="padding-left-40 margin-top-30">// other list items</code>
-                            </div>
+                            <code><span className="code-blue-color">test</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'has heading'</span><span className="code-gray-color">, </span><span className="code-gray-color">async </span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41; =&gt; &#123;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">goto</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'https://mywebsite.com/'</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">expect</span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">getByRole</span><span className="code-gray-color">&#40;</span><span className="code-pink-color">'heading'</span><span className="code-gray-color">, &#123;name: </span><span className="code-purple-color">'HELLO, I’m CORINA!'</span><span className="code-gray-color">&#125;&#41;.</span><span className="code-pink-color">toBeVisible</span><span className="code-gray-color">&#40;&#41;;</span></code>
+                            <code className="padding-left-40 margin-top-20">// end of test</code>
                         </div>
-                       
-                        <p className="margin-top-20">
-                            While the DOM tree is structured by HTML tags/elements, <span className="bold">the accessibility tree is 
-                            structured by roles</span>.
-                            For each object in the accessibility tree, its role matches the function of its 
-                            corresponding HTML element.
-                        </p>
-                        <div>
-                            <p>
-                                For example:
-                            </p>
-                            <ul role="list" className="bullet-point-list">
-                                <li>
-                                    <p className="white-bg">the <code>navigation</code> role goes with the <code>&lt;nav&gt;</code> tag</p>
-                                </li>
-                                <li>
-                                    <p className="white-bg">the <code>list</code> role goes with the <code>&lt;ul&gt;</code> tag</p>
-                                </li>
-                                <li>
-                                    <p className="white-bg">the <code>link</code> role goes with the <code>&lt;a&gt;</code> tag</p>
-                                </li>
-                            </ul>
-                        </div> 
+
+                        <div className="code-no-overflow">
+                            <code><span className="code-gray-color">// Test that the button is clickable</span></code>
+                            <code><span className="code-blue-color">test</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'has title'</span><span className="code-gray-color">, </span><span className="code-gray-color">async </span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41; =&gt; &#123;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">goto</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'https://corinamurg.netlify.app/'</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">expect</span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41;.</span><span className="code-pink-color">toHaveTitle</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">/Corina's Portfolio/</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-40 margin-top-20">// end of test</code>
+
+                            <code><span className="code-blue-color">test</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'has heading'</span><span className="code-gray-color">, </span><span className="code-gray-color">async </span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">&#41; =&gt; &#123;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">goto</span><span className="code-gray-color">&#40;</span><span className="code-purple-color">'https://mywebsite.com/'</span><span className="code-gray-color">&#41;;</span></code>
+                            <code className="padding-left-20"><span className="code-gray-color">await </span><span className="code-yellow-color">expect</span><span className="code-gray-color">&#40;</span><span className="code-yellow-color">page</span><span className="code-gray-color">.</span><span className="code-pink-color">getByRole</span><span className="code-gray-color">&#40;</span><span className="code-pink-color">'heading'</span><span className="code-gray-color">, &#123;name: </span><span className="code-purple-color">'HELLO, I’m CORINA!'</span><span className="code-gray-color">&#125;&#41;.</span><span className="code-pink-color">toBeVisible</span><span className="code-gray-color">&#40;&#41;;</span></code>
+                            <code className="padding-left-40 margin-top-20">// end of test</code>
+                        </div>
+                        
+                        
                         <p>
                             But how does the browser know which role to assign to each element? <span aria-hidden="true">🤔</span>
                         </p>

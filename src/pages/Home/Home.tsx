@@ -82,7 +82,7 @@ export default function Home() {
             >
                 <h2 id="accessibility-101">Accessibility 101</h2>
                 <ul>
-                    {miniArticleData.slice(0, 3).map((article, index) => (
+                    {miniArticleData.slice(0, 4).map((article, index) => (
                         <li key={index}> 
                             <article className={`${styles['mini-article']} ${styles[`mini-article-${index+1}`]}`}>
                                 <div className={`${styles['mini-article--image']} ${styles[`mini-article--image-${index+1}`]}`}>    
