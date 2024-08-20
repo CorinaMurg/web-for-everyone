@@ -56,8 +56,6 @@ test.describe("header", () => {
         await expect(page).toHaveTitle(/About/);
         await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
     }
-
-    
   });
 
   test("header controls should be focusable", async ({ page }) => {
