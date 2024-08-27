@@ -1,30 +1,33 @@
 # Web for Everyone
 
-The goal of this project is to introduce accessibility to junior developers.
-As soon as they know how to create a button or a link, they need to think about accessibility.
-
-Please note that this is not a finished product, and certain accessibility aspects are still in development.
+The goal of this project is to introduce accessibility to frontend developers and designers.
 
 Aceessibility goals: WCAG 2.2 AA
 
-## To fix
+## Tech stack
+- React
+- Typescript
+- Playwright
+- HTML
+- CSS
+
+Please note that this is not a finished product, and certain accessibility aspects are still in development.
+My TO DO list:
+
+## Bugs to fix
 
 1. Nav toggle (screen reader announces the entire content of mobile menu, and then again with each tab)
 
-1.1 Bug report on GitHub
+2. Missing anchor from TOC to section heading (also test with Playwright)
 
-1.2 anchor from TOC to section heading (also test with Playwright)
-
-2. Add role=text to article h1 spans
+3. Add role=text to article h1 spans
    https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
 
-3. Make aside a direct child of the body
-
-4. Remove as many accordions as possible
+4. Make aside a direct child of the body (also: check out support for <aside>)
 
 5. Remove max height on accordions (and check against 1.4.12)
 
-6. Add breadcrumb to mobile
+6. Missing breadcrumb in mobile view
 
 7. Max 2 lines of centered text
 
@@ -32,25 +35,32 @@ Aceessibility goals: WCAG 2.2 AA
 
 9. On pages with Breadcrumbs focus goes to Breadcrumb not Skip Link
 
-10. Check out support for <aside>
 
-## Features to add:
 
-1. Dark mode
+## Best practices:
 
-2. SITE MAP
+1. Add Dark mode
 
-3. BUG REPORT
-   button in Footer
+2. Add SITE MAP
 
-4. BACK TO TOP
-   button for all screen sizes
+3. Add BUG REPORT button in Footer
 
-5. LIKE icon
+4. Add BACK TO TOP button for all screen sizes
 
-## Imporve code
+5. Remove as many accordions as possible
 
-1. Replace <div> with <pre> for code
+
+## Features to add
+
+1. LIKE icon
+
+2. Contact form
+
+
+## Improve code
+
+1. Replace <div> with <pre> for code examples
+
 
 ## Content to add
 
@@ -60,6 +70,7 @@ Aceessibility goals: WCAG 2.2 AA
 - Intro to WCAG
 - Testing for A11y
 - Your users
+- Automating a11y tests with Playwright
 
 ### Your portfolio site series:
 
@@ -69,4 +80,4 @@ Aceessibility goals: WCAG 2.2 AA
 
 ### Accessible components
 
-- add more examples
+- Ad more examples!!!
