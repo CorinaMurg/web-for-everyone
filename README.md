@@ -2,8 +2,6 @@
 
 The goal of this project is to introduce accessibility to frontend developers and designers.
 
-Aceessibility goals: WCAG 2.2 AA
-
 ## Tech stack
 - React
 - Typescript
@@ -12,6 +10,8 @@ Aceessibility goals: WCAG 2.2 AA
 - CSS
 
 Please note that this is not a finished product, and certain accessibility aspects are still in development.
+Aceessibility goals: WCAG 2.2 AA
+
 My TO DO list:
 
 ## Bugs to fix
@@ -21,9 +21,9 @@ My TO DO list:
 2. Missing anchor from TOC to section heading (also test with Playwright)
 
 3. Add role=text to article h1 spans
-   https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en
+   (see https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en)
 
-4. Make aside a direct child of the body (also: check out support for <aside>)
+4. Make aside a direct child of the body (also: check out support for aside)
 
 5. Remove max height on accordions (and check against 1.4.12)
 
@@ -31,7 +31,7 @@ My TO DO list:
 
 7. Max 2 lines of centered text
 
-8. Remove all <br>???
+8. Check SR issues with br tags
 
 9. On pages with Breadcrumbs focus goes to Breadcrumb not Skip Link
 
@@ -59,7 +59,7 @@ My TO DO list:
 
 ## Improve code
 
-1. Replace <div> with <pre> for code examples
+1. Replace \<div\> with \<pre\> for code examples
 
 
 ## Content to add
@@ -80,4 +80,4 @@ My TO DO list:
 
 ### Accessible components
 
-- Ad more examples!!!
+- Add more examples!!!
