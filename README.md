@@ -23,7 +23,7 @@ My TO DO list:
 3. Add role=text to article h1 spans
    (see https://dequeuniversity.com/rules/axe/4.8/aria-text?application=playwright&lang=en)
 
-4. Make aside a direct child of the body (also: check out support for aside)
+4. Make \<aside\> a direct child of the body (also: check out support for \<aside\>)
 
 5. Remove max height on accordions (and check against 1.4.12)
 
@@ -31,9 +31,9 @@ My TO DO list:
 
 7. Max 2 lines of centered text
 
-8. Check SR issues with br tags
+8. Check SR issues with \<br\> tags
 
-9. On pages with Breadcrumbs focus goes to Breadcrumb not Skip Link
+9. On pages with Breadcrumbs focus goes to Breadcrumb not to the Skip Link
 
 
 
