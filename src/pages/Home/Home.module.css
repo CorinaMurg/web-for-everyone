@@ -425,6 +425,10 @@
         padding-bottom: 30px;
         border-bottom: 1.5px solid gray;
     }
+
+    .mini-article--text p {
+        font-size: 1rem;
+    }
     
     .mini-article-3 {
         border-bottom: none;
