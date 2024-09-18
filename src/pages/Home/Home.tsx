@@ -72,7 +72,7 @@ export default function Home() {
             <WeCanHelp/>
             {/* <div role="button">Test</div> */}
 
-            <div className={styles['gray-bg']}>           
+            <div className={styles['filler-bg']}>           
             </div>
             
             <section 
