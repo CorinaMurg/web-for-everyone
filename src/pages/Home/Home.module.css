@@ -163,6 +163,7 @@
     }
     .continue-to-article {
         padding: 8px 15px;
+        font-size: 1.1rem;
     }
 }
 
@@ -198,7 +199,8 @@
 
 @media screen and (max-width: 550px) { 
     .home .continue-to-article {
-        width: 17rem;
+        width: 19rem;
+        font-size: 1.3rem;
     }
 
     .hero--text {
