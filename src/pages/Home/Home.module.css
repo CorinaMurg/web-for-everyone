@@ -290,23 +290,26 @@
 
 /* /////////////////////////////////////////////////// */
 .mini-articles {
+    background-color: var(--bg-dark-color);
+    color: var(--cream-color);
     display: flex;
     flex-direction: column;
     /* margin-top: 110px;  */
     padding-inline: var(--main-margin);
-    background-color: #F0F1F3;
     padding-bottom: 70px;
+    border-bottom: 1.5px solid gray;
 }
 
 .mini-articles h2 {
     align-self: self-start;
     font-size: 2rem;
     letter-spacing: 0.5px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px; 
     width: 100%;
     padding-top: 60px;
-    color: var(--text-nav-color);
+    color: var(--cream-color);
+    letter-spacing: 0.7px;
     /* border-top: 1.5px solid gray; */
 }
 
@@ -369,7 +372,7 @@
 }
 
 .mini-article--content {
-    color: var(--text-dark-color);
+    color: var(--cream-color);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -396,16 +399,18 @@
 
 .mini-article--link h3 {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-nav-color);
+    font-weight: 500;
+    color: var(--cream-color);
     letter-spacing: 0.3px;
     margin-bottom: 40px;
 }
 
 .mini-article--text p {
-    font-size: 1rem;
-    font-weight: 400;
+    color: var(--cream-color);
+    font-size: 0.9rem;
+    font-weight: 300;
     line-height: 2;
+    letter-spacing: 0.4px;
 }
 
 .mini-article--svg {
@@ -420,21 +425,21 @@
     fill: var(--text-dark-color);
 }
 
-.mini-article:hover .mini-article--svg circle,
+/* .mini-article:hover .mini-article--svg circle,
 .mini-article:focus-within .mini-article--svg circle  {
     fill: var(--text-dark-color);
-}
+} */
 
-.mini-article:hover .mini-article--svg path,
+/* .mini-article:hover .mini-article--svg path,
 .mini-article:focus-within .mini-article--svg path  {
     fill: var(--text-light-color);
-}
+} */
 
 .mini-article:hover,
 .mini-article:focus-within {
-    outline: 1.7px solid var(--text-nav-color);
+    outline: 1.7px solid var(--cream-color);
     border-radius: 6px;
-    outline-offset: 6px;
+    outline-offset: 12px;
 }
 
 .mini-article:focus-within .mini-article--link {
