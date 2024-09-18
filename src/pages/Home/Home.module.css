@@ -251,7 +251,6 @@
     /* margin-top: 110px;  */
     padding-inline: var(--main-margin);
     padding-bottom: 70px;
-    border-bottom: 1.5px solid gray;
 }
 
 .mini-articles h2 {
@@ -263,7 +262,6 @@
     padding-top: 60px;
     color: var(--cream-color);
     letter-spacing: 0.7px;
-    /* border-top: 1.5px solid gray; */
 }
 
 .mini-articles ul {
@@ -379,7 +377,7 @@
 .mini-article:hover,
 .mini-article:focus-within {
     outline: 1.5px solid var(--cream-color);
-    border-radius: 6px;
+    border-radius: 2px;
     outline-offset: 12px;
 }
 
