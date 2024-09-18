@@ -34,8 +34,8 @@ export default function About() {
                             that every user feels seen and valued.
                         </p>
                         <p>
-                            I created <span className={styles['web-for-everyone']}>Web for Everyone</span> to help developers
-                            embrace accessibility at the start of their careers.
+                            I created <span className={styles['web-for-everyone']}>Web for Everyone</span> to help you
+                            embrace accessibility at the start of your career.
                         </p>
 
                     </div>
