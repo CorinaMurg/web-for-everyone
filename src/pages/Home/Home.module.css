@@ -423,6 +423,11 @@
         padding-bottom: 30px;
         border-bottom: 1.5px solid gray;
     }
+    
+    .mini-article-3 {
+        border-bottom: none;
+    }
+
     .mini-article--image {
         width: calc(100% + 2*var(--main-margin));
         margin-inline: calc((-1)*var(--main-margin));

@@ -22,10 +22,10 @@
     padding-bottom: 0;
 }
 
-.we-can-help article:last-child {
+/* .we-can-help article:last-child {
     padding-bottom: 0;
     border-bottom: none;
-}
+} */
 
 .we-can-help h2 {
     color: var(--cream-color);
@@ -148,6 +148,11 @@
     .we-can-help p {
         font-size: 1rem;
         line-height: 1.7;
+    }
+
+    .we-can-help ul li:last-of-type {
+        border-bottom: none;
+        padding-bottom: 80px;
     }
 }
 
