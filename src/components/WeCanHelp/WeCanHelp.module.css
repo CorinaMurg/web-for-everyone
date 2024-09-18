@@ -30,10 +30,9 @@
 
 .we-can-help h2 {
     color: var(--cream-color);
-    /* font-size: 1.3rem;
-    font-weight: 400;
-    letter-spacing: -0.5px;
-    margin-bottom: 10px; */
+    /* set in @media */
+    /* font-size: 1.7rem;
+    font-weight: 600; */
 }
 
 .we-can-help h3 {
@@ -90,7 +89,7 @@
     }
 
     .we-can-help h2 {
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
         font-weight: 600;
         margin-bottom: 40px;
     }
