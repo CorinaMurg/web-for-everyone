@@ -22,48 +22,16 @@ const contents = [
         href: "#the-accessibility-tree",
         text: "The accessibility tree",
     },
-    // {
-    //     href: "#DOM-tree-vs-accessibility-tree",
-    //     text: "DOM Tree vs. Accessibility Tree",
-    //     ariaLabel: "DOM Tree versus Accessibility Tree",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
+
     {
         href: "#implicit-vs-explicit-accessibility-roles",
         text: "Implicit vs. explicit roles",
         ariaLabel: "Implicit versus explicit accessibility roles",   
     },
-    // {
-    //     href: "#implicit-roles",
-    //     text: "Implicit Roles",
-    //     ariaLabel: "Implicit Accessibility Roles",  
-    //     className1: "padding-left-20", 
-    //     className2: "margin-top--10",
-    // },
-    // {
-    //     href: "#explicit-roles",
-    //     text: "Explicit Roles",
-    //     ariaLabel: "Explicit Accessibility Roles", 
-    //     className1: "padding-left-20",  
-    //     className2: "margin-top--10",
-    // },
     {
         href: "#the-accessible-name",
         text: "The accessible name",
     },
-    // {
-    //     href: "#the-accessible-name-computation-algorithm",
-    //     text: "The Accessible Name Algorithm",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
-    // {
-    //     href: "#visually-hidden-text",
-    //     text: "Example: Using visually hidden text",
-    //     className1: "padding-left-20",
-    //     className2: "margin-top--10",
-    // },
     {
         href: "#conclusion",
         text: "Conclusion",

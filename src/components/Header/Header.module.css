@@ -82,6 +82,7 @@ header .logo-link:hover {
     display: none;
 }
 
+
 @media (max-width: 725px) {
     .mobile-nav-toggle {
         display: block;
