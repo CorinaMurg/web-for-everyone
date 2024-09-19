@@ -1,20 +1,27 @@
 import React from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { useThemeClass } from "../../hooks/useThemeClass";
 import { NavLink } from "react-router-dom";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import "./Navbar.css";
+import "../../global.css";
 
 interface NavbarTypes {
     closeModal?: () => void;
 };
 
 export default function Navbar({ closeModal }: NavbarTypes) {
+    const { toggleTheme } = useContext(ThemeContext);
+
+    const themeClass = useThemeClass();
 
     return (
-        <nav aria-label="site links" className="navbar">
+        <nav aria-label="site links">
             <ul className="primary-navigation">
                 <li>
                     <button  
-                        className="theme-toggle"
+                        className="theme-toggle" onClick={toggleTheme}
                     >   
                         <span className="sr-only">Toggle theme</span>
                         <svg id="moon" height="20" width="26" viewBox="0 0 384 512">
@@ -28,7 +35,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                 <li>
                     <NavLink
                         to="/"
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        className={({ isActive }) => isActive ? `nav-link active-link ${themeClass}` : `nav-link ${themeClass}`}
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         Home
@@ -38,7 +45,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                 <li>
                     <NavLink
                         to="/blog"
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        className={({ isActive }) => isActive ? `nav-link active-link ${themeClass}` : `nav-link ${themeClass}`}
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         Blog
@@ -48,7 +55,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                 <li>
                     <NavLink
                         to="/about"
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        className={({ isActive }) => isActive ? `nav-link active-link ${themeClass}` : `nav-link ${themeClass}`}
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         About
@@ -57,7 +64,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                 <li>
                     <NavLink
                         to="/GAAD-2024"
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        className={({ isActive }) => isActive ? `nav-link active-link ${themeClass}` : `nav-link ${themeClass}`}
                         onClick={() => { useScrollToTop(); if (closeModal) {closeModal();}}}
                     >
                         GAAD 2024

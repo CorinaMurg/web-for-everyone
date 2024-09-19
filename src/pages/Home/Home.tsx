@@ -36,7 +36,6 @@ export default function Home() {
             </section>
             <section className={styles['hero--text']}>
                 <div className={styles['hero--text--left']}> 
-                    {/* <h2>New to accessibility?</h2> */}
                     <Link 
                         to="/#accessibility-101" 
                         className={styles['continue-to-article']}
@@ -52,7 +51,6 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className={styles['hero--text--right']}>
-                    {/* <h2>Know accessibility?</h2> */}
                     <Link 
                         to="/blog/fixing-the-six-most-common-bugs" 
                         className={styles['continue-to-article']}
@@ -71,7 +69,6 @@ export default function Home() {
             </section>
 
             <WeCanHelp/>
-            {/* <div role="button">Test</div> */}
 
             <div className={styles['filler-bg']}>           
             </div>

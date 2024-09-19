@@ -54,6 +54,9 @@
 
     /* Border radius */
     --border-radius: 5px;
+
+    /* Beta border */
+    --beta-border: 2px solid var(--text-nav-color);
 }
 
 

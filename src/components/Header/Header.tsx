@@ -1,9 +1,12 @@
 import React from "react"
 import { useState } from "react"
+import { useThemeClass } from "../../hooks/useThemeClass";
 import Navbar from "../Navbar/Navbar";
 import MenuModal from "../MenuModal/MenuModal";
 import Logo from "../Logo/Logo";
+import "../../global.css";
 import styles from "./Header.module.css"
+
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +14,11 @@ export default function Header() {
     function toggleModal() {
         setIsMenuOpen(!isMenuOpen);
     }
+
+    const themeClass = useThemeClass();
     
     return (
-        <header role="banner">
+        <header className={themeClass}>
             <a className={styles['skip-to-content']} href="#main">Skip to content</a>
             <div className={styles['header--left']}>
                 <Logo color = "var(--text-nav-color)" fontWeight={600}/>
@@ -24,7 +29,7 @@ export default function Header() {
                 className={styles['mobile-nav-toggle']} 
                 aria-controls="primary-navigation"
                 aria-expanded={isMenuOpen}
-                // too verbose. "navigation menu menu button. collapsed. submenu"
+                // a11y concern: too verbose. "navigation menu menu button. collapsed. submenu"
                 // aria-haspopup="true"
                 onClick={() => toggleModal()}
             >

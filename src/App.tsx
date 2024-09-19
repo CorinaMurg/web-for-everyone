@@ -1,4 +1,5 @@
-
+import React, { useState, useEffect } from "react"
+import { ThemeContext } from "./contexts/ThemeContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./pages/Home/Home"
@@ -15,32 +16,48 @@ import About from "./pages/About/About"
 import A11yStatement from "./pages/A11yStatement/A11yStatement"
 import Gaad from "./pages/Gaad/Gaad"
 import NotFound from "./pages/NotFound/NotFound"
-import React from "react"
 
 export default function App() {
 
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+    const toggleTheme = () => {
+        setTheme(currentTheme => {
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            localStorage.setItem('theme', newTheme);
+            return newTheme;
+        });
+    };
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path="blog" element={<BlogLayout />}>
-                        <Route index={true} element={<Blog />} />
-                        <Route path="what-is-accessibility" element={<WhatIsA11y />} />
-                        <Route path="how-accessibility-works" element={<HowA11yWorks />} />
-                        <Route path="most-common-bugs" element={<MostCommonBugs />} />
-                        <Route path="testing-with-playwright" element={<TestingWithPlaywright />} />
-                        <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
-                        <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
-                        <Route path="similar-but-different" element={<SimilarButDifferent />} />  
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path="blog" element={<BlogLayout />}>
+                            <Route index={true} element={<Blog />} />
+                            <Route path="what-is-accessibility" element={<WhatIsA11y />} />
+                            <Route path="how-accessibility-works" element={<HowA11yWorks />} />
+                            <Route path="most-common-bugs" element={<MostCommonBugs />} />
+                            <Route path="testing-with-playwright" element={<TestingWithPlaywright />} />
+                            <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
+                            <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
+                            <Route path="similar-but-different" element={<SimilarButDifferent />} />  
+                        </Route>
+                        <Route path="GAAD-2024" element={<Gaad/>} />
+                        <Route path="about" element={<About />} />
+                        <Route path="accessibility-statement" element={<A11yStatement />} />
+                        <Route path="*" element={<NotFound />} />
                     </Route>
-                    <Route path="GAAD-2024" element={<Gaad/>} />
-                    <Route path="about" element={<About />} />
-                    <Route path="accessibility-statement" element={<A11yStatement />} />
-                    <Route path="*" element={<NotFound />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+                </Routes>
+            </BrowserRouter>
+        </ThemeContext.Provider>
+        
     );
 }
 

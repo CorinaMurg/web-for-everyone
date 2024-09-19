@@ -456,6 +456,18 @@ h4 {
 li {
     font-weight: 500;
 }
+
+.light {
+    color: var(--bg-dark-color);
+    background-color: var(--cream-color);
+}
+
+.dark {
+    color: var(--cream-color);
+    background-color: var(--bg-dark-color);
+    --beta-border: none;
+}
+
 .margin-block-0 {
     margin-block: 0;
 }

@@ -13,6 +13,20 @@
     margin-left: 40px;
 }
 
+/* .light {
+    color: var(--bg-dark-color);
+    background-color: var(--cream-color);
+}
+
+.dark {
+    color: var(--cream-color);
+    background-color: var(--bg-dark-color);
+} */
+
+.nav-link.dark {
+    font-weight: 500;
+}
+
 
 .nav-link:hover {
     text-decoration: underline;
@@ -28,11 +42,19 @@
     text-decoration-thickness: 2px;
 }
 
+.active-link.dark {
+    text-decoration-thickness: 1px;
+}
+
 .nav-link:focus-visible {
     outline: 2px solid var(--text-nav-color);
     outline-offset: 2px;
     text-decoration: none;
     border-radius: 7px;
+}
+
+.nav-link.dark:focus-visible {
+    outline: 1.5px solid var(--cream-color);
 }
 
 
