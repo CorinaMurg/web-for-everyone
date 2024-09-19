@@ -1,19 +1,22 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../contexts/ThemeContext';
 import useScrollToTop from '../../hooks/useScrollToTop';
 import styles from './Logo.module.css';
 
 interface LogoTypes {
-    color: string,
-    fontWeight: number,
+    theme?: string,
+    color?: string,
+    fontWeight?: any,
     closeModal?: () => void,
 }
 
-export default function Logo( { color, fontWeight, closeModal }: LogoTypes ) {
+export default function Logo( { theme, color, fontWeight, closeModal }: LogoTypes ) {
 
     const logoColor = {
-        color: color,
-        fontWeight: fontWeight,
+        color: color || theme === 'dark' ? 'var(--cream-color)' : 'var(--text-nav-color)',
+        fontWeight: fontWeight || theme === 'dark' ? 400 : 600
     }
 
     return (

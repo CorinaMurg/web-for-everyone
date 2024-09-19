@@ -35,6 +35,13 @@
     text-decoration-thickness: 2px;
 }
 
+.nav-link.dark:hover {
+    text-decoration: underline;
+    color: var(--cream-color);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+}
+
 .active-link {
     text-decoration: underline;
     color: var(--text-nav-color);
@@ -66,6 +73,11 @@
     cursor: pointer;
 }
 
+nav.dark .theme-toggle {
+    background: var(--bg-dark-color);
+}
+
+/******* moon ************/
 .theme-toggle svg[id="moon"] circle {
     fill: var(--text-dark-color);
 }
@@ -75,36 +87,27 @@
 }
 
 
-.theme-toggle svg[id="sun"] circle {
-    fill: var(--text-dark-color);
+nav.dark .theme-toggle svg[id="moon"] {
+    display: none;
 }
 
-.theme-toggle svg[id="sun"] path {
-    fill: var(--text-dark-color);
-}
+/******* moon ************/
 
 .theme-toggle svg[id="sun"] {
     display: none; 
 }
-  
-/* .theme-toggle:hover svg[id="arrow"] {
-    display: none; 
-} */
 
-/* .continue-to-article:focus-visible svg[id="arrow"] {
-    display: none; 
-} */
-
-/* .continue-to-article:hover svg[id="bug"] {
-    display: block; 
-    fill: var(--text-dark-color);
+nav.dark .theme-toggle svg[id="sun"] {
+    display: inline;
 }
 
-.continue-to-article:focus-visible svg[id="bug"] {
-    display: block; 
-    fill: var(--text-dark-color);
-} */
+.theme-toggle svg[id="sun"] circle {
+    fill: var(--yellow-color);
+}
 
+.theme-toggle svg[id="sun"] path {
+    fill: var(--yellow-color);
+}
 
 
 @media screen and (min-width: 725px) {

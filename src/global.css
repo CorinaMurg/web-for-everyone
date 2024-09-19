@@ -465,7 +465,7 @@ li {
 .dark {
     color: var(--cream-color);
     background-color: var(--bg-dark-color);
-    --beta-border: none;
+    --beta-border: 2px solid var(--bg-dark-color);
 }
 
 .margin-block-0 {
