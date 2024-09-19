@@ -12,7 +12,7 @@ interface NavbarTypes {
 };
 
 export default function Navbar({ closeModal }: NavbarTypes) {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { toggleTheme } = useContext(ThemeContext);
 
     const themeClass = useThemeClass();
 

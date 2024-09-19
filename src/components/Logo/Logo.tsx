@@ -8,7 +8,7 @@ import styles from './Logo.module.css';
 interface LogoTypes {
     theme?: string,
     color?: string,
-    fontWeight?: any,
+    fontWeight?: number,
     closeModal?: () => void,
 }
 

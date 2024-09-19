@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useThemeClass } from '../../hooks/useThemeClass';
 import useScrollToTop from '../../hooks/useScrollToTop';
 import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './WeCanHelp.module.css';
@@ -7,8 +8,13 @@ import '../../global.css';
 
 export default function WeCanHelp() {
 
+    const themeClass = useThemeClass();
+
     return (
-        <aside role="complementary" aria-labelledby="how-can-we-help" className={styles['we-can-help']}>
+        <aside 
+            aria-labelledby="how-can-we-help" 
+            className={`${styles['we-can-help']} ${themeClass}`}
+        >
             <h2 id="how-can-we-help" className={styles['we-can-help--heading']}
             >
                 How can <span className='code-blue-color'>Web for Everyone</span> help

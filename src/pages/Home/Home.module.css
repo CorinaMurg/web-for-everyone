@@ -17,36 +17,41 @@
     flex-direction: column;
 }
 
-.hero h1 {
+.home h1 {
     font-size: 3.8rem;
-    font-weight: 600;
+    font-weight: var(--home-heading-fontweight);
     line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px; 
-    color: var(--text-nav-color);
+    color: var(--home-heading-color);
     padding-top: 5px;
     margin-top: 50px;
     margin-bottom: 10px;
 }
 
+/* .home.dark h1 {
+    color: var(--cream-color);
+    font-weight: 500;
+} */
+
 .hero--subtitle {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    font-weight: var(--home-subtitle-fontweight);
     width: 40rem;
     margin-inline: auto;
     margin-top: 0;
     text-align: center;
-    color: rgb(71, 70, 70);
+    color: var(--home-subtitle-color);
+
 }
 
-.all-highlight {
-    font-family: "Quicksand", sans-serif;
-    color: var(--text-dark-color);
-    font-weight: 700;
-}
+/* .home.dark .hero--subtitle {
+    color: var(--cream-color);
+} */
 
 .hero--text {
     display: flex;
@@ -80,9 +85,10 @@
     color: var(--text-dark-color);
     padding: 6px 15px;
     border-radius: 10px;
-    border: 1.8px solid var(--text-nav-color);
+    border: var(--home-cta-border);
     width: 15rem;
 }
+
 
 .hero--text--left .continue-to-article {
     background-color: var(--hero-lightBlue-faded);

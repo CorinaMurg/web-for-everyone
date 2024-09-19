@@ -55,8 +55,14 @@
     /* Border radius */
     --border-radius: 5px;
 
-    /* Beta border */
+    /* variable for dark */
     --beta-border: 2px solid var(--text-nav-color);
+    --home-heading-color: var(--text-nav-color);
+    --home-heading-fontweight: 600;
+    --home-cta-border: 1.8px solid var(--text-nav-color);
+    --home-subtitle-color: var(--text-nav-color);
+    --home-subtitle-fontweight: 600;
+    --we-can-help-border: 2px solid var(--bg-dark-color);
 }
 
 

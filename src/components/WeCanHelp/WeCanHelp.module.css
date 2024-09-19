@@ -1,12 +1,17 @@
 
 .we-can-help {
     background-color: var(--bg-dark-color);
+    border: var(--we-can-help-border);
     color: var(--cream-color);
     padding: 25px 40px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     /* margin-inline: var(--main-margin); */
+}
+
+.we-can-help .dark {
+    border: 2px solid var(--cream-color);
 }
 
 .we-can-help ul {
@@ -121,6 +126,9 @@
     .we-can-help h3 {
         margin-bottom: 20px;
         margin-top: 0;
+    }
+    .we-can-help.dark {
+        border: 2px solid var(--cream-color);
     }
 }
 

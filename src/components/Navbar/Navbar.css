@@ -13,16 +13,6 @@
     margin-left: 40px;
 }
 
-/* .light {
-    color: var(--bg-dark-color);
-    background-color: var(--cream-color);
-}
-
-.dark {
-    color: var(--cream-color);
-    background-color: var(--bg-dark-color);
-} */
-
 .nav-link.dark {
     font-weight: 500;
 }

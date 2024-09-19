@@ -1,6 +1,8 @@
 import React from "react"
 import { useRef } from "react"
 import { Link } from "react-router-dom"
+import { ThemeContext } from "../../contexts/ThemeContext"
+import { useThemeClass } from "../../hooks/useThemeClass"
 import { miniArticleData } from "../../data/homeData/miniArticleData"
 import WeCanHelp from "../../components/WeCanHelp/WeCanHelp"
 import useScrollToTop from "../../hooks/useScrollToTop"
@@ -18,9 +20,12 @@ export default function Home() {
         }
     };
 
+    const { theme } = React.useContext(ThemeContext);
+    const themeClass = useThemeClass();
+
     return (
-        <div className={styles.home}>
-            <section className={styles['hero']}> 
+        <div className={`${styles['home']} ${themeClass}`}>
+            <section className={styles.hero}> 
                 <div className={styles['hero--heading']}>   
                     <h1 id="heading">
                         <span>Let's make it</span>
@@ -28,8 +33,8 @@ export default function Home() {
                     </h1>
                 </div>
                 <p className={styles['hero--subtitle']}>
-                    <span>You're building your portfolio site.</span>
-                    <span>Will it be ready to welcome all visitors, including those with disabilities?</span>
+                    <span>You're building your portfolio site. </span>
+                    <span>Will it be ready to welcome all visitors, including those with disabilities? </span>
                     <span>Time to check!</span>   
                 </p>      
 
