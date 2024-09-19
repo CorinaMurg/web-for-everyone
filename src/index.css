@@ -55,7 +55,7 @@
     /* Border radius */
     --border-radius: 5px;
 
-    /* variable for dark */
+    /* variables for dark */
     --beta-border: 2px solid var(--text-nav-color);
     --home-heading-color: var(--text-nav-color);
     --home-heading-fontweight: 600;
@@ -63,6 +63,7 @@
     --home-subtitle-color: var(--text-nav-color);
     --home-subtitle-fontweight: 600;
     --we-can-help-border: 2px solid var(--bg-dark-color);
+    --body-bg-color: var(--cream-color);
 }
 
 
@@ -146,7 +147,7 @@
 } */
 
 body {
-    background-color: var(--cream-color);
+    background-color: var(--body-bg-color);
     color: var(--text-dark-color);
     font-family: "Quicksand", sans-serif;
     min-height: 100vh;

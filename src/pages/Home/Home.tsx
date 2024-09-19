@@ -25,7 +25,7 @@ export default function Home() {
 
     return (
         <div className={`${styles['home']} ${themeClass}`}>
-            <section className={styles.hero}> 
+            <section className={styles['hero']}> 
                 <div className={styles['hero--heading']}>   
                     <h1 id="heading">
                         <span>Let's make it</span>

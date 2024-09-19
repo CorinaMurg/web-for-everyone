@@ -1,5 +1,3 @@
-
-
 .article-container a,
 .a11y-statement a,
 .gaad a,
@@ -472,6 +470,7 @@ li {
     --home-subtitle-color: var(--cream-color);
     --home-subtitle-fontweight: 400;
     --we-can-help-border: 1.5px solid var(--cream-color);
+    --body-bg-color: var(--bg-dark-color);
 }
 
 .margin-block-0 {

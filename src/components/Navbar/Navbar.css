@@ -61,6 +61,7 @@
     border: none;
     background: var(--cream-color);
     cursor: pointer;
+    margin-top: -2px;
 }
 
 nav.dark .theme-toggle {
