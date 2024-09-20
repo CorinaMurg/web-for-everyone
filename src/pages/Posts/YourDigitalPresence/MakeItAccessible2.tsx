@@ -721,7 +721,7 @@ export default function MakeItAccessible() {
                         Explore  <span> </span>
                         <Link to="/blog" onClick={() => { useScrollToTop() }}>
                             Web for Everyone's Blog
-                        </Link>
+                        </Link>.
                     </p>
                 </div>
 

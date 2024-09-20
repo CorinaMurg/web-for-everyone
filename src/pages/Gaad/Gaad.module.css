@@ -11,12 +11,13 @@
 
 .gaad h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: var(--heading-fontweight);
     margin-bottom: 32px;
 }
 
 .gaad h2 {
     font-size: 1.7rem;
+    font-weight: var(--heading-fontweight);
 }
 
 @media screen and (max-width: 800px) {

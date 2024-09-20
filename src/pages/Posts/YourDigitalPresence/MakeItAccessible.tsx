@@ -153,22 +153,19 @@ export default function MakeItAccessible() {
                                 They can't test all aspects of accessibility, and will catch at
                                 most 50% of all the issues.
                             </p>
-                            <div className="warning">
-                                <WarningTriangle />
-                                <p>  
-                                    When building a complex website, your accessibility 
-                                    audit will have to include:
-                                </p>
-                                <p className="bullet-point-line">
-                                    <span className="bold">manual testing</span>: navigating with only the 
-                                    keyboard, using different assistive technologies, to name a few
-                                </p>
-                                <p className="bullet-point-line">
-                                    <span className="bold">user testing</span>: involving people with disabilities in the process
-                                    of evaluating the site
+                            <p>  
+                                When building a complex website, your accessibility 
+                                audit will have to include:
+                            </p>
+                            <p className="bullet-point-line">
+                                <span className="bold">manual testing</span>: navigating with only the 
+                                keyboard, testing with different screen readers and other different assistive technologies, to name just a few steps.
+                            </p>
+                            <p className="bullet-point-line">
+                                <span className="bold">user testing</span>: involving people with disabilities in the process
+                                of evaluating the site.
 
-                                </p>
-                            </div>
+                            </p>
                             </div>
                         </details>
                     </div>
@@ -338,25 +335,25 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <div className="highlight">
-                        <h4>
+                        <h3>
                             Missing, empty, or descriptive?
                             <span className="sr-only"> alt attribute</span>
                             <span aria-hidden="true"> 🤔</span>
-                        </h4>
+                        </h3>
                         <p className="white-bg">
-                            <span className="bold"><span className="pink-text">Missing</span> alt</span>: screen readers might 
+                            <span className="bold-large"><span className="pink-text">Missing</span> alt</span>: screen readers might 
                             read the source file name. When you have an image, the <code>alt</code> attribute is required!
                         </p>
                         <p>
-                            <span className="bold"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
+                            <span className="bold-large"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                         <p className="white-bg">
-                            <span className="bold"><span className="pink-text">Descriptive</span> alt</span>: add informative text if the image
+                            <span className="bold-large"><span className="pink-text">Descriptive</span> alt</span>: add informative text if the image
                             is important for understanding your content.
                         </p> 
                         <p className="white-bg">
-                            <span className="bold">Remember</span>:
+                            <span className="bold-large">Remember</span>:
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
@@ -440,7 +437,7 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         <span className="bold">What about the <code>alt</code> attribute?</span> An icon displayed with an
-                        <span> </span><code>&lt;i&gt;</code> tag does not accept the <code>alt</code> attribute 
+                        <span> </span><code>&lt;i&gt;</code> tag does not accept this attribute 
                         like an <code>&lt;img&gt;</code> tag would. 
                     </p>
                     <p className="white-bg">
@@ -637,7 +634,7 @@ export default function MakeItAccessible() {
                         Ready to continue your accessibility bug hunt?
                     </p>
                     
-                    <p className="margin-top-30">
+                    <p className="margin-top-30 read-next">
                         <span className="bold">Read next: </span>
                         <Link to="/blog/lets-uncover-six-more-bugs" onClick={() => { useScrollToTop() }}>
                             Let's uncover six more bugs

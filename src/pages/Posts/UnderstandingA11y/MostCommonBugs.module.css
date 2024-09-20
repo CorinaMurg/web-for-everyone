@@ -1,5 +1,3 @@
-
-
 /* INTRO */
 .numbers {
     display: flex;
@@ -13,9 +11,9 @@
 }
 
 .numbers dt {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: var(--pinkBright-color);
+    color: var(--pink-text-on-less-dark-bg);
     font-family: "Poppins", sans-serif;
     width: 4rem;
     text-align: right;
@@ -23,10 +21,10 @@
 }
 
 .numbers dd {
-    font-size: 0.9rem;
-    color: var(--text-dark-color);
+    font-size: var(--paragraph-font-size);
+    color: var(----paragraph-color);
+    font-weight: var(--paragraph-fontweight);
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
 }
 
 @media screen and (max-width: 670px) {
@@ -53,7 +51,7 @@
     font-family: "Popins", sans-serif;
     letter-spacing: 0.5px;
     font-weight: 600;
-    padding: 10px 15px;
+    padding:6px 15px;
     align-self:auto;
     margin-bottom: 20px;
 }
@@ -67,6 +65,12 @@
     outline: 2px solid var(--text-dark-color);
     outline-offset: 4px;
 }
+
+/* .low-contrast-paragraph {
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-fontweight);
+    color: var(--paragraph-color);
+} */
 
 @media screen and (max-width: 670px) {
     .low-contrast--button {

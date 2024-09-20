@@ -9,6 +9,7 @@
     --code-blueDark-color: #3497A2;
     --pinkBright-color: #de0265;
     --pink-for-dark-bg-color: #fc2083; 
+    --pink-for-less-dark-bg: #ff47aa;
     --brightBlue-dark-color: #0074c7;
     --brightBlue-light-color: #3888FF;
 
@@ -21,10 +22,12 @@
     --gray-color:#808080;
 
     /* Body Bg */
-    --body-bg-color: #e8e9ec;
+    /* --body-bg-color: #e8e9ec; */
 
     /* Highlight colors */
     --bg-dark-color: #151f28;
+    --bg-lessDark-color: #202d38;
+    --bg-darkest-color: #07131f;
     --grayishBlue-color: hsl(233, 12%, 87%);
     --yellow-color: #ffb703;
     --yellow-color: #fcbe22;
@@ -65,7 +68,7 @@
     --subtitle-yellow: var(--yellow-color);
     --subtitle-fontweight: 600;
     --border-for-dark: 2px solid var(--bg-dark-color);
-    --body-bg-color: var(--cream-color);
+    /* --body-bg-color: var(--cream-color); */
     --paragraph-color: var(--text-dark-color);
     --paragraph-fontweight: 400;
     --paragraph-font-size: 1rem;
@@ -79,10 +82,19 @@
 
     --warning-color: var(--text-dark-color);
     --warning-font-size: 1rem;
-    --warning-fontweight: 500;
+    --same-fontweight: 500;
+    --same-dark-color: var(--text-dark-color);
     --warning-bg-color: var(--lightPink-color);
 
-    
+    --yellow-keyboard-bg: var(--yellowFaded-color);
+    --always-dark-text: var(--text-dark-color);
+
+    --code-bg-color: var(--bg-dark-color);
+    --code-color: var(--cream-color);
+
+    --filler-bg: var(--cream-color);
+
+    --pink-text-on-less-dark-bg: var(--pinkBright-color);
     
 }
 
@@ -95,6 +107,12 @@
     color: rgb(4, 159, 46);
 }
 
+.pink-text-on-less-dark-bg {
+    color: var(--pink-for-less-dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 .pink-text {
     color: var(--pinkBright-color);
 }
@@ -105,10 +123,12 @@
 }
 
 .yellow-bg {
-    background-color: var(--yellowFaded-color);
+    background-color: var(--yellow-keyboard-bg);
+    color: var(--always-dark-text);
     padding: 0 5px;
     border-radius: 10px;
     font-size: inherit;
+    font-weight: var(--same-fontweight);
 }
 
 

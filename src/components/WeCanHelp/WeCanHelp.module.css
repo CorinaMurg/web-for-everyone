@@ -1,7 +1,7 @@
 
 .we-can-help {
-    background-color: var(--bg-dark-color);
-    border: var(--border-for-dark);
+    background-color: var(--code-bg-color);
+    /* border: var(--border-for-dark); */
     color: var(--cream-color);
     padding: 25px 40px;
     display: flex;

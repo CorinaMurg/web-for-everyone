@@ -85,7 +85,7 @@
     color: var(--text-dark-color);
     padding: 6px 15px;
     border-radius: 10px;
-    border: 1.8px solid var(--text-nav-color);
+    border: var(--cta-border);
     width: 15rem;
     margin-top: 5px;
     margin-bottom: 50px;

@@ -173,7 +173,7 @@
 
 
 .resources--table-contents h2 {
-    margin-top: 40px;
+    margin-top: 55px;
     margin-bottom: 30px;
     display: flex;
     font-family: "Quicksand", sans-serif;
@@ -196,16 +196,12 @@
     justify-content: center;
     gap: 20px;
     padding-inline-start: 0;
-    background-color: var(--bg-dark-color);  
+    background-color: var(--code-bg-color);  
     border-radius: 10px;
-    border: var(--border-for-dark);
+    /* border: var(--border-for-dark); */
     padding: 15px 15px 20px 15px;
     height: 15rem;
 }
-
-/* .resources--table-contents.dark {
-    border: 1.5px solid var(--cream-color);
-} */
 
 .resources--table-contents ul li a {
     align-self: flex-start;
@@ -218,7 +214,7 @@
     text-decoration-thickness: 1px;
     letter-spacing: 0.3px;
     padding: 2px;
-    border: 1.7px solid var(--bg-dark-color);  
+    border: 1.7px solid var(--code-bg-color);
 }
 
 .resources--table-contents ul li a:hover {

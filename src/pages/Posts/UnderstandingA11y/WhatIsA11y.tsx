@@ -138,42 +138,42 @@ export default function WhatIsA11y() {
                                     Here's an overview of some of the most common assistive technologies:
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">1.</span> Screen Readers</span> are typically used by people who are blind 
+                                    <span className="bold">Screen Readers</span> are typically used by people who are blind 
                                     or have vision impairments. Users navigate through the UI elements with the 
                                     keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">2.</span> Screen Readers with Braille Displays</span> for users with both 
+                                    <span className="bold">Screen Readers with Braille Displays</span> for users with both 
                                     vision and hearing impairments. The screen reader 
                                     translates the content on the screen into a format that can be read on a 
                                     braille display. These displays are fitted with braille cells that change dynamically.
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">3.</span> Screen Magnifiers</span> are designed to enlarge the content on 
+                                    <span className="bold">Screen Magnifiers</span> are designed to enlarge the content on 
                                     screen, making it more readable for users with low vision. These tools often 
                                     include additional features to enhance contrast and reduce glare.
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">4.</span> Speech Recognition Software</span> allows users to interact with 
+                                    <span className="bold">Speech Recognition Software</span> allows users to interact with 
                                     their devices using voice commands. This technology helps people 
                                     with mobility issues or those who need a hands-free interraction with the web. 
                                     Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
                                     Dictation. Windows has integrated Cortana for voice commands.
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">5.</span> Text-to-Speech Software (TTS)</span> converts 
+                                    <span className="bold">Text-to-Speech Software (TTS)</span> converts 
                                     written text into 
                                     spoken words using synthetic voices. It benefits users with reading 
                                     difficulties, such as dyslexia.
                                 </p>
                                 
                                 <p>
-                                    <span className="bold"><span className="pink-text">6.</span> Alternate Input Technologies</span> simulate the functionality of 
+                                    <span className="bold">Alternate Input Technologies</span> simulate the functionality of 
                                     the keyboard for people with more severe physical disabilities. For example, a sip&puff device
                                     allows a person to send signals to the computer by inhaling or exhaling into a wand. 
                                 </p>
                                 <p>
-                                    <span className="bold"><span className="pink-text">7.</span> Alternate Pointing Devices</span> replicate the functionality of 
+                                    <span className="bold">Alternate Pointing Devices</span> replicate the functionality of 
                                     a traditional mouse. 
                                     For example, an eye-tracking system allows mouse control through eye movements.
                                 </p>   
@@ -222,6 +222,7 @@ export default function WhatIsA11y() {
                         </p>
                     </div>
                     
+                    {/* our job as developers */}
                     <div>
                         <h3>
                             Our job as developers is threefold:
@@ -342,8 +343,8 @@ export default function WhatIsA11y() {
                         how accessibility works.
                     </p>
                          
-                    <p>
-                        <b>Read next: </b>
+                    <p className="read-next">
+                        <span className="bold">Read next: </span>
                         <Link to="/blog/how-accessibility-works" onClick={() => { useScrollToTop() }}>
                             How accessibility works
                         </Link>

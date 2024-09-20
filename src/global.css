@@ -6,7 +6,7 @@
     font-weight: var(--paragraph-fontweight);
     font-size: var(--paragraph-font-size);
     opacity: var(--paragraph-opacity);
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     text-decoration: underline;
     text-decoration-color: var(--code-blueDark-color);
     text-decoration-thickness: 2px;
@@ -144,6 +144,11 @@
     font-weight: 600;
 }
 
+.bold-large {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
 .border-top {
     border-top: 1.7px solid gray;
     margin-top: 60px;
@@ -210,7 +215,7 @@
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    color: var(--cream-color);
+    color: var(--code-color);
     margin-bottom: 30px;
     border-radius: var(--border-radius);
 }
@@ -259,9 +264,9 @@
     color: var(--code-blue-color);
 }
 
-.code-gray-color {
+/* .code-gray-color {
     color: rgb(169, 167, 167);
-}
+} */
 
 .code-yellow-color {
     color: var(--code-yellow-color);
@@ -479,7 +484,7 @@ li {
     --beta-border: 2px solid var(--bg-dark-color);
     --heading-color: var(--cream-color);
     --heading-fontweight: 500;
-    --home-cta-border: none;
+    --cta-border: none;
     --subtitle-color: var(--cream-color);
     --subtitle-yellow: var(--yellow-color);
     --subtitle-fontweight: 400;
@@ -493,12 +498,19 @@ li {
     --in-text-link-color: var(--code-blue-color);
     --pink-heading: var(--pink-for-dark-bg-color);
     --pink-heading-fontweight: 400;
-    --highlight-bg-color: #202d38;
+    --highlight-bg-color: var(--bg-lessDark-color);
     --highlight-border: 1.7px solid rgb(167, 165, 165);
     --warning-color: var(--text-dark-color);
     --warning-font-size: 1rem;
-    --warning-fontweight: 500;
+    --same-fontweight: 500;
+    --same-dark-color: var(--text-dark-color);
     --warning-bg-color: rgba(255, 233, 237, 0.8);
+    --yellow-keyboard-bg: var(--hero-pink);
+    --always-dark-text: var(--text-dark-color);
+    --code-bg-color: var(--bg-darkest-color);
+    --code-color: rgb(169, 167, 167);
+    --filler-bg: var(--yellow-color);
+    --pink-text-on-less-dark-bg: var(--cream-color);
 }
 
 .margin-block-0 {
@@ -616,6 +628,29 @@ p {
     scrollbar-color: var(--text-dark-color) var(--cream-color);
 }
 
+.read-next {
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.read-next a {
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif;
+    color: var(--code-blueDark-color);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.read-next a:hover {
+    color: var(--code-blueDark-color);
+}
+
+.recommended-read {
+    font-size: 1.3rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
 
 ::-webkit-scrollbar {
     width: 10px; 
@@ -683,6 +718,7 @@ p {
 }
 
 .stats {
+    color: var(--same-dark-color);
     font-weight: 600;
     padding: 1px 2px;
     border-radius: 3px;
@@ -704,9 +740,9 @@ b {
 summary {
     cursor: pointer;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: var(--heading-fontweight);
     letter-spacing: 0.5px;
-    color: var(--text-nav-color);
+    color: var(--heading-color);
 }
 
 summary::marker {
@@ -798,7 +834,7 @@ ul[class^="checkmark-list"] li p {
 .warning >p {
     margin-block: 20px;
     color: var(--warning-color) !important;
-    font-weight: var(--warning-fontweight) !important;
+    font-weight: var(--same-fontweight) !important;
     font-size: var(--warning-font-size) !important;
     opacity: var(--warning-opacity) !important;
 }
@@ -806,7 +842,7 @@ ul[class^="checkmark-list"] li p {
 .warning li>p {
     margin-block: 0;
     color: var(--warning-color) !important;
-    font-weight: var(--warning-fontweight) !important;
+    font-weight: var(--same-fontweight) !important;
     font-size: var(--warning-font-size) !important;
     opacity: var(--warning-opacity) !important;
 }
@@ -1039,6 +1075,11 @@ ul[class^="checkmark-list"] li p {
 @media screen and (max-width: 530px) {
     .article-container .subtitle {
         line-height: 1.3;
+    }
+
+    .read-next {
+        display: flex;
+        flex-direction: column;
     }
 }
 

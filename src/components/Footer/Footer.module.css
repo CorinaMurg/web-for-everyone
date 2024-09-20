@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--bg-dark-color);
+    background-color: var(--code-bg-color);
     color: var(--cream-color);
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@ footer {
     font-weight: 500;
     /* margin-top: 40px; */
     padding: 48px var(--main-margin);
-    border-top: 1px solid var(--cream-color);
+    /* border-top: 1px solid var(--cream-color); */
 }
 
 .footer--top {

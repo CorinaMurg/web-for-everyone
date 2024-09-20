@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useThemeClass } from "../../../hooks/useThemeClass"
+import { useState, useEffect } from "react"
 import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
@@ -29,12 +30,27 @@ export default function MostCommonBugs() {
     useScrollToTop(); 
     useScrollToSection();
     const { activeId} = useHighlightTOC();
-    const [textColor, setTextColor] = useState('initial')
+
+    const themeClass = useThemeClass();
+    
+    // let initialColor = themeClass === "light" ? "#000" : "#fbf6ea"
+    // const [textColor, setTextColor] = useState(initialColor)
+
+    // const toggleColor = () => {
+    //     setTextColor(textColor === initialColor ? '#169AC0' : initialColor);
+    // };
+
+    const getInitialColor = (theme: string) => theme === "light" ? "#000" : "#fbf6ea";
+    const [textColor, setTextColor] = useState(getInitialColor(themeClass));
+
+    useEffect(() => {
+        setTextColor(getInitialColor(themeClass));
+    }, [themeClass]);
 
     const toggleColor = () => {
-        setTextColor(textColor === 'initial' ? '#169AC0' : 'initial');
+        setTextColor(prevColor => prevColor === getInitialColor(themeClass) ? '#169AC0' : getInitialColor(themeClass));
     };
-    
+
     return (
         <div className={`article-container ${styles['commonbugs-container']}`}>
             <BackLinks 
@@ -76,7 +92,7 @@ export default function MostCommonBugs() {
                         The stats are not great, but compared with previous years, they are (very slowly) improving.
                     </p>
                     
-                    <div className="highlight highlight-no-heading highlight-dl">
+                    <div className={`highlight highlight-no-heading highlight-dl`}>
                         <dl className={styles['numbers']}>
                             <dt><span>96</span></dt>
                             <dd>percentage of home pages with accessibility bugs</dd>
@@ -238,7 +254,7 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <h3>Example: text with low contrast ratio</h3>
-                        <p style={{ color: textColor }}>
+                        <p style={{ color: textColor }} className={styles['low-contrast-paragraph']}>
                             Users with vision problems would have a hard time reading this sentence 
                             if the font color had an hex value of #169AC0 (light blue). 
                         </p>
@@ -273,12 +289,12 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            <span className="bold"><span className="pink-text">Missing</span> alt</span>: screen readers 
+                            <span className="bold-large"><span className="pink-text">Missing</span> alt</span>: screen readers 
                             read the source file name. When you have an image, the <code>alt</code> attribute 
                             is required!
                         </p>
                         <p>
-                            <span className="bold"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
+                            <span className="bold-large"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                     
@@ -357,7 +373,7 @@ export default function MostCommonBugs() {
                         </h3>
                         <p>
                             Vague link text like <span className="pink-bg-white-text">click here</span> or 
-                            <span> </span><span className="pink-bg-white-text">read more</span> is not very 
+                            <span> </span><span className="pink-bg-white-text">learn more</span> is not very 
                             helpful either.
                         </p>
                         
@@ -366,10 +382,10 @@ export default function MostCommonBugs() {
                             navigate through the various links provided on the page.</p>
                         <p className="margin-top-20">
                             As a result, the links are announced separately from their surrounding text and
-                            users can struggle to understand their purpose if the text is vague.
+                            users will not understand their purpose if the text is vague.
                         </p>
                         <p>
-                            <span className="bold">A good example:</span> "Click here to learn more about our services"
+                            <span className="bold">A good example of a link text:</span> "Learn more about our services"
                         </p>
                         
                     </div>
@@ -413,10 +429,8 @@ export default function MostCommonBugs() {
                             <span className="bold">Remember </span> <span aria-hidden="true">💡</span>
                         </p>
                         <p className="white-bg">
-                            An interactive element like a button must have a descriptive <span> </span>
-                            <Link to="/blog/how-accessibility-works#the-accessible-name">
-                                accessible name
-                            </Link>. 
+                            An interactive element like a button must have a descriptive
+                            accessible name. 
                             This button is missing any of the attributes that could be used by the browser 
                             to compute an accessible name: 
                             visible text, <code>aria-labelledby</code>, or <code>alt</code>, to 
@@ -509,9 +523,9 @@ export default function MostCommonBugs() {
                             <code>&lt;h6&gt;</code> in descending order.
                         </p>
                         <br />
-                        <p className="bold">
+                        <h4 className="recommended-read">
                             Recommended read <span aria-hidden="true">💡</span>
-                        </p>
+                        </h4>
                         <p>
                             Learn how screen reader users navigate the web to
                             find information on a page from the <span> </span>
@@ -542,8 +556,8 @@ export default function MostCommonBugs() {
                         Time to look at your portfolio site to see if any of these bugs are present!
                     </p>
                     
-                    <p>
-                        <b>Read next: </b>
+                    <p className="read-next">
+                        <span className="bold">Read next: </span>
                         <Link to="/blog/fixing-the-six-most-common-bugs" onClick={() => { useScrollToTop() }}>
                             Fixing the 6 most common bugs
                         </Link>

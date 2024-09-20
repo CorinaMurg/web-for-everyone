@@ -444,7 +444,7 @@ export default function MostCommonBugs() {
 
                 {/* **************Accessible Name***************** */}
                 <div className="section scroll-target a11yName" id="the-accessible-name">
-                    <h2>The accessible name</h2>
+                    <h2>The accessible name</h2>     
                     <div className="code">             
                         <code>listitem</code>
                         <code className="padding-left-30">
@@ -457,7 +457,7 @@ export default function MostCommonBugs() {
                             <span className="code-pink-color">link</span> "<span className="code-purple-color">Blog</span>"
                         </code>
                         <code className="padding-left-60">StaticText "Blog"</code>
-                    </div>
+                    </div>  
                     <p className="white-bg">
                         Notice how each <span className="pink-bg-white-text">link</span> in our 
                         accessibility tree example has a name? It's called the <span className="bold">accessible name</span>, and 
@@ -804,8 +804,8 @@ export default function MostCommonBugs() {
                         Now, let's have a look at the most common accessibility issues!   
                     </p>
                     
-                    <p className="margin-top-30">
-                        <b>Read next: </b>
+                    <p className="margin-top-30 read-next">
+                        <span className="bold">Read next: </span>
                         <Link 
                             to="/blog/most-common-bugs" 
                             onClick={() => { useScrollToTop() }}
