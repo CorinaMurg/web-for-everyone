@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { ThemeContext } from "../../contexts/ThemeContext"
+import { useThemeClass } from "../../hooks/useThemeClass"
 import useScrollToTop from "../../hooks/useScrollToTop"
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useDocTitle from "../../hooks/useDocTitle"
@@ -12,28 +14,21 @@ export default function Accessibility() {
     useDocTitle("Blog | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
+
     const { activeId } = useHighlightTOC();
+
     const sectionTitles = {
         "accessibility-101": "Accessibility 101",
         "your-portfolio-site": "Your portfolio site",
         "html-for-accessibility": "HTML for accessibility",
         "css-for-accessibility": "CSS for accessibility",
         "example-accessible-components": "Examples of accessible components",
-        // "learning-resources": "Learning Resources",
     };
 
-    // const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    //     event.preventDefault(); 
-
-    //     const element = document.getElementById(href.substring(1)); 
-
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' }); 
-    //     }
-    // };
+    const themeClass = useThemeClass();
   
     return (
-        <div className={`${styles.resources} resources no-back-links-container`}>
+        <div className={`${styles.resources} ${themeClass} resources no-back-links-container`}>
 
             <h1 className="article-heading-desktop">
                 <span>Accessibility resources</span>
@@ -46,13 +41,12 @@ export default function Accessibility() {
                 <h2 id="table-of-contents">
                     Table of Contents
                 </h2>
-                <nav aria-labelledby="table-of-contents">
-                    <ul className={styles['resources--table-contents']}>
+                <nav aria-labelledby="table-of-contents" className={themeClass}>
+                    <ul className={`${styles['resources--table-contents']}`}>
                         {Object.entries(sectionTitles).map(([label, heading], index) => (
                             <li key={index}>
                                 <a href={`#${label}`} 
                                     className={`${label === activeId ? styles.active : ''}`}
-                                    // onClick={(event: React.MouseEvent<HTMLAnchorElement>) => handleClick(event, `#${label}`)}
                                 >
                                     {heading}
                                 </a>
@@ -65,7 +59,7 @@ export default function Accessibility() {
             <div className={styles['resources-content']}>
                 {Object.entries(sectionTitles).map(([label, heading], index) => (
                     <div key={index} className={`${styles['section-container']} scroll-target`} id={`${label}`}>
-                        <h2 className="blue-heading heading">
+                        <h2 className="pink-heading heading">
                             {heading}
                         </h2>     
                         <div className={`${styles['section-content']}`}>

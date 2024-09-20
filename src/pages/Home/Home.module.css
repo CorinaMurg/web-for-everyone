@@ -21,13 +21,13 @@
 
 .home h1 {
     font-size: 3.8rem;
-    font-weight: var(--home-heading-fontweight);
+    font-weight: var(--heading-fontweight);
     line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px; 
-    color: var(--home-heading-color);
+    color: var(--heading-color);
     padding-top: 5px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -41,13 +41,13 @@
 .hero--subtitle {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
-    letter-spacing: 0.8px;
-    font-weight: var(--home-subtitle-fontweight);
+    /* letter-spacing: 0.5px; */
+    font-weight: var(--subtitle-fontweight);
     width: 40rem;
     margin-inline: auto;
     margin-top: 0;
     text-align: center;
-    color: var(--home-subtitle-color);
+    color: var(--subtitle-color);
 
 }
 
@@ -87,7 +87,7 @@
     color: var(--text-dark-color);
     padding: 6px 15px;
     border-radius: 10px;
-    border: var(--home-cta-border);
+    border: var(--cta-border);
     width: 15rem;
 }
 
@@ -271,13 +271,13 @@
 
 .mini-articles h2 {
     align-self: self-start;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 20px; 
     width: 100%;
     padding-top: 60px;
     color: var(--cream-color);
-    letter-spacing: 0.7px;
+    letter-spacing: 1.2px;
 }
 
 .mini-articles ul {
@@ -363,7 +363,7 @@
 }
 
 .mini-article--link h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: var(--cream-color);
     letter-spacing: 0.3px;
@@ -375,7 +375,7 @@
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 2;
-    letter-spacing: 0.4px;
+    /* letter-spacing: 0.5px; */
 }
 
 .mini-article--svg {

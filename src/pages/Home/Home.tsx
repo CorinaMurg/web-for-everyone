@@ -33,7 +33,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <p className={styles['hero--subtitle']}>
-                    <span>You're building your portfolio site. </span>
+                    <span>You are building your portfolio site. </span>
                     <span>Will it be ready to welcome all visitors, including those with disabilities? </span>
                     <span>Time to check!</span>   
                 </p>      
@@ -83,7 +83,10 @@ export default function Home() {
                 aria-labelledby="accessibility-101" 
                 className={` ${styles['mini-articles']} scroll-target`}      
             >
-                <h2 id="accessibility-101">Accessibility 101</h2>
+                <h2 id="accessibility-101">
+                    <span>Accessibility </span>
+                    <span className='code-blue-color'>101</span>
+                </h2>
                 <ul>
                     {miniArticleData.slice(0, 3).map((article, index) => (
                         <li key={index}> 

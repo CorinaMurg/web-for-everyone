@@ -57,13 +57,33 @@
 
     /* variables for dark */
     --beta-border: 2px solid var(--text-nav-color);
-    --home-heading-color: var(--text-nav-color);
-    --home-heading-fontweight: 600;
-    --home-cta-border: 1.8px solid var(--text-nav-color);
-    --home-subtitle-color: var(--text-nav-color);
-    --home-subtitle-fontweight: 600;
-    --we-can-help-border: 2px solid var(--bg-dark-color);
+    --heading-color: var(--text-nav-color);
+    --heading-fontweight: 600;
+    --heading-opacity: 1;
+    --cta-border: 1.8px solid var(--text-nav-color);
+    --subtitle-color: var(--text-nav-color);
+    --subtitle-yellow: var(--yellow-color);
+    --subtitle-fontweight: 600;
+    --border-for-dark: 2px solid var(--bg-dark-color);
     --body-bg-color: var(--cream-color);
+    --paragraph-color: var(--text-dark-color);
+    --paragraph-fontweight: 400;
+    --paragraph-font-size: 1rem;
+    --paragraph-opacity: 1;
+    --in-text-link-color: var(--text-nav-color);
+    --pink-heading: var(--pinkBright-color);
+    --pink-heading-fontweight: 600;
+
+    --highlight-bg-color: white;
+    --highlight-border: 1.7px solid gray;
+
+    --warning-color: var(--text-dark-color);
+    --warning-font-size: 1rem;
+    --warning-fontweight: 500;
+    --warning-bg-color: var(--lightPink-color);
+
+    
+    
 }
 
 
@@ -191,6 +211,10 @@ body::-webkit-scrollbar {
 
 h1, h2, h3, h4, h5, h6, p {
     overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
 }
 
 main {

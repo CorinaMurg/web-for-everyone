@@ -1,7 +1,7 @@
 
 .we-can-help {
     background-color: var(--bg-dark-color);
-    border: var(--we-can-help-border);
+    border: var(--border-for-dark);
     color: var(--cream-color);
     padding: 25px 40px;
     display: flex;
@@ -10,9 +10,9 @@
     /* margin-inline: var(--main-margin); */
 }
 
-.we-can-help .dark {
+/* .we-can-help .dark {
     border: 2px solid var(--cream-color);
-}
+} */
 
 .we-can-help ul {
     padding-inline-start: 0;
@@ -113,8 +113,6 @@
 
     .we-can-help ul li {
         border-bottom: none;
-        /* padding-left: 10px;
-        padding-right: 10px; */
         padding-bottom: 0;
         width: 33.3333%;
     }
@@ -127,9 +125,9 @@
         margin-bottom: 20px;
         margin-top: 0;
     }
-    .we-can-help.dark {
+    /* .we-can-help.dark {
         border: 2px solid var(--cream-color);
-    }
+    } */
 }
 
 @media screen and (max-width: 625px) {

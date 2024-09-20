@@ -2,9 +2,11 @@
 .a11y-statement a,
 .gaad a,
 .not-found-container a {
-    color: var(--text-dark-color);
+    color: var(--paragraph-color);
+    font-weight: var(--paragraph-fontweight);
+    font-size: var(--paragraph-font-size);
+    opacity: var(--paragraph-opacity);
     letter-spacing: 0.3px;
-    font-weight: 500;
     text-decoration: underline;
     text-decoration-color: var(--code-blueDark-color);
     text-decoration-thickness: 2px;
@@ -16,7 +18,7 @@
 .a11y-statement a:hover,
 .gaad a:hover,
 .not-found-container a:hover {
-    color: var(--text-dark-color);
+    color: var(--paragraph-color);
 }
 
 .article-content a:hover,
@@ -46,10 +48,10 @@
 .article-container .subtitle {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    color: var(--pinkBright-color);
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
+    color: var(--pink-heading);
+    font-size: 1.2rem;
+    font-weight: var(--pink-heading-fontweight);
+    letter-spacing: 0.5px;
 }
 
 .article-content {
@@ -66,6 +68,9 @@
 
 .article-content h3 {
     margin-top: 20px;
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
 }
 
 .article-heading {
@@ -77,7 +82,9 @@
 
 .resources h1,
 .article-container h1 {
-    font-weight: 600;
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
     font-size: 3.8rem;
     letter-spacing: -0.5px;
 }
@@ -85,7 +92,9 @@
 .article-container h2,
 .article-container h3,
 .article-container h4 {
-    font-weight: 700;
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
 }
 
 .article-heading span:nth-of-type(2) {
@@ -119,16 +128,16 @@
     display: none;
 }
 
-.blue-heading {
+.pink-heading {
     align-self: left;
-    color: var(--pinkBright-color);
+    color: var(--pink-heading);
     display: inline-block;
     line-height: 1.1;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: var(--pink-heading-fontweight);
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .bold {
@@ -374,11 +383,11 @@ h4 {
 }
 
 .highlight {
-    background-color: white;
+    background-color: var(--highlight-bg-color);
     font-weight: 500;
     padding: 10px 20px 15px 20px;
     width: 100%;
-    border: 1.7px solid gray;
+    border: var(--highlight-border);
     margin-top: 10px;
     border-radius: var(--border-radius);
 }
@@ -459,18 +468,37 @@ li {
     color: var(--bg-dark-color);
     background-color: var(--cream-color);
 }
+/* .dark h3 {
+    color: var(--bg-dark-color);
+    background-color: var(--cream-color);
+} */
 
 .dark {
     color: var(--cream-color);
     background-color: var(--bg-dark-color);
     --beta-border: 2px solid var(--bg-dark-color);
-    --home-heading-color: var(--cream-color);
-    --home-heading-fontweight: 500;
+    --heading-color: var(--cream-color);
+    --heading-fontweight: 500;
     --home-cta-border: none;
-    --home-subtitle-color: var(--cream-color);
-    --home-subtitle-fontweight: 400;
-    --we-can-help-border: 1.5px solid var(--cream-color);
+    --subtitle-color: var(--cream-color);
+    --subtitle-yellow: var(--yellow-color);
+    --subtitle-fontweight: 400;
+    --border-for-dark: 1.5px solid var(--cream-color);
     --body-bg-color: var(--bg-dark-color);
+    --paragraph-fontweight: 300;
+    --paragraph-font-size: 0.9rem;
+    --paragraph-opacity: 1;
+    --paragraph-color: var(--cream-color);
+    --heading-opacity: 1;
+    --in-text-link-color: var(--code-blue-color);
+    --pink-heading: var(--pink-for-dark-bg-color);
+    --pink-heading-fontweight: 400;
+    --highlight-bg-color: #202d38;
+    --highlight-border: 1.7px solid rgb(167, 165, 165);
+    --warning-color: var(--text-dark-color);
+    --warning-font-size: 1rem;
+    --warning-fontweight: 500;
+    --warning-bg-color: rgba(255, 233, 237, 0.8);
 }
 
 .margin-block-0 {
@@ -523,9 +551,11 @@ li {
 
 p {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-fontweight);
     line-height: 2;
+    letter-spacing: 0.5px;
+    /* opacity: var(--paragraph-opacity); */
 }
 
 .padding-left-20 {
@@ -757,8 +787,7 @@ ul[class^="checkmark-list"] li p {
 }
 
 .warning {
-    background-color: var(--lightPink-color);
-    font-weight: 500;
+    background-color: var(--warning-bg-color);
     padding: 10px 30px 10px 60px;
     width: 100%;
     border: 1.7px solid var(--pinkBright-color);
@@ -766,12 +795,20 @@ ul[class^="checkmark-list"] li p {
     border-radius: var(--border-radius);
 }
 
-.warning>p {
+.warning >p {
     margin-block: 20px;
+    color: var(--warning-color) !important;
+    font-weight: var(--warning-fontweight) !important;
+    font-size: var(--warning-font-size) !important;
+    opacity: var(--warning-opacity) !important;
 }
 
 .warning li>p {
     margin-block: 0;
+    color: var(--warning-color) !important;
+    font-weight: var(--warning-fontweight) !important;
+    font-size: var(--warning-font-size) !important;
+    opacity: var(--warning-opacity) !important;
 }
 
 .warning a {

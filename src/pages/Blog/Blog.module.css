@@ -11,9 +11,6 @@
 }
 
 .resources a {
-    /* text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px; */
     text-decoration: none;
     color: var(--text-nav-color);
     cursor: pointer;
@@ -32,6 +29,9 @@
     margin-top: 35px;
     display: flex;
     flex-direction: column;
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
 }
 
 .resources h1 span {
@@ -63,8 +63,10 @@
 }
 
 .article--link {
-    font-size: 1.7rem;
-    font-weight: 600;
+    color: var(--heading-color) !important;
+    font-size: 1.6rem;
+    font-weight: var(--heading-fontweight);
+    opacity: var(--paragraph-opacity);
     letter-spacing: 0.5px;
 }
 
@@ -100,8 +102,8 @@
 
 .article:hover,
 .article:focus-within {
-    outline: 1.7px solid var(--bg-dark-color);
-    outline-offset: 6px;
+    outline: var(--border-for-dark);
+    outline-offset: 12px;
     border-radius: 7px;
 }
 
@@ -114,7 +116,7 @@
 
 .article:hover .article--description,
 .article:focus-within .article--description{
-    border-left: 2px solid var(--cream-color);
+    border-left: 2px solid transparent;
 }
 
 .article:focus-within .article--link {
@@ -127,9 +129,9 @@
 
 .article--subtitle {
     font-size: 1rem;
-    font-weight: 600;
-    color: inherit;
-    opacity: 0.7;
+    font-weight: var(--subtitle-fontweight);
+    color: var(--subtitle-yellow);
+    opacity: var(--paragraph-opacity);
 }
 
 .article--description {
@@ -177,7 +179,8 @@
     font-family: "Quicksand", sans-serif;
     align-items: center;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: var(--heading-fontweight);
+    color: var(--heading-color);
 }
 
 .resources--table-contents nav {
@@ -195,9 +198,14 @@
     padding-inline-start: 0;
     background-color: var(--bg-dark-color);  
     border-radius: 10px;
+    border: var(--border-for-dark);
     padding: 15px 15px 20px 15px;
     height: 15rem;
 }
+
+/* .resources--table-contents.dark {
+    border: 1.5px solid var(--cream-color);
+} */
 
 .resources--table-contents ul li a {
     align-self: flex-start;

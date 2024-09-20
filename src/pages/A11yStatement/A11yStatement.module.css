@@ -11,14 +11,17 @@
 
 .a11y-statement h1 {
     font-size: 3rem;
-    font-weight: 600;
     margin-bottom: 32px;
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
 }
 
 .a11y-statement h2 {
     font-size: 2rem;
-    /* font-weight: 500; */
-    /* margin-top: 50px; */
+    color: var(--heading-color);
+    font-weight: var(--heading-fontweight);
+    opacity: var(--heading-opacity);
 }
 
 .contact--email {
