@@ -44,6 +44,7 @@ export default function Home() {
                     <Link 
                         to="/#accessibility-101" 
                         className={styles['continue-to-article']}
+                        onClick={() => { useScrollToSection() }}
                     >   
                         Learn accessibility
                         <svg aria-hidden="true" id="arrow" width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +60,7 @@ export default function Home() {
                     <Link 
                         to="/blog/fixing-the-six-most-common-bugs" 
                         className={styles['continue-to-article']}
-                        onClick={scrollToSection}
+                        onClick={() => { useScrollToTop() }}
                     >   
                         Check for bugs
                         <svg aria-hidden="true" id="arrow" width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">

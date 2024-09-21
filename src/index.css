@@ -99,6 +99,8 @@
     --custom-outline-button-bg: var(--pinkBright-color);
     --custom-outline-button-color: var(--cream-color);
     --custom-outline-button-outline: var(--text-dark-color);
+
+    --menu-fill: var(--text-dark-color);
     
 }
 

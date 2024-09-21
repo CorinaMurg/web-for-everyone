@@ -555,8 +555,13 @@ export default function MakeItAccessible() {
                         <p className="white-bg">
                             Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
-                            Dragon NaturallySpeaking software. Since Dragon is the most popular speech recognition
-                            software, it's best to <span className="bold">use the explicit method</span> (with the <code>for</code> attribute) until this issue is resolved.
+                            Dragon NaturallySpeaking software. Why? Well, simply because there's a bug in their code!
+                            <span aria-hidden="true"> ☹️</span>
+                        </p> 
+                        <p className="white-bg margin-top-20">
+                            Since Dragon is the most popular speech recognition
+                            software, it's best to <span className="bold">use the explicit 
+                            method</span> (with the <code>for</code> attribute) until they fix the issue.
                         </p>
                     </div>
                 </div>

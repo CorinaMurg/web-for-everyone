@@ -82,8 +82,7 @@ nav.dark .theme-toggle svg[id="moon"] {
     display: none;
 }
 
-/******* moon ************/
-
+/******* sun ************/
 .theme-toggle svg[id="sun"] {
     display: none; 
 }

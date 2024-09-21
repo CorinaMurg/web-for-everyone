@@ -10,7 +10,7 @@
 /* ******************HERO DESIGN************************ */
 
 .hero {
-    /* padding-top: 25px; */
+    padding-top: 15px;
     margin-inline: var(--main-margin);
 }
 
@@ -209,6 +209,9 @@
 }
 
 @media screen and (max-width: 550px) { 
+    .hero {
+        padding-top: 25px;
+    }
     .home .continue-to-article {
         width: 19rem;
         font-size: 1.3rem;
@@ -276,7 +279,8 @@
     font-weight: 600;
     margin-bottom: 20px; 
     width: 100%;
-    padding-top: 60px;
+    /* needed to scroll to section without overlap with header */
+    padding-top: 80px;
     color: var(--cream-color);
     letter-spacing: 1.2px;
 }

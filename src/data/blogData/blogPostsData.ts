@@ -126,8 +126,8 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "title": "CodePens of accessible components",
         "subtitle": "",
         "author": "On codepen.io",
-        "description": `This is a collection of small accessible components that you can use in your projects.
-            Buttons, links or dropdown menus can be all easily built from HTML tags and CSS, with just a touch of JavaScript.`,
+        "description": `This is a collection of small (but mighty!) accessible components that you can use in your projects.
+            Buttons, links or dropdown menus can all be easily built with just HTML tags and CSS, and sometimes a touch of JavaScript.`,
         "href": "https://codepen.io/collection/zxbLrQ",
         "ariaLabel": "",
     },
