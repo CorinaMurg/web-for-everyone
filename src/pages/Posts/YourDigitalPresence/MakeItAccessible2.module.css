@@ -7,28 +7,35 @@
 } */
 
 .custom-outline--button {
-    background-color: var(--pinkBright-color);
+    background-color: var(--custom-outline-button-bg);
     border: none;
-    color: white;
+    border-radius: 5px;
+    color: var(--custom-outline-button-color);
     font-size: 1rem;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     letter-spacing: 0.7px;
-    padding: 8px 20px;
+    padding: 7px 15px;
     align-self:auto;
     padding-left: 20px;
+    text-align: center;
     cursor: pointer;
 }
 
+
 .custom-outline--button:focus-visible {
-    outline: 2px solid var(--text-dark-color);
+    outline: 2px solid var(--custom-outline-button-outline);
     outline-offset: 4px;
 }
 
 .custom-outline--button:hover {
-    outline: 2px solid var(--text-dark-color);
+    outline: 2px solid var(--custom-outline-button-outline);
     outline-offset: 4px;
 }
+
+/* .makeItTwo.dark #custom-outline--button:focus-visible  {
+    outline: 2px solid var(--cream-color);
+} */
 
 .brightness--container {
     display: flex;

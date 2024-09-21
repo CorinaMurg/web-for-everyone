@@ -12,7 +12,7 @@
 .about h1 {
     text-align: center;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: var(--heading-fontweight);
 }
 
 .about p {
@@ -51,7 +51,7 @@
 
 .about--me--text h2 {
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: var(--heading-fontweight);
     line-height: 1.5;
     /* margin-bottom: 30px; */
 }
@@ -157,7 +157,7 @@
 .web-for-everyone {
     font-family: "Quicksand", sans-serif;
     font-size: 1.21rem;
-    font-weight: 700;
+    font-weight: var(--heading-fontweight);
 }
 
 @media screen and (max-width: 1200px) {

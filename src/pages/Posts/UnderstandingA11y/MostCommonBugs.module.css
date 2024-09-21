@@ -43,10 +43,10 @@
 /* LOW CONTRAST */
 
 .low-contrast--button {
-    background-color: var(--pinkBright-color);
+    background-color: var(--custom-outline-button-bg);
     border: none;
     border-radius: 5px;
-    color: var(--text-light-color);
+    color: var(--custom-outline-button-color);
     font-size: 1rem;
     font-family: "Popins", sans-serif;
     letter-spacing: 0.5px;
@@ -57,12 +57,13 @@
 }
 
 .low-contrast--button:hover {
-    background-color: var(--text-dark-color);
+    outline: 2px solid var(--custom-outline-button-outline);
+    outline-offset: 4px;
     cursor: pointer;
 }
 
 .low-contrast--button:focus-visible {
-    outline: 2px solid var(--text-dark-color);
+    outline: 2px solid var(--custom-outline-button-outline);
     outline-offset: 4px;
 }
 

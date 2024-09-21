@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { useThemeClass } from "../../../hooks/useThemeClass"
 import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
@@ -49,23 +50,26 @@ export default function MakeItAccessible() {
     useScrollToTop();
     useScrollToSection();
     const { activeId } = useHighlightTOC();
+
+    const themeClass = useThemeClass();
+
     return (
-        <div className="article-container">
+        <div className={`article-container ${themeClass}`}>
             
             {/* **************Back Links********************** */}
             <BackLinks 
                 secondLink="Your portfolio site" 
                 href="/blog#your-portfolio-site" 
-                current="Let's uncover six more bugs"
+                current="The next six bugs"
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>Let's uncover six more</span>
-                <span>bugs</span>
+                <span>Level up: the next </span>
+                <span>6 bugs to watch for</span>
                 
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Let's uncover</span>
+                <span>Level Up: The Next 6 Bugs to Watch Fo</span>
                 <span>six more bugs</span>
             </h1>
             <p id="subtitle" className="subtitle">Accessibility with HTML, CSS, and a touch of JavaScript </p>
@@ -74,7 +78,7 @@ export default function MakeItAccessible() {
             <TableOfContents contents={contents} activeId={activeId}/>
 
             {/* **************Article Content********************** */}
-            <div className="article-content makeItTwo">
+            <div className={`article-content makeItTwo ${themeClass}`}>
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction</h2>
                     <p>
@@ -466,21 +470,21 @@ export default function MakeItAccessible() {
                         <h4>Example <span className="pink-text"> one</span>: Create a custom focus outline</h4>
                         <div className="code">
                             <code><span className="code-blue-color">button</span>:<span className="code-pink-color">focus-visible</span> &#123;</code>
-                            <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 2px solid black;</code>
+                            <code className="padding-left-30"><span className="code-yellow-color">outline</span>: 2px solid color;</code>
                             <code className="padding-left-30"><span className="code-yellow-color">outline-offset</span>: 2px;</code>
                             <code>&#125;</code>   
                         </div>
                         <p className="bold bullet-point-line white-bg">
-                            We define an <code>outline</code> that is 2 pixels thick, solid, and black. 
+                            Define an <code>outline</code> that is 2 pixels thick, solid, and of the color of your choice. 
                         </p>
                         <p className="padding-left-20">
-                            Change the color and the style to match your design, but make sure you have a contrast ratio of at 
+                            The color and the style can match your design, but make sure you have a contrast ratio of at 
                             least <span className="pink-bg-white-text"><code>3.0:1</code></span> between the outline and the 
                             background color of the element, as well as between the outline and the background of
                             the page.
                         </p>
                         <p className="bold bullet-point-line white-bg">
-                            We use <code>outline-offset</code> to 
+                            Use <code>outline-offset</code> to 
                             set the space between the outline and the edge of the element.
                         </p>
                         <p className="padding-left-20">
@@ -497,7 +501,10 @@ export default function MakeItAccessible() {
                                 The button is coded such that pressing it on a touch screen, or hovering 
                                 over it with a mouse, will also trigger the focus outline.
                             </p>
-                            <button aria-label="Used for teaching purposes, it triggers no action" className={styles['custom-outline--button']}
+                            <button 
+                                aria-label="Used for teaching purposes, it triggers no action" 
+                                className={styles['custom-outline--button']}
+                                id='custom-outline--button'
                             >
                                 Custom outline
                             </button>
@@ -562,13 +569,13 @@ export default function MakeItAccessible() {
                                         &nbsp;
                                         When comparing the default state and the focused state, the contrast ratio
                                         between the background colors should be at least <span> </span> 
-                                        <code><span className="dark-bg-white-text">3.0:1</span></code>.
+                                        <code><span className="pink-bg-white-text">3.0:1</span></code>.
                                     </p>
                                     <p>
                                         <span className="pink-text bold">&#x2714; </span>
                                         &nbsp;
                                         In each state, the contrast ratio between the background color and the text
-                                        should be at least <code><span className="dark-bg-white-text">4.5:1</span></code>.
+                                        should be at least <code><span className="pink-bg-white-text">4.5:1</span></code>.
                                     </p>
                                 </div>
                             </div>

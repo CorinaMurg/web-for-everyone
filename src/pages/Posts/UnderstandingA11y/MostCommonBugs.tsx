@@ -41,6 +41,7 @@ export default function MostCommonBugs() {
     // };
 
     const getInitialColor = (theme: string) => theme === "light" ? "#000" : "#fbf6ea";
+    const getBlueColor = (theme: string) => theme === "light" ? "#169AC0" : "#2f4f7e";
     const [textColor, setTextColor] = useState(getInitialColor(themeClass));
 
     useEffect(() => {
@@ -48,7 +49,7 @@ export default function MostCommonBugs() {
     }, [themeClass]);
 
     const toggleColor = () => {
-        setTextColor(prevColor => prevColor === getInitialColor(themeClass) ? '#169AC0' : getInitialColor(themeClass));
+        setTextColor(prevColor => prevColor === getInitialColor(themeClass) ? getBlueColor(themeClass) : getInitialColor(themeClass));
     };
 
     return (
@@ -60,8 +61,7 @@ export default function MostCommonBugs() {
             />
             
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
-                <span>The most common</span>
-                <span>bugs</span>
+                <span>The most common bugs</span>
             </h1>
             <h1 aria-describedby="subtitle" className="article-heading-mobile">
                 <span>The most common</span>
@@ -256,7 +256,7 @@ export default function MostCommonBugs() {
                         <h3>Example: text with low contrast ratio</h3>
                         <p style={{ color: textColor }} className={styles['low-contrast-paragraph']}>
                             Users with vision problems would have a hard time reading this sentence 
-                            if the font color had an hex value of #169AC0 (light blue). 
+                            if we changed the font color to certain shades of blue. 
                         </p>
                         <p>
                             Press the button to test it.
@@ -271,7 +271,7 @@ export default function MostCommonBugs() {
                 <div className="section alt-text scroll-target" id="missing-alt-text-for-images">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">02</span>
-                        <h2 className="white-bg">Missing <code>alt</code> text for images</h2>
+                        <h2 className="white-bg">Missing "alt" text for images</h2>
                     </div>
                     <p className="white-bg">
                         <span className="stats">More than half</span> of the home pages audited had this bug! 
@@ -280,8 +280,8 @@ export default function MostCommonBugs() {
                         this attribute is missing, the screen reader will read the source file name.
                     </p>
                     <div className="highlight">
-                        <h3 className="white-bg margin-bottom-30">
-                            An empty <code>alt</code> is NOT a missing <code>alt</code>!
+                        <h3 className="margin-bottom-30">
+                            An empty <code className="bold code-blue-color">alt</code> is NOT a missing <code className="bold yellow-text">alt</code>!
                             <span aria-hidden="true"> 💡</span>
                         </h3>
                         <p>
@@ -289,12 +289,12 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            <span className="bold-large"><span className="pink-text">Missing</span> alt</span>: screen readers 
+                            <span className="bold-large yellow-text">Missing</span>: screen readers 
                             read the source file name. When you have an image, the <code>alt</code> attribute 
                             is required!
                         </p>
                         <p>
-                            <span className="bold-large"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
+                            <span className="bold-large code-blue-color">Empty</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                     

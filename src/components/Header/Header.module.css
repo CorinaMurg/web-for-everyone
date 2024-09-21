@@ -7,8 +7,6 @@ header {
     color: var(--text-dark-color);
     padding: 20px var(--main-margin);
     width: 100%;
-    height: auto;
-    /* margin-bottom: -10px; */
     z-index: 100;
 }
 
@@ -32,10 +30,6 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
-
-/* .header-left.dark > .beta {
-    border: none;
-} */
 
 header .logo-link:hover {
     color: var(--text-dark-color);

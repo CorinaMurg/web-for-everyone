@@ -209,15 +209,15 @@ export default function MakeItAccessible() {
                         difference in <span className="bold">luminance</span> (brightness) between any two colors.
                     </p>       
                     <p>
-                        The <span className="dark-bg-white-text"><code>4.5:1</code></span> (for smaller text) and <span> </span>
-                        <span className="dark-bg-white-text"><code>3.0:1</code></span> (for larger text) ratios are 
+                        The <span className="pink-bg-white-text"><code>4.5:1</code></span> (for smaller text) and <span> </span>
+                        <span className="pink-bg-white-text"><code>3.0:1</code></span> (for larger text) ratios are 
                         minimum values expected in order for  your content to be accessible to users with low vision.
                         In terms of accessibility guidelines, we call this the <span className="bold">AA</span> level.
                     </p>
                     <p>
                         The desirable <span className="bold">AAA</span> level requires
-                        a <span className="dark-bg-white-text"><code>7.0:1</code></span> contrast ratio for smaller text, 
-                        and <span className="dark-bg-white-text"><code>4.5:1</code></span> for larger text.
+                        a <span className="pink-bg-white-text"><code>7.0:1</code></span> contrast ratio for smaller text, 
+                        and <span className="pink-bg-white-text"><code>4.5:1</code></span> for larger text.
                         Whenever possible, aim for the <span className="bold">AAA</span> level as it provides the best experience 
                         for users with low vision.
                     </p>  
@@ -279,8 +279,8 @@ export default function MakeItAccessible() {
                         <div style={{ marginTop: "30px"}} className="checkmark-lines">
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
-                                <span>Contrast with background is at least <span className="dark-bg-white-text"><code>4.5:1</code></span> for smaller 
-                                text, and <span className="dark-bg-white-text"><code>3.0:1</code></span> for larger text</span>
+                                <span>Contrast with background is at least <span className="pink-bg-white-text"><code>4.5:1</code></span> for smaller 
+                                text, and <span className="pink-bg-white-text"><code>3.0:1</code></span> for larger text</span>
                             </p>
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
@@ -288,7 +288,7 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
-                                <span>Contrast with surrounding text is at least <span className="dark-bg-white-text"><code>3.0:1</code></span></span>
+                                <span>Contrast with surrounding text is at least <span className="pink-bg-white-text"><code>3.0:1</code></span></span>
                             </p>
                             <p>
                                 <span className="pink-text bold">&#x2714;</span>
@@ -336,24 +336,24 @@ export default function MakeItAccessible() {
                     
                     <div className="highlight">
                         <h3>
-                            Missing, empty, or descriptive?
+                            Missing, empty, or descriptive <code className="bold">alt</code>?
                             <span className="sr-only"> alt attribute</span>
                             <span aria-hidden="true"> 🤔</span>
                         </h3>
                         <p className="white-bg">
-                            <span className="bold-large"><span className="pink-text">Missing</span> alt</span>: screen readers might 
-                            read the source file name. When you have an image, the <code>alt</code> attribute is required!
+                            <span className="bold">Missing</span>: screen readers might 
+                            read the source file name. When you have an image, the attribute is required!
                         </p>
-                        <p>
-                            <span className="bold-large"><span className="pink-text">Empty</span> alt</span>: screen readers ignore the image.
-                            If your image is purely decorative, the attribute should be empty.
+                        <p className="white-bg">
+                            <span className="bold">Empty</span>: screen readers ignore the image.
+                            If your image is purely decorative, the attribute should be empty: <code>alt=""</code>
                         </p>  
                         <p className="white-bg">
-                            <span className="bold-large"><span className="pink-text">Descriptive</span> alt</span>: add informative text if the image
-                            is important for understanding your content.
+                            <span className="bold">Descriptive</span>: if the image
+                            is important for understanding your content use the attribute to describe it: <code>alt="some description"</code>
                         </p> 
                         <p className="white-bg">
-                            <span className="bold-large">Remember</span>:
+                            Remember:
                             A missing <code>alt</code> attribute is NOT the same 
                             as an empty <code>alt</code>!
                         </p>
@@ -551,7 +551,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div>
-                        <h4>Which method should you use: implicit or explicit?</h4>
+                        <h4>Which method should you use: <span className="code-blue-color">implicit</span> or <span className="yellow-text">explicit</span>?</h4>
                         <p className="white-bg">
                             Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
@@ -592,7 +592,7 @@ export default function MakeItAccessible() {
                     
                     <div className="highlight">
                         <h4>
-                            Do you know what else the lang attribute can do?! <span aria-hidden="true"> 💡</span>
+                            Do you know what else the <code className="bold">lang</code> attribute can do?! <span aria-hidden="true"> 💡</span>
                         </h4>
                         <p style={{ marginTop: '30px' }}>Take a specific dialect:</p>
                         <div className="code">
@@ -636,8 +636,8 @@ export default function MakeItAccessible() {
                     
                     <p className="margin-top-30 read-next">
                         <span className="bold">Read next: </span>
-                        <Link to="/blog/lets-uncover-six-more-bugs" onClick={() => { useScrollToTop() }}>
-                            Let's uncover six more bugs
+                        <Link to="/blog/the-next-six-bugs" onClick={() => { useScrollToTop() }}>
+                            Level up: the next 6 bugs to watch for
                         </Link>
                     </p>
                 </div>

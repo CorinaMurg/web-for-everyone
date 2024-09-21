@@ -146,13 +146,13 @@ export const blogPostsData: BlogPostDataTypes[] = [
     },
     {
         "label": "your-portfolio-site",
-        "id": "lets-uncover-six-more-bugs",
-        "title": "Let's uncover six more bugs",
+        "id": "the-next-six-bugs",
+        "title": `Level up: the next 6 bugs to watch for`,
         "subtitle": "",
         "author": "",
         "description": `We've learned about the 6 most common accessibility bugs. Can we find 6 more? Will JavaScript
             be necessary this time? Let's learn where to look for them and how to avoid them.`,
-        "to": `/blog/lets-uncover-six-more-bugs`,
+        "to": `/blog/the-next-six-bugs`,
         "ariaLabel": "",
     },
     // {

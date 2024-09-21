@@ -6,7 +6,6 @@
     --text-dark-color: #000;
     --text-nav-color: #38393a;
     --blue-color: #1a73c6;
-    --code-blueDark-color: #3497A2;
     --pinkBright-color: #de0265;
     --pink-for-dark-bg-color: #fc2083; 
     --pink-for-less-dark-bg: #ff47aa;
@@ -26,7 +25,7 @@
 
     /* Highlight colors */
     --bg-dark-color: #151f28;
-    --bg-lessDark-color: #202d38;
+    --bg-lessDark-color: #1a2630;
     --bg-darkest-color: #07131f;
     --grayishBlue-color: hsl(233, 12%, 87%);
     --yellow-color: #ffb703;
@@ -43,6 +42,7 @@
     --code-yellow-color: rgb(255, 214, 0);
     --code-blue-color: #00beff;
     --code-blue-color: #5dd4e1;
+    --code-blueDark-color: #3497A2;
 
     /* Hero Design */
     --hero-lightBlue-faded: rgba(102, 194, 205, 0.8);
@@ -65,12 +65,12 @@
     --heading-opacity: 1;
     --cta-border: 1.8px solid var(--text-nav-color);
     --subtitle-color: var(--text-nav-color);
-    --subtitle-yellow: var(--yellow-color);
+    --subtitle-yellow-on-dark: var(--text-nav-color);
     --subtitle-fontweight: 600;
     --border-for-dark: 2px solid var(--bg-dark-color);
     /* --body-bg-color: var(--cream-color); */
     --paragraph-color: var(--text-dark-color);
-    --paragraph-fontweight: 400;
+    --paragraph-fontweight: 500;
     --paragraph-font-size: 1rem;
     --paragraph-opacity: 1;
     --in-text-link-color: var(--text-nav-color);
@@ -94,7 +94,11 @@
 
     --filler-bg: var(--cream-color);
 
-    --pink-text-on-less-dark-bg: var(--pinkBright-color);
+    --pink-text: var(--pinkBright-color);
+
+    --custom-outline-button-bg: var(--pinkBright-color);
+    --custom-outline-button-color: var(--cream-color);
+    --custom-outline-button-outline: var(--text-dark-color);
     
 }
 
@@ -107,11 +111,11 @@
     color: rgb(4, 159, 46);
 }
 
-.pink-text-on-less-dark-bg {
+/* .pink-text-for-less-dark-bg {
     color: var(--pink-for-less-dark-bg);
-    font-size: 1.1rem;
+    font-size: inherit;
     font-weight: 500;
-}
+} */
 
 .pink-text {
     color: var(--pinkBright-color);

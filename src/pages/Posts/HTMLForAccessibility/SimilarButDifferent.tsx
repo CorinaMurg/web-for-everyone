@@ -107,7 +107,6 @@ export default function SimilarButDifferent() {
                         <br/>
                         <code>
                             <span className="code-blue-color">&lt;nav </span> 
-                            role="navigation"
                             <span className="code-yellow-color"> aria-labelledby</span>="table-of-contents"
                             <span className="code-blue-color">&gt;</span>
                         </code>
@@ -272,7 +271,8 @@ export default function SimilarButDifferent() {
                     <p>
                         <code className="pink-bg-white-text">:focus-visible</code> is the better choice. It mimics 
                         the default behavior of the browser: it applies to all elements reached via keyboard
-                        and only to certain elements reached via mouse click. Quite smart, right?
+                        and only to certain elements reached via mouse click. For example, it will add the focus when
+                        the user cliks on an input field. Quite smart, right?
                     </p>          
                 </div>
                     

@@ -46,7 +46,7 @@ export default function App() {
                             <Route path="most-common-bugs" element={<MostCommonBugs />} />
                             <Route path="testing-with-playwright" element={<TestingWithPlaywright />} />
                             <Route path="fixing-the-six-most-common-bugs" element={<MakeItAccessible />} />
-                            <Route path="lets-uncover-six-more-bugs" element={<MakeItAccessible2 />} />
+                            <Route path="the-next-six-bugs" element={<MakeItAccessible2 />} />
                             <Route path="similar-but-different" element={<SimilarButDifferent />} />  
                         </Route>
                         <Route path="GAAD-2024" element={<Gaad/>} />
