@@ -10,6 +10,13 @@
     align-self: start;
 }
 
+.logo-link:focus-visible {
+    outline: var(--outline-thickness) solid var(--paragraph-color);
+    outline-offset: 5px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
 .logo-link span {
     font-size: 1.5rem;
     letter-spacing: -1px;

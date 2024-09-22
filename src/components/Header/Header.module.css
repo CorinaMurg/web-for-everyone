@@ -42,7 +42,7 @@ header .logo-link:hover {
     z-index: 100;
     background-color: var(--yellow-color);
     border-radius: 10px;
-    border: 2px solid var(--text-dark-color);
+    border: var(--cta-border);
     color: black;
     font-size: 1rem;
     font-weight: 600;
@@ -55,6 +55,12 @@ header .logo-link:hover {
   
 .skip-to-content:focus {
     transform: translateY(0%);
+}
+
+.skip-to-content:focus-visible {
+    outline: var(--outline-thickness) solid var(--paragraph-color);
+    border-radius: 10px;
+    outline-offset: 5px;
 }
 
 .mobile-nav-toggle {

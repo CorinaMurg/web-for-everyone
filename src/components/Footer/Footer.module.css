@@ -64,7 +64,7 @@ footer a {
 }
 
 footer a:focus-visible {
-    outline: 1.7px solid var(--cream-color);
+    outline: 1.5px solid var(--cream-color) !important;
     outline-offset: 5px;
     text-decoration: none;
     border-radius: 5px;

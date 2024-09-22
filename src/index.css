@@ -59,10 +59,11 @@
     --border-radius: 5px;
 
     /* variables for dark */
-    --beta-border: 2px solid var(--text-nav-color);
+    --beta-border: 1.5px solid var(--text-nav-color);
     --heading-color: var(--text-nav-color);
     --heading-fontweight: 600;
     --heading-opacity: 1;
+    --outline-thickness: 2px;
     --cta-border: 1.8px solid var(--text-nav-color);
     --subtitle-color: var(--text-nav-color);
     --subtitle-yellow-on-dark: var(--text-nav-color);

@@ -482,9 +482,10 @@ li {
 .dark {
     color: var(--cream-color);
     background-color: var(--bg-dark-color);
-    --beta-border: 2px solid var(--bg-dark-color);
+    --beta-border: 1.5px solid var(--hero-pink);
     --heading-color: var(--cream-color);
     --heading-fontweight: 500;
+    --outline-thickness: 1.5px;
     --cta-border: none;
     --subtitle-color: var(--cream-color);
     --subtitle-yellow-on-dark: var(--yellow-color);

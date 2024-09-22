@@ -21,7 +21,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
             <ul className="primary-navigation">
                 <li>
                     <button  
-                        className="theme-toggle" onClick={toggleTheme}
+                        className={`theme-toggle nav-link ${themeClass}`} onClick={toggleTheme}
                     >   
                         <span className="sr-only">Toggle theme</span>
                         <svg id="moon" height="22" width="27" viewBox="0 0 384 512">

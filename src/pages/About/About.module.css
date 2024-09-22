@@ -91,14 +91,20 @@
     margin-bottom: 50px;
 }
 
-.about-cta--new {
+.about-cta:focus-visible {
+    outline: var(--outline-thickness) solid var(--paragraph-color);
+    border-radius: 10px;
+    outline-offset: 5px;
+}
+
+/* .about-cta--new {
     background-color: var(--hero-lightBlue-faded);
     letter-spacing: 0.5px;
 }
 
 .about-cta--know {
     background-color: var(--yellow-color);
-}
+} */
 
 .about-cta--linkedin {
     background-color: var(--yellow-color);
