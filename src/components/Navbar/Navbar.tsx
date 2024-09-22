@@ -73,7 +73,7 @@ export default function Navbar({ closeModal }: NavbarTypes) {
                 <li className="mobile-only-link">
                     <NavLink 
                         to="/accessibility-statement" 
-                        className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+                        className={({ isActive }) => isActive ? `nav-link active-link ${themeClass}` : `nav-link ${themeClass}`}
                         onClick={() => { useScrollToTop() }}
                     >
                         Accessibility Statement

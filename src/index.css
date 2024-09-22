@@ -68,7 +68,7 @@
     --subtitle-yellow-on-dark: var(--text-nav-color);
     --subtitle-fontweight: 600;
     --border-for-dark: 2px solid var(--bg-dark-color);
-    /* --body-bg-color: var(--cream-color); */
+    --body-bg-color: var(--cream-color);
     --paragraph-color: var(--text-dark-color);
     --paragraph-fontweight: 500;
     --paragraph-font-size: 1rem;
@@ -90,7 +90,7 @@
     --always-dark-text: var(--text-dark-color);
 
     --code-bg-color: var(--bg-dark-color);
-    --code-color: var(--cream-color);
+    /* --code-color: var(--cream-color); */
 
     --filler-bg: var(--cream-color);
 

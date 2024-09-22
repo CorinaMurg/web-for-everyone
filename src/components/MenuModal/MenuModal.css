@@ -10,15 +10,19 @@
     margin: 0;
     width: 30px;
     height: 30px;
-    background-image: url(/assets/xmark-solid.svg);
+    /* background-image: url(/assets/xmark-solid.svg); */
     background-repeat: no-repeat; 
     background-position: center;
     background-size: 30px 30px;
 }
 
+.menu-modal .modal-close-button svg {
+    fill: var(--menu-fill);
+}
+
 .menu-modal .modal-close-button:focus-visible,
 .menu-modal .modal-close-button:hover {
-    outline: 2px solid var(--text-dark-color);
+    outline: 2px solid var(--menu-fill);
     outline-offset: 3px;
 }
 

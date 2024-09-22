@@ -216,7 +216,7 @@
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    color: var(--code-color);
+    /* color: var(--code-color); */
     margin-bottom: 30px;
     border-radius: var(--border-radius);
 }
@@ -265,9 +265,9 @@
     color: var(--code-blue-color);
 }
 
-/* .code-gray-color {
+.code-gray-color {
     color: rgb(169, 167, 167);
-} */
+}
 
 .code-yellow-color {
     color: var(--code-yellow-color);
@@ -509,7 +509,7 @@ li {
     --yellow-keyboard-bg: var(--hero-pink);
     --always-dark-text: var(--text-dark-color);
     --code-bg-color: var(--bg-darkest-color);
-    --code-color: rgb(169, 167, 167);
+    /* --code-color: rgb(169, 167, 167); */
     --filler-bg: var(--yellow-color);
     --pink-text: var(--cream-color);
     --custom-outline-button-bg: var(--hero-pink);
