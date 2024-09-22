@@ -934,6 +934,10 @@ ul[class^="checkmark-list"] li p {
 }
 
 @media screen and (max-width: 670px) {
+    .dark {
+        --paragraph-font-size: 1rem;
+    }
+
     .article-container {
        margin-inline: 0;
     }
