@@ -307,7 +307,7 @@ export default function MakeItAccessible() {
                             a visitor would have to first tab through before reaching the main content!
                         </p>
                         <br></br>
-                        <p>
+                        {/* <p>
                             Now for an opposite experience, visit the <span> </span>
                             <a href="https://www.bbc.com/" target="_blank" rel="noreferrer"> 
                                 BBC
@@ -326,7 +326,7 @@ export default function MakeItAccessible() {
                             Tab through the navigation until you reach the main content. 
                             Choose an article and click on it. To reach the body of the article
                             you have to tab through the navigation (again!). 
-                        </p>
+                        </p> */}
                     </div>
                     
                     <div className="highlight highlight-one-line">
