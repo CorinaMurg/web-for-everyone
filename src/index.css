@@ -3,10 +3,12 @@
     /* Text */
     --text-light-color: #fff;
     --cream-color: #fbf6ea;
+    --cream-color: rgb(251, 246, 234);
     --text-dark-color: #000;
     --text-nav-color: #38393a;
     --blue-color: #1a73c6;
     --pinkBright-color: #de0265;
+    --pinkBright-color: rgb(222, 2, 101);
     --pink-for-dark-bg-color: #fc2083; 
     --pink-for-less-dark-bg: #ff47aa;
     --brightBlue-dark-color: #0074c7;
@@ -25,6 +27,7 @@
 
     /* Highlight colors */
     --bg-dark-color: #151f28;
+    --bg-dark-color: rgb(21, 31, 40);
     --bg-lessDark-color: #1a2630;
     --bg-darkest-color: #07131f;
     --grayishBlue-color: hsl(233, 12%, 87%);
@@ -89,6 +92,7 @@
 
     --yellow-keyboard-bg: var(--yellowFaded-color);
     --always-dark-text: var(--text-dark-color);
+    --always-cream-color: var(--cream-color);
 
     --code-bg-color: var(--bg-dark-color);
     /* --code-color: var(--cream-color); */

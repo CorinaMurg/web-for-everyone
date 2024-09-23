@@ -44,13 +44,19 @@
     margin-bottom: 10px;
     width: 100%;
 }
-
+.brightness--buttons-wrapper { 
+    width: 100%;
+    background-color: var(--always-cream-color);
+    padding: 15px 10px;
+    margin-inline: 0;
+}
 .brightness--buttons {
     width: 100%;
     display: flex;
     gap: 0;
     align-items: center;
     padding-inline-start: 0;  
+    
 }
 
 .brightness--buttons button {

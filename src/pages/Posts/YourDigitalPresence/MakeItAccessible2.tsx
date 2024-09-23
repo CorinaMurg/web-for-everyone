@@ -556,12 +556,17 @@ export default function MakeItAccessible() {
                                 buttons below and notice the change in the background's shade. The buttons are coded 
                                 such that pressing them on a touch screen, or hovering over them with a mouse, 
                                 will also trigger a change in brightness.
-                            </p>                     
+                            </p>   
+                            <div className={styles['brightness--buttons-wrapper']}>
                             <div className={styles['brightness--buttons']}>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Do</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Re</button>
                                 <button aria-label="Used for teaching purposes, it triggers no action">Mi</button>           
                             </div>  
+                            
+                            
+                            </div>                  
+                            
                             <div className="margin-top-20">
                                 <p className="bold">Two things to rememeber:</p>
                                 <div className="checkmark-list">

@@ -517,6 +517,7 @@ li {
     --custom-outline-button-color: var(--text-dark-color);
     --custom-outline-button-outline: var(--cream-color);
     --menu-fill: var(--cream-color);
+    --always-cream-color: var(--cream-color);
 }
 
 .margin-block-0 {
