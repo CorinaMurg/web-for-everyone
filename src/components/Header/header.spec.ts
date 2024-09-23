@@ -5,7 +5,7 @@ import { isMobileViewport } from "../../../e2e/utils/isMobileViewport";
 import { skip } from "node:test";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:5173/");
+  await page.goto("/");
 });
 
 test.describe("header", () => {
