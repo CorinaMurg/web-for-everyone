@@ -13,7 +13,8 @@ test.describe("home", () => {
     });
 
     test("home should have heading", async ({ page }) => {
-        await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
+        await expect(page.getByRole("heading", 
+            { name: "Let's make it accessible." })).toBeVisible();
     });
 });
 

@@ -227,7 +227,11 @@ export default function MostCommonBugs() {
                         and why these bugs are problematic 
                         for users with disabilities.
                         We discuss in-depth solutions in <span> </span>
-                        <Link to="/blog/fixing-the-six-most-common-bugs">
+                        <Link to="/blog/fixing-the-six-most-common-bugs" 
+                            // when used the focus moves at the beginning of the page. without it, the focus moves to
+                            // backlinks
+                            // onClick={() => { useScrollToTop() }}
+                        >
                             Fixing the 6 most common bugs
                         </Link>
                         .

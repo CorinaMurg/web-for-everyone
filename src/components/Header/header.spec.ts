@@ -2,9 +2,10 @@ import { test, expect } from "../../../e2e/fixtures/axeBuilderFixture";
 import { checkFocus } from "../../../e2e/utils/focusedFromClicksFunction";
 import { locateClickStore } from "../../../e2e/utils/locateClickStoreFunction";
 import { isMobileViewport } from "../../../e2e/utils/isMobileViewport";
+import { skip } from "node:test";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("/");
+  await page.goto("http://localhost:5173/");
 });
 
 test.describe("header", () => {
@@ -17,8 +18,9 @@ test.describe("header", () => {
   });
 
   test("skip link is working", async ({ page }) => {
-    await page.keyboard.press("Tab");
     const skipLink = page.getByRole("link", { name: "Skip to content" });
+    await expect(skipLink).toBeHidden();
+    await page.keyboard.press("Tab");
     await expect(skipLink).toBeFocused();
     await skipLink.press("Enter");
     await page.keyboard.press("Tab");
@@ -33,6 +35,7 @@ test.describe("header", () => {
     await page.keyboard.press("Tab");
     const logo = page.getByRole('banner').getByRole('link', { name: 'Web for Everyone' });
     await expect(logo).toBeFocused();
+    await expect(skipLink).not.toBeInViewport();
   });
 
   test("header logo", async ({ page }) => {

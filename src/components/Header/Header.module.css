@@ -51,9 +51,11 @@ header .logo-link:hover {
     text-decoration: none;
     transform: translateY(-300%);
     transition: transform 250ms ease-in;
+    display: none;
 }
   
 .skip-to-content:focus {
+    display: flex;
     transform: translateY(0%);
 }
 
