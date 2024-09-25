@@ -97,15 +97,6 @@
     outline-offset: 5px;
 }
 
-/* .about-cta--new {
-    background-color: var(--hero-lightBlue-faded);
-    letter-spacing: 0.5px;
-}
-
-.about-cta--know {
-    background-color: var(--yellow-color);
-} */
-
 .about-cta--linkedin {
     background-color: var(--yellow-color);
 }
@@ -140,12 +131,6 @@
     fill: var(--text-dark-color);
 }
 
-/* .about--how-to-start {
-    background-color: var(--body-bg-color);
-} */
-/* .about--how-to-start--content {
-    padding-left: 20px;
-} */
 .about--how-to-start--content p:nth-of-type(1) {
     margin-bottom: 0 !important;
 }
@@ -229,9 +214,9 @@
     .about--design {
         gap: 5px;
     }
-    .about--me--image img {
+    /* .about--me--image img {
         border: 5px solid var(--hero-lightBlue-faded);
-    }
+    } */
     .about--me--text h2 {
         margin-top: 0;
     }
