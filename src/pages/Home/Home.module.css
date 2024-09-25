@@ -260,7 +260,7 @@
     /* background-color: var(--filler-bg); */
 }
 
-@media screen and (max-width: 620px) { 
+@media screen and (max-width: 625px) { 
     .filler-bg {
         display: none;
     }
@@ -437,6 +437,9 @@
 @media screen and (max-width: 625px) { 
     .mini-articles {
         order: 3;
+        margin-bottom: 0;
+        padding-bottom: 100px;
+        border-bottom: 1.5px solid gray;
     }
 
     .mini-articles ul {

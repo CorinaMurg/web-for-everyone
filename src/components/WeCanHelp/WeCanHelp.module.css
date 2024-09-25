@@ -138,6 +138,7 @@
         margin-top: 90px;
         padding-inline: var(--main-margin);
         padding-block: 30px;
+        border-bottom: 1.5px solid gray;
     }
 
     .we-can-help h2 {
