@@ -90,7 +90,7 @@
     --yellow-keyboard-bg: var(--hero-pink);
     --always-dark-text: var(--text-dark-color);
     --code-bg-color: var(--bg-darkest-color);
-    /* --code-color: rgb(169, 167, 167); */
+    --code-color: var(--cream-color);
     --filler-bg: var(--yellow-color);
     --pink-text: var(--cream-color);
     --custom-outline-button-bg: var(--hero-pink);

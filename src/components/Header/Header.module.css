@@ -68,7 +68,7 @@ header .logo-link:hover {
 }
 
 
-@media (max-width: 725px) {
+@media (max-width: 800px) {
     .mobile-nav-toggle {
         display: block;
         position: absolute;

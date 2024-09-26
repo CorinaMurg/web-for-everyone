@@ -216,7 +216,7 @@
     line-height: 1.5;
     padding: 30px;
     background-color: var(--code-bg-color);
-    /* color: var(--code-color); */
+    color: var(--code-color);
     margin-bottom: 30px;
     border-radius: var(--border-radius);
 }

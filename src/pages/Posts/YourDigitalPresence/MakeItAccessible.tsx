@@ -551,7 +551,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div>
-                        <h4>Which method should you use: <span className="code-blue-color">implicit</span> or <span className="yellow-text">explicit</span>?</h4>
+                        <h4>Which method should you use: <span className="bold">implicit</span> or <span className="bold">explicit</span>?</h4>
                         <p className="white-bg">
                             Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
