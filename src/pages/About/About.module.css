@@ -91,6 +91,10 @@
     margin-bottom: 50px;
 }
 
+.about-cta:hover {
+    color: var(--text-dark-color);
+}
+
 .about-cta:focus-visible {
     outline: var(--outline-thickness) solid var(--paragraph-color);
     border-radius: 10px;
