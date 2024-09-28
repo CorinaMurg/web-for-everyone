@@ -16,7 +16,7 @@ export default function Logo( { theme, color, fontWeight, closeModal }: LogoType
 
     const logoColor = {
         color: color || theme === 'dark' ? 'var(--cream-color)' : 'var(--text-nav-color)',
-        fontWeight: fontWeight || theme === 'dark' ? 400 : 600
+        fontWeight: fontWeight || theme === 'dark' ? 100 : 400
     }
 
     return (

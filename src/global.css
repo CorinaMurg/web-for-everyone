@@ -1,3 +1,99 @@
+.light {
+    color: var(--bg-dark-color);
+    background-color: var(--cream-color);
+    --beta-border: 1.5px solid var(--text-nav-color);
+    --heading-color: var(--text-nav-color);
+    --heading-fontweight: 500;
+    --heading-opacity: 1;
+    --outline-thickness: 2px;
+    --cta-border: 1.8px solid var(--text-nav-color);
+
+    --subtitle-color: var(--text-nav-color);
+    --subtitle-yellow-on-dark: var(--text-nav-color);
+    --subtitle-fontweight: 200;
+
+    --border-for-dark: 2px solid var(--bg-dark-color);
+    --body-bg-color: var(--cream-color);
+
+    --paragraph-color: var(--text-dark-color);
+    --paragraph-fontweight: 400;
+    --paragraph-font-size: 1rem;
+    --paragraph-opacity: 0.9;
+
+    --in-text-link-color: var(--text-nav-color);
+    --pink-heading: var(--pinkBright-color);
+    --pink-heading-fontweight: 600;
+
+    --highlight-bg-color: white;
+    --highlight-border: 1.7px solid gray;
+
+    --warning-color: var(--text-dark-color);
+    --warning-font-size: 1rem;
+    --same-fontweight: 500;
+    --same-dark-color: var(--text-dark-color);
+    --warning-bg-color: var(--lightPink-color);
+
+    --yellow-keyboard-bg: var(--yellowFaded-color);
+    --always-dark-text: var(--text-dark-color);
+    --always-cream-color: var(--cream-color);
+
+    --code-bg-color: var(--bg-dark-color);
+    /* --code-color: var(--cream-color); */
+
+    --filler-bg: var(--cream-color);
+
+    --pink-text: var(--pinkBright-color);
+
+    --custom-outline-button-bg: var(--pinkBright-color);
+    --custom-outline-button-color: var(--cream-color);
+    --custom-outline-button-outline: var(--text-dark-color);
+
+    --menu-fill: var(--text-dark-color);
+}
+
+.dark {
+    color: var(--cream-color);
+    background-color: var(--bg-dark-color);
+    --beta-border: 1.5px solid var(--hero-pink);
+    --heading-color: var(--cream-color);
+    --heading-fontweight: 400;
+    --outline-thickness: 1.5px;
+    --cta-border: none;
+    --subtitle-color: var(--cream-color);
+    --subtitle-yellow-on-dark: var(--yellow-color);
+    --subtitle-fontweight: 100;
+    --border-for-dark: 1.5px solid var(--cream-color);
+    --body-bg-color: var(--bg-dark-color);
+
+    --paragraph-fontweight: 300;
+    --paragraph-font-size: 1rem;
+    --paragraph-opacity: 1;
+    --paragraph-color: var(--cream-color);
+
+    --heading-opacity: 1;
+    --in-text-link-color: var(--code-blue-color);
+    --pink-heading: var(--pink-for-dark-bg-color);
+    --pink-heading-fontweight: 400;
+    --highlight-bg-color: var(--bg-lessDark-color);
+    --highlight-border: 1.7px solid rgb(167, 165, 165);
+    --warning-color: var(--text-dark-color);
+    --warning-font-size: 1rem;
+    --same-fontweight: 500;
+    --same-dark-color: var(--text-dark-color);
+    --warning-bg-color: rgba(255, 233, 237, 0.8);
+    --yellow-keyboard-bg: var(--hero-pink);
+    --always-dark-text: var(--text-dark-color);
+    --code-bg-color: var(--bg-darkest-color);
+    --code-color: var(--cream-color);
+    --filler-bg: var(--yellow-color);
+    --pink-text: var(--cream-color);
+    --custom-outline-button-bg: var(--hero-pink);
+    --custom-outline-button-color: var(--text-dark-color);
+    --custom-outline-button-outline: var(--cream-color);
+    --menu-fill: var(--cream-color);
+    --always-cream-color: var(--cream-color);
+}
+
 .article-container a,
 .a11y-statement a,
 .gaad a,
@@ -52,7 +148,7 @@
     font-size: 1.4rem;
     font-weight: var(--pink-heading-fontweight);
     letter-spacing: 0.5px;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .article-content {
@@ -466,67 +562,9 @@ h4 {
     text-underline-offset: 2px;
 }
 
-li {
+/* li {
     font-weight: 500;
-}
-
-.light {
-    color: var(--bg-dark-color);
-    background-color: var(--cream-color);
-    --beta-border: 1.5px solid var(--text-nav-color);
-    --heading-color: var(--text-nav-color);
-    --heading-fontweight: 600;
-    --heading-opacity: 1;
-    --outline-thickness: 2px;
-    --cta-border: 1.8px solid var(--text-nav-color);
-    --subtitle-color: var(--text-nav-color);
-    --subtitle-yellow-on-dark: var(--text-nav-color);
-    --subtitle-fontweight: 600;
-    --border-for-dark: 2px solid var(--bg-dark-color);
-    --body-bg-color: var(--cream-color);
-    --paragraph-color: var(--text-dark-color);
-    --paragraph-fontweight: 500;
-    --paragraph-font-size: 1rem;
-    --paragraph-opacity: 1;
-    --in-text-link-color: var(--text-nav-color);
-    --pink-heading: var(--pinkBright-color);
-    --pink-heading-fontweight: 600;
-
-    --highlight-bg-color: white;
-    --highlight-border: 1.7px solid gray;
-
-    --warning-color: var(--text-dark-color);
-    --warning-font-size: 1rem;
-    --same-fontweight: 500;
-    --same-dark-color: var(--text-dark-color);
-    --warning-bg-color: var(--lightPink-color);
-
-    --yellow-keyboard-bg: var(--yellowFaded-color);
-    --always-dark-text: var(--text-dark-color);
-    --always-cream-color: var(--cream-color);
-
-    --code-bg-color: var(--bg-dark-color);
-    /* --code-color: var(--cream-color); */
-
-    --filler-bg: var(--cream-color);
-
-    --pink-text: var(--pinkBright-color);
-
-    --custom-outline-button-bg: var(--pinkBright-color);
-    --custom-outline-button-color: var(--cream-color);
-    --custom-outline-button-outline: var(--text-dark-color);
-
-    --menu-fill: var(--text-dark-color);
-}
-/* .dark h3 {
-    color: var(--bg-dark-color);
-    background-color: var(--cream-color);
 } */
-
-.dark {
-    color: var(--cream-color);
-    background-color: var(--bg-dark-color);
-}
 
 .margin-block-0 {
     margin-block: 0;
@@ -577,12 +615,12 @@ li {
 }
 
 p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: var(--paragraph-font-size);
     font-weight: var(--paragraph-fontweight);
     line-height: 2;
     letter-spacing: 0.5px;
-    /* opacity: var(--paragraph-opacity); */
+    opacity: var(--paragraph-opacity);
 }
 
 .padding-left-20 {
@@ -645,15 +683,16 @@ p {
 
 .read-next {
     font-size: 1.5rem;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-weight: semibold;
 }
 
 .read-next a {
     font-size: 1.5rem;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    
     color: var(--code-blueDark-color);
-    font-weight: 600;
+    font-weight: semibold;
     letter-spacing: 0.3px;
 }
 
@@ -663,8 +702,8 @@ p {
 
 .recommended-read {
     font-size: 1.3rem;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: semibold;
 }
 
 ::-webkit-scrollbar {
