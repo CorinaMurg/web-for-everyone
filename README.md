@@ -56,6 +56,7 @@ My TO DO list:
 
 2. Contact form
 
+3. Smooth scrolling
 
 ## Improve code
 
