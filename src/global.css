@@ -1127,6 +1127,7 @@ ul[class^="checkmark-list"] li p {
 @media screen and (max-width: 530px) {
     .article-container .subtitle {
         line-height: 1.3;
+        font-weight: 1.2rem;
     }
 
     .read-next {
