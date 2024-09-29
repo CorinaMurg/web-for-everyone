@@ -5,6 +5,7 @@ import useScrollToTop from "../../../hooks/useScrollToTop"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import useTabindexOnMobile from "../../../hooks/useTabindexOnMobile"
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 import styles from "./SimilarButDifferent.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -38,6 +39,7 @@ export default function SimilarButDifferent() {
     
     return (
         <div className="article-container similar-different">
+            <ScrollToTopButton />
             <BackLinks 
                 secondLink="HTML for Accessibility"
                 href="/blog#html-for-accessibility" 

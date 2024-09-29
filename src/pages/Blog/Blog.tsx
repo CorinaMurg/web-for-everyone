@@ -7,6 +7,7 @@ import useScrollToSection from "../../hooks/useScrollToSection"
 import useDocTitle from "../../hooks/useDocTitle"
 import useHighlightTOC from "../../hooks/useHighlightTOC"
 import { blogPostsData } from "../../data/blogData/blogPostsData"
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton"
 import styles from './Blog.module.css'
 import "../../global.css"
 
@@ -29,7 +30,7 @@ export default function Accessibility() {
   
     return (
         <div className={`${styles.resources} ${themeClass} resources no-back-links-container`}>
-
+            <ScrollToTopButton />
             <h1 className="article-heading-desktop">
                 <span>Accessibility resources</span>
             </h1>

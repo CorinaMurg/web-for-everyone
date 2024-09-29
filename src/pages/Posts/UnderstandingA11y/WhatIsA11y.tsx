@@ -8,6 +8,7 @@ import styles from "./WhatIsA11y.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 
 const contents = [
     {
@@ -40,6 +41,7 @@ export default function WhatIsA11y() {
     const { activeId } = useHighlightTOC();
     return (
         <div className="article-container whatisa11y-container">
+            <ScrollToTopButton />
             <BackLinks 
                 secondLink="Accessibility 101"
                 href="/blog#accessibility-101" 

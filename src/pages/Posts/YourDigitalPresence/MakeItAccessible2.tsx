@@ -7,6 +7,7 @@ import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 import "../../../global.css"
 import styles from "./MakeItAccessible2.module.css"
 
@@ -55,7 +56,7 @@ export default function MakeItAccessible() {
 
     return (
         <div className={`article-container ${themeClass}`}>
-            
+            <ScrollToTopButton />
             {/* **************Back Links********************** */}
             <BackLinks 
                 secondLink="Your portfolio site" 

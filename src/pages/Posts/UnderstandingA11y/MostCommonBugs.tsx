@@ -6,6 +6,7 @@ import useScrollToTop from "../../../hooks/useScrollToTop"
 import useDocTitle from "../../../hooks/useDocTitle"
 import useScrollToSection from "../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../hooks/useHighlightTOC"
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 import styles from "./MostCommonBugs.module.css"
 import "../../../global.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
@@ -54,6 +55,7 @@ export default function MostCommonBugs() {
 
     return (
         <div className={`article-container ${styles['commonbugs-container']}`}>
+            <ScrollToTopButton />
             <BackLinks 
                 secondLink="Accessibility 101"
                 href="/blog#accessibility-101" 
