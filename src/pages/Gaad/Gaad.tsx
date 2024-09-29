@@ -2,6 +2,7 @@ import React from "react";
 import useDocTitle from "../../hooks/useDocTitle";
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useScrollToTop from "../../hooks/useScrollToTop";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton"
 import A11yBanner from "../../components/A11yBanner/A11yBanner";
 import styles from "./Gaad.module.css";
 import "../../global.css";
@@ -13,7 +14,7 @@ export default function Feedback() {
     useScrollToSection();
     return (
         <div className={`${styles['gaad']} gaad`}>
-           
+            <ScrollToTopButton />
             <h1 className="article-heading-desktop ">
                 <span><span className="pink-text">GAAD</span> 2024</span>
                 

@@ -7,7 +7,7 @@ import useHighlightTOC from "../../../hooks/useHighlightTOC"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
-
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 import ExternalLink from "../../../components/ExternalLink/ExternalLink"
 import styles from "./HowA11yWorks.module.css"
 import "../../../global.css"
@@ -46,7 +46,7 @@ export default function MostCommonBugs() {
     
     return (
         <div className="article-container howA11yWorks-container">
-            
+            <ScrollToTopButton />
             <BackLinks 
                 secondLink="Accessibility 101" 
                 href="/blog#accessibility-101" 

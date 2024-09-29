@@ -7,20 +7,21 @@ import { miniArticleData } from "../../data/homeData/miniArticleData"
 import WeCanHelp from "../../components/WeCanHelp/WeCanHelp"
 import useScrollToTop from "../../hooks/useScrollToTop"
 import useScrollToSection from "../../hooks/useScrollToSection"
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton"
 import styles from './Home.module.css'
 import "../../global.css"
 
 export default function Home() {
     useScrollToSection();
-    const sectionRef = useRef<HTMLDivElement>(null);
+    // const sectionRef = useRef<HTMLDivElement>(null);
 
-    const scrollToSection = () => {
-        if (sectionRef.current) {
-          sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // const scrollToSection = () => {
+    //     if (sectionRef.current) {
+    //       sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
 
-    const { theme } = React.useContext(ThemeContext);
+    // const { theme } = React.useContext(ThemeContext);
     const themeClass = useThemeClass();
 
     return (
@@ -124,6 +125,7 @@ export default function Home() {
                     ))}
                 </ul>
             </section>
+            <ScrollToTopButton/>
         </div>
     )
 }

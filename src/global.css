@@ -40,6 +40,8 @@
     --menu-fill: var(--cream-color);
     --always-cream-color: var(--cream-color);
     --always-white-color: white;
+    --reverse-color: var(--bg-dark-color);
+    --reverse-bg-color: var(--cream-color);
 }
 
 .light {
@@ -90,6 +92,9 @@
     --custom-outline-button-outline: var(--text-dark-color);
 
     --menu-fill: var(--text-dark-color);
+
+    --reverse-color: var(--cream-color);
+    --reverse-bg-color: var(--bg-dark-color);
 }
 
 

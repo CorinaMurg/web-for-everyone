@@ -10,6 +10,7 @@ import TableOfContents from "../../../components/TableOfContents/TableOfContents
 import BackLinks from "../../../components/BackLinks/BackLinks"
 import WarningTriangle from "../../../components/WarningTriangle"
 import ExternalLink from "../../../components/ExternalLink/ExternalLink"
+import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 
 const contents = [
     {
@@ -53,7 +54,7 @@ export default function MakeItAccessible() {
     const { activeId } = useHighlightTOC();
     return (
         <div className="article-container">
-            
+            <ScrollToTopButton />
             {/* **************Back Links********************** */}
             <BackLinks 
                 secondLink="Your portfolio site"
