@@ -3,43 +3,43 @@
 .dark {
     color: var(--cream-color);
     background-color: var(--bg-dark-color);
---beta-border: 1.5px solid var(--hero-pink);
---heading-color: var(--cream-color);
---heading-fontweight: 400;
---outline-thickness: 1.5px;
---cta-border: none;
---subtitle-color: var(--cream-color);
---subtitle-yellow-on-dark: var(--yellow-color);
---subtitle-fontweight: 400;
---border-for-dark: 1.5px solid var(--cream-color);
---body-bg-color: var(--bg-dark-color);
---paragraph-fontweight: 300;
---paragraph-font-size: 0.9rem;
---paragraph-opacity: 1;
---paragraph-color: var(--cream-color);
---heading-opacity: 1;
---in-text-link-color: var(--code-blue-color);
---pink-heading: var(--pink-for-dark-bg-color);
---pink-heading-fontweight: 400;
---highlight-bg-color: var(--bg-lessDark-color);
---highlight-border: 1.7px solid rgb(167, 165, 165);
---warning-color: var(--text-dark-color);
---warning-font-size: 1rem;
---same-fontweight: 500;
---same-dark-color: var(--text-dark-color);
---warning-bg-color: rgba(255, 233, 237, 0.8);
---yellow-keyboard-bg: var(--hero-pink);
---always-dark-text: var(--text-dark-color);
---code-bg-color: var(--bg-darkest-color);
---code-color: var(--cream-color);
---filler-bg: var(--yellow-color);
---pink-text: var(--cream-color);
---custom-outline-button-bg: var(--hero-pink);
---custom-outline-button-color: var(--text-dark-color);
---custom-outline-button-outline: var(--cream-color);
---menu-fill: var(--cream-color);
---always-cream-color: var(--cream-color);
---always-white-color: white;
+    --beta-border: 1.5px solid var(--hero-pink);
+    --heading-color: var(--cream-color);
+    --heading-fontweight: 400;
+    --outline-thickness: 1.5px;
+    --cta-border: none;
+    --subtitle-color: var(--cream-color);
+    --subtitle-yellow-on-dark: var(--yellow-color);
+    --subtitle-fontweight: 400;
+    --border-for-dark: 1.5px solid var(--cream-color);
+    --body-bg-color: var(--bg-dark-color);
+    --paragraph-fontweight: 300;
+    --paragraph-font-size: 0.9rem;
+    --paragraph-opacity: 1;
+    --paragraph-color: var(--cream-color);
+    --heading-opacity: 1;
+    --in-text-link-color: var(--code-blue-color);
+    --pink-heading: var(--pink-for-dark-bg-color);
+    --pink-heading-fontweight: 400;
+    --highlight-bg-color: var(--bg-lessDark-color);
+    --highlight-border: 1.7px solid rgb(167, 165, 165);
+    --warning-color: var(--text-dark-color);
+    --warning-font-size: 1rem;
+    --same-fontweight: 500;
+    --same-dark-color: var(--text-dark-color);
+    --warning-bg-color: rgba(255, 233, 237, 0.8);
+    --yellow-keyboard-bg: var(--hero-pink);
+    --always-dark-text: var(--text-dark-color);
+    --code-bg-color: var(--bg-darkest-color);
+    --code-color: var(--cream-color);
+    --filler-bg: var(--yellow-color);
+    --pink-text: var(--cream-color);
+    --custom-outline-button-bg: var(--hero-pink);
+    --custom-outline-button-color: var(--text-dark-color);
+    --custom-outline-button-outline: var(--cream-color);
+    --menu-fill: var(--cream-color);
+    --always-cream-color: var(--cream-color);
+    --always-white-color: white;
 }
 
 .light {
@@ -200,18 +200,14 @@
 .article-heading-desktop {
     display: flex;
     flex-direction: column;
-    /* font-size: 3rem; */
     margin-top: 30px;
-    /* font-weight: 700; */
     margin-bottom: 0;
 }
 
 .resources .article-heading-desktop {
     display: flex;
     flex-direction: column;
-    /* font-size: 3rem; */
     margin-top: 30px;
-    /* font-weight: 700; */
 }
 
 .resources .article-heading-desktop span,
@@ -389,15 +385,6 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
-
-/* .pink-bg-white-text {
-    background-color: var(--pinkBright-color);
-    color: var(--text-light-color);
-    padding: 1px 4px;
-    border-radius: 2px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-} */
 
 .details-content:not(:has(.code)) {
     max-height: 25rem; 

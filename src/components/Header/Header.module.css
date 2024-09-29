@@ -69,12 +69,15 @@ header .logo-link:hover {
 
 
 @media (max-width: 800px) {
+    header {
+        padding-block: 15px;
+    }
     .mobile-nav-toggle {
         display: block;
         position: absolute;
         z-index: 2000;
         right: var(--navbar-margin);
-        top: 23px;
+        top: 20px;
         background: transparent;
         background-repeat: no-repeat;
         background-position: center;
