@@ -38,8 +38,8 @@ export default function Feedback() {
                 Reporting accessibility issues
             </h2>
             <p>
-                If you experience accessibility barriers or notice any bugs while using our website, 
-                please let us know. 
+                If you experience accessibility barriers or notice any bugs while using this website, 
+                please reach out. 
             </p>
             <p>
                 Please include a description of the issue, the page URL, or any relevant details. 

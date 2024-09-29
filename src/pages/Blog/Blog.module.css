@@ -151,7 +151,7 @@
 .article--author {
     /* margin-top: 32px; */
     line-height: 2;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 700;
     
@@ -176,11 +176,11 @@
     margin-top: 55px;
     margin-bottom: 30px;
     display: flex;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
     align-items: center;
     font-size: 1rem;
     font-weight: var(--heading-fontweight);
-    color: var(--heading-color);
+    color: var(--paragraph-color);
 }
 
 .resources--table-contents nav {
@@ -207,7 +207,7 @@
     align-self: flex-start;
     color: var(--cream-color);
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8rem;
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -269,7 +269,7 @@
     }
     .resources--table-contents h2 {
         font-size: 1.1rem;
-        font-weight: 700;
+        /* font-weight: var(--) */
     }
 
     .resources--table-contents nav {

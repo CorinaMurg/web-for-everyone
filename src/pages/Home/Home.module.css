@@ -39,10 +39,10 @@
 } */
 
 .hero--subtitle {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
     /* letter-spacing: 0.5px; */
-    font-weight: var(--subtitle-fontweight);
+    font-weight: var(--paragraph-fontweight);
     width: 40rem;
     margin-inline: auto;
     margin-top: 0;
@@ -80,12 +80,12 @@
     align-items: center;
     justify-content: center;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 6px 15px;
+    padding: 6px 12px;
     border-radius: 10px;
     border: var(--cta-border);
     width: 15rem;
@@ -219,7 +219,7 @@
     }
     .home .continue-to-article {
         width: 19rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .hero--text {
@@ -281,7 +281,7 @@
 .mini-articles h2 {
     align-self: self-start;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px; 
     width: 100%;
     /* needed to scroll to section without overlap with header */

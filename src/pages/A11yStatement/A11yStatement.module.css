@@ -27,8 +27,8 @@
 .contact--email {
     /* background-color: var(--text-dark-color);
     padding: 3px 10px 3px 7px; */
-    color: var(--text-dark-color);
-    font-weight: 600;
+    color: var(--paragraph-color);
+    font-weight: var(--paragraph-fontweight);
     margin-left: 5px;
 }
 
