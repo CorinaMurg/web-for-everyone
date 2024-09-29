@@ -16,10 +16,10 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
     font-weight: var(--heading-fontweight);
-    color: var(--heading-color);
+    color: var(--paragraph-color);
 }
 
 .table-contents nav {
@@ -43,12 +43,12 @@
     align-self: flex-start;
     color: var(--cream-color);
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8rem;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     white-space: nowrap;
     padding: 2px;
     border: 1.7px solid var(--code-bg-color);
@@ -98,7 +98,7 @@
 
     .table-contents h2 {
         font-size: 1.1rem;
-        font-weight: 700;
+        /* font-weight: 700; */
         margin-bottom: 20px;
         margin-top: 50px;
     }

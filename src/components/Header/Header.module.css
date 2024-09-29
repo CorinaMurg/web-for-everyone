@@ -74,9 +74,8 @@ header .logo-link:hover {
         position: absolute;
         z-index: 2000;
         right: var(--navbar-margin);
-        top: 20px;
+        top: 23px;
         background: transparent;
-        /* background-image: url(/assets/icon-menu-dark.svg); */
         background-repeat: no-repeat;
         background-position: center;
         width: 1.5rem;

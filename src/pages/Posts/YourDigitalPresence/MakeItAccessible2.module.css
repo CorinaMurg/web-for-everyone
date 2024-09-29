@@ -46,7 +46,7 @@
 }
 .brightness--buttons-wrapper { 
     width: 100%;
-    background-color: var(--always-cream-color);
+    background-color: var(--always-white-color);
     padding: 15px 10px;
     margin-inline: 0;
 }

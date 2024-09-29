@@ -235,15 +235,14 @@ export default function MakeItAccessible() {
                             visibleText="WebAIM's contrast checker"
                         />. 
                     </p>
-                    <p >
-                        For quick access, you can also <span> </span>
-                        <ExternalLink
-                            href="https://webaim.org/resources/contrastchecker/bookmarklet" 
-                            visibleText="add the contrast checker to your Bookmarks bar"
-                        />
-                        <span> </span>in one easy step!
-                    </p>     
                     
+                    <div className="contrast-image-container">
+                        <img 
+                            alt="Webaim's contrast checker tool"
+                            className={styles['contrast-checker-image']}
+                            src="/assets/contrastChecker.jpg"
+                        /> 
+                    </div>
                     <div className="checkmark-lines">
                         <p className="bold">
                             Checking the color contrast is straightforward:
@@ -261,10 +260,28 @@ export default function MakeItAccessible() {
                             <span>you receive a <span className="bold">pass</span> or <span className="bold">fail</span> result for 
                             the <span className="bold">AA</span> and <span className="bold">AAA levels of compliance</span></span>
                         </p>
+                       
                     </div>
+                    <div className="contrast-image-container">
+                        <img 
+                            alt="Webaim's contrast checker results"
+                            className={styles['contrast-results-image']}
+                            src="/assets/contrastResults.jpg"
+                        />  
+                    </div>
+                   
                     <p>
                         <span className="bold">A neat feature of the tool</span>: it provides <span className="bold">luminance sliders</span> that allow you to adjust 
                         the levels and see how the contrast ratio changes. <span aria-hidden="true"> 😎</span>
+                    </p>  
+
+                    <p >
+                        For quick access, you can also <span> </span>
+                        <ExternalLink
+                            href="https://webaim.org/resources/contrastchecker/bookmarklet" 
+                            visibleText="add the contrast checker to your Bookmarks bar"
+                        />
+                        <span> </span>in one easy step!
                     </p>  
                             
                     {/* *****COLOR CONTRAST FOR LINKS***** */}
@@ -297,12 +314,20 @@ export default function MakeItAccessible() {
                         </div>
                           
                         <p style={{ marginTop: "30px"}}>
-                            And to help you, WebAIM has a special contrast checker for links! <span> </span>
+                            And to help us, WebAIM has a special { }
                             <ExternalLink
                                 href="https://webaim.org/resources/linkcontrastchecker/" 
-                                visibleText="WebAIM's link contrast checker"
-                            />.
-                        </p>        
+                                visibleText="links contrast checker"
+                            />
+                            <span aria-hidden="true"> 🌟 🌟 🌟</span>
+                        </p> 
+                        <div className="contrast-image-container">
+                            <img 
+                                alt="Webaim's link contrast checker"
+                                className={styles['link-contrast-checker-image']}
+                                src="/assets/linkContrastChecker.jpg"
+                            />  
+                        </div>   
                     </div>
                 </div>
 

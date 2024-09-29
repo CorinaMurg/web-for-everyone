@@ -61,7 +61,7 @@
     /* Border radius */
     --border-radius: 5px;
 
-    /* variables for light */
+    /* variables for light
     --beta-border: 1.5px solid var(--hero-pink);
     --heading-color: var(--cream-color);
     --heading-fontweight: 500;
@@ -97,7 +97,7 @@
     --custom-outline-button-color: var(--text-dark-color);
     --custom-outline-button-outline: var(--cream-color);
     --menu-fill: var(--cream-color);
-    --always-cream-color: var(--cream-color);
+    --always-cream-color: var(--cream-color); */
     
 }
 
@@ -134,7 +134,7 @@
     font-weight: var(--same-fontweight);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Quicksand';
     src: url('/fonts/quicksand/Quicksand-Light.ttf') format('ttf');
     font-weight: 300;
@@ -165,7 +165,7 @@
     src: url('/fonts/quicksand/Quicksand-Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
-}
+} */
 
 .bold-text {
     font-family: 'Quicksand', sans-serif;
@@ -184,7 +184,7 @@
 body {
     background-color: var(--body-bg-color);
     color: var(--text-dark-color);
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
     min-height: 100vh;
     -ms-overflow-style: none;
     position: relative;

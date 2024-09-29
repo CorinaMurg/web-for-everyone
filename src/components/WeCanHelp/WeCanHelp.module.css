@@ -84,7 +84,7 @@
 }
 
 
-@media screen and (min-width: 626px) {
+@media screen and (min-width: 800px) {
     .we-can-help {
         margin-top: 85px;
         padding: 30px 40px 40px 40px;
@@ -94,7 +94,7 @@
 
     .we-can-help h2 {
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 40px;
     }
 
@@ -130,7 +130,7 @@
     } */
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 799px) {
     .we-can-help {
         gap: 40px;
         /* width: calc(100% + 2*var(--main-margin)); */
@@ -139,6 +139,7 @@
         padding-inline: var(--main-margin);
         padding-block: 30px;
         border-bottom: 1.5px solid gray;
+        /* width: 100%; */
     }
 
     .we-can-help h2 {
