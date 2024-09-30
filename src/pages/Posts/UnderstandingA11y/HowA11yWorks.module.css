@@ -31,6 +31,11 @@
     /* background-color: var(--highlight-bg-color); */
 }
 
+.roselli {
+    border-left: 2px solid var(--yellow-color);
+    padding-left: 20px;
+}
+
 @media screen and (max-width: 670px) {
     .dom-at {
         border-radius: 0;

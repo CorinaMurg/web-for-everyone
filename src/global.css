@@ -24,7 +24,7 @@
     --highlight-bg-color: var(--bg-lessDark-color);
     --highlight-border: 1.7px solid rgb(167, 165, 165);
     --warning-color: var(--text-dark-color);
-    --warning-font-size: 1rem;
+    --warning-font-size: 0.9rem;
     --same-fontweight: 500;
     --same-dark-color: var(--text-dark-color);
     --warning-bg-color: rgba(255, 233, 237, 0.8);
@@ -70,7 +70,7 @@
     --highlight-border: 1.7px solid gray;
 
     --warning-color: var(--text-dark-color);
-    --warning-font-size: 1rem;
+    --warning-font-size:0.9rem;
     --same-fontweight: 500;
     --same-dark-color: var(--text-dark-color);
     --warning-bg-color: var(--lightPink-color);
@@ -110,7 +110,7 @@
     text-decoration: underline;
     text-decoration-color: var(--code-blueDark-color);
     text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    text-underline-offset: 6px;
 }
 
 .article-container a:hover,
@@ -869,7 +869,7 @@ ul[class^="checkmark-list"] li p {
 
 .warning {
     background-color: var(--warning-bg-color);
-    padding: 10px 30px 10px 60px;
+    padding: 20px 30px 20px 60px;
     width: 100%;
     border: 1.7px solid var(--pinkBright-color);
     position: relative;
@@ -877,7 +877,7 @@ ul[class^="checkmark-list"] li p {
 }
 
 .warning >p {
-    margin-block: 20px;
+    margin-block: 10px;
     color: var(--warning-color) !important;
     font-weight: var(--same-fontweight) !important;
     font-size: var(--warning-font-size) !important;

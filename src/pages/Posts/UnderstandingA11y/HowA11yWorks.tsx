@@ -56,7 +56,7 @@ export default function MostCommonBugs() {
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>How accessibility works</span> 
             </h1>
-            <h1 className="article-heading-mobile">
+            <h1 aria-describedby="subtitle" className="article-heading-mobile">
                 <span>How accessibility</span>
                 <span>works</span>
             </h1>
@@ -692,7 +692,7 @@ export default function MostCommonBugs() {
                                 And once again, the problem for voice users: they need to know the name of the element,
                                 but the value of <code>aria-label</code> is not visible to them.
                             </p>
-                            <p className="margin-top-20">
+                            <p className={`${styles['roselli']} margin-top-30`}>
                                 <b>More on this topic</b>: <span> </span>
                                 A post by Adrian Roselli, an accessibility expert, <span> </span>
                                 <ExternalLink 
@@ -701,7 +701,7 @@ export default function MostCommonBugs() {
                                 />.
                             </p> 
                         </div>
-                        <div className="checkmark-line white-bg">
+                        <div className="checkmark-line white-bg margin-top-20">
                             <p className="bold">
                                 To summarize:
                             </p>
