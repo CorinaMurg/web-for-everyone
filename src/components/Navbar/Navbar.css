@@ -21,21 +21,21 @@
 .nav-link:hover {
     text-decoration: underline;
     color: var(--text-nav-color);
-    text-underline-offset: 3px;
+    text-underline-offset: 6px;
     text-decoration-thickness: 2px;
 }
 
 .nav-link.dark:hover {
     text-decoration: underline;
     color: var(--cream-color);
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1.5px;
+    /* text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px; */
 }
 
 .active-link {
     text-decoration: underline;
     color: var(--text-nav-color);
-    text-underline-offset: 3px;
+    text-underline-offset: 6px;
     text-decoration-thickness: 2px;
 }
 
@@ -61,7 +61,7 @@
     border: none;
     background: var(--cream-color);
     cursor: pointer;
-    margin-top: -5px;
+    /* margin-top: -5px; */
     margin-left: 50px;
     /* padding-left: 0; */
     display: flex;

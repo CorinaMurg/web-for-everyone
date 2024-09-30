@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0;
     color: var(--text-dark-color);
     padding: 20px var(--main-margin);
     width: 100%;
@@ -14,7 +15,7 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .beta {
@@ -24,7 +25,7 @@ header {
     padding: 0px 5px 0px 6px;
     border-radius: 10px;
     vertical-align: middle;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     display: inline;
     font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
@@ -72,18 +73,30 @@ header .logo-link:hover {
     header {
         padding-block: 15px;
     }
+
+    /* .mobile-nav-toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
     .mobile-nav-toggle {
-        display: block;
-        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* position: absolute; */
         z-index: 2000;
-        right: var(--navbar-margin);
-        top: 15px;
+        /* right: var(--navbar-margin);
+        top: 15px; */
         background: transparent;
         background-repeat: no-repeat;
-        background-position: center;
-        width: 1.5rem;
-        aspect-ratio: 1;
+        /* background-position: center; */
+        width: 40px;
+        height: 46px;
         border: 0;
+        margin-right: 0;
+        margin-left: auto;
+        cursor: pointer;
         
     }
 
@@ -98,9 +111,9 @@ header .logo-link:hover {
 }
 
 @media (max-width: 450px) {
-    .mobile-nav-toggle {
+    /* .mobile-nav-toggle {
         right: calc(0.5*var(--navbar-margin));
-    }
+    } */
     .beta {
         margin-top: 3px;
     }
