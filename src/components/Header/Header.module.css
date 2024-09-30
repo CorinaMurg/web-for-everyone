@@ -77,7 +77,7 @@ header .logo-link:hover {
         position: absolute;
         z-index: 2000;
         right: var(--navbar-margin);
-        top: 18px;
+        top: 15px;
         background: transparent;
         background-repeat: no-repeat;
         background-position: center;
