@@ -321,14 +321,15 @@ export default function MakeItAccessible() {
                             />
                             <span aria-hidden="true"> 🌟 🌟 🌟</span>
                         </p> 
-                        <div className="contrast-image-container">
-                            <img 
-                                alt="Webaim's link contrast checker"
-                                className={styles['link-contrast-checker-image']}
-                                src="/assets/linkContrastChecker.jpg"
-                            />  
-                        </div>   
+                          
                     </div>
+                    <div className="contrast-image-container">
+                        <img 
+                            alt="Webaim's link contrast checker"
+                            className={styles['link-contrast-checker-image']}
+                            src="/assets/linkContrastChecker.jpg"
+                        />  
+                    </div> 
                 </div>
 
                 {/* ****************ALT************************* */}
