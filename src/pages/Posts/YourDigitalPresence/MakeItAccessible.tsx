@@ -67,9 +67,8 @@ export default function MakeItAccessible() {
                 <span>common bugs</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Fixing the six</span>
-                <span>most common</span>
-                <span>bugs</span>
+                <span>Fixing the six most</span>
+                <span>common bugs</span>
             </h1>
             <p id="subtitle" className="subtitle">Accessibility with just HTML and CSS</p>
         
