@@ -30,7 +30,7 @@ export default function Accessibility() {
   
     return (
         <div className={`${styles.resources} ${themeClass} resources no-back-links-container`}>
-            <ScrollToTopButton />
+          
             <h1 className="article-heading-desktop">
                 <span>Accessibility resources</span>
             </h1>
@@ -110,7 +110,8 @@ export default function Accessibility() {
                         </div>
                     </div>
                 ))}
-            </div>       
+            </div>   
+            <ScrollToTopButton />    
         </div>
     )
 }

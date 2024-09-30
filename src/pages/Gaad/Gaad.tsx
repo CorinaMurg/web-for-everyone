@@ -14,10 +14,9 @@ export default function Feedback() {
     useScrollToSection();
     return (
         <div className={`${styles['gaad']} gaad`}>
-            <ScrollToTopButton />
+          
             <h1 className="article-heading-desktop ">
-                <span><span className="pink-text">GAAD</span> 2024</span>
-                
+                <span><span className="pink-text">GAAD</span> 2024</span>  
             </h1>
             <h1 className="article-heading-mobile">
                 <span><span className="pink-text">GAAD</span> 2024</span>
@@ -202,6 +201,7 @@ export default function Feedback() {
                 </section>
                    
             </section>
+            <ScrollToTopButton />
                
         </div>
     )

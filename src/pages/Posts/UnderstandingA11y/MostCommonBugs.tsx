@@ -55,7 +55,7 @@ export default function MostCommonBugs() {
 
     return (
         <div className={`article-container ${styles['commonbugs-container']}`}>
-            <ScrollToTopButton />
+          
             <BackLinks 
                 secondLink="Accessibility 101"
                 href="/blog#accessibility-101" 
@@ -569,7 +569,8 @@ export default function MostCommonBugs() {
                         </Link>
                     </p>                 
                 </div>
-            </div>          
+            </div> 
+            <ScrollToTopButton />         
         </div>
     )
 }

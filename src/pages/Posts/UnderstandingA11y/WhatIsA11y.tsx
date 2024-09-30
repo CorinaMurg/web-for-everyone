@@ -41,7 +41,7 @@ export default function WhatIsA11y() {
     const { activeId } = useHighlightTOC();
     return (
         <div className="article-container whatisa11y-container">
-            <ScrollToTopButton />
+           
             <BackLinks 
                 secondLink="Accessibility 101"
                 href="/blog#accessibility-101" 
@@ -354,6 +354,7 @@ export default function WhatIsA11y() {
                     
                 </div>
             </div>
+            <ScrollToTopButton />
         </div>
     )
 }

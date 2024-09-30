@@ -54,7 +54,6 @@ export default function MakeItAccessible() {
     const { activeId } = useHighlightTOC();
     return (
         <div className="article-container">
-            <ScrollToTopButton />
             {/* **************Back Links********************** */}
             <BackLinks 
                 secondLink="Your portfolio site"
@@ -674,6 +673,7 @@ export default function MakeItAccessible() {
                 </div>
 
             </div>
+            {/* <ScrollToTopButton /> */}
         </div>    
     )
 }

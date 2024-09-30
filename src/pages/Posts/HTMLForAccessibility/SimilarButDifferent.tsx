@@ -39,7 +39,7 @@ export default function SimilarButDifferent() {
     
     return (
         <div className="article-container similar-different">
-            <ScrollToTopButton />
+           
             <BackLinks 
                 secondLink="HTML for Accessibility"
                 href="/blog#html-for-accessibility" 
@@ -278,7 +278,8 @@ export default function SimilarButDifferent() {
                     </p>          
                 </div>
                     
-            </div>          
+            </div>  
+            <ScrollToTopButton />        
         </div>
     )
 }
