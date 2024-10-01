@@ -42,6 +42,7 @@
     --always-white-color: white;
     --reverse-color: var(--bg-dark-color);
     --reverse-bg-color: var(--cream-color);
+    --warning-opacity: 0.8;
 }
 
 .light {
@@ -71,6 +72,7 @@
 
     --warning-color: var(--text-dark-color);
     --warning-font-size:0.9rem;
+    --warning-opacity: 0.8;
     --same-fontweight: 500;
     --same-dark-color: var(--text-dark-color);
     --warning-bg-color: var(--lightPink-color);

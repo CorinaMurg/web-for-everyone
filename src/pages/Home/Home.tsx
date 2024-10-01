@@ -87,7 +87,7 @@ export default function Home() {
             >
                 <h2 id="accessibility-101">
                     <span>Accessibility </span>
-                    <span className='code-blue-color'>101</span>
+                    <span className='code-blue-color'>101</span> 
                 </h2>
                 <ul>
                     {miniArticleData.slice(0, 3).map((article, index) => (
