@@ -19,11 +19,11 @@ import NotFound from "./pages/NotFound/NotFound"
 
 export default function App() {
 
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
     const toggleTheme = () => {
         setTheme(currentTheme => {
-            const newTheme = currentTheme === "light" ? "dark" : "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
             localStorage.setItem('theme', newTheme);
             return newTheme;
         });

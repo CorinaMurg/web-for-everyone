@@ -34,9 +34,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <p className={styles['hero--subtitle']}>
-                    <span>You are building your portfolio site. </span>
-                    <span>Will it be ready to welcome all visitors, including those with disabilities? </span>
-                    <span>Time to check!</span>   
+                    You are building your portfolio site. Will it be ready to welcome all visitors, including those with disabilities? Time to check!
                 </p>      
 
             </section>
