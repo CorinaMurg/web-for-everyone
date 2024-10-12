@@ -1,7 +1,5 @@
 import React from "react"
-import { useRef } from "react"
 import { Link } from "react-router-dom"
-import { ThemeContext } from "../../contexts/ThemeContext"
 import { useThemeClass } from "../../hooks/useThemeClass"
 import { miniArticleData } from "../../data/homeData/miniArticleData"
 import WeCanHelp from "../../components/WeCanHelp/WeCanHelp"
@@ -29,7 +27,7 @@ export default function Home() {
             <section className={styles['hero']}> 
                 <div className={styles['hero--heading']}>   
                     <h1 id="heading">
-                        <span>Let's make it</span>
+                        <span>Let&apos;s make it</span>
                         <span className="pink-text">accessible.</span>
                     </h1>
                 </div>

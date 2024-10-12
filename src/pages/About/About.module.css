@@ -9,6 +9,13 @@
     width: 55rem;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
 .about h1 {
     text-align: center;
     font-size: 3rem;

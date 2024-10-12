@@ -8,7 +8,6 @@ import "../../../global.css"
 import styles from "./MakeItAccessible.module.css"
 import TableOfContents from "../../../components/TableOfContents/TableOfContents"
 import BackLinks from "../../../components/BackLinks/BackLinks"
-import WarningTriangle from "../../../components/WarningTriangle"
 import ExternalLink from "../../../components/ExternalLink/ExternalLink"
 import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
 
@@ -87,7 +86,7 @@ export default function MakeItAccessible() {
                         <span> </span>
                         of 1,000,000 home pages revealed a group of 6 bugs 
                         present on 96% of the pages.
-                        Let's make sure your portfolio site is not one of them!
+                        Let&apos;s make sure your portfolio site is not one of them!
                     </p>
 
                     {/* **************Automated testing tools****************** */}
@@ -136,7 +135,7 @@ export default function MakeItAccessible() {
                                 />
                                 <span> </span>
                                 is probably the most comprehensive tool, with over 70 tests for accessibility issues.
-                                Note that Lighthouse also uses Deque's axe-core library, but with a smaller set of tests.
+                                Note that Lighthouse also uses Deque&apos;s axe-core library, but with a smaller set of tests.
                             </p>
                             <p>
                                 Each tool has its own strengths. Best if you pick one and get 
@@ -149,7 +148,7 @@ export default function MakeItAccessible() {
                             </p>
                             <p>
                                 But keep in mind that automated tools are imperfect!
-                                They can't test all aspects of accessibility, and will catch at
+                                They can&apos;t test all aspects of accessibility, and will catch at
                                 most 50% of all the issues.
                             </p>
                             <p>  
@@ -199,7 +198,7 @@ export default function MakeItAccessible() {
                     <h3>Mind the color contrast ratio to help users with low vision</h3>
                     
                     <p>
-                        For users with low vision reading can be challenging when the text color doesn't stand out much from the 
+                        For users with low vision reading can be challenging when the text color doesn&apos;t stand out much from the 
                         background. Noticing interactive elements like buttons or form inputs is also difficult
                         if the background or border does not contrast enough with the surrounding content.
                     </p>     
@@ -223,11 +222,11 @@ export default function MakeItAccessible() {
 
                     <h3>How to check the color contrast ratio</h3>
                     <p>
-                        When you run an accessibility report with automated tools like Google's Lighthouse
+                        When you run an accessibility report with automated tools like Google&apos;s Lighthouse
                         or axe DevTools, if any elements failed the contrast ratio guidelines, you will know right away.
                     </p> 
                     <p>
-                        If you'd like to be more proactive and test your colors as you're building, 
+                        If you&apos;d like to be more proactive and test your colors as you&apos;re building, 
                         use <span> </span>
                         <ExternalLink
                             href="https://webaim.org/resources/contrastchecker/" 
@@ -290,7 +289,7 @@ export default function MakeItAccessible() {
                             <span>Links also have to follow the color contrast rules!<span aria-hidden="true"> 💡</span></span> 
                         </h4>
                         <p>
-                            Here's a quick checklist to make sure your links stand out from the surrounding text and the background:
+                            Here&apos;s a quick checklist to make sure your links stand out from the surrounding text and the background:
                         </p>
                         <div style={{ marginTop: "30px"}} className="checkmark-lines">
                             <p>
@@ -318,7 +317,7 @@ export default function MakeItAccessible() {
                                 href="https://webaim.org/resources/linkcontrastchecker/" 
                                 visibleText="links contrast checker"
                             />
-                            <span aria-hidden="true"> 🌟 🌟 🌟</span>
+                            <span aria-hidden="true"> 🌟</span>
                         </p> 
                           
                     </div>
@@ -335,28 +334,28 @@ export default function MakeItAccessible() {
                 <div className="section alt scroll-target" id="the-alt-attribute-for-images">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">02</span>
-                        <h2>The "alt" attribute for images</h2>
+                        <h2>The &quot;alt&quot; attribute for images</h2>
                     </div>
 
                     <div className="code code--alt">
                         <code><span className="code-blue-color">&lt;img</span></code>
-                        <code className="padding-left-30">src="..."</code>
-                        <code className="padding-left-30"><span className="code-pink-color">alt</span>="Fill me in or leave me empty, but do include me!"</code>
+                        <code className="padding-left-30">src=&quot;...&quot;</code>
+                        <code className="padding-left-30"><span className="code-pink-color">alt</span>=&quot;Fill me in or leave me empty, but do include me!&quot;</code>
                         <code><span className="code-blue-color">/&gt;</span></code>
                     </div>
            
                     <h3>Help screen readers decide whether to announce an image or not</h3>
                     <p className="bullet-point-line white-bg">
                         Is your image <span className="bold">purely decorative</span>? Or, is the information presented in the image 
-                        conveyed by the adjacent text as well? Then it's best to leave the <code>alt</code> attribute empty.
+                        conveyed by the adjacent text as well? Then it&apos;s best to leave the <code>alt</code> attribute empty.
                     </p>
                     <p className="bullet-point-line white-bg">
                         Does your image contain <span className="bold">essential information</span> that is not available in the text? 
-                        Then add a short description in the <code>alt</code> attribute. No need to add the word "image"
-                        or "picture" in the description, as screen readers announce it as an image by default.
+                        Then add a short description in the <code>alt</code> attribute. No need to add the word &quot;image&quot;
+                        or &quot;picture&quot; in the description, as screen readers announce it as an image by default.
                     </p> 
                     <p className="white-bg">
-                        Either way, it's important to <span className="bold">add the <code>alt</code> attribute to all images</span>. 
+                        Either way, it&apos;s important to <span className="bold">add the <code>alt</code> attribute to all images</span>. 
                     </p>
                     
                     <div className="highlight">
@@ -371,11 +370,11 @@ export default function MakeItAccessible() {
                         </p>
                         <p className="white-bg">
                             <span className="bold">Empty</span>: screen readers ignore the image.
-                            If your image is purely decorative, the attribute should be empty: <code>alt=""</code>
+                            If your image is purely decorative, the attribute should be empty: <code>alt=&quot;&quot;</code>
                         </p>  
                         <p className="white-bg">
                             <span className="bold">Descriptive</span>: if the image
-                            is important for understanding your content use the attribute to describe it: <code>alt="some description"</code>
+                            is important for understanding your content use the attribute to describe it: <code>alt=&quot;some description&quot;</code>
                         </p> 
                         <p className="white-bg">
                             Remember:
@@ -394,11 +393,11 @@ export default function MakeItAccessible() {
 
                     <div className="code code--links">
                         <code>
-                            <span className="code-blue-color">&lt;a</span> href="https://www.linkedin.com/company/webforeveryone/"
+                            <span className="code-blue-color">&lt;a</span> href=&quot;https://www.linkedin.com/company/webforeveryone/&quot;
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">
-                            <span className="code-yellow-color">&lt;i</span> className="fa-brands fa-linkedin" aria-hidden="true"
+                            <span className="code-yellow-color">&lt;i</span> className=&quot;fa-brands fa-linkedin&quot; aria-hidden=&quot;true&quot;
                             <span className="code-yellow-color">&gt;&lt;/i&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/a&gt;</span></code>
@@ -416,7 +415,7 @@ export default function MakeItAccessible() {
                         and provide no information about the destination of the link. 
                     </p>
                     <p>
-                        The problem: <span className="bold">the link doesn't have an accessible name</span>!
+                        The problem: <span className="bold">the link doesn&apos;t have an accessible name</span>!
                         Assistive technologies recognize an interactive element by its accessible name, but
                         the browser can not compute it here since none of the attributes that could provide one 
                         is present.
@@ -451,9 +450,9 @@ export default function MakeItAccessible() {
                             <p className="white-bg">
                                 <span className="pink-text bold">&#x2714; </span>
                                 <span>
-                                    Add <code>aria-label</code> to the link element (e.g., <code>aria-label="LinkedIn"</code>).
+                                    Add <code>aria-label</code> to the link element (e.g., <code>aria-label=&quot;LinkedIn&quot;</code>).
                                     A quick reminder that, in general, <code>aria-label</code>is not a great choice for internationalization
-                                    (for example, the text is not guaranteed to be translated by all browsers), but it's not a concern here since
+                                    (for example, the text is not guaranteed to be translated by all browsers), but it&apos;s not a concern here since
                                     we are dealing with an internationally recognized brand name.
                                 </span>
                             </p>
@@ -486,7 +485,7 @@ export default function MakeItAccessible() {
                         </code>
                         <code className="padding-left-30">
                             <span className="code-pink-color">&lt;img</span> 
-                            <span className="code-yellow-color"> alt</span>="Close" src="x-mark.svg"
+                            <span className="code-yellow-color"> alt</span>=&quot;Close&quot; src=&quot;x-mark.svg&quot;
                             <span className="code-pink-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/button&gt;</span></code>
@@ -502,14 +501,14 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         In the example above, the button has no visible text, but contains an image with 
-                        an <code>alt</code> attribute. A screen reader will announce it as <span className="bold">"Close graphic button"</span>.
+                        an <code>alt</code> attribute. A screen reader will announce it as <span className="bold">&quot;Close graphic button&quot;</span>.
                     </p>
                     <p className="white-bg">
-                        Notice the <span className="bold">"graphic"</span> part? Since the image has 
+                        Notice the <span className="bold">&quot;graphic&quot;</span> part? Since the image has 
                         an <code>alt</code> attribute that is not empty, the screen reader has to announce there is an image present. 
                         It is up to you if this information is useful to the user or not (most likely not?!). If not, 
                         use one of the techniques discussed in the <span className="bold">Links</span> section, and remember to include the <code>alt</code> attribute but leave
-                        it empty: <code>alt=""</code>.
+                        it empty: <code>alt=&quot;&quot;</code>.
                     </p>
                     
                 </div>
@@ -522,20 +521,20 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--labels">
-                        <code><span className="code-gray-color">// Implicit label by wrapping the input</span></code>
+                        <code><span className="code-gray-color">{'// Implicit label by wrapping the input'}</span></code>
                         <code><span className="code-blue-color">&lt;label&gt;</span></code> 
                         <code className="padding-left-30">Enter your full name: </code>
                         <code className="padding-left-30">
-                            <span className="code-yellow-color">&lt;input</span> id="name" type="text"  
+                            <span className="code-yellow-color">&lt;input</span> id=&quot;name&quot; type=&quot;text&quot;  
                             <span className="code-yellow-color">/&gt;</span>
                         </code>
                         <code><span className="code-blue-color">&lt;/label&gt;</span></code>
                         <br/>
                         <br/>
-                        <code><span className="code-gray-color">// Explicit label by referencing the "id" of the input</span></code>
+                        <code><span className="code-gray-color">{'// Explicit label by referencing the &quot;id&quot; of the input'}</span></code>
                         <code>
                             <span className="code-blue-color">&lt;label</span> <span className="code-pink-color"></span>
-                            <span className="code-pink-color">for</span>="name"
+                            <span className="code-pink-color">for</span>=&quot;name&quot;
                             <span className="code-blue-color">&gt;</span>
                         </code>
                         <code className="padding-left-30">
@@ -546,7 +545,7 @@ export default function MakeItAccessible() {
                         </code>
                         <code>
                             <span className="code-yellow-color">&lt;input</span> 
-                            <span className="code-pink-color"> id</span>="name" type="text" 
+                            <span className="code-pink-color"> id</span>=&quot;name&quot; type=&quot;text&quot; 
                             <span className="code-yellow-color">&gt;</span>
                         </code>
                     </div>
@@ -557,7 +556,7 @@ export default function MakeItAccessible() {
                         When it comes to your portfolio site, labels and inputs are likely to be part of your
                         contact form.
                         We will look at ways to make your contact form accessible in a separate article,
-                        but now let's focus on the <code>label</code> and <code>input</code> elements.
+                        but now let&apos;s focus on the <code>label</code> and <code>input</code> elements.
                     </p>
                     
                     <div>
@@ -580,12 +579,12 @@ export default function MakeItAccessible() {
                         <p className="white-bg">
                             Both are valid, but the implicit method (label wrapping the input) will cause 
                             problems for users relying on speech commands, specifically those using the 
-                            Dragon NaturallySpeaking software. Why? Well, simply because there's a bug in their code!
+                            Dragon NaturallySpeaking software. Why? Well, simply because there&apos;s a bug in their code!
                             <span aria-hidden="true"> ☹️</span>
                         </p> 
                         <p className="white-bg margin-top-20">
                             Since Dragon is the most popular speech recognition
-                            software, it's best to <span className="bold">use the explicit 
+                            software, it&apos;s best to <span className="bold">use the explicit 
                             method</span> (with the <code>for</code> attribute) until they fix the issue.
                         </p>
                     </div>
@@ -599,7 +598,7 @@ export default function MakeItAccessible() {
                     </div>
 
                     <div className="code code--lang">
-                        <code>&lt;html <span className="code-pink-color">lang</span>="en"&gt;</code>
+                        <code>&lt;html <span className="code-pink-color">lang</span>=&quot;en&quot;&gt;</code>
                     </div>
               
                     <h3 className="white-bg">Use a valid language in the <code>lang</code> attribute</h3>
@@ -610,7 +609,7 @@ export default function MakeItAccessible() {
                     
                     <p className="white-bg">
                         Is it common for a project to lack this attribute? Not at all! 
-                        That's because when we initiate a new code base we are likely to use editors that generate 
+                        That&apos;s because when we initiate a new code base we are likely to use editors that generate 
                         an HTML file pre-configured with all the essential elements, 
                         including the <code>lang</code> attribute.
                     </p> 
@@ -626,7 +625,7 @@ export default function MakeItAccessible() {
                         </h4>
                         <p style={{ marginTop: '30px' }}>Take a specific dialect:</p>
                         <div className="code">
-                            <code>&lt;html <span className="code-pink-color">lang</span>="en-US"&gt;</code>
+                            <code>&lt;html <span className="code-pink-color">lang</span>=&quot;en-US&quot;&gt;</code>
                         </div>
                         <p style={{ marginTop: '50px' }}>
                             Specify the language of a certain word or section of the page:
@@ -637,7 +636,7 @@ export default function MakeItAccessible() {
                             <code className="padding-left-30">
                                 <span className="code-yellow-color">
                                     &lt;span </span>
-                                <span className="code-pink-color">lang</span>="fr"
+                                <span className="code-pink-color">lang</span>=&quot;fr&quot;
                                 <span className="code-yellow-color">&gt;</span>Bonjour
                                 <span className="code-yellow-color">&lt;/span&gt;</span>
                                 <span> </span>in French.
@@ -673,7 +672,7 @@ export default function MakeItAccessible() {
                 </div>
 
             </div>
-            {/* <ScrollToTopButton /> */}
+            <ScrollToTopButton />
         </div>    
     )
 }

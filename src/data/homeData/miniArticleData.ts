@@ -7,7 +7,7 @@ interface MiniArticleDataTypes {
     image?: string;
     imageAlt?: string;
     svg: string;
-};
+}
 
 export const miniArticleData: MiniArticleDataTypes[] = [
     {

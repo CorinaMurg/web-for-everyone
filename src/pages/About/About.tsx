@@ -1,10 +1,9 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
 import useDocTitle from "../../hooks/useDocTitle";
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useScrollToTop from "../../hooks/useScrollToTop";
-import A11yBanner from "../../components/A11yBanner/A11yBanner";
+// import A11yBanner from "../../components/A11yBanner/A11yBanner";
 import styles from "./About.module.css";
 import "../../global.css";
 
@@ -12,10 +11,11 @@ export default function About() {
     useDocTitle("About | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
+
     return (
         <div className={`${styles.about} about`}>
 
-            <h1>Let's make it accessible.</h1>
+            <h1>Let&apos;s make it accessible.</h1>
             {/* <A11yBanner /> */}
             <section className={styles['about--me']}>
                 <div className={styles['about--me--image']}>
@@ -27,7 +27,7 @@ export default function About() {
                 <div className={styles['about--me--text']}>
                     <div>
                         <h2>
-                            I'm Corina, and I'd love to help you build an accessible portfolio site.
+                            I&apos;m Corina, and I&apos;d love to help you build an accessible portfolio site.
                         </h2>
                         <p>
                             As web developers, we have the power to create an accessible web and to ensure
@@ -37,12 +37,11 @@ export default function About() {
                             I created <span className={styles['web-for-everyone']}>Web for Everyone</span> to help you
                             embrace accessibility at the start of your career.
                         </p>
-
                     </div>
 
                     <div className={styles['about--how-to-start']}>
 
-                        <h2>Let's get started.</h2>
+                        <h2>Let&apos;s get started.</h2>
 
                         <div className={styles['about--how-to-start--content']}>
                             {/* <h3>New to accessibility?</h3>
@@ -75,7 +74,7 @@ export default function About() {
 
                             {/* <h3>Have questions?</h3> */}
                             <p>Connect. Share your portfolio site. Ask questions.</p>
-                            <p>Let's learn accessibility together.</p>
+                            <p>Let&apos;s learn accessibility together.</p>
                             <a href="https://www.linkedin.com/company/webforeveryone/"
                                 target='_blank' rel="noopener noreferrer"
                                 className={` ${styles['about-cta']} ${styles['about-cta--linkedin']}`}

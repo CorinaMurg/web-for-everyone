@@ -15,11 +15,11 @@ export default function Feedback() {
         <div className={`${styles['a11y-statement']} a11y-statement`}>
            
             <h1 className="article-heading-desktop">
-                <span>Web for Everyone's</span>
+                <span>Web for Everyone&apos;s</span>
                 <span>commitment to accessibility</span>
             </h1>
             <h1 className="article-heading-mobile">
-                <span>Web for Everyone's</span>
+                <span>Web for Everyone&apos;s</span>
                 <span>commitment to </span>
                 <span>accessibility</span>
             </h1>

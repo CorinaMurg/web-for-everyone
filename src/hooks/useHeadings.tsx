@@ -24,7 +24,7 @@ export default function useHeadings (tags: string[]) {
     }, [tags]); 
 
     return headings;
-};
+}
 
 
 

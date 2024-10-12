@@ -13,7 +13,7 @@ export default function NotFound() {
         <div className={styles['not-found-container']}>
             <h1>Oops! The page you were looking for is playing hard to get.</h1>
             <p>
-                But, while we're here ... <span aria-hidden="true">😊</span>
+                But, while we&apos;re here ... <span aria-hidden="true">😊</span>
             </p>
             <div className={styles['poet-question']}>
                 <p>

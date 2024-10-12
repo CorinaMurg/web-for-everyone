@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { ThemeContext } from "../../contexts/ThemeContext"
 import { useThemeClass } from "../../hooks/useThemeClass"
 import useScrollToTop from "../../hooks/useScrollToTop"
 import useScrollToSection from "../../hooks/useScrollToSection"
