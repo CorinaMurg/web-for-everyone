@@ -7,7 +7,7 @@ export type AxeAAFixture = {
 };
 
 export const test = base.extend<AxeAAFixture>({
-  makeAxeBuilder: async ({ page }, use, testInfo) => {
+  makeAxeBuilder: async ({ page }, use) => {
     const makeAxeBuilder = () => new AxeBuilder({ page: page as Page})
         .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag2aaa', 'best-practice'])
         .disableRules(['color-contrast-enhanced']);

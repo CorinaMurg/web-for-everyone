@@ -2,7 +2,6 @@ import { test, expect } from "../../../e2e/fixtures/axeBuilderFixture";
 import { checkFocus } from "../../../e2e/utils/focusedFromClicksFunction";
 import { locateClickStore } from "../../../e2e/utils/locateClickStoreFunction";
 import { isMobileViewport } from "../../../e2e/utils/isMobileViewport";
-import { skip } from "node:test";
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");

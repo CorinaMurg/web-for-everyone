@@ -1,4 +1,4 @@
-export async function checkLabelInName(element: any, accName: string) {
+export async function checkLabelInName(element: { innerText: () => Promise<string> }, accName: string) {
     const visibleText = await element.innerText();
 
     if (!visibleText.trim() || !accName.trim()) {
