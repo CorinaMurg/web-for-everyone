@@ -184,7 +184,6 @@
 }
 
 .resources--table-contents nav {
-    /* width: 20rem; */
     max-width: fit-content;
     min-width: 18.5rem;
 }
@@ -193,14 +192,12 @@
     font-family: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding-inline-start: 0;
     background-color: var(--code-bg-color);  
-    border-radius: 10px;
-    /* border: var(--border-for-dark); */
+    border-radius: 5px;
     padding: 15px 15px 20px 15px;
-    height: 15rem;
+    height: auto;
 }
 
 .resources--table-contents ul li a {
@@ -212,38 +209,42 @@
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
-    letter-spacing: 0.3px;
-    padding: 2px;
-    border: 1.7px solid var(--code-bg-color);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    /* padding-left: 7px; */
+
+    outline: 1.5px solid var(--code-bg-color);  
+    outline-offset: 1px;
+    padding: 3px 7px 3px 7px;
+    /* border-radius: 7px;
+    margin-left: 0; */
 }
 
+
 .resources--table-contents ul li a:hover {
-    color: var(--code-blue-color);
-    border: 1.7px solid var(--code-blue-color);
-    border-radius: 5px;
-    padding: 2px;
-    font-weight: 400; 
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 }
 
 .resources--table-contents ul li a.active {
     color: var(--code-blue-color);
-    border: 1.7px solid var(--code-blue-color);
-    border-radius: 5px;
-    padding: 2px;
+    border-left: 7px solid var(--code-blue-color);
+    padding-left: 7px;
+    margin-left: -7px;
     font-weight: 400; 
     text-decoration: none;
 }
 
 .resources--table-contents ul li a:focus-visible {
     text-decoration: none;
-    outline: 2px solid var(--cream-color);
-    outline-offset: 2px;
-    padding: 2px;
+    outline: 1.5px solid var(--cream-color);
+    border-left: none;
+    outline-offset: 1px;
+    padding: 3px 7px 3px 7px;
     border-radius: 7px;
+    margin-left: 0;
 }
-
-
 
 @media screen and (max-width: 1050px) {
     .resources {

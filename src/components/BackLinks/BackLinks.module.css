@@ -44,8 +44,7 @@
 }
 
 /* .back-links a:focus-visible {
-    text-decoration: none;
-    outline: 3px dashed var(--text-dark-color);
+    outline: 3px dashed var(--paragraph-color-color);
     outline-offset: 3px;
 } */
 
@@ -62,12 +61,12 @@
     color: var(--paragraph-color);
 }
 
-/* .back-links ol li:nth-of-type(1) a:focus-visible,
-.back-links ol li:nth-of-type(2) a:focus-visible {
+.back-links ol li a:focus-visible {
+    border-radius: 5px;
     text-decoration: none;
-    outline: 3px dashed var(--text-dark-color);
-    outline-offset: 3px;
-} */
+    outline: 1.5px solid var(--paragraph-color);
+    outline-offset: 4px;
+}
 
 .back-links ol li:nth-of-type(1) a:focus,
 .back-links ol li:nth-of-type(2) a:focus {
