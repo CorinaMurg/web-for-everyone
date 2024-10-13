@@ -43,6 +43,7 @@
     --reverse-color: var(--bg-dark-color);
     --reverse-bg-color: var(--cream-color);
     --warning-opacity: 0.8;
+    --blog-author-fontweight: 500;
 }
 
 .light {
@@ -97,6 +98,8 @@
 
     --reverse-color: var(--cream-color);
     --reverse-bg-color: var(--bg-dark-color);
+
+    --blog-author-fontweight: 700;
 }
 
 
