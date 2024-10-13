@@ -27,9 +27,9 @@
     }  
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 350px) {
     header .logo-link span {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }  
 }
 
