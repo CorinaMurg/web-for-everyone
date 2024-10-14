@@ -895,6 +895,7 @@ ul[class^="checkmark-list"] li p {
     margin-block: 10px;
     color: var(--text-dark-color);
     font-size: 0.9rem;
+    opacity: 0.9;
     font-weight: 400;
 }
 
@@ -903,10 +904,14 @@ ul[class^="checkmark-list"] li p {
     color: var(--text-dark-color);
     font-size: 0.9rem;
     font-weight: 400;
+    opacity: 0.9;
 }
 
 .warning > a {
     color: var(--text-dark-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
 .white-bg code {
@@ -982,6 +987,18 @@ ul[class^="checkmark-list"] li p {
 
     .section {
         width: 100%;
+    }
+
+    .warning > p {
+        font-size: 1rem;
+    }
+    
+    .warning li > p {
+        font-size: 1rem;
+    }
+    
+    .warning > a {
+        font-size: 1rem;
     }
 }
 
