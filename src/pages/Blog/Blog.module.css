@@ -312,7 +312,7 @@
     .resources--table-contents ul {
         margin-inline: 0;
         padding-inline: var(--main-margin);
-        gap: 30px;
+        gap: 15px;
         height: auto;
         padding-block: 25px;
         border-radius: 0;
