@@ -287,7 +287,7 @@ export default function MostCommonBugs() {
                     </p>
                     <div className="highlight">
                         <h3 className="margin-bottom-30">
-                            An empty <code className="bold code-blue-color">alt</code> is NOT a missing <code className="bold yellow-text">alt</code>!
+                            An empty <code className="bold">alt</code> is NOT a missing <code className="bold">alt</code>!
                             <span aria-hidden="true"> 💡</span>
                         </h3>
                         <p>
@@ -295,12 +295,12 @@ export default function MostCommonBugs() {
                         </p>
                         
                         <p className="white-bg">
-                            <span className="bold-large yellow-text">Missing</span>: screen readers 
+                            <span className="bold-large">Missing</span>: screen readers 
                             read the source file name. When you have an image, the <code>alt</code> attribute 
                             is required!
                         </p>
                         <p>
-                            <span className="bold-large code-blue-color">Empty</span>: screen readers ignore the image.
+                            <span className="bold-large">Empty</span>: screen readers ignore the image.
                             If your image is purely decorative, the attribute should be empty.
                         </p>  
                     
