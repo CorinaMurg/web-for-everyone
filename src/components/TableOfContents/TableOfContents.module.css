@@ -111,6 +111,18 @@
     .table-contents ul li a {
         font-size: 0.9rem;
     }
+
+    .table-contents ul li a.active {
+        color: var(--cream-color);
+        border-left: none;
+        font-weight: 400; 
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        outline: none; 
+        padding: 3px 7px 3px 7px;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 670px) {
