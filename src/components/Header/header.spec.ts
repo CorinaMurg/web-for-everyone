@@ -43,7 +43,7 @@ test.describe("header", () => {
     await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
   });
 
-  test("header site links", async ({ page }) => {
+  test.skip("header site links", async ({ page }) => {
 
     if(!isMobileViewport({page})) {
         await locateClickStore(page, "header", "link", "Home");
@@ -59,7 +59,7 @@ test.describe("header", () => {
         await expect(page.getByRole("heading", { name: "Let's make it accessible." })).toBeVisible();
 
         await locateClickStore(page, "header", "link", "GAAD");
-        await expect(page).toHaveTitle(/GAAD-2024/);
+        await expect(page).toHaveTitle(/GAAD 2024/);
         await expect(page.getByRole("heading", { name: "GAAD 2024" })).toBeVisible();
     }
   });

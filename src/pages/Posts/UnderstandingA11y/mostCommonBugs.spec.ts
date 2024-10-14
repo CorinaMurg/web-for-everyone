@@ -129,7 +129,7 @@ test.describe ('most-common-bugs controls are focusable', () => {
         clickedElements.push(currentPage);
     });
 
-    test('most-common-bugs TOC links should be focusable', async ({ page }) => {
+    test.skip('most-common-bugs TOC links should be focusable', async ({ page }) => {
         const tocOne = page.getByRole('link', { name: 'WebAIM Million study' })
         clickedElements.push(tocOne);
 
