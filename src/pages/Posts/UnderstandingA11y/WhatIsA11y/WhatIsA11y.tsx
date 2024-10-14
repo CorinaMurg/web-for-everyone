@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import useScrollToTop from "../../../hooks/useScrollToTop"
-import useDocTitle from "../../../hooks/useDocTitle"
-import useScrollToSection from "../../../hooks/useScrollToSection"
-import useHighlightTOC from "../../../hooks/useHighlightTOC"
+import useScrollToTop from "../../../../hooks/useScrollToTop"
+import useDocTitle from "../../../../hooks/useDocTitle"
+import useScrollToSection from "../../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../../hooks/useHighlightTOC"
 import styles from "./WhatIsA11y.module.css"
-import "../../../global.css"
-import TableOfContents from "../../../components/TableOfContents/TableOfContents"
-import BackLinks from "../../../components/BackLinks/BackLinks"
-import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
+import "../../../../global.css"
+import TableOfContents from "../../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../../components/BackLinks/BackLinks"
+import ScrollToTopButton from "../../../../components/ScrollToTopButton/ScrollToTopButton"
 
 const contents = [
     {

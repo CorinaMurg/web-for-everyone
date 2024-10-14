@@ -1,5 +1,5 @@
 
-import { test, expect } from '../../../../e2e/fixtures/axeBuilderFixture';
+import { test, expect } from '../../../../../e2e/fixtures/axeBuilderFixture';
 import { Locator, Page } from '@playwright/test';
 
 

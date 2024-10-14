@@ -22,6 +22,7 @@ export default function Accessibility() {
         "your-portfolio-site": "Your portfolio site",
         "html-for-accessibility": "HTML for accessibility",
         "css-for-accessibility": "CSS for accessibility",
+        "tools-for-accessibility": "Tools for accessibility",
         "example-accessible-components": "Examples of accessible components",
     };
 

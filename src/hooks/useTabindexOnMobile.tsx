@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 
-export default function useTabindexOnMobile(maxWidth = 600) {
+export default function useTabindexOnMobile(maxWidth = 800) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= maxWidth);
 
     useEffect(() => {

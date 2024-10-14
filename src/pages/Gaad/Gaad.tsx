@@ -12,7 +12,7 @@ export default function Feedback() {
     useScrollToTop();
     useScrollToSection();
     return (
-        <div className={`${styles['gaad']} gaad`}>
+        <div className={`${styles['gaad']} article-container`}>
           
             <h1 className="article-heading-desktop ">
                 <span><span className="pink-text">GAAD</span> 2024</span>  

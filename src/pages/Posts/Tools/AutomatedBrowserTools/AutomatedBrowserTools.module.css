@@ -1,0 +1,51 @@
+
+.automated-browser-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    width: 40rem;
+    margin-inline: auto;
+}
+
+.automated-browser-tools h1 {
+    font-size: 3rem;
+    font-weight: var(--heading-fontweight);
+    margin-bottom: 32px;
+}
+
+.automated-browser-tools h2 {
+    font-size: 1.7rem;
+    font-weight: var(--heading-fontweight);
+}
+
+@media screen and (max-width: 800px) {
+    .automated-browser-tools {
+        width: calc(100% - 2*var(--main-margin));
+        margin-inline: var(--main-margin);
+    }
+
+    .automated-browser-tools h1 {
+        font-size: 2.8rem;
+        width: calc(100% - var(--main-margin));
+    }
+
+    .automated-browser-tools h2,
+    .automated-browser-tools p {
+        width: calc(100% - var(--main-margin));
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .automated-browser-tools h1 {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .automated-browser-tools h1 {
+        font-size: 2rem;
+    }
+    
+}

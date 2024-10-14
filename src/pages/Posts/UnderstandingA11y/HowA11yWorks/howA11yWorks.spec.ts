@@ -1,5 +1,5 @@
 
-import { test, expect } from '../../../../e2e/fixtures/axeBuilderFixture';
+import { test, expect } from '../../../../../e2e/fixtures/axeBuilderFixture';
 // import { checkFocus } from '../../../../e2e/utils/focusedFunction';
 
 test.beforeEach( async ({page}) => {

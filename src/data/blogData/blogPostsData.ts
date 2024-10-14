@@ -8,7 +8,7 @@ export interface BlogPostDataTypes {
     to?: string;
     href?: string;
     ariaLabel: string;
-};
+}
 
 
 export const blogPostsData: BlogPostDataTypes[] = [
@@ -21,6 +21,17 @@ export const blogPostsData: BlogPostDataTypes[] = [
         "description": `When you create websites and apps that everyone, including people with disabilities, 
             can easily navigate and understand, you make accessibility happen.`,
         "to": `/blog/what-is-accessibility`,
+        "ariaLabel": "",
+    },
+    {
+        "label": "accessibility-101",
+        "id": "assistive-technologies",
+        "title": "Assistive technologies",
+        "subtitle": "",
+        "author": "",
+        "description": `Users with certain disabilities rely on hardware and/or software to navigate the web.
+            These tools, known as assistive technologies, help users interact with digital content in a way that suits their needs.`,
+        "to": `/blog/assistive-technologies`,
         "ariaLabel": "",
     },
     {
@@ -167,4 +178,16 @@ export const blogPostsData: BlogPostDataTypes[] = [
     //     "href": "https://github.blog/2023-10-26-5-tips-for-making-your-github-profile-page-accessible/",
     //     "ariaLabel": "",
     // },
+    {
+        "label": "tools-for-accessibility",
+        "id": "what-is-accessibility",
+        "title": "Automated browser tools",
+        "subtitle": "",
+        "author": "",
+        "description": `You can press a button and get a list of accessibility issues on your site. 
+                        You will certainly NOT catch all the bugs, but these tools are a great starting point. 
+                        Let's see how they work and what they can do for you.`,  
+        "to": `/blog/automated-browser-tools`,
+        "ariaLabel": "",
+    },
 ];

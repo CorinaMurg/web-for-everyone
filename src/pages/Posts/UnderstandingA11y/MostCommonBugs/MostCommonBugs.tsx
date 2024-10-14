@@ -1,16 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useThemeClass } from "../../../hooks/useThemeClass"
+import { useThemeClass } from "../../../../hooks/useThemeClass"
 import { useState, useEffect } from "react"
-import useScrollToTop from "../../../hooks/useScrollToTop"
-import useDocTitle from "../../../hooks/useDocTitle"
-import useScrollToSection from "../../../hooks/useScrollToSection"
-import useHighlightTOC from "../../../hooks/useHighlightTOC"
-import ScrollToTopButton from "../../../components/ScrollToTopButton/ScrollToTopButton"
+import useScrollToTop from "../../../../hooks/useScrollToTop"
+import useDocTitle from "../../../../hooks/useDocTitle"
+import useScrollToSection from "../../../../hooks/useScrollToSection"
+import useHighlightTOC from "../../../../hooks/useHighlightTOC"
+import ScrollToTopButton from "../../../../components/ScrollToTopButton/ScrollToTopButton"
 import styles from "./MostCommonBugs.module.css"
-import "../../../global.css"
-import TableOfContents from "../../../components/TableOfContents/TableOfContents"
-import BackLinks from "../../../components/BackLinks/BackLinks"
+import "../../../../global.css"
+import TableOfContents from "../../../../components/TableOfContents/TableOfContents"
+import BackLinks from "../../../../components/BackLinks/BackLinks"
 
 const contents = [
     { href: "#intro", text: "WebAIM Million study" },
@@ -79,7 +79,7 @@ export default function MostCommonBugs() {
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">WebAIM Million Study</h2>
                     <p>
-                        Here's one cool thing that happens every year: 
+                        Here&apos;s one cool thing that happens every year: 
                         <span> </span>
                         <span className="bold">Web Accessibility in Mind</span>, best known as <span> </span>
                         <a href="https://webaim.org/" target="_blank" rel="noreferrer">
@@ -115,7 +115,12 @@ export default function MostCommonBugs() {
  
                     <p className="margin-top-20">
                         WebAIM audits these pages using an automated tool, the WAVE accessibility engine. 
-                        Automated tools are not perfect and fail to detect all  
+                        <span> </span>
+                        <Link to="/blog/automated-browser-tools" 
+                        >
+                            Automated tools
+                        </Link>
+                        { } fail to detect all  
                         accessibility barriers and guidelines violations.
                         As a result, the actual number of bugs is likely to be higher. <span aria-hidden="true">😢</span>
                     </p>
@@ -124,7 +129,7 @@ export default function MostCommonBugs() {
                         <details>
                             <summary>
                                 <span className="summary-title">
-                                    How do we know what's an accessibility bug?
+                                    How do we know what&apos;s an accessibility bug?
                                 </span>
                             </summary>
                             <br />

@@ -103,10 +103,7 @@
 }
 
 
-.article-container a,
-.a11y-statement a,
-.gaad a,
-.not-found-container a {
+.article-container a {
     color: var(--paragraph-color);
     font-weight: var(--paragraph-fontweight);
     font-size: var(--paragraph-font-size);
