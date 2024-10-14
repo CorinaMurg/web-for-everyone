@@ -139,6 +139,9 @@
 .a11y-statement a:focus,
 .gaad a:focus {
     text-decoration: none;
+    outline: 1.5px solid var(--paragraph-color);
+    outline-offset: 4px;
+    border-radius: 5px;
 }
 
 .article-container {
@@ -805,6 +808,13 @@ summary::marker {
     margin-left: 10px;
     line-height: 1.5;
 }
+
+summary:focus-visible {
+    outline: 1.5px solid var(--paragraph-color);
+    outline-offset: 4px;
+    border-radius: 5px;
+}
+
 .two-line-heading {
     display: flex;
     flex-direction: column;
