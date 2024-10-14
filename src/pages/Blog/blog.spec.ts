@@ -113,9 +113,9 @@ test.describe('Blog controls are clickable', () => {
         await expect(page.getByRole('heading', { name: 'Fixing the six most common bugs' })).toBeVisible();
         await page.goBack();
 
-        await page.getByRole('link', { name: 'Let\'s uncover six more bugs' }).click();
-        await expect(page).toHaveURL('https://webforeveryone.us/blog/lets-uncover-six-more-bugs');
-        await expect(page.getByRole('heading', { name: 'Let\'s uncover six more bugs' })).toBeVisible();
+        await page.getByRole('link', { name: 'Level up: the next six bugs to watch for' }).click();
+        await expect(page).toHaveURL('https://webforeveryone.us/blog/the-next-six-bugs');
+        await expect(page.getByRole('heading', { name: 'Level up: the next six bugs to watch for' })).toBeVisible();
         await page.goBack();
 
         await page.getByRole('link', { name: 'The importance of semantic' }).click();
@@ -130,7 +130,7 @@ test.describe('Blog controls are clickable', () => {
 
         await page.getByRole('link', { name: 'Similar, but different: HTML' }).click();
         await expect(page).toHaveURL('https://webforeveryone.us/blog/similar-but-different');
-        await expect(page.getByRole('heading', { name: 'Similar but different\: HTML and ARIA terms' })).toBeVisible();
+        await expect(page.getByRole('heading', { name: 'Similar but different: HTML and ARIA terms' })).toBeVisible();
         await page.goBack();
        
         await page.getByRole('link', { name: 'HTML: tag vs. element opens' }).click();

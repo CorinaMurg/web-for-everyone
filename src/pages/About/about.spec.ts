@@ -47,11 +47,13 @@ test.describe("about controls conform to 2.5.3 Label in Name", () => {
 
 test.describe('about controls are clickable', () => {
     test('LinkedIn LINK is clickable', async ({ page }) => {
+        const linkedInPromise = page.waitForEvent("popup");
         const linkLinkedIn = page.getByRole('link', { name: 'Connect on LinkedIn opens in' })
         await linkLinkedIn.click();
-
-        const linkedInPopup = await page.waitForEvent("popup");
-        await linkedInPopup.waitForLoadState();
-        await expect(linkedInPopup).toHaveURL('https://www.linkedin.com/company/webforeveryone');
+        const linkedIn = await linkedInPromise;
+        await linkedIn.waitForLoadState();
+        await expect(linkedIn).toHaveURL('https://www.linkedin.com/company/webforeveryone');
     })
 });
+
+

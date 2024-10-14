@@ -136,7 +136,7 @@ test.describe ('most-common-bugs controls are focusable', () => {
         const tocTwo = page.getByRole('link', { name: 'Low contrast text' })
         clickedElements.push(tocTwo);
 
-        const tocThree = page.getByRole('link', { name: 'Missing alt text for images' })
+        const tocThree = page.getByRole('link', { name: 'Missing "alt" text for images' })
         clickedElements.push(tocThree);
 
         const tocFour = page.getByRole('link', { name: 'Empty links' })

@@ -60,7 +60,7 @@ test.describe("footer", () => {
     const linkedIn = await linkedInPromise;
     await linkedIn.waitForLoadState();
     await expect(linkedIn).toHaveURL(
-      "https://www.linkedin.com/company/webforeveryone/"
+      "https://www.linkedin.com/in/corinamurg/"
     );
   });
 
