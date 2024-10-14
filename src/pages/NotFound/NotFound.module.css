@@ -60,24 +60,29 @@
 
 .poet-question {
     background-color: var(--hero-lightBlue-faded);
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 20px;
     width: 37rem;
 }   
+
+.poet-question > p {
+    color: var(--text-dark-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 .quote {
     margin-left: 30px;
     padding-left: 20px;
     border-left: 3px solid var(--text-nav-color);
     margin-top: 20px;
-    
 }
 
 .quote p {
     font-size: 1.3rem;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
     color: var(--text-dark-color);
 }

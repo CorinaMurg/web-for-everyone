@@ -107,6 +107,10 @@
     .table-contents ul {
         padding: 25px;
     }
+
+    .table-contents ul li a {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 670px) {

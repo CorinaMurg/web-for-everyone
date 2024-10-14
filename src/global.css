@@ -891,23 +891,21 @@ ul[class^="checkmark-list"] li p {
     border-radius: var(--border-radius);
 }
 
-.warning >p {
+.warning > p {
     margin-block: 10px;
-    color: var(--warning-color) !important;
-    font-weight: var(--same-fontweight) !important;
-    font-size: var(--warning-font-size) !important;
-    opacity: var(--warning-opacity) !important;
+    color: var(--text-dark-color);
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
-.warning li>p {
+.warning li > p {
     margin-block: 0;
-    color: var(--warning-color) !important;
-    font-weight: var(--same-fontweight) !important;
-    font-size: var(--warning-font-size) !important;
-    opacity: var(--warning-opacity) !important;
+    color: var(--text-dark-color);
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
-.warning a {
+.warning > a {
     color: var(--text-dark-color);
 }
 
