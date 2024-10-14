@@ -3,7 +3,6 @@ import React from "react";
 import useDocTitle from "../../hooks/useDocTitle";
 import useScrollToSection from "../../hooks/useScrollToSection"
 import useScrollToTop from "../../hooks/useScrollToTop";
-// import A11yBanner from "../../components/A11yBanner/A11yBanner";
 import styles from "./About.module.css";
 import "../../global.css";
 
@@ -81,11 +80,11 @@ export default function About() {
                             >
                                 Connect on LinkedIn
                                 <span className="sr-only"> opens in a new tab</span>
-                                <svg aria-hidden="true" id="arrow" width="26" height="26" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-hidden="true" id="arrow" width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="17" cy="17" r="17" fill="currentColor"></circle>
                                     <path d="M25.6563 18.2071C26.0469 17.8166 26.0469 17.1834 25.6563 16.7929L19.2924 10.4289C18.9018 10.0384 18.2687 10.0384 17.8782 10.4289C17.4876 10.8195 17.4876 11.4526 17.8782 11.8431L23.535 17.5L17.8782 23.1569C17.4876 23.5474 17.4876 24.1805 17.8782 24.5711C18.2687 24.9616 18.9018 24.9616 19.2924 24.5711L25.6563 18.2071ZM9.94922 18.5L24.9492 18.5L24.9492 16.5L9.94922 16.5L9.94922 18.5Z" fill="currentColor" transform="translate(-0.5,0)"></path>
                                 </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" id="bug" width="26" height="26" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" id="bug" width="28" height="28" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /></svg>
                             </a>
 
                             {/* <label htmlFor="message-input" aria-label="Message to accessibility"> Message #accessibility</label>

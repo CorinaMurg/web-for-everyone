@@ -99,6 +99,7 @@
 
 .hero--text--left .continue-to-article {
     background-color: var(--hero-lightBlue-faded);
+    /* add only to this link */
     letter-spacing: 0.5px;
 }
 

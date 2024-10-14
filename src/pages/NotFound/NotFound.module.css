@@ -11,21 +11,22 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    font-weight: 600;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
     color: var(--text-dark-color);
-    padding: 6px 15px;
-    border-radius: 7px;
-    border: 1.8px solid var(--text-nav-color);
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: var(--cta-border);
     background-color: var(--yellow-color);
-    width: 17rem;
+    width: 15rem;
     margin-top: 30px;
     margin-bottom: 100px;
 }
+
 
 .return-home-link svg[id="arrow"] circle {
     fill: var(--text-dark-color);
@@ -39,7 +40,7 @@
     display: none; 
   }
   
-  .return-home-link:hover svg[id="arrow"] {
+.return-home-link:hover svg[id="arrow"] {
     display: none; 
 }
 
@@ -75,7 +76,7 @@
 .quote p {
     font-size: 1.3rem;
     font-weight: 500;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
     color: var(--text-dark-color);

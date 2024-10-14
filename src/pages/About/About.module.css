@@ -90,18 +90,18 @@
     line-height: 1;
     align-self: flex-start;
     text-decoration: none;
-    color: var(--text-dark-color);
+    color: var(--text-dark-color) !important;
     padding: 6px 12px;
     border-radius: 10px;
     border: var(--cta-border);
-    width: 15rem;
+    width: 16rem;
     margin-top: 5px;
     margin-bottom: 50px;
 }
 
-.about-cta:hover {
-    color: var(--text-dark-color);
-}
+/* .about-cta:hover {
+    color: var(--same-dark-color);
+} */
 
 .about-cta:focus-visible {
     outline: var(--outline-thickness) solid var(--paragraph-color);
