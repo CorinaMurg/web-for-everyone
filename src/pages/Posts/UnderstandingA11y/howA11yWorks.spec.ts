@@ -1,6 +1,6 @@
 
 import { test, expect } from '../../../../e2e/fixtures/axeBuilderFixture';
-import { checkFocus } from '../../../../e2e/utils/focusedFunction';
+// import { checkFocus } from '../../../../e2e/utils/focusedFunction';
 
 test.beforeEach( async ({page}) => {
     await page.goto('https://webforeveryone.us/blog/how-accessibility-works/');
