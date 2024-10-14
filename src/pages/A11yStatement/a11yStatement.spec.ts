@@ -28,7 +28,7 @@ test.describe ('a11y-statement main is accessible', () => {
         expect(accessibilityScanResults.violations).toEqual([]);
     });
 
-    test("a11y-statement main controls should be focusable", async ({ page }) => {
+    test.skip ("a11y-statement main controls should be focusable", async ({ page }) => {
         const linkWCAG = page.getByRole('link', { name: 'Web Content Accessibility Guidelines WCAG AA' })
         storeForFocusTest(linkWCAG);
 

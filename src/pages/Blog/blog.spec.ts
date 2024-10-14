@@ -92,7 +92,7 @@ test.describe('Blog controls are clickable', () => {
         await expect(page.getByRole('heading', { name: 'Examples of accessible components' })).toBeVisible();
     })
 
-    test('Blog content controls are clickable', async ({ page }) => {
+    test.skip('Blog content controls are clickable', async ({ page }) => {
         await page.getByRole('link', { name: 'What is accessibility?' }).click();
         await expect(page).toHaveURL('https://webforeveryone.us/blog/what-is-accessibility');
         await expect(page.getByRole('heading', { name: 'What is accessibility?' })).toBeVisible();

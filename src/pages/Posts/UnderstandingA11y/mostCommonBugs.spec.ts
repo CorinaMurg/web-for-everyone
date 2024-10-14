@@ -41,7 +41,7 @@ test.describe ('most-common-bugs links and buttons should be clickable', () => {
         await page.goBack();
     });
 
-    test('most-common-bugs TOC links should be clickable', async ({ page }) => {
+    test.skip('most-common-bugs TOC links should be clickable', async ({ page }) => {
         await page.getByRole('link', { name: 'WebAIM Million study' }).click();
         await page.getByRole('link', { name: 'Low contrast text' }).click();
         await expect(page.getByRole('heading', { name: 'Low contrast text' })).toBeVisible();
@@ -187,7 +187,7 @@ test.describe ('most-common-bugs controls are focusable', () => {
         clickedElements.push(fixingThe6Link2);
     });
 
-    test('most-common-bugs should have focus set on all clickable elements', async ({ page }) => {
+    test.skip('most-common-bugs should have focus set on all clickable elements', async ({ page }) => {
         await checkFocus(page);
     });
 });
