@@ -279,6 +279,21 @@
         padding: 25px;
         
     }
+
+    .resources--table-contents ul li a {
+        font-size: 0.9rem;
+    }
+
+    .resources--table-contents ul li a.active {
+        color: var(--cream-color);
+        border-left: none;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        outline: none; 
+        padding: 3px 7px 3px 7px;
+        margin-left: 0;
+    }
     .section-content {
         width: 75%;
     }
