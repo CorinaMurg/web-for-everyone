@@ -20,6 +20,10 @@
     font-weight: var(--heading-fontweight);
 }
 
+.devTools-image {
+    aspect-ratio: 2.05 / 1;
+}
+
 @media screen and (max-width: 800px) {
     .automated-browser-tools {
         width: calc(100% - 2*var(--main-margin));

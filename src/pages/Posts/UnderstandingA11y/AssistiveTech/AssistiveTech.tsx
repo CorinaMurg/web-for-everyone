@@ -139,7 +139,7 @@ export default function AssistiveTech() {
                             </li>
                         </ul>
                     </div>
-                    <h3>Screen readers paired with a braille display</h3>
+                    <h3>Screen reader paired with a braille display</h3>
                     <p>
                         For users with both vision and hearing impairments, the screen reader can be used with a braille display.  
                         In this case, the screen reader translates the content on the screen into a format that can be read on a 
@@ -237,7 +237,7 @@ export default function AssistiveTech() {
                         These technologies simulate the functionality of 
                         the keyboard or the mouse for people with more severe physical disabilities. 
 
-                        For example, a sip&puff device
+                        For example, a sip-and-puff device
                         allows a person to send signals to the computer by inhaling or exhaling into a wand, while 
                         an eye-tracking system allows mouse control through eye movements.
                     </p>
@@ -266,7 +266,7 @@ export default function AssistiveTech() {
                     <h2>How do assistive technologies work?</h2>
                     <p>
                         Given a web page, how does a screen reader know which information to share with the user?
-                        Or how does a voice recognition software know which commands to execute?
+                        How does a voice recognition software know which commands to execute?
                         To answer these questions, we need to learn about a very important concept: the accessibility tree.
 
                     </p>

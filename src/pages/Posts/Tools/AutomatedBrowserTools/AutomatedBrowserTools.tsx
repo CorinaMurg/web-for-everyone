@@ -43,23 +43,53 @@ export default function Feedback() {
                         visibleText="WebAIM's WAVE"
                     />
                     <span> </span>
-                    is considered the most beginner-friendly as it highlights any issues directly on the page.
+                    is considered beginner-friendly as it highlights any issues directly on the page.
+                    It&apos;s can be installed for Chrome, Firefox, and Microsoft Edge.
+                </p>
+                <p className="bullet-point-line">
+                    <ExternalLink
+                        href="https://www.deque.com/axe/browser-extensions/" 
+                        visibleText="Deque's axe DevTools"
+                    />
+                    <span> </span>
+                    is one of the most comprehensive tool, with over 70 tests for accessibility issues included with the
+                    free version, and around 100 tests with the pro account.
                 </p>
                 <p className="bullet-point-line">
                     <ExternalLink
                         href="https://developer.chrome.com/docs/lighthouse/overview/" 
                         visibleText="Google's Lighthouse"
                     />
+                    <span> </span>
+                    is available by default in Chrome DevTools.
+                    Note that Lighthouse also uses Deque&apos;s axe-core library, but with a smaller set of tests.
                 </p>
                 <p className="bullet-point-line">
                     <ExternalLink
-                        href="https://www.deque.com/axe/devtools/" 
-                        visibleText="Deque's axe DevTools"
+                        href="https://www.tpgi.com/arc-platform/arc-toolkit/" 
+                        visibleText="ARC Toolkit"
                     />
                     <span> </span>
-                    is probably the most comprehensive tool, with over 70 tests for accessibility issues.
-                    Note that Lighthouse also uses Deque&apos;s axe-core library, but with a smaller set of tests.
+                    is a Chrome extension from TPGi.
                 </p>
+
+                <p>
+                    Note that after installation <span className="bold">WAVE</span> and <span className="bold">Accessibility Insights </span>
+                    are available directly in the browser, and their icons are placed next to the address bar.
+                </p>
+                <p>
+                    <span className="bold">ARC</span>, <span className="bold">axe</span>, and <span className="bold">Lighthouse</span> are
+                    added to the browser&apos;s DevTools.
+                </p>
+
+                <div className="content-image-container">
+                    <img 
+                        alt="Elements panel in Chrome DevTools with Lighthouse, axe DevTools, and ARC Toolkit extensions highlighted"
+                        className={`styles['devTools-image'] content-image`}
+                        src="/assets/devTools.jpg"
+                    /> 
+                </div>
+                
                 <p>
                     Each tool has its own strengths. Best if you pick one and get 
                     familiar with it. When you run a test, it lists the accessibility issues it found, 
