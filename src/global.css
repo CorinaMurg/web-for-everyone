@@ -338,6 +338,17 @@
     display: flex;
 }
 
+.content-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 670px) {
+    .content-image {
+        border-radius: 0;
+    }
+}
+
 .highlight .code {
     width: 100%;
 }

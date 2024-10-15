@@ -159,7 +159,7 @@ export default function MakeItAccessible() {
                     <div className="contrast-image-container">
                         <img 
                             alt="Webaim's contrast checker tool"
-                            className={styles['contrast-checker-image']}
+                            className={`styles['contrast-checker-image'] content-image`}
                             src="/assets/contrastChecker.jpg"
                         /> 
                     </div>
@@ -182,10 +182,10 @@ export default function MakeItAccessible() {
                         </p>
                        
                     </div>
-                    <div className="contrast-image-container">
+                    <div className="content-image-container">
                         <img 
                             alt="Webaim's contrast checker results"
-                            className={styles['contrast-results-image']}
+                            className={`styles['contrast-results-image'] content-image`}
                             src="/assets/contrastResults.jpg"
                         />  
                     </div>
@@ -243,10 +243,10 @@ export default function MakeItAccessible() {
                         </p> 
                           
                     </div>
-                    <div className="contrast-image-container">
+                    <div className="content-container">
                         <img 
                             alt="Webaim's link contrast checker"
-                            className={styles['link-contrast-checker-image']}
+                            className={`styles['link-contrast-checker-image'] content-image`}
                             src="/assets/linkContrastChecker.jpg"
                         />  
                     </div> 

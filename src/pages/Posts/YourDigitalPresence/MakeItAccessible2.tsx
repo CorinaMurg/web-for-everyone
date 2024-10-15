@@ -112,12 +112,12 @@ export default function MakeItAccessible() {
                             <span className="code-yellow-color">&lt;meta&gt;</span>
                         </code>
                         <code className="padding-left-60">
-                            name="viewport"
+                            name=&quot;viewport&quot;
                         </code>
-                        <code className="padding-left-60"><span className="code-pink-color">// remove these attributes!</span></code>
+                        <code className="padding-left-60"><span className="code-pink-color">{'// remove these attributes!'}</span></code>
                         <code className="padding-left-60">
-                            content="user-scalable=<span className="code-pink-color">no</span>, 
-                            maximum-scale=<span className="code-pink-color">1.0</span>"
+                            content=&quot;user-scalable=<span className="code-pink-color">no</span>, 
+                            maximum-scale=<span className="code-pink-color">1.0</span>&quot;
                         </code>
                         <code className="padding-left-30">
                             <span className="code-yellow-color">/&gt;</span>

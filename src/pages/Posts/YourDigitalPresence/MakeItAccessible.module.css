@@ -46,27 +46,13 @@
 
 
 .contrast-checker-image {
-    width: 100%;
     aspect-ratio: 1.48 / 1;
-    border-radius: 5px;
 }
 
 .contrast-results-image {
-    width: 100%;
     aspect-ratio: 3 / 1;
-    border-radius: 5px;
 }
 
 .link-contrast-checker-image {
-    width: 100%;
     aspect-ratio: 1.25 / 1;
-    border-radius: 5px;
-}
-
-@media screen and (max-width: 670px) {
-    .contrast-checker-image,
-    .contrast-results-image,
-    .link-contrast-checker-image {
-        border-radius: 0;
-    }
 }

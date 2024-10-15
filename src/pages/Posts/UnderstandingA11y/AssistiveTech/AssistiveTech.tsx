@@ -5,6 +5,7 @@ import useScrollToTop from "../../../../hooks/useScrollToTop"
 import useScrollToSection from "../../../../hooks/useScrollToSection"
 import useHighlightTOC from "../../../../hooks/useHighlightTOC"
 import ScrollToTopButton from "../../../../components/ScrollToTopButton/ScrollToTopButton"
+import ExternalLink from "../../../../components/ExternalLink/ExternalLink"
 import styles from "./AssistiveTech.module.css"
 import "../../../../global.css"
 import TableOfContents from "../../../../components/TableOfContents/TableOfContents"
@@ -12,13 +13,13 @@ import BackLinks from "../../../../components/BackLinks/BackLinks"
 
 
 const contents = [    
-    { href: "#screen-reader", text: "Screen Readers" },
+    { href: "#keyboard", text: "The Keyboard" },
+    { href: "#screen-readers", text: "Screen Readers" },
     { href: "#voice-recognition-software", text: "Voice recognition software" },
-    { href: "#text-to-speech", text: "Text to speech" },
     { href: "#screen-magnifiers", text: "Screen magnifiers" },
-    { href: "#input-tech", text: "Keyboard alternatives" },
-    { href: "#poining-tech", text: "Keyboard mouse" },
-    // { href: "#conclusion", text: "Conclusion" },
+    // { href: "#text-to-speech", text: "Text to speech" },
+    { href: "#alternative-tech", text: "Keyboard or mouse alternatives" },
+    { href: "#conclusion", text: "How do assistive technologies work" },
 ];
 
 export default function AssistiveTech() {
@@ -52,70 +53,163 @@ export default function AssistiveTech() {
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction to assistive technologies</h2>
                     <p>
-                        Certain disabilities can make it difficult for users to interact with digital content.
-                        Assistive technologies are hardware and software tools that help users with disabilities
-                        navigate the web. These tools adapt the content on the screen to suit the user's needs.  
+                        Certain disabilities can make it difficult for users to interact with digital content without
+                        the help of certain tools. For example, a blind cannot rely on mouse navigation, but by using a 
+                        keyboard combined with software that will announce the content on the screen, 
+                        they can easily navigate the web. These tools are called assistive technologies.
+                    </p>
+                    <p>
+                        It&apos;s important to note that, for example, the keyboard alone cannot guarantee access to all the elements 
+                        a user might need to interact with. We&apos;ll cover this in more detail in the next posts, 
+                        but let&apos;s remember that the underlying code of the website must be structured in a way that allows keyboard 
+                        navigation. This is true for other assistive technologies as well. They can do their job only if the website is
+                        built with accessibility in mind.
                     </p>
                     <p>
                         Here&apos;s an overview of some of the most common assistive technologies:
                     </p>
                 </div>   
 
-                {/* 1. Screen Reader */}
-                <div className="section scroll-target" id="screen-reader-speech">
+                {/* 1. Keyboard */}
+                <div className="section scroll-target" id="keyboard">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">01</span>
+                        <h2 className="white-bg">The Keyboard</h2>
+                    </div>
+                    
+                    <p>
+                        Using a mouse can be challenging for people with limited hand mobility. 
+                        Keyboards, be they modern or traditional, are essential for these users. 
+                    </p>
+                    <p>
+                        With just the <span className="yellow-bg">Tab</span> key, they can easily navigate through interactive elements like links 
+                        and buttons. Pressing the <span className="yellow-bg">Enter</span> key activates these elements, and for buttons, 
+                        the <span className="yellow-bg">Space</span> bar works too! Adding to the mix the arrow keys 
+                        for group of buttons, or shortcuts for opening, 
+                        closing, or switching between apps and tabs, and it’s clear that web navigation can be achieved using 
+                        just a keyboard. Again, only with the correct underlying code structure.
+                    </p>
+                    
+                </div>
+
+                {/* 2. Screen Reader */}
+                <div className="section scroll-target" id="screen-readers">
+                    <div className="section-heading">
+                        <span aria-hidden="true" className="section-number">02</span>
                         <h2>Screen readers</h2>
                     </div>
                     <p>
                         Screen Readers are typically used by people who are blind 
-                        or have vision impairments. Users navigate through the UI elements with the 
-                        keyboard, and the content on the screen is shared with them through synthetic speech.  Examples of screen readers include JAWS (Job Access With Speech) for Windows, VoiceOver included in macOS and iOS devices, and NVDA (NonVisual Desktop Access), an open-source option for Windows.
+                        or have vision impairments. 
+                    </p>
+                    <h3>Screen readers paired with a keyboard</h3>
+                    <p>
+                        If the user has no hearing impairments, they will
+                        navigate through the UI elements with the keyboard, while the content 
+                        on the screen is announced through speech synthesizer software.
+                    </p>
+                    
+                    <p>
+                        Screen readers can also benefit users with no vision impairments. 
+                        For example, a person with dyslexia or a person who prefers auditory learning
+                        can use a screen reader to listen to the content instead of reading it.
                     </p>
 
+                    <div>
+                        <p>The most popular screen readers are: </p>
+                        {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
+                        <ul role="list" className="bullet-point-list">
+                            <li>
+                                <p>JAWS (Job Access With Speech) for Windows</p>
+                            </li>
+                            <li>
+                                <p>VoiceOver included in macOS and iOS devices</p>
+                            </li>
+                            <li>
+                                <p>NVDA (NonVisual Desktop Access), an open-source option for Windows.</p>
+                            </li>
+                            <li>
+                                <p>ChromeVox for Chrome OS</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Screen readers paired with a braille display</h3>
                     <p>
-                        <span className="bold">Screen Readers with Braille Displays</span> for users with both 
-                        vision and hearing impairments. The screen reader 
-                        translates the content on the screen into a format that can be read on a 
-                        braille display. These displays are fitted with braille cells that change dynamically.
+                        For users with both vision and hearing impairments, the screen reader can be used with a braille display.  
+                        In this case, the screen reader translates the content on the screen into a format that can be read on a 
+                        display fitted with braille cells. As the input from the screen reader changes, the cells change dynamically
+                        to convey the new information to the user.
                     </p>
+
+                    <div className="content-image-container">
+                        <img 
+                            alt="Laptop fitted with a braille display"
+                            className={`styles['brailleDisplay-image'] content-image`}
+                            src="/assets/brailleDisplay.jpg"
+                        /> 
+                        <p className="margin-top-0">Photo credit: 
+                            <span> </span>
+                            <ExternalLink
+                                href="https://unsplash.com/@elizabeth_woolner"
+                                visibleText="Elizabeth Woolner"
+                            /> 
+                            { } on Unsplash.
+                        </p>
+                    </div>
+                    
                 </div>
 
-                {/* 2. Voice Software */}
+                {/* 3. Voice Software https://ndassistive.org/blog/5-ways-to-use-a-computer-hands-free/
+                https://www.wired.com/2015/01/intel-gave-stephen-hawking-voice/*/}
+
                 <div className="section scroll-target" id="voice-recognition-software">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">02</span>
-                        <h2 className="white-bg">Voice recognition software</h2>
+                        <span aria-hidden="true" className="section-number">03</span>
+                        <h2>Voice recognition software</h2>
                     </div>
                     
                     <p>
-                        Voice Recognition Software allows users to interact with 
-                        their devices using voice commands. This technology helps people 
+                        This technology helps people 
                         with mobility issues or those who need a hands-free interraction with the web. 
+                        It allows users to interact with their devices using voice commands. 
+                        A user can dictate text, open applications, or navigate the web using their voice.
+                    </p>
+                    <p>
+                        For example, if the user needs to active a navigation button, they can do it with 
+                        the command &quot;Click navigation&quot;.
+                    </p>
+                    <p>
                         Dragon NaturallySpeaking is a popular example for Windows, while macOS offers 
-                        Dictation. Windows has integrated Cortana for voice commands.
+                        Dictation. Windows users can also use Voice access, the built-in Windows 11 tool.
                     </p>
                 </div>
 
-                {/* 3. Screen Magnifiers */}
+                {/* 4. Screen Magnifiers */}
                 <div className="section scroll-target" id="screen-magnifiers">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">03</span>
-                        <h2 className="white-bg">Screen magnifiers</h2>
+                        <span aria-hidden="true" className="section-number">04</span>
+                        <h2>Screen magnifiers</h2>
                     </div>
                     
                     <p>
                         Screen Magnifiers are designed to enlarge the content on 
                         screen, making it more readable for users with low vision. These tools often 
-                        include additional features to enhance contrast and reduce glare.
+                        include additional features like inverted colors and speech output.
                     </p>
+                    <div className="content-image-container">
+                        <img 
+                            alt="Web page with Windows screen magnifier set at 200%"
+                            className={`styles['screenMagnifier-image'] content-image`}
+                            src="/assets/windowsMagnifier.jpg"
+                        /> 
+                    </div>
                 </div>
 
-                {/* 4. Text to speech */}
+                {/* 5. Text to speech
                 <div className="section scroll-target" id="text-to-speech">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">04</span>
-                        <h2 className="white-bg">Text to speech</h2>
+                        <span aria-hidden="true" className="section-number">05</span>
+                        <h2>Text to speech</h2>
                     </div>
                     
                     <p>
@@ -124,52 +218,57 @@ export default function AssistiveTech() {
                         spoken words using synthetic voices. It benefits users with reading 
                         difficulties, such as dyslexia.
                     </p>
-                </div>
+                </div> */}
 
-                {/* 5. Alternate Input Technologies */}
-                <div className="section scroll-target" id="input-tech">
+                {/* 5. Alternate Technologies */}
+                <div className="section scroll-target" id="alternative-tech">
                     <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">04</span>
-                        <h2 className="white-bg">Keyboard alternatives</h2>
+                        <span aria-hidden="true" className="section-number">05</span>
+                        <h2>Keyboard/mouse alternatives</h2>
                     </div>
                     
                     <p>
-                        Alternate Input Technologies simulate the functionality of 
-                        the keyboard for people with more severe physical disabilities. For example, a sip&puff device
-                        allows a person to send signals to the computer by inhaling or exhaling into a wand. 
+                        These technologies simulate the functionality of 
+                        the keyboard or the mouse for people with more severe physical disabilities. 
+
+                        For example, a sip&puff device
+                        allows a person to send signals to the computer by inhaling or exhaling into a wand, while 
+                        an eye-tracking system allows mouse control through eye movements.
                     </p>
                 </div>
-
-                {/* 6. Alternate Pointing Technologies */}
-                <div className="section scroll-target" id="pointing-tech">
-                    <div className="section-heading">
-                        <span aria-hidden="true" className="section-number">04</span>
-                        <h2 className="white-bg">Mouse alternatives</h2>
-                    </div>
-                    
-                    <p>
-                        Alternate Pointing Devices replicate the functionality of 
-                        a traditional mouse. 
-                        For example, an eye-tracking system allows mouse control through eye movements.
-                    </p>   
+                <p>
+                    Video: Watch Zack Collie, a quadriplegic young man and gamer, explaining how he uses sip-and-puff 
+                    technology to play video games.
+                </p>
+                <div className={styles['video-container']}>
+                    {/* eslint-disable-next-line react/no-unknown-property */}
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/tn_wOwC8cVo?si=CTmEFZsKqcNEOURn" 
+                        title="Zack Collie, a quadriplegic young man and gamer, explains how he uses sip-and-puff technology to play video games" 
+                        // frameOrder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        // allowfullscreen
+                    >
+                    </iframe>
                 </div>
-
                 
                 {/* CONCLUSION */}
                 <div className="section conclusion scroll-target" id="conclusion">
-                    <h2>Conclusion</h2>
+                    <h2>How do assistive technologies work?</h2>
                     <p>
-                        We just looked at the most common accessibility bugs as reported by the WebAIM Million Study.
-                        Fortunately, these are also the easiest to avoid!
-                    </p>
-                    <p>
-                        Time to look at your portfolio site to see if any of these bugs are present!
+                        Given a web page, how does a screen reader know which information to share with the user?
+                        Or how does a voice recognition software know which commands to execute?
+                        To answer these questions, we need to learn about a very important concept: the accessibility tree.
+
                     </p>
                     
                     <p className="read-next">
                         <span className="bold">Read next: </span>
-                        <Link to="/blog/fixing-the-six-most-common-bugs" onClick={() => { useScrollToTop() }}>
-                            Fixing the 6 most common bugs
+                        <Link to="/blog/how-accessibility-works" onClick={() => { useScrollToTop() }}>
+                            How accessibility works
                         </Link>
                     </p>                 
                 </div>

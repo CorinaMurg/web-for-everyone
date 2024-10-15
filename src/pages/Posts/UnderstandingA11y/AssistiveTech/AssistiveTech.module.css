@@ -1,0 +1,17 @@
+.brailleDisplay-image {
+    aspect-ratio: 1.5 / 1;
+}
+
+.windowsMagnifier-image {
+    aspect-ratio: 1.54 / 1;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+}
