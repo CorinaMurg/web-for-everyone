@@ -37,6 +37,7 @@ export default function MenuModal ({ isMenuOpen, closeModal } : MenuModalTypes) 
             className={`menu-modal ${themeClass}`}
             // https://reactcommunity.org/react-modal/accessibility/
             contentLabel='Menu'
+            id='primary-navigation'
             isOpen={isMenuOpen}
             onRequestClose={closeModal}
             onAfterOpen={afterOpenModal}
