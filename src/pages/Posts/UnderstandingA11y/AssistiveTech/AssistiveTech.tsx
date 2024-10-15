@@ -53,16 +53,17 @@ export default function AssistiveTech() {
                 <div className="section intro scroll-target" id="intro">
                     <h2 className="sr-only">Introduction to assistive technologies</h2>
                     <p>
-                        Certain disabilities can make it difficult for users to interact with digital content without
-                        the help of certain tools. For example, a blind cannot rely on mouse navigation, but by using a 
-                        keyboard combined with software that will announce the content on the screen, 
-                        they can easily navigate the web. These tools are called assistive technologies.
+                        Not everyone can use their sight and a mouse to access digital content!
+                        Users with certain disabilities will need other tools to navigate the web.
+                        For example, a blind person might rely on a 
+                        keyboard paired with a screen reader software and a speech synthesizer software. 
+                        These hardware and software are called assistive technologies.
                     </p>
                     <p>
                         It&apos;s important to note that, for example, the keyboard alone cannot guarantee access to all the elements 
                         a user might need to interact with. We&apos;ll cover this in more detail in the next posts, 
                         but let&apos;s remember that the underlying code of the website must be structured in a way that allows keyboard 
-                        navigation. This is true for other assistive technologies as well. They can do their job only if the website is
+                        navigation. This is true for other assistive technologies as well. They cannot do their job unless the website is
                         built with accessibility in mind.
                     </p>
                     <p>
@@ -82,15 +83,15 @@ export default function AssistiveTech() {
                         Keyboards, be they modern or traditional, are essential for these users. 
                     </p>
                     <p>
-                        With just the <span className="yellow-bg">Tab</span> key, they can easily navigate through interactive elements like links 
+                        With the correct underlying code structure, web navigation can be achieved using 
+                        just a keyboard. With the <span className="yellow-bg">Tab</span> key, users navigate through interactive elements like links 
                         and buttons. Pressing the <span className="yellow-bg">Enter</span> key activates these elements, and for buttons, 
-                        the <span className="yellow-bg">Space</span> bar works too! Adding to the mix the arrow keys 
-                        for group of buttons, or shortcuts for opening, 
-                        closing, or switching between apps and tabs, and it’s clear that web navigation can be achieved using 
-                        just a keyboard. Again, only with the correct underlying code structure.
+                        the <span className="yellow-bg">Space</span> bar works as well. The arrow keys are used to navigate through menus or
+                        a group of buttons, and there are shortcuts for opening, closing, or switching between apps and tabs, to name just a few.
                     </p>
                     
                 </div>
+
 
                 {/* 2. Screen Reader */}
                 <div className="section scroll-target" id="screen-readers">
@@ -99,21 +100,28 @@ export default function AssistiveTech() {
                         <h2>Screen readers</h2>
                     </div>
                     <p>
-                        Screen Readers are typically used by people who are blind 
-                        or have vision impairments. 
+                        A screen reader is software typically used by people who are blind 
+                        or have vision impairments. It can also benefit users with no vision impairments. 
+                        For example, a person with dyslexia or a person who prefers auditory learning
+                        can use a screen reader to listen to the content instead of reading it.
                     </p>
-                    <h3>Screen readers paired with a keyboard</h3>
+                    <p>
+                        At render time, the browser builds the <span> </span>
+                        <Link to="/blog/how-accessibility-works" onClick={() => { useScrollToTop() }}>
+                            accessibility tree
+                        </Link>
+                        <span> </span>
+                        with nodes that are relevant for accessibility. The screen reader accesses this tree via a 
+                        set of APIs, and then makes the information 
+                        available to the user through speech or braille output.
+                    </p>
+                    <h3>Screen readers paired with a keyboard and a speech synthesizer</h3>
                     <p>
                         If the user has no hearing impairments, they will
                         navigate through the UI elements with the keyboard, while the content 
                         on the screen is announced through speech synthesizer software.
                     </p>
-                    
-                    <p>
-                        Screen readers can also benefit users with no vision impairments. 
-                        For example, a person with dyslexia or a person who prefers auditory learning
-                        can use a screen reader to listen to the content instead of reading it.
-                    </p>
+                
 
                     <div>
                         <p>The most popular screen readers are: </p>
@@ -278,24 +286,3 @@ export default function AssistiveTech() {
     )
 }
 
-{/* *********WHAT ARE ASSISTIVE TECH************* */}
-<div className="highlight highlight-one-line">
-<details>
-    <summary>
-        <span className="summary-title">
-            What are assistive technologies?
-        </span>
-    </summary>
-    <div className="details-content margin-top-20">
-        
-        
-        
-  
-        
-
-        
-        
-        
-    </div>
-</details>
-</div>
