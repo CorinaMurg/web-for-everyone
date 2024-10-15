@@ -23,15 +23,13 @@ const contents = [
 ];
 
 export default function AssistiveTech() {
-    useDocTitle("Assitive Technologies | Web for Everyone");   
+    useDocTitle("Assistive Technologies | Web for Everyone");   
     useScrollToTop(); 
     useScrollToSection();
     const { activeId} = useHighlightTOC();
     
-
     return (
         <div className={`article-container ${styles['assitive-tech']}`}>
-          
             <BackLinks 
                 secondLink="Accessibility 101"
                 href="/blog#accessibility-101" 
