@@ -586,7 +586,7 @@ export default function MakeItAccessible() {
                     </p>
                     
                     <p className="margin-top-30 read-next">
-                        <span className="bold">Read next: </span>
+                        <span>Read next: </span>
                         <Link to="/blog/the-next-six-bugs" onClick={() => { useScrollToTop() }}>
                             Level up: the next 6 bugs to watch for
                         </Link>

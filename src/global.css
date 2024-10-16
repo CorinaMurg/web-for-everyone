@@ -43,6 +43,7 @@
     --reverse-bg-color: var(--cream-color);
     --warning-opacity: 0.8;
     --blog-author-fontweight: 500;
+    --links-blue-color: var(--code-blue-color);
 }
 
 .light {
@@ -99,6 +100,8 @@
     --reverse-bg-color: var(--bg-dark-color);
 
     --blog-author-fontweight: 700;
+
+    --links-blue-color: var(--code-blueDark-color);
 }
 
 
@@ -109,15 +112,15 @@
     opacity: var(--paragraph-opacity);
     letter-spacing: 0.5px;
     text-decoration: underline;
-    text-decoration-color: var(--code-blueDark-color);
+    text-decoration-color: var(--links-blue-color);
     text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
+    text-underline-offset: 4px;
 }
 
 .section a:hover {
     color: var(--paragraph-color);
     text-decoration-style: wavy;
-    text-decoration-color: var(--code-blueDark-color);
+    text-decoration-color: var(--links-blue-color);
 }
 
 .section a:focus {
@@ -413,7 +416,7 @@
 }
 
 .external-linksvg-wrap svg {
-    fill: var(--code-blueDark-color);
+    fill: var(--links-blue-color);
     height: 1rem;
     line-height: 1;
 }
@@ -681,26 +684,26 @@ p {
 
 .read-next {
     font-size: 1.5rem;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: var(--heading-fontweight);
+    letter-spacing: 0.3px;
 }
 
 .read-next a {
     font-size: 1.5rem;
-    font-family: "Quicksand", sans-serif;
-    color: var(--code-blueDark-color);
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    font-family: "Poppins", sans-serif;
+    color: var(--links-blue-color);  
+    font-weight: var(--heading-fontweight); 
 }
 
 .read-next a:hover {
-    color: var(--code-blueDark-color);
+    color: var(--links-blue-color);
 }
 
 .recommended-read {
     font-size: 1.3rem;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: var(--heading-fontweight);
 }
 
 ::-webkit-scrollbar {

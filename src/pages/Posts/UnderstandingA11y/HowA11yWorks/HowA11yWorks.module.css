@@ -21,6 +21,11 @@
     /* border: var(--border-for-dark); */
 }
 
+.dom-at:focus-visible {
+    outline: 1.5px solid var(--paragraph-color);
+    outline-offset: 9px;
+}
+
 .dom-at div:nth-of-type(1) {
     border-right: 1px solid gray;
     /* background-color: var(--highlight-bg-color); */

@@ -346,7 +346,7 @@ export default function WhatIsA11y() {
                     </p>
                          
                     <p className="read-next">
-                        <span className="bold">Read next: </span>
+                        <span>Read next: </span>
                         <Link to="/blog/how-accessibility-works" onClick={() => { useScrollToTop() }}>
                             How accessibility works
                         </Link>

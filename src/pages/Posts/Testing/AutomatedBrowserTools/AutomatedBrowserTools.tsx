@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useDocTitle from "../../../../hooks/useDocTitle";
 import useScrollToSection from "../../../../hooks/useScrollToSection"
 import useScrollToTop from "../../../../hooks/useScrollToTop";
@@ -81,8 +82,9 @@ export default function AutomatedBrowserTools() {
                         visibleText="Microsoft's Accessibility Insights for Web"
                     />
                     <span> </span>
-                    works with Chrome and Edge. It runs automated tests, as well as guidance on certain manual tests.
-                    It also uses Deque&apos;s axe-core library.
+                    works with Chrome and Edge. It runs automated tests, as well as provides guidance on how to 
+                    run certain manual tests.
+                    It uses Deque&apos;s axe-core library.
                 </p>
 
                 <p>
@@ -140,7 +142,16 @@ export default function AutomatedBrowserTools() {
                     Best if you try a few, pick one you find easier to use, and get familiar with it. 
                     As we are now looking at how to avoid the most common 
                     accessibility bugs, these tools do a great job at spotting them.
-                </p>          
+                </p>  
+                <p className="margin-top-30 read-next">
+                        <span>Read next: </span>
+                        <Link 
+                            to="/blog/most-common-bugs" 
+                            onClick={() => { useScrollToTop() }}
+                        >
+                            The most common acessibility bugs
+                        </Link>
+                    </p>        
             </div>
             <ScrollToTopButton />
         </div>

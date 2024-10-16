@@ -568,7 +568,7 @@ export default function MostCommonBugs() {
                     </p>
                     
                     <p className="read-next">
-                        <span className="bold">Read next: </span>
+                        <span>Read next: </span>
                         <Link to="/blog/fixing-the-six-most-common-bugs" onClick={() => { useScrollToTop() }}>
                             Fixing the 6 most common bugs
                         </Link>
