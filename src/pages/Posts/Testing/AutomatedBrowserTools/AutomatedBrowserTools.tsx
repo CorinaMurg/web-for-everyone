@@ -65,8 +65,7 @@ export default function AutomatedBrowserTools() {
                         visibleText="Google's Lighthouse"
                     />
                     <span> </span>
-                    is available by default in Chrome DevTools. It runs a test on an entire page, and
-                    Note that Lighthouse also uses Deque&apos;s axe-core library, but with a smaller set of tests.
+                    is available by default in Chrome DevTools. It also uses Deque&apos;s axe-core library, but with a smaller set of tests.
                 </p>
                 <p className="bullet-point-line">
                     <ExternalLink
@@ -75,6 +74,15 @@ export default function AutomatedBrowserTools() {
                     />
                     <span> </span>
                     is a Chrome extension from TPGi. It allows you to run a test on an entire page, or on a specific element.
+                </p>
+                <p className="bullet-point-line">
+                    <ExternalLink
+                        href="https://accessibilityinsights.io/downloads/" 
+                        visibleText="Microsoft's Accessibility Insights for Web"
+                    />
+                    <span> </span>
+                    works with Chrome and Edge. It runs automated tests, as well as guidance on certain manual tests.
+                    It also uses Deque&apos;s axe-core library.
                 </p>
 
                 <p>
@@ -120,8 +128,8 @@ export default function AutomatedBrowserTools() {
                 </h2>
                 <p>
                     Each tool has its own strengths. When you run a test, each extension will list the accessibility issues it found. 
-                    Almost all allow you to toggle back to the corresponding node in the Elements view. Some will provide
-                    links to the WCAG guidelines, others will provide links to user-friendly documentation and examples on how to fix them.
+                    They also allow you to toggle back to the corresponding node in the Elements view. Some will provide
+                    links to the WCAG guidelines, while others will provide links to user-friendly documentation and examples on how to fix them.
                 </p>
                 <p>
                     Apart from errors, some extensions also provide alerts for elements that should be checked manually, or best practice failings.
