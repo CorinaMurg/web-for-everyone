@@ -12,7 +12,7 @@ import MostCommonBugs from "./pages/Posts/UnderstandingA11y/MostCommonBugs/MostC
 import MakeItAccessible from "./pages/Posts/YourDigitalPresence/MakeItAccessible"
 import MakeItAccessible2 from "./pages/Posts/YourDigitalPresence/MakeItAccessible2"
 import SimilarButDifferent from "./pages/Posts/HTMLForAccessibility/SimilarButDifferent"
-import AutomatedBrowserTools from "./pages/Posts/Tools/AutomatedBrowserTools/AutomatedBrowserTools"
+import AutomatedBrowserTools from "./pages/Posts/Testing/AutomatedBrowserTools/AutomatedBrowserTools"
 import About from "./pages/About/About"
 import A11yStatement from "./pages/A11yStatement/A11yStatement"
 import Gaad from "./pages/Gaad/Gaad"

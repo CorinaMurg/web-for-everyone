@@ -23,11 +23,9 @@ export default function Feedback() {
             
             <section className="section margin-top-30">
                 <p>
-                    These are browser extensions that can help
-                    you evaluate the accessibility of your site. 
-                    They scan a page and identify accessibility 
-                    issues based on best practices and standards established by
-                    the <span> </span>
+                    These are browser extensions that help evaluate the accessibility of your site. 
+                    They scan a page and identify accessibility issues based on best practices and standards 
+                    established by the <span> </span>
                     <ExternalLink 
                         href="https://www.w3.org/WAI/standards-guidelines/wcag/" 
                         visibleText="Web Content Accessibility Guidelines"
@@ -61,7 +59,7 @@ export default function Feedback() {
                         visibleText="Google's Lighthouse"
                     />
                     <span> </span>
-                    is available by default in Chrome DevTools.
+                    is available by default in Chrome DevTools. It runs a test on an entire page, and
                     Note that Lighthouse also uses Deque&apos;s axe-core library, but with a smaller set of tests.
                 </p>
                 <p className="bullet-point-line">
@@ -70,7 +68,7 @@ export default function Feedback() {
                         visibleText="ARC Toolkit"
                     />
                     <span> </span>
-                    is a Chrome extension from TPGi.
+                    is a Chrome extension from TPGi. It allows you to run a test on an entire page, or on a specific element.
                 </p>
 
                 <p>
@@ -79,7 +77,7 @@ export default function Feedback() {
                 </p>
                 <p>
                     <span className="bold">ARC</span>, <span className="bold">axe</span>, and <span className="bold">Lighthouse</span> are
-                    added to the browser&apos;s DevTools.
+                    added to the browser&apos;s DevTools, and they are available as tabs in the top menu.
                 </p>
 
                 <div className="content-image-container">
@@ -89,20 +87,13 @@ export default function Feedback() {
                         src="/assets/devTools.jpg"
                     /> 
                 </div>
-                
+
+                <h2>
+                    Do automated tools catch all accessibility issues?
+                </h2>
                 <p>
-                    Each tool has its own strengths. Best if you pick one and get 
-                    familiar with it. When you run a test, it lists the accessibility issues it found, 
-                    as well as links to documentation and examples on how to fix them.
-                </p>
-                <p>
-                    As we are now looking at how to avoid the most common 
-                    accessibility bugs, these tools do a great job at spotting them.
-                </p>
-                <p>
-                    But keep in mind that automated tools are imperfect!
-                    They can&apos;t test all aspects of accessibility, and will catch at
-                    most 50% of all the issues.
+                    No! They can&apos;t test all aspects of accessibility, and will catch, at
+                    most, around 50% of all the issues.
                 </p>
                 <p>  
                     When building a complex website, your accessibility 
@@ -117,6 +108,26 @@ export default function Feedback() {
                     of evaluating the site.
 
                 </p>
+                
+                <h2>
+                    Which browser tool should you use?
+                </h2>
+                <p>
+                    Each tool has its own strengths. When you run a test, each extension will list the accessibility issues it found. 
+                    Almost all allow you to toggle back to the corresponding node in the Elements view. Some will provide
+                    links to the WCAG guidelines, others will provide links to user-friendly documentation and examples on how to fix them.
+                </p>
+                <p>
+                    Apart from errors, some extensions also provide alerts for elements that should be checked manually, or best practice failings.
+                    The latter are cases when an element does not break any accessibility guidelines, but it does not follow best practices
+                    recommended by experts and users.
+                </p>
+                <p>
+                    Best if you try a few, pick one you find easier to use, and get familiar with it. 
+                    As we are now looking at how to avoid the most common 
+                    accessibility bugs, these tools do a great job at spotting them.
+                </p>
+                
                             
             </section>
             <ScrollToTopButton />
