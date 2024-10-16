@@ -179,8 +179,8 @@ export const blogPostsData: BlogPostDataTypes[] = [
     //     "ariaLabel": "",
     // },
     {
-        "label": "tools-for-accessibility",
-        "id": "what-is-accessibility",
+        "label": "testing-for-accessibility",
+        "id": "automated-browser-tools",
         "title": "Automated browser tools",
         "subtitle": "",
         "author": "",

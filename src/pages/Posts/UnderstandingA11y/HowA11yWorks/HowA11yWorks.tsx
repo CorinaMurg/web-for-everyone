@@ -67,12 +67,12 @@ export default function MostCommonBugs() {
                 {/* *************1. INTRO********************** */}
                 <div id="intro" className="section intro scroll-target" >
                     <h2>In a nutshell</h2>
-                    <p className="fake-list-item"> 
+                    <p> 
                         As part of the rendering process, the browser builds the accessibility tree, a simplified 
                         version of the DOM tree. The accessibility tree contains only elements that 
                         need to be exposed to assistive technologies like screen readers. 
                     </p>
-                    <p className="fake-list-item">
+                    <p>
                         When triggered, assistive technologies use the browser&apos;s accessibility APIs to retrieve 
                         information from the accessibility tree and present it to users. 
                     </p>

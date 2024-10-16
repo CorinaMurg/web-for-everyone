@@ -12,7 +12,7 @@ export default function Feedback() {
     useScrollToTop();
     useScrollToSection();
     return (
-        <div className={`${styles['a11y-statement']} a11y-statement article-container`}>
+        <div className={`${styles['a11y-statement']} section`}>
            
             <h1 className="article-heading-desktop">
                 <span>Web for Everyone&apos;s</span>

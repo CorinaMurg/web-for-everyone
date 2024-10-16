@@ -3,16 +3,22 @@ import useDocTitle from "../../../../hooks/useDocTitle";
 import useScrollToSection from "../../../../hooks/useScrollToSection"
 import useScrollToTop from "../../../../hooks/useScrollToTop";
 import ScrollToTopButton from "../../../../components/ScrollToTopButton/ScrollToTopButton"
+import BackLinks from "../../../../components/BackLinks/BackLinks";
 import styles from './AutomatedBrowserTools.module.css';
 import "../../../../global.css";
 import ExternalLink from "../../../../components/ExternalLink/ExternalLink";
 
-export default function Feedback() {
+export default function AutomatedBrowserTools() {
     useDocTitle("Automated Browser Tools | Web for Everyone");
     useScrollToTop();
     useScrollToSection();
     return (
-        <div className={`${styles['automated-browser-tools']} article-container`}>
+        <div className={`${styles['automated-browser-tools']} section`}>
+            <BackLinks 
+                secondLink="Testing for accessibility" 
+                href="/blog#automated-browser-tools" 
+                current="Automated browser tools"
+            />
           
             <h1 className="article-heading-desktop ">
                 <span>Automated browser tools</span>  
@@ -21,7 +27,7 @@ export default function Feedback() {
                 <span>Automated browser tools</span> 
             </h1>
             
-            <section className="section margin-top-30">
+            <div className="section margin-top-30">
                 <p>
                     These are browser extensions that help evaluate the accessibility of your site. 
                     They scan a page and identify accessibility issues based on best practices and standards 
@@ -126,10 +132,8 @@ export default function Feedback() {
                     Best if you try a few, pick one you find easier to use, and get familiar with it. 
                     As we are now looking at how to avoid the most common 
                     accessibility bugs, these tools do a great job at spotting them.
-                </p>
-                
-                            
-            </section>
+                </p>          
+            </div>
             <ScrollToTopButton />
         </div>
     )

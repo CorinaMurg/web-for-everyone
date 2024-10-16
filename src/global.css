@@ -1,5 +1,4 @@
 /* variables for light */
-
 .dark {
     color: var(--cream-color);
     background-color: var(--bg-dark-color);
@@ -103,7 +102,7 @@
 }
 
 
-.article-container a {
+.section a {
     color: var(--paragraph-color);
     font-weight: var(--paragraph-fontweight);
     font-size: var(--paragraph-font-size);
@@ -115,26 +114,18 @@
     text-underline-offset: 6px;
 }
 
-.article-container a:hover,
-.about a:hover,
-.a11y-statement a:hover,
-.gaad a:hover,
-.not-found-container a:hover {
+.section a:hover {
     color: var(--paragraph-color);
-}
-
-.article-content a:hover,
-.about a:hover,
-.a11y-statement a:hover,
-.gaad a:hover {
     text-decoration-style: wavy;
     text-decoration-color: var(--code-blueDark-color);
 }
 
-.article-content a:focus,
-.about a:focus,
-.a11y-statement a:focus,
-.gaad a:focus {
+.section a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.section a:focus-visible {
     text-decoration: none;
     outline: 1.5px solid var(--paragraph-color);
     outline-offset: 4px;
@@ -235,7 +226,7 @@
     color: var(--pink-heading);
     display: inline-block;
     line-height: 1.1;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: var(--pink-heading-fontweight);
     margin-bottom: 20px;
     text-transform: uppercase;
