@@ -123,6 +123,7 @@
     background-color: var(--code-bg-color);
     color: var(--cream-color);
     margin-bottom: 30px;
+    border-radius: var(--border-radius);
 }
 
 .code-keyboard--div {
@@ -134,6 +135,7 @@
 @media screen and (max-width: 670px){
     .code-keyboard {
         padding-left: var(--main-margin);
+        border-radius: 0;
     }
     .custom-outline--button {
         margin-left: var(--main-margin);
