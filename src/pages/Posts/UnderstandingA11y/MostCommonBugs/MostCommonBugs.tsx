@@ -95,21 +95,23 @@ export default function MostCommonBugs() {
                     </p>
                     
                     <div className={`highlight highlight-no-heading highlight-dl`}>
-                        <dl className={styles['numbers']}>
-                            <dt><span>96</span></dt>
-                            <dd>percentage of home pages with accessibility bugs</dd>
-                        </dl>
-                        <dl className={` ${styles['numbers']} margin-top-20`}>
-                            <dt><span>57</span></dt>
-                            <dd>number of average accessibility bugs per page</dd>
-                        </dl>
-                        <dl className={` ${styles['numbers']} margin-top-20`}>
-                            <dt><span>31</span></dt>
-                            <dd>percentage of home pages with 10 or fewer errors</dd>
-                        </dl>
-                        <dl className={` ${styles['numbers']} margin-top-20`}>
-                            <dt><span>1173</span></dt>
-                            <dd>average number of elements per home page</dd>
+                        <dl className={`styles['webaim-million-stats-container']`}>
+                            <div className={styles['webaim-million-stats']}>
+                                <dt><span>96</span></dt>
+                                <dd>percentage of home pages with accessibility bugs</dd>
+                            </div>
+                            <div className={`${styles['webaim-million-stats']} margin-top-20`}>
+                                <dt><span>57</span></dt>
+                                <dd>number of average accessibility bugs per page</dd>
+                            </div>
+                            <div className={`${styles['webaim-million-stats']} margin-top-20`}>
+                                <dt><span>31</span></dt>
+                                <dd>percentage of home pages with 10 or fewer errors</dd>
+                            </div>
+                            <div className={`${styles['webaim-million-stats']} margin-top-20`}>
+                                <dt><span>1173</span></dt>
+                                <dd>average number of elements per home page</dd>
+                            </div>
                         </dl>
                     </div>
  
@@ -201,7 +203,7 @@ export default function MostCommonBugs() {
                         report makes for an interesting and informative read, do check it out!
                     </p>
                     <p>
-                        In the meantime, let's go over the list with the <span className="bold">6 most common bugs</span> found 
+                        In the meantime, let&apos;s go over the list with the <span className="bold">6 most common bugs</span> found 
                         in the 2024 study. What do we know about them?
                     </p>
 

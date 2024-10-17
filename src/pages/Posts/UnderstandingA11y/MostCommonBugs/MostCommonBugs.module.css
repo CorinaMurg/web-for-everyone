@@ -1,5 +1,5 @@
 /* INTRO */
-.numbers {
+.webaim-million-stats {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -10,7 +10,7 @@
     letter-spacing: 0.5px;
 }
 
-.numbers dt {
+.webaim-million-stats dt {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--pink-text-on-less-dark-bg);
@@ -20,7 +20,7 @@
     letter-spacing: 0.5px;
 }
 
-.numbers dd {
+.webaim-million-stats dd {
     font-size: var(--paragraph-font-size);
     color: var(----paragraph-color);
     font-weight: var(--paragraph-fontweight);

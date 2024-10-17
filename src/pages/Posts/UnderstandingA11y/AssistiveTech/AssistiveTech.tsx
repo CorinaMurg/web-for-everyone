@@ -140,6 +140,9 @@ export default function AssistiveTech() {
                         </ul>
                     </div>
                     <h3>Screen reader paired with a braille display</h3>
+                    {/* The screen reader sends a line of text to the refreshable braille display. Users read the text on that line, 
+                    then press a button to go to the next line. The pins drop down, then come up in a new configuration to reflect 
+                    the new line of text. */}
                     <p>
                         For users with both vision and hearing impairments, the screen reader can be used with a braille display.  
                         In this case, the screen reader translates the content on the screen into a format that can be read on a 
@@ -178,9 +181,6 @@ export default function AssistiveTech() {
                         This technology helps people 
                         with mobility issues or those who need a hands-free interraction with the web. 
                         It allows users to interact with their devices using voice commands. 
-                        A user can dictate text, open applications, or navigate the web using their voice.
-                    </p>
-                    <p>
                         For example, if the user needs to active a navigation button, they can do it with 
                         the command &quot;Click navigation&quot;.
                     </p>
@@ -191,6 +191,8 @@ export default function AssistiveTech() {
                 </div>
 
                 {/* 4. Screen Magnifiers */}
+                {/* https://vimeo.com/13757711 */}
+                {/* https://www.youtube.com/watch?v=ojtiVj78QPw */}
                 <div className="section scroll-target" id="screen-magnifiers">
                     <div className="section-heading">
                         <span aria-hidden="true" className="section-number">04</span>
