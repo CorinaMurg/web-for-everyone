@@ -1127,7 +1127,8 @@ ul[class^="checkmark-list"] li p {
     .resources .article-heading-mobile,
     .article-container .article-heading-mobile,
     .a11y-statement .article-heading-mobile,
-    .gaad .article-heading-mobile {
+    .gaad .article-heading-mobile,
+    .automated-browser-tools .article-heading-mobile{
         display: flex;
         flex-direction: column;
     }

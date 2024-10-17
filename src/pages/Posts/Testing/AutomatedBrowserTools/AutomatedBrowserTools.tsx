@@ -14,7 +14,7 @@ export default function AutomatedBrowserTools() {
     useScrollToTop();
     useScrollToSection();
     return (
-        <div className={`${styles['automated-browser-tools']} section`}>
+        <div className={`${styles['automated-browser-tools']} automated-browser-tools section`}>
             <BackLinks 
                 secondLink="Testing for accessibility" 
                 href="/blog#automated-browser-tools" 
