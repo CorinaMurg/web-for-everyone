@@ -453,7 +453,7 @@ export default function MakeItAccessible() {
                         <code><span className="code-blue-color">&lt;/label&gt;</span></code>
                         <br/>
                         <br/>
-                        <code><span className="code-gray-color">{'// Explicit label by referencing the &quot;id&quot; of the input'}</span></code>
+                        <code><span className="code-gray-color">{'// Explicit label by referencing the id of the input'}</span></code>
                         <code>
                             <span className="code-blue-color">&lt;label</span> <span className="code-pink-color"></span>
                             <span className="code-pink-color">for</span>=&quot;name&quot;
