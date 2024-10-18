@@ -7,9 +7,9 @@ import '../../index.css'
 
 export default function Footer() {
     return (
-        <footer role="contentinfo">
+        <footer>
             <div className={styles['footer--top']}>
-                <h2 className="sr-only">Footer</h2>
+                {/* <h2 className="sr-only">Footer</h2> */}
                 <div className={styles['footer--left']}>
                     <Logo color="var(--cream-color)" fontWeight={500}/>
                 </div>
