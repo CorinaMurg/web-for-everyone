@@ -34,10 +34,10 @@ export default function Accessibility() {
             <h1 className="article-heading-desktop">
                 <span>Accessibility resources</span>
             </h1>
-            <h1 className="article-heading-mobile">
+            {/* <h1 className="article-heading-mobile">
                 <span>Accessibility</span>
                 <span>resources</span>
-            </h1>
+            </h1> */}
             <div className={styles['resources--table-contents']}>
                 <h2 id="table-of-contents">
                     Table of Contents

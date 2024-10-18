@@ -219,10 +219,10 @@
     align-self: flex-start;
 }
 
-.resources .article-heading-mobile,
+/* .resources .article-heading-mobile,
 .article-heading-mobile {
     display: none;
-}
+} */
 
 .pink-heading {
     align-self: left;
@@ -1119,24 +1119,24 @@ ul[class^="checkmark-list"] li p {
 }
 
 @media screen and (max-width: 620px) {
-    .resources .article-heading-desktop,
+    /* .resources .article-heading-desktop,
     .article-heading-desktop {
         display: none;
-    }
+    } */
 
-    .resources .article-heading-mobile,
+    /* .resources .article-heading-mobile,
     .article-container .article-heading-mobile,
     .a11y-statement .article-heading-mobile,
     .gaad .article-heading-mobile,
     .automated-browser-tools .article-heading-mobile{
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    .resources .article-heading-mobile span,
+    /* .resources .article-heading-mobile span,
     .article-heading-mobile span {
         align-self: flex-start;
-    }
+    } */
 
     .section {
         width: 100%;
@@ -1171,14 +1171,14 @@ ul[class^="checkmark-list"] li p {
 }
 
 @media screen and (max-width: 414px) {
-    .similar-different .article-heading-mobile {
+    .similar-different .article-heading-desktop {
         font-size: 2.5rem;
     }  
 }
 @media screen and (max-width: 365px) {
-    .resources .article-heading-mobile,
-    .article-container .article-heading-mobile,
-    .a11y-statement .article-heading-mobile,
+    .resources .article-heading-desktop,
+    .article-container .article-heading-desktop,
+    .a11y-statement .article-heading-desktop,
     .about h1 {
         font-size: 2.4rem;
     }

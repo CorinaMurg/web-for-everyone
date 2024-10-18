@@ -50,11 +50,11 @@ export default function SimilarButDifferent() {
                 <span>Similar but different:</span>
                 <span>HTML and ARIA terms</span>
             </h1>
-            <h1 className="article-heading-mobile">
+            {/* <h1 className="article-heading-mobile">
                 <span>Similar but</span>    
                 <span>different:</span>
                 <span>HTML and ARIA terms</span> 
-            </h1>
+            </h1> */}
             <p className="subtitle">Matching terms against each other</p>
 
             <TableOfContents contents={contents} activeId={activeId}/>

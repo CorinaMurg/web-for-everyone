@@ -69,10 +69,10 @@ export default function MakeItAccessible() {
                 <span>6 bugs to watch for</span>
                 
             </h1>
-            <h1 className="article-heading-mobile">
+            {/* <h1 className="article-heading-mobile">
                 <span>Level up: the next </span>
                 <span>6 bugs to watch for</span>
-            </h1>
+            </h1> */}
             <p id="subtitle" className="subtitle">Accessibility with HTML, CSS, and a touch of JavaScript </p>
 
             {/* **************Table of Contents********************** */}

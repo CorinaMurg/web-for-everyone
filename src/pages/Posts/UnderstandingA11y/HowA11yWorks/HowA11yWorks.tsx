@@ -55,10 +55,10 @@ export default function MostCommonBugs() {
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>How accessibility works</span> 
             </h1>
-            <h1 aria-describedby="subtitle" className="article-heading-mobile">
+            {/* <h1 aria-describedby="subtitle" className="article-heading-mobile">
                 <span>How accessibility</span>
                 <span>works</span>
-            </h1>
+            </h1> */}
             <p id="subtitle" className="subtitle">DOM&apos;s powerful sibling: the accessibility tree</p>
 
             <TableOfContents contents={contents} activeId={activeId}/>

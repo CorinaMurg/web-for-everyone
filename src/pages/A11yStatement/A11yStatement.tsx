@@ -18,12 +18,12 @@ export default function Feedback() {
                 <span>Web for Everyone&apos;s</span>
                 <span>commitment to accessibility</span>
             </h1>
-            <h1 className="article-heading-mobile">
+            {/* <h1 className="article-heading-mobile">
                 <span>Web for Everyone&apos;s</span>
                 <span>commitment to </span>
                 <span>accessibility</span>
-            </h1>
-            <A11yBanner />
+            </h1> */}
+            {/* <A11yBanner /> */}
             <p className="margin-top-30">
                 We value accessibility. We are building this website with everyone in mind,
                 and aim to comply with the <span> </span>

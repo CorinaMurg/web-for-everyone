@@ -39,9 +39,9 @@ export default function AssistiveTech() {
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>Assistive Technologies</span>
             </h1>
-            <h1 aria-describedby="subtitle" className="article-heading-mobile">
+            {/* <h1 aria-describedby="subtitle" className="article-heading-mobile">
                 <span>Assistive Technologies</span>
-            </h1>
+            </h1> */}
             <p id="subtitle" className="subtitle">Software and hardware to navigate the web</p>
 
             <TableOfContents contents={contents} activeId={activeId} />

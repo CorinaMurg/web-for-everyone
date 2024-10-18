@@ -51,10 +51,10 @@ export default function WhatIsA11y() {
             <h1 aria-describedby="subtitle" className="article-heading-desktop">
                 <span>What is accessibility?</span>
             </h1>
-            <h1 className="article-heading-mobile">
+            {/* <h1 className="article-heading-mobile">
                 <span>What is</span>
                 <span>accessibility?</span>
-            </h1>
+            </h1> */}
             <p id="subtitle" className="subtitle">And why does it matter?</p>
 
             {/* ***************TABLE OF CONTENTS********************* */}
