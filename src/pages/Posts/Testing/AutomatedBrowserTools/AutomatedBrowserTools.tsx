@@ -24,9 +24,6 @@ export default function AutomatedBrowserTools() {
             <h1 className="article-heading-desktop ">
                 <span>Automated browser tools</span>  
             </h1>
-            <h1 className="article-heading-mobile">
-                <span>Automated browser tools</span> 
-            </h1>
             
             <div className="section margin-top-30">
                 <p>
